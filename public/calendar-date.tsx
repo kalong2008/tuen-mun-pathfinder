@@ -8,7 +8,6 @@ export const activityDateDetail = [
     { date: "82024", datedetail: "820242", name: "ff", date_format: new Date("2024-08-10") },
     { date: "82024", datedetail: "820243", name: "gg", date_format: new Date("2024-08-17") },
     { date: "82024", datedetail: "820244", name: "hh", date_format: new Date("2024-08-24") },
-    { date: "82024", datedetail: "820244", name: "hh", date_format: new Date("2024-08-31") },
   ];
   
   export const highlightedDates = activityDateDetail.map(function(dates) {return dates.date_format});

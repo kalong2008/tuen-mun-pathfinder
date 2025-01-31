@@ -177,14 +177,13 @@ export default function SideNav() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-6 lg:pl-6" key="nav-popover-group">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-6 lg:pl-6">
           {/* start of the 2011-2015年相片 */}
-          <Popover className="relative" key="2011-2015-popover">
+          <Popover className="relative">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2011(open)}
                 onMouseLeave={() => handleLeave_2011(open)}
-                key="2011-2015"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -260,12 +259,11 @@ export default function SideNav() {
 
           {/* end of the 2011-2015年相片 */}
           {/* start of the 2016-2020年相片 */}
-          <Popover className="relative" key="2016-2020-popover">
+          <Popover className="relative">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2016(open)}
                 onMouseLeave={() => handleLeave_2016(open)}
-                key="2016-2020"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -341,12 +339,11 @@ export default function SideNav() {
 
           {/* end of the 2016-2020年相片 */}
           {/* start of the 2021年相片 */}
-          <Popover className="relative" key="2021-popover">
+          <Popover className="relative">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2021(open)}
                 onMouseLeave={() => handleLeave_2021(open)}
-                key="2021"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -385,12 +382,11 @@ export default function SideNav() {
 
           {/* end of the 2021年相片 */}
           {/* start of the 2022年相片 */}
-          <Popover className="relative" key="2022-popover">
+          <Popover className="relative">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2022(open)}
                 onMouseLeave={() => handleLeave_2022(open)}
-                key="2022"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -429,12 +425,11 @@ export default function SideNav() {
 
           {/* end of the 2022年相片 */}
           {/* start of the 2023年相片 */}
-          <Popover className="relative" key="2023-popover">
+          <Popover className="relative">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2023(open)}
                 onMouseLeave={() => handleLeave_2023(open)}
-                key="2023"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -473,12 +468,11 @@ export default function SideNav() {
 
           {/* end of the 2023年相片 */}
           {/* start of the 2024年相片 */}
-          <Popover className="relative" key="2024-popover">
+          <Popover className="relative">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2024(open)}
                 onMouseLeave={() => handleLeave_2024(open)}
-                key="2024"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -577,7 +571,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2011.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -600,7 +594,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2012.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -623,7 +617,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2013.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -646,7 +640,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2014.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -669,7 +663,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2015.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -707,7 +701,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2016.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -730,7 +724,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2017.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -753,7 +747,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2018.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -776,7 +770,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2019.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -799,7 +793,7 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2020.map((item) => (
-                            <DisclosureButton key={item.name}>
+                            <DisclosureButton>
                               <Link
                                 key={item.name}
                                 href={item.href}
@@ -827,7 +821,7 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2021.map((item) => (
-                      <DisclosureButton key={item.name}>
+                      <DisclosureButton>
                         <Link
                           key={item.name}
                           href={item.href}
@@ -852,7 +846,7 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2021.map((item) => (
-                      <DisclosureButton key={item.name}>
+                      <DisclosureButton>
                         <Link
                           key={item.name}
                           href={item.href}
@@ -877,7 +871,7 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2023.map((item) => (
-                      <DisclosureButton key={item.name}>
+                      <DisclosureButton>
                         <Link
                           key={item.name}
                           href={item.href}
@@ -902,7 +896,7 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2024.map((item) => (
-                      <DisclosureButton key={item.name}>
+                      <DisclosureButton>
                         <Link
                           key={item.name}
                           href={item.href}
@@ -943,7 +937,6 @@ export function PopMenu({ linkItem }: { linkItem: any }) {
 
   return (
     <div
-      key={linkItem.name}
       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
     >
       <div className="flex-auto">
@@ -966,7 +959,6 @@ export function MultiPopMenu({ linkItem }: { linkItem: any }) {
 
   return (
     <div
-      key={linkItem.name}
       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
     >
       <div className="flex-auto">
