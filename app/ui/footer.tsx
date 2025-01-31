@@ -17,7 +17,7 @@ export default function FooterComponent() {
                   alt="屯門前鋒會 幼鋒會 | 基督復臨安息日會屯門教會"
                 />
                 
-                <span className="self-center text-xs whitespace-nowrap dark:text-white">
+                <span className="self-center text-xs whitespace-nowrap">
                 屯門前鋒會 幼鋒會 | 基督復臨安息日會屯門教會
                 </span>
               </a>
