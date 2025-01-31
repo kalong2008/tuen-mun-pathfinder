@@ -1,10 +1,8 @@
 export const activityDateDetail = [
     { date: "72024", datedetail: "720241", name: "7月06日：集會", date_format: new Date("2024-07-06") },
-    { date: "72024", datedetail: "720241", name: "7月06日：集會", date_format: new Date("2024-07-06") },
     { date: "72024", datedetail: "720242", name: "7月13日：集會", date_format: new Date("2024-07-13") },
     { date: "72024", datedetail: "720243", name: "7月20日：集會", date_format: new Date("2024-07-20") },
     { date: "72024", datedetail: "720244", name: "7月27日：集會", date_format: new Date("2024-07-27") },
-    { date: "72024", datedetail: "720241", name: "7月06日：集會", date_format: new Date("2024-07-06") },
   
     { date: "82024", datedetail: "820241", name: "ee", date_format: new Date("2024-08-03") },
     { date: "82024", datedetail: "820242", name: "ff", date_format: new Date("2024-08-10") },

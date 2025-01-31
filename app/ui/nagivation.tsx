@@ -46,7 +46,7 @@ export default function SideNav() {
   const triggerRef_2022 = useRef<HTMLButtonElement>(null);
   const triggerRef_2023 = useRef<HTMLButtonElement>(null);
   const triggerRef_2024 = useRef<HTMLButtonElement>(null);
-  const timeOutRef = useRef<NodeJS.Timeout>();
+  const timeOutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleEnter_2011 = (isOpen: boolean) => {
     if (timeOutRef.current) {
@@ -177,13 +177,14 @@ export default function SideNav() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-6 lg:pl-6">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-6 lg:pl-6" key="nav-popover-group">
           {/* start of the 2011-2015年相片 */}
-          <Popover className="relative">
+          <Popover className="relative" key="2011-2015-popover">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2011(open)}
                 onMouseLeave={() => handleLeave_2011(open)}
+                key="2011-2015"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -215,7 +216,7 @@ export default function SideNav() {
                           2011年
                         </p>
                         {hyperLink2011.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -223,7 +224,7 @@ export default function SideNav() {
                           2012年
                         </p>
                         {hyperLink2012.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -231,7 +232,7 @@ export default function SideNav() {
                           2013年
                         </p>
                         {hyperLink2013.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -239,7 +240,7 @@ export default function SideNav() {
                           2014年
                         </p>
                         {hyperLink2014.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -247,7 +248,7 @@ export default function SideNav() {
                           2015年
                         </p>
                         {hyperLink2015.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                     </div>
@@ -259,11 +260,12 @@ export default function SideNav() {
 
           {/* end of the 2011-2015年相片 */}
           {/* start of the 2016-2020年相片 */}
-          <Popover className="relative">
+          <Popover className="relative" key="2016-2020-popover">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2016(open)}
                 onMouseLeave={() => handleLeave_2016(open)}
+                key="2016-2020"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -295,7 +297,7 @@ export default function SideNav() {
                           2016年
                         </p>
                         {hyperLink2016.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -303,7 +305,7 @@ export default function SideNav() {
                           2017年
                         </p>
                         {hyperLink2017.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -311,7 +313,7 @@ export default function SideNav() {
                           2018年
                         </p>
                         {hyperLink2018.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -319,7 +321,7 @@ export default function SideNav() {
                           2019年
                         </p>
                         {hyperLink2019.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                       <div className="p-1">
@@ -327,7 +329,7 @@ export default function SideNav() {
                           2020年
                         </p>
                         {hyperLink2020.map((item) => (
-                          <PopMenu linkItem={item} />
+                          <PopMenu linkItem={item} key={item.name} />
                         ))}
                       </div>
                     </div>
@@ -339,11 +341,12 @@ export default function SideNav() {
 
           {/* end of the 2016-2020年相片 */}
           {/* start of the 2021年相片 */}
-          <Popover className="relative">
+          <Popover className="relative" key="2021-popover">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2021(open)}
                 onMouseLeave={() => handleLeave_2021(open)}
+                key="2021"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -371,7 +374,7 @@ export default function SideNav() {
                   >
                     <div className="p-1">
                       {hyperLink2021.map((item) => (
-                        <PopMenu linkItem={item} />
+                        <PopMenu linkItem={item} key={item.name} />
                       ))}
                     </div>
                   </PopoverPanel>
@@ -382,11 +385,12 @@ export default function SideNav() {
 
           {/* end of the 2021年相片 */}
           {/* start of the 2022年相片 */}
-          <Popover className="relative">
+          <Popover className="relative" key="2022-popover">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2022(open)}
                 onMouseLeave={() => handleLeave_2022(open)}
+                key="2022"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -414,7 +418,7 @@ export default function SideNav() {
                   >
                     <div className="p-1">
                       {hyperLink2022.map((item) => (
-                        <PopMenu linkItem={item} />
+                        <PopMenu linkItem={item} key={item.name} />
                       ))}
                     </div>
                   </PopoverPanel>
@@ -425,11 +429,12 @@ export default function SideNav() {
 
           {/* end of the 2022年相片 */}
           {/* start of the 2023年相片 */}
-          <Popover className="relative">
+          <Popover className="relative" key="2023-popover">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2023(open)}
                 onMouseLeave={() => handleLeave_2023(open)}
+                key="2023"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -457,7 +462,7 @@ export default function SideNav() {
                   >
                     <div className="p-1">
                       {hyperLink2023.map((item) => (
-                        <PopMenu linkItem={item} />
+                        <PopMenu linkItem={item} key={item.name} />
                       ))}
                     </div>
                   </PopoverPanel>
@@ -468,11 +473,12 @@ export default function SideNav() {
 
           {/* end of the 2023年相片 */}
           {/* start of the 2024年相片 */}
-          <Popover className="relative">
+          <Popover className="relative" key="2024-popover">
             {({ open }) => (
               <div
                 onMouseEnter={() => handleEnter_2024(open)}
                 onMouseLeave={() => handleLeave_2024(open)}
+                key="2024"
               >
                 <PopoverButton
                   className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
@@ -500,7 +506,7 @@ export default function SideNav() {
                   >
                     <div className="p-1">
                       {hyperLink2024.map((item) => (
-                        <PopMenu linkItem={item} />
+                        <PopMenu linkItem={item} key={item.name} />
                       ))}
                     </div>
                   </PopoverPanel>
