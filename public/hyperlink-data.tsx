@@ -421,6 +421,18 @@ export const hyperLink2011 = [
       name: "2023年08月烹飪",
       href: "/2023-08-cooking",
     },
+    {
+      name: "2023年08月升級禮",
+      href: "/2023-08-promotion",
+    },
+    {
+      name: "2023年09月宿營",
+      href: "/2023-09-camp",
+    },
+    {
+      name: "2023年12月露營",
+      href: "/2023-12-camp",
+    },
   ];
 
   export const hyperLink2024 = [
