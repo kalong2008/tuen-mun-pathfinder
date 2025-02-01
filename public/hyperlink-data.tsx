@@ -437,8 +437,32 @@ export const hyperLink2011 = [
 
   export const hyperLink2024 = [
     {
-      name: "Nil",
-      href: "/#",
+      name: "2024年05月幼鋒會日",
+      href: "/2024-05-adventurer-day",
+    },
+    {
+      name: "2024年06月升級營",
+      href: "/2024-06-promotion-camp",
+    },
+    {
+      name: "2024年09月升級禮",
+      href: "/2024-09-promotion",
+    },
+    {
+      name: "2024年09月菠蘿園",
+      href: "/2024-09-visit-pineapple",
+    },
+    {
+      name: "2024年10月露營",
+      href: "/2024-10-camp",
+    },
+    {
+      name: "2024年11月野外生火",
+      href: "/2024-11-cooking",
+    },
+    {
+      name: "2024年11月行山",
+      href: "/2024-11-hiking",
     },
   ];
 
