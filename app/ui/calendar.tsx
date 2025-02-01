@@ -116,7 +116,8 @@ export default function MyCalendar() {
 
   return (
     <div className="flex flex-col-reverse sm:flex-row w-4/5 m-auto justify-between gap-y-[10px] pb-4">
-      <div className="pt-0">
+      <div className="pt-0 w-full flex justify-center">
+        <div>
         {activityDateDetail.map((activity) => (
           <p
             key={activity.name}
@@ -127,6 +128,8 @@ export default function MyCalendar() {
           </p>
         ))}
       </div>
+      </div>
+      <div className="w-full flex justify-center">
       <Calendar
         onChange={onChange}
         value={value}
@@ -187,6 +190,7 @@ export default function MyCalendar() {
           }
         }}
       />
+      </div>
       
     </div>
   );
