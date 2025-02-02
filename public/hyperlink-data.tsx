@@ -457,12 +457,24 @@ export const hyperLink2011 = [
       href: "/2024-10-camp",
     },
     {
+      name: "2024年10月聯合步操訓練",
+      href: "/2024-10-drilling-training",
+    },
+    {
       name: "2024年11月野外生火",
       href: "/2024-11-cooking",
     },
     {
       name: "2024年11月行山",
       href: "/2024-11-hiking",
+    },
+    {
+      name: "2024年12月聯合步操訓練",
+      href: "/2024-12-drilling-training",
+    },
+    {
+      name: "2024年12月露營",
+      href: "/2024-12-camp",
     },
   ];
 
