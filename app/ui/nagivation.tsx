@@ -32,7 +32,7 @@ import {
   hyperLink2022,
   hyperLink2023,
   hyperLink2024,
-  hyperLinkOther,
+  //hyperLinkOther,
 } from "@/public/hyperlink-data";
 
 const timeoutDuration = 120;
@@ -511,11 +511,11 @@ export default function SideNav() {
 
           {/* end of the 2024年相片 */}
           {/* start of other */}
-          {hyperLinkOther.map((link) => (
+          {/*{hyperLinkOther.map((link) => (
             <Link href={link.href} className="text-sm leading-6 text-gray-900">
               {link.name}
             </Link>
-          ))}
+          ))}*/}
           {/* end of other */}
         </PopoverGroup>
       </nav>
@@ -911,7 +911,7 @@ export default function SideNav() {
                 </Disclosure>
                 {/* end of the 2024年相片 */}
                 {/* start of other */}
-                {hyperLinkOther.map((link) => (
+                {/*{hyperLinkOther.map((link) => (
                   <Link
                     key={link.name}
                     href={link.href}
@@ -920,7 +920,7 @@ export default function SideNav() {
                   >
                     {link.name}
                   </Link>
-                ))}
+                ))}*/}
                 {/* end of other */}
               </div>
             </div>

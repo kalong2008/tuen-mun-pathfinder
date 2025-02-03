@@ -445,6 +445,10 @@ export const hyperLink2011 = [
       href: "/2024-06-promotion-camp",
     },
     {
+      name: "2024年07月國際金波利利",
+      href: "/2024-07-international-camporee",
+    },
+    {
       name: "2024年09月升級禮",
       href: "/2024-09-promotion",
     },
