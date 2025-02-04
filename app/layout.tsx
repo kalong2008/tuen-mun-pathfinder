@@ -19,6 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-W2DGN4G" />
       <body className={notoHK.className}>
         <div><SideNav />{children}</div>
         <FooterComponent />
