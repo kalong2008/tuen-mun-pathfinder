@@ -494,9 +494,16 @@ export const hyperLink2011 = [
     },
   ];
 
+  export const hyperLink2025 = [
+    {
+      name: "2025年02月行山",
+      href: "/2025-02-hiking",
+    }
+  ];
+
   export const hyperLinkOther = [
     {
-      name: "2024年07月國際金波利",
-      href: "/2024-07-international-camporee",
+      name: "通告",
+      href: "/notice",
     },
   ];
