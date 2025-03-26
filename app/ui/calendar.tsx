@@ -131,7 +131,7 @@ export default function MyCalendar() {
             ) : (
               <Link
                 key={activity.name}
-                href={activity.link ?? "#"}
+                href="/notice"
                 style={{ display: yearMonth === activity.date ? "" : "none" }}
                 className="py-2 block underline"
               >

@@ -496,8 +496,20 @@ export const hyperLink2011 = [
 
   export const hyperLink2025 = [
     {
+      name: "2025年例會",
+      href: "/2025-regular",
+    },
+    {
       name: "2025年02月行山",
       href: "/2025-02-hiking",
+    },
+    {
+      name: "2025年02月步操訓練",
+      href: "/2025-02-drilling-training",
+    },
+    {
+      name: "2025年03月塱原自然生態公園",
+      href: "/2025-03-wetland",
     }
   ];
 
