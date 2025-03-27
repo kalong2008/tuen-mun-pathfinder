@@ -3,6 +3,8 @@ import { Noto_Sans_HK } from "next/font/google";
 import "./globals.css";
 import SideNav from "@/app/ui/nagivation";
 import FooterComponent from "./ui/footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 import { GoogleTagManager } from '@next/third-parties/google'
 
 const notoHK = Noto_Sans_HK({ preload: false, });
@@ -21,7 +23,9 @@ export default function RootLayout({
     <html lang="en">
       <GoogleTagManager gtmId="GTM-W2DGN4G" />
       <body className={notoHK.className}>
-        <div><SideNav />{children}</div>
+        <div><SideNav />{children}
+        <SpeedInsights/>
+        <Analytics/></div>
         <FooterComponent />
       </body>
     </html>
