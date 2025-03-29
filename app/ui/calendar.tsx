@@ -115,11 +115,21 @@ export default function MyCalendar() {
     }
   }
 
+  const uniqueDataMap = new Map();
+  activityDateDetail.forEach(item => {
+    if (!uniqueDataMap.has(item.datedetail)) {
+        uniqueDataMap.set(item.datedetail, item);
+    }
+});
+
+  // Convert the Map values back to an array.
+  const uniqueDataArray = Array.from(uniqueDataMap.values());
+
   return (
     <div className="flex flex-col-reverse sm:flex-row w-4/5 m-auto justify-between gap-y-[10px] pb-4">
       <div className="pt-0 w-full flex justify-center">
         <div>
-          {activityDateDetail.map((activity) =>
+          {uniqueDataArray.map((activity) =>
             activity.name.includes("集會") ? (
               <p
                 key={activity.name}
@@ -148,6 +158,13 @@ export default function MyCalendar() {
           calendarType="gregory"
           className="flex flex-col items-center lg:m-0" //{notoHK.className}
           tileClassName={tileClassName}
+          formatDay={
+            (locale, date) => new Intl.DateTimeFormat(
+              "en-US", 
+              {
+                day: "numeric"
+              }).format(date)
+            }
           onActiveStartDateChange={({ action }) => {
             if (action == "next") {
               handleMonthChange(1);
