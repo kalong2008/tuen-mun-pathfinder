@@ -576,7 +576,7 @@ export default function SideNav() {
 
           {/* start of other */}
           {hyperLinkOther.map((link) => (
-            <Link href={link.href} className="text-sm leading-6 text-gray-900">
+            <Link key={link.name} href={link.href} className="text-sm leading-6 text-gray-900">
               {link.name}
             </Link>
           ))}
@@ -635,9 +635,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2011.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -658,9 +657,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2012.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -681,9 +679,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2013.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -704,9 +701,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2014.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -727,9 +723,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2015.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -765,9 +760,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2016.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -788,9 +782,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2017.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -811,9 +804,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2018.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -834,9 +826,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2019.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -857,9 +848,8 @@ export default function SideNav() {
                         </DisclosureButton>
                         <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                           {hyperLink2020.map((item) => (
-                            <DisclosureButton>
+                            <DisclosureButton key={item.name}>
                               <Link
-                                key={item.name}
                                 href={item.href}
                                 className="mx-3 rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
@@ -885,9 +875,8 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2021.map((item) => (
-                      <DisclosureButton>
+                      <DisclosureButton key={item.name}>
                         <Link
-                          key={item.name}
                           href={item.href}
                           className="rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                           onClick={() => setMobileMenuOpen(false)}
@@ -910,9 +899,8 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2021.map((item) => (
-                      <DisclosureButton>
+                      <DisclosureButton key={item.name}>
                         <Link
-                          key={item.name}
                           href={item.href}
                           className="rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                           onClick={() => setMobileMenuOpen(false)}
@@ -935,9 +923,8 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2023.map((item) => (
-                      <DisclosureButton>
+                      <DisclosureButton key={item.name}>
                         <Link
-                          key={item.name}
                           href={item.href}
                           className="rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                           onClick={() => setMobileMenuOpen(false)}
@@ -960,9 +947,8 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2024.map((item) => (
-                      <DisclosureButton>
+                      <DisclosureButton key={item.name}>
                         <Link
-                          key={item.name}
                           href={item.href}
                           className="rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                           onClick={() => setMobileMenuOpen(false)}
@@ -986,9 +972,8 @@ export default function SideNav() {
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
                     {hyperLink2025.map((item) => (
-                      <DisclosureButton>
+                      <DisclosureButton key={item.name}>
                         <Link
-                          key={item.name}
                           href={item.href}
                           className="rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
                           onClick={() => setMobileMenuOpen(false)}
