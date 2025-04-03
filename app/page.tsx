@@ -51,20 +51,20 @@ export default function Home() {
           >
             <div className="shadow-lg rounded-lg overflow-hidden md:order-2">
               <Image
-                src="/photo/2024/2024-09-promotion/2024-09-promotion-87.jpeg"
+                src="/photo/2024/2024-09-visit-pineapple/2024-09-visit-pineapple-7.jpeg"
                 alt="幼鋒會活動"
-                width={600}
-                height={400}
-                className="w-full h-64 object-cover"
+                width={4000}
+                height={2667}
+                className="w-full h-full object-cover"
               />
             </div>
             <div className="md:order-1">
               <p className="text-lg mb-4 text-gray-700">
-                全球超過一百萬的孩子發現了為他們創建的最有趣的俱樂部之一。
-                幼鋒會旨在為 4-9 歲的兒童加強親子關係。
+              幼鋒會旨在幫助 6-9 歲的兒童成長，讓他們能在沒有父母在場的情況下，學習如何與其他小朋友相處，並能夠學到如何照顧自己。
+                
               </p>
               <p className="text-lg text-gray-700">
-                幼鋒會提供專為這個年齡段的心理需求而設計的每週活動，同時為父母提供學習育兒技能和與孩子一起享受特別活動的機會。
+                幼鋒會每星期提供專為這個年齡段的需求而設計的活動，同時每個月會有不同的主題，讓小朋友可以學習到不同的知識。
               </p>
             </div>
           </motion.div>
@@ -80,22 +80,21 @@ export default function Home() {
               <FaChurch className="text-4xl mx-auto mb-4 text-[#123458]" />
               <h3 className="text-xl font-semibold mb-2 text-[#123458]">理念</h3>
               <p className="text-gray-700">
-                基督復臨安息日會教會贊助的事工，教會、家庭和學校共同幫助兒童在上帝和人的智慧和身量上喜樂地成長。
+                基督復臨安息日會教會贊助的事工，幫助兒童在能夠快樂地成長、培養良好的品格。
               </p>
             </div>
             <div className="p-6 border border-[#70859a] rounded-lg shadow-md hover:shadow-lg transition bg-white/80">
               <FaChild className="text-4xl mx-auto mb-4 text-[#123458]" />
               <h3 className="text-xl font-semibold mb-2 text-[#123458]">目標</h3>
               <p className="text-gray-700">
-                培養基督般的品格，表達對耶穌的愛，學習良好的體育精神，
-                探索上帝的世界，提高對家庭力量的理解。
+              旨在培養基督般的品格與愛，養成獨立自主、堅韌自信、懂得感恩，能面對挑戰並獨立生活。
               </p>
             </div>
             <div className="p-6 border border-[#70859a] rounded-lg shadow-md hover:shadow-lg transition bg-white/80">
               <FaBook className="text-4xl mx-auto mb-4 text-[#123458]" />
               <h3 className="text-xl font-semibold mb-2 text-[#123458]">課程</h3>
               <p className="text-gray-700">
-                幼鋒會課程分為幾個級別：小羊班、早鳥班、忙碌蜜蜂班、太陽光芒班、建設者班和助人之手班，每個級別都針對特定年齡組設計。
+                幼鋒會課程分為4個級別：勤蜂、陽光、工匠和援手，每個級別都針對特定年齡組設計。
               </p>
             </div>
           </motion.div>
@@ -121,23 +120,22 @@ export default function Home() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <div>
+            <div className="shadow-lg rounded-lg overflow-hidden md:order-1">
+              <Image
+                src="/photo/2024/2024-12-drilling-training/2024-12-drilling-training-1.jpeg"
+                alt="前鋒會活動"
+                width={4000}
+                height={2667}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="md:order-2">
               <p className="text-lg mb-4 text-gray-700">
-                對於那些熟悉它的人來說，「前鋒會」讓人聯想到行軍、露營、好奇的愛好、昆蟲和蝙蝠。
-                擴闊世界視野並與上帝建立關係是這個專為 10-15 歲兒童設計的俱樂部的雙重目標。
+              「前鋒會」不僅意味著行軍、露營和自然研究等探索，這個為10至15歲青少年成立的團體，更致力於達成雙重目標：開闊他們的世界視野，並幫助他們建立與上帝的關係。
               </p>
               <p className="text-lg text-gray-700">
-                全球有近 200 萬會員，這個由基督復臨安息日會教會贊助的俱樂部接受任何承諾遵守前鋒會誓詞和規則的青少年，無論其教會隸屬關係如何。
+                全球有近 200 萬會員，這個由基督復臨安息日會教會贊助的活動，接受任何願意學習並挑戰自己的青少年。
               </p>
-            </div>
-            <div className="shadow-lg rounded-lg overflow-hidden">
-              <Image
-                src="/photo/2024/2024-09-promotion/2024-09-promotion-87.jpeg"
-                alt="前鋒會活動"
-                width={600}
-                height={400}
-                className="w-full h-64 object-cover"
-              />
             </div>
           </motion.div>
 
@@ -150,24 +148,23 @@ export default function Home() {
           >
             <div className="p-6 border border-[#76948b] rounded-lg shadow-md hover:shadow-lg transition bg-white/80">
               <FaUserFriends className="text-4xl mx-auto mb-4 text-[#1B4D3E]" />
-              <h3 className="text-xl font-semibold mb-2 text-[#1B4D3E]">領導力</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#1B4D3E]">領䄂</h3>
               <p className="text-gray-700">
-                我們的義工領袖是耶穌基督的堅定信徒，他們將前鋒會視為成長和學習與樂趣同義的實驗室。
+                我們所有導師都是義工領袖，他們都是忠心的基督徒，他們都將帶領前鋒會視為生命中的使命。
               </p>
             </div>
             <div className="p-6 border border-[#76948b] rounded-lg shadow-md hover:shadow-lg transition bg-white/80">
               <FaHiking className="text-4xl mx-auto mb-4 text-[#1B4D3E]" />
               <h3 className="text-xl font-semibold mb-2 text-[#1B4D3E]">活動</h3>
               <p className="text-gray-700">
-                從社區服務項目到自然研究，再到露營和冒險旅行，
-                前鋒會挑戰每位會員的獨特才能。
+              前鋒會透過社區服務、自然研究、露營等多樣化活動，挑戰並激發每位會員的獨特潛能與天賦。
               </p>
             </div>
             <div className="p-6 border border-[#76948b] rounded-lg shadow-md hover:shadow-lg transition bg-white/80">
               <FaBook className="text-4xl mx-auto mb-4 text-[#1B4D3E]" />
-              <h3 className="text-xl font-semibold mb-2 text-[#1B4D3E]">成就班級</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#1B4D3E]">班級</h3>
               <p className="text-gray-700">
-                建立在六個級別的年齡特定課程上，並有約 350 個涵蓋藝術、自然、精神發展等專業技能發展主題。
+                建立在六個級別的課程上，並有約 350 個涵蓋藝術、自然、個人成長等專業技能發展主題。
               </p>
             </div>
           </motion.div>
@@ -185,10 +182,10 @@ export default function Home() {
           >
             <h2 className="text-3xl font-bold mb-4">今天就加入我們！</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              我們歡迎所有兒童加入我們的前鋒會和幼鋒會，一起學習、成長，並在與上帝建立關係的同時享受樂趣。
+              我們歡迎所有兒童及青少年加入我們的幼鋒會及前鋒會，一起學習、成長，並在與上帝建立關係的同時享受樂趣。
             </p>
             <a 
-              href="https://wa.me/85265721493" 
+              href="https://wa.me/85265721493?text=我想查詢有關幼鋒會及前鋒會的資料。" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block"
