@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useRef, useState, useEffect } from "react";
 import {
   Dialog,
   DialogPanel,
@@ -17,6 +17,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import {
   hyperLink2011,
   hyperLink2012,
@@ -40,6 +41,20 @@ const timeoutDuration = 120;
 
 export default function SideNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const { scrollY } = useScroll();
+  const lastScrollY = useRef(0);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
+    if (previous !== undefined) {
+      if (latest > previous && latest > 50) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    }
+  });
 
   const triggerRef_2011 = useRef<HTMLButtonElement>(null);
   const triggerRef_2016 = useRef<HTMLButtonElement>(null);
@@ -170,8 +185,12 @@ export default function SideNav() {
   };
 
   return (
-    <header>
-      {/* start of the top header */}
+    <motion.header
+      className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md"
+      initial={{ y: 0 }}
+      animate={{ y: isVisible ? 0 : -100 }}
+      transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
+    >
       <nav
         aria-label="Global"
         className="mx-auto lg:w-4/5 flex items-center lg:justify-start justify-between p-4 lg:px-0"
@@ -583,7 +602,6 @@ export default function SideNav() {
           {/* end of other */}
         </PopoverGroup>
       </nav>
-      {/* end of the top header */}
       {/* start of the burger menu */}
       <Dialog
         open={mobileMenuOpen}
@@ -1004,7 +1022,7 @@ export default function SideNav() {
         </DialogPanel>
       </Dialog>
       {/* end of the burger menu */}
-    </header>
+    </motion.header>
   );
 }
 
