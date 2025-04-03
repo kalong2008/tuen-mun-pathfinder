@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <motion.div
-        className="w-full m-auto"
+        className="w-full m-auto pt-[64px]"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

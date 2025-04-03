@@ -4,7 +4,7 @@ import * as motion from "motion/react-client";
 export default function Page() {
 
   return (
-    <div className="w-4/5 m-auto pb-14">
+    <div className="w-4/5 m-auto pb-14 pt-[64px]">
       <motion.h1 className="md:text-3xl font-bold leading-6 text-gray-900 text-center md:py-10 text-xl py-4" initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{

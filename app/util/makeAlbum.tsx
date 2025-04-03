@@ -17,7 +17,7 @@ import * as motion from "motion/react-client";
 export default function AlbumComponent({photo, title}:{photo: any, title: string}) {
   const [index, setIndex] = useState(-1);
   return (
-    <div className="w-4/5 m-auto pb-14">
+    <div className="w-4/5 m-auto pb-14 pt-[64px]">
       <motion.p
         className="md:text-3xl font-bold leading-6 text-gray-900 text-center md:py-10 text-xl py-4"
         initial={{ opacity: 0, y: 50 }}
