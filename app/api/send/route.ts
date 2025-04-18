@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     const data = await resend.emails.send({
       from: `屯門前鋒會及幼鋒會 <${process.env.CONTACT_EMAIL_FROM}>`,
       to: [email],
-      bcc: [process.env.CONTACT_EMAIL_BCC!],
+      bcc: [process.env.CONTACT_EMAIL_BCC!, "long_chan05@yahoo.com.hk"],
       subject: `感謝您對屯門前鋒會及幼鋒會的查詢 - ${name}`,
       replyTo: [process.env.CONTACT_EMAIL_BCC!],
       react: EmailTemplate({ name, message }),
