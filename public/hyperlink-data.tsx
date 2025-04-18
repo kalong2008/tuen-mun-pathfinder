@@ -522,4 +522,8 @@ export const hyperLink2011 = [
       name: "通告",
       href: "/notice",
     },
+    {
+      name: "聯絡我們",
+      href: "/contact",
+    },
   ];
