@@ -9,7 +9,7 @@ export default function FooterComponent() {
           <div className="flex justify-between flex-row">
             <div>
               <Link
-                href="/#"
+                href="/"
                 className="sm:mb-0 rtl:space-x-reverse flex"
               >
                 <img

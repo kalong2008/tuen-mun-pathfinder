@@ -196,7 +196,7 @@ export default function SideNav() {
         className="mx-auto lg:w-4/5 flex items-center lg:justify-start justify-between p-4 lg:px-0"
       >
         <div className="flex lg:flex-none">
-          <Link href="/#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Tuen Mun Pathfinder</span>
             <img
               alt=""
@@ -612,8 +612,8 @@ export default function SideNav() {
         <div className="fixed inset-0 z-10" />
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-neutral-100 p-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <Link href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Tuen Mun Pathfinder</span>
               <img
                 alt=""
                 src="/pathfinder-adventurer.png"
