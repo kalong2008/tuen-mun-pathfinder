@@ -15,7 +15,7 @@ export const activityDateDetail = [
 
     { date: "52025", datedetail: "520251", name: "5月03日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-05-03") },
     { date: "52025", datedetail: "520252", name: "5月10日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-05-10") },
-    { date: "52025", datedetail: "520253", name: "5月17日:集會（前鋒會）", date_format: new Date("2025-05-17") },
+    { date: "52025", datedetail: "520253", name: "5月17日：集會（前鋒會）", date_format: new Date("2025-05-17") },
     { date: "52025", datedetail: "520254", name: "5月18日：參觀樹屋田莊（幼鋒會）", date_format: new Date("2025-05-18") },
     { date: "52025", datedetail: "520255", name: "5月24日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-05-24") },
     { date: "52025", datedetail: "520256", name: "5月31日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-05-31") },
