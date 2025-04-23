@@ -516,6 +516,10 @@ export const hyperLink2011 = [
       href: "/2025-03-global-youth-day",
     },
     {
+      name: "2025年04月露營",
+      href: "/2025-04-camp",
+    },
+    {
       name: "2025年04月合味道博物館",
       href: "/2025-04-cupnoodles-museum",
     }
