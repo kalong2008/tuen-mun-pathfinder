@@ -1,7 +1,178 @@
+//'use client'
+
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import { FaChurch, FaUserFriends, FaHiking, FaBook, FaChild } from "react-icons/fa";
-import MyCalendar from "@/app/ui/calendar";
+import MyCalendar from "@/app/ui/calendar"; 
+//import { useState, useEffect } from 'react'
+//import { subscribeUser, unsubscribeUser } from '@/app/actions'
+ 
+// Commenting out notification-related functions for future use
+/*
+function urlBase64ToUint8Array(base64String: string) {
+  const padding = '='.repeat((4 - (base64String.length % 4)) % 4)
+  const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/')
+ 
+  const rawData = window.atob(base64)
+  const outputArray = new Uint8Array(rawData.length)
+ 
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i)
+  }
+  return outputArray
+}
+
+function PushNotificationManager() {
+  const [isSupported, setIsSupported] = useState(false)
+  const [subscription, setSubscription] = useState<PushSubscription | null>(null)
+  const [permissionStatus, setPermissionStatus] = useState<NotificationPermission>('default')
+  const [showPopup, setShowPopup] = useState(false)
+  const [isPWA, setIsPWA] = useState(false)
+ 
+  useEffect(() => {
+    // Check if running in PWA mode
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || 
+                        (window.navigator as any).standalone || 
+                        document.referrer.includes('android-app://');
+    setIsPWA(isStandalone);
+
+    if ('serviceWorker' in navigator && 'PushManager' in window) {
+      setIsSupported(true)
+      const permission = Notification.permission
+      setPermissionStatus(permission)
+      
+      // Show popup if permission is default (not yet asked) and in PWA mode
+      if (permission === 'default' && isStandalone) {
+        setShowPopup(true)
+      }
+      
+      registerServiceWorker()
+    }
+  }, [])
+ 
+  async function registerServiceWorker() {
+    try {
+      const registration = await navigator.serviceWorker.register('/sw.js', {
+        scope: '/',
+        updateViaCache: 'none',
+      })
+      const sub = await registration.pushManager.getSubscription()
+      setSubscription(sub)
+    } catch (error) {
+      console.error('Service Worker registration failed:', error)
+    }
+  }
+ 
+  async function subscribeToPush() {
+    try {
+      const permission = await Notification.requestPermission()
+      setPermissionStatus(permission)
+      setShowPopup(false) // Hide popup after user makes a choice
+      
+      if (permission !== 'granted') {
+        throw new Error('Permission denied')
+      }
+
+      const registration = await navigator.serviceWorker.ready
+      const sub = await registration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: urlBase64ToUint8Array(
+          process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!
+        ),
+      })
+      setSubscription(sub)
+      const serializedSub = JSON.parse(JSON.stringify(sub))
+      await subscribeUser(serializedSub)
+    } catch (error) {
+      console.error('Error subscribing to push notifications:', error)
+    }
+  }
+ 
+  async function unsubscribeFromPush() {
+    try {
+      await subscription?.unsubscribe()
+      setSubscription(null)
+      if (subscription) {
+        const serializedSub = JSON.parse(JSON.stringify(subscription))
+        await unsubscribeUser(serializedSub)
+      }
+    } catch (error) {
+      console.error('Error unsubscribing from push notifications:', error)
+    }
+  }
+ 
+  if (!isSupported) {
+    return null; // Don't show anything if not supported
+  }
+
+  if (!isPWA) {
+    return null; // Don't show anything if not in PWA mode
+  }
+
+  if (permissionStatus === 'denied') {
+    return (
+      <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+        <p className="text-yellow-800">
+          Push notifications are blocked. Please enable them in your browser settings to receive updates.
+        </p>
+      </div>
+    )
+  }
+ 
+  return (
+    <>
+      {showPopup && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-xl max-w-md mx-4">
+            <h3 className="text-lg font-semibold mb-4">Enable Push Notifications</h3>
+            <p className="text-gray-600 mb-4">
+              Would you like to receive notifications about upcoming events and activities?
+            </p>
+            <div className="flex justify-end space-x-4">
+              <button
+                onClick={() => setShowPopup(false)}
+                className="px-4 py-2 text-gray-600 hover:bg-gray-100 rounded"
+              >
+                Maybe Later
+              </button>
+              <button
+                onClick={subscribeToPush}
+                className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+              >
+                Enable Notifications
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+        <h3 className="text-lg font-semibold mb-2">Push Notifications</h3>
+        {subscription ? (
+          <>
+            <p className="text-gray-700 mb-2">You are subscribed to push notifications.</p>
+            <button 
+              onClick={unsubscribeFromPush}
+              className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition"
+            >
+              Unsubscribe
+            </button>
+          </>
+        ) : (
+          <>
+            <p className="text-gray-700 mb-2">You are not subscribed to push notifications.</p>
+            <button 
+              onClick={subscribeToPush}
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+            >
+              Subscribe
+            </button>
+          </>
+        )}
+      </div>
+    </>
+  )
+}
+*/
 
 export default function Home() {
   return (
