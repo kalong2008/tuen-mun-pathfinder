@@ -1,9 +1,10 @@
-//'use client'
+'use client'
 
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import { FaChurch, FaUserFriends, FaHiking, FaBook, FaChild } from "react-icons/fa";
-import MyCalendar from "@/app/ui/calendar"; 
+import MyCalendar from "@/app/ui/calendar";
+import VersePopup from "@/app/ui/VersePopup";
 //import { useState, useEffect } from 'react'
 //import { subscribeUser, unsubscribeUser } from '@/app/actions'
  
@@ -177,6 +178,7 @@ function PushNotificationManager() {
 export default function Home() {
   return (
     <>
+      <VersePopup />
       <motion.div
         className="w-full m-auto pt-[64px]"
         initial={{ opacity: 0, y: 50 }}

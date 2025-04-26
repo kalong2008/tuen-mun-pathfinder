@@ -49,9 +49,9 @@ export default function RootLayout({
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
-            delay: 0.4,
-            duration: 1,
-            scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+            //delay: 0.4,
+            duration: 0.2,
+            scale: { type: "spring", visualDuration: 0.2, bounce: 0.2 },
           }}
         >
           <div><SideNav />{children}
