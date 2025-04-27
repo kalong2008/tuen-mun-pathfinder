@@ -3,6 +3,10 @@ import * as cheerio from "cheerio";
 import sharp from "sharp";
 import { put } from "@vercel/blob";
 import { neon } from "@neondatabase/serverless";
+import { Resend } from 'resend';
+import VerseUpdateEmail from '@/app/util/VerseUpdateEmail';
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function GET(request: NextRequest) {
   const sql = neon(process.env.DATABASE_URL!);
@@ -25,13 +29,10 @@ export async function GET(request: NextRequest) {
     if (nextWayEng != null) {
       let jsonEng = JSON.parse(nextWayEng.html() || "");
       const usfm = jsonEng.props.pageProps.verses[0].reference.usfm;
-      const votdDate = jsonEng.props.pageProps.date; // Use date from fetched data
+      const votdDate = jsonEng.props.pageProps.date;
 
-      // Optional: Check if fetched date matches today to avoid inserting old data if scrape changes
       if (votdDate !== today) {
-         console.warn(`Fetched verse date (${votdDate}) does not match today (${today}). Skipping DB insert.`);
-         // Decide how to handle this - maybe return error or just the fetched data without saving?
-         // For now, let's proceed but log a warning.
+         console.warn(`Fetched verse date (${votdDate}) does not match today (${today}). Skipping DB insert and email.`);
       }
 
       const votdChi = await fetch(
@@ -80,7 +81,6 @@ export async function GET(request: NextRequest) {
           }
         }
 
-        // Insert the newly fetched verse into the DB
         const newVerseData = {
            date: votdDate,
            citation: votdChiReference,
@@ -94,12 +94,36 @@ export async function GET(request: NextRequest) {
         try {
           await sql`INSERT INTO verseOfDay (date, citation, version, passage, image, width, height) VALUES (${newVerseData.date}, ${newVerseData.citation}, ${newVerseData.version}, ${newVerseData.passage}, ${newVerseData.image}, ${newVerseData.width}, ${newVerseData.height})`;
           console.log(`Successfully inserted verse for ${votdDate}`);
+
+          // --- Send Email Notification --- 
+          try {
+             await resend.emails.send({
+                from: `屯門前鋒會及幼鋒會 <${process.env.CONTACT_EMAIL_FROM}>`,
+                to: 'long_chan05@yahoo.com.hk',
+                bcc: [process.env.CONTACT_EMAIL_BCC!],
+                subject: `Verse of the Day Updated - ${votdDate}`,
+                react: VerseUpdateEmail({
+                   date: newVerseData.date,
+                   citation: newVerseData.citation,
+                   passage: newVerseData.passage,
+                }),
+             });
+             console.log(`Email notification sent for ${votdDate}`);
+          } catch (emailError) {
+             console.error("Error sending email notification:", emailError);
+          }
+          // --- End Send Email Notification --- 
+
         } catch (dbError) {
            console.error("Error inserting verse into DB:", dbError);
-           // Decide if you still want to return data even if DB insert fails
+           // Return error here maybe? Or just log and return fetched data?
+           return NextResponse.json(
+             { error: "Failed to store fetched verse data" },
+             { status: 500 }
+           );
         }
 
-        return NextResponse.json(newVerseData); // Return the newly fetched data
+        return NextResponse.json(newVerseData);
       }
     }
     return NextResponse.json({ error: "No verse data found after fetching" }, { status: 404 });
