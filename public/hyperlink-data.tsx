@@ -504,7 +504,7 @@ export const hyperLink2011 = [
       href: "/2025-02-hiking",
     },
     {
-      name: "2025年02月步操訓練",
+      name: "2025年02月聯合步操訓練",
       href: "/2025-02-drilling-training",
     },
     {
@@ -524,7 +524,7 @@ export const hyperLink2011 = [
       href: "/2025-04-cupnoodles-museum",
     },
     {
-      name: "2025年04月步操訓練",
+      name: "2025年04月聯合步操訓練",
       href: "/2025-04-drilling-training",
     }
   ];
