@@ -29,8 +29,9 @@ export const activityDateDetail = [
     { date: "72025", datedetail: "720251", name: "7月5-6日：宿營（前鋒會＋幼鋒會）", date_format: new Date("2025-07-05") },
     { date: "72025", datedetail: "720251", name: "7月5-6日：宿營（前鋒會＋幼鋒會）", date_format: new Date("2025-07-06") },
     { date: "72025", datedetail: "720252", name: "7月12日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-07-12") },
-    { date: "72025", datedetail: "720253", name: "7月19日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-07-19") },
-    { date: "72025", datedetail: "720254", name: "7月26日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-07-26") },
+    { date: "72025", datedetail: "720253", name: "7月13日：聯合步操訓練（前鋒會）", date_format: new Date("2025-07-13") },
+    { date: "72025", datedetail: "720254", name: "7月19日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-07-19") },
+    { date: "72025", datedetail: "720255", name: "7月26日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-07-26") },
 
     { date: "82025", datedetail: "820251", name: "8月02日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-08-02") },
     { date: "82025", datedetail: "820252", name: "8月09日：集會（前鋒會＋幼鋒會）", date_format: new Date("2025-08-09") },
