@@ -522,6 +522,10 @@ export const hyperLink2011 = [
     {
       name: "2025年04月合味道博物館",
       href: "/2025-04-cupnoodles-museum",
+    },
+    {
+      name: "2025年04月步操訓練",
+      href: "/2025-04-drilling-training",
     }
   ];
 
