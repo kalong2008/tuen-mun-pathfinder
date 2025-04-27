@@ -16,6 +16,7 @@
     "@next/third-parties": "^15.3.1",
     "@react-email/components": "0.0.36",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/blob": "^1.0.0",
     "@vercel/speed-insights": "^1.2.0",
     "cheerio": "^1.0.0",
     "date-fns": "^4.1.0",
@@ -28,6 +29,7 @@
     "react-icons": "^5.5.0",
     "react-photo-album": "^2.4.1",
     "resend": "^4.3.0",
+    "sharp": "^0.34.1",
     "web-push": "^3.6.7",
     "yet-another-react-lightbox": "^3.22.0"
   },

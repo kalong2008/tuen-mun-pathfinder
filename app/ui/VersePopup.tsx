@@ -7,46 +7,8 @@ interface VerseData {
   passage: string;
   image: string | null;
   version: string;
-}
-
-interface ImageDimensions {
-  width: number;
-  height: number;
-}
-
-function VerseImage({ src }: { src: string }) {
-  const [dimensions, setDimensions] = useState<ImageDimensions | null>(null);
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    const img = new window.Image();
-    img.src = src;
-    img.onload = () => {
-      setDimensions({
-        width: img.naturalWidth,
-        height: img.naturalHeight
-      });
-    };
-    img.onerror = () => setError(true);
-  }, [src]);
-
-  if (error) return null;
-  if (!dimensions) return <div className="w-full h-48 bg-gray-100 animate-pulse rounded-lg" />;
-
-  return (
-    <div 
-      className="relative mb-4"
-    >
-      <Image
-        src={src}
-        alt="Verse of the day"
-        width={dimensions.width}
-        height={dimensions.height}
-        className="object-cover rounded-lg"
-        priority
-      />
-    </div>
-  );
+  width: number | null;
+  height: number | null;
 }
 
 export default function VersePopup() {
@@ -58,11 +20,20 @@ export default function VersePopup() {
     const fetchVerse = async () => {
       try {
         setLoading(true);
-        const response = await fetch('/api/bible');
+        const response = await fetch('/api/bible/cached');
+        if (!response.ok) {
+           throw new Error(`API error: ${response.status}`);
+        }
         const data = await response.json();
-        setVerse(data);
+        if (data.error) {
+           console.error('Error fetching verse from cached API:', data.error);
+           setVerse(null);
+        } else {
+           setVerse(data as VerseData);
+        }
       } catch (error) {
-        console.error('Error fetching verse:', error);
+        console.error('Error fetching cached verse:', error);
+        setVerse(null);
       } finally {
         setLoading(false);
       }
@@ -87,7 +58,6 @@ export default function VersePopup() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ 
-              //ease: "circInOut",
               duration: 0.3,
               delay: 0.35,
               type: "spring", visualDuration: 0.3, bounce: 0.3
@@ -106,30 +76,38 @@ export default function VersePopup() {
             </h2>
             
             {loading ? (
-              <div 
-                className="space-y-4"
-              >
+              <div className="space-y-4">
                 <div className="w-full h-48 bg-gray-100 animate-pulse rounded-lg" />
                 <div className="h-4 bg-gray-100 animate-pulse rounded w-3/4 mx-auto" />
                 <div className="h-4 bg-gray-100 animate-pulse rounded w-full" />
                 <div className="h-4 bg-gray-100 animate-pulse rounded w-1/2 mx-auto" />
               </div>
             ) : verse ? (
-              <div
-              >
-                {verse.image && <VerseImage src={verse.image} />}
-                <div 
-                  className="text-center"
-                >
+              <div>
+                {verse.image && verse.width && verse.height ? (
+                  <div className="relative mb-4">
+                     <Image
+                        src={verse.image}
+                        alt="Verse of the day"
+                        width={verse.width}
+                        height={verse.height}
+                        className="object-cover rounded-lg"
+                        priority
+                      />
+                  </div>
+                ) : verse.image ? (
+                   <div className="w-full h-48 bg-gray-100 flex items-center justify-center rounded-lg mb-4">
+                     <p className="text-gray-400">Image preview unavailable</p>
+                   </div>
+                ) : null}
+                <div className="text-center">
                   <p className="text-gray-600 mb-2">{verse.citation}</p>
                   <p className="text-lg font-medium mb-4">{verse.passage}</p>
                   <p className="text-sm text-gray-500">{verse.version}</p>
                 </div>
               </div>
             ) : (
-              <div 
-                className="text-center text-gray-500"
-              >
+              <div className="text-center text-gray-500">
                 Failed to load verse
               </div>
             )}
