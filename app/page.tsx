@@ -295,7 +295,7 @@ export default function Home() {
           >
             <div className="shadow-lg rounded-lg overflow-hidden md:order-1">
               <Image
-                src="/photo/2024/2024-12-drilling-training/2024-12-drilling-training-1.jpeg"
+                src="/photo/2024/2024-12-drilling-training/2024-12-drilling-training-1.jpg"
                 alt="前鋒會活動"
                 width={4000}
                 height={2667}
