@@ -23,7 +23,7 @@ import {
 
 interface GalleryInfo {
   name: string;
-  link: string;
+  link: string; // This will now be the *expected* link, existence not guaranteed
 }
 
 // Combine all hyperlink arrays
@@ -74,19 +74,17 @@ export async function GET(request: Request) {
         .map(dirent => dirent.name);
 
       for (const subDir of subDirs) {
-        const subDirPath = path.join(yearPath, subDir);
-        // Construct JSON file path on the filesystem
-        const jsonFileName = `${subDir}.json`;
-        const jsonFilePath = path.join(subDirPath, jsonFileName);
+        // Look up the gallery name using the subDir name
+        const galleryName = nameLookup.get(subDir);
 
-        if (fs.existsSync(jsonFilePath)) {
-          // Construct the web-accessible URL path for the JSON file
+        // Only proceed if a matching name was found in hyperlink-data
+        if (galleryName) {
+          // Construct the *expected* web-accessible URL path for the JSON file
+          const jsonFileName = `${subDir}.json`;
           const jsonUrlPath = `${publicBaseUrl}/${year}/${subDir}/${jsonFileName}`;
-          // Look up the gallery name using the subDir name
-          const galleryName = nameLookup.get(subDir) || subDir; // Use subDir as fallback name
-
           allGalleryInfo.push({ name: galleryName, link: jsonUrlPath });
         }
+        // We no longer check fs.existsSync(jsonFilePath)
       }
     }
 
@@ -96,8 +94,8 @@ export async function GET(request: Request) {
     return NextResponse.json({ galleries: allGalleryInfo });
 
   } catch (error) {
-    console.error('Error reading photo directory or hyperlink data:', error);
-    // Check if error is related to the import path
+    // Handle potential errors reading directories or processing hyperlink data
+    console.error('Error processing gallery data:', error);
     if (error instanceof Error && error.message.includes('Cannot find module')) {
         console.error("Please ensure the import path to 'public/hyperlink-data.tsx' is correct in app/api/photo-links/route.ts");
     }
