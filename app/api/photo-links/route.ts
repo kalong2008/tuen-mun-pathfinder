@@ -1,101 +1,65 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-// Adjust the import path based on your project structure
-// If using path aliases (like @/ ), use that. Otherwise, use relative paths.
-import {
-  hyperLink2011,
-  hyperLink2012,
-  hyperLink2013,
-  hyperLink2014,
-  hyperLink2015,
-  hyperLink2016,
-  hyperLink2017,
-  hyperLink2018,
-  hyperLink2019,
-  hyperLink2020,
-  hyperLink2021,
-  hyperLink2022,
-  hyperLink2023,
-  hyperLink2024,
-  hyperLink2025
-} from '../../../public/hyperlink-data';
+// Remove fs and path imports as we are not reading the filesystem anymore
+// import fs from 'fs';
+// import path from 'path';
 
-interface GalleryInfo {
+// Import all hyperlink data directly
+// Adjust the import path based on your project structure
+import * as HyperlinkData from '../../../public/hyperlink-data';
+
+interface GalleryLink {
   name: string;
-  link: string; // This will now be the *expected* link, existence not guaranteed
+  href: string; // This will be the generated full URL to the JSON
 }
 
-// Combine all hyperlink arrays
-const allHyperlinks = [
-  ...hyperLink2011,
-  ...hyperLink2012,
-  ...hyperLink2013,
-  ...hyperLink2014,
-  ...hyperLink2015,
-  ...hyperLink2016,
-  ...hyperLink2017,
-  ...hyperLink2018,
-  ...hyperLink2019,
-  ...hyperLink2020,
-  ...hyperLink2021,
-  ...hyperLink2022,
-  ...hyperLink2023,
-  ...hyperLink2024,
-  ...hyperLink2025
-];
+interface HyperlinkItem {
+    name: string;
+    href: string;
+}
 
-// Create a lookup map: href key (without leading /) -> name
-const nameLookup = new Map<string, string>();
-allHyperlinks.forEach(item => {
-  if (item.href && item.href.startsWith('/')) {
-    const key = item.href.substring(1); // e.g., "2024-12-drilling-training"
-    nameLookup.set(key, item.name);
-  }
-});
+const BASE_JSON_URL = '/photo';
 
 export async function GET(request: Request) {
-  const photoDir = path.join(process.cwd(), 'public', 'photo');
-  const publicBaseUrl = '/photo'; // Base URL path corresponding to public/photo
-  let allGalleryInfo: GalleryInfo[] = [];
+  let allGalleryLinks: GalleryLink[] = [];
 
   try {
-    // Get year directories (e.g., 2024, 2023)
-    const yearDirs = fs.readdirSync(photoDir, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory() && /^[0-9]{4}$/.test(dirent.name))
-      .map(dirent => dirent.name);
+    // Iterate through all exports from hyperlink-data
+    for (const key in HyperlinkData) {
+      // Check if the export name starts with "hyperLink" and looks like a year array (e.g., hyperLink2024)
+      if (key.startsWith('hyperLink') && /hyperLink\d{4}/.test(key)) {
+        const yearMatch = key.match(/(\d{4})/);
+        if (!yearMatch) continue; // Skip if year extraction fails
+        const year = yearMatch[1];
 
-    for (const year of yearDirs) {
-      const yearPath = path.join(photoDir, year);
+        const items = (HyperlinkData as any)[key] as HyperlinkItem[];
 
-      // Get subdirectories within the year directory (e.g., 2024-12-drilling-training)
-      const subDirs = fs.readdirSync(yearPath, { withFileTypes: true })
-        .filter(dirent => dirent.isDirectory())
-        .map(dirent => dirent.name);
+        if (Array.isArray(items)) {
+          for (const item of items) {
+            if (item.href && item.href.startsWith('/')) {
+              const subfolder = item.href.substring(1); // Remove leading '/'
+              const jsonFileName = `${subfolder}.json`;
+              // Construct the full URL
+              const jsonUrl = `${BASE_JSON_URL}/${year}/${subfolder}/${jsonFileName}`;
 
-      for (const subDir of subDirs) {
-        // Look up the gallery name using the subDir name
-        const galleryName = nameLookup.get(subDir);
-
-        // Only proceed if a matching name was found in hyperlink-data
-        if (galleryName) {
-          // Construct the *expected* web-accessible URL path for the JSON file
-          const jsonFileName = `${subDir}.json`;
-          const jsonUrlPath = `${publicBaseUrl}/${year}/${subDir}/${jsonFileName}`;
-          allGalleryInfo.push({ name: galleryName, link: jsonUrlPath });
+              allGalleryLinks.push({
+                name: item.name,
+                href: jsonUrl,
+              });
+            }
+          }
         }
-        // We no longer check fs.existsSync(jsonFilePath)
       }
     }
 
-    // Sort galleries alphabetically by name
-    allGalleryInfo.sort((a, b) => a.name.localeCompare(b.name));
+    // Optional: Sort galleries alphabetically by name if needed
+    allGalleryLinks.sort((a, b) => a.name.localeCompare(b.name));
 
-    return NextResponse.json({ galleries: allGalleryInfo });
+    // Return the modified list
+    return NextResponse.json({ galleries: allGalleryLinks });
 
   } catch (error) {
-    // Handle potential errors reading directories or processing hyperlink data
-    console.error('Error processing gallery data:', error);
+    console.error('Error processing hyperlink data:', error);
+    // Check if error is related to the import path
     if (error instanceof Error && error.message.includes('Cannot find module')) {
         console.error("Please ensure the import path to 'public/hyperlink-data.tsx' is correct in app/api/photo-links/route.ts");
     }

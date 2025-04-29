@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
-// Add the bundle analyzer import
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+// Remove the bundle analyzer import
+// const withBundleAnalyzer = require('@next/bundle-analyzer')({
+//   enabled: process.env.ANALYZE === 'true',
+// })
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -33,5 +33,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-// Wrap the config with the analyzer
-export default withBundleAnalyzer(nextConfig);
+// Remove the wrapper
+export default nextConfig;
