@@ -17,19 +17,20 @@ import * as motion from "motion/react-client";
 export default function AlbumComponent({photo, title}:{photo: any, title: string}) {
   const [index, setIndex] = useState(-1);
   return (
-    <div className="w-4/5 m-auto pb-14 pt-[64px]">
-      <motion.p
-        className="md:text-3xl font-bold leading-6 text-gray-900 text-center md:py-10 text-xl py-4"
+    <div className="w-4/5 m-auto pb-14 pt-[84px]">
+      <motion.h1 
+        className="text-3xl font-bold text-gray-900 text-center py-8 border-b border-gray-200 mb-8"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          
-          duration: 1,
+          duration: 0.8,
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         }}
       >
+        <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#29323c] to-[#485563]">
         {title}
-      </motion.p>
+        </span>
+      </motion.h1>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

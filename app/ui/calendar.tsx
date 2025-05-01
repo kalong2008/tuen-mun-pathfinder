@@ -124,9 +124,9 @@ export default function MyCalendar() {
           ...item,
           date: date
         });
-      }
+    }
     });
-  });
+});
 
   // Convert the Map values back to an array.
   const uniqueDataArray = Array.from(uniqueDataMap.values());

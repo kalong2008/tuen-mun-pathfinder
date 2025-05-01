@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "title": "2025年2月2日遠足活動",
+      "date": "2025-02-02",
+      "activityType": "遠足",
+      "pdfUrl": ["/notice/2025-2-2 hiking.pdf"],
+      "target": ["所有成員"]
+    },
+    {
+      "id": "2",
+      "title": "2025年4月4日露營",
+      "date": "2025-04-04",
+      "activityType": "露營",
+      "pdfUrl": [
+        "/notice/2025-4-4_camping-pathfinder.pdf",
+        "/notice/2025-4-4_camping-adventurer.pdf"
+      ],
+      "target": ["前鋒會", "幼鋒會"]
+    },
+    {
+      "id": "3",
+      "title": "2025年4月12日參觀合味道博物館",
+      "date": "2025-04-12",
+      "activityType": "參觀",
+      "pdfUrl": ["/notice/2025-4-12-cupnoodle.pdf"],
+      "target": ["幼鋒會"]
+    },
+    {
+      "id": "4",
+      "title": "2025年4月聯合步操訓練",
+      "date": "2025-04-18",
+      "activityType": "訓練",
+      "pdfUrl": ["/notice/2025-4 marching training.pdf"],
+      "target": ["前鋒會"]
+    },
+    {
+      "id": "5",
+      "title": "2025年5月18日樹屋田莊",
+      "date": "2025-05-18",
+      "activityType": "日營",
+      "pdfUrl": ["/notice/2025-05-18-daycamp.pdf"],
+      "target": ["幼鋒會"]
+    }
+  ] 
