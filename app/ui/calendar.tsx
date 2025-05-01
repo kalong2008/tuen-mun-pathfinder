@@ -7,7 +7,8 @@ import Calendar from "react-calendar";
 import "../ui/calendar.css";
 const notoHK = Noto_Sans_HK({ preload: false });
 import { differenceInCalendarDays } from "date-fns";
-import { activityDateDetail, highlightedDates } from "@/public/calendar-date";
+import { activities, highlightedDates } from "@/src/types/calendar";
+
 import Link from "next/link";
 
 type ValuePiece = Date | null;
@@ -101,8 +102,8 @@ export default function MyCalendar() {
     });
   };
   const [yearMonth, setYearMonth] = useState<string>(
-    (currentDateTime.getMonth() + 1).toString() +
-      currentDateTime.getFullYear().toString()
+    currentDateTime.getFullYear().toString() + 
+    (currentDateTime.getMonth() + 1).toString().padStart(2, '0')
   );
 
   function tileClassName({ date, view }: { date: any; view: any }) {
@@ -116,36 +117,49 @@ export default function MyCalendar() {
   }
 
   const uniqueDataMap = new Map();
-  activityDateDetail.forEach(item => {
-    if (!uniqueDataMap.has(item.datedetail)) {
-        uniqueDataMap.set(item.datedetail, item);
-    }
-});
+  Object.entries(activities).forEach(([date, items]) => {
+    items.forEach(item => {
+      if (!uniqueDataMap.has(date)) {
+        uniqueDataMap.set(date, {
+          ...item,
+          date: date
+        });
+      }
+    });
+  });
 
   // Convert the Map values back to an array.
   const uniqueDataArray = Array.from(uniqueDataMap.values());
+  console.log(uniqueDataArray);
+
+  const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    return `${month}月${day}日`;
+  };
 
   return (
     <div className="flex flex-col-reverse sm:flex-row w-4/5 m-auto justify-between gap-y-[10px] pb-4">
       <div className="pt-0 w-full flex justify-center">
         <div>
           {uniqueDataArray.map((activity) =>
-            activity.name.includes("集會") ? (
+            activity.title.includes("集會") ? (
               <p
-                key={activity.name}
-                style={{ display: yearMonth === activity.date ? "" : "none" }}
+                key={activity.id}
+                style={{ display: yearMonth === activity.date.substring(0, 7).replace('-', '') ? "" : "none" }}
                 className="py-2 block"
               >
-                {activity.name}
+                {formatDate(activity.date)}：{activity.title}
               </p>
             ) : (
               <Link
-                key={activity.name}
+                key={activity.id}
                 href="/notice"
-                style={{ display: yearMonth === activity.date ? "" : "none" }}
+                style={{ display: yearMonth === activity.date.substring(0, 7).replace('-', '') ? "" : "none" }}
                 className="py-2 block underline"
               >
-                {activity.name}
+                {formatDate(activity.date)}：{activity.title}
               </Link>
             )
           )}
@@ -165,61 +179,24 @@ export default function MyCalendar() {
                 day: "numeric"
               }).format(date)
             }
-          onActiveStartDateChange={({ action }) => {
-            if (action == "next") {
+          onActiveStartDateChange={({ action, activeStartDate }) => {
+            if (action === "next") {
               handleMonthChange(1);
               if (JSON.stringify(safeGetMonth(value)) === "12") {
                 handleYearChange(1);
-                setYearMonth(
-                  "01" +
-                    (
-                      parseInt(JSON.stringify(safeGetYear(value))) + 1
-                    ).toString()
-                );
-              } else {
-                handleYearChange(0);
-                setYearMonth(
-                  (
-                    (
-                      parseInt(JSON.stringify(safeGetMonth(value))) + 1
-                    ).toString() + parseInt(JSON.stringify(safeGetYear(value)))
-                  ).toString()
-                );
               }
-            } else if (action == "next2") {
-              handleMonthChange(0);
-              handleYearChange(1);
-              setYearMonth(
-                parseInt(JSON.stringify(safeGetMonth(value))).toString() +
-                  (parseInt(JSON.stringify(safeGetYear(value))) + 1).toString()
-              );
-            } else if (action == "prev") {
+            } else if (action === "prev") {
               handleMonthChange(-1);
               if (JSON.stringify(safeGetMonth(value)) === "1") {
                 handleYearChange(-1);
-                setYearMonth(
-                  "12" +
-                    (
-                      parseInt(JSON.stringify(safeGetYear(value))) - 1
-                    ).toString()
-                );
-              } else {
-                handleYearChange(0);
-                setYearMonth(
-                  (
-                    (
-                      parseInt(JSON.stringify(safeGetMonth(value))) - 1
-                    ).toString() + parseInt(JSON.stringify(safeGetYear(value)))
-                  ).toString()
-                );
               }
-            } else if (action == "prev2") {
-              handleMonthChange(0);
-              handleYearChange(-1);
-              setYearMonth(
-                parseInt(JSON.stringify(safeGetMonth(value))).toString() +
-                  (parseInt(JSON.stringify(safeGetYear(value))) - 1).toString()
-              );
+            }
+            
+            // Update yearMonth state with the new date
+            if (activeStartDate) {
+              const newYearMonth = activeStartDate.getFullYear().toString() + 
+                (activeStartDate.getMonth() + 1).toString().padStart(2, '0');
+              setYearMonth(newYearMonth);
             }
           }}
         />
