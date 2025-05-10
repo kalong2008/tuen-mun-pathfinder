@@ -4,7 +4,7 @@
       "id": 1,
       "title": "露營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "西貢白沙澳",
       "isCamp": true,
       "campId": 1,
       "marking": {
@@ -17,7 +17,7 @@
       "id": 2,
       "title": "露營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "西貢白沙澳",
       "isCamp": true,
       "campId": 1,
       "marking": {}
@@ -28,7 +28,7 @@
       "id": 3,
       "title": "露營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "西貢白沙澳",
       "isCamp": true,
       "campId": 1,
       "marking": {
@@ -219,7 +219,7 @@
       "id": 19,
       "title": "宿營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "賽馬會摩星嶺青年旅舍",
       "isCamp": true,
       "campId": 2,
       "marking": {
@@ -232,7 +232,7 @@
       "id": 20,
       "title": "宿營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "賽馬會摩星嶺青年旅舍",
       "isCamp": true,
       "campId": 2,
       "marking": {
@@ -257,7 +257,7 @@
       "id": 22,
       "title": "聯合步操訓練（前鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "大埔三育中學",
       "marking": {
         "startingDay": true,
         "endingDay": true

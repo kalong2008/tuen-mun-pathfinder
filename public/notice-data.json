@@ -41,5 +41,13 @@
       "activityType": "日營",
       "pdfUrl": ["/notice/2025-05-18-daycamp.pdf"],
       "target": ["幼鋒會"]
+    },
+    {
+      "id": "6",
+      "title": "2025年7月5-6日宿營",
+      "date": "2025-07-05",
+      "activityType": "宿營",
+      "pdfUrl": ["/notice/2025-7-5Camping_pathfinder.pdf", "/notice/2025-7-5Camping_adventurer.pdf"],
+      "target": ["前鋒會", "幼鋒會"]
     }
   ] 

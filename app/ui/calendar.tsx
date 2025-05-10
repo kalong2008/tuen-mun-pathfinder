@@ -1,176 +1,101 @@
 "use client";
 
-import { Noto_Sans_HK } from "next/font/google";
+//import { Noto_Sans_HK } from "next/font/google";
 import { useState } from "react";
 import Calendar from "react-calendar";
-//import "react-calendar/dist/Calendar.css";
+import "react-calendar/dist/Calendar.css";
 import "../ui/calendar.css";
-const notoHK = Noto_Sans_HK({ preload: false });
-import { differenceInCalendarDays } from "date-fns";
-import { activities, highlightedDates } from "@/src/types/calendar";
+//const notoHK = Noto_Sans_HK({ preload: false });
+//import { differenceInCalendarDays } from "date-fns";
+import { activities } from "@/src/types/calendar";
 
 import Link from "next/link";
+import { CalendarDays, Clock, MapPin } from "lucide-react";
 
 type ValuePiece = Date | null;
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
-function isSameDay(a: any, b: any) {
-  return differenceInCalendarDays(a, b) === 0;
-}
+//function isSameDay(a: Date | null, b: Date | null): boolean {
+//  if (!a || !b) return false;
+//  return differenceInCalendarDays(a, b) === 0;
+//}
 
 const currentDateTime = new Date();
 
-// Utility functions
-function isDate(value: ValuePiece): value is Date {
-  return value instanceof Date;
-}
-
-function safeSetMonth(value: Value, month: number): Value {
-  if (Array.isArray(value)) {
-    return value.map((v) =>
-      isDate(v) ? new Date(v.getFullYear(), month - 1, v.getDate()) : v
-    ) as [ValuePiece, ValuePiece];
-  }
-  return isDate(value)
-    ? new Date(value.getFullYear(), month - 1, value.getDate())
-    : value;
-}
-
-function safeGetMonth(
-  value: Value
-): number | [number | null, number | null] | null {
-  if (Array.isArray(value)) {
-    return value.map((v) => (isDate(v) ? v.getMonth() + 1 : null)) as [
-      number | null,
-      number | null
-    ];
-  }
-  return isDate(value) ? value.getMonth() + 1 : null;
-}
-
-function safeSetYear(value: Value, year: number): Value {
-  if (Array.isArray(value)) {
-    return value.map((v) =>
-      isDate(v) ? new Date(year, v.getMonth(), v.getDate()) : v
-    ) as [ValuePiece, ValuePiece];
-  }
-  return isDate(value)
-    ? new Date(year, value.getMonth(), value.getDate())
-    : value;
-}
-
-function safeGetYear(
-  value: Value
-): number | [number | null, number | null] | null {
-  if (Array.isArray(value)) {
-    return value.map((v) => (isDate(v) ? v.getFullYear() : null)) as [
-      number | null,
-      number | null
-    ];
-  }
-  return isDate(value) ? value.getFullYear() : null;
-}
-
-export default function MyCalendar() {
-  const [value, setValue] = useState<Value>(new Date());
-
-  const onChange = (newValue: Value) => {
-    setValue(newValue);
-  };
-
-  const handleMonthChange = (monthDelta: number) => {
-    setValue((prevValue) => {
-      const currentMonth = safeGetMonth(prevValue);
-      if (currentMonth === null || Array.isArray(currentMonth)) {
-        return prevValue; // No change if it's null or an array
-      }
-      let newMonth = currentMonth + monthDelta;
-      if (newMonth > 12) newMonth = 1;
-      if (newMonth < 1) newMonth = 12;
-      return safeSetMonth(prevValue, newMonth);
-    });
-  };
-
-  const handleYearChange = (yearDelta: number) => {
-    setValue((prevValue) => {
-      const currentYear = safeGetYear(prevValue);
-      if (currentYear === null || Array.isArray(currentYear)) {
-        return prevValue;
-      }
-      const newYear = currentYear + yearDelta;
-      return safeSetYear(prevValue, newYear);
-    });
-  };
-  const [yearMonth, setYearMonth] = useState<string>(
-    currentDateTime.getFullYear().toString() + 
-    (currentDateTime.getMonth() + 1).toString().padStart(2, '0')
-  );
-
-  function tileClassName({ date, view }: { date: any; view: any }) {
-    if (
-      view === "month" &&
-      highlightedDates.find((dDate) => isSameDay(dDate, date))
-    ) {
-      // Or: return "highlight background";
-      return ["highlight", "background"];
-    }
-  }
-
-  const uniqueDataMap = new Map();
-  Object.entries(activities).forEach(([date, items]) => {
-    items.forEach(item => {
-      if (!uniqueDataMap.has(date)) {
-        uniqueDataMap.set(date, {
-          ...item,
-          date: date
-        });
-    }
-    });
-});
-
-  // Convert the Map values back to an array.
-  const uniqueDataArray = Array.from(uniqueDataMap.values());
-  console.log(uniqueDataArray);
-
-  const formatDate = (dateStr: string) => {
+// Format date YYYY-MM-DD to Chinese M月D日
+const formatDate = (dateStr: string): string => {
+  try {
+    // The activities keys are the dates we need to format
     const date = new Date(dateStr);
     const month = date.getMonth() + 1;
     const day = date.getDate();
     return `${month}月${day}日`;
+  } catch (e) {
+    console.error("Error formatting date:", dateStr, e);
+    return dateStr; // Return original string on error
+  }
+};
+
+// Get current year and month in YYYYMM format
+const getCurrentYearMonth = (): string => {
+  const year = currentDateTime.getFullYear().toString();
+  const month = (currentDateTime.getMonth() + 1).toString().padStart(2, '0');
+  return year + month;
+};
+
+// Get YYYYMM format from a Date object
+const getYearMonthString = (date: Date | null): string => {
+  if (!date) return getCurrentYearMonth();
+  const year = date.getFullYear().toString();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  return year + month;
+};
+
+// Format local Date object to YYYY-MM-DD string
+const formatDateToYyyyMmDd = (date: Date): string => {
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  return `${year}-${month}-${day}`;
+};
+
+export default function MyCalendar() {
+  const [activeDate, setActiveDate] = useState<Date>(new Date());
+  const [currentViewDate, setCurrentViewDate] = useState<Date>(new Date());
+
+  const activeYearMonth = getYearMonthString(currentViewDate);
+
+  const tileClassName = ({ date, view }: { date: Date; view: string }) => {
+    if (view === 'month') {
+      const dateString = formatDateToYyyyMmDd(date);
+      if (dateString in activities) {
+        return 'has-activity';
+      }
+    }
+    return null;
   };
 
+  // Get activities for the currently viewed month
+  const currentMonthActivities = Object.entries(activities)
+    .filter(([dateKey]) => dateKey.substring(0, 7).replace('-', '') === activeYearMonth)
+    .flatMap(([dateKey, items]) => items.map(item => ({ ...item, date: dateKey }))) // Add date key to each item
+    .sort((a, b) => new Date(a.date).getDate() - new Date(b.date).getDate()); // Sort by day within the month
+
+
+  // Filter for unique activities based on ID to avoid duplicates from multi-day events showing multiple times in the list
+  const uniqueActivitiesForMonth = Array.from(new Map(currentMonthActivities.map(item => [item.id, item])).values());
+
+
   return (
-    <div className="flex flex-col-reverse sm:flex-row w-4/5 m-auto justify-between gap-y-[10px] pb-4">
-      <div className="pt-0 w-full flex justify-center">
-        <div>
-          {uniqueDataArray.map((activity) =>
-            activity.title.includes("集會") ? (
-              <p
-                key={activity.id}
-                style={{ display: yearMonth === activity.date.substring(0, 7).replace('-', '') ? "" : "none" }}
-                className="py-2 block"
-              >
-                {formatDate(activity.date)}：{activity.title}
-              </p>
-            ) : (
-              <Link
-                key={activity.id}
-                href="/notice"
-                style={{ display: yearMonth === activity.date.substring(0, 7).replace('-', '') ? "" : "none" }}
-                className="py-2 block underline"
-              >
-                {formatDate(activity.date)}：{activity.title}
-              </Link>
-            )
-          )}
-        </div>
-      </div>
-      <div className="w-full flex justify-center">
+    // Keep the grid layout for responsiveness
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+      {/* Calendar - Keep its basic container */}
+      <div className="lg:col-span-1 bg-white p-2 sm:p-4 rounded-lg shadow border border-gray-200 flex justify-center">
         <Calendar
-          onChange={onChange}
-          value={value}
+          onChange={(value) => setActiveDate(value as Date)}
+          value={activeDate}
+          onActiveStartDateChange={({ activeStartDate }) => activeStartDate && setCurrentViewDate(activeStartDate)}
           calendarType="gregory"
-          className="flex flex-col items-center lg:m-0" //{notoHK.className}
           tileClassName={tileClassName}
           formatDay={
             (locale, date) => new Intl.DateTimeFormat(
@@ -179,28 +104,103 @@ export default function MyCalendar() {
                 day: "numeric"
               }).format(date)
             }
-          onActiveStartDateChange={({ action, activeStartDate }) => {
-            if (action === "next") {
-              handleMonthChange(1);
-              if (JSON.stringify(safeGetMonth(value)) === "12") {
-                handleYearChange(1);
-              }
-            } else if (action === "prev") {
-              handleMonthChange(-1);
-              if (JSON.stringify(safeGetMonth(value)) === "1") {
-                handleYearChange(-1);
-              }
-            }
-            
-            // Update yearMonth state with the new date
-            if (activeStartDate) {
-              const newYearMonth = activeStartDate.getFullYear().toString() + 
-                (activeStartDate.getMonth() + 1).toString().padStart(2, '0');
-              setYearMonth(newYearMonth);
-            }
-          }}
+          next2Label={null} 
+          prev2Label={null} 
+          // Use default react-calendar styles or your existing calendar.css
         />
+      </div>
+
+      {/* Activity List - Redesigned Section */}
+      <div className="lg:col-span-1 bg-gradient-to-b from-zinc-50 to-zinc-100 p-4 sm:p-6 rounded-lg shadow-md border border-gray-200 h-full">
+        <h3 className="text-xl font-semibold mb-4 text-gray-800 border-b border-gray-300 pb-2">
+          {parseInt(activeYearMonth.substring(4, 6), 10)}月 活動列表
+        </h3>
+        {uniqueActivitiesForMonth.length > 0 ? (
+          <ul className="space-y-3 pr-2 -mr-2 custom-scrollbar">
+            {uniqueActivitiesForMonth.map((activity) => (
+              <li 
+                key={activity.id} 
+                className="bg-white p-3 rounded-md shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+              >
+                <p className="font-semibold text-gray-800 mb-1.5 flex items-center">
+                  <CalendarDays className="w-4 h-4 mr-2 text-blue-600 flex-shrink-0" />
+                  <span>{formatDate(activity.date)}</span>
+                </p>
+                <div className="pl-[24px] text-sm space-y-1">
+                  <span className="flex items-center text-gray-600">
+                     <Clock className="w-3.5 h-3.5 mr-1.5 text-gray-400 flex-shrink-0" />
+                     {activity.title}
+                  </span>
+                  {activity.location && activity.location !== '待定' && (
+                    <span className="flex items-center text-gray-600">
+                      <MapPin className="w-3.5 h-3.5 mr-1.5 text-gray-400 flex-shrink-0" />
+                      {activity.location}
+                    </span>
+                  )}
+                  {/* Link to notice */}
+                  {(activity.title.includes("參觀") || activity.title.includes("步操訓練") || activity.title.includes("日營") || activity.title.includes("行山") || activity.title.includes("露營") || activity.title.includes("遠足") || activity.title.includes("宿營")) && (
+                     <Link href="/notice" className="text-xs text-blue-600 hover:underline mt-1 inline-block">查看通告詳情</Link>
+                  )}
+                </div>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-gray-500 text-center mt-4">本月暫無已安排的活動。</p>
+        )}
       </div>
     </div>
   );
+}
+
+// Utility functions (ensure they are defined if not already)
+function isDate(value: ValuePiece): value is Date {
+  return value instanceof Date;
+}
+
+function safeSetMonth(value: Value, month: number): Value {
+    // Check if value is null, if so return null or a default Date
+    if (!value) return new Date(new Date().getFullYear(), month - 1, 1); 
+    if (Array.isArray(value)) {
+        return value.map((v) =>
+            isDate(v) ? new Date(v.getFullYear(), month - 1, v.getDate()) : v
+        ) as [ValuePiece, ValuePiece];
+    }
+    return isDate(value)
+        ? new Date(value.getFullYear(), month - 1, value.getDate())
+        : value;
+}
+
+function safeGetMonth(value: Value): number | [number | null, number | null] | null {
+    if (!value) return null; // Handle null case
+    if (Array.isArray(value)) {
+        return value.map((v) => (isDate(v) ? v.getMonth() + 1 : null)) as [
+            number | null,
+            number | null
+        ];
+    }
+    return isDate(value) ? value.getMonth() + 1 : null;
+}
+
+function safeSetYear(value: Value, year: number): Value {
+    if (!value) return new Date(year, 0, 1); // Handle null case
+    if (Array.isArray(value)) {
+        return value.map((v) =>
+            isDate(v) ? new Date(year, v.getMonth(), v.getDate()) : v
+        ) as [ValuePiece, ValuePiece];
+    }
+    return isDate(value)
+        ? new Date(year, value.getMonth(), value.getDate())
+        : value;
+}
+
+function safeGetYear(value: Value): number | [number | null, number | null] | null {
+    if (!value) return null; // Handle null case
+    if (Array.isArray(value)) {
+        return value.map((v) => (isDate(v) ? v.getFullYear() : null)) as [
+            number | null,
+            number | null
+        ];
+    }
+    return isDate(value) ? value.getFullYear() : null;
 }

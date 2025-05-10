@@ -225,9 +225,9 @@ export default function Page() {
                           </div>
                         ))}
                         
-                        <div className="text-sm text-gray-500 pl-0.5">
+                        {/*<div className="text-sm text-gray-500 pl-0.5">
                           {formatDate(notice.date)}
-                        </div>
+                        </div>*/}
                       </div>
                     </div>
                   );

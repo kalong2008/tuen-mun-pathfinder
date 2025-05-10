@@ -165,13 +165,23 @@
   background-color: #e6e6e6;
 }
 
-.react-calendar .background {
-  background-color: peachpuff;
+/* Remove hover/focus specific styles for has-activity */
+/*
+.react-calendar .has-activity:enabled:hover,
+.react-calendar .has-activity:enabled:focus {
+  background-color: #dcfce7; 
 }
+*/
 
-.react-calendar .background:focus {
-  background-color: peachpuff;
-}
-.react-calendar .background:hover {
-  background-color: peachpuff;
+.react-calendar .has-activity abbr {
+  /* Optionally make text bolder or change color if needed */
+   background-color: #E0E5EA; /* Light green */
+   display: inline-block; /* Ensure background covers the number */
+   border-radius: 50%; /* Make it a circle */
+   padding: 0; /* Remove padding for precise centering */
+   width: 36px; /* Fixed width */
+   height: 36px; /* Fixed height */
+   line-height: 36px; /* Match height for vertical centering */
+   text-align: center; /* Explicitly center text horizontally */
+
 }
