@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link";
 import * as motion from "motion/react-client";
 import noticeData from "@/public/notice-data.json";
