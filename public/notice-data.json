@@ -49,5 +49,13 @@
       "activityType": "宿營",
       "pdfUrl": ["/notice/2025-7-5Camping_pathfinder.pdf", "/notice/2025-7-5Camping_adventurer.pdf"],
       "target": ["前鋒會", "幼鋒會"]
+    },
+    {
+      "id": "7",
+      "title": "2025年7月聯合步操訓練",
+      "date": "2025-07-20",
+      "activityType": "訓練",
+      "pdfUrl": ["/notice/2025-7 marching training.pdf"],
+      "target": ["前鋒會"]
     }
   ] 
