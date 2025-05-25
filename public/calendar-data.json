@@ -252,24 +252,24 @@
       }
     }
   ],
-  "2025-07-13": [
+  "2025-07-19": [
     {
       "id": 22,
-      "title": "聯合步操訓練（前鋒會）",
+      "title": "集會（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "大埔三育中學",
+      "location": "待定",
       "marking": {
         "startingDay": true,
         "endingDay": true
       }
     }
   ],
-  "2025-07-19": [
+    "2025-07-20": [
     {
       "id": 23,
-      "title": "集會（前鋒會＋幼鋒會）",
-      "time": "09:00 - 16:00",
-      "location": "待定",
+      "title": "聯合步操訓練（前鋒會）",
+      "time": "12:00 - 18:00",
+      "location": "大埔三育中學",
       "marking": {
         "startingDay": true,
         "endingDay": true
