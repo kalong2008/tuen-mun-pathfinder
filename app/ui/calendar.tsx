@@ -138,7 +138,7 @@ export default function MyCalendar() {
                     </span>
                   )}
                   {/* Link to notice */}
-                  {(activity.title.includes("參觀") || activity.title.includes("步操訓練") || activity.title.includes("日營") || activity.title.includes("行山") || activity.title.includes("露營") || activity.title.includes("遠足") || activity.title.includes("宿營")) && (
+                  {(activity.title.includes("參觀") || activity.title.includes("步操訓練") || activity.title.includes("日營") || activity.title.includes("行山") || activity.title.includes("露營") || activity.title.includes("遠足") || activity.title.includes("宿營")  || activity.title.includes("暑期")) && (
                      <Link href="/notice" className="text-xs text-blue-600 hover:underline mt-1 inline-block">查看通告詳情</Link>
                   )}
                 </div>

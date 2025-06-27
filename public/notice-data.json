@@ -57,5 +57,13 @@
       "activityType": "訓練",
       "pdfUrl": ["/notice/2025-7 marching training.pdf"],
       "target": ["前鋒會"]
+    },
+    {
+      "id": "8",
+      "title": "2025年暑期烹飪班",
+      "date": "2025-07-23",
+      "activityType": "烹飪",
+      "pdfUrl": ["/notice/202507-summer-cooking.pdf"],
+      "target": ["幼鋒會"]
     }
   ] 

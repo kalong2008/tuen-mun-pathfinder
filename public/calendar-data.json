@@ -276,6 +276,18 @@
       }
     }
   ],
+  "2025-07-23": [
+    {
+      "id": 231,
+      "title": "暑期烹飪班（幼鋒會）",
+      "time": "14:00 - 18:00",
+      "location": "山景青少年綜合服務中心",
+      "marking": {
+        "startingDay": true,
+        "endingDay": true
+      }
+    }
+  ],
   "2025-07-26": [
     {
       "id": 24,
@@ -294,6 +306,18 @@
       "title": "集會（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
       "location": "待定",
+      "marking": {
+        "startingDay": true,
+        "endingDay": true
+      }
+    }
+  ],
+  "2025-08-06": [
+    {
+      "id": 251,
+      "title": "暑期烹飪班（幼鋒會）",
+      "time": "14:00 - 18:00",
+      "location": "山景青少年綜合服務中心",
       "marking": {
         "startingDay": true,
         "endingDay": true
@@ -324,12 +348,36 @@
       }
     }
   ],
+  "2025-08-20": [
+    {
+      "id": 271,
+      "title": "暑期烹飪班（幼鋒會）",
+      "time": "14:00 - 18:00",
+      "location": "山景青少年綜合服務中心",
+      "marking": {
+        "startingDay": true,
+        "endingDay": true
+      }
+    }
+  ],
   "2025-08-23": [
     {
       "id": 28,
       "title": "集會（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
       "location": "待定",
+      "marking": {
+        "startingDay": true,
+        "endingDay": true
+      }
+    }
+  ],
+  "2025-08-27": [
+    {
+      "id": 281,
+      "title": "暑期烹飪班（幼鋒會）",
+      "time": "14:00 - 18:00",
+      "location": "山景青少年綜合服務中心",
       "marking": {
         "startingDay": true,
         "endingDay": true
