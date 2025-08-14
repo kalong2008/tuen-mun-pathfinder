@@ -65,5 +65,13 @@
       "activityType": "烹飪",
       "pdfUrl": ["/notice/202507-summer-cooking.pdf"],
       "target": ["幼鋒會"]
+    },
+    {
+      "id": "9",
+      "title": "2025年8月31日升級禮",
+      "date": "2025-08-31",
+      "activityType": "升級禮",
+      "pdfUrl": ["/notice/2025-8-31-ceremony.pdf"],
+      "target": ["前鋒會", "幼鋒會"]
     }
   ] 
