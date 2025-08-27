@@ -530,6 +530,22 @@ export const hyperLink2011 = [
     {
       name: "2025年05月樹屋田莊",
       href: "/2025-05-adventurer-day",
+    },
+    {
+      name: "2025年06月義工探訪",
+      href: "/2025-06-volunteer-visit",
+    },
+    {
+      name: "2025年07月宿營",
+      href: "/2025-07-camp",
+    },
+    {
+      name: "2025年08月參觀南豐紗廠",
+      href: "/2025-08-the-mills",
+    },
+    {
+      name: "2025年08月參觀源區",
+      href: "/2025-08-tpark",
     }
   ];
 
