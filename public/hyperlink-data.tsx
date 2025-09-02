@@ -546,6 +546,10 @@ export const hyperLink2011 = [
     {
       name: "2025年08月參觀源區",
       href: "/2025-08-tpark",
+    },
+    {
+      name: "2025年08月升級禮",
+      href: "/2025-08-promotion",
     }
   ];
 
