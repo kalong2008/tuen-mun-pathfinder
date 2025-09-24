@@ -550,6 +550,14 @@ export const hyperLink2011 = [
     {
       name: "2025年08月升級禮",
       href: "/2025-08-promotion",
+    },
+    {
+      name: "2025年09月香港迪士尼",
+      href: "/2025-09-disneyland",
+    },
+    {
+      name: "2025年09月參觀源區",
+      href: "/2025-09-tpark",
     }
   ];
 
