@@ -188,13 +188,14 @@ export default function Home() {
           scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
         }}
       >
-        <div className="relative">
+        <div className="relative aspect-[4000/1610]">
           <Image
-            src="/photo/2024/2024-09-promotion/2024-09-promotion-87.jpeg"
+            src="/photo/2025/2025-08-promotion/2025-08-promotion-54.jpg"
             alt="banner-photo"
             width="4000"
-            height="1610"
-            className="w-full"
+            height="3000"
+            className="w-full h-full object-cover"
+            objectFit="cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900/60 flex flex-col items-center justify-center text-white">
             <h1 className="text-2xl md:text-6xl font-bold mb-4">屯門前鋒會 幼鋒會</h1>
@@ -222,13 +223,14 @@ export default function Home() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <div className="shadow-lg rounded-lg overflow-hidden md:order-2">
+            <div className="shadow-lg rounded-lg overflow-hidden md:order-2 aspect-[4000/2667]">
               <Image
-                src="/photo/2024/2024-09-visit-pineapple/2024-09-visit-pineapple-7.jpeg"
+                src="/photo/2025/2025-08-tpark/2025-08-tpark-6.jpg"
                 alt="幼鋒會活動"
                 width={4000}
                 height={2667}
                 className="w-full h-full object-cover"
+                objectFit="cover"
               />
             </div>
             <div className="md:order-1">
@@ -293,13 +295,14 @@ export default function Home() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, delay: 0.1 }}
           >
-            <div className="shadow-lg rounded-lg overflow-hidden md:order-1">
+            <div className="shadow-lg rounded-lg overflow-hidden md:order-1 aspect-[4000/2667]">
               <Image
-                src="/photo/2024/2024-12-drilling-training/2024-12-drilling-training-1.jpg"
+                src="/photo/2025/2025-07-camp/2025-07-camp-13.jpg"
                 alt="前鋒會活動"
                 width={4000}
                 height={2667}
                 className="w-full h-full object-cover"
+                objectFit="cover"
               />
             </div>
             <div className="md:order-2">
