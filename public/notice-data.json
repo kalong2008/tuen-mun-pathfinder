@@ -73,5 +73,13 @@
       "activityType": "升級禮",
       "pdfUrl": ["/notice/2025-8-31-ceremony.pdf", "/notice/2025-8-31-ceremony.pdf"],
       "target": ["前鋒會", "幼鋒會"]
+    },
+    {
+      "id": "10",
+      "title": "2025年11月露營",
+      "date": "2025-11-01",
+      "activityType": "露營",
+      "pdfUrl": ["/notice/2025-11-01-camping-pathfinder.pdf", "/notice/2025-11-01-camping-adventurer.pdf"],
+      "target": ["前鋒會", "幼鋒會"]
     }
   ] 
