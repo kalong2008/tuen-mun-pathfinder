@@ -81,5 +81,37 @@
       "activityType": "露營",
       "pdfUrl": ["/notice/2025-11-01-camping-pathfinder.pdf", "/notice/2025-11-01-camping-adventurer.pdf"],
       "target": ["前鋒會", "幼鋒會"]
+    },
+    {
+      "id": "11",
+      "title": "2025年12月美食節義賣",
+      "date": "2025-12-07",
+      "activityType": "美食節義賣",
+      "pdfUrl": ["/notice/2025-12-activity.pdf"],
+      "target": ["所有成員"]
+    },
+    {
+      "id": "12",
+      "title": "2025年12月日營",
+      "date": "2025-12-13",
+      "activityType": "日營",
+      "pdfUrl": ["/notice/2025-12-activity.pdf"],
+      "target": ["所有成員"]
+    },
+    {
+      "id": "13",
+      "title": "2025年12月聖誕報佳音",
+      "date": "2025-12-21",
+      "activityType": "聖誕報佳音",
+      "pdfUrl": ["/notice/2025-12-activity.pdf"],
+      "target": ["所有成員"]
+    },
+    {
+      "id": "14",
+      "title": "2025年12月宿營",
+      "date": "2025-12-26",
+      "activityType": "宿營",
+      "pdfUrl": ["/notice/2025-12-26Camporee.pdf", "/notice/2025-12-activity.pdf"],
+      "target": ["前鋒會", "幼鋒會"]
     }
   ] 

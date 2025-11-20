@@ -552,12 +552,24 @@
       }
     }
   ],
-  "2025-12-13": [
+  "2025-12-07": [
     {
       "id": 47,
-      "title": "集會（前鋒會＋幼鋒會）",
+      "title": "美食節義賣（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "清水灣三育書院",
+      "marking": {
+        "startingDay": true,
+        "endingDay": true
+      }
+    }
+  ],
+  "2025-12-13": [
+    {
+      "id": 48,
+      "title": "日營（前鋒會＋幼鋒會）",
+      "time": "09:00 - 16:00",
+      "location": "北潭涌渡假營",
       "marking": {
         "startingDay": true,
         "endingDay": true
@@ -566,7 +578,7 @@
   ],
   "2025-12-20": [
     {
-      "id": 48,
+      "id": 49,
       "title": "集會（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
       "location": "待定",
@@ -576,12 +588,24 @@
       }
     }
   ],
-  "2025-12-23": [
+  "2025-12-21": [
     {
       "id": 49,
-      "title": "露營（前鋒會＋幼鋒會）",
+      "title": "聖誕報佳音（前鋒會＋幼鋒會）",
+      "time": "17:30 - 18:30",
+      "location": "屯門區",
+      "marking": {
+        "startingDay": true,
+        "endingDay": true
+      }
+    }
+  ],
+  "2025-12-26": [
+    {
+      "id": 50,
+      "title": "宿營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "北潭涌渡假營",
       "isCamp": true,
       "campId": 4,
       "marking": {
@@ -589,34 +613,34 @@
       }
     }
   ],
-  "2025-12-24": [
-    {
-      "id": 50,
-      "title": "露營（前鋒會＋幼鋒會）",
-      "time": "09:00 - 16:00",
-      "location": "待定",
-      "isCamp": true,
-      "campId": 4,
-      "marking": {}
-    }
-  ],
-  "2025-12-25": [
+  "2025-12-27": [
     {
       "id": 51,
-      "title": "露營（前鋒會＋幼鋒會）",
+      "title": "宿營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "北潭涌渡假營",
       "isCamp": true,
       "campId": 4,
       "marking": {}
     }
   ],
-  "2025-12-26": [
+  "2025-12-28": [
     {
       "id": 52,
-      "title": "露營（前鋒會＋幼鋒會）",
+      "title": "宿營（前鋒會＋幼鋒會）",
       "time": "09:00 - 16:00",
-      "location": "待定",
+      "location": "北潭涌渡假營",
+      "isCamp": true,
+      "campId": 4,
+      "marking": {}
+    }
+  ],
+  "2025-12-29": [
+    {
+      "id": 53,
+      "title": "宿營（前鋒會＋幼鋒會）",
+      "time": "09:00 - 16:00",
+      "location": "北潭涌渡假營",
       "isCamp": true,
       "campId": 4,
       "marking": {
