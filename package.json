@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.16.0",
+    "@clerk/nextjs": "^6.23.0",
     "@headlessui/react": "^2.2.2",
     "@heroicons/react": "^2.2.0",
     "@neondatabase/serverless": "^1.0.0",
@@ -20,19 +20,16 @@
     "@vercel/speed-insights": "^1.2.0",
     "cheerio": "^1.0.0",
     "date-fns": "^4.1.0",
-    "drizzle-orm": "^0.43.1",
-    "expo-server-sdk": "^3.15.0",
     "lucide-react": "^0.503.0",
     "motion": "^12.7.4",
-    "next": "^15.3.1",
-    "react": "^19.1.0",
+    "next": "^15.3.6",
+    "react": "^19.1.2",
     "react-calendar": "^5.1.0",
-    "react-dom": "^19.1.0",
+    "react-dom": "^19.1.2",
     "react-icons": "^5.5.0",
     "react-photo-album": "^2.4.1",
     "resend": "^4.3.0",
     "sharp": "^0.34.1",
-    "web-push": "^3.6.7",
     "yet-another-react-lightbox": "^3.22.0"
   },
   "devDependencies": {
