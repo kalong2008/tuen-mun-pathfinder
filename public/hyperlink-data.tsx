@@ -533,7 +533,7 @@ export const hyperLink2011 = [
     },
     {
       name: "2025年06月義工探訪",
-      href: "/2025-06-volunteer-visit",
+      href: "/2025-06-volunteer",
     },
     {
       name: "2025年07月宿營",
@@ -558,7 +558,35 @@ export const hyperLink2011 = [
     {
       name: "2025年09月參觀源區",
       href: "/2025-09-tpark",
-    }
+    },
+    {
+      name: "2025年09月前鋒會日",
+      href: "/2025-09-pathfinder-day",
+    },
+    {
+      name: "2025年10月聯合步操訓練",
+      href: "/2025-10-drilling-training",
+    },
+    {
+      name: "2025年11月宿營",
+      href: "/2025-11-camp",
+    },
+    {
+      name: "2025年11月參觀南豐紗廠",
+      href: "/2025-11-mills",
+    },
+    {
+      name: "2025年12月日營",
+      href: "/2025-12-camp",
+    },
+    {
+      name: "2025年12月聖誕派對",
+      href: "/2025-12-christmas-party",
+    },
+    {
+      name: "2025年12月報佳音",
+      href: "/2025-12-christmas-carol",
+    },
   ];
 
   export const hyperLinkOther = [
