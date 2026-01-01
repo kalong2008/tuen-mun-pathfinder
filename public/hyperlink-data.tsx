@@ -568,7 +568,7 @@ export const hyperLink2011 = [
       href: "/2025-10-drilling-training",
     },
     {
-      name: "2025年11月宿營",
+      name: "2025年11月露營",
       href: "/2025-11-camp",
     },
     {
