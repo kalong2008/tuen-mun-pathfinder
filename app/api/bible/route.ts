@@ -9,7 +9,15 @@ import VerseUpdateEmail from '@/app/util/VerseUpdateEmail';
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function GET(request: NextRequest) {
-  const sql = neon(process.env.DATABASE_URL!);
+  if (!process.env.DATABASE_URL) {
+    console.error("DATABASE_URL environment variable is not set");
+    return NextResponse.json(
+      { error: "Database configuration is missing. Please set DATABASE_URL environment variable." },
+      { status: 500 }
+    );
+  }
+
+  const sql = neon(process.env.DATABASE_URL);
   const today = new Date().toISOString().split('T')[0]; // Get YYYY-MM-DD
 
   try {

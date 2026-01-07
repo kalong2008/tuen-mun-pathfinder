@@ -2,7 +2,15 @@ import { NextRequest, NextResponse } from "next/server";
 import { neon } from "@neondatabase/serverless";
 
 export async function GET(request: NextRequest) {
-  const sql = neon(process.env.DATABASE_URL!);
+  if (!process.env.DATABASE_URL) {
+    console.error("DATABASE_URL environment variable is not set");
+    return NextResponse.json(
+      { error: "Database configuration is missing. Please set DATABASE_URL environment variable." },
+      { status: 500 }
+    );
+  }
+
+  const sql = neon(process.env.DATABASE_URL);
 
   try {
     // Fetch the verse with the highest ID (latest inserted)

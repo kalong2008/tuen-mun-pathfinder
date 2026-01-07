@@ -195,7 +195,6 @@ export default function Home() {
             width="4000"
             height="3000"
             className="w-full h-full object-cover"
-            objectFit="cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900/60 flex flex-col items-center justify-center text-white">
             <h1 className="text-2xl md:text-6xl font-bold mb-4">屯門前鋒會 幼鋒會</h1>
@@ -230,7 +229,6 @@ export default function Home() {
                 width={4000}
                 height={2667}
                 className="w-full h-full object-cover"
-                objectFit="cover"
               />
             </div>
             <div className="md:order-1">
@@ -302,7 +300,6 @@ export default function Home() {
                 width={4000}
                 height={2667}
                 className="w-full h-full object-cover"
-                objectFit="cover"
               />
             </div>
             <div className="md:order-2">

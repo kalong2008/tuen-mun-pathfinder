@@ -29,6 +29,35 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Environment Variables
+
+This project requires the following environment variables:
+
+- `DATABASE_URL` - Your Neon database connection string
+
+### Getting Environment Variables from Vercel
+
+**Option 1: Using Vercel CLI (Recommended)**
+```bash
+# Install Vercel CLI globally (if not already installed)
+npm install -g vercel
+
+# Pull environment variables from Vercel
+vercel env pull .env.local
+```
+
+**Option 2: Manual Setup**
+1. Go to your [Vercel Dashboard](https://vercel.com/dashboard)
+2. Select your project
+3. Go to Settings → Environment Variables
+4. Copy the `DATABASE_URL` value
+5. Create a `.env.local` file in the project root:
+   ```
+   DATABASE_URL=your_copied_database_url_here
+   ```
+
+**Note:** The `.env.local` file is gitignored and should not be committed to version control.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

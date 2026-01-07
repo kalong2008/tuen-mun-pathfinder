@@ -587,6 +587,10 @@ export const hyperLink2011 = [
       name: "2025年12月報佳音",
       href: "/2025-12-christmas-carol",
     },
+    {
+      name: "2025年12月金波利",
+      href: "/2025-12-camporee",
+    },
   ];
 
   export const hyperLinkOther = [
