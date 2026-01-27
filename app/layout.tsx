@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://' + process.env.VERCEL_PROJECT_PRODUCTION_URL,
     images: [
       {
-        url: 'https://' + process.env.VERCEL_PROJECT_PRODUCTION_URL + '/photo/2024/2024-09-promotion/2024-09-promotion-87.jpeg',
+        url: 'https://' + process.env.VERCEL_PROJECT_PRODUCTION_URL + '/photo/2025/2025-08-promotion/2025-08-promotion-54.jpg',
         width: 4000,
         height: 1610,
         alt: '屯門前鋒會 幼鋒會 | 基督復臨安息日會屯門教會',

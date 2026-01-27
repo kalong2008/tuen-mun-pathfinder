@@ -30,18 +30,15 @@ async function generatePhotoJson(photoFolderPath, publicPath, quiet = false) {
   // Read all files in the folder
   const files = fs.readdirSync(photoFolderPath);
   
-  // Filter image files and sort them naturally
+  // Filter image files and sort them naturally (1, 2, 3, ..., 10, 11, 12)
   const imageFiles = files
     .filter(file => {
       const ext = path.extname(file).toLowerCase();
       return imageExtensions.includes(ext) && !file.includes('.json');
     })
-    .sort((a, b) => {
-      // Natural sort: extract numbers and compare
-      const numA = parseInt(a.match(/\d+/)?.[0] || '0', 10);
-      const numB = parseInt(b.match(/\d+/)?.[0] || '0', 10);
-      return numA - numB;
-    });
+    .sort((a, b) =>
+      a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })
+    );
 
   if (imageFiles.length === 0) {
     throw new Error(`No image files found in folder: ${photoFolderPath}`);
