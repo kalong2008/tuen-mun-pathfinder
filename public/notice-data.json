@@ -113,5 +113,13 @@
       "activityType": "宿營",
       "pdfUrl": ["/notice/2025-12-26Camporee.pdf", "/notice/2025-12-activity.pdf"],
       "target": ["前鋒會", "幼鋒會"]
+    },
+    {
+      "id": "15",
+      "title": "2026年3月露營",
+      "date": "2026-03-20",
+      "activityType": "露營",
+      "pdfUrl": ["/notice/2026-03-camp-adventurer.pdf"],
+      "target": [ "幼鋒會"]
     }
   ] 
