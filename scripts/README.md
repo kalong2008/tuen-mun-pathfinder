@@ -297,12 +297,36 @@ npm install
 - Run `scan-and-generate-json.js` to automatically fix mismatches
 - Or manually regenerate JSON for the specific folder
 
+### 4. `migrate-notice-calendar.mjs` – Notice & calendar → Neon + Vercel Blob
+
+Migrates `public/calendar-data.json`, `public/notice-data.json`, and PDFs in `public/notice/` to Neon DB and (optionally) Vercel Blob.
+
+**Prerequisites:** Run `scripts/schema-notice-calendar.sql` in the Neon SQL Editor first.
+
+**Usage:**
+```bash
+npm run migrate-notice-calendar
+# or with env vars (e.g. older Node without --env-file):
+DATABASE_URL=postgres://... BLOB_READ_WRITE_TOKEN=... node scripts/migrate-notice-calendar.mjs
+```
+
+**What it does:**
+1. Creates `calendar_events` and `notices` tables if they don’t exist
+2. If `BLOB_READ_WRITE_TOKEN` is set: uploads each PDF from `public/notice/` to Vercel Blob and stores blob URLs in `notices.pdf_urls`
+3. Seeds `calendar_events` from `public/calendar-data.json` and `notices` from `public/notice-data.json`
+
+After a successful run with Blob token, notice links use blob URLs; you can remove the PDFs from `public/notice/` if you no longer need them there.
+
+---
+
 ## Project Structure
 
 ```
 scripts/
 ├── generate-photo-json.js          # Core function for generating JSON
 ├── scan-and-generate-json.js       # Batch scanner (recommended)
+├── schema-notice-calendar.sql      # Neon schema for calendar_events & notices
+├── migrate-notice-calendar.mjs     # Migrate notice/calendar to Neon + Blob
 ├── generate-single-folder.js        # Simple wrapper script
 ├── example-usage.js                 # Usage examples
 ├── example-api-route.ts             # Next.js API route example

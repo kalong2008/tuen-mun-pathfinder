@@ -1,13 +1,13 @@
 "use client";
 
 //import { Noto_Sans_HK } from "next/font/google";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "../ui/calendar.css";
 //const notoHK = Noto_Sans_HK({ preload: false });
 //import { differenceInCalendarDays } from "date-fns";
-import { activities } from "@/src/types/calendar";
+import type { Activities } from "@/src/types/calendar";
 
 import Link from "next/link";
 import { CalendarDays, Clock, MapPin } from "lucide-react";
@@ -25,15 +25,26 @@ const currentDateTime = new Date();
 // Format date YYYY-MM-DD to Chinese M月D日
 const formatDate = (dateStr: string): string => {
   try {
-    // The activities keys are the dates we need to format
     const date = new Date(dateStr);
     const month = date.getMonth() + 1;
     const day = date.getDate();
     return `${month}月${day}日`;
   } catch (e) {
     console.error("Error formatting date:", dateStr, e);
-    return dateStr; // Return original string on error
+    return dateStr;
   }
+};
+
+// Format date range (sorted YYYY-MM-DD[]) to e.g. "4月3日–5日" or "4月3日–4月5日"
+const formatDateRange = (dateStrs: string[]): string => {
+  if (dateStrs.length === 0) return "";
+  if (dateStrs.length === 1) return formatDate(dateStrs[0]);
+  const first = formatDate(dateStrs[0]);
+  const last = formatDate(dateStrs[dateStrs.length - 1]);
+  const [m1, d1] = first.replace("月", "-").replace("日", "").split("-").map(Number);
+  const [m2, d2] = last.replace("月", "-").replace("日", "").split("-").map(Number);
+  if (m1 === m2 && d1 !== d2) return `${m1}月${d1}日–${d2}日`;
+  return `${first}–${last}`;
 };
 
 // Get current year and month in YYYYMM format
@@ -62,6 +73,16 @@ const formatDateToYyyyMmDd = (date: Date): string => {
 export default function MyCalendar() {
   const [activeDate, setActiveDate] = useState<Date>(new Date());
   const [currentViewDate, setCurrentViewDate] = useState<Date>(new Date());
+  const [activities, setActivities] = useState<Activities>({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/api/calendar")
+      .then((res) => res.ok ? res.json() : Promise.reject(new Error("Failed to load calendar")))
+      .then((data: Activities) => setActivities(data))
+      .catch(() => setActivities({}))
+      .finally(() => setLoading(false));
+  }, []);
 
   const activeYearMonth = getYearMonthString(currentViewDate);
 
@@ -81,10 +102,39 @@ export default function MyCalendar() {
     .flatMap(([dateKey, items]) => items.map(item => ({ ...item, date: dateKey }))) // Add date key to each item
     .sort((a, b) => new Date(a.date).getDate() - new Date(b.date).getDate()); // Sort by day within the month
 
+  // Dedupe: one line per multi-day camp (by campKey) or per single-day activity (by id). For camps with campKey, keep the row that has the earliest date (to show date range from all dates in month).
+  type ActivityWithRange = (typeof currentMonthActivities)[0] & { dateRange?: string[] };
+  const uniqueActivitiesForMonth: ActivityWithRange[] = (() => {
+    const byKey = new Map<string, { item: (typeof currentMonthActivities)[0]; dates: string[] }>();
+    for (const item of currentMonthActivities) {
+      const key = item.campKey ?? `id:${item.id}`;
+      const existing = byKey.get(key);
+      if (!existing) {
+        byKey.set(key, { item, dates: [item.date] });
+      } else {
+        existing.dates.push(item.date);
+        existing.dates.sort();
+        if (item.date < existing.item.date) existing.item = item;
+      }
+    }
+    return Array.from(byKey.values()).map(({ item, dates }) => ({
+      ...item,
+      dateRange: dates.length > 1 ? dates : undefined,
+    }));
+  })();
 
-  // Filter for unique activities based on ID to avoid duplicates from multi-day events showing multiple times in the list
-  const uniqueActivitiesForMonth = Array.from(new Map(currentMonthActivities.map(item => [item.id, item])).values());
-
+  if (loading) {
+    return (
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="lg:col-span-1 bg-white p-2 sm:p-4 rounded-lg shadow border border-gray-200 flex justify-center items-center min-h-[320px]">
+          <p className="text-gray-500">載入日曆中…</p>
+        </div>
+        <div className="lg:col-span-1 bg-gradient-to-b from-zinc-50 to-zinc-100 p-4 sm:p-6 rounded-lg shadow-md border border-gray-200 min-h-[200px] flex items-center justify-center">
+          <p className="text-gray-500">載入活動列表中…</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     // Keep the grid layout for responsiveness
@@ -124,7 +174,7 @@ export default function MyCalendar() {
               >
                 <p className="font-semibold text-gray-800 mb-1.5 flex items-center">
                   <CalendarDays className="w-4 h-4 mr-2 text-blue-600 flex-shrink-0" />
-                  <span>{formatDate(activity.date)}</span>
+                  <span>{activity.dateRange ? formatDateRange(activity.dateRange) : formatDate(activity.date)}</span>
                 </p>
                 <div className="pl-[24px] text-sm space-y-1">
                   <span className="flex items-center text-gray-600">

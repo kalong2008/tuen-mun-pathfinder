@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { useAuth, useUser } from '@clerk/nextjs'
 // Removed unused sendNotification import
 // import { sendNotification } from '@/app/actions'
@@ -74,7 +75,10 @@ export default function AdminNotifications() {
 
   return (
     <div className="w-4/5 m-auto pb-14 pt-[64px]">
-      <h1 className="text-2xl font-bold mb-6">Send Expo Push Notification</h1>
+      <div className="flex items-center gap-4 mb-6">
+        <h1 className="text-2xl font-bold">Send Expo Push Notification</h1>
+        <Link href="/admin/notice-calendar" className="text-blue-600 hover:underline text-sm">通告與日曆 CRUD</Link>
+      </div>
       <div className="max-w-xl space-y-4">
         <div>
           <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">

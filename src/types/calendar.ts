@@ -1,12 +1,11 @@
-import calendarData from '@/public/calendar-data.json';
-
 export type Activity = {
   id: number;
   title: string;
   time: string;
   location: string;
   isCamp?: boolean;
-  campId?: number;
+  /** Stable key for multi-day camps (same for all days of that camp), e.g. "2025-04-03_露營（前鋒會＋幼鋒會）" */
+  campKey?: string;
   description?: string;
   marking: {
     startingDay?: boolean;
@@ -15,8 +14,3 @@ export type Activity = {
 };
 
 export type Activities = { [key: string]: Activity[] };
-
-export const activities: Activities = calendarData;
-
-// Helper function to get highlighted dates for the calendar
-export const highlightedDates = Object.keys(calendarData).map(date => new Date(date)); 

@@ -12,9 +12,9 @@ export default async function Page({
   params: Promise<{ event: string }>
 }) {
   const { event } = await params;
-  const baseUrl = process.env.NODE_ENV === 'development' 
-    ? 'https://localhost:3000' 
-    : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+  const baseUrl = process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3000'
+    : `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL ?? process.env.VERCEL_URL}`;
     
   const response = await fetch(`${baseUrl}/api/photos`, {
     method: 'POST',

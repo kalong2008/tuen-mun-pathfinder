@@ -1,9 +1,9 @@
 'use client'
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import * as motion from "motion/react-client";
-import noticeData from "@/public/notice-data.json";
-import { CalendarDays, FileText, Users } from "lucide-react";
+import { CalendarDays, FileText } from "lucide-react";
 
 interface Notice {
   id: string;
@@ -15,7 +15,7 @@ interface Notice {
 }
 
 // Group notices by activity type
-const groupByActivityType = () => {
+const groupByActivityType = (noticeData: Notice[]) => {
   const grouped: Record<string, Notice[]> = {};
   
   // Sort notices by date in descending order (newest first)
@@ -146,8 +146,39 @@ const getIconColor = (notices: Notice[], allPast: boolean) => {
 };
 
 export default function Page() {
-  const groupedNotices = groupByActivityType();
-  
+  const [noticeData, setNoticeData] = useState<Notice[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("/api/notices")
+      .then((res) => {
+        if (!res.ok) throw new Error("Failed to load notices");
+        return res.json();
+      })
+      .then((data: Notice[]) => setNoticeData(data))
+      .catch((e) => setError(e instanceof Error ? e.message : "載入失敗"))
+      .finally(() => setLoading(false));
+  }, []);
+
+  const groupedNotices = groupByActivityType(noticeData);
+
+  if (loading) {
+    return (
+      <div className="max-w-5xl mx-auto pb-14 pt-[84px] px-4 flex items-center justify-center min-h-[40vh]">
+        <p className="text-gray-500">載入通告中…</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="max-w-5xl mx-auto pb-14 pt-[84px] px-4 flex items-center justify-center min-h-[40vh]">
+        <p className="text-red-600">{error}</p>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-5xl mx-auto pb-14 pt-[84px] px-4">
       <motion.h1 

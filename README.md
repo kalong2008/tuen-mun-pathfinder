@@ -34,6 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 This project requires the following environment variables:
 
 - `DATABASE_URL` - Your Neon database connection string
+- `BLOB_READ_WRITE_TOKEN` - (Optional) Vercel Blob token for notice PDFs. Add this if you run the notice/calendar migration to store PDFs in Vercel Blob.
 
 ### Getting Environment Variables from Vercel
 
@@ -57,6 +58,17 @@ vercel env pull .env.local
    ```
 
 **Note:** The `.env.local` file is gitignored and should not be committed to version control.
+
+### Notice & calendar data (Neon + Vercel Blob)
+
+Calendar and notice data are served from Neon DB; notice PDFs can be stored in Vercel Blob.
+
+1. **Create tables in Neon**: Run the SQL in `scripts/schema-notice-calendar.sql` in the [Neon SQL Editor](https://neon.tech/docs/connect/query-with-neon-sql-editor).
+2. **Run the migration** (seeds calendar + notices into Neon, uploads PDFs to Blob if `BLOB_READ_WRITE_TOKEN` is set):
+   ```bash
+   npm run migrate-notice-calendar
+   ```
+   Requires Node 20.6+ for `--env-file`. Otherwise set `DATABASE_URL` and optionally `BLOB_READ_WRITE_TOKEN` in the environment before running.
 
 ## Deploy on Vercel
 
