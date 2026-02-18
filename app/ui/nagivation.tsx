@@ -34,6 +34,7 @@ import {
   hyperLink2023,
   hyperLink2024,
   hyperLink2025,
+  hyperLink2026,
   hyperLinkOther,
 } from "@/public/hyperlink-data";
 import {
@@ -70,6 +71,7 @@ export default function SideNav() {
   const triggerRef_2023 = useRef<HTMLButtonElement>(null);
   const triggerRef_2024 = useRef<HTMLButtonElement>(null);
   const triggerRef_2025 = useRef<HTMLButtonElement>(null);
+  const triggerRef_2026 = useRef<HTMLButtonElement>(null);
   const timeOutRef = useRef<NodeJS.Timeout | null>(null);
 
   const handleEnter_2011 = (isOpen: boolean) => {
@@ -175,6 +177,22 @@ export default function SideNav() {
     }
   };
 
+  const handleEnter_2026 = (isOpen: boolean) => {
+    if (timeOutRef.current) {
+      clearTimeout(timeOutRef.current);
+    }
+    if (!isOpen) {
+      triggerRef_2026.current?.click();
+    }
+  };
+
+  const handleLeave_2026 = (isOpen: boolean) => {
+    timeOutRef.current = setTimeout(() => {
+      isOpen &&
+        document.activeElement === triggerRef_2026.current &&
+        triggerRef_2026.current?.click();
+    }, timeoutDuration);
+  };
   const handleLeave_2024 = (isOpen: boolean) => {
     timeOutRef.current = setTimeout(() => {
       isOpen &&
@@ -617,6 +635,47 @@ export default function SideNav() {
 
             {/* end of the 2025年相片 */}
 
+            {/* start of the 2026年相片 */}
+            <Popover className="relative">
+              {({ open }) => (
+                <div
+                  onMouseEnter={() => handleEnter_2026(open)}
+                  onMouseLeave={() => handleLeave_2026(open)}
+                >
+                  <PopoverButton
+                    className="flex items-center gap-x-1 text-sm leading-6 text-gray-900"
+                    ref={triggerRef_2026} //ref={popoverButtonRef}</Popover>
+                  >
+                    2026年相片
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className="h-5 w-5 flex-none text-gray-400"
+                    />
+                  </PopoverButton>
+
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0 translate-y-1"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in duration-150"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 translate-y-1"
+                  >
+                    <PopoverPanel
+                      transition
+                      className="absolute top-full z-10 mt-3 w-screen max-w-max max-h-[80vh] overflow-y-auto rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+                    >
+                      <div className="p-1">
+                        {hyperLink2026.map((item) => (
+                          <PopMenu linkItem={item} key={item.name} />
+                        ))}
+                      </div>
+                    </PopoverPanel>
+                  </Transition>
+                </div>
+              )}
+            </Popover>
             {/* start of other */}
             {hyperLinkOther.map((link) => (
               <Link
@@ -1048,6 +1107,30 @@ export default function SideNav() {
                     </DisclosurePanel>
                   </Disclosure>
                   {/* end of the 2025年相片 */}
+                  {/* start of the 2026年相片 */}
+                  <Disclosure as="div" className="-mx-3">
+                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base leading-7 text-gray-900 hover:bg-gray-50">
+                      2026年相片
+                      <ChevronDownIcon
+                        aria-hidden="true"
+                        className="h-5 w-5 flex-none group-data-[open]:rotate-180"
+                      />
+                    </DisclosureButton>
+                    <DisclosurePanel className="mt-2 space-y-2 flex flex-col items-start">
+                      {hyperLink2026.map((item) => (
+                        <DisclosureButton key={item.name}>
+                          <Link
+                            href={item.href}
+                            className="rounded-lg py-2 pl-6 pr-3 text-sm leading-7 text-gray-900 hover:bg-gray-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {item.name}
+                          </Link>
+                        </DisclosureButton>
+                      ))}
+                    </DisclosurePanel>
+                  </Disclosure>
+                  {/* end of the 2026年相片 */}
 
                   {/* start of other */}
                   {hyperLinkOther.map((link) => (
