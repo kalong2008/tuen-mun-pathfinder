@@ -18,25 +18,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import {
-  hyperLink2011,
-  hyperLink2012,
-  hyperLink2013,
-  hyperLink2014,
-  hyperLink2015,
-  hyperLink2016,
-  hyperLink2017,
-  hyperLink2018,
-  hyperLink2019,
-  hyperLink2020,
-  hyperLink2021,
-  hyperLink2022,
-  hyperLink2023,
-  hyperLink2024,
-  hyperLink2025,
-  hyperLink2026,
-  hyperLinkOther,
-} from "@/public/hyperlink-data";
+import type { HyperlinksByYear } from "@/app/lib/hyperlinks";
 import {
   ClerkProvider,
   SignInButton,
@@ -47,7 +29,24 @@ import {
 
 const timeoutDuration = 120;
 
-export default function SideNav() {
+export default function SideNav({ hyperlinks }: { hyperlinks: HyperlinksByYear }) {
+  const hyperLink2011 = hyperlinks.hyperLink2011 ?? [];
+  const hyperLink2012 = hyperlinks.hyperLink2012 ?? [];
+  const hyperLink2013 = hyperlinks.hyperLink2013 ?? [];
+  const hyperLink2014 = hyperlinks.hyperLink2014 ?? [];
+  const hyperLink2015 = hyperlinks.hyperLink2015 ?? [];
+  const hyperLink2016 = hyperlinks.hyperLink2016 ?? [];
+  const hyperLink2017 = hyperlinks.hyperLink2017 ?? [];
+  const hyperLink2018 = hyperlinks.hyperLink2018 ?? [];
+  const hyperLink2019 = hyperlinks.hyperLink2019 ?? [];
+  const hyperLink2020 = hyperlinks.hyperLink2020 ?? [];
+  const hyperLink2021 = hyperlinks.hyperLink2021 ?? [];
+  const hyperLink2022 = hyperlinks.hyperLink2022 ?? [];
+  const hyperLink2023 = hyperlinks.hyperLink2023 ?? [];
+  const hyperLink2024 = hyperlinks.hyperLink2024 ?? [];
+  const hyperLink2025 = hyperlinks.hyperLink2025 ?? [];
+  const hyperLink2026 = hyperlinks.hyperLink2026 ?? [];
+  const hyperLinkOther = hyperlinks.hyperLinkOther ?? [];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const { scrollY } = useScroll();

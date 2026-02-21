@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_HK } from "next/font/google";
 import "./globals.css";
 import SideNav from "@/app/ui/nagivation";
+import { getHyperlinksFromDb } from "@/app/lib/hyperlinks";
 import FooterComponent from "./ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
@@ -29,11 +30,12 @@ export const metadata: Metadata = {
   }
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const hyperlinks = await getHyperlinksFromDb();
   return (
     <ClerkProvider
     appearance={{
@@ -54,7 +56,7 @@ export default function RootLayout({
             scale: { type: "spring", visualDuration: 0.2, bounce: 0.2 },
           }}
         >
-          <div><SideNav />{children}
+          <div><SideNav hyperlinks={hyperlinks} />{children}
             <SpeedInsights />
             <Analytics /></div>
           <FooterComponent />

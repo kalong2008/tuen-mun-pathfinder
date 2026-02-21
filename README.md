@@ -70,6 +70,17 @@ Calendar and notice data are served from Neon DB; notice PDFs can be stored in V
    ```
    Requires Node 20.6+ for `--env-file`. Otherwise set `DATABASE_URL` and optionally `BLOB_READ_WRITE_TOKEN` in the environment before running.
 
+### Hyperlink data (Neon)
+
+Navigation hyperlinks are stored in Neon DB.
+
+1. **Create the table**: Run the SQL in `scripts/schema-hyperlinks.sql` in the [Neon SQL Editor](https://neon.tech/docs/connect/query-with-neon-sql-editor).
+2. **Run the migration** (seeds hyperlinks from `scripts/hyperlink-seed.json`):
+   ```bash
+   npm run migrate-hyperlinks
+   ```
+   When adding new links, update `scripts/hyperlink-seed.json` and re-run the migration.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

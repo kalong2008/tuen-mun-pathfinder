@@ -317,6 +317,25 @@ DATABASE_URL=postgres://... BLOB_READ_WRITE_TOKEN=... node scripts/migrate-notic
 
 After a successful run with Blob token, notice links use blob URLs; you can remove the PDFs from `public/notice/` if you no longer need them there.
 
+### 5. `migrate-hyperlinks.mjs` – Hyperlinks → Neon
+
+Migrates navigation hyperlinks from `scripts/hyperlink-seed.json` to Neon DB.
+
+**Prerequisites:** Run `scripts/schema-hyperlinks.sql` in the Neon SQL Editor first.
+
+**Usage:**
+```bash
+npm run migrate-hyperlinks
+# or with env vars:
+DATABASE_URL=postgres://... node scripts/migrate-hyperlinks.mjs
+```
+
+**What it does:**
+1. Creates `hyperlinks` table if it doesn't exist
+2. Truncates and seeds from `hyperlink-seed.json`
+
+When adding new links, update `scripts/hyperlink-seed.json` and re-run the migration.
+
 ---
 
 ## Project Structure
@@ -326,7 +345,10 @@ scripts/
 ├── generate-photo-json.js          # Core function for generating JSON
 ├── scan-and-generate-json.js       # Batch scanner (recommended)
 ├── schema-notice-calendar.sql      # Neon schema for calendar_events & notices
+├── schema-hyperlinks.sql           # Neon schema for hyperlinks
+├── hyperlink-seed.json             # Seed data for hyperlinks migration
 ├── migrate-notice-calendar.mjs     # Migrate notice/calendar to Neon + Blob
+├── migrate-hyperlinks.mjs          # Migrate hyperlinks to Neon
 ├── generate-single-folder.js        # Simple wrapper script
 ├── example-usage.js                 # Usage examples
 ├── example-api-route.ts             # Next.js API route example

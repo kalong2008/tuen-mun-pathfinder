@@ -1,10 +1,5 @@
 import AlbumComponent from "@/app/util/makeAlbum";
-import * as hyperlinkData from '@/public/hyperlink-data';
-
-interface HyperlinkItem {
-  name: string;
-  href: string;
-}
+import { getHyperlinksFromDb } from "@/app/lib/hyperlinks";
 
 export default async function Page({
   params,
@@ -25,13 +20,9 @@ export default async function Page({
   });
   const photos = await response.json();
 
-  // Get all hyperlink arrays dynamically
-  const allHyperlinks = Object.entries(hyperlinkData)
-    .filter(([key]) => key.startsWith('hyperLink'))
-    .flatMap(([_, value]) => value);
-
-  // Find the matching event in hyperlinkData
-  const eventData = allHyperlinks.find((item: HyperlinkItem) => item.href === `/${event}`);
+  const hyperlinks = await getHyperlinksFromDb();
+  const allHyperlinks = Object.values(hyperlinks).flat();
+  const eventData = allHyperlinks.find((item) => item.href === `/${event}`);
   const title = eventData ? eventData.name : event;
 
   return <AlbumComponent photo={photos} title={title} />;
