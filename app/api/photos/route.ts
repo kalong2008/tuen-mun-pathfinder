@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-import { getPhotoUrl } from '@/app/lib/photo';
+import { getPhotoUrl, PHOTO_BASE_URL } from '@/app/lib/photo';
 
 function withPhotoUrls(content: unknown): unknown {
   if (Array.isArray(content)) {
@@ -33,16 +33,21 @@ export async function POST(request: NextRequest) {
 
     const year = event.split('-')[0];
     const jsonPath = path.join(process.cwd(), 'public', 'photo', year, event, `${event}.json`);
-    
-    // Check if file exists
-    if (!fs.existsSync(jsonPath)) {
-      return NextResponse.json({ error: 'JSON file not found' }, { status: 404 });
+
+    let jsonContent: unknown;
+    if (fs.existsSync(jsonPath)) {
+      jsonContent = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+    } else {
+      // Fallback: fetch manifest from Google Cloud Storage
+      const gcsManifestUrl = `${PHOTO_BASE_URL}/photo/${year}/${event}/${event}.json`;
+      const res = await fetch(gcsManifestUrl, { next: { revalidate: 60 } });
+      if (!res.ok) {
+        return NextResponse.json({ error: 'JSON file not found' }, { status: 404 });
+      }
+      jsonContent = await res.json();
     }
 
-    // Read and parse the JSON file
-    const jsonContent = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
     const withUrls = withPhotoUrls(jsonContent);
-
     return NextResponse.json(withUrls);
   } catch (error) {
     console.error('Error reading JSON file:', error);

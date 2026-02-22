@@ -18,7 +18,12 @@ export default async function Page({
     },
     body: JSON.stringify({ event }),
   });
-  const photos = await response.json();
+
+  let photos: unknown = [];
+  if (response.ok) {
+    photos = await response.json();
+  }
+  // 404 or other error: API returns HTML; avoid parsing as JSON
 
   const hyperlinks = await getHyperlinksFromDb();
   const allHyperlinks = Object.values(hyperlinks).flat();

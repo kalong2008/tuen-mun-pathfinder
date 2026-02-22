@@ -4,8 +4,8 @@ import { getPhotoUrl } from "@/app/lib/photo";
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 export function makePhotoObject({photo}: {photo: any}) {
-    
-    const photos = photo.map(
+    const list = Array.isArray(photo) ? photo : (photo?.photos ?? []);
+    const photos = list.map(
       ({ url, width, height }: {url: string, width: number, height: number}) => {
         const src = getPhotoUrl(url);
         return ({
