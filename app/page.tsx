@@ -1,6 +1,7 @@
 'use client'
 
 import Image from "next/image";
+import { getPhotoUrl } from "@/app/lib/photo";
 import * as motion from "motion/react-client";
 import { FaChurch, FaUserFriends, FaHiking, FaBook, FaChild } from "react-icons/fa";
 import MyCalendar from "@/app/ui/calendar";
@@ -190,7 +191,7 @@ export default function Home() {
       >
         <div className="relative aspect-[4000/1610]">
           <Image
-            src="/photo/2025/2025-08-promotion/2025-08-promotion-54.jpg"
+            src={getPhotoUrl("/photo/2025/2025-08-promotion/2025-08-promotion-54.jpg")}
             alt="banner-photo"
             width="4000"
             height="3000"
@@ -224,7 +225,7 @@ export default function Home() {
           >
             <div className="shadow-lg rounded-lg overflow-hidden md:order-2 aspect-[4000/2667]">
               <Image
-                src="/photo/2025/2025-08-tpark/2025-08-tpark-6.jpg"
+                src={getPhotoUrl("/photo/2025/2025-08-tpark/2025-08-tpark-6.jpg")}
                 alt="幼鋒會活動"
                 width={4000}
                 height={2667}
@@ -295,7 +296,7 @@ export default function Home() {
           >
             <div className="shadow-lg rounded-lg overflow-hidden md:order-1 aspect-[4000/2667]">
               <Image
-                src="/photo/2025/2025-07-camp/2025-07-camp-13.jpg"
+                src={getPhotoUrl("/photo/2025/2025-07-camp/2025-07-camp-13.jpg")}
                 alt="前鋒會活動"
                 width={4000}
                 height={2667}

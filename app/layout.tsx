@@ -3,6 +3,7 @@ import { Noto_Sans_HK } from "next/font/google";
 import "./globals.css";
 import SideNav from "@/app/ui/nagivation";
 import { getHyperlinksFromDb } from "@/app/lib/hyperlinks";
+import { PHOTO_BASE_URL } from "@/app/lib/photo";
 import FooterComponent from "./ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://' + process.env.VERCEL_PROJECT_PRODUCTION_URL,
     images: [
       {
-        url: 'https://' + process.env.VERCEL_PROJECT_PRODUCTION_URL + '/photo/2025/2025-08-promotion/2025-08-promotion-54.jpg',
+        url: PHOTO_BASE_URL + '/2025/2025-08-promotion/2025-08-promotion-54.jpg',
         width: 4000,
         height: 1610,
         alt: '屯門前鋒會 幼鋒會 | 基督復臨安息日會屯門教會',

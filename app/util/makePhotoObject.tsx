@@ -1,21 +1,24 @@
 import type { Photo } from "react-photo-album";
+import { getPhotoUrl } from "@/app/lib/photo";
 
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 export function makePhotoObject({photo}: {photo: any}) {
     
     const photos = photo.map(
-      ({ url, width, height }: {url: string, width: number, height: number}) =>
-        ({
-          src: url,
+      ({ url, width, height }: {url: string, width: number, height: number}) => {
+        const src = getPhotoUrl(url);
+        return ({
+          src,
           width,
           height,
           srcSet: breakpoints.map((breakpoint) => ({
-            src: url,
+            src,
             width: breakpoint,
             height: Math.round((height / width) * breakpoint),
           })),
-        }) as Photo,
+        }) as Photo;
+      },
     );
 
     
