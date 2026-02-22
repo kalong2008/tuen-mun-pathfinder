@@ -13,8 +13,8 @@ import {
   SignedOut,
   SignOutButton,
 } from "@clerk/nextjs";
+import type { PhotoSection } from "@/app/lib/photo-sections";
 import {
-  PHOTO_SECTIONS,
   getYearsWithLinks,
   YearRangePopover,
   YearRangeDisclosure,
@@ -22,7 +22,13 @@ import {
 
 const timeoutDuration = 120;
 
-export default function SideNav({ hyperlinks }: { hyperlinks: HyperlinksByYear }) {
+export default function SideNav({
+  hyperlinks,
+  photoSections,
+}: {
+  hyperlinks: HyperlinksByYear;
+  photoSections: PhotoSection[];
+}) {
   const hyperLinkOther = hyperlinks.hyperLinkOther ?? [];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
@@ -56,7 +62,7 @@ export default function SideNav({ hyperlinks }: { hyperlinks: HyperlinksByYear }
     },
   });
 
-  const photoSectionsData = PHOTO_SECTIONS.map((section) => ({
+  const photoSectionsData = photoSections.map((section) => ({
     ...section,
     yearsWithLinks: getYearsWithLinks(hyperlinks, section.years),
   }));

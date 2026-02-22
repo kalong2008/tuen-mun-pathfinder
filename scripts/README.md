@@ -336,6 +336,20 @@ DATABASE_URL=postgres://... node scripts/migrate-hyperlinks.mjs
 
 When adding new links, update `scripts/hyperlink-seed.json` and re-run the migration.
 
+### 6. `migrate-photo-sections.mjs` – Photo sections → Neon
+
+Seeds navigation photo sections (year ranges) into Neon DB.
+
+**Prerequisites:** Run `scripts/schema-photo-sections.sql` in the Neon SQL Editor first.
+
+**Usage:**
+```bash
+node --env-file=.env.local scripts/migrate-photo-sections.mjs
+# or: DATABASE_URL=postgres://... node scripts/migrate-photo-sections.mjs
+```
+
+**What it does:** Inserts or updates the four photo sections (2011–2015, 2016–2020, 2021–2025, 2026). Uses `ON CONFLICT (id) DO UPDATE` so re-running is safe.
+
 ---
 
 ## Project Structure
@@ -346,9 +360,11 @@ scripts/
 ├── scan-and-generate-json.js       # Batch scanner (recommended)
 ├── schema-notice-calendar.sql      # Neon schema for calendar_events & notices
 ├── schema-hyperlinks.sql           # Neon schema for hyperlinks
+├── schema-photo-sections.sql      # Neon schema for photo_sections
 ├── hyperlink-seed.json             # Seed data for hyperlinks migration
 ├── migrate-notice-calendar.mjs     # Migrate notice/calendar to Neon + Blob
 ├── migrate-hyperlinks.mjs          # Migrate hyperlinks to Neon
+├── migrate-photo-sections.mjs      # Seed photo sections to Neon
 ├── generate-single-folder.js        # Simple wrapper script
 ├── example-usage.js                 # Usage examples
 ├── example-api-route.ts             # Next.js API route example

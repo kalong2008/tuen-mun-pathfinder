@@ -15,14 +15,6 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import type { HyperlinksByYear, HyperlinkItem } from "@/app/lib/hyperlinks";
 
-/** Config for each photo year-range section in the nav */
-export const PHOTO_SECTIONS = [
-  { id: "2011-2015", label: "2011-2015年相片", years: [2011, 2012, 2013, 2014, 2015] },
-  { id: "2016-2020", label: "2016-2020年相片", years: [2016, 2017, 2018, 2019, 2020] },
-  { id: "2021-2025", label: "2021-2025年相片", years: [2021, 2022, 2023, 2024, 2025] },
-  { id: "2026", label: "2026年相片", years: [2026] },
-] as const;
-
 export type YearWithLinks = { yearLabel: string; links: HyperlinkItem[] };
 
 export function getYearsWithLinks(

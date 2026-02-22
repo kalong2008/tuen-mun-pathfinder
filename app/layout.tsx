@@ -3,6 +3,7 @@ import { Noto_Sans_HK } from "next/font/google";
 import "./globals.css";
 import SideNav from "@/app/ui/nagivation";
 import { getHyperlinksFromDb } from "@/app/lib/hyperlinks";
+import { getPhotoSectionsFromDb } from "@/app/lib/photo-sections";
 import { PHOTO_BASE_URL } from "@/app/lib/photo";
 import FooterComponent from "./ui/footer";
 import { SpeedInsights } from "@vercel/speed-insights/next"
@@ -36,7 +37,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const hyperlinks = await getHyperlinksFromDb();
+  const [hyperlinks, photoSections] = await Promise.all([
+    getHyperlinksFromDb(),
+    getPhotoSectionsFromDb(),
+  ]);
   return (
     <ClerkProvider
     appearance={{
@@ -57,7 +61,7 @@ export default async function RootLayout({
             scale: { type: "spring", visualDuration: 0.2, bounce: 0.2 },
           }}
         >
-          <div><SideNav hyperlinks={hyperlinks} />{children}
+          <div><SideNav hyperlinks={hyperlinks} photoSections={photoSections} />{children}
             <SpeedInsights />
             <Analytics /></div>
           <FooterComponent />
