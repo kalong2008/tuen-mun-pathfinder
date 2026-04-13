@@ -14,6 +14,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 const notoHK = Noto_Sans_HK({ preload: false, });
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "屯門前鋒會 幼鋒會 | 基督復臨安息日會屯門教會",
   description: "屯門前鋒會及幼鋒會(6-15歲)提供信仰為本的全人發展培訓。透過歷奇、服務與技能學習，促進兒童及青少年在品格、領導力、生活技能、愛心，以至情緒管理方面的成長。歡迎加入！",
