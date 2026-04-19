@@ -228,6 +228,7 @@ export default function AdminNoticeCalendarPage() {
     <div className="max-w-6xl mx-auto pb-14 pt-24 px-4">
       <div className="flex items-center gap-4 mb-6">
         <Link href="/admin/notifications" className="text-blue-600 hover:underline">← Notifications</Link>
+        <Link href="/admin/attendance" className="text-blue-600 hover:underline">Attendance Dashboard</Link>
         <h1 className="text-2xl font-bold text-gray-900">通告與日曆 CRUD</h1>
       </div>
 
