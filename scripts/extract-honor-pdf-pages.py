@@ -105,9 +105,19 @@ def chi_lookup_codes(code: str) -> list[str]:
     return codes
 
 
+def chi_title_matches(page_text: str, honor: HonorRecord) -> bool:
+    name_compact = honor.name_zh.replace(" ", "")
+    compact = page_text.replace(" ", "")
+    if f"{name_compact}榮譽證" in compact:
+        return True
+
+    en_compact = re.sub(r"[^a-z0-9']", "", honor.name_en.lower())
+    page_compact = re.sub(r"[^a-z0-9']", "", page_text.lower())
+    return bool(en_compact and f"{en_compact}award" in page_compact)
+
+
 def find_chi_page(pages: list[str], honor: HonorRecord) -> int | None:
     lookup_codes = chi_lookup_codes(honor.code)
-    name_compact = honor.name_zh.replace(" ", "")
 
     for index, page_text in enumerate(pages):
         if not re.search(r"要求[：:]", page_text):
@@ -120,7 +130,15 @@ def find_chi_page(pages: list[str], honor: HonorRecord) -> int | None:
         if any(lookup_code in page_text for lookup_code in lookup_codes):
             return index
 
-        if name_compact and name_compact in page_text.replace(" ", ""):
+    for index, page_text in enumerate(pages):
+        if not re.search(r"要求[：:]", page_text):
+            continue
+
+        code_count = len(CODE_RE.findall(page_text))
+        if code_count > 4:
+            continue
+
+        if chi_title_matches(page_text, honor):
             return index
 
     return None

@@ -8,8 +8,9 @@ import { useEffect, useMemo, useState } from "react";
 import { getHonorDownloadUrl } from "@/app/adventurer-honors/honor-downloads";
 import { honorHandbooks } from "@/app/adventurer-honors/honor-handbooks";
 import { getHonorPdfLinks } from "@/app/adventurer-honors/honor-pdf-pages";
+import { HonorAnswerContent } from "@/app/adventurer-honors/HonorAnswerContent";
+import { HonorRequirementsList } from "@/app/adventurer-honors/HonorRequirementsList";
 import { getHonorImageUrl } from "@/app/adventurer-honors/honor-images";
-import { formatRequirementForDisplay } from "@/app/adventurer-honors/honor-requirements";
 import { filterHonors, getAnswerSourceLabel } from "@/app/adventurer-honors/honor-search";
 import {
   honorCategories,
@@ -47,11 +48,7 @@ function HonorDetails({ honor }: { honor: AdventurerHonor }) {
     <div className="space-y-6">
       <section>
         <h3 className="mb-3 text-lg font-semibold text-gray-900">中文要求</h3>
-        <ol className="list-inside list-decimal space-y-2 text-gray-700">
-          {honor.requirements.map((requirement, index) => (
-            <li key={index}>{formatRequirementForDisplay(requirement)}</li>
-          ))}
-        </ol>
+        <HonorRequirementsList requirements={honor.requirements} />
       </section>
 
       <section>
@@ -65,7 +62,7 @@ function HonorDetails({ honor }: { honor: AdventurerHonor }) {
                 <p className="mb-1 text-sm font-medium text-gray-500">
                   要求 {answer.requirementIndex + 1}
                 </p>
-                <p className="text-gray-900">{answer.text}</p>
+                <HonorAnswerContent text={answer.text} />
               </li>
             ))}
           </ul>
@@ -86,6 +83,7 @@ function HonorModal({
 }) {
   const downloadUrl = getHonorDownloadUrl(honor.code, honor.aliases);
   const pdfLinks = getHonorPdfLinks(honor.code, honor.aliases);
+  const categoryLabel = honorCategories.find((item) => item.id === honor.category)?.label;
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
@@ -139,7 +137,14 @@ function HonorModal({
         <div className="flex items-start gap-4 border-b border-gray-100 px-5 py-4 pr-14 text-left">
           <HonorBadge honor={honor} size="modal" />
           <div className="min-w-0 flex-1">
-            <p className="text-sm font-semibold text-blue-700">{honor.code}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-sm font-semibold text-blue-700">{honor.code}</p>
+              {categoryLabel ? (
+                <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-700">
+                  {categoryLabel}
+                </span>
+              ) : null}
+            </div>
             <h2 id="honor-modal-title" className="text-xl font-semibold text-gray-900">
               {honor.nameZh}
             </h2>

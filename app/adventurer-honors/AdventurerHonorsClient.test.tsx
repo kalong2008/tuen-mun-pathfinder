@@ -90,6 +90,7 @@ describe("AdventurerHonorsClient", () => {
     fireEvent.click(screen.getByRole("button", { name: /HKA4015/ }));
 
     expect(screen.getByRole("dialog")).toBeInTheDocument();
+    expect(screen.getByRole("dialog")).toHaveTextContent("家事技藝");
     expect(screen.getByRole("link", { name: /下載 Word 榮譽證/ })).toHaveAttribute(
       "href",
       expect.stringMatching(/\.docx/i),

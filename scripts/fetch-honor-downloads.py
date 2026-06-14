@@ -32,11 +32,13 @@ H4_CODE_RE = re.compile(
 
 MANUAL_ALIASES: dict[str, str] = {
     "HKA5058": "HKA4058",
-    "YOU4655": "HKA4009",
 }
 
 MANUAL_URLS: dict[str, str] = {
+    "HKA4033": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4033-%E6%95%85%E4%BA%8B%E8%81%86%E8%81%BD1-%E6%A6%AE%E8%AD%BD%E8%AD%89.docx",
     "HKA4034": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4033%E6%95%85%E4%BA%8B%E8%81%86%E8%81%BDII%E6%A6%AE%E8%AD%BD%E8%AD%89.docx",
+    "HKA4009": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/YOU4655-%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%92%8C%E6%B2%99%E5%AD%90%E6%A6%AE%E8%AD%BD%E8%AD%89.docx",
+    "YOU4655": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/YOU4655-%E9%AD%9A%E9%A1%9E%E6%A6%AE%E8%AD%BD%E8%AD%89.docx",
 }
 
 

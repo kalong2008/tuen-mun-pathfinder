@@ -1,10 +1,10 @@
 export const honorCategories = [
+  { id: "community", label: "社區關懷", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/" },
+  { id: "arts-crafts", label: "美術工藝", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/" },
   { id: "household", label: "家事技藝", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/" },
+  { id: "nature", label: "自然研究", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/" },
   { id: "recreation", label: "康樂活動", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/" },
-  { id: "community", label: "社區服務", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/" },
-  { id: "spiritual", label: "屬靈", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/" },
-  { id: "nature", label: "自然", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/" },
-  { id: "arts-crafts", label: "藝術手工", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/" },
+  { id: "spiritual", label: "屬靈生活", sourceUrl: "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/" },
 ] as const;
 
 export type HonorCategory = (typeof honorCategories)[number]["id"];

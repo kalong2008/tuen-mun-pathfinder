@@ -35,14 +35,24 @@ H4_CODE_RE = re.compile(
 # Site typos / alternate codes mapped to the honor code used in honors-data.ts
 MANUAL_ALIASES: dict[str, str] = {
     "HKA5058": "HKA4058",
-    "YOU4655": "HKA4009",
 }
 
 MANUAL_URLS: dict[str, str] = {
-    "HKA4034": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4033故事聆聽II榮譽證-1024x769.png",
+    "HKA4033": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4033-%E6%95%85%E4%BA%8B%E8%81%86%E8%81%BD1-%E6%A6%AE%E8%AD%BD%E8%AD%89-1024x769.png",
+    "HKA4034": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4033%E6%95%85%E4%BA%8B%E8%81%86%E8%81%BDII%E6%A6%AE%E8%AD%BD%E8%AD%89-1024x769.png",
+    "HKA4009": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/YOU4655-%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%92%8C%E6%B2%99%E5%AD%90%E6%A6%AE%E8%AD%BD%E8%AD%89-1024x769.png",
+    "YOU4655": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/YOU4655-%E9%AD%9A%E9%A1%9E%E6%A6%AE%E8%AD%BD%E8%AD%89-1024x769.png",
     "HKA4029": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4028-閱讀III-榮譽證-1024x768.png",
     "HKA4028": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/HKA4028-閱讀II-榮譽證-1024x769.png",
     "HKA4079": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/圖片-1024x769.png",
+}
+
+# Honors with no HKMC badge image; keep the file already in public/adventurer-honors/
+LOCAL_ONLY: dict[str, str] = {
+    "YOU4925": "/adventurer-honors/YOU4925.png",
+    "HKA4052": "/adventurer-honors/HKA4052.png",
+    "YOU4625": "/adventurer-honors/YOU4625.png",
+    "YOU4910": "/adventurer-honors/YOU4910.png",
 }
 
 
@@ -121,6 +131,10 @@ def main() -> None:
     for code in honor_codes:
         source_url = scraped.get(code)
         if not source_url:
+            local_path = LOCAL_ONLY.get(code)
+            if local_path and (OUTPUT_DIR / f"{code}.png").exists():
+                mapping[code] = local_path
+                continue
             missing.append(code)
             continue
 

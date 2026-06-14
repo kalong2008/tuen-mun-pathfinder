@@ -98,7 +98,7 @@ describe("sortAdventurerHonors", () => {
       }),
     ]);
 
-    expect(honors.map((item) => item.code)).toEqual(["HKA4027", "HKA4029", "HKA4011", "YOU4800"]);
+    expect(honors.map((item) => item.code)).toEqual(["HKA4011", "YOU4800", "HKA4027", "HKA4029"]);
   });
 
   test("keeps categories in the standard order", () => {
