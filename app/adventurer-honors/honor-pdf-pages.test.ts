@@ -8,6 +8,8 @@ describe("getHonorPdfLinks", () => {
 
     expect(links.zh?.path).toBe("/adventurer-honors/pdf-pages/HKA4015-zh.pdf");
     expect(links.en?.path).toBe("/adventurer-honors/pdf-pages/HKA4015-en.pdf");
+    expect(links.en?.pages).toEqual([107, 108]);
+    expect(links.en?.answerPage).toBe(108);
     expect(links.zh?.sourceUrl).toMatch(/完整版\.pdf#page=\d+/);
   });
 
