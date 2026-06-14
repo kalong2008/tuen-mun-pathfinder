@@ -10,7 +10,7 @@ describe("getHonorPdfLinks", () => {
     expect(links.en?.path).toBe("/adventurer-honors/pdf-pages/HKA4015-en.pdf");
     expect(links.en?.pages).toEqual([107, 108]);
     expect(links.en?.answerPage).toBe(108);
-    expect(links.zh?.sourceUrl).toMatch(/完整版\.pdf#page=\d+/);
+    expect(links.zh?.sourceUrl).toMatch(/hkmc-2023-zh\.pdf#page=\d+/);
   });
 
   test("includes all English answer continuation pages for multi-page honors", () => {

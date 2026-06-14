@@ -16,15 +16,10 @@ HONORS_DATA = ROOT / "app" / "adventurer-honors" / "honors-data.ts"
 OUTPUT_JSON = ROOT / "app" / "adventurer-honors" / "honor-pdf-pages.json"
 OUTPUT_DIR = ROOT / "public" / "adventurer-honors" / "pdf-pages"
 
-DEFAULT_CHI_PDF = Path(
-    "/Users/kalongchan/Downloads/「榮譽證手冊－中文版2023-v3-－-完整版.pdf"
-)
-DEFAULT_ENG_PDF = Path("/Users/kalongchan/Downloads/Award Book 2020.pdf")
+DEFAULT_CHI_PDF = ROOT / "public" / "adventurer-honors" / "handbooks" / "hkmc-2023-zh.pdf"
+DEFAULT_ENG_PDF = ROOT / "public" / "adventurer-honors" / "handbooks" / "award-book-2020-en.pdf"
 
-CHI_HANDBOOK_URL = (
-    "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/"
-    "「榮譽證手冊－中文版2023-v3-－-完整版.pdf"
-)
+CHI_HANDBOOK_URL = "/adventurer-honors/handbooks/hkmc-2023-zh.pdf"
 
 CODE_RE = re.compile(r"(HKA\d{4}|YOU\d{4})", re.I)
 

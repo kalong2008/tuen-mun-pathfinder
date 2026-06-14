@@ -56,11 +56,11 @@ describe("AdventurerHonorsClient", () => {
 
     expect(screen.getByRole("link", { name: /中文榮譽證手冊（HKMC 2023）/ })).toHaveAttribute(
       "href",
-      expect.stringMatching(/完整版\.pdf/),
+      "/adventurer-honors/handbooks/hkmc-2023-zh.pdf",
     );
     expect(screen.getByRole("link", { name: /英文榮譽證手冊（GC 2020）/ })).toHaveAttribute(
       "href",
-      expect.stringMatching(/Award-Book-2020\.pdf/),
+      "/adventurer-honors/handbooks/award-book-2020-en.pdf",
     );
     expect(screen.getByRole("link", { name: /家事技藝/ })).toHaveAttribute(
       "href",
