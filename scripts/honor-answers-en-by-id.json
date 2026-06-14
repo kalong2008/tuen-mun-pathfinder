@@ -1,0 +1,546 @@
+{
+  "hka4019-health-specialist": {
+    "id": "hka4019-health-specialist",
+    "code": "HKA4019",
+    "nameZh": "健康專家",
+    "nameEn": "Health Specialist",
+    "requirements": [
+      "1. 背誦哥林多前書 6:19,20",
+      "2. 剪下圖片並製作一幅四種基本食物的海報。運用圖片來說明應該吃的三餐健康膳食。",
+      "3. 說明為什麼需要鍛煉身體。",
+      "4. 記錄一周的睡眠時間，並說出為什麼需要休息。",
+      "5. 說明為什麼需要新鮮空氣和陽光。",
+      "6. 說明為什麼水對你的身體很重要。說出你每天應該喝多少杯水。",
+      "7. 描述並養成良好的牙齒衛生習慣。",
+      "8. 說出三件可能會破壞你健康的事。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "Talk together as a group or family about the principles of the text."
+      ],
+      [
+        1,
+        "Have a tasting party that includes foods from each of the four food groups. Blindfold the Adventurers and have them guess what food they smell, then taste the food. OR Have the Adventurers cut pictures of food from old magazines, arrange them on a poster or paper plates and discuss what makes a balanced meal."
+      ],
+      [
+        2,
+        "Your body needs exercise to keep muscles strong, strengthen your heart, improve your lung capacity, make you look and feel better. Do several exercises for fun and health. “Tortoise and Hare” is a running- in-place exercise. First you “run” 50 steps slowly as a tortoise, then 50 steps faster as the hare would run. Repeat three times. Have a wheelbarrow race in which one child holds the ankles of the first child. They both walk forward, one on hands, the other on feet. Then they change places."
+      ],
+      [
+        3,
+        "When you sleep your whole body relaxes, including your muscles, heart, and breathing. Your body uses this time to recover and repair itself."
+      ],
+      [
+        4,
+        "Without fresh air, we cannot live. Breathe deeply and enjoy. Sunlight contains vitamin D, which helps to form strong bones. Sunlight is a disinfectant. Exercise in the sunlight by doing the “Russian Hop.” Get into a squat position with your arms folded across your chest. Hop up and forward with your feet. Hop around in a circle. At the end of each hop, you are back in the starting position."
+      ],
+      [
+        5,
+        "We lose water when we breathe, sweat, or urinate, and it must be replaced. Your body is about two thirds or 65 percent water. Drink two and one-half quarts of water daily to remain healthy. Many foods have water; lettuce is nine-tenths water."
+      ],
+      [
+        6,
+        "A dentist has educational materials that explain dental hygiene to children."
+      ],
+      [
+        7,
+        "Contact your family doctor, local health department, or public library for a video or film that will make this a real learning experience. Many things could destroy your health: lack of sleep, poor eating habits, little or no exercise, drinking alcohol, drug abuse, etc."
+      ]
+    ]
+  },
+  "hka4024-manners-fun": {
+    "id": "hka4024-manners-fun",
+    "code": "HKA4024",
+    "nameZh": "禮儀",
+    "nameEn": "Manners Fun",
+    "requirements": [
+      "1. 學習聖經道理 (馬太福音 7:12)",
+      "2. 在您的文化中，有哪五個詞語可以用來表示談吐有禮？",
+      "3. 用繪畫或剪裁和拼貼圖片來說明其中一個禮貌用語。",
+      "4. 運用五個有禮貌的用語來參與一個遊戲。"
+    ],
+    "indexedAnswersEn": [
+      [
+        1,
+        "Please, Thank You, You’re Welcome, I’m sorry, and Excuse Me."
+      ],
+      [
+        3,
+        "Magic Word Game On strips of paper, write incidents such as “When you are given a gift, what do you say?” “When someone says to you, ’Mary, you have a pretty dress, ’what do you say?” “When you walk down the hall and bump into someone, what do you say?” Use your imagination to think of more incidents. Put the strips of paper in a basket. Have the child draw one and the teacher read it and the child respond appropriately."
+      ]
+    ]
+  },
+  "hka4027-reading-i": {
+    "id": "hka4027-reading-i",
+    "code": "HKA4027",
+    "nameZh": "閱讀 I",
+    "nameEn": "Reading I",
+    "requirements": [
+      "1. 閱讀或聆聽有關故事。",
+      "a. 一個聖經故事或一本關於耶穌的書",
+      "b. 一本關於健康或安全的書",
+      "c. 一本有關家庭，朋友或感受的事書",
+      "d. 一本關於歷史或佈道的書",
+      "e. 一本關於歷史或佈道的書"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "There are many books about Jesus. The important part is to find one for your child’s developmental level. Bible App for Kids is a ministry of Youversion Bible Inc. and provides nearly 50 interactive Bible stories for kids. There is an animated storybook app with vivid illustrations and sound as well as interactive touch screen interactions. The games and activities help kids remember what they learn. The navigation is simple for kids and there are no in-app purchases. There is also a printed Bible that has the same stories and graphics. See your device’s app store. Bibleforchildren.org has illustrated and color pages for sixty different Bible stories available for download and printing in 132 different languages. There are 18 stories about Jesus (including Powerpoint, coloring pages, and storybook pages) http://bibleforchildren.org/ or your device’s App store. Book Reading is usually “assigned” and done as a parent-child activity. As the children complete the activity have them REPORT their findings at club meetings. Idea: Main character charade - have the parent and child work together to tell you ONE STORY from their reading award book about the MAIN character"
+      ]
+    ]
+  },
+  "hka4028-reading-ii": {
+    "id": "hka4028-reading-ii",
+    "code": "HKA4028",
+    "nameZh": "閱讀 II",
+    "nameEn": "Reading II",
+    "requirements": [
+      "1. 閱讀馬可福音的其中兩章，可使用簡單易明的翻譯本。一個聖經故事或一本關於耶穌的書。",
+      "a. 一本關於健康或安全的書",
+      "b. 一本有關家庭，朋友或感受的事書",
+      "c. 一本關於歷史或佈道的書",
+      "d. 一本關於歷史或佈道的書"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "There are many books about Jesus. The important part is to find one for your child’s developmental level. Bible App for Kids is a ministry of Youversion Bible Inc. and provides nearly 50 interactive Bible stories for kids. There is an animated storybook app with vivid illustrations and sound as well as interactive touch screen interactions. The games and activities help kids remember what they learn. The navigation is simple for kids and there are no in-app purchases. There is also a printed Bible that has the same stories and graphics. See your device’s app store. Bibleforchildren.org has illustrated and color pages for sixty different Bible stories available for download and printing in 132 different languages. There are 18 stories about Jesus (including Powerpoint, coloring pages, and storybook pages) http://bibleforchildren.org/ or your device’s App store. Plan ahead for this “Book Reading Meeting” by having kinds bring favorite books & blankets/pillows. Build it up to make it a fun and memorable activity."
+      ]
+    ]
+  },
+  "hka4061-toys": {
+    "id": "hka4061-toys",
+    "code": "HKA4061",
+    "nameZh": "玩具",
+    "nameEn": "Toys",
+    "requirements": [
+      "1. 你最喜歡的玩具是甚麼？",
+      "2. 畫出你最喜歡的玩具或為其填上顏色。",
+      "3. 為什麼最好每次只拿出一至兩個件玩具，並在玩耍後把它們收起來  ？",
+      "4. 收拾玩具一星期。",
+      "5. 與以下的人分享玩具：",
+      "a. 一位朋友",
+      "b. 樂意地與你的兄弟姐妹",
+      "6. 唱一首關於分享的歌曲，一邊唱一邊練習。",
+      "7. 送一件玩具給沒有玩具的人 或 收集玩具並捐贈給慈善機構。",
+      "8. 告訴你的老師或父母你會在“謝謝”字條中對給你玩具的人說些甚麼。",
+      "9. 通過繪畫或剪貼四種玩具圖片來製作你的願望清單，並可能在聖誕節或生日時使用。"
+    ],
+    "indexedAnswersEn": [
+      [
+        7,
+        "Teacher: Write down their words on paper and have them decorate or color the paper around the words. Give to that person if appropriate."
+      ]
+    ]
+  },
+  "hka4060-swimmer-i": {
+    "id": "hka4060-swimmer-i",
+    "code": "HKA4060",
+    "nameZh": "游泳 I",
+    "nameEn": "Swimmer I",
+    "requirements": [
+      "1. 學會狗爬式(狗仔式)。",
+      "2. 學會將頭放在水裡游泳。",
+      "3. 能夠跳入水並游至台階、梯子或牆壁。",
+      "4. 知道兩項游泳安全規則。 （例如：必須有一名成年人同行／不要在游泳池邊奔跑／ 落水時，要確保落水位置沒有人等等）",
+      "5. 如果有人在泳池裡遇到麻煩，你會怎麼做？你會嘗試拯救他們嗎？為什麼最好叫父母或成年人來幫忙？",
+      "6. 召喚救護車的電話號碼是多少？"
+    ],
+    "indexedAnswersEn": [
+      [
+        3,
+        "Always have an adult with you, never run around the pool, never jump in on top of someone, etc."
+      ]
+    ]
+  },
+  "hka4056-left-and-right": {
+    "id": "hka4056-left-and-right",
+    "code": "HKA4056",
+    "nameZh": "左和右",
+    "nameEn": "Left and Right",
+    "requirements": [
+      "1. 用左／右參與「老師說」的遊戲。",
+      "2. 你用哪一隻手畫畫？寫下你的名字。",
+      "3. 在你的左手手指上貼上一張紅點貼紙；在右手手指貼上藍點貼紙。(備註：這是第四項的活動一部分)",
+      "4. 哪一方是熱水？哪一方是冷水？",
+      "5. 正確地穿上你的鞋。",
+      "6. 一邊念數「Left, Left , Left, Right, Left」 ；一邊練習步操。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "Some things that “Simon Says” might include: • Raise your right hand. • Put your left hand down. • Take a step with your left foot. • Put your right thumb up. • Touch your toes with your left hand. • Stand on your right foot."
+      ],
+      [
+        1,
+        "Accept children’s natural tendency, whether they are left- or right-handed."
+      ],
+      [
+        2,
+        "In general, hot is left, cold is right. Show the children how to use the different kinds of faucets found at home, in church, etc."
+      ],
+      [
+        3,
+        "Play a game with your family. Pile everyone’s shoes together. See how long it takes you to find your own and put them on the correct feet."
+      ],
+      [
+        4,
+        "Tie a jingle bell (available from a local craft store or AdventSource) to each child’s left ankle to help them remember which foot starts. Play marching music."
+      ]
+    ]
+  },
+  "hka4005-my-community": {
+    "id": "hka4005-my-community",
+    "code": "HKA4005",
+    "nameZh": "社區朋友",
+    "nameEn": "My Community",
+    "requirements": [
+      "1. 說出五位住在你社區裡的朋友。",
+      "2. 為你的鄰居朋友製作剪貼簿或拼貼畫，包括至少五位不同的人。",
+      "3. 說出三件你和你的朋友可以做到的事情，讓社區變得更美好。",
+      "4. 告訴你的一位朋友耶穌愛他們。",
+      "5. 為社區上的朋友做點好事。",
+      "6. 在你的鄰居中結交一位新朋友。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "We are thinking and talking about people that you know, who live close to you, but are not part of your family. They are called Community Friends."
+      ],
+      [
+        1,
+        "Hand out the scrapbook booklets and the cover picture. Have the children color the picture and then cut and glue it to the front of the book."
+      ],
+      [
+        2,
+        "Next, have the children collect the five pictures from their parent and lay them out in front of them."
+      ],
+      [
+        3,
+        "Go around the table and have each child share the name of each person, where they live in relation to the child’s family, and one interesting fact about that community friend. Example: This is Mr. Joe. He lives across the street. He has a big cat. This is Sasha. She lives beside us. She likes to grow tomatoes. Etc. Each child should introduce one friend each time around until all 5 friends have been introduced."
+      ],
+      [
+        4,
+        "Have the Early Birds glue the pictures of their friends into their books and add the name of the neighbor somewhere on the page with the picture."
+      ],
+      [
+        5,
+        "It works well to have each child glue in the picture and name once they have introduced the person so that when the introductions are done, the books are mostly complete. Note: If necessary, the children may draw their community friends. Teaching Idea: Tell three (3) things that you and your friends can do to make your neighborhood a better place. Materials: No materials needed."
+      ]
+    ]
+  },
+  "you4535-bible-i": {
+    "id": "you4535-bible-i",
+    "code": "YOU4535",
+    "nameZh": "聖經 I",
+    "nameEn": "Bible I",
+    "requirements": [
+      "1. 擁有或使用聖經",
+      "2. 解釋如何尊重聖經以及如何照顧它。",
+      "3. 說出聖經的第一卷和最後卷書的書名，並說出是誰寫的。",
+      "4. 講述或表演以下故事",
+      "a. 創造",
+      "b. 罪的起源",
+      "c. 耶穌關懷我們",
+      "d. 耶穌再來",
+      "e. 天國",
+      "5. 找出、閱讀並討論以下三節有關耶穌對你的愛的經文。重複和背誦其中兩節經文。",
+      "a. 約翰福音 3:16",
+      "b. 詩篇 23:1",
+      "c. 詩篇 91:11",
+      "d. 約翰福音 14:3",
+      "6. 製作面具來說明一個聖經故事或比喻，或使用沙盒或絨布創作一個聖經故事。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "Help the Adventurers locate the books of Genesis and Revelation. Encourage them to locate each book in their Bible while the child tells the story of the author. Play Bible games, use felts, etc. Make this a fun learning experience."
+      ],
+      [
+        1,
+        "Have the children pantomime. Adventurers enjoy play acting. Encourage them to make the story “come alive.” Keep a box of props to help in illustrating the Bible characters, such as bath robes, scarves and a cane."
+      ],
+      [
+        2,
+        "Practice finding the texts in the Bible. Explain each part so the children can understand the meanings. Read together."
+      ],
+      [
+        3,
+        "Use paper plates to make animal or people masks to illustrate stories such as Daniel and the lion’s den, creation, and Garden of Eden. Act out the story of their choice."
+      ]
+    ]
+  },
+  "hka4036-animal-homes": {
+    "id": "hka4036-animal-homes",
+    "code": "HKA4036",
+    "nameZh": "動物之家",
+    "nameEn": "Animal Homes",
+    "requirements": [
+      "1. 什麼是家園？",
+      "2. 描述你的家園。畫出你住的房子並填上顏色。",
+      "3. 動物也有家園。說出五種不同動物的名字並說出牠們的住處。",
+      "4. 動物怎樣知道如何建造自己的家園？",
+      "5. 選擇一種動物並完成以下各項：",
+      "◼ 觀看動物（牠可以在動物園或影片中）。",
+      "◼ 繪畫一隻動物或為牠填上顏色。",
+      "◼ 製作他們家園的模型。",
+      "◼ 在幼鋒會聚會時，展示你製作的相片和模型。",
+      "◼ 告訴別人你對動物及其家園的了解。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "A home is the place where you live or stay. It should be a place where you feel safe and comfortable."
+      ],
+      [
+        1,
+        "Provide large sheets of paper and crayons. When they are done, ask the children to tell about what they have drawn. Affirm and accept their efforts."
+      ],
+      [
+        2,
+        "A skunk makes its home in a hole in the ground. The lion’s home is called a lair. A bear (fox, coyote, otter) lives in a den. Squirrels live in a hole or nest in a tree. Beavers build a house called a lodge out of sticks and mud. A rabbit makes a burrow (hole) in the ground. The deer’s home is the forest. People make a home for horses and cows in a barn."
+      ],
+      [
+        3,
+        "God has made the animals so that they know what to do. This is called instinct–it’s something that they don’t have to think about, they just know. Animals also learn about making homes from their parents."
+      ],
+      [
+        4,
+        "Offer the children a selection of plastic or rubber animals. Have them choose one and construct a home out of play dough, wood, cardboard, etc."
+      ]
+    ]
+  },
+  "hka4042-potatoes": {
+    "id": "hka4042-potatoes",
+    "code": "HKA4042",
+    "nameZh": "馬鈴薯",
+    "nameEn": "Potatoes",
+    "requirements": [
+      "1. 閱讀並討論創世記 1:11-12、29-30 和傳道書 3:2。",
+      "2. 了解馬鈴薯的營養價值。",
+      "3. 馬鈴薯是哪個地方的主要食糧或蔬菜？",
+      "4. 馬鈴薯是怎麼生長的？最理想的生長條件是什麼？",
+      "5. 馬鈴薯有哪些不同的品種？你所在地區有哪些品種？",
+      "6. 馬鈴薯的收成時間及方法。",
+      "7. 完成以下其中一項，並分享你的經驗：",
+      "a. 種植馬鈴薯，觀察它的種植過程",
+      "b. 幫助人採收馬鈴薯。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "They are high in potassium and vitamin C. You can also search the internet for the nutritional value of potatoes in your area."
+      ],
+      [
+        1,
+        "Idaho – State Food: Potatoes. Louisiana – State Vegetable: Sweet Potato. New Hampshire – State Vegetable: White Potato. North Carolina: State Vegetable: Sweet Potato."
+      ],
+      [
+        2,
+        "Potatoes are a tuber. They grow underground. Research the best growing conditions in your area."
+      ],
+      [
+        3,
+        "Russet, Red, White, Yellow, Purple/Blue, Fingerling, Petite, Sweet, Yams."
+      ],
+      [
+        4,
+        "The potatoes are harvested when the plant/vine dies or before the first hard frost. Potatoes are harvested by hand or with machines."
+      ],
+      [
+        5,
+        "Search on internet on how to grow a potato at home. Check your area to see if there is an opportunity to help a farmer harvest potatoes."
+      ]
+    ]
+  },
+  "hka4046-scavenger-hunt": {
+    "id": "hka4046-scavenger-hunt",
+    "code": "HKA4046",
+    "nameZh": "尋寶遊戲",
+    "nameEn": "Scavenger Hunt",
+    "requirements": [
+      "1. 與你的父母、老師或其他成年人一起進行尋寶遊戲。",
+      "2. 在大自然中找到兩件物品。 （例如岩石、石春、羽毛、堅果、樹葉等）",
+      "3. 找一些與聖經故事有關的東西來講故事。 （例如小籃子 = 摩西、棉花、羊羔毛、石頭 = 祭壇、多色材料約瑟的外套等）",
+      "4. 尋找一些紅色的東西。 （例如花、一塊材料、彩色蠟筆等）",
+      "5. 尋找一個膠塑蛋盒或其他類型的容器，打開它並與另一位小鳥會員分享。（可以放葡萄、葡萄乾、糖果或任何你喜歡的東西。）"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "Every Early Bird & parent team should have a checklist and pencil and crayon."
+      ],
+      [
+        1,
+        "The list should include that basic list from the requirements PLUS several items specific to your environment. a. Find 2 nature items. b. Make a rubbing of a texture. Tree bark, bricks or some other textured item work well. (this is an extra one but it is fun!) c. Find 1 item which reminds you of a Bible story. (Tell someone the Bible story) d. Find 1 item that is RED. (I like to add at least 3 more colors of items - such as BLUE, BROWN, GREEN) e. Find 1 container (plastic easter eggs work nicely for this) which has goodies inside it. Share the contents with someone else."
+      ],
+      [
+        2,
+        "Once everyone is done, bring everyone together and ask specific children to share what they found in a category. Example: “Susie, what did you find that was RED?” “Donte, what did you make your rubbing of?” “Sonia, what did you find that reminded you of a Bible story? What was the Bible story?” Etc."
+      ]
+    ]
+  },
+  "hka4053-wooly-lamb": {
+    "id": "hka4053-wooly-lamb",
+    "code": "HKA4053",
+    "nameZh": "綿羊",
+    "nameEn": "Wooly Lamb",
+    "requirements": [
+      "1. 聆聽一個關於綿羊的書籍。",
+      "2. 說出三項你從綿羊身上學習到的東西。(請成人幫忙記錄下來)",
+      "3. 玩一個有關綿羊的遊戲。",
+      "4. 製作一個有關綿羊的手工。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "There are several books about lambs in print and online. The Bible App for kids is a free online graphically illustrated book that can be read or listened to. (app store “Bible children youversion”) This is an EXCELLENT resource with well-done graphics and is very interactive. The Story of the Nativity - “The First Christmas Gift” includes lambs in the story.As of 2017, StoryJumper.com had this cute story about a Lion and a Lamb."
+      ],
+      [
+        1,
+        "Some methods: Have a color poster/large picture of a sheep and lamb. Do a touching, listening, talking time where you ask the children to notice things about lambs. Ex. lambs are smaller than sheep. Lambs are fluffy white. Lambs are babies. Lambs drink their momma’s milk. Lambs don’t hatch from eggs. Jesus talks about lambs in the Bible (great opening for a Bible story about ‘The Good Shepherd’ - John 10:1-18 If you have the “little lamb puppet” (as suggested) use the little lamb to talk with the children about the information in this requirement. Some things we can learn: a. Baby sheep are called lambs. b. Most lambs are born in Spring c. Lambs are most often born as twins. Even though some ewes have single lambs or triplets, twins are the most common. d. Lambs will drink their mother’s milk until they are around four months old. They begin nibbling on grass, grain and hay starting at two weeks of age. Lambs can be bottle fed if they are orphaned or their mother had several at one time and cannot feed them all. e. Lambs are born with long tails. f. The lamb is shorn (hair cut off - it doesn’t hurt the lamb!) for the first time when they are between seven and nine months of age. Lamb’s wool is of premium quality and may be in high demand for spinning into yarn. This yarn can then be used to make scarves, hats, sweaters and other garments."
+      ]
+    ]
+  },
+  "you4565-butterflies": {
+    "id": "you4565-butterflies",
+    "code": "YOU4565",
+    "nameZh": "蝴蝶",
+    "nameEn": "Butterflies",
+    "requirements": [
+      "1. 了解蝴蝶的生活及進食習慣。",
+      "2. 收集在你所在地區的蝴蝶圖片、貼紙或照片。",
+      "3. 討論並畫出蝴蝶的生命週期。",
+      "4. 背誦約翰福音 3:7 並討論約翰福音中尼哥底母的故事",
+      "5. 完成以下其中一個項：",
+      "a. 用粉筆在行人路或地上畫一隻蝴蝶。",
+      "b. 用撕碎的紙拼湊成蝴蝶圖案。",
+      "c. 在沙子或雪地上畫一隻蝴蝶。",
+      "d. 蝴蝶手機。",
+      "e. 蝴蝶磁石貼。",
+      "f. 用珠子做成的蝴蝶。",
+      "g. 用彩色紙製作一隻蝴蝶並夾在衣夾上。",
+      "6. 學一首關於蝴蝶的歌。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "The butterfly is solitary except during migration, gathering on the damp ground to find water or nocturnal roosting. You may see male butterflies circling around each other to defend their territory. Butterflies and moths have a “coiled up drinking straw” below their heads called a proboscis. It is used to draw up nectar, water and other liquids. The length of the proboscis helps determine from which flowers they take nectar. Each type of butterfly picks flowers and usually stay on the same level, either low to the ground or higher. Very seldom will butterflies drink from flowers that face down."
+      ],
+      [
+        1,
+        "Check with your library."
+      ],
+      [
+        2,
+        "(A) Egg; (B) Larva or caterpillar; (C) Pupa or chrysalis; (D) Adult."
+      ],
+      [
+        3,
+        "(Put your hands flat together in front of you, as in prayer. Open and close the top of your hands like a butterfly’s wings) When a butterfly sits and opens and closes its wings it warms its muscles and takes energy from the sun and stores it in its body. When we pray to Jesus we feel warm and good inside and we receive energy from Him to be happy, strong and do what is right. Continue to move your hands like a butterfly as we pray."
+      ],
+      [
+        4,
+        "Option: “If I were a butterfly, I’d thank the Lord for my mighty fine wings...”"
+      ]
+    ]
+  },
+  "hka4008-finger-play": {
+    "id": "hka4008-finger-play",
+    "code": "HKA4008",
+    "nameZh": "手指遊戲",
+    "nameEn": "Finger Play",
+    "requirements": [
+      "1. 聆聽一個有關手的故事。",
+      "2. 說出三項你從手學習到的東西。",
+      "3. 說出一首詩，並用手把它表達出來。",
+      "4. 運用手來完成一個手工，例如手指畫、手掌畫。",
+      "5. 運用你的手指完成一項活動，例如砌積木、揉麵團。"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "There are many different tactics/purposes that you can use this requirement for. If your goal is to applaud handwashing, for example, you could use the storyjumper.com online book story (http://www.storyjumper. com/book/index/6307852/Hand-Washing)or use your favorite search engine to find “kids hand washing story.” A discussion about hands could take place just before or even while the children make a craft (#4). Discuss with the children about what their hands are doing (coloring, painting, fingers moving, fingers touching, hand grabbing etc.). Ask them what other things hands help them do (clap, wave, play piano, hug etc.) You can also use this opportunity to help the children count their fingers, observe how there are hard nails, soft skin, and strong muscles in their hands. They can also compare their hands with those of another child or of an adult (smaller, bigger, lighter, darker, long fingers, short fingers etc.)"
+      ],
+      [
+        1,
+        "Give each adult a card with one facts about fingers and hands on it. Have children “walk run” from one adult to another (the adults are sitting/kneeling in different parts of the room) and “collect” the facts about fingers and hands. Each time they can tell a different adult something they learned they get a “high five” (adult and child each use a hand to touch the others hand, palms facing. It is much like a clap). Some simple finger facts: We have four fingers and an opposable (say op-oh-zab-el) thumb. Opposable means that it can move towards the fingers and help them to do their work. Each finger has 3 bones and the thumb has two bones There are 27 bones in the hand Doctors call fingers digits or phalanges There are 2 main sets of muscles and tendons. Flexor muscles bend the fingers and thumb, and extensors straighten them out again."
+      ],
+      [
+        2,
+        "Finger Play is an often-used early childhood education method to help kids memorize poems, Bible verses, and songs. It works so well because they are"
+      ]
+    ]
+  },
+  "hka4011-music-i": {
+    "id": "hka4011-music-i",
+    "code": "HKA4011",
+    "nameZh": "音樂 I",
+    "nameEn": "Music I",
+    "requirements": [
+      "1. 聽一本關於音樂家或樂器的書。",
+      "2. 製作一件音樂工藝品。",
+      "3. 參與拍手（節奏）遊戲。",
+      "4. 跟著音樂的節奏，參與一次動作遊戲。 （例如隨著歌曲的節奏拍皮球）"
+    ],
+    "indexedAnswersEn": [
+      [
+        3,
+        "i.e., bounce a ball to the beat of a song"
+      ]
+    ]
+  },
+  "hka4012-shapes-and-sizes": {
+    "id": "hka4012-shapes-and-sizes",
+    "code": "HKA4012",
+    "nameZh": "形狀和尺寸",
+    "nameEn": "Shapes and Sizes",
+    "requirements": [
+      "1. 製作剪貼簿粘貼作品。在封面上畫出不同大小的形狀。",
+      "2. 認識並剪出六種不同的形狀。粘貼到剪貼簿中。 （長方形、正方形、圓形、橢圓形、菱形和三角形。）",
+      "3. 用不同的形狀製作一張圖片（可以從手工紙上剪下形狀。）放入剪貼簿。",
+      "4. 散散步，尋找不同的形狀。有沒有發現一些更常看到的形狀？",
+      "5. 尺寸：區分小、中、大。",
+      "6. 運用不同大小的積木或其他物體玩一個遊戲。問一些問題，例如：哪個大、更大、最大、小、更小、最小等。",
+      "7. 繪畫、著色或繪製有不同尺寸物件的圖畫。"
+    ],
+    "indexedAnswersEn": [
+      [
+        1,
+        "Rectangle, square, circle, oval, diamond, and triangle."
+      ],
+      [
+        2,
+        "can cut shapes out of construction paper."
+      ]
+    ]
+  },
+  "hka4013-sponge-art": {
+    "id": "hka4013-sponge-art",
+    "code": "HKA4013",
+    "nameZh": "海綿藝術",
+    "nameEn": "Sponge Art",
+    "requirements": [
+      "1. 用不同形狀的海綿製作一個海綿拼圖。(使用塑料海綿，而不是纖維素海綿)。使用厚卡紙製作草圖，並印壓成畫。",
+      "2. 形狀會站在邊緣嗎？它們可以堆疊嗎？按顏色形狀排序。",
+      "3. 用海綿製作一隻動物或物件。 （使用膠水，而不是白膠漿。）",
+      "4. 使用顏料來製作你自己的海綿藝術作品。",
+      "5. 用顏料和海綿，完成下列其一中項：",
+      "a. 你的名字 - 在它周圍裝飾",
+      "b. 一隻動物",
+      "c. 你最喜歡的玩具"
+    ],
+    "indexedAnswersEn": [
+      [
+        0,
+        "Use polyester sponges, not cellulose"
+      ],
+      [
+        2,
+        "Use craft glue, not white household glue."
+      ]
+    ]
+  }
+}
