@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Map honors to PDF pages and extract single-page PDFs for Chinese and English handbooks."""
+"""Map honors to PDF pages and extract multi-page PDFs for Chinese and English handbooks."""
 
 from __future__ import annotations
 
@@ -30,6 +30,7 @@ CODE_RE = re.compile(r"(HKA\d{4}|YOU\d{4})", re.I)
 
 NAME_ALIASES: dict[str, str] = {
     "My Community": "My Community Friends",
+    "My Community Friends": "My Community",
     "Jigsaw Puzzles": "Jigsaw P uzzles",
     "My Picture Book": "My P icture Book",
     "Early Adventist": "Early Adventist P ioneer",
@@ -37,6 +38,15 @@ NAME_ALIASES: dict[str, str] = {
     "Potatoes": "P otatoes",
     "Parables of Jesus": "P arables of Jesus",
     "Zoo Animals": "Z oo Animals",
+    "Jesus' Star": "Jesus' Star",
+    "God's World": "God's World",
+}
+
+NEW_HONOR_REQ = re.compile(r"Requirements\s*\n\s*1\.", re.M)
+UPDATED_MARKER = re.compile(r"Updated in:\s*\d{4}")
+NON_HONOR_FOOTERS = {
+    "supporting answers",
+    "requirements",
 }
 
 CHI_CODE_ALIASES: dict[str, list[str]] = {
@@ -116,8 +126,49 @@ def find_chi_page(pages: list[str], honor: HonorRecord) -> int | None:
     return None
 
 
+def get_page_footer(page_text: str) -> str:
+    lines = [line.strip() for line in page_text.split("\n") if line.strip()]
+    for line in reversed(lines):
+        if line.startswith("Page "):
+            continue
+        if line in ("Requirements", "Supporting Answers"):
+            continue
+        return line
+    return lines[-1] if lines else ""
+
+
+def is_blank_padding_page(page_text: str) -> bool:
+    lines = [line.strip() for line in page_text.split("\n") if line.strip()]
+    return len(lines) <= 1 and (not lines or lines[0].startswith("Page "))
+
+
+def looks_like_honor_title(footer: str) -> bool:
+    normalized = normalize_for_match(footer)
+    if not normalized or normalized in NON_HONOR_FOOTERS:
+        return False
+    if normalized.startswith("updated in:"):
+        return False
+    if re.match(r"^\d+\.", normalized):
+        return False
+    return True
+
+
 def find_eng_page(pages: list[str], honor_name: str) -> int | None:
     variants = {normalize_for_match(value) for value in honor_name_variants(honor_name)}
+
+    for index, page_text in enumerate(pages):
+        if "Requirements" not in page_text:
+            continue
+        footer = normalize_for_match(get_page_footer(page_text))
+        if footer in variants:
+            return index
+
+    for index, page_text in enumerate(pages):
+        if "Requirements" not in page_text:
+            continue
+        header = normalize_for_match(page_text[:400])
+        if any(variant in header for variant in variants):
+            return index
 
     for index, page_text in enumerate(pages):
         lines = [line.strip() for line in page_text.split("\n") if line.strip()]
@@ -133,17 +184,33 @@ def find_eng_page(pages: list[str], honor_name: str) -> int | None:
 
 def find_eng_pages_to_extract(pages: list[str], honor_page: int) -> list[int]:
     page_indices = [honor_page]
-    next_index = honor_page + 1
+    start_footer = normalize_for_match(get_page_footer(pages[honor_page]))
+    i = honor_page + 1
 
-    if next_index >= len(pages):
-        return page_indices
+    while i < len(pages):
+        page_text = pages[i]
 
-    next_page_text = pages[next_index]
-    if re.search(r"^(?:Page \d+\s*)+Requirements\s*\n\s*\d+\.", next_page_text, re.M):
-        return page_indices
+        if is_blank_padding_page(page_text):
+            break
 
-    if "Supporting Answers" in next_page_text:
-        page_indices.append(next_index)
+        footer = normalize_for_match(get_page_footer(page_text))
+
+        if NEW_HONOR_REQ.search(page_text):
+            break
+
+        if (
+            "Requirements" in page_text
+            and footer != start_footer
+            and looks_like_honor_title(footer)
+        ):
+            break
+
+        page_indices.append(i)
+
+        if i > honor_page and UPDATED_MARKER.search(page_text):
+            break
+
+        i += 1
 
     return page_indices
 

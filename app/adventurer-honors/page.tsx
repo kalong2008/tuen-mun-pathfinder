@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { AdventurerHonorsClient } from "@/app/adventurer-honors/AdventurerHonorsClient";
 import { adventurerHonors } from "@/app/adventurer-honors/honors-data";
+import { sortAdventurerHonors } from "@/app/adventurer-honors/honor-sort";
 import { isAdminUser } from "@/app/lib/user-role";
 
 export const metadata: Metadata = {
@@ -38,5 +39,5 @@ export default async function AdventurerHonorsPage() {
     return <AdventurerHonorsAccessDenied message="僅限管理員存取。" />;
   }
 
-  return <AdventurerHonorsClient honors={adventurerHonors} />;
+  return <AdventurerHonorsClient honors={sortAdventurerHonors(adventurerHonors)} />;
 }

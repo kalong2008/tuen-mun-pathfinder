@@ -58,7 +58,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4020-en.pdf",
       "pages": [
         125,
-        126
+        126,
+        127,
+        128
       ],
       "answerPage": 126
     }
@@ -74,7 +76,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4021-en.pdf",
       "pages": [
         129,
-        130
+        130,
+        131,
+        132
       ],
       "answerPage": 130
     }
@@ -122,7 +126,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4024-en.pdf",
       "pages": [
         143,
-        144
+        144,
+        145,
+        146
       ],
       "answerPage": 144
     }
@@ -138,7 +144,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4025-en.pdf",
       "pages": [
         147,
-        148
+        148,
+        149,
+        150
       ],
       "answerPage": 148
     }
@@ -234,7 +242,8 @@
       "path": "/adventurer-honors/pdf-pages/HKA4064-en.pdf",
       "pages": [
         329,
-        330
+        330,
+        331
       ],
       "answerPage": 330
     }
@@ -442,7 +451,10 @@
       "path": "/adventurer-honors/pdf-pages/HKA4058-en.pdf",
       "pages": [
         299,
-        300
+        300,
+        301,
+        302,
+        303
       ],
       "answerPage": 300
     }
@@ -493,6 +505,22 @@
         320
       ],
       "answerPage": 320
+    }
+  },
+  "YOU4925": {
+    "zh": {
+      "page": 161,
+      "path": "/adventurer-honors/pdf-pages/YOU4925-zh.pdf",
+      "sourceUrl": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/「榮譽證手冊－中文版2023-v3-－-完整版.pdf#page=161"
+    },
+    "en": {
+      "page": 317,
+      "path": "/adventurer-honors/pdf-pages/YOU4925-en.pdf",
+      "pages": [
+        317,
+        318
+      ],
+      "answerPage": 318
     }
   },
   "HKA4060": {
@@ -570,7 +598,8 @@
       "path": "/adventurer-honors/pdf-pages/HKA4002-en.pdf",
       "pages": [
         17,
-        18
+        18,
+        19
       ],
       "answerPage": 18
     }
@@ -618,7 +647,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4005-en.pdf",
       "pages": [
         29,
-        30
+        30,
+        31,
+        32
       ],
       "answerPage": 30
     }
@@ -634,7 +665,8 @@
       "path": "/adventurer-honors/pdf-pages/YOU4615-en.pdf",
       "pages": [
         21,
-        22
+        22,
+        23
       ],
       "answerPage": 22
     }
@@ -666,7 +698,8 @@
       "path": "/adventurer-honors/pdf-pages/HKA4065-en.pdf",
       "pages": [
         333,
-        334
+        334,
+        335
       ],
       "answerPage": 334
     }
@@ -730,7 +763,8 @@
       "path": "/adventurer-honors/pdf-pages/HKA4071-en.pdf",
       "pages": [
         353,
-        354
+        354,
+        355
       ],
       "answerPage": 354
     }
@@ -774,13 +808,13 @@
       "sourceUrl": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/「榮譽證手冊－中文版2023-v3-－-完整版.pdf#page=190"
     },
     "en": {
-      "page": 375,
+      "page": 373,
       "path": "/adventurer-honors/pdf-pages/HKA4076-en.pdf",
       "pages": [
-        375,
-        376
+        373,
+        374
       ],
-      "answerPage": 376
+      "answerPage": 374
     }
   },
   "HKA4077": {
@@ -794,7 +828,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4077-en.pdf",
       "pages": [
         375,
-        376
+        376,
+        377,
+        378
       ],
       "answerPage": 376
     }
@@ -810,7 +846,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4078-en.pdf",
       "pages": [
         379,
-        380
+        380,
+        381,
+        382
       ],
       "answerPage": 380
     }
@@ -826,7 +864,8 @@
       "path": "/adventurer-honors/pdf-pages/HKA4079-en.pdf",
       "pages": [
         385,
-        386
+        386,
+        387
       ],
       "answerPage": 386
     }
@@ -968,7 +1007,10 @@
       "path": "/adventurer-honors/pdf-pages/HKA4037-en.pdf",
       "pages": [
         191,
-        192
+        192,
+        193,
+        194,
+        195
       ],
       "answerPage": 192
     }
@@ -1128,7 +1170,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4053-en.pdf",
       "pages": [
         259,
-        260
+        260,
+        261,
+        262
       ],
       "answerPage": 260
     }
@@ -1236,13 +1280,13 @@
       "sourceUrl": "https://youth.hkmcadventist.org/web/wp-content/uploads/2024/01/「榮譽證手冊－中文版2023-v3-－-完整版.pdf#page=25"
     },
     "en": {
-      "page": 55,
+      "page": 39,
       "path": "/adventurer-honors/pdf-pages/HKA4006-en.pdf",
       "pages": [
-        55,
-        56
+        39,
+        40
       ],
-      "answerPage": 56
+      "answerPage": 40
     }
   },
   "HKA4007": {
@@ -1272,7 +1316,9 @@
       "path": "/adventurer-honors/pdf-pages/HKA4008-en.pdf",
       "pages": [
         59,
-        60
+        60,
+        61,
+        62
       ],
       "answerPage": 60
     }
@@ -1384,7 +1430,8 @@
       "path": "/adventurer-honors/pdf-pages/YOU4560-en.pdf",
       "pages": [
         47,
-        48
+        48,
+        49
       ],
       "answerPage": 48
     }

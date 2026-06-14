@@ -9,10 +9,7 @@ const isProtectedRoute = createRouteMatcher(["/admin(.*)", "/20(.*)"]);
 const isAdventurerHonorsRoute = createRouteMatcher(["/adventurer-honors(.*)"]);
 
 function isAdventurerHonorsAssetPath(pathname: string): boolean {
-  return (
-    pathname.startsWith("/adventurer-honors/pdf-pages/") ||
-    (pathname.startsWith("/adventurer-honors/") && pathname.endsWith(".png"))
-  );
+  return pathname.startsWith("/adventurer-honors/pdf-pages/");
 }
 
 async function userIsAdmin(userId: string): Promise<boolean> {
@@ -54,7 +51,6 @@ export const config = {
     // Skip Next.js internals and all static files, unless found in search params
     "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
     "/adventurer-honors/pdf-pages/:path*",
-    "/adventurer-honors/:path*.png",
     // Always run for API routes
     "/(api|trpc)(.*)",
   ],

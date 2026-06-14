@@ -9,6 +9,7 @@ import { getHonorDownloadUrl } from "@/app/adventurer-honors/honor-downloads";
 import { honorHandbooks } from "@/app/adventurer-honors/honor-handbooks";
 import { getHonorPdfLinks } from "@/app/adventurer-honors/honor-pdf-pages";
 import { getHonorImageUrl } from "@/app/adventurer-honors/honor-images";
+import { formatRequirementForDisplay } from "@/app/adventurer-honors/honor-requirements";
 import { filterHonors, getAnswerSourceLabel } from "@/app/adventurer-honors/honor-search";
 import {
   honorCategories,
@@ -46,11 +47,11 @@ function HonorDetails({ honor }: { honor: AdventurerHonor }) {
     <div className="space-y-6">
       <section>
         <h3 className="mb-3 text-lg font-semibold text-gray-900">中文要求</h3>
-        <ul className="list-inside list-decimal space-y-2 text-gray-700">
+        <ol className="list-inside list-decimal space-y-2 text-gray-700">
           {honor.requirements.map((requirement, index) => (
-            <li key={index}>{requirement}</li>
+            <li key={index}>{formatRequirementForDisplay(requirement)}</li>
           ))}
-        </ul>
+        </ol>
       </section>
 
       <section>
