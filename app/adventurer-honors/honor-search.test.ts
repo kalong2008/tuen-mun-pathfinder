@@ -22,7 +22,7 @@ const honors: AdventurerHonor[] = [
     answers: [{ requirementIndex: 0, text: "可用字母卡練習 A 至 Z。", source: "Award Book 2020" }],
     sourceUrls: ["https://example.com/household"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4920-swimming-ii",
@@ -35,35 +35,45 @@ const honors: AdventurerHonor[] = [
     answers: [],
     sourceUrls: ["https://example.com/recreation"],
     answerSource: "答案待核對",
-    status: "needs-review",
+    status: "reviewed",
   },
 ];
 
 describe("filterHonors", () => {
-  test("filters by category", () => {
-    expect(filterHonors(honors, { category: "household", query: "" })).toHaveLength(1);
-    expect(filterHonors(honors, { category: "household", query: "" })[0].code).toBe("HKA4015");
+  test("filters by single category", () => {
+    expect(filterHonors(honors, { categories: ["household"], reviewStatuses: [], query: "" })).toHaveLength(1);
+    expect(filterHonors(honors, { categories: ["household"], reviewStatuses: [], query: "" })[0].code).toBe("HKA4015");
+  });
+
+  test("filters by multiple categories", () => {
+    expect(filterHonors(honors, { categories: ["household", "recreation"], reviewStatuses: [], query: "" })).toHaveLength(2);
+  });
+
+  test("filters by review status", () => {
+    expect(filterHonors(honors, { categories: [], reviewStatuses: ["reviewed"], query: "" })).toHaveLength(1);
+    expect(filterHonors(honors, { categories: [], reviewStatuses: ["reviewed"], query: "" })[0].code).toBe("YOU4920");
+    expect(filterHonors(honors, { categories: [], reviewStatuses: ["non-review"], query: "" })).toHaveLength(1);
+    expect(filterHonors(honors, { categories: [], reviewStatuses: ["non-review"], query: "" })[0].code).toBe("HKA4015");
   });
 
   test("searches code, Chinese name, English name, aliases, requirements, and answers", () => {
-    expect(filterHonors(honors, { category: "all", query: "YOU4920" })[0].nameZh).toBe("游泳 II");
-    expect(filterHonors(honors, { category: "all", query: "Alphabet" })[0].code).toBe("HKA4015");
-    expect(filterHonors(honors, { category: "all", query: "字母1" })[0].code).toBe("HKA4015");
-    expect(filterHonors(honors, { category: "all", query: "字母卡" })[0].code).toBe("HKA4015");
+    expect(filterHonors(honors, { categories: [], reviewStatuses: [], query: "YOU4920" })[0].nameZh).toBe("游泳 II");
+    expect(filterHonors(honors, { categories: [], reviewStatuses: [], query: "Alphabet" })[0].code).toBe("HKA4015");
+    expect(filterHonors(honors, { categories: [], reviewStatuses: [], query: "字母1" })[0].code).toBe("HKA4015");
+    expect(filterHonors(honors, { categories: [], reviewStatuses: [], query: "字母卡" })[0].code).toBe("HKA4015");
   });
 
-  test("returns all honors when category is all and query is blank", () => {
-    expect(filterHonors(honors, { category: "all", query: "   " })).toHaveLength(2);
+  test("returns all honors when no categories are selected and query is blank", () => {
+    expect(filterHonors(honors, { categories: [], reviewStatuses: [], query: "   " })).toHaveLength(2);
   });
 });
 
 describe("getHonorStats", () => {
-  test("counts total, complete, requirements-only, and needs-review honors", () => {
+  test("counts total, non-review, and reviewed honors", () => {
     expect(getHonorStats(honors)).toEqual({
       total: 2,
-      complete: 1,
-      requirementsOnly: 0,
-      needsReview: 1,
+      nonReview: 1,
+      reviewed: 1,
     });
   });
 });

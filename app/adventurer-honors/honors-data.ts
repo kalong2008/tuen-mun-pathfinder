@@ -12,7 +12,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "可選讀一本字母主題繪本，並與孩子討論書中出現的字母。", source: "Requirement draft" }, { requirementIndex: 1, text: "可唱《Alphabet Song》或《B-I-N-G-O》等字母歌曲。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩字母配對、字母尋寶或字母卡遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "可用紙張、貼紙或顏色筆製作字母手工，例如字母拼貼或字母卡。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4016-alphabet-ii",
@@ -25,7 +25,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "使用字母表掛圖、字母卡或唱字母歌，逐個認識 A 至 Z。", source: "Requirement draft" }, { requirementIndex: 1, text: "用磁石字母、拼字卡或家長協助，逐字拼寫並寫出自己的名字。", source: "Requirement draft" }, { requirementIndex: 2, text: "在家中或戶外散步，找以不同字母開頭的物品（如 B-書、C-椅），可記錄在紙上。", source: "Requirement draft" }, { requirementIndex: 3, text: "看著字母表或字母卡，憑記憶寫出十個不同的字母。", source: "Requirement draft" }, { requirementIndex: 4, text: "畫五個大階字母，從雜誌剪貼或手繪配合該字母的圖案（如 S-太陽、T-樹）。", source: "Requirement draft" }, { requirementIndex: 5, text: "介紹象形文字、注音符號等其他書寫方式，可展示圖片或讓孩子試寫簡單符號。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4019-health-specialist",
@@ -38,7 +38,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "以小組或家庭的形式一起討論文本的原則。", source: "Award Book 2020" }, { requirementIndex: 1, text: "舉辦一場品嚐會，其中包括四個食物組中每一個食物組的食物。蒙住冒險家的眼睛，讓他們猜測自己聞到的食物是什麼味道，然後品嚐食物。或者請冒險家從舊雜誌上剪下食物圖片，將它們排列在海報或紙盤上，並討論如何構成均衡的膳食。", source: "Award Book 2020" }, { requirementIndex: 2, text: "您的身體需要運動來保持肌肉強壯、增強心臟功能、提高肺活量、讓您看起來更好、感覺更好。做一些練習既有趣又健康。 「龜兔賽跑」是一項原地跑運動。首先，你像烏龜一樣緩慢地「跑」50步，然後像兔子一樣快跑50步。重複三次。進行獨輪車比賽，其中一個孩子握住第一個孩子的腳踝。兩人同時向前走去，一個用手，一個用腳。然後他們換地方。", source: "Award Book 2020" }, { requirementIndex: 3, text: "當你睡覺時，你的整個身體都會放鬆，包括你的肌肉、心臟和呼吸。您的身體利用這段時間進行自我恢復和修復。", source: "Award Book 2020" }, { requirementIndex: 4, text: "沒有新鮮空氣，我們就無法生存。深呼吸並享受。陽光含有維生素 D，有助於形成強壯的骨骼。陽光是一種消毒劑。在陽光下進行「俄羅斯跳」運動。進入蹲姿，雙臂交叉在胸前。用你的腳跳起來並向前。繞一圈跳一圈。在每一跳結束時，您都會回到起始位置。", source: "Award Book 2020" }, { requirementIndex: 5, text: "當我們呼吸、流汗或排尿時，我們會失去水分，必須補充水分。您的身體大約有三分之二或 65% 是水。每天喝兩誇脫半的水以保持健康。許多食物都含有水；生菜的十分之九是水。", source: "Award Book 2020" }, { requirementIndex: 6, text: "牙醫有向兒童解釋牙齒衛生的教育材料。", source: "Award Book 2020" }, { requirementIndex: 7, text: "請聯絡您的家庭醫生、當地衛生部門或公共圖書館以獲取影片或電影，這將使這成為真正的學習體驗。許多事情都會損害您的健康：睡眠不足、不良飲食習慣、很少或根本不運動、飲酒、濫用藥物等。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "英文 Award Book 2020 未有 Supporting Answers",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4020-healthy-foods",
@@ -51,7 +51,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "貝阿特麗斯·霍利爾 (Beatrice Hollyer) 的《Let’s Eat: What Children Eat around the World》（亨利·霍爾特，2004 年）或您選擇的一本好書", source: "Award Book 2020" }, { requirementIndex: 1, text: "請事先諮詢世界衛生組織 (who.inst)、聯合國兒童基金會 (unicef.org) 以及聯合國糧食及農業組織 (fao.org) 等國際衛生組織。研究兒童應該食用哪些種類和數量的食物才被認為是健康的。在某些文化中，肥胖是一個問題，而在其他地區，貧窮和營養不良更令人擔憂。當您領導獎項時，請對您所在小組中的兒童和家長的需求和背景保持敏感。有關食物的一些一般資訊包括： 蛋白質 您可能知道您需要吃蛋白質，但它是什麼？許多食物都含有蛋白質（例如：有利於青少年），但最好的來源是牛肉、家禽、魚、雞蛋、乳製品、堅果、種子和豆類，如黑豆和扁豆。蛋白質建構、維持和替換體內的組織。 （不是你擤鼻子的組織！我們指的是你身體的組成部分。）你的肌肉、你的器官和你的免疫系統主要由蛋白質組成。維生素 維生素和礦物質是我們吃的食物中發現的物質。您的身體需要它們才能正常工作，因此您才能正常成長和發育。說到維生素，每一種都可以發揮特殊的作用。例如：牛奶中的維生素 D 有助於骨骼。胡蘿蔔中的維生素 A 有助於夜間視力。如果你被割傷，橘子中的維生素 C 可以幫助你的身體癒合。綠葉蔬菜中的 B 群維生素有助於身體產生蛋白質和能量。礦物質 就像維生素一樣，礦物質可以幫助您的身體生長、發育和保持健康。身體利用礦物質來執行許多不同的功能—從強健骨骼到傳遞神經衝動。有些礦物質甚至被用來製造荷爾蒙或維持正常的心跳。", source: "Award Book 2020" }, { requirementIndex: 2, text: "使用真實的食物或健康食品的圖片/草圖/剪貼畫，就像他們在這個獎項中所了解的那樣。教學概念：水果串 材料： • 各種水果 • 容器 • 木串、咖啡攪拌器或攪拌棒 程序： 提前：將各種水果切成一口大小的塊，並將每種水果放入單獨的容器中。使用大量鮮豔的顏色和濃鬱的香味。向孩子們展示如何將水果放在木串、咖啡攪拌器或攪拌棒上，製作色彩繽紛的烤肉串。當孩子們自己製作烤肉串時，與他們談論健康飲食、味道、觸覺和氣味。每個烤肉串做好後就讓他們吃掉。重複幾次。教學理念：配對卡片 材料：可以用索引卡（對）上的食物圖片來創建小組遊戲。創建一堆食物類型（來自所有食物組）。步驟：孩子必須看圖片並判斷它是水果組、蔬菜組、蛋白質組還是麵包和米飯組。家庭團體或成人與小團體兒童混合最適合此年齡層的此項活動。", source: "Award Book 2020" }, { requirementIndex: 3, text: "全球 100 多個國家製定了食品營養指南計畫。連結：http://www.fao.org/nutrition/nutrition-education/food-dietary-guidelines/en/或搜尋「食品指引營養表」。一些食物指南以圖形方式組織為「我的餐盤」、「食物金字塔」或「食物組」。一旦您知道您所在國家/地區的食品指南計劃是什麼，請使用帶有該食品營養語言和「兒童圖表顏色項目」的搜尋引擎，例如，在美國搜尋我的盤子圖兒童著色項目。使用真實的食物或健康食品的圖片/草圖/剪貼畫，就像他們在這個獎項中所了解的那樣。教學理念：我的紙盤材料：膠棒或學校膠水；紙盤，自然搭配但營養豐富的食物的圖片（例如麵條和蔬菜、沙拉和砂鍋菜和豆類、豆類和大米和蔬菜、各種水果。所有這些圖片都應該足夠小（並用彩紙預先剪下來），以便孩子們按照聯合國/糧農組織/聯合國兒童基金會建議的比例將它們快速粘到盤子上。教學概念：製作點心 材料：可以放入一些健康零食的杯子，例如金魚餅乾、果汁盒、胡蘿蔔條或西蘭花小花。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4021-healthy-me",
@@ -64,7 +64,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "聽故事意味著你可以為你的小羊讀一本關於健康的書，聽網路上的故事，或看一個關於健康的小故事。如果您搜尋「關於健康學前教育的免費線上書籍」，可以使用一些免費的線上資源，包括 YouTube 影片。大多數人支持富含蔬菜的飲食和運動。您必須更仔細地搜尋素食主義或純素食主義對您的演講是否重要。書籍選項： • 閱讀 Lisa Bullard 所寫的《My Body Head Toe》一書。 • 閱讀艾瑞克‧卡爾的《從頭到腳》一書。這是一場充滿活力的動物的有趣冒險，鼓勵孩子們保持健康。這是同一位因《好餓的毛毛蟲》而聞名的作者，這本書受到了數千名預科生的閱讀和喜愛。在此頒獎期間，一項可能對您有所幫助的有趣活動是一首互動歌曲： 教學理念：表演 Starfall 中的歌曲 Head and Shoulders Head and Shoulders, Knees and Toes Head and Shoulders, Knees and Toes, Knees and Toes, Head and Shoulders, Knees and Toes, Knees and Toes, Knees and Toes, Headoulds, and Gnees and Toes and Tonees and Toes, Knees and Toes, Heades and Toes. Oring and Nos, Head and Shoulders, Knees and Toes, Knees and Toes. 手指，肘部，臀部和腳踝，臀部和腳踝， 手指，肘部，臀部和腳踝，臀部和腳踝，頭髮和臉頰，下巴和脖子，手指，肘部，臀部和腳踝，臀部和腳踝。程序：讓領隊慢慢地唱這首歌，用雙手手掌觸摸身體的每個部位。一旦孩子們明白如何做，他們就可以加入他們的領導者。當小組變得更加舒適時，可以輕鬆地加快歌曲速度（一起唱歌或僅由領導者領唱，具體取決於孩子們的技能）。只要孩子能夠成功完成任務，就可以走得盡可能快。慶祝每一個新的成功！", source: "Award Book 2020" }, { requirementIndex: 1, text: "此清單會根據您在要求 1 中閱讀、聆聽或觀看的書籍或資源而有所不同。請記住，您可以將這兩個要求結合起來，並停下來問孩子們（當您閱讀這本書時）「這告訴我們關於健康的什麼信息？」他們給您的示例答案可能包括： • 我們身體的許多部位都可以活動和鍛煉 • 鍛煉身體的各個部分是有好處的 • 我們需要大量活動才能獲得足夠的健康鍛煉。 • 蔬菜對我的胃有好處 • 我應該吃所有的蔬菜，即使是我不喜歡的蔬菜 • 您需要吃不同種類的食物才能保持健康 • 您需要保持健康才能成長和發育。 • 健康飲食對於骨骼、牙齒、肌肉和心臟健康的正常形成非常重要。請記住，您希望他們根據您在一起期間所聽的資源，用自己的話給您答案。", source: "Award Book 2020" }, { requirementIndex: 2, text: "教學理念：健康食物遊戲 材料：健康與不健康食物的圖片（見下頁圖）。步驟：給每隻小羊一張健康或不健康食物的圖片。請他們對其他孩子隱藏自己的照片。挑戰小羊羔分成兩組。所有吃健康食物的孩子都聚集在房間的一個角落，而所有吃不健康食物的孩子都聚集在另一個區域。分組後，讓每隻小羔羊展示他的食物，以便全班討論為什麼它是健康或不健康的。讓每個人都將自己的照片放在中間一堆。將食物混合起來。重複遊戲幾次。如果有「玩具食品」，則可以以相同的方式使用。", source: "Award Book 2020" }, { requirementIndex: 3, text: "選擇以下活動之一與您的孩子一起完成，或建立另一項活動來滿足要求。教學概念：好牙與壞牙 材料：畫或列印整頁牙齒圖片（每頁一張，每人兩張）；有關食物、飲料以及牙齒體驗的其他事物的雜誌。步驟：讓孩子在一顆牙齒上畫微笑，在另一顆牙齒上畫皺眉，或讓父母提前準備微笑/皺眉版本。和孩子們一起集思廣益，是什麼讓我們的牙齒「快樂」和「悲傷」！這個項目是一個很好的機會來回顧我們可以做的所有事情來照顧我們的牙齒以及我們應該避免的所有事情。孩子從雜誌上選擇圖片，然後讓父母剪下來。成人和兒童一起將圖像貼到正確/合適的牙齒上。教學理念：移動食物組 分發一個紙盤給每隻小羊羔。提供雜誌、膠水和剪刀。讓孩子瀏覽雜誌尋找健康食品來製作美味佳餚。讓你的小羊把食物黏到紙盤上。讓他們與全班分享他們的健康餐點。製作展示五種食物類別的手機。讓您的孩子為每組食物畫畫或著色。將它們黏在五張單獨的厚卡片紙上以將各組分開。用紗線將卡片紙串起來，並將手機展示在您的房間裡。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4022-home-helper-i",
@@ -77,7 +77,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "可以用雙手、雙腳、眼睛和嘴巴幫忙，例如拿東西、打掃、整理和說鼓勵的話。", source: "Requirement draft" }, { requirementIndex: 1, text: "例如：整理床鋪、幫忙掃地、吸塵、收拾房間、協助分類回收、幫忙擺放餐具。", source: "Requirement draft" }, { requirementIndex: 2, text: "從第 2 項中選一項，連續一週每天在家練習，例如「整理床鋪」「幫忙打掃」「吸塵」「收拾房間」或「廢物分類」。", source: "Requirement draft" }, { requirementIndex: 3, text: "可學唱《Helpers Are We》或教會兒童詩歌中關於幫助他人的歌曲。", source: "Requirement draft" }, { requirementIndex: 4, text: "例如：路得幫助拿俄米、馬太跟從耶穌、馬大招待客人，或任何孩子能理解的聖經幫手人物。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4023-know-your-body",
@@ -90,7 +90,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "背誦並討論哥林多前書 6:19：我們的身體是上帝的殿，要好好照顧。", source: "Requirement draft" }, { requirementIndex: 1, text: "可指出：頭、頸、肩、手臂、手、胸、腹、背、腿、膝、腳、腳趾（共十二部分）。", source: "Requirement draft" }, { requirementIndex: 2, text: "提供人形紙，讓孩子畫出身體並標示十二個部分名稱。", source: "Requirement draft" }, { requirementIndex: 3, text: "膝蓋讓腿可以彎曲，幫助我們走路、跑跳、上下樓梯和坐下。", source: "Requirement draft" }, { requirementIndex: 4, text: "樣貌幫助我們認識彼此、表達情緒；微笑和眼神可以關心別人。", source: "Requirement draft" }, { requirementIndex: 5, text: "例如：拍手、寫字、畫畫、幫忙拿東西、舐手禱告、與人握手。", source: "Requirement draft" }, { requirementIndex: 6, text: "用嘴巴唱詩、禱告、說鼓勵的話、向人見證耶穌，不說謊或傷害人的話。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4024-manners-fun",
@@ -103,7 +103,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "閱讀並討論馬太福音 7:12（黃金法則）：你希望別人怎樣待你，也要怎樣待人。", source: "Requirement draft" }, { requirementIndex: 1, text: "請、謝謝、不客氣、對不起、對不起。", source: "Award Book 2020" }, { requirementIndex: 2, text: "用繪畫或剪貼圖片表達「請」「謝謝」「對不起」等禮貌用語的場景。", source: "Requirement draft" }, { requirementIndex: 3, text: "魔術文字遊戲 在紙條上寫下諸如「當你收到一份禮物時，你會說什麼？」之類的事件。 「當有人對你說『瑪麗，你的裙子很漂亮』時，你會怎麼說？」 「當你走過走廊，撞到某人時，你會說什麼？」發揮你的想像力，想出更多的事件。將紙條放入籃子中。讓孩子畫一張，老師唸一下，孩子做出適當的反應。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4025-my-family",
@@ -116,7 +116,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "在唱這首歌之前，聽聽孩子們告訴你他們的家庭和他們認識的其他家庭中有哪些類型的人（爸爸、媽媽、兄弟姐妹、祖父母、叔叔阿姨、表兄弟姐妹等）。請記住，「核心」家庭可能是上述任何一種甚至更多選擇的任意組合，包括離婚和混合家庭單位！作為成人領導者，您負責對待每種家庭類型對孩子來說同樣有效和有價值。 YouTube 有該歌曲的一個版本 - 「With Jesus in the Family」。有耶穌在家裡 有耶穌在家裡，幸福快樂的家。幸福快樂，家幸福。幸福快樂，家幸福。有耶穌在家裡，家庭幸福、幸福。幸福快樂，家幸福。與媽媽在家...與爸爸在家...與爺爺在家...與奶奶在家...與阿姨在家...等等（所有可能對您小組中的孩子很重要的親戚）", source: "Award Book 2020" }, { requirementIndex: 1, text: "請記住，閱讀（和聽書）是一項生活技能，將幫助您的孩子在未來取得成功。為了您團隊的經濟未來和職業生涯，幫助他們確保閱讀和聽力成為您每次會議的一部分！關於家庭的聖經故事包括亞伯拉罕、撒拉和以撒、參孫和他的父母、約瑟、瑪麗和耶穌的故事等等。由於這些故事中的大多數都涵蓋了各種各樣的聖經經文，因此找到為年輕人編寫的兒童插圖讀物非常重要，它們可以幫助您比聖經段落更流暢地講述故事。", source: "Award Book 2020" }, { requirementIndex: 2, text: "#1 的討論可以擴展到包括家庭傳統（家庭來自哪裡）、語言、最喜歡的食物等等。這是您的團隊分享的特殊時刻。一定要幫助他們所有人體驗這段時光，即使這意味著鼓勵一些人比他們通常希望的更加保守。", source: "Award Book 2020" }, { requirementIndex: 3, text: "教學概念：我的家譜 材料：建築紙，12 × 18 英吋（30.5 × 45 公分）；綠色蛋彩或手指畫；淺容器；蠟筆或記號筆；報紙/一次性桌布；罩衫流程： 提前：您需要為每個孩子準備一張圖畫紙。在每張紙上畫出樹幹和草。然後在樹幹上畫一個大圓圈。孩子們將在這個區域填寫代表葉子的手印。倒入足夠的綠色蛋彩畫或手指畫顏料以覆蓋淺容器的底部（一次性塑膠板效果很好）。用報紙、一次性桌布或其他易於清潔的東西覆蓋孩子們要繪畫的區域。讓每個孩子穿一件超大號的成人襯衫或用垃圾袋製作罩衫（在垃圾袋底部為孩子的頭部切一個孔，在兩側切一個為手臂的孔）。向孩子們展示如何將一隻手手掌向下平放在顏料中，然後將其按在紙上的圓圈內或圓圈附近。 （如果「葉子」遍布圖片而不是圓圈內，請不要擔心。）孩子們將葉子放在樹上後，請成人詢問孩子們家庭成員的名字，然後將名字寫在葉子上。 （孩子可能不知道家人的正確名字，所以可以寫葛萊美、媽媽或爸爸。）不要忘記在其中一張葉子上寫上孩子的名字。如果他們想嘗試寫自己的名字，那就讓他們吧！", source: "Award Book 2020" }, { requirementIndex: 4, text: "對於小羊來說，他們的家人經常在場，所以你有很多選擇！教學理念：（活動本）簡筆畫 材料：活動本；蠟筆或可洗記號筆。步驟：讓孩子畫出他們的家人。作為四歲的孩子，成年人需要提供很多幫助。其他選項包括將成年人的照片貼在相框中並為其著色，或在相框中使用貼紙/泡沫貼紙等來代表他們的家庭成員。這是最不令人興奮的或您的團隊可用的所有選項！當你們一起結束會議時間時，你甚至可以選擇做不只一項活動。教學理念： 配對遊戲 材料： 準備好一對家庭成員圖片（打印件或照片）（x20 套或更多） 程序： 提前製作一對匹配的「卡片」，上面有不同類型的家庭成員的照片/圖片/圖畫（祖父母、叔叔、阿姨、表兄弟姐妹、表兄弟姐妹、姐妹、兄弟、父親、母親等）。將卡片混合在一起，面朝下放在各組之間的地板上。讓每個家庭單位在場（或讓「家庭」（團隊））翻轉一對卡片。如果匹配，家人可能會把它撿起來。比賽繼續繞圈進行。當所有牌都配對完畢後，遊戲就結束了。組數最多的家庭獲勝！讓家人在佈置時談論圖片所代表的家庭成員。教學點子：家庭欣賞 教材：無 程序：讓每個家庭圍成一圈。讓每個人輪流說一件他們喜歡成為家庭一員的事。如果有些孩子沒有與家人一起參加，那麼組成一個大團體，與其他人分享感激之情也是可行的！", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4026-numbers",
@@ -129,7 +129,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本 1 至 20 的數字繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "可唱《Ten Little Indians》《One, Two, Buckle My Shoe》或《數字歌》。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩數字配對、數數遊戲、擲骰子走格或數字尋寶。", source: "Requirement draft" }, { requirementIndex: 3, text: "用色紙、貼紙或拼貼製作 1 至 20 的數字手工，例如數字串或數字卡。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4027-reading-i",
@@ -142,7 +142,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "有很多關於耶穌的書。重要的是找到適合您孩子發展程度的產品。兒童聖經應用程式是 Youversion Bible Inc. 的產品，為兒童提供近 50 個互動聖經故事。有一個動畫故事書應用程序，具有生動的插圖和聲音以及互動式觸控螢幕互動。這些遊戲和活動可以幫助孩子記住他們所學的內容。導航對孩子來說很簡單，並且沒有應用程式內購買。還有一本印刷版聖經，其中有相同的故事和圖形。查看您裝置的應用程式商店。 Bibleforchildren.org 擁有 60 個不同聖經故事的插圖和彩頁，可供下載和列印，有 132 種不同語言版本。 http://bibleforchildren.org/ 或您設備的 App 商店中有 18 個關於耶穌的故事（包括 Powerpoint、著色頁和故事書頁）。閱讀通常是「分配」的，並作為親子活動進行。當孩子們完成活動後，請他們在俱樂部會議上報告他們的發現。想法：主角猜謎遊戲 - 讓父母和孩子一起告訴你他們閱讀獎勵書中關於主角的一個故事", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4028-reading-ii",
@@ -155,7 +155,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "有很多關於耶穌的書。重要的是找到適合您孩子發展程度的產品。兒童聖經應用程式是 Youversion Bible Inc. 的產品，為兒童提供近 50 個互動聖經故事。有一個動畫故事書應用程序，具有生動的插圖和聲音以及互動式觸控螢幕互動。這些遊戲和活動可以幫助孩子記住他們所學的內容。導航對孩子來說很簡單，並且沒有應用程式內購買。還有一本印刷版聖經，其中有相同的故事和圖形。查看您裝置的應用程式商店。 Bibleforchildren.org 擁有 60 個不同聖經故事的插圖和彩頁，可供下載和列印，有 132 種不同語言版本。 http://bibleforchildren.org/ 或您設備的 App 商店中有 18 個關於耶穌的故事（包括 Powerpoint、著色頁和故事書頁）。提前規劃這次「讀書會」，讓大家帶上最喜歡的書籍和毯子/枕頭。讓它成為一項有趣且令人難忘的活動。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4029-reading-iii",
@@ -168,7 +168,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "確保您選擇的聖經版本都是使用建構者容易理解的語言。另外，選擇使徒行傳中建造者感興趣的部分。在閱讀時花點時間提出問題：你認為它聞起來、聽起來、感覺起來像什麼？你認為這個人為什麼要這麼做？ 2.有很多關於耶穌的書。重要的是找到適合您孩子發展程度的產品。兒童聖經應用程式是 Youversion Bible Inc. 的產品，為兒童提供近 50 個互動聖經故事。有一個動畫故事書應用程序，具有生動的插圖和聲音以及互動式觸控螢幕互動。這些遊戲和活動可以幫助孩子記住他們所學的內容。導航對孩子來說很簡單，並且沒有應用程式內購買。還有一本印刷版聖經，其中有相同的故事和圖形。查看您裝置的應用程式商店。 Bibleforchildren.org 提供了 60 種不同聖經故事的插圖和彩頁，可供下載和以 132 種不同語言列印。有 18 個關於耶穌的故事（包括 Powerpoint、著色頁和故事書頁）http://bibleforchildren.org/ 或您設備的應用程式商店。閱讀通常是「分配」的，並作為親子活動進行。當孩子們完成活動後，請他們在俱樂部會議上報告他們的發現。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4030-reading-iv",
@@ -181,7 +181,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "撒母耳記上 1-3 章講述了哈拿的故事以及撒母耳的出生和將撒母耳交給上帝。 Youversion、Biblegateway、Olive Tree 等聖經應用程式都可以讓您輕鬆地以您選擇的譯文閱讀這個故事。聖經網關有來自世界各地的廣泛語言列表，作為免費下載的一部分。有些網站還可以讓您輕鬆收聽或閱讀其網站上的段落。", source: "Award Book 2020" }, { requirementIndex: 1, text: "有很多關於耶穌的書。重要的是找到適合您孩子發展程度的產品。兒童聖經應用程式是 Youversion Bible Inc. 的產品，為兒童提供近 50 個互動聖經故事。有一個動畫故事書應用程序，具有生動的插圖和聲音以及互動式觸控螢幕互動。這些遊戲和活動可以幫助孩子記住他們所學的內容。導航對孩子來說很簡單，並且沒有應用程式內購買。還有一本印刷版的兒童聖經，其中有相同的故事和圖形。查看您裝置的應用程式商店。 Bibleforchildren.org 擁有 60 個不同聖經故事的插圖和彩頁，可供下載和列印，有 132 種不同語言版本。 http://bibleforchildren.org/ 或您設備的 App 商店中有 18 個關於耶穌的故事（包括 Powerpoint、著色頁和故事書頁）。閱讀通常是「分配」的，並作為親子活動進行。當孩子們完成活動後，請他們在俱樂部會議上報告他們的發現。想法：主角猜謎遊戲 - 讓父母和孩子一起向您講述他們閱讀獎勵書中關於主角的一個故事。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4064-acts-of-kindness",
@@ -194,7 +194,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "閱讀/已經閱讀聖經經文。將它們以大字體印在影印紙上，可以讓閱讀能力好的孩子自願為小組大聲朗讀。", source: "Award Book 2020" }, { requirementIndex: 1, text: "這是一個集體集思廣益的好時機，也許是在做手工時或作為準備短劇/猜謎遊戲的一部分——想法發起者：父母善待並愛他們的孩子；朋友們在一起玩耍、吃飯、一起工作時彼此友善；神如此愛我們，甚至派他的兒子從天上來到地上與人同住，然後為我們而死，使我們可以永遠如此與他一起在天上生活。", source: "Award Book 2020" }, { requirementIndex: 2, text: "舊約中最好的例子是路得的故事；新約中最好的例子是好撒瑪利亞人的比喻。", source: "Award Book 2020" }, { requirementIndex: 3, text: "如果您閱讀了要求 3 中的聖經故事，您只需要一個額外的故事。目標是發現現代的善良故事。兒童故事書和線上兒童影片書都是很好的資源。家長成年人應該預覽線上資源。教學概念：猜字謎——材料：預先寫好的卡片（「幫助女士打掃廚房」「幫助媽媽洗碗」等）；程序：小組每人獲得一張卡片，練習動作後表演，觀眾猜測善舉。", source: "Award Book 2020" }, { requirementIndex: 4, text: "在短劇中表演不同的善良行為，例如幫助同學、分享玩具或安慰傷心的朋友。", source: "Requirement draft" }, { requirementIndex: 5, text: "以班級或幼鋒會形式計劃並實踐一件善事，例如為長者送關懷、整理教會或捐贈物品。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4033-story-listening-i",
@@ -207,7 +207,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "該獎項的目的是教導孩子花時間「閱讀」的價值。小羔羊正處於發展階段，他們透過觀察和體驗父母/領導者的所作所為來學習得最好。這是一項適合家長和孩子一起做的很棒的活動。這些書必須是為幼兒寫的。這不是小羔羊聽大人的書或故事的活動。取得書籍的地點： • 俱樂部可能會建議甚至購買每個類別的書籍，並設有共享書籍俱樂部。 • 俱樂部也可以要求會員每人攜帶一本書參加會議，然後以社區形式共度時光分享書籍。 • 如果有學校或社區圖書館，家長和孩子可以參觀圖書館並使用那裡的書籍。 • 宣教書籍有時很難找到。可能有必要聯繫其他地區的教會或您的會議/宣教兒童事工部門。這些書應該很短。事實上，很多時候，兒童讀物都有厚厚的紙板頁，上面有很多漂亮的圖片。", source: "Award Book 2020" }, { requirementIndex: 1, text: "老師讀完後，可能會問以下問題： • 你最喜歡故事中的哪個人/動物？ • 最令人興奮的部分是什麼？最悲傷的部分？ • 您是否經歷過像我們在這個故事中讀到的那樣的事情？ • 透過聽這本書，你學到了什麼？", source: "Award Book 2020" }, { requirementIndex: 2, text: "通常，幫助孩子寫便條/製作感謝卡的成年人將是收到卡片/便條的人。沒關係。我們正在訓練年輕人表現出感恩之心，這項活動可以幫助他們學習這一點。材料：彩紙、蠟筆或色鉛筆、貼紙、膠水。時間：5-7 分鐘 步驟：提前將一張標準尺寸的彩色紙或建築紙對折成一張大卡片。讓學生在正面和內部添加顏色或貼紙。正面應該寫「謝謝」，裡面有一個簡單的句子，告訴大人孩子要感謝什麼（「謝謝你給我讀故事」）。注意：大人需要幫助孩子寫字。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4034-story-listening-ii",
@@ -220,7 +220,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "該獎項的目的是教導孩子花時間「閱讀」的價值。早起的鳥兒正處於發展階段，他們透過觀察和體驗父母/領導者的所作所為來學習得最好。這是一項適合家長和孩子一起做的很棒的活動。這些書必須是為幼兒寫的。這不是一項讓早起的鳥兒聽大人物的書籍或故事的活動。取得書籍的地點： • 俱樂部可能會建議甚至購買每個類別的書籍，並設有共享書籍俱樂部。 • 俱樂部也可以要求會員每人攜帶一本書參加會議，然後以社區形式共度時光分享書籍。 • 如果有學校或社區圖書館，家長和孩子可以參觀圖書館並使用那裡的書籍。 • 宣教書籍有時很難找到。可能有必要聯繫其他地區的教會或您的會議/宣教兒童事工部門。這些書應該很短。事實上，很多時候，兒童讀物都有厚厚的紙板頁，上面有很多漂亮的圖片。", source: "Award Book 2020" }, { requirementIndex: 1, text: "老師讀完後，可能會問以下問題： • 你最喜歡故事中的哪個人/動物？ • 最令人興奮的部分是什麼？最悲傷的部分？ • 您是否經歷過像我們在這個故事中讀到的那樣的事情？ • 透過聽這本書，你學到了什麼？", source: "Award Book 2020" }, { requirementIndex: 2, text: "通常，幫助孩子寫便條/製作感謝卡的成年人將是收到卡片/便條的人。沒關係。我們正在訓練年輕人表現出感恩之心，這項活動可以幫助他們學習這一點。材料：彩紙、蠟筆或色鉛筆、貼紙、膠水。時間：5-7 分鐘 步驟：提前將一張標準尺寸的彩色紙或建築紙對折成一張大卡片。讓學生在正面和內部添加顏色或貼紙。正面應該寫「謝謝」，裡面有一個簡單的句子，告訴大人孩子要感謝什麼（「謝謝你給我讀故事」）。注意：大人需要幫助孩子寫字。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（網站代碼 HKA4033 與 PDF HKA4034 不一致）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4620-courtesy",
@@ -233,7 +233,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "禮貌是指透過良好的舉止和適當的行為來表達對他人的考慮。展示禮貌行為的例子。", source: "Award Book 2020" }, { requirementIndex: 1, text: "黃金法則是耶穌基督在登山寶訓中提出的一條戒律或生活準則，並記錄在馬太福音 7 章 12 節。在不同的版本中，它被表述為「己所不欲，勿施於人」。", source: "Award Book 2020" }, { requirementIndex: 2, text: "透過假裝吃飯、餐桌佈置、向孩子們展示正確的餐桌禮儀（例如不要含著食物說話、正確使用叉子和湯匙、說「請」和「謝謝」等）來鼓勵良好的禮儀。您可能希望為冒險家舉辦一場「宴會」，以便他們能夠將所學到的知識付諸實踐。", source: "Award Book 2020" }, { requirementIndex: 3, text: "教導冒險家在接聽電話時清晰地說話，詢問呼叫者他們想與誰通話，並快速傳達訊息。確保孩子知道在緊急情況下如何尋求幫助。如果沒有電話，請教導冒險家如何正確地進行介紹。", source: "Award Book 2020" }, { requirementIndex: 4, text: "給冒險家幾分鐘的時間來講述他們的故事。您可能需要分享經驗才能讓他們開始。鼓勵孩子像對待成人一樣善待他人。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4740-home-helper-ii",
@@ -246,7 +246,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "分享時，工作總是更有趣。教導冒險家如何幫助父母或兄弟姊妹在家中提供協助。", source: "Award Book 2020" }, { requirementIndex: 1, text: "教導冒險家正確擺放桌子：叉子放在盤子的左邊，刀和湯匙放在右邊，杯子或玻璃杯放在刀的右上方，餐巾折疊並放在盤子或叉子的左邊。教他們安全洗碗並自願完成任務。", source: "Award Book 2020" }, { requirementIndex: 2, text: "冒險家可能需要鋪床和保持房間清潔的幫助，但他們絕對需要被教導這些重要的責任和良好的習慣。", source: "Award Book 2020" }, { requirementIndex: 3, text: "做家事可能很有趣，並鼓勵孩子參與保持家庭清潔。學會安全地除塵、清掃和吸塵而不造成更多灰塵非常重要。", source: "Award Book 2020" }, { requirementIndex: 4, text: "教導孩子們幫忙清空垃圾桶並將物品放入更大的垃圾箱中。談論如何將垃圾分為玻璃、罐頭和紙張以進行回收。", source: "Award Book 2020" }, { requirementIndex: 5, text: "你可以在冒險家時間建立一個「房子」。鼓勵孩子們一起打掃「房子」，並向他們展示如何整齊地完成必要的任務。木製品和窗台需要用乾淨的布擦拭，或者如果是可洗的油漆，則需要用濕布擦拭。將乾淨的抹布或枕頭套放在掃帚上以清除蜘蛛網。使用水或窗戶清潔劑以及乾淨的布或紙巾來清潔窗戶。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4760-hygiene",
@@ -259,7 +259,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "討論像耶穌希望我們那樣使用友善和「乾淨」的話語的重要性。找到文本，一起閱讀，並討論每個文本的含義。", source: "Award Book 2020" }, { requirementIndex: 1, text: "讓學習變得有趣；請記住，許多人可能沒有在家中學習基本的清潔知識。玩遊戲、唱歌或製作海報來灌輸基本原則。您可以選擇觀看影片、閱讀書籍或讓健康專家與冒險家交談。", source: "Award Book 2020" }, { requirementIndex: 2, text: "教導進食前、上廁所後及處理食物前清潔雙手的重要性。如果可能的話，讓冒險家用顯微鏡觀察他們的手。讓他們像平常一樣用肥皂清洗，然後​​將他們的手再次放在顯微鏡下，再次仔細清洗並觀察差異。", source: "Award Book 2020" }, { requirementIndex: 3, text: "刷牙兩分鐘，每天至少兩次。均衡飲食，減少含糖和澱粉類食物的攝入，不要咀嚼冰塊或爆米花仁等堅硬物質。請牙醫或牙醫師示範正確的刷牙方法。 （有時他們會給每個孩子一把牙刷或其他牙齒護理用品）。", source: "Award Book 2020" }, { requirementIndex: 4, text: "乾淨的身體更健康。與孩子分享一些不保持清潔可能出現的問題（蝨子、感冒、感染等）。 玩美容店並展示如何正確洗頭、然後吹乾、梳理頭髮。您可能希望讓美容操作員討論並展示頭髮和手部的良好健康習慣。", source: "Award Book 2020" }, { requirementIndex: 5, text: "我們身體的外部需要水來保持清潔，身體內部也需要水來保持健康。我們每天至少需要喝八杯水。討論上帝如何創造冒險家的身體。", source: "Award Book 2020" }, { requirementIndex: 6, text: "保持衣服清潔很重要，這樣我們才能看起來和感覺健康。玩耍或工作後弄髒後，洗澡並穿上乾淨的衣服很重要。", source: "Award Book 2020" }, { requirementIndex: 6, text: "讓冒險家與他們的父母或其他成年人一起努力保持他們的房子乾淨整潔。", source: "Award Book 2020" }, { requirementIndex: 6, text: "讓孩子與父母或其他成年人一起洗衣服。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4865-safety-specialist",
@@ -272,7 +272,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "與父母一起觀看適合年齡的家庭安全影片或電影，並討論您學到的東西。當地警察或消防部門或當地圖書館可能有適合您所在地區的資源。", source: "Award Book 2020" }, { requirementIndex: 1, text: "鼓勵家長幫助冒險家製定消防安全計畫。討論滅火器的存放位置以及如何使用它們。人員安全是指拒絕與陌生人搭車等。", source: "Award Book 2020" }, { requirementIndex: 2, text: "為您的學校、俱樂部和/或教會繪製平面圖，並說明在緊急情況下前往何處以及如何離開該區域。在家裡、學校或教會練習這些練習。", source: "Award Book 2020" }, { requirementIndex: 3, text: "當地警察或消防部門或當地圖書館將提供您特定區域的資訊。討論可能出現的災難類型，以便您可以告知孩子並做好準備，而不會嚇到他們。", source: "Award Book 2020" }, { requirementIndex: 4, text: "製作一個「安全偵探」紐帶或絲帶，讓冒險家在記錄家裡或學校的潛在問題時佩戴。他們應該尋找危險，例如裝有清潔液或藥物的櫃子上的閂鎖是否破損、電線磨損或電源插頭破損、耙子朝上、人行道上的木板、破損的水龍頭、裝有油漆稀釋劑或汽油的無標籤容器、破碎的玻璃等。", source: "Award Book 2020" }, { requirementIndex: 5, text: "請求允許在公共場所展示海報。", source: "Award Book 2020" }, { requirementIndex: 6, text: "給孩子們安全的環境，讓他們必須回答「是」、「否」或「我會問爸爸媽媽」。從您經歷過的情況開始遊戲，例如地板上的碎玻璃。 Q：「你願意拿起玻璃杯嗎？」 「你會告訴你媽媽嗎？」鼓勵孩子們分享現實情況，並在行動前仔細思考。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/household/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（網站要求與 PDF 編號略有不同，已按中文要求對照）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4585-caring-friend",
@@ -285,7 +285,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "討論冒險家如何成為有愛心的朋友。例如，善待年長的人、你的玩伴或兄弟姊妹。為生病的人送一杯涼水或一束鮮花。分享一本書或一個遊戲。當孩子們描述如何在家裡、教會和學校成為一個有愛心的朋友時，列出清單。學習並討論彼得前書 5:7。", source: "Award Book 2020" }, { requirementIndex: 1, text: "請冒險家寫下生日（月份和日期），以便他們可以在新朋友生日時寄送或拿一張卡片或鮮花給他或她一個驚喜。這些問題旨在鼓勵孩子們拜訪他們的新朋友。", source: "Award Book 2020" }, { requirementIndex: 2, text: "鼓勵冒險家將一些東西帶到禁閉室並使用要求二中的問題作為對話的基礎來拜訪他們。建議：一個裝有鮮花的籃子、一張孩子畫的並著色的圖畫，或是孩子製作的手工藝品。", source: "Award Book 2020" }, { requirementIndex: 3, text: "與孩子討論他們對神的感受以及如何向他人表達神的愛。", source: "Award Book 2020" }, { requirementIndex: 4, text: "鼓勵孩子們做「甜蜜的驚喜」，或者想辦法讓他們在不被要求做某項任務的情況下成為家裡的幫手。", source: "Award Book 2020" }, { requirementIndex: 5, text: "鼓勵冒險家與小組分享他們的經驗。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4920-swimmer-ii",
@@ -298,7 +298,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "規則： A.請勿在沒有成人在場的情況下游泳。 b.不要在水附近奔跑。 c.請勿灌籃他人。 d.請勿推或推他人。 e.在您能夠熟練游泳之前，請勿在頭頂上方的水中玩耍。 f.不依賴漂浮裝置；學習游泳。 g。在不知道水是否安全的情況下，不要跳入水中。", source: "Award Book 2020" }, { requirementIndex: 1, text: "與冒險家一起玩一個屏住呼吸、將頭埋入水下的遊戲。您可能會想讓他們先練習在水中屏住呼吸。", source: "Award Book 2020" }, { requirementIndex: 2, text: "在該區域清除岩石、其他游泳者等後，教導冒險家安全跳入水中。", source: "Award Book 2020" }, { requirementIndex: 3, text: "玩一個水遊戲，冒險家會被潑一些水而不會嚇到他們。", source: "Award Book 2020" }, { requirementIndex: 4, text: "向孩子們展示如何抓住泳池邊緣或槳板，同時練習正確而有力的打腿。", source: "Award Book 2020" }, { requirementIndex: 5, text: "向不會游泳的人展示這些。監督他們的嘗試。切勿讓不會游泳的人獨自嘗試這些。向孩子們展示如何在水下推水、屏住呼吸和踢腿。", source: "Award Book 2020" }, { requirementIndex: 6, text: "向冒險家傳授有關何時何地可以安全游泳的安全規則。例如，切勿在沒有成人在場的情況下游泳；暴風雨時不要游泳；在未先檢查該區域之前，切勿跳入或潛入水中；僅在安全且獲得游泳許可的干淨泳池、湖泊和河流中游泳。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4905-spotter",
@@ -311,7 +311,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "如果可能的話，讓冒險家在戶外進行這些觀察。如果不可行，可以讓冒險家畫出他們找到的物品的圖片，或從舊雜誌上剪下圖片。如果您獲得了記者獎，這些內容可能會被放入冒險家的剪貼簿中。", source: "Award Book 2020" }, { requirementIndex: 1, text: "如果可以的話，讓冒險者親自觀察人們。如果不可行，可以讓冒險家畫出、拍攝或從舊雜誌上剪下穿制服的工人的照片，然後將它們放入記者剪貼簿中或開始製作新的剪貼簿。一些例子是：警察 B.消防員 C.護士 D.郵差E.救護人員 F.交通員", source: "Award Book 2020" }, { requirementIndex: 2, text: "找出、一起閱讀、討論並解釋馬太福音 28:20。", source: "Award Book 2020" }, { requirementIndex: 3, text: "幫助你的冒險家學會發現潛在的問題以及他們可以做些什麼來提供幫助，例如，撿垃圾、整理歌本等。", source: "Award Book 2020" }, { requirementIndex: 4, text: "說明冒險家可能是優秀的觀察員，但除非他們盡自己的一份力量來清潔自己的區域，否則他們就沒有獲得觀察員獎。", source: "Award Book 2020" }, { requirementIndex: 5, text: "將熟悉的物品放在桌上，讓冒險家研究它們。兩分鐘後，蓋住這些物品，讓孩子告訴你或列出他們記住的物品。多玩幾次這個遊戲，可以教導孩子們更善於觀察。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4705-guide",
@@ -324,7 +324,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "嚮導是幫助你找到道路的人。", source: "Award Book 2020" }, { requirementIndex: 1, text: "不要指望冒險家會使用北、南、東、西等方位詞。如果有的話，他們應該給出街道名稱和街區數量。", source: "Award Book 2020" }, { requirementIndex: 2, text: "為了獲得好的指示，冒險家必須提出好的問題。孩子們應該從他們認識的人、警察、老師或其他官員那裡得到指示。", source: "Award Book 2020" }, { requirementIndex: 3, text: "幫助冒險家規劃交通、邀請、參觀和活動等。旅行結束後，引導大家討論做過的事情和看到的事情。", source: "Award Book 2020" }, { requirementIndex: 4, text: "有些孩子在這個專案上需要幫助。", source: "Award Book 2020" }, { requirementIndex: 5, text: "一起閱讀課文並討論其含義。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4660-fitness-fun",
@@ -337,7 +337,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "健身包括適當的營養、休息、飲水、運動、力量、心血管健康、靈活性、耐力——讓您的身體保持最佳狀態。", source: "Award Book 2020" }, { requirementIndex: 1, text: "集體慢跑或跑步，始終在成人的監督下進行。", source: "Award Book 2020" }, { requirementIndex: 2, text: "跳到墊子或其他柔軟的材料上，例如沙子或鋸末。確保孩子們跳過的「欄桿」輕輕地固定在釘子上，並且不是可能造成傷害的實心部件。", source: "Award Book 2020" }, { requirementIndex: 3, text: "玩幾個跳繩遊戲，進行練習，因為許多人可能從未使用過跳繩。", source: "Award Book 2020" }, { requirementIndex: 4, text: "伸展時，採用靜態伸展（維持伸展15秒，不要彈跳）。為了避免受傷，運動前和運動後都要做伸展運動。", source: "Award Book 2020" }, { requirementIndex: 5, text: "設置一個障礙訓練場，讓冒險者可以在周圍、下面、上面和穿過。使用輪胎、紙板箱、塔架、繩索和桿子等物體。", source: "Award Book 2020" }, { requirementIndex: 6, text: "成年人必須監督這些活動。", source: "Award Book 2020" }, { requirementIndex: 7, text: "如果可能的話，以團體或家庭的形式玩這些遊戲。確保有成人監督。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4650-first-aid-helper",
@@ -350,7 +350,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "髒敷料可能會導致感染。用流水清洗傷口或擦傷，並用乾淨的繃帶覆蓋。", source: "Award Book 2020" }, { requirementIndex: 1, text: "坐下來，身體前傾，對出血的一側施加壓力。對鼻子和臉部進行冷敷。", source: "Award Book 2020" }, { requirementIndex: 2, text: "三角繃帶、膠帶敷料、八字形繃帶、指尖繃帶、螺旋繃帶和圓形繃帶都是教孩子如何製作的好繃帶。練習使用這些繃帶。", source: "Award Book 2020" }, { requirementIndex: 3, text: "即使是簡單的工具包也需要以下物品：黏性壓縮繃帶、2英吋×2英吋的普通紗布墊、紗布滾筒繃帶、三角繃帶、針、剪刀、鑷子、溫度計、消毒劑、爐甘石洗劑、驅蟲劑和王牌繃帶。", source: "Award Book 2020" }, { requirementIndex: 4, text: "用肥皂和水清洗，然後​​用酒精消毒。針可以用來去除條子，鑷子可以用來去除貼紙或玻璃。教導孩子們讀取溫度計並解釋何時使用溫度計以及原因。", source: "Award Book 2020" }, { requirementIndex: 5, text: "計劃去醫院或消防站，或讓社區工作人員與您的小組討論他/她在工作中處理的不同緊急情況。", source: "Award Book 2020" }, { requirementIndex: 6, text: "帶上乾淨的床單和繃帶，讓孩子們用簡單的護理來「治療」不同的問題。", source: "Award Book 2020" }, { requirementIndex: 7, text: "獎項設計是公認的急救標誌。", source: "Award Book 2020" }, { requirementIndex: 8, text: "參閱馬太福音 26:51。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4058-playing-with-friends",
@@ -363,7 +363,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "向早起的鳥兒解釋您正在談論與朋友一起玩。邀請父母參與與孩子的對話。", source: "Award Book 2020" }, { requirementIndex: 1, text: "詢問他們什麼是朋友的定義。例如「你喜歡並喜歡和你在一起的人」、「喜歡做我喜歡做的事情的人」等。 教學理念：說出三種交朋友的方式。材料：不需要任何材料。程式:", source: "Award Book 2020" }, { requirementIndex: 2, text: "問：「交朋友有哪些方法？」讓孩子回答。如果需要請家長幫助孩子想辦法，他們過去已經認識了新朋友。一些想法可能包括：在學校或教會向某人打招呼。 b.請朋友向您介紹新朋友。 c.幾次一起去遊樂場玩，透過玩成了朋友。 d.參加同一游泳、體操或其他課程。 e.有成為朋友的父母。", source: "Award Book 2020" }, { requirementIndex: 3, text: "問孩子：「你做了什麼或說了什麼幫助某人成為你的朋友？」一。說「嗨」。 b.微笑。 c.共享遊樂場上的玩具或空間。教學理念：說出四件事你可以談論與某人友善。材料：不需要任何材料。程式:", source: "Award Book 2020" }, { requirementIndex: 4, text: "問：「你可以談論哪些事情來對某人表示友好？」一。你們一起玩的遊戲。 b.您喜歡的顏色或您喜歡的其他可能相同的東西。 c.可以一起玩什麼。 d.邀請別人跟你分享一些玩具。教學理念：說出選擇朋友時需要考慮的四件事。材料：有許多可能有用的短片。程式:", source: "Award Book 2020" }, { requirementIndex: 5, text: "選擇朋友時要問的一些問題：這個人喜歡類似的東西嗎？ b.這個人能讓我更認識自己嗎？ c.這個人的行為方式是否友善、有愛心、樂於助人？ d.這個人尊重成年人嗎？ （他們的父母、老師、其他成年人） e．我的父母喜歡這個人嗎？", source: "Award Book 2020" }, { requirementIndex: 6, text: "請記住，您無權選擇您的家人。你無法選擇你的老師或同學。但你確實可以選擇你想成為朋友的人。所以，要小心你所做的選擇會讓上帝快樂，你也快樂。教學理念：說出三種方法可以讓你知道一個人是你合適的朋友。材料：無材料。", source: "Award Book 2020" }, { requirementIndex: 7, text: "這裡有一些方法可以讓你知道某人是不是你的好朋友。一個。好朋友永遠不會取笑你，相反，他們會鼓勵你並鼓勵你。 b.好朋友不是專橫的，而是輪流決定你要做什麼。你們是平等的。 c.一個好朋友可以幫助你成為最好的自己。 d.好朋友喜歡做與你喜歡的事相似的事。 e.一個好朋友相信上帝和聖經很重要，這樣我們就知道如何才能快樂和安全。教學理念：耶穌有朋友嗎？請成人幫助您在聖經中找到一些關於他的朋友的故事。材料：為每個孩子提供簡單易懂的聖經（CEB、NIV 等），由家長與每個孩子一起進行活動 程序：", source: "Award Book 2020" }, { requirementIndex: 8, text: "耶穌的朋友有哪些？看看你能否在聖經中找到這個故事。註：這些都會在福音書中出現。以下是一些想法：路加福音 10:38-42 - 瑪麗和馬大馬太福音 4:18-22 - 耶穌邀請彼得、安得烈、雅各和約翰約翰福音 21:1-14 - 耶穌復活後向祂的朋友顯現", source: "Award Book 2020" }, { requirementIndex: 9, text: "指導早起的鳥兒與父母一起尋找並閱讀有關耶穌有一個或多個朋友的聖經故事。", source: "Award Book 2020" }, { requirementIndex: 10, text: "每個人都聽完他們的故事後，一次請一位兒童報告：「在你聽到的故事中，耶穌的朋友是誰？」教學理念：製作一件工藝品送給你的朋友。材料：桌布（這是一件雜亂的工藝品）、清潔濕巾或紙巾、每個孩子的全尺寸繪圖紙、9 英寸紙盤（每個孩子一個）、多種顏色的可清洗手指畫、寫有「謝謝你成為我的朋友」的小紙條。程式:", source: "Award Book 2020" }, { requirementIndex: 11, text: "把畫紙遞出去。讓每個孩子選擇兩種手指顏料顏色。將每種顏色的某些顏色放在紙盤上。", source: "Award Book 2020" }, { requirementIndex: 11, text: "指導孩子小心地將手放入顏料中，並在紙上留下兩種顏色的手印。", source: "Award Book 2020" }, { requirementIndex: 11, text: "一旦手印在紙上，花時間清潔每個人的手，然後在油漆乾燥時完成另一個要求。", source: "Award Book 2020" }, { requirementIndex: 11, text: "油漆乾燥後，請每個孩子將「謝謝」字條粘在紙上，並在設計的頂部打印他們朋友的名字（他們可能需要幫助寫朋友的名字）。", source: "Award Book 2020" }, { requirementIndex: 11, text: "會議時間結束時，請早起的鳥兒將他們的工藝品送給他們的朋友，以感謝他們成為朋友。教學理念： 請選擇以下一項： 學習一首關於朋友的歌。製作一本關於新朋友的剪貼簿。學習或體驗一首關於朋友的詩。講述一個朋友的故事 材料：材料根據所選項目的不同而有所不同。程式:", source: "Award Book 2020" }, { requirementIndex: 11, text: "選擇兩個項目。請早起的鳥兒選擇他們想要為朋友做的項目。", source: "Award Book 2020" }, { requirementIndex: 11, text: "一旦小組分成專案組，讓他們與也選擇該專案類型的其他朋友一起完成他們的專案。家長一定要幫忙！", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4063-trikes-and-bikes",
@@ -376,7 +376,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本關於三輪車或單車的繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "可唱《I Have a Little Bicycle》或《The Wheels on the Bike》等歌曲。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩紅綠燈、單車障礙賽或三輪車環遊遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "用紙板、色紙或回收物料製作三輪車或單車手工。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4062-trains-and-trucks",
@@ -389,7 +389,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本關於火車或卡車的繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "例如：火車在軌道上行駛、卡車運載貨物、火車有車廂、司機駕駛車輛。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩火車排隊、卡車運貨或角色扮演司機遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "假裝啟動汽車引擎、鳴笛，或模仿乘坐火車/卡車的動作和聲音。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4061-toys",
@@ -402,7 +402,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "與孩子分享最喜歡的玩具名稱，並說明為什麼喜歡它。", source: "Requirement draft" }, { requirementIndex: 1, text: "畫出或為最喜歡的玩具填色，也可從雜誌剪貼圖片。", source: "Requirement draft" }, { requirementIndex: 2, text: "一次只拿一至兩件玩具，較容易整理、分享，也不易弄亂房間；玩完應立即收拾。", source: "Requirement draft" }, { requirementIndex: 3, text: "在家長陪同下，連續一週每天收拾自己的玩具。", source: "Requirement draft" }, { requirementIndex: 4, text: "與朋友或兄弟姐妹樂意分享玩具，練習輪流和禮貌用語。", source: "Requirement draft" }, { requirementIndex: 5, text: "唱《Share Your Toys》或《Magic Penny》等分享歌曲，邊唱邊練習。", source: "Requirement draft" }, { requirementIndex: 6, text: "送一件玩具給沒有玩具的人，或收集玩具捐贈給慈善機構。", source: "Requirement draft" }, { requirementIndex: 7, text: "老師：將他們的單字寫在紙上，並讓他們在單字周圍的紙上裝飾或著色。如果合適的話，給那個人。", source: "Award Book 2020" }, { requirementIndex: 8, text: "從雜誌剪貼或手繪四種想要的玩具，製作生日或聖誕願望清單。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（PDF 僅有部分 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4925-swimmer-iii",
@@ -415,7 +415,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "鼓勵冒險家完成兩項游泳運動員獎項，以便他們在加入探路者俱樂部時做好繼續初學者游泳的準備。", source: "Award Book 2020" }, { requirementIndex: 1, text: "讓冒險家們記住，安全非常重要。確保他們遵守以下規則：禁止跑步、推擠或推擠。 b.在不知道水是安全的、沒有石頭和棍棒等的情況下，不要跳入水中。 c．請勿在暴風雨期間游泳。 d.除非有成人在場，否則請勿游泳。 e.不要依賴漂浮裝置來確保安全。", source: "Award Book 2020" }, { requirementIndex: 2, text: "與冒險家單獨合作，這樣每個人都可以毫無恐懼地漂浮。", source: "Award Book 2020" }, { requirementIndex: 3, text: "讓冒險家練習面朝下漂浮時屏住呼吸，然後浮出水面呼吸空氣並將臉放回水中繼續漂浮。", source: "Award Book 2020" }, { requirementIndex: 4, text: "將兩塊沒有尖銳邊緣的石頭放在冒險家頭頂上方的水中。讓每個孩子跳進去把它們撿起來。", source: "Award Book 2020" }, { requirementIndex: 5, text: "教導正確的踢腿、手臂和手部動作。", source: "Award Book 2020" }, { requirementIndex: 6, text: "教導正確的踢腿、手臂和手部動作。", source: "Award Book 2020" }, { requirementIndex: 7, text: "教導正確的踢腿、手臂和手部動作。", source: "Award Book 2020" }, { requirementIndex: 8, text: "孩子可以做三件事來幫助溺水者： 跑向附近的成年人尋求幫助；伸出一根長棍子供人抓住；向該人扔一根繩子，並將他或她拉到淺水中。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4060-swimmer-i",
@@ -428,7 +428,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "在成人陪同下，於淺水區練習狗爬式（狗仔式）的基本手腳動作。", source: "Requirement draft" }, { requirementIndex: 1, text: "練習將臉放入水中並在水中呼氣，再抬頭吸氣，逐步延長時間。", source: "Requirement draft" }, { requirementIndex: 2, text: "在成人監督下，跳入水中並游向台階、梯子或池邊。", source: "Requirement draft" }, { requirementIndex: 3, text: "總是有成人陪伴；切勿在泳池周圍奔跑；切勿跳到他人身上；入水前先確保該位置無人。", source: "Requirement draft" }, { requirementIndex: 4, text: "不要自己下水救人；立即呼叫父母或成人幫忙，並向池邊的大人求助。", source: "Requirement draft" }, { requirementIndex: 5, text: "香港緊急電話為 999；也可教導孩子記住住所電話及地址以便求助。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4056-left-and-right",
@@ -441,7 +441,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "「西蒙說」的一些內容可能包括： • 舉起右手。 • 將左手放下。 • 用左腳踏出一步。 • 豎起右手大拇指。 • 左手觸碰腳趾。 • 右腳站立。", source: "Award Book 2020" }, { requirementIndex: 1, text: "接受孩子的自然傾向，無論他們是左撇子還是右撇子。", source: "Award Book 2020" }, { requirementIndex: 2, text: "在左手手指貼紅點貼紙、右手貼藍點，幫助孩子分辨左右；可配合後續熱水/冷水及穿鞋活動。", source: "Requirement draft" }, { requirementIndex: 3, text: "一般來說，左為熱，右為寒。向孩子們展示如何使用家裡、教堂等地的不同種類的水龍頭。", source: "Award Book 2020" }, { requirementIndex: 4, text: "和家人一起玩遊戲。把每個人的鞋子堆在一起。看看您需要多長時間才能找到自己的腳並將它們放在正確的腳上。", source: "Award Book 2020" }, { requirementIndex: 5, text: "在每個孩子的左腳踝上綁一個鈴鐺（可從當地工藝品店或 AdventSource 購買），幫助他們記住哪隻腳開始。播放進行曲。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4055-cyclist-i",
@@ -454,7 +454,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "在成人陪同下，於安全地方練習不用輔助輪踏單車。", source: "Requirement draft" }, { requirementIndex: 1, text: "在社區或公園安全路段，由成人陪同完成約三幢大廈距離的骑行。", source: "Requirement draft" }, { requirementIndex: 2, text: "單車安全守則：a. 駛出馬路前必須查看；b. 不可載人；c. 雙手緊握車把；d. 注意行人及其他騎士；e. 必須佩戴安全頭盔。", source: "Award Book 2020" }, { requirementIndex: 3, text: "為單車圖填色，並指出車把、鏈條和護蓋、輻條、座墊和車架。", source: "Requirement draft" }, { requirementIndex: 4, text: "使用氣泵或打氣筒為輪胎充氣；氣嘴需對準，並由成人協助檢查胎壓。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（PDF 僅有部分 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4625-cyclist-ii",
@@ -467,7 +467,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "先完成道路安全榮譽證的要求。", source: "Award Book 2020" }, { requirementIndex: 1, text: "清潔並打亮單車、裝飾後接受檢查；設置繞桶練習；練習手勢轉向；分組示範正確與錯誤的單車保養方法。", source: "Award Book 2020" }, { requirementIndex: 6, text: "舉辦單車日：由警察或消防員檢查單車、設置準備區、舉行裝飾單車遊行，並進行快慢賽、接力賽等遊戲。", source: "Award Book 2020" }, { requirementIndex: 7, text: "計劃約 8 公里的單車行程，可裝飾單車後到公園有鋪設路徑的地方骑行；完成後可野餐或游泳，並獎勵完成者。", source: "Award Book 2020" }, { requirementIndex: 8, text: "用鉛筆和間尺製作簡單路線圖，標示主要轉彎和地標。", source: "Award Book 2020" }, { requirementIndex: 9, text: "與家人按自製地圖重走一次路線。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/recreation/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4001-community-helpers",
@@ -480,7 +480,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "如果您邀請了一位客人，請讓他們講述他們作品中適合年齡的簡短故事。", source: "Award Book 2020" }, { requirementIndex: 1, text: "提前與家長合作，準備一套護士、醫生、建築工、水管工、警察、消防員和其他助手的服裝或工具（事實上，許多商店以 20美元或更少的價格出售兒童尺寸的職業服裝，例如這些社區助手。", source: "Award Book 2020" }, { requirementIndex: 2, text: "要求2中的裝扮遊戲也能滿足這個要求。", source: "Award Book 2020" }, { requirementIndex: 3, text: "木偶是複習所學知識的一種有趣方式。讓每個孩子製作一個木偶，並用它與成年人談論他們對社區幫助者的了解。兩種類型的木偶 棕色袋木偶 - 棕色袋木偶（搜尋引擎「棕色袋木偶社區助手」或「棕色袋木偶醫生、護士、消防救護車、急救人員、警察」）用於圖案 棒木偶 - 社區助手木偶 將社區助手的照片打印到卡片紙上。讓孩子為圖片上色，然後剪下人物。給每個孩子一根冰棒棒，並向他們展示如何將冰棒棒的上半部黏在圖片的背面以製作木偶。然後，孩子們可以上演木偶戲，每個人都扮演各自社區助手木偶的角色。合作", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4002-cooperation",
@@ -493,7 +493,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "這些聖經經文告訴我們，在聖經中，神的追隨者群體合作取得了巨大的成功。小組閱讀課文，然後討論。範例問題包括：1）人們一起工作時取得了什麼成果？ 2）合作是否意味著每個人都做同樣的事情？他們各自運用了哪些才能來共同工作？ 3）每個故事的小組目標是什麼？ 4) 您看到什麼證據顯示他們是否達成了目標？ 5) 我們可以幫助我們的俱樂部/團體實現哪些目標？我們會考慮合作嗎？ 6) 一起朗讀歌羅西書 3:23-24 是今天的應用挑戰！ Biblgateway.com 搜尋「使徒行傳 4:32-37、出埃及記 35:20-29、出埃及記 36:2-7」，選擇您最喜歡的版本。", source: "Award Book 2020" }, { requirementIndex: 1, text: "願意一起工作；給予與接受。學習合作是指一個人思考並平衡自己的需求和願望與他人的需求和慾望。有些人認為合作意味著孩子按照大人的意願去做。事實並非如此。真正的合作是人們之間的相互讓步，最終達成雙方都同意的事。合作是一項必須學習的技能。", source: "Award Book 2020" }, { requirementIndex: 2, text: "討論。這個要求可以與要求 1 的聖經討論結合。", source: "Award Book 2020" }, { requirementIndex: 3, text: "讓孩子集思廣益，列出一系列故事。一些故事：癱子被朋友帶到耶穌面前（馬可福音2：1-12），尼希米建造城牆（尼希米記3-4），繞著耶利哥行軍（約書亞記6），諾亞和他的家人建造一艘船（創世記6），基甸和300人征服他們的敵人（士師記6）。教學理念：棕色袋子角色扮演 材料：帶有紙條的棕色紙袋。每張紙條都包含一個關於合作的聖經故事（和參考資料），可以表演。目標：一群群的援助之手默默地表演有關合作的聖經故事，讓其他孩子猜測。步驟：讓每組選擇一張紙條。給小組五分鐘時間規劃如何在不使用任何文字的情況下描述故事。讓各組表演。提醒其他孩子在表演結束前不要猜測。這可能是幫助之手敬拜的絕佳機會", source: "Award Book 2020" }, { requirementIndex: 4, text: "Youtube.com 或您最喜歡的搜尋引擎將為您提供選擇，您可以從中選擇與您的群體相關的一個。搜尋短語：「合作歌曲孩子」或「合作歌曲孩子基督教」", source: "Award Book 2020" }, { requirementIndex: 5, text: "教學理念：義大利麵塔 材料：乾義大利麵、小棉花糖 目標：建造一座盡可能高、能夠自立的塔。程序：給每組 3-4 位援助者 100 克義大利麵和 50 克迷你棉花糖。告訴他們，他們正在嘗試用棉花糖和義大利麵建造一座盡可能高的塔。他們可以切割或分割任何部分，但不能添加任何東西，包括水。如有需要，為每個小組分配一名成人，並明確說明成人不得指導決策或創作，而只能提供協助。給小組 10-20 分鐘的時間來規劃和建造他們的塔。在報時和測量塔樓之前給他們 5 分鐘的警告。討論：你們小組哪些方面效果很好？你們團隊配合得好嗎？很差嗎？合作如何影響您專案的成功？鄉村樂", source: "Award Book 2020" }, { requirementIndex: 6, text: "與組員合作完成一件手工，例如拼貼、模型或集體海報。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4003-fire-safety",
@@ -506,7 +506,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "用紅色或橘色毛氈剪出火焰形狀。告訴孩子們，為了撲滅大火，他們必須停止、下降和滾動。製作一個遊戲。", source: "Award Book 2020" }, { requirementIndex: 1, text: "如果有煙並且呼吸困難，請在地板上爬行。煙霧上升。您也可以用襯衫遮住臉來製作面具。", source: "Award Book 2020" }, { requirementIndex: 2, text: "以此製作一個遊戲：將每個孩子與一位家長配對，並給他們一個氣球、毛線球或豆袋。父母說出部分地址或電話號碼，然後將其扔給孩子，孩子再重複一次。增加各部分的長度，直到孩子可以完整地重複訊息。或讓家長說出電話號碼的第一部分，然後讓孩子填寫，等等。", source: "Award Book 2020" }, { requirementIndex: 3, text: "使用玩具電話練習撥打 9-1-1 或您所在地區的緊急電話號碼。 （並非所有地方都有 9-1-1 服務。） 對緊急電話進行角色扮演：首先，孩子撥打緊急電話號碼。 （一名成人「回答」。）孩子說：「________（街道地址）發生火災。」指導孩子繼續打電話並嘗試回答任何其他問題——在要求之前不要掛斷電話。 （火是在裡面還是在外面？火有多大？什麼在燃燒？是你父母的家嗎？等等）強調除非真的發生火災，否則他們不應該撥打緊急電話號碼——這不是遊戲。", source: "Award Book 2020" }, { requirementIndex: 4, text: "提前與消防局做好安排。讓父母陪伴孩子。計劃參觀後的零食。服務之手", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4004-hands-of-service",
@@ -519,7 +519,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "逐段朗讀使徒行傳 20:35、彼得前書 4:10-11、加拉太書 5:13-14、馬太福音 20:28、馬可福音 10:44-45、腓立比書 2:1-11，討論每段如何談及服事。", source: "Requirement draft" }, { requirementIndex: 1, text: "討論馬太福音 25:31-46 的比喻：綿羊代表願意服事的人；山羊代表忽略他人需要的人；王所稱許的是餵餓、探訪、接待等行動。", source: "Requirement draft" }, { requirementIndex: 2, text: "與孩子一起列出至少 10 項可服事家庭、教會、學校、社區和有需要人士的行動。", source: "Requirement draft" }, { requirementIndex: 3, text: "與導師計劃並完成一項社區或關懷有需要人士的服務，並在聚會中分享感受和改變。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4005-my-community",
@@ -532,7 +532,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "我們正在思考和談論您認識的人，他們住得離您很近，但不屬於您的家庭。他們被稱為社區之友。", source: "Award Book 2020" }, { requirementIndex: 1, text: "分發剪貼簿小冊子和封面圖片。讓孩子們為圖畫上色，然後將其剪下來並黏在書的正面。 接下來，讓孩子們從父母那裡收集五張照片，並將它們放在他們面前。 圍著桌子走一圈，讓每個孩子說出每個人的名字、他們居住的地方與孩子家庭的關係，以及關於該社區朋友的一個有趣的事實。例：這是喬先生。他住在街對面。他有一隻大貓。這是薩莎。她住在我們旁邊。她喜歡種西紅柿。等等。每個孩子每次應該介紹一位朋友，直到介紹完所有 5 個朋友為止。 讓早起的鳥兒將朋友的照片黏在書上，並在照片所在的頁面上的某個位置加上鄰居的名字。", source: "Award Book 2020" }, { requirementIndex: 2, text: "最好讓每個孩子在介紹人物後將圖片和名字黏在上面，這樣當介紹完成後，書就基本完成了。註：如有必要，孩子可以畫他們的社區朋友。教學理念：告訴您和您的朋友可以做三 (3) 件事來讓您的社區變得更美好。材料：不需要任何材料。程式: 詢問「早起的鳥兒」，他們和他們的鄰居朋友可以做哪些事情來使他們的社區成為一個更好的居住地。任何答案都有效。一些想法是：讓我們的院子看起來漂亮，當我們在外面看到鄰居時和他們說話，幫助努力保持院子漂亮的年長鄰居（總是先詢問），不亂扔垃圾，在社區操場上撿拾垃圾。", source: "Award Book 2020" }, { requirementIndex: 3, text: "鼓勵孩子們選擇他們談論過的事情回家並與家人一起做，以使他們的鄰居變得更好。教學理念：告訴你的朋友耶穌愛他們。材料：為每個孩子提供帶有圖片或設計以及「耶穌愛你」字樣的著色頁，用於著色的蠟筆。程式: 分發「耶穌愛你」的照片。讓早起的鳥兒為他們的頁面著色。 請他們與父母討論將藝術品送給哪個鄰居，並告訴他們耶穌愛他們。 鼓勵孩子們在接下來的一周內將他們的著色頁送給他們的社區朋友。教學理念：為社區朋友做點好事。材料：不需要任何材料。程式:", source: "Award Book 2020" }, { requirementIndex: 4, text: "讓孩子們看一下他們社區朋友的照片，並告訴你他們可以為其中一位朋友做些什麼，這些事情會很好，或者會讓那個朋友微笑。 讓早起的鳥兒回答他們的想法，並指導他們做他們和他們的父母實際上能夠做的事情。 每個孩子回答幾次後，問他們下週要為社區朋友做哪一個想法。 在下次會議上，要求提供一份關於做好事的進展的報告。教學理念：在你的鄰居中結交新朋友。材料： 無需材料 程序：", source: "Award Book 2020" }, { requirementIndex: 5, text: "與早起的鳥兒和他們的父母討論，他們的社區中可能有一些人可以見到他們。 另外，討論家人如何認識這個新人或新家庭。它可能是在社區遊樂場，也可能是給最近搬進來的人送禮物等。注意：對於此要求，安全至關重要。家長應確保新朋友都是安全的朋友 道路安全", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4615-country-fun",
@@ -545,7 +545,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選擇一個國家作研究，可從家庭背景、教會宣教地或孩子感興趣的國家開始。", source: "Requirement draft" }, { requirementIndex: 1, text: "在世界地圖上找出該國位置，並說出所在大洲。", source: "Requirement draft" }, { requirementIndex: 2, text: "繪畫、描摹或剪貼該國地圖和國旗。", source: "Requirement draft" }, { requirementIndex: 3, text: "從 a-g 中選六項了解該國，例如民族服飾、歌曲、國歌、遊戲、宗教、郵票或傳說。", source: "Requirement draft" }, { requirementIndex: 4, text: "製作該國的一道簡單食物或手工，例如折紙、黏土或傳統小物。", source: "Requirement draft" }, { requirementIndex: 5, text: "閱讀創世記 11:1-9，討論巴別塔與不同語言的由來。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4860-road-safety",
@@ -558,7 +558,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "一些例子：停止 B.鐵路道口 C.錯誤的方法 D．步行 e.禁止左轉 f.不要走路 G.禁止掉頭 h.單向一世。學校十字路口 j．急轉彎 k.限速 l.屈服", source: "Award Book 2020" }, { requirementIndex: 1, text: "在十字路口或行人穿越道過馬路。如果有交通燈，只有當您所在方向的號誌燈為綠色時才過馬路。", source: "Award Book 2020" }, { requirementIndex: 2, text: "逆著交通往路邊走。您所在地區的規則可能有所不同。請諮詢機動車輛管理局，以了解以下方面的規定：步行、騎馬、騎自行車或滑板以及集體步行。遵守交通規則，仔細觀察交通狀況。", source: "Award Book 2020" }, { requirementIndex: 3, text: "看電影或聽警察談論安全帶安全。我們戴著安全帶，這樣我們在事故中會受到更少的傷害。這是許多領域的法律。", source: "Award Book 2020" }, { requirementIndex: 4, text: "讓安全專家與同齡的孩子交談，強調孩子可以採取哪些措施來確保安全。", source: "Award Book 2020" }, { requirementIndex: 5, text: "製作海報牌並舉起牌子播放「西蒙說」。讓孩子們按照標誌上的指示步行或騎自行車，是學習道路安全的有趣方式。或玩其他安全遊戲。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/community/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4065-bible-friends-i",
@@ -571,7 +571,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "無論你去哪裡——露絲", source: "Award Book 2020" }, { requirementIndex: 1, text: "穿過屋頂 - 男子被他的手從屋頂降下的奇蹟", source: "Award Book 2020" }, { requirementIndex: 2, text: "告別餐點－耶穌與他的朋友們一起慶祝最後一頓飯", source: "Award Book 2020" }, { requirementIndex: 3, text: "露絲 - 一個愛情故事", source: "Award Book 2020" }, { requirementIndex: 3, text: "不肯屈服的人 - 但以理書第 3 章", source: "Award Book 2020" }, { requirementIndex: 3, text: "耶穌和拉撒路", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4066-bible-friends-ii",
@@ -584,7 +584,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "朋友是個善良的人，他認為自己可以為另一個人做一些好事。朋友喜歡一起度過時光。有時，朋友可能會做一些勇敢的事情，例如拯救生命。", source: "Award Book 2020" }, { requirementIndex: 1, text: "《我的聖經之友》書中的一些人物包括：耶穌、大衛、路得、以斯帖、多加、撒母耳、諾亞、漢拿、伊麗莎白、小女僕、約瑟、但以理、沙得拉、米煞、亞伯尼歌、馬利亞和約基別。", source: "Award Book 2020" }, { requirementIndex: 2, text: "孩子指著圖片，用自己的話講述他們選擇的朋友的故事。", source: "Award Book 2020" }, { requirementIndex: 3, text: "全班選出一名朋友；每個人都幫助使故事戲劇化。他們可以穿超大號的 T 卹、浴袍、圍巾、腰帶等。他們應該假裝故事的所有細節。他們需要成人的幫助來講述故事並與他們一起行動。", source: "Award Book 2020" }, { requirementIndex: 4, text: "成為耶穌朋友的方法包括： • 善待他人。 • 選擇做對的事－例如說實話或服從父母。 • 幫助你的母親或父親。 • 想一些好話對你的兄弟姊妹或同學說。 • 分享零食或玩具。 • 善待您的寵物。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4067-bible-iii",
@@ -597,7 +597,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "聖經 II 獎可以作為教會學校或安息日學聖經課的一部分來教導。", source: "Award Book 2020" }, { requirementIndex: 1, text: "透過歌曲、遊戲、毛氈等方式教學。", source: "Award Book 2020" }, { requirementIndex: 2, text: "鼓勵創造力並從故事中學習特殊的聖經課程。", source: "Award Book 2020" }, { requirementIndex: 3, text: "確保您的孩子有使用聖經的實務經驗，同時也使用聖經故事書籍、影片和錄音帶以有趣的方式教導他們這些故事。", source: "Award Book 2020" }, { requirementIndex: 4, text: "幫助孩子理解這些段落的含義以及如何將它們應用到他們的生活中。", source: "Award Book 2020" }, { requirementIndex: 5, text: "基督教書店有聖經遊戲書、聖經彩色書和毛氈套裝。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4068-bible-iv",
@@ -610,7 +610,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "撒母耳記上 1-3 章講述了哈拿的故事以及撒母耳的出生和將撒母耳交給上帝。 Youversion、Biblegateway、Olive Tree 等聖經應用程式都可以讓您輕鬆地以您選擇的譯文閱讀這個故事。聖經網關有來自世界各地的廣泛語言列表，作為免費下載的一部分。有些網站還可以讓您輕鬆收聽或閱讀其網站上的段落。", source: "Award Book 2020" }, { requirementIndex: 1, text: "有很多關於耶穌的書。重要的是找到適合您孩子發展程度的產品。兒童聖經應用程式是 Youversion Bible Inc. 的產品，為兒童提供近 50 個互動聖經故事。有一個動畫故事書應用程序，具有生動的插圖和聲音以及互動式觸控螢幕互動。這些遊戲和活動可以幫助孩子記住他們所學的內容。導航對孩子來說很簡單，並且沒有應用程式內購買。還有一本印刷版的兒童聖經，其中有相同的故事和圖形。查看您裝置的應用程式商店。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4071-creation",
@@ -623,7 +623,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "您最喜歡的線上影片節目（例如 Youtube）上有很多簡單的跟唱歌曲。搜尋「創作歌曲兒童」。", source: "Award Book 2020" }, { requirementIndex: 1, text: "書籍、聖經故事或線上兒童影片都符合這項要求。您最喜歡的線上影片節目可能有各種關於世界創造的動畫或短篇故事可供觀看。使用術語「學前創造故事」或「兒童創造故事」來找到一些最好的。", source: "Award Book 2020" }, { requirementIndex: 2, text: "這個學習清單將基於孩子們經歷過的影片、書籍或聖經故事。重要的是，他們討論甚至畫出他們學到的東西，而不是你希望他們學到的東西。對獨特的或意想不到的經驗教訓持開放態度。如果需要，上帝是我們慈愛和關懷的創造者的主要主題指南。", source: "Award Book 2020" }, { requirementIndex: 3, text: "如果您正在做要求 5 的「配對遊戲」，並允許孩子們協助為遊戲部件著色和/或粘合，這也將作為活動。您還可以創建一個創造輪！教學理念：創造輪 材料：使用隨附的模板創建創造輪並為其著色。您需要將設計列印到卡片紙上。您將需要金屬角釘和著色工具來完成它。步驟：請學生為兩個圓圈上色。將角釘固定在中心，將「輪子」放在「七天餅片」的頂部。旋轉輪子以顯示每天的創造。教學理念：Playdoh / 清潔黏土的創作日 材料：Playdoh 或自製的「清潔黏土」都適合此活動。程序：讓孩子選擇他們最喜歡的鳥、魚或動物來製作。幫助他們弄清楚動物是否是上帝在第 5 天或第 6 天創造的。成人/父母可以製作符號來代表上帝在其他日子創造的東西（第一天為燈泡；第二天為雲或雨滴；第三天為植物/花朵；第四天為太陽、月亮和/或星星）最後，透過共同製作一個大「七」或唱「安息日是快樂的一天」來慶祝上帝創造的安息日。教學理念：用沙子製作 材料：沙箱或沙灘，孩子與父母 程序：讓孩子躺在沙上。父母小心翼翼地用沙子覆蓋孩子們的一部分，然後用手假裝用沙子「創造」他們，同時旁白或領導者向每個人大聲朗讀創世記 2 中的故事。這項活動的一個變體是讓孩子們帶著塑膠人偶參加會議。使用裝滿泥土、盆栽土或沙子的桶子、盆子或託盤。讓他們埋葬塑膠人，然後用「地上的塵土」來「創造」它們。這是提醒孩子們只有上帝賦予生命並且祂是我們的創造者的好時機。教學概念：配對遊戲 材料：代表每一天的創造的圖像和數字一到七成對，很容易就有 12 對（例如月亮和星星與數字 4；太陽與數字 4），從活動手冊中復制並放在卡片紙上。孩子可以為圖像上色。步驟：與孩子一起回顧每張卡片上的內容，並向他們展示相符的內容。使用卡片時，將所有卡片翻過來，使它們面朝下。讓每對父母/孩子透過翻轉卡片正面朝上來選擇兩張卡片。如果他們匹配，他們就會保留這一天，並告訴其他人上帝在那一天創造了什麼。如果他們沒有找到匹配項，他們應該再去一次，直到他們找到匹配項。比賽將繼續進行，直到每支球隊都有一場比賽或比賽全部用完（以較早發生者為準）。如果孩子的數量多於比賽的數量，請再次玩遊戲，以便每個人都贏得一套卡片。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4072-delightful-sabbath",
@@ -636,7 +636,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "目標是發現聖經對安息日的說法。使用這些段落的易於理解但準確的翻譯", source: "Award Book 2020" }, { requirementIndex: 1, text: "安息日盒子是孩子們存放只能在安息日使用/玩的特殊遊戲和活動的地方。它可能是 Rubbermaid/透明儲物盒或籃子。我們的目標是創造一些他們期待在周五晚上開業的東西。", source: "Award Book 2020" }, { requirementIndex: 2, text: "這些活動應該是基於家庭的活動，並向「核對」要求的人提供簡單的報告。", source: "Award Book 2020" }, { requirementIndex: 3, text: "這可能是個簡單的「結對分享」活動。雙人分享讓兩個夥伴面對面（最好坐著，十字形蘋果醬！）。領導者提出問題，然後每個人有大約30秒的時間回答問題。快速提問對於樂趣至關重要！在教會舉行晚禱，所有孩子都帶著他們的安息日盒子，展示/分享他們的家人正在使用的開箱即用的東西，讓安息日變得特別。其他想法包括週五晚上一起吃「週五晚上的傳統」餐。每個家庭都會帶來一件家庭週五晚上用餐傳統的物品。慶祝家庭為讓安息日對他們的孩子變得特別而所做的努力。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4073-good-samaritan",
@@ -649,7 +649,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "以問答形式進行：誰創造了我們的世界？上帝！聖經怎樣說？「起初，上帝創造天地。」（創 1:1）", source: "Award Book 2020" }, { requirementIndex: 1, text: "閱讀創世記 1:1-2:3 或創造故事書，並用動作或手語配合重複字詞。", source: "Award Book 2020" }, { requirementIndex: 2, text: "可唱《He’s Got the Whole World》《God Made It So》或《If I Were a Butterfly》等歌曲。", source: "Award Book 2020" }, { requirementIndex: 3, text: "使用地球儀或地圖，指出自己所居住的地方。", source: "Award Book 2020" }, { requirementIndex: 4, text: "列出五項最喜歡上帝創造的事物，例如陽光、花朵、動物、家人和食物。", source: "Award Book 2020" }, { requirementIndex: 5, text: "到戶外收集樹葉、石頭等自然物製作拼貼，或為相關經文填色。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4076-jesus-star",
@@ -662,7 +662,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "上帝也創造了星星。 （創 1:16，後半部）有晚上，有早晨，是第四日（創 1:19）", source: "Award Book 2020" }, { requirementIndex: 1, text: "他們在東方看見了那顆星星。 （太 2:2）", source: "Award Book 2020" }, { requirementIndex: 2, text: "正如從東方發出的閃電在西方也能看見一樣，人子的降臨也將如此。 （太 24:27）", source: "Award Book 2020" }, { requirementIndex: 3, text: "用紙張、色紙或閃粉製作星星手工，可做成掛飾或聖誕星星。", source: "Requirement draft" }, { requirementIndex: 4, text: "在天晴晚上觀察星空，找出北極星；如有機會可參觀太空館。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4077-listening",
@@ -675,7 +675,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "從雅各書 1:19、耶利米書 29:11-12、耶利米書 13:15、箴言 1:8、以賽亞書 59:1 中選兩節背誦；一起閱讀並解釋每節如何教導我們快快地聽、專心聽和聽從上帝。", source: "Requirement draft" }, { requirementIndex: 1, text: "當孩子學習傾聽習慣時，鼓勵創造力（短劇或默劇）。成為傾聽的榜樣。透過歌曲和遊戲教授聽力課程。劇本：撒母耳在聽 你可能還記得撒母耳的母親是一位名叫漢娜的女人。她最想要的就是一個兒子，所以她禱告求神賜給她一個兒子。她向上帝許諾，如果上帝給她一個兒子，她就會把他交還給耶和華，讓他一生服事他。上帝賜給了哈拿她所要求的兒子，她也遵守了對上帝的承諾。當男孩長大後，她帶他到聖殿，把他交給祭司以利。因此，撒母耳在以利手下的聖殿裡侍奉。一天晚上，塞繆爾正在睡覺，突然聽到有人叫他的名字。他站起來跑到以利身邊。 「我在這裡；你呼喚我，」他對以利說。 「我沒有叫你，」伊萊回答，「回去睡覺吧。」於是，塞繆爾就回去睡覺了。耶和華又呼喚：「撒母耳！」撒母耳從床上跳起來，走向以利。 「我在這裡，是你叫我的。」 「我沒有叫你，回去睡覺吧。」伊萊第二次回答。神第三次呼召撒母耳，撒母耳就起身到以利那裡。 「我在這裡；你叫我，」他說。最後，以利意識到是神在呼召撒母耳。他對撒母耳說：「你去睡吧，他若再叫你，你就說：『請說耶和華的話，僕人俯聽。』」撒母耳回到床上，果然，他又聽見神的聲音呼喚：「撒母耳！撒母耳！」這一次，撒母耳按照以利的僕人回答：「請說，僕人正在聽。」有些人這就是為什麼我喜歡撒母耳的故事。當神呼召撒母耳時，他還只是個小男孩。神知道你的名字，就像他知道撒母耳的名字一樣，神今天仍然呼召男孩和女孩說：「來跟從我。」所以，要聆聽神的呼召並回應，就像撒母耳所做的那樣：「我在這裡。」", source: "Award Book 2020" }, { requirementIndex: 2, text: "討論並示範聆聽上帝、隨時準備、耐心、順從、善待、尊重和留心等原則。", source: "Requirement draft" }, { requirementIndex: 3, text: "製作與聆聽有關的手工，例如紙杯「電話」或「傾聽耳朵」卡片。", source: "Requirement draft" }, { requirementIndex: 4, text: "參與電話遊戲、西蒙說或盲人引路遊戲，練習專心聆聽和遵循指示。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4078-little-boy-jesus",
@@ -688,7 +688,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "首先解釋耶穌也曾經是個孩子，就像他們一樣。然後問他們喜歡做什麼事。接下來，告訴他們你要讀給他們聽耶穌小時候喜歡做的事情。讀完你選擇的書後，讓孩子知道他們會做小男孩耶穌可能會做的事情。有很多關於耶穌的書。重要的是選擇符合小羊羔興趣和詞彙水平的。", source: "Award Book 2020" }, { requirementIndex: 1, text: "當你用熟悉的曲調編出新詞時，歌曲會很有趣。如果你夠勇敢，你甚至可以添加一些動作。許多老師會造訪「手語」景點來查看關鍵字，以便他們可以開始與學生一起獲得手語獎，甚至在獲得該獎項的同時！這首歌來自芭芭拉·穆林斯（菲律賓）。歌曲創意：《Frere Jacques》或《指針在哪裡》的曲調？這是耶穌 這是耶穌。長大 長大 去聖殿去參加節慶 他是 12 他是 12。 耶穌在哪裡 耶穌在哪裡 他迷路了嗎？他迷路了嗎？每個人都在尋找 每個人都在尋找 他在哪裡？他在哪裡？在聖殿裡 在聖殿裡 他在那裡 他在那裡 與老師交談 與老師交談 在上帝的家中 在上帝的家中 如果您仍然需要歌曲靈感，請使用您最喜歡的搜尋引擎：兒童歌曲我的朋友耶穌。", source: "Award Book 2020" }, { requirementIndex: 2, text: "可以使用幾個簡單的遊戲： 想法：Sermons4Kids 聖經中關於耶穌成長歲月的信息很少。路加福音 2:51-52 總結了耶穌如何幫助和服從祂的父母。新國際版說：「耶穌……順服了他們……耶穌的智慧和身量，並上帝和人喜愛他的心，都一齊增長。」孩子們可以透過手勢來教單字。耶穌（食指指向相對的交替手掌）服從他們（點頭表示同意），他的智慧（用食指輕敲額頭）和身材（手掌從臀部開始，手掌平坦並朝下。然後向上「生長」到肩膀）和人類都得到上帝（手掌平直，手指向上，手掌向中心，手掌下降穿過中心地（拍手兩次）。 （第一個手指指向其他人）目標是了解耶穌服從他的父母，學習並在身體上成長。有許多兒童故事書都有精美的插圖，展示了他的成長過程，並使用適合年齡的語言。", source: "Award Book 2020" }, { requirementIndex: 3, text: "使用以下術語搜尋您最喜歡的搜尋引擎：「基督教兒童手工藝男孩耶穌」 教學理念：木匠刺山柑 所需材料： • 木材，各種尺寸和形狀（保持較小，以便可以用普通兒童膠水粘合。工藝棒、毛皮條殘餘物、成型廢料等） • 裝有不同顏色蛋彩畫的小容器 • 木材或巧克力筆膠卷提前：帶上各種尺寸和形狀的木材（成型廢料、2 × 4 木材的邊角料、工藝棒）。在小容器中填滿不同顏色的蛋彩畫。您還需要幾瓶木頭膠或工藝膠。用報紙覆蓋工作區域。向孩子解釋什麼是木匠。然後告訴他們耶穌的父親是木匠，耶穌幫助他用木頭做東西。然後讓孩子們透過在木頭上黏合和塗漆來用木頭建造東西。教學理念：寺廟紙盤 建造一座寺廟，裡面裝滿耶穌和宗教領袖。材料 -耶穌和三位宗教領袖的人物（用冰棍棒製成或從成人預先剪好的圖畫書圖片上色。每個孩子一個大的法定尺寸的信封。綠色和淺藍色的建築用紙。蠟筆和鉛筆紙膠水（很快乾）步驟：在信封的背面畫一扇猶太教堂的門（門蓋通常會粘到的一體適用側。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4079-my-friend-jesus",
@@ -701,7 +701,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "有很多關於耶穌的書。重要的是選擇符合小羊羔興趣和詞彙水平的。兒童聖經應用程式是 Youversion Bible Inc. 的產品，為兒童提供近 50 個互動聖經故事。有一個動畫故事書應用程序，具有生動的插圖和聲音以及互動式觸控螢幕互動。這些遊戲和活動可以幫助孩子記住他們所學的內容。導航對孩子來說很簡單，並且沒有應用程式內購買。還有一本印刷版聖經，其中有相同的故事和圖形。查看您裝置的應用程式商店。 Bibleforchildren.org 擁有 60 個不同聖經故事的插圖和彩頁，可供下載和列印，有 132 種不同語言版本。 http://bibleforchildren.org/ 或您設備的 App 商店中有 18 個關於耶穌的故事（包括 Powerpoint、著色頁和故事書頁）。", source: "Award Book 2020" }, { requirementIndex: 1, text: "想法：隨著《倫敦橋倒塌》的曲調）耶穌今天是我的朋友，拍拍你的手，歡呼耶穌今天是我的朋友，我們愛耶穌。耶穌今天是我的朋友，跺腳，歡呼，耶穌今天是我的朋友，我們愛耶穌。耶穌今天是我的朋友，轉身，歡呼耶穌今天是我的朋友，我們愛耶穌。小組甚至可以用它來做動作。耶穌（手指交替手掌），今天是我的朋友（擁抱自己），跺腳（跺腳），呼喊萬歲（呼喊萬歲），耶穌（手指交替手掌），今天是我的朋友（擁抱自己），我們（平手觸摸右肩並弧向左肩，愛（將心畫在心上），耶穌（手指交替手掌）。", source: "Award Book 2020" }, { requirementIndex: 2, text: "可以使用幾個簡單的遊戲： 想法：成年人剪出愛心並寫下「耶穌愛你」、「上帝是愛」、「耶穌是我的朋友」、「耶穌愛孩子」以及其他類似的信息。房間裡藏著愛心。每個孩子都可以跑去找一個。指導孩子們，如果他們找到多個，請將其留在原處，並幫助朋友找到一顆「耶穌朋友的心」。", source: "Award Book 2020" }, { requirementIndex: 3, text: "聖經中關於耶穌成長歲月的資訊很少。路加福音 2:51-52 總結了耶穌如何幫助和服從祂的父母。新國際版說：「耶穌……順服了他們……耶穌的智慧和身量，並上帝和人喜愛他的心，都一齊增長。」孩子們可以透過手勢來教單字。耶穌（食指指向相對的交替手掌）服從他們（點頭表示同意），他的智慧（用食指輕敲額頭）和身材（手掌從臀部開始，手掌平坦並朝下。然後向上「生長」到肩膀）和人類都得到上帝（手掌平直，手指向上，手掌向中心，手掌下降穿過中心地（拍手兩次）。 （第一個手指指向其他人）目標是了解耶穌服從他的父母，學習並在身體上成長。有許多兒童故事書都有精美的插圖，展示了他的成長過程，並使用適合年齡的語言。", source: "Award Book 2020" }, { requirementIndex: 4, text: "這是一個很好的討論要求，讓孩子們有機會思考如何對待同儕（同儕）。成人領導者可以向小組提出問題，例如：「我喜歡其他孩子如何對待我？」 「當一個朋友有一個玩具我想玩時，我該如何像耶穌一樣呢？」 「當一個朋友從我這裡拿走一些東西時，耶穌希望我做什麼？」家長支持的角色扮演對於這個年齡段的人來說非常好，特別是如果成年人先對場景進行角色扮演角色。總是使用表達愛和尊重彼此的場合。請記住，這個群體中的許多人在發展上仍然是「獨奏者」，這意味著他們不知道如何與其他孩子一起玩，而只知道如何與其他孩子一起玩。當他們學習新的發展技能時，對他們保持耐心非常重要！", source: "Award Book 2020" }, { requirementIndex: 5, text: "活動指南可以幫助您完成這個遊戲，或者您可以在線搜尋「耶穌愛兒童工藝品」。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4080-parables-of-jesus",
@@ -714,7 +714,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "鼓勵孩子分享他們認為這節經文的意思。", source: "Award Book 2020" }, { requirementIndex: 1, text: "寓言是用文字來說明真理或教導的文字圖畫。比喻有雙重意義。", source: "Award Book 2020" }, { requirementIndex: 2, text: "使用兒童友善版本。", source: "Award Book 2020" }, { requirementIndex: 3, text: "使用「立體模型」或「寓言工藝品」在網路上搜尋。", source: "Award Book 2020" }, { requirementIndex: 4, text: "例如《迷失的羔羊》：工作人員幫助將孩子藏在指定區域。然後其他孩子找到了「丟失的孩子」。將小物品和米放入罐子中。孩子們尋找「遺失」的物品。", source: "Award Book 2020" }, { requirementIndex: 5, text: "當孩子們製作卡片時，朗讀經文。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4535-bible-i",
@@ -727,7 +727,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "確保每位孩子有自己的聖經或可使用的兒童聖經；教導如何輕拿、翻閱和標記經文。", source: "Requirement draft" }, { requirementIndex: 1, text: "解釋要尊重聖經：潔淨雙手、輕放、不塗鴉、放在安全乾爽處，並以敬虔態度閱讀。", source: "Requirement draft" }, { requirementIndex: 2, text: "幫助冒險家找到《創世記》和《啟示錄》。當孩子講述作者的故事時，鼓勵他們在聖經中找到每本書。玩聖經遊戲、使用毛氈等。讓這成為一次有趣的學習經驗。", source: "Award Book 2020" }, { requirementIndex: 3, text: "讓孩子表演默劇。冒險家喜歡表演。鼓勵他們讓故事「生動起來」。準備一盒有助於描繪聖經人物的道具，例如浴袍、圍巾和手杖。", source: "Award Book 2020" }, { requirementIndex: 4, text: "練習找出聖經中的經文。解釋每個部分，以便孩子們能夠理解其含義。一起閱讀。", source: "Award Book 2020" }, { requirementIndex: 5, text: "使用紙盤製作動物或人物面具，說明《但以理與獅子的巢穴》、《創世》和《伊甸園》等故事。表演他們選擇的故事。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4540-bible-ii",
@@ -740,7 +740,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "在當今的電子設備時代，請注意，年輕人可以透過多種方式使用聖經。如果有的話，請向家長建議二年級學生可以使用哪些類型的翻譯和易於閱讀的聖經。 （ERV、NIRV、NLT 等版本是按照三年級閱讀程度編寫的，這在許多 Sunbeams 的閱讀和理解範圍之內。", source: "Award Book 2020" }, { requirementIndex: 1, text: "聖經的兩個主要部分是舊約和新約。被稱為福音書的是馬太福音、馬可福音、路加福音和約翰福音。", source: "Award Book 2020" }, { requirementIndex: 2, text: "有意地，這項要求與我的上帝：上帝拯救我的計劃 A 和 B 一致。計劃與這些要求一起頒發此獎項並支持這些要求。", source: "Award Book 2020" }, { requirementIndex: 3, text: "「解釋」是一項具有挑戰性的技能，二年級學生需要模仿領導者的做法。如果可能的話，家庭小組每人閱讀並探索一篇文章。然後將報告和發現帶回給更大的陽光團隊。如果作為一組探索所有段落，請按照以下步驟操作： • 閱讀每一篇聖經經文，解釋每一篇經文（回答每一篇經文的問題）， • 然後幫助他們選擇他們最喜歡的經文，他們認為這些經文說「這一段表明我如何被耶穌拯救！」注意：這不是洗禮的呼召，而是可以開始引導人們的心順服並臣服於耶穌！", source: "Award Book 2020" }, { requirementIndex: 4, text: "這不是為了冒險家的「崇拜思想」，而是訓練二年級學生向同學或老師以外的人講述耶穌的故事。熟能生巧。請記住，他們的故事很短，可能無法闡明所有事實。 1分鐘的故事太棒了！事實上，一些「過於言語」的人需要幫助講述一個短篇故事！", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4635-early-adventist",
@@ -753,7 +753,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "艾倫懷特、詹姆斯懷特、威廉米勒、約瑟夫貝茨、J.N. Andrews、Hiram Edson 等。 資源：William Miller Heritage Farm（8 英寸 x 10 英寸彩色圖片和簡介可從 ABC 獲取）；密西根會議的「先驅者的生活」系列磁帶。", source: "Award Book 2020" }, { requirementIndex: 1, text: "滿足要求 #2 的書籍包括：《Ellen》，Mable Miller 著；營會天使，作者：Paul Ricchiuti。", source: "Award Book 2020" }, { requirementIndex: 2, text: "SDA 讚美詩中的歌曲：「愛使我們快樂」，第 579 期； 「你會看到你的主降臨」，第 438 期； 《我看到一個人疲倦了》，第 441 期； 《天籟之音》，第 452 期； 「你沒有看到我的耶穌來 454 號嗎？」第 454 號嗎？", source: "Award Book 2020" }, { requirementIndex: 3, text: "談談早餐和早餐食品的重要性。提及早餐的一些歷史（飲食與食品委員會和復臨信徒之家）。檢查任何食譜中的格蘭諾拉麥片食譜，例如《21世紀 - 375世紀無肉肉》。如果無法製作格蘭諾拉麥片，請購買格蘭諾拉麥片棒並談論使格蘭諾拉麥片對我們健康的成分。 （預先煮好的全穀物，可以快速準備。）在會議上製作格蘭諾拉麥片，並連同食譜一起寄給每個家庭。", source: "Award Book 2020" }, { requirementIndex: 4, text: "將 24 吋見方的普通棉布沿對角線（從一個角到另一個角）切成兩半，製作頭巾；在上面印上或模印出動物、馬車或兒童形狀的圖片。裝扮時，提供長裙、背帶褲、牛仔帽等。", source: "Award Book 2020" }, { requirementIndex: 5, text: "称一下书的重量。你的書比艾倫的書小還是大？ （早年 1827-1862）。", source: "Award Book 2020" }, { requirementIndex: 6, text: "跳繩、拔河、從星星上掉下來、跳房子、捉人遊戲、按鈕、丟手帕、擠牛奶、障礙訓練。", source: "Award Book 2020" }, { requirementIndex: 7, text: "湯匙娃娃、針繡、製作麵包或麥片並將其放在頭巾中、使用紙板、噴漆等製作馬車。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4935-temperance",
@@ -766,7 +766,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "使用現代版本的聖經，以便冒險家能夠理解其語言。", source: "Award Book 2020" }, { requirementIndex: 1, text: "藥物濫用是指濫用任何藥物或藥物。節制意味著生活各方面的自我控制，包括使用有害物質。", source: "Award Book 2020" }, { requirementIndex: 2, text: "邀請醫生或護士參加您的小組會議。如果不可能，請觀看公共衛生辦公室或公共圖書館提供的有關該主題的眾多影片之一。", source: "Award Book 2020" }, { requirementIndex: 3, text: "鼓勵每個冒險家參與這次討論。", source: "Award Book 2020" }, { requirementIndex: 4, text: "短劇或戲劇可以在學校或教會相關活動中表演。", source: "Award Book 2020" }, { requirementIndex: 5, text: "提供必要的材料並仔細監督這項活動。", source: "Award Book 2020" }, { requirementIndex: 6, text: "體育雜誌會很有幫助。如果您選擇讓冒險家採訪人們，請幫助他們列出問題清單並提前做好必要的預約。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4985-wise-steward",
@@ -779,7 +779,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "明智的管家是認真履行自己的職責並照顧好上帝給我們所有人的東西（環境、我們的身體、我們的思想、我們的才能等）的人。", source: "Award Book 2020" }, { requirementIndex: 1, text: "參閱創 1、2；詩篇 33:6, 9。", source: "Award Book 2020" }, { requirementIndex: 2, text: "瑪拉基說，我們要將十分之一和奉獻物獻給上帝。當我們在教會奉獻或歸還什一稅時，我們就會這樣做。他一定會祝福那些忠心這樣做的人。", source: "Award Book 2020" }, { requirementIndex: 3, text: "使用雜誌圖片或對我們的安息日學產品可以購買的物品進行繪畫和著色（聖經、安息日學報紙、說明聖經故事的毛氈和圖片、安息日學聚會區等等）。這可能是一項集體活動。將完成的海報放在其他人可以欣賞的地方。", source: "Award Book 2020" }, { requirementIndex: 4, text: "閱讀懷愛倫所寫的《管理忠告》，第 174-176 頁，然後用冒險家能夠理解的語言重述寡婦和她的兩個小人物的故事。", source: "Award Book 2020" }, { requirementIndex: 5, text: "明智的管家會特別照顧他或她的財產和財務，以及上帝給他或她的才能。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4035-animals",
@@ -792,7 +792,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "參觀動物園或看影片後，說出五種動物，例如獅子、大象、長頸鹿、企鵝、猴子。", source: "Requirement draft" }, { requirementIndex: 1, text: "選兩種動物畫圖並填色。", source: "Requirement draft" }, { requirementIndex: 2, text: "從雜誌剪下三隻動物圖片，製成立體拼貼。", source: "Requirement draft" }, { requirementIndex: 3, text: "用黏土或彩泥製作最喜歡的動物園動物。", source: "Requirement draft" }, { requirementIndex: 4, text: "例如：挪亞方舟的動物、鯨魚、鴿子、驢子、獅子等。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4036-animal-homes",
@@ -805,7 +805,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "家是您居住或停留的地方。它應該是一個讓您感到安全和舒適的地方。", source: "Award Book 2020" }, { requirementIndex: 1, text: "提供大張紙和蠟筆。完成後，請孩子講述他們畫的是什麼。肯定並接受他們的努力。", source: "Award Book 2020" }, { requirementIndex: 2, text: "臭鼬在地洞安家。獅子的家被稱為巢穴。熊（狐狸、土狼、水獺）住在一個巢穴裡。松鼠住在樹洞或樹上的巢裡。海狸用棍棒和泥土建造一座稱為小屋的房子。兔子在地上挖了一個洞。鹿的家是森林。人們在穀倉裡為馬和牛建造一個家。", source: "Award Book 2020" }, { requirementIndex: 3, text: "上帝創造了動物，讓它們知道該做什麼。這就是所謂的本能──他們不需要思考，他們就知道。動物也從父母那裡學習如何建造家園。", source: "Award Book 2020" }, { requirementIndex: 4, text: "為孩子們提供一系列塑膠或橡膠動物。讓他們選擇一個並用橡皮泥、木頭、紙板等建造一個家。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4037-birds",
@@ -818,7 +818,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "這是尋找您所在地區常見鳥類的連結。進入該頁面後，點擊頁面底部附近的紅色按鈕。這將使您能夠列出來自您居住的美國地區的 5 種鳥類的清單。 http://feederwatch.org/learn/common-feeder-birds 透過該網站，您可以找到來自世界各地的清單。列表是英文的。 http://avibase.bsc-eoc.org/checklist.jsp 最好列印或展示本地列表中鳥類的圖片，以便早起的鳥兒可以開始在自己的家庭環境中識別列表中的鳥類。教學理念：美術館漫步 材料：您當地不同鳥類的印刷圖片（知識共享免費圖片可在 flickr.com 等網站上取得） 說明：列印整頁圖像。將它們張貼在會議區域周圍的牆上。放上鳥的聲音或以鳥為主題的配樂。請孩子和他們的父母或小組去看每張照片。請他們辨識羽毛的顏色、喙的顏色、大小（小、中、大）。為早起的鳥兒和家長準備每張鳥兒圖片的小版本，供其收集在活動手冊的頁面中。", source: "Award Book 2020" }, { requirementIndex: 1, text: "說出您所在地區、省、州或國家的官方鳥類。這是國鳥清單的連結 https://en.wikipedia.org/wiki/List_of_national_birds", source: "Award Book 2020" }, { requirementIndex: 2, text: "鳥食種類 • 葵花籽（首選黑油） • 碎玉米 • 水果 • 黃粉蟲 • 小米 • 奈傑爾 • 燕麥 • 花生（帶殼或不帶殼） • 羊脂 • 糖水", source: "Award Book 2020" }, { requirementIndex: 3, text: "程序：這個要求是不言自明的。圖畫越簡單、越大，早起的鳥兒就越容易找到它，透過將不同顏色的種子黏在圖畫上來「著色」。工藝膠效果最好。不要用水稀釋膠水，因為許多種子相當重，很容易脫落。最好讓孩子們用畫筆或手指將膠水塗在圖片的一部分上，將種子放在該部分上，然後移動到圖片的另一部分。", source: "Award Book 2020" }, { requirementIndex: 4, text: "如果您很容易獲得松果，則可以輕鬆製作如下所述的餵鳥器。如果您無法獲得松果，以下有一些關於製作簡單餵鳥器的其他方法的想法，以便早起的鳥兒能夠說出他們看到從餵食器來吃的一些鳥的名字。記得索取有關他們在其他會議時間看到的鳥類的報告。松果版本 您需要什麼 • 松果 • 紗線 • 花生醬 • 人造奶油 • 鳥籽說明", source: "Award Book 2020" }, { requirementIndex: 5, text: "找到一個大松果。", source: "Award Book 2020" }, { requirementIndex: 6, text: "在松果頂部綁一根三到四英尺長的紗線作為衣架。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將兩湯匙花生醬與兩湯匙人造奶油混合。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將花生醬和人造奶油混合物塗在松果上。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將一些鳥種子倒在盤子或淺盤上，然後將松果滾入其中。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將覆蓋種子的松果放入冰箱中約一小時或直到其變硬。", source: "Award Book 2020" }, { requirementIndex: 7, text: "把它掛在外面的樹上！非松果版本 #1 種子球：您需要什麼 • 麵粉 • 水 • 鳥籽混合物 • 箔片 • 給箔片塗油脂的東西 • 懸掛線 • 用於烘烤種子球的烤箱 說明", source: "Award Book 2020" }, { requirementIndex: 7, text: "用 2 湯匙麵粉和 4 湯匙水調成光滑的糊狀物。", source: "Award Book 2020" }, { requirementIndex: 7, text: "混入 1 杯鳥類種子或種子混合物。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將其放在一塊塗有油脂的箔紙上", source: "Award Book 2020" }, { requirementIndex: 7, text: "將此混合物塑造成鐘形或球形。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將一圈金屬絲穿過中心進行懸掛。", source: "Award Book 2020" }, { requirementIndex: 7, text: "讓箔紙在頂部稍微張開，在中等烤箱中烘烤半小時。非松果版本 #2 肥餅：您需要的 • 用於混合乾燥混合物的碗 • 豬油或羊油（不要使用火雞脂肪，因為它不會適當硬化） • 平底鍋 • 湯匙 • 繩子或麻線 • 舊優格罐或容器 • 以下任何乾鳥飼料混合物：野鳥種子、葡萄乾、葡萄乾、燕麥、麵包和酸奶罐或容器 • 以下任何乾鳥飼料混合物：野鳥種子、葡萄乾、葡萄乾、燕麥、麵包和酸奶的蛋糕和蛋糕和蛋糕和蛋糕。注意：此食譜的最佳比例是一份脂肪（豬油或羊油）與兩份乾燥混合物。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將所有乾原料混合在一個碗中。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將豬油或羊油放入鍋中融化，然後加入乾燥混合物。", source: "Award Book 2020" }, { requirementIndex: 7, text: "充分攪拌直至脂肪全部被吸收並且混合物粘在一起。", source: "Award Book 2020" }, { requirementIndex: 7, text: "（英文原文）Make a hole in the bottom of a yoghurt pot (personal serving sized container) and thread through a length of twine or string.", source: "Award Book 2020" }, { requirementIndex: 7, text: "將溫熱的脂肪混合物裝入鍋中。", source: "Award Book 2020" }, { requirementIndex: 7, text: "放入冰箱過夜凝固。", source: "Award Book 2020" }, { requirementIndex: 7, text: "從冰箱中取出，然後切開並剝掉鍋子。", source: "Award Book 2020" }, { requirementIndex: 7, text: "在麻線的一端打一個大結以固定蛋糕。", source: "Award Book 2020" }, { requirementIndex: 7, text: "將蛋糕掛在樹上或灌木叢中，等待鳥兒飛來享用美食。", source: "Award Book 2020" }, { requirementIndex: 7, text: "要求：聖經中提到的鳥類。程序：透過向早起的鳥兒展示如何使用索引或線上聖經搜尋工具，幫助他們探索如何發現這些資訊。試著說出您所在地區常見鳥類的名稱。請記住，我們鼓勵每個早起的鳥兒自己思考故事。他們可以與父母或其他早起的鳥兒進行腦力激盪。以下是一些可以幫助您入門的段落： • 貓頭鷹 - 西番雅書 2:14 • 鴿子 - 創世記 8:8-12（洪水故事） • 麻雀 - 馬太福音 10:29-31 • 烏鴉 - 列王記上 17:1-6（以利亞故事）", source: "Award Book 2020" }, { requirementIndex: 7, text: "您需要找到一個記錄了鳥叫聲的設備。一旦你練習了你所在地區常見的鳥的聲音，談論鳥的行為，然後和早起的鳥兒一起假裝你們都是你學會發聲的鳥。請記住，除了飛行之外，鳥類還會抓傷或啄食，它們會在水中清洗，棲息在各種類型的巢上，等等。 8.線上搜尋：鳥兒發出叫聲（您所在的州、省、國家），或在 Youtube 上搜尋。預覽您下載的剪輯。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4038-bodies-of-water",
@@ -831,7 +831,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本關於湖泊、溪流、河流或海洋的繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "可唱《Down by the Bay》《My Bonnie Lies Over the Ocean》或中文兒歌《小河流水》。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩「河流接力」或用水桶/藍色布條模仿河流、海浪的遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "用色紙、棉花和箔紙製作湖泊、河流或海洋手工。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4040-insects",
@@ -844,7 +844,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本適合幼兒的昆蟲繪本，由家長或導師朗讀；亦可到圖書館借閱。", source: "Requirement draft" }, { requirementIndex: 1, text: "讀後請孩子說出三項所學，例如：昆蟲有六足、有些會變態、昆蟲對大自然有幫助等。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩「昆蟲動作」遊戲：模仿蝴蝶、蜜蜂、螞蟻等動作，或做昆蟲配對卡遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "用紙盤、色紙或黏土製作昆蟲手工，例如蝴蝶、瓢蟲或蜜蜂。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4041-pets",
@@ -857,7 +857,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "畫出或剪貼最喜歡的寵物圖片，並為牠填色。", source: "Requirement draft" }, { requirementIndex: 1, text: "依寵物種類回答，例如：狗吃狗糧、貓吃貓糧、雀鳥吃穀物或飼料。", source: "Requirement draft" }, { requirementIndex: 2, text: "描述寵物平常睡覺的位置，例如：狗窩、貓床、籠子或沙發。", source: "Requirement draft" }, { requirementIndex: 3, text: "在家長陪同下，連續一週負責餵飼寵物（定時、適量、乾淨食水）。", source: "Requirement draft" }, { requirementIndex: 4, text: "連續一週協助梳毛、清理籠舍、帶散步或換水等日常照顧。", source: "Requirement draft" }, { requirementIndex: 5, text: "分享一件與寵物有關的親身經歷，例如第一次養寵物、寵物做的有趣事。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4042-potatoes",
@@ -870,7 +870,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "它們富含鉀和維生素 C。您也可以在網路上搜尋您所在地區馬鈴薯的營養價值。", source: "Award Book 2020" }, { requirementIndex: 1, text: "愛達荷州——州食品：馬鈴薯。路易斯安那州—州蔬菜：地瓜。新罕布夏州 - 州蔬菜：白馬鈴薯。北卡羅來納州：州蔬菜：紅薯。", source: "Award Book 2020" }, { requirementIndex: 2, text: "馬鈴薯是一種塊莖。它們生長在地下。研究您所在地區的最佳生長條件。", source: "Award Book 2020" }, { requirementIndex: 3, text: "赤褐色、紅色、白色、黃色、紫色/藍色、魚種、嬌小、甜、山藥。", source: "Award Book 2020" }, { requirementIndex: 4, text: "當植物/藤蔓死亡或第一次嚴霜之前收穫馬鈴薯。馬鈴薯透過手工或機器收穫。", source: "Award Book 2020" }, { requirementIndex: 5, text: "在網路上搜尋如何在家種植馬鈴薯。檢查您所在的地區，看看是否有機會幫助農民收穫馬鈴薯。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "英文 Award Book 2020 未有 Supporting Answers",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4044-sand-art",
@@ -883,7 +883,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "閱讀馬太福音 7:24-27，討論聰明人把房子蓋在磐石上、愚拙人蓋在沙土上的意思。", source: "Requirement draft" }, { requirementIndex: 1, text: "可查找例如：創世記 22:17、申命記 33:19、詩篇 139:18 等提及沙子的經文。", source: "Requirement draft" }, { requirementIndex: 2, text: "用簡單道具或角色分配，重演聰明人和愚拙人蓋房子的故事。", source: "Requirement draft" }, { requirementIndex: 3, text: "可唱《聰明人和愚拙人》或教會兒童詩歌中與建造、根基有關的歌曲。", source: "Requirement draft" }, { requirementIndex: 4, text: "例如：建築用沙、玻璃、沙灘、沙畫、過濾器、沙漏、園藝混合土等。", source: "Requirement draft" }, { requirementIndex: 5, text: "把食用色素或粉彩加入細沙，拌匀後晾乾，製成彩色沙。", source: "Requirement draft" }, { requirementIndex: 6, text: "從下列項目中選做至少兩項；每項可獨立完成。", source: "Requirement draft" }, { requirementIndex: 7, text: "在瓶內逐層倒入不同顏色彩沙，製作彩沙瓶。", source: "Requirement draft" }, { requirementIndex: 8, text: "在相框底板塗膠，撒上彩沙固定，製作沙畫相框。", source: "Requirement draft" }, { requirementIndex: 9, text: "在卡紙上塗膠，用彩沙或普通沙拼出圖案。", source: "Requirement draft" }, { requirementIndex: 10, text: "在沙灘或沙池堆砌沙堡，談論穩固根基的重要。", source: "Requirement draft" }, { requirementIndex: 11, text: "用衣夾加上彩沙和膠水，裝飾成蝴蝶造型。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4046-scavenger-hunt",
@@ -896,7 +896,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "每個早鳥兒和家長團隊都應該有一份清單以及鉛筆和蠟筆。", source: "Award Book 2020" }, { requirementIndex: 1, text: "該清單應包括要求中的基本清單以及特定於您的環境的幾個項目。一個。找到 2 件自然物品。 b.摩擦紋理。樹皮、磚塊或其他一些有紋理的物品效果很好。 （這是額外的，但很有趣！） c．找出 1 件讓您想起聖經故事的物品。 （告訴某人聖經故事） d．找到 1 件紅色物品。 （我喜歡添加至少 3 種顏色的物品 - 例如藍色、棕色、綠色）找到 1 個容器（塑膠復活節彩蛋非常適合這個），裡面有好吃的東西。與其他人分享內容。", source: "Award Book 2020" }, { requirementIndex: 2, text: "每個人都完成後，將每個人聚集在一起，並要求特定的孩子分享他們在某個類別中發現的內容。例如：「蘇西，你發現什麼是紅色的？」 「唐特，你用什麼拓印的？」 「索尼婭，你發現什麼讓你想起聖經故事？聖經故事是什麼？」 ETC。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "英文 Award Book 2020 未有 Supporting Answers",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4047-seasons",
@@ -909,7 +909,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "本文和討論的目的是要看到「一切都有一個時間和地點」。例如，討論可以圍繞著「生命的季節」（嬰兒期、幼兒期、學步期、結婚期、兒童期、祖父母期）。", source: "Award Book 2020" }, { requirementIndex: 1, text: "一個簡單的拼貼畫、繪畫或照片遊獵展示就足夠了。", source: "Award Book 2020" }, { requirementIndex: 2, text: "北半球和南半球由於一年中不同的月份暴露在陽光下，因此經歷相反的季節。您居住的地方的天氣（通常）什麼時候會改變？", source: "Award Book 2020" }, { requirementIndex: 3, text: "這是問題 3 的延續。這裡可以使用討論、說明甚至角色扮演。立體模型也可以用來展示孩子們在每個季節的穿著。", source: "Award Book 2020" }, { requirementIndex: 4, text: "教學概念：為季節穿著 比賽材料：一個裝滿衣服的大盒子，很容易識別，只與一個季節相關。前任。雨衣、雨傘、膠靴詮釋了北半球的春天；游泳衣、毛巾和遮陽傘標誌著北半球的夏季。確保衣服比最大的 Sunbeam 大，這樣他們就可以輕鬆地以接力賽的形式將衣服穿在自己的衣服上「比賽」。應該展示所有四個季節，以及一些「可選」或「原創」作品。每隊一盒四季服裝。程序：將每個小組排成一條線，距離服裝箱 20 英尺/8 公尺。每個團隊不得超過 4 位 Sunbeams/團隊成員。 「出發」時，每個團隊比賽中最先穿上適合春天的衣服的人。穿好衣服後，他跌跌撞撞地回來，標記第二名趕著穿好夏天衣服的隊員。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4049-stars",
@@ -922,7 +922,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本星星主題繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "讀後說出三項所學，例如：星星在夜間發光、太陽也是星、北極星幫助辨方向。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩「找星星」配對或星座模仿遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "用色紙、閃粉或夜光貼紙製作星星手工。", source: "Requirement draft" }, { requirementIndex: 4, text: "可唱《Twinkle, Twinkle, Little Star》或《Star Light, Star Bright》。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4051-weather-i",
@@ -935,7 +935,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本天氣主題繪本，由家長或導師朗讀；圖書館或兒童讀物網站亦可找到。", source: "Requirement draft" }, { requirementIndex: 1, text: "讀後請孩子說出三項所學，例如：下雨、出太陽、颳風、季節變化、要適當穿衣等。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩「天氣動作」遊戲：導師說「落雨／出太陽／落雪」，孩子做相應動作。", source: "Requirement draft" }, { requirementIndex: 3, text: "製作天氣手工，例如：紙碟太陽、棉花雲、雨點掛飾或天氣輪盤。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4052-weather-ii",
@@ -948,7 +948,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "記錄當日天氣，並與電視或手機天氣預報比較異同。", source: "Requirement draft" }, { requirementIndex: 1, text: "用簡單例子說明風、雲、霧、雨、陽光和空氣的特徵。", source: "Requirement draft" }, { requirementIndex: 2, text: "例如溫度計、雨量計和風向袋／風速計。", source: "Requirement draft" }, { requirementIndex: 3, text: "說明水蒸發、凝結和降水如何形成循環，以及為何對生命重要。", source: "Requirement draft" }, { requirementIndex: 4, text: "示範使用溫度計讀數，並說明攝氏或華氏刻度。", source: "Requirement draft" }, { requirementIndex: 5, text: "閱讀創世記 1:6-8 關於上帝造穹蒼的記載。", source: "Requirement draft" }, { requirementIndex: 6, text: "複述耶穌在風浪中平靜風海的故事。", source: "Requirement draft" }, { requirementIndex: 7, text: "用紙、竹簽或吸管製作簡單風車，並在戶外測試。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4053-wooly-lamb",
@@ -961,7 +961,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "有幾本關於羔羊的印刷版和線上書籍。兒童聖經應用程式是一本免費的線上圖解書籍，可以閱讀或收聽。 （應用程式商店「聖經兒童 youversion」）這是一個優秀的資源，圖形精美，互動性很強。耶穌誕生的故事 - 「第一份聖誕禮物」的故事中包括了羔羊。截至 2017 年，StoryJumper.com 有一個關於獅子和羔羊的可愛故事。", source: "Award Book 2020" }, { requirementIndex: 1, text: "一些方法： 準備一張彩色海報/一張綿羊和羔羊的大圖片。進行一段感人、傾聽、交談的時間，讓孩子注意有關羔羊的事。前任。羔羊比綿羊小。羔羊毛茸茸的，白色的。羔羊是嬰兒。羔羊喝媽媽的奶。羔羊不是從蛋中孵化出來的。耶穌在聖經中談論了羔羊（關於「好牧人」的聖經故事的精彩開場 - 約翰福音 10:1-18 如果您有「小羊羔」（如建議的那樣），請使用小羊羔與孩子們討論此要求中的信息。我們可以學到一些東西： a. 小羊被稱為小羊羔與孩子們討論此要求中的信息。我們可以學到一些東西： a. 小羊被稱為小羊。b. 大多數小羊在春天。羔羊在大約四個月大時開始吃草、穀物和乾草，如果它們是孤兒，或者它們的母親一次不能餵養牠們，則羔羊在七到九歲時第一次被剪毛。", source: "Award Book 2020" }, { requirementIndex: 2, text: "可玩「小羊找媽媽」或模仿綿羊叫聲的遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "用棉花、毛球和紙板製作綿羊手工。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（PDF 僅有部分 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4054-zoo-animals",
@@ -974,7 +974,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "參觀動物園，或觀看動物園/自然紀錄片。", source: "Requirement draft" }, { requirementIndex: 1, text: "分享看見的動物名稱和特徵。", source: "Requirement draft" }, { requirementIndex: 2, text: "說明不同動物的食物，例如草食、肉食或雜食。", source: "Requirement draft" }, { requirementIndex: 3, text: "描述看見的鳥類名稱、顏色和叫聲。", source: "Requirement draft" }, { requirementIndex: 4, text: "畫出兩種在動物園看到的動物並填色。", source: "Requirement draft" }, { requirementIndex: 5, text: "一切受造之物都是上帝所造；可引用創世記 1:20-25。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4565-butterflies",
@@ -987,7 +987,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "除了遷徙期間，蝴蝶都是獨居的，聚集在潮濕的地面上尋找水源或夜間棲息。您可能會看到雄性蝴蝶互相盤旋以保衛自己的領地。蝴蝶和飛蛾的頭下方有一個「盤繞的吸管」，稱為長鼻。它用於吸取花蜜、水和其他液體。喙的長度有助於確定它們從哪些花中獲取花蜜。每種類型的蝴蝶都會採摘花朵並通常停留在同一水平上，要么低到地面，要么更高。蝴蝶很少會從面朝下的花朵中喝水。", source: "Award Book 2020" }, { requirementIndex: 1, text: "請諮詢您的圖書館。", source: "Award Book 2020" }, { requirementIndex: 2, text: "(一）雞蛋； (B) 幼蟲或毛毛蟲； (C) 蛹或蛹； (D) 成人。", source: "Award Book 2020" }, { requirementIndex: 3, text: "（雙手平放在身前，就像祈禱一樣。像蝴蝶的翅膀一樣張開和合上雙手的頂部）當蝴蝶坐下並張開和合上翅膀時，它會溫暖它的肌肉，從太陽獲取能量並將其儲存在體內。當我們向耶穌祈禱時，我們內心感到溫暖和美好，並從祂那裡獲得能量，使我們變得快樂、堅強並做正確的事。當我們祈禱時，繼續像蝴蝶一樣移動你的雙手。", source: "Award Book 2020" }, { requirementIndex: 4, text: "選項：「如果我是一隻蝴蝶，我會感謝上帝賜給我強大而美麗的翅膀...」", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4655-fish",
@@ -1000,7 +1000,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "幫助孩子找到經文並複習故事。", source: "Award Book 2020" }, { requirementIndex: 1, text: "請參閱以下有關 Indian Squanto 的資源。", source: "Award Book 2020" }, { requirementIndex: 2, text: "請養寵物魚或在寵物店工作的人與孩子們交談，或從寵物店或圖書館取得一般魚類照護說明，並與孩子討論。了解護理、食物（何時餵魚以及餵什麼）和水族館。請記住，我們的寵物魚依靠我們來照顧它們——它們無法照顧自己。", source: "Award Book 2020" }, { requirementIndex: 3, text: "了解兩種自然生活的魚類。討論我們如何透過保持水清潔來提供幫助。切勿將垃圾放入湖泊或海洋中。", source: "Award Book 2020" }, { requirementIndex: 4, text: "釣魚遊戲： A.製作一條末端有繩子和磁鐵的釣竿。 「去釣魚」，尋找小聖經、貼紙、魚軟糖等好東西。工藝品：（另請參閱下面的資源）c。製作紙盤水族箱：用兩個紙盤，在其中切一個圓形，在上面放上透明或藍色透明的保鮮膜，使其看起來像水族箱的一扇窗戶。將魚貼紙放在未切割的盤子上並畫出海藻/植物。將兩塊板粘在一起，就像一個帶有透明玻璃的水族館。 d.毛氈魚：準備預先剪好的毛氈魚形狀，並讓孩子們用亮片裝飾它們。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4665-flowers",
@@ -1013,7 +1013,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "在田野或林地、河流和池塘附近潮濕的地方或花園中尋找花朵。", source: "Award Book 2020" }, { requirementIndex: 1, text: "顏色、氣味和動作將昆蟲吸引到花朵上。花蜜、花粉和水是從花朵中獲得的。", source: "Award Book 2020" }, { requirementIndex: 2, text: "花種是靠鳥、風、昆蟲、走獸傳播的。請向當地農業部門尋求協助。", source: "Award Book 2020" }, { requirementIndex: 3, text: "保護野花的最好方法是將它們留在你發現它們的地方。如果您確實採摘它們，請不要將其根部拔出地面。", source: "Award Book 2020" }, { requirementIndex: 4, text: "從幾種不同的花朵中採摘並乾燥花瓣。將白紙剪成 2 英寸 x 7 英寸，並在上面排列花瓣。用透明塑膠層壓並修剪多餘的材料。您的書籤可能會作為母親節、生日等禮物。", source: "Award Book 2020" }, { requirementIndex: 5, text: "盡可能辨識活花。如有必要，可以使用閃存卡、雜誌或種子目錄圖片。", source: "Award Book 2020" }, { requirementIndex: 6, text: "挑選一束花園鮮花，精心佈置，然後送給某人讓他們開心，或製作一束絲綢插花並分享（可以帶到安息日學校）。", source: "Award Book 2020" }, { requirementIndex: 7, text: "在插花中添加綠葉會很有吸引力。如果每天換水並將鮮花放在陰涼的地方，鮮花可能會保存更長時間。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4670-friend-of-animals",
@@ -1026,7 +1026,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "幫助冒險家學習對寵物的責任和適當的照顧。 （您可以購買一隻集體寵物，並讓冒險家輪流照顧它。）", source: "Award Book 2020" }, { requirementIndex: 1, text: "教導冒險家觀察大自然以及在哪裡獲得識別動物的幫助。 （使用图书馆或博物馆。）", source: "Award Book 2020" }, { requirementIndex: 2, text: "與 2 號相同。", source: "Award Book 2020" }, { requirementIndex: 3, text: "包括家庭成員。談談你所看到的和學到的。", source: "Award Book 2020" }, { requirementIndex: 4, text: "餵食站可以像窗台或地面上的特定位置一樣簡單。為了吸引鳥類和動物，可以使用各種種子、堅果和穀物。", source: "Award Book 2020" }, { requirementIndex: 5, text: "您可以選擇不同的動物遊戲，例如動物樂透、動物骨牌以及復臨安息日會圖書中心或其他基督教書店提供的鳥類和動物遊戲。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4680-friend-of-nature",
@@ -1039,7 +1039,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "講述大多數污染物是如何由人類以及他們對上帝創造的生物的漠視造成的。孩子年紀不小了，無法幫忙妥善處理垃圾和人類排泄物。教導您的小組欣賞上帝創造的自然並保護植物、樹木、鳥類和動物。", source: "Award Book 2020" }, { requirementIndex: 1, text: "博物學家可能會幫助您進行識別。將紙放在樹皮上，然後用蠟筆在紙上輕輕擦拭。比較並討論不同的拓片，以及每棵樹如何獨一無二，就像人一樣，並且以自己的方式非常特別。", source: "Award Book 2020" }, { requirementIndex: 2, text: "收集至少四棵不同樹上的葉子。您不妨教孩子如何壓制、乾燥和保存它們。透過放大鏡比較和研究葉子。", source: "Award Book 2020" }, { requirementIndex: 3, text: "您的搜尋可能是在散步時發現的任何自然物品，也可能只是活的生物，如蠕蟲、毛毛蟲、螞蟻或甲蟲。讓冒險家有時間描述他們所看到的。", source: "Award Book 2020" }, { requirementIndex: 4, text: "當您參觀動物園、公園或野生動物區等時，尋找較小的、通常不被注意的生物，包括小鳥、動物、植物和花卉。", source: "Award Book 2020" }, { requirementIndex: 5, text: "為了獲得最佳效果，請仔細遵循植物或球莖隨附的說明。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/nature/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4006-colors",
@@ -1052,7 +1052,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本顏色主題繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "可唱《Rainbow Song》或《Colors All Around》。", source: "Requirement draft" }, { requirementIndex: 2, text: "可玩顏色尋寶、顏色配對或「紅色去」遊戲。", source: "Requirement draft" }, { requirementIndex: 3, text: "用不同顏色紙張、顏料或拼貼製作彩虹或顏色手工。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4007-crayons-and-markers",
@@ -1065,7 +1065,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "蠟筆以石蠟、顏料等製成；八種主要顏色通常為：紅、橙、黃、綠、藍、紫、黑、白（或棕）。", source: "Requirement draft" }, { requirementIndex: 1, text: "蠟筆主要由石蠟和顏料混合製成。", source: "Requirement draft" }, { requirementIndex: 2, text: "遇熱會軟化或融化，顏色可能混色；因此不要長時間曝曬或靠近熱源。", source: "Requirement draft" }, { requirementIndex: 3, text: "舊約聖經人物約瑟（創世記 37），他有一件彩色外衣。", source: "Requirement draft" }, { requirementIndex: 4, text: "為約瑟和他的彩衣填色或繪畫，可參考創世記 37 章故事。", source: "Requirement draft" }, { requirementIndex: 5, text: "用箱頭筆自由創作一幅圖畫，注意蓋回筆蓋。", source: "Requirement draft" }, { requirementIndex: 6, text: "筆蓋防止墨水乾涸，也避免顏色弄污其他地方。", source: "Requirement draft" }, { requirementIndex: 7, text: "應在紙上、畫板上使用；不應在牆壁、傢具、衣物或書本上使用。", source: "Requirement draft" }, { requirementIndex: 8, text: "用厚紙或文件夾製作封面，貼上自己的照片，用蠟筆或箱頭筆裝飾。", source: "Requirement draft" }, { requirementIndex: 9, text: "從下列 a-e 中選兩項，用蠟筆或箱頭筆完成填色或繪畫。", source: "Requirement draft" }, { requirementIndex: 10, text: "可畫常見動物或雀鳥，例如：貓、狗、麻雀。", source: "Requirement draft" }, { requirementIndex: 11, text: "可畫耶穌與孩子們一起的場景。", source: "Requirement draft" }, { requirementIndex: 12, text: "用七色或漸層填色畫彩虹。", source: "Requirement draft" }, { requirementIndex: 13, text: "把手放在紙上描邊，再為手形填色。", source: "Requirement draft" }, { requirementIndex: 14, text: "畫出自己的房子外觀，可加門窗和家人。", source: "Requirement draft" }, { requirementIndex: 15, text: "認識並說出九種顏色，例如：紅、橙、黃、綠、藍、紫、黑、白、粉。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4008-finger-play",
@@ -1078,7 +1078,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "您可以將此要求用於許多不同的策略/目的。例如，如果您的目標是讚揚洗手，您可以使用storyjumper.com線上書籍故事（http://www.storyjumper.com/book/index/6307852/Hand-Washing）或使用您最喜歡的搜尋引擎尋找「兒童洗手故事」。關於手的討論可以在孩子們製作工藝品之前甚至同時進行（#4）。與孩子討論他們的手在做什麼（著色、繪畫、手指移動、手指觸摸、抓手等）。問他們手還可以幫助他們做哪些事（拍手、揮手、彈鋼琴、擁抱等）。您也可以利用這個機會幫助孩子數手指，觀察他們的手上有堅硬的指甲、柔軟的皮膚和強壯的肌肉。他們也可以將自己的手與其他孩子或成人的手進行比較（較小、較大、較淺、較深、手指長、手指短等）", source: "Award Book 2020" }, { requirementIndex: 1, text: "給每個成年人一張卡片，上面寫有關於手指和手的事實。讓孩子們從一個成年人「走跑」到另一個成年人（成年人坐在/跪在房間的不同地方）並「收集」有關手指和手的事實。每次他們可以告訴不同的成年人他們學到的東西時，他們都會得到「高五」（成人和兒童各自用一隻手觸摸另一隻手，手掌相對。這很像拍手）。一些簡單的手指事實：我們有四個手指和一個相對的（例如 op-oh-zab-el）拇指。對立意味著它可以向手指移動並幫助它們完成工作。每個手指有 3 塊骨頭，拇指有兩塊骨頭 手上有 27 塊骨頭 醫生稱手指為手指或指骨 有 2 組主要的肌肉和肌腱。屈肌使手指和拇指彎曲，伸肌再次將它們伸直。", source: "Award Book 2020" }, { requirementIndex: 2, text: "手指遊戲是一種常用的幼兒教育方法，可以幫助孩子記憶詩歌、聖經經文和歌曲。它非常有效，因為孩子不僅用聲音學習，也用身體學習。可搜尋「finger plays nursery kindergarten children」找相關書籍；Gracelink 課程也常用手指遊戲幫助背誦經文。教學示例：手是為了愛（手指在空中畫心形）、手是為了分享（假裝把東西給別人）、手是為了工作（右拳輕敲左拳像錘釘子）、手是為了關懷（拍手鼓勵）；手可以保護，手可以防禦（雙手做成盾牌）。", source: "Award Book 2020" }, { requirementIndex: 3, text: "用手指畫、手掌畫或指印製作與手有關的手工。", source: "Requirement draft" }, { requirementIndex: 4, text: "用積木、揉麵團或串珠等手指活動完成一項任務。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（PDF 僅有部分 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4010-jigsaw-puzzles",
@@ -1091,7 +1091,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "從雜誌剪下大圖，貼於厚卡紙後剪成不同形狀的三片拼圖。", source: "Award Book 2020" }, { requirementIndex: 1, text: "與同伴或家人一起完成拼圖遊戲，練習耐心與合作。", source: "Requirement draft" }, { requirementIndex: 2, text: "購買或借用較大的拼圖，與成人一起完成。", source: "Requirement draft" }, { requirementIndex: 3, text: "畫一幅圖填色，裱褙後剪成較大塊的拼圖。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4011-music-i",
@@ -1104,7 +1104,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "選一本關於音樂家或樂器的繪本，由家長或導師朗讀。", source: "Requirement draft" }, { requirementIndex: 1, text: "用紙碟、豆或橡皮筋製作簡單樂器或音樂主題手工。", source: "Requirement draft" }, { requirementIndex: 2, text: "參與拍手或節奏遊戲，例如模仿節奏、輪流拍子。", source: "Requirement draft" }, { requirementIndex: 3, text: "跟著音樂做動作，例如隨歌曲節拍拍球或踏步。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4012-shapes-and-sizes",
@@ -1117,7 +1117,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "製作剪貼簿，在封面畫出不同大小的形狀。", source: "Requirement draft" }, { requirementIndex: 1, text: "長方形、正方形、圓形、橢圓形、菱形和三角形。", source: "Requirement draft" }, { requirementIndex: 2, text: "用不同形狀紙張拼成圖案，放入剪貼簿。", source: "Requirement draft" }, { requirementIndex: 3, text: "到户内外尋找不同形狀，記錄哪些形狀最常見。", source: "Requirement draft" }, { requirementIndex: 4, text: "用積木或物品比較小、中、大，並用實物排序。", source: "Requirement draft" }, { requirementIndex: 5, text: "用積木玩比大小遊戲，問「哪個更大/最大/更小/最小？」", source: "Requirement draft" }, { requirementIndex: 6, text: "畫出含不同大小物件的圖畫並填色。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4013-sponge-art",
@@ -1130,7 +1130,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "用塑料海綿剪成不同形狀，蘸顏料在厚卡紙上印畫。", source: "Requirement draft" }, { requirementIndex: 1, text: "測試海綿能否站立、堆疊，並按顏色或形狀分類。", source: "Requirement draft" }, { requirementIndex: 2, text: "用海綿和工藝膠製作動物或物件。", source: "Requirement draft" }, { requirementIndex: 3, text: "用海綿蘸顏料創作自己的海綿畫。", source: "Requirement draft" }, { requirementIndex: 4, text: "選 a-c 其中一項：為名字周圍印畫裝飾、印動物或印最喜歡的玩具。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4014-stamping-fun-i",
@@ -1143,7 +1143,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "把蘋果、馬鈴薯或青瓜切半，蘸顏料或印泥在紙上蓋印。", source: "Requirement draft" }, { requirementIndex: 1, text: "用布碎、皺紙、氣球或海綿蘸顏料，嘗試不同紋理的蓋印效果。", source: "Requirement draft" }, { requirementIndex: 2, text: "用印章或自製圖章蓋出正方形、圓形和三角形圖案。", source: "Requirement draft" }, { requirementIndex: 3, text: "收集貝殼、樹枝、樹葉等天然物件，蘸顏料後在紙上蓋印。", source: "Requirement draft" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案按中文要求草擬（英文 Award Book 2020 未有 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4910-stamping-fun-ii",
@@ -1156,7 +1156,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "聖經；上帝的第二本書是大自然。", source: "Award Book 2020" }, { requirementIndex: 4, text: "新約中保羅、雅各、彼得和猶大曾寫信給朋友或教會。", source: "Award Book 2020" }, { requirementIndex: 5, text: "可用橡皮章製作賀卡、書籤、標籤、包裝紙、禮物袋和剪貼簿等。", source: "Award Book 2020" }, { requirementIndex: 6, text: "基本材料：白卡或色紙、橡皮章、印台、印台海綿、棉花棒、印章清潔劑、粉筆、馬克筆、水彩筆、膠棒、雙面膠、閃粉、打孔器等。", source: "Award Book 2020" }, { requirementIndex: 7, text: "示範二段式圖印、粉筆修飾、馬克筆上色、水彩筆混色及遮蓋圖印等技巧。", source: "Award Book 2020" }, { requirementIndex: 13, text: "每次使用後清潔印章，尤其換色時；可用印章清潔液或無酒精濕紙巾，切勿長時間浸泡或使用油性溶劑。", source: "Award Book 2020" }, { requirementIndex: 14, text: "製作三份不同設計的圖章作品送給朋友或家人。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4510-artist",
@@ -1169,7 +1169,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "藝術家是自稱並實踐創意藝術的人。與孩子討論他們是什麼類型的藝術家。他們唱歌、演奏樂器、畫畫、表演、做手工等等嗎？從不同的角度來說，我們都是藝術家。", source: "Award Book 2020" }, { requirementIndex: 1, text: "紅、黃、藍是原色。紅色和黃色混合可以得到橙色；混合黃色和藍色變成綠色；混合藍色和紅色得到紫色。", source: "Award Book 2020" }, { requirementIndex: 2, text: "教如何削鉛筆。徹底用力清潔刷。強調處理鉛筆和畫筆的安全。", source: "Award Book 2020" }, { requirementIndex: 3, text: "使用手指顏料或毛氈記號筆時，請穿戴防護罩或舊衣服。鼓勵創造力。", source: "Award Book 2020" }, { requirementIndex: 4, text: "鼓勵創意設計。教導孩子在專案完成後進行清理。工藝書籍或您當地的圖書館將提供有用的資源。", source: "Award Book 2020" }, { requirementIndex: 5, text: "邀請函或海報可以在冒險家會議或教會活動等介紹。製作一張卡片、書籤或其他可以作為禮物送給老年人或居家人士（被限制在家中的人）的物品。籃子機", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4560-building-blocks",
@@ -1182,7 +1182,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "當你回顧故事時，強調所建造的物品，並鼓勵孩子討論聖經人物所做的選擇。一個。上帝吩咐諾亞要建造方舟。諾亞花了120年才建造了方舟，他在方舟上生活了一年多。補充：方舟有多大？使用長捲尺來找出答案。 b.巴別塔——上帝知道對當時的人們來說最好的事情就是住在帳篷裡，這樣他們就可以分佈在地球上——而不是建造巴別塔。 c.亞伯蘭的家是一個帳篷。額外：用床單和椅子製作亞伯蘭的帳篷。 d.上帝要求摩西建造一個可移動的聖幕。 e.神吩咐所羅門在耶路撒冷建造會幕。 f.神把約瑟和馬利亞送到馬廄。 g。在登山寶訓的最後，耶穌提到一個人先在磐石上打下堅固的根基，從而建造了一座房子。 h.神希望你住在祂在天上為你建造的房子裡。", source: "Award Book 2020" }, { requirementIndex: 1, text: "您可能會問的問題：您用什麼材料建造？你怎麼知道在哪裡建造？這個工具是用來做什麼的？要成為一名優秀的建造者，您需要學習什麼？替代方案：前往建築工地，採訪工人並詢問有關建築物的問題。", source: "Award Book 2020" }, { requirementIndex: 2, text: "分享選擇的方式（您可以團隊合作）：在海報上畫一堵磚牆，並在每塊磚上寫下一個選擇或特徵。 b.模仿或表演一個選擇。 c.用繪畫、素描、雕塑或電腦、錄像或相機來說明一個選擇。 d.唱一首描述良好性格塑造選擇的歌。 e.私下寫一首詩或日記，反思你的選擇。", source: "Award Book 2020" }, { requirementIndex: 3, text: "帶上寶石來觸摸、觀看或展示新耶路撒冷的圖片。", source: "Award Book 2020" }, { requirementIndex: 4, text: "可以使用任何類型的建築材料，例如樂高、林肯原木或修補玩具等玩具，或工藝棒、橡皮泥、泡棉板或建築紙。也可以使用真實的建築材料，例如棍棒、稻草、泥土或磚塊。建築類型的建議：聖經建築、你的家、學校、最喜歡的商店、教會、想像中的天堂之家。支持答案", source: "Award Book 2020" }, { requirementIndex: 5, text: "教導孩子們製作自己的紙飛機。為它們上色或裝飾，並享受飛行的樂趣。舉辦比賽，看看哪一架飛得最遠、最長等。", source: "Award Book 2020" }, { requirementIndex: 6, text: "您可能希望使用簡單的輕木套件或從頭開始製作自己的套件。請每個孩子在他/她的滑翔機上寫上他/她的名字或縮寫。駕駛滑翔機並記錄最長的飛行。", source: "Award Book 2020" }, { requirementIndex: 7, text: "製作一個簡單、標準的風箏。製作和放風箏時請家人幫忙。切勿在電線、建築物、樹木或人群附近放風箏。使用堅固的繩子並閱讀購買的風箏上的說明。", source: "Award Book 2020" }, { requirementIndex: 8, text: "參觀動物園或觀賞有關鳥類、昆蟲、蝙蝠、松鼠、魚類等的影片。", source: "Award Book 2020" }, { requirementIndex: 9, text: "討論每張圖片，讓孩子說出為什麼他/她喜歡他/她畫的特定生物。", source: "Award Book 2020" }, { requirementIndex: 10, text: "啟示錄 14:6。 We do not know exactly how the angels fly, but we are told that the children will fly from place to place with the angels.這是多麼美好的應許啊！", source: "Award Book 2020" }, { requirementIndex: 11, text: "講述或閱讀適合年齡的萊特兄弟的故事。解釋他們如何沒有放棄而是不斷嘗試，直到他們真正能夠駕駛飛機。堅持得到了回報！", source: "Award Book 2020" }, { requirementIndex: 12, text: "給孩子玩填字遊戲或類似的遊戲來說明飛行類型。按鈕", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4570-buttons",
@@ -1195,7 +1195,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "使用我們選擇的容器，例如燕麥盒、罐頭、鞋盒或布袋。用紐帶、油漆、紙張等裝飾。", source: "Award Book 2020" }, { requirementIndex: 1, text: "向家人、朋友和教會成員索取按鈕。", source: "Award Book 2020" }, { requirementIndex: 2, text: "一些建議是：在衣服上縫紐扣，將紐扣粘在框架上，在厚卡片紙上打孔，然後在背面固定一個紐扣，以製作一張卡片來發送某人或顯示紐扣。縫上小連結來裝飾餐巾、餐墊或餐巾環。在布料上印上圖案並添加連結。有關更多羈扣工藝品，請參閱「資源」。", source: "Award Book 2020" }, { requirementIndex: 3, text: "孩子們都站（或坐）成一圈，伸出雙手，掌心併攏。一個孩子拿起一顆紐扣，繞圈一圈，將自己的手一一放在其他人的手中。在一個人的手中，他們放下了按鈕，儘管他們繼續將自己的手放在其他人的手中，這樣除了給予者和接受者之外，沒有人知道按鈕在哪裡。領隊開始讓其他孩子猜，「按鈕，按鈕，誰拿到了按鈕？」在每個孩子猜測之前。猜測的孩子回答他們的選擇，例如「比利有按鈕！」如果您有按鈕，您可以選擇其他人，這樣就沒有人知道是您了。一旦最終猜出帶有按鈕的孩子，該孩子就是分發按鈕並開始新一輪的人。", source: "Award Book 2020" }, { requirementIndex: 4, text: "重要的是要讓這成為一個分享活動並避免競爭。建議：組建團隊，為每個團隊提供特定數量的按鈕和特定的設計，但他們可以選擇與其他團隊交換按鈕來完成他們的項目，這讓他們有一種與他人分享的感覺。", source: "Award Book 2020" }, { requirementIndex: 5, text: "談論孩子們如何透過與他人分享來像耶穌一樣。木匠", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "hka4009-gadgets-and-sand",
@@ -1208,7 +1208,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "使用大米作為沙子的替代品。讓孩子隨心所欲地測量、傾倒和舀取。這可以培養眼睛和手的協調能力以及手的靈活性，孩子們喜歡在沙子裡玩耍。", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯（PDF 僅有第 1 項 Supporting Answers）",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4795-media-critic",
@@ -1221,7 +1221,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "媒體是接觸大量人群的傳播形式，例如報紙和雜誌、電視、電影和錄像、書籍、廣播和音樂錄音。向冒險家解釋，任何形式的媒體本身都是中立的，它可以用來做好事，也可以用來做壞事。說明在當今社會，兒童和成人都會受到媒體訊息的轟炸；我們很難避免受到所見、所聞、所讀的影響。這就是為什麼學會透過選擇好的和有幫助的東西來控制媒體很重要。", source: "Award Book 2020" }, { requirementIndex: 1, text: "一起閱讀腓立比書 4 章 8 節，並鼓勵冒險家將其用作選擇自己所見所聞的指南。與冒險家解釋和討論這些原則，並要求他們告訴你他們從這節聖經經文中學到了什麼。", source: "Award Book 2020" }, { requirementIndex: 2, text: "教導冒險家注意與耶穌相處的時間與花在世俗活動上的時間相比。幫助每個孩子製作一個圖表來追蹤他或她至少兩週的觀看和閱讀活動。", source: "Award Book 2020" }, { requirementIndex: 3, text: "鼓勵冒險家選擇他們認為符合腓立比書 4:8 標準的故事或節目。幫助他們明白，你不能總是透過閱讀評論或廣告來判斷它是否符合耶穌的標準。當您開始閱讀或觀看時，如果不合適，請停止！找點別的東西。鼓勵孩子做出正確的選擇。", source: "Award Book 2020" }, { requirementIndex: 4, text: "早期選擇可以幫助我們意識到我們在這些活動上花了多少時間，並幫助我們更有選擇性。", source: "Award Book 2020" }, { requirementIndex: 5, text: "當冒險家完成故事時，強化良好的閱讀和觀看習慣的原則。鼓勵想像力！", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4800-music-ii",
@@ -1234,7 +1234,7 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "耶穌會聽這個音樂嗎？音樂榮耀上帝嗎？閱讀《給年輕人的訊息》第 292-296 頁，並與冒險家分享您所讀到的概念。", source: "Award Book 2020" }, { requirementIndex: 1, text: "例如鋼琴、小號、單簧管、鈸、長笛、薩克斯風等。鼓勵使用您所在地區常用的樂器。", source: "Award Book 2020" }, { requirementIndex: 2, text: "使用冒險家繪製的樂器圖片或從雜誌上剪下的樂器圖片來製作海報或拼貼。", source: "Award Book 2020" }, { requirementIndex: 3, text: "一些例子是：出埃及記 28:33, 34 – 鐘聲 b.列王紀上 10:12 – 豎琴以賽亞書 30:29 - 長笛歷代誌上 15:16 – 鐃鈸以賽亞書 5:12 – 單簧管 f.民數記 10:1-10 – 民角書", source: "Award Book 2020" }, { requirementIndex: 4, text: "練習和演奏簡單的樂器，如豎笛、卡祖笛、口琴等，或鋼琴、小提琴或其他孩子正在學習演奏的樂器。讓這件事變得有趣。對於那些音樂能力較差但可以享受快樂噪音的人來說，可以使用簡單的樂器。創作您自己的樂器。", source: "Award Book 2020" }, { requirementIndex: 5, text: "一起學習兩首新歌並為他人演唱或演奏，或使用節奏樂器或廚房用具一起創作「音樂」。一起演奏並練習為他人演奏。我的繪本", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4810-my-picture-book",
@@ -1247,6 +1247,6 @@ export const adventurerHonors: AdventurerHonor[] = [
     answers: [ { requirementIndex: 0, text: "建立一本家庭圖畫書或選擇任何主題、物件或主題作為您的書的基礎。包括照片、雜誌圖片和/或圖畫。", source: "Award Book 2020" }, { requirementIndex: 1, text: "使用各種材料來裝飾書本，例如：彩色或印刷紙、貼紙、打孔、裝飾剪刀、扣環、泡棉剪紙、裝飾品、珠子等。", source: "Award Book 2020" }, { requirementIndex: 2, text: "提供圖片的簡短描述。", source: "Award Book 2020" }, { requirementIndex: 3, text: "可選擇不同的聖經版本，如KJV、NKJV、Clear Word等。", source: "Award Book 2020" }, { requirementIndex: 4, text: "與家人、俱樂部、學校或朋友分享您的書。明信片", source: "Award Book 2020" } ],
     sourceUrls: ["https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/artscrafts/"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
 ];

@@ -16,7 +16,7 @@ const honors: AdventurerHonor[] = [
     answers: [{ requirementIndex: 0, text: "用字母卡認識 A 至 Z。", source: "Award Book 2020" }],
     sourceUrls: ["https://example.com/household"],
     answerSource: "答案由英文 Award Book 2020 整理/翻譯",
-    status: "complete",
+    status: "non-review",
   },
   {
     id: "you4920-swimming-ii",
@@ -29,7 +29,7 @@ const honors: AdventurerHonor[] = [
     answers: [],
     sourceUrls: ["https://example.com/recreation"],
     answerSource: "答案待核對",
-    status: "needs-review",
+    status: "reviewed",
   },
 ];
 
@@ -54,11 +54,11 @@ describe("AdventurerHonorsClient", () => {
   test("shows handbook and category source links on the overview page", () => {
     render(<AdventurerHonorsClient honors={honors} />);
 
-    expect(screen.getByRole("link", { name: /中文榮譽證手冊/ })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /中文榮譽證手冊（HKMC 2023）/ })).toHaveAttribute(
       "href",
       expect.stringMatching(/完整版\.pdf/),
     );
-    expect(screen.getByRole("link", { name: /英文 Award Book 2020/ })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /英文榮譽證手冊（GC 2020）/ })).toHaveAttribute(
       "href",
       expect.stringMatching(/Award-Book-2020\.pdf/),
     );
@@ -72,16 +72,74 @@ describe("AdventurerHonorsClient", () => {
     );
   });
 
-  test("shows only the matching HKMC category link when a filter is selected", () => {
+  test("shows only the matching HKMC category link when categories are selected", () => {
     render(<AdventurerHonorsClient honors={honors} />);
 
-    fireEvent.click(screen.getByRole("button", { name: "康樂活動" }));
+    fireEvent.click(screen.getByLabelText("康樂活動"));
 
     expect(screen.queryByRole("link", { name: /家事技藝/ })).not.toBeInTheDocument();
     expect(screen.getByRole("link", { name: /康樂活動/ })).toHaveAttribute(
       "href",
       expect.stringMatching(/recreation/),
     );
+  });
+
+  test("shows review status tags on honor cards", () => {
+    render(<AdventurerHonorsClient honors={honors} />);
+
+    expect(screen.getByRole("button", { name: /HKA4015/ })).toHaveTextContent("待核對");
+    expect(screen.getByRole("button", { name: /YOU4920/ })).toHaveTextContent("已核對");
+  });
+
+  test("sorts honors by selected field", () => {
+    render(<AdventurerHonorsClient honors={honors} />);
+
+    fireEvent.change(screen.getByLabelText("排序"), { target: { value: "nameZh" } });
+
+    const cards = screen.getAllByRole("button", { name: /HKA4015|YOU4920/ });
+    expect(cards[0]).toHaveTextContent("HKA4015");
+    expect(cards[1]).toHaveTextContent("YOU4920");
+  });
+
+  test("filters honors by review status from the desktop checklist", () => {
+    render(<AdventurerHonorsClient honors={honors} />);
+
+    fireEvent.click(document.getElementById("honor-review-status-desktop-reviewed")!);
+
+    expect(screen.queryByRole("button", { name: /HKA4015/ })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /YOU4920/ })).toBeInTheDocument();
+  });
+
+  test("opens mobile review dropdown before filtering by review status", () => {
+    render(<AdventurerHonorsClient honors={honors} />);
+
+    fireEvent.click(screen.getByRole("button", { name: "全部狀態" }));
+    fireEvent.click(document.getElementById("honor-review-status-mobile-reviewed")!);
+
+    expect(screen.queryByRole("button", { name: /HKA4015/ })).not.toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /YOU4920/ })).toBeInTheDocument();
+  });
+
+  test("closes mobile filter dropdowns when clicking outside", () => {
+    render(<AdventurerHonorsClient honors={honors} />);
+
+    fireEvent.click(screen.getByRole("button", { name: "全部分類" }));
+    expect(document.getElementById("honor-category-menu-mobile")).toBeInTheDocument();
+
+    fireEvent.pointerDown(screen.getByRole("button", { name: /HKA4015/ }));
+    expect(document.getElementById("honor-category-menu-mobile")).not.toBeInTheDocument();
+  });
+
+  test("clears mobile category filter without opening the dropdown", () => {
+    render(<AdventurerHonorsClient honors={honors} />);
+
+    fireEvent.click(screen.getByLabelText("康樂活動"));
+    expect(screen.queryByRole("button", { name: /HKA4015/ })).not.toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole("button", { name: "清除分類" }));
+
+    expect(screen.getByRole("button", { name: /HKA4015/ })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /YOU4920/ })).toBeInTheDocument();
   });
 
   test("opens a modal when a honor card is clicked", () => {
@@ -91,7 +149,7 @@ describe("AdventurerHonorsClient", () => {
 
     expect(screen.getByRole("dialog")).toBeInTheDocument();
     expect(screen.getByRole("dialog")).toHaveTextContent("家事技藝");
-    expect(screen.getByRole("link", { name: /下載 Word 榮譽證/ })).toHaveAttribute(
+    expect(screen.getByRole("link", { name: /中文 Word（HKMC 2023）/ })).toHaveAttribute(
       "href",
       expect.stringMatching(/\.docx/i),
     );

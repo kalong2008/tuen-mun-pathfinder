@@ -1,10 +1,13 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { Download, ExternalLink, FileText, X } from "lucide-react";
+import { ChevronDown, Download, ExternalLink, X } from "lucide-react";
+import { FaFilePdf, FaFileWord } from "react-icons/fa";
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
+import { getHonorCategoryColors } from "@/app/adventurer-honors/honor-category-colors";
+import { getHonorReviewStatusColors } from "@/app/adventurer-honors/honor-review-status-colors";
 import { getHonorDownloadUrl } from "@/app/adventurer-honors/honor-downloads";
 import { honorHandbooks } from "@/app/adventurer-honors/honor-handbooks";
 import { getHonorPdfLinks } from "@/app/adventurer-honors/honor-pdf-pages";
@@ -12,11 +15,53 @@ import { HonorAnswerContent } from "@/app/adventurer-honors/HonorAnswerContent";
 import { HonorRequirementsList } from "@/app/adventurer-honors/HonorRequirementsList";
 import { getHonorImageUrl } from "@/app/adventurer-honors/honor-images";
 import { filterHonors, getAnswerSourceLabel } from "@/app/adventurer-honors/honor-search";
+import { sortHonorsByField, type HonorSortField } from "@/app/adventurer-honors/honor-sort";
 import {
   honorCategories,
+  honorReviewStatuses,
   type AdventurerHonor,
-  type HonorCategoryFilter,
+  type HonorCategory,
+  type HonorStatus,
 } from "@/app/adventurer-honors/types";
+
+const sortOptions: { value: HonorSortField; label: string }[] = [
+  { value: "default", label: "手冊分類及級別" },
+  { value: "nameZh", label: "中文名稱" },
+  { value: "nameEn", label: "英文名稱" },
+  { value: "code", label: "編號" },
+];
+
+function HonorCategoryTag({ category }: { category: HonorCategory }) {
+  const label = honorCategories.find((item) => item.id === category)?.label;
+  const colors = getHonorCategoryColors(category);
+
+  if (!label) {
+    return null;
+  }
+
+  return (
+    <span
+      className="rounded-full px-2.5 py-0.5 text-xs font-medium"
+      style={{ backgroundColor: colors.badgeBg, color: colors.badgeText }}
+    >
+      {label}
+    </span>
+  );
+}
+
+function HonorReviewTag({ honor }: { honor: AdventurerHonor }) {
+  const colors = getHonorReviewStatusColors(honor.status);
+  const label = honor.status === "reviewed" ? "已核對" : "待核對";
+
+  return (
+    <span
+      className="rounded-full px-2 py-0.5 text-[10px] font-medium"
+      style={{ backgroundColor: colors.badgeBg, color: colors.badgeText }}
+    >
+      {label}
+    </span>
+  );
+}
 
 function HonorBadge({
   honor,
@@ -83,7 +128,6 @@ function HonorModal({
 }) {
   const downloadUrl = getHonorDownloadUrl(honor.code, honor.aliases);
   const pdfLinks = getHonorPdfLinks(honor.code, honor.aliases);
-  const categoryLabel = honorCategories.find((item) => item.id === honor.category)?.label;
 
   useEffect(() => {
     const previousOverflow = document.body.style.overflow;
@@ -139,11 +183,8 @@ function HonorModal({
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-sm font-semibold text-blue-700">{honor.code}</p>
-              {categoryLabel ? (
-                <span className="rounded-full bg-gray-100 px-2.5 py-0.5 text-xs font-medium text-gray-700">
-                  {categoryLabel}
-                </span>
-              ) : null}
+              <HonorReviewTag honor={honor} />
+              <HonorCategoryTag category={honor.category} />
             </div>
             <h2 id="honor-modal-title" className="text-xl font-semibold text-gray-900">
               {honor.nameZh}
@@ -158,8 +199,8 @@ function HonorModal({
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium text-blue-700 underline-offset-4 hover:text-blue-900 hover:underline"
                   >
-                    <Download className="h-4 w-4" aria-hidden="true" />
-                    下載 Word 榮譽證
+                    <FaFileWord className="h-4 w-4" aria-hidden="true" />
+                    中文 Word（HKMC 2023）
                   </a>
                 )}
                 {pdfLinks.zh && (
@@ -169,8 +210,8 @@ function HonorModal({
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium text-blue-700 underline-offset-4 hover:text-blue-900 hover:underline"
                   >
-                    <FileText className="h-4 w-4" aria-hidden="true" />
-                    中文手冊 PDF
+                    <FaFilePdf className="h-4 w-4" aria-hidden="true" />
+                    中文 PDF（HKMC 2023）
                   </a>
                 )}
                 {pdfLinks.en && (
@@ -180,8 +221,8 @@ function HonorModal({
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-sm font-medium text-blue-700 underline-offset-4 hover:text-blue-900 hover:underline"
                   >
-                    <FileText className="h-4 w-4" aria-hidden="true" />
-                    英文 Award Book PDF
+                    <FaFilePdf className="h-4 w-4" aria-hidden="true" />
+                    英文 PDF （GC 2020）
                   </a>
                 )}
               </div>
@@ -197,27 +238,400 @@ function HonorModal({
   );
 }
 
+function HonorSortSelect({
+  sortField,
+  onChange,
+}: {
+  sortField: HonorSortField;
+  onChange: (value: HonorSortField) => void;
+}) {
+  return (
+    <div className="mb-3 flex items-center justify-end gap-2">
+      <label htmlFor="honor-sort" className="text-sm text-gray-700">
+        排序
+      </label>
+      <select
+        id="honor-sort"
+        value={sortField}
+        onChange={(event) => onChange(event.target.value as HonorSortField)}
+        className="bg-transparent text-sm text-gray-700"
+      >
+        {sortOptions.map((option) => (
+          <option key={option.value} value={option.value} className="bg-transparent">
+            {option.label}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}
+
+function CategoryChecklist({
+  selectedCategories,
+  onToggle,
+  idPrefix,
+}: {
+  selectedCategories: HonorCategory[];
+  onToggle: (category: HonorCategory) => void;
+  idPrefix: string;
+}) {
+  return (
+    <ul className="space-y-2">
+      {honorCategories.map((option) => {
+        const inputId = `${idPrefix}-${option.id}`;
+        const colors = getHonorCategoryColors(option.id);
+
+        return (
+          <li key={option.id}>
+            <label htmlFor={inputId} className="flex cursor-pointer items-center gap-2 text-sm text-gray-700">
+              <input
+                id={inputId}
+                type="checkbox"
+                checked={selectedCategories.includes(option.id)}
+                onChange={() => onToggle(option.id)}
+                className="h-4 w-4 rounded border-gray-300 text-blue-700 focus:ring-blue-500"
+              />
+              <span
+                aria-hidden="true"
+                className="h-2.5 w-2.5 shrink-0 rounded-full"
+                style={{ backgroundColor: colors.accent }}
+              />
+              <span>{option.label}</span>
+            </label>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function ReviewStatusChecklist({
+  selectedReviewStatuses,
+  onToggle,
+  idPrefix,
+}: {
+  selectedReviewStatuses: HonorStatus[];
+  onToggle: (status: HonorStatus) => void;
+  idPrefix: string;
+}) {
+  return (
+    <ul className="space-y-2">
+      {honorReviewStatuses.map((option) => {
+        const inputId = `${idPrefix}-${option.id}`;
+
+        return (
+          <li key={option.id}>
+            <label htmlFor={inputId} className="flex cursor-pointer items-center gap-2 text-sm text-gray-700">
+              <input
+                id={inputId}
+                type="checkbox"
+                checked={selectedReviewStatuses.includes(option.id)}
+                onChange={() => onToggle(option.id)}
+                className="h-4 w-4 rounded border-gray-300 text-blue-700 focus:ring-blue-500"
+              />
+              <span>{option.label}</span>
+            </label>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+function HonorFiltersPanel({
+  query,
+  onQueryChange,
+  selectedCategories,
+  onToggleCategory,
+  onClearCategories,
+  categoryMenuOpen,
+  onCategoryMenuOpenChange,
+  selectedReviewStatuses,
+  onToggleReviewStatus,
+  onClearReviewStatuses,
+  reviewMenuOpen,
+  onReviewMenuOpenChange,
+}: {
+  query: string;
+  onQueryChange: (value: string) => void;
+  selectedCategories: HonorCategory[];
+  onToggleCategory: (category: HonorCategory) => void;
+  onClearCategories: () => void;
+  categoryMenuOpen: boolean;
+  onCategoryMenuOpenChange: (open: boolean) => void;
+  selectedReviewStatuses: HonorStatus[];
+  onToggleReviewStatus: (status: HonorStatus) => void;
+  onClearReviewStatuses: () => void;
+  reviewMenuOpen: boolean;
+  onReviewMenuOpenChange: (open: boolean) => void;
+}) {
+  const categorySummary =
+    selectedCategories.length === 0
+      ? "全部分類"
+      : honorCategories
+          .filter((option) => selectedCategories.includes(option.id))
+          .map((option) => option.label)
+          .join("、");
+
+  const reviewSummary =
+    selectedReviewStatuses.length === 0
+      ? "全部狀態"
+      : honorReviewStatuses
+          .filter((option) => selectedReviewStatuses.includes(option.id))
+          .map((option) => option.label)
+          .join("、");
+
+  const mobileFilterButtonClass =
+    "flex min-w-0 flex-1 items-center justify-between gap-1 rounded-xl border border-gray-300 px-2.5 py-2.5 text-left text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100";
+
+  const mobileFilterClearButtonClass =
+    "shrink-0 rounded-xl px-2.5 py-2.5 text-xs font-medium text-blue-700 hover:text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:text-gray-400";
+
+  const filterClearButtonClass =
+    "text-xs font-medium text-blue-700 hover:text-blue-900 disabled:cursor-not-allowed disabled:text-gray-400";
+
+  const mobileFiltersRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!categoryMenuOpen && !reviewMenuOpen) {
+      return;
+    }
+
+    const handlePointerDown = (event: PointerEvent) => {
+      const target = event.target;
+      if (!(target instanceof Node) || mobileFiltersRef.current?.contains(target)) {
+        return;
+      }
+
+      onCategoryMenuOpenChange(false);
+      onReviewMenuOpenChange(false);
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [categoryMenuOpen, reviewMenuOpen, onCategoryMenuOpenChange, onReviewMenuOpenChange]);
+
+  return (
+    <div className="space-y-4 rounded-2xl bg-white p-4 shadow-sm lg:sticky lg:top-[84px] lg:space-y-5">
+      <div>
+        <label htmlFor="honor-search" className="block text-sm font-medium text-gray-700">
+          搜尋榮譽證
+        </label>
+        <input
+          id="honor-search"
+          value={query}
+          onChange={(event) => onQueryChange(event.target.value)}
+          className="mt-2 w-full rounded-xl border border-gray-300 px-4 py-2.5 text-sm text-gray-700 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
+          placeholder="搜尋 code、中文名、英文名、要求或答案"
+        />
+      </div>
+
+      <div ref={mobileFiltersRef} className="relative lg:static">
+        <div className="flex gap-2 lg:hidden">
+          <div className="flex min-w-0 flex-1 items-stretch gap-1">
+            <button
+              type="button"
+              aria-expanded={categoryMenuOpen}
+              aria-controls="honor-category-menu-mobile"
+              onClick={() => {
+                onCategoryMenuOpenChange(!categoryMenuOpen);
+                if (!categoryMenuOpen) {
+                  onReviewMenuOpenChange(false);
+                }
+              }}
+              className={mobileFilterButtonClass}
+            >
+              <span className="truncate">{categorySummary}</span>
+              <ChevronDown
+                className={`h-4 w-4 shrink-0 text-gray-500 transition ${categoryMenuOpen ? "rotate-180" : ""}`}
+                aria-hidden="true"
+              />
+            </button>
+            <button
+              type="button"
+              onClick={onClearCategories}
+              disabled={selectedCategories.length === 0}
+              aria-label="清除分類"
+              className={mobileFilterClearButtonClass}
+            >
+              清除
+            </button>
+          </div>
+
+          <div className="flex min-w-0 flex-1 items-stretch gap-1">
+            <button
+              type="button"
+              aria-expanded={reviewMenuOpen}
+              aria-controls="honor-review-menu-mobile"
+              onClick={() => {
+                onReviewMenuOpenChange(!reviewMenuOpen);
+                if (!reviewMenuOpen) {
+                  onCategoryMenuOpenChange(false);
+                }
+              }}
+              className={mobileFilterButtonClass}
+            >
+              <span className="truncate">{reviewSummary}</span>
+              <ChevronDown
+                className={`h-4 w-4 shrink-0 text-gray-500 transition ${reviewMenuOpen ? "rotate-180" : ""}`}
+                aria-hidden="true"
+              />
+            </button>
+            <button
+              type="button"
+              onClick={onClearReviewStatuses}
+              disabled={selectedReviewStatuses.length === 0}
+              aria-label="清除核對狀態"
+              className={mobileFilterClearButtonClass}
+            >
+              清除
+            </button>
+          </div>
+        </div>
+
+        {categoryMenuOpen ? (
+          <div
+            id="honor-category-menu-mobile"
+            className="absolute left-0 right-0 top-full z-30 mt-2 max-h-64 overflow-y-auto rounded-xl border border-gray-200 bg-white p-4 shadow-lg lg:hidden"
+          >
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <p className="text-xs font-medium text-gray-500">可多選</p>
+              <button
+                type="button"
+                onClick={onClearCategories}
+                disabled={selectedCategories.length === 0}
+                className={filterClearButtonClass}
+              >
+                清除
+              </button>
+            </div>
+            <CategoryChecklist
+              idPrefix="honor-category-mobile"
+              selectedCategories={selectedCategories}
+              onToggle={onToggleCategory}
+            />
+          </div>
+        ) : null}
+
+        {reviewMenuOpen ? (
+          <div
+            id="honor-review-menu-mobile"
+            className="absolute left-0 right-0 top-full z-30 mt-2 rounded-xl border border-gray-200 bg-white p-4 shadow-lg lg:hidden"
+          >
+            <div className="mb-3 flex items-center justify-between gap-3">
+              <p className="text-xs font-medium text-gray-500">可多選</p>
+              <button
+                type="button"
+                onClick={onClearReviewStatuses}
+                disabled={selectedReviewStatuses.length === 0}
+                className={filterClearButtonClass}
+              >
+                清除
+              </button>
+            </div>
+            <ReviewStatusChecklist
+              idPrefix="honor-review-status-mobile"
+              selectedReviewStatuses={selectedReviewStatuses}
+              onToggle={onToggleReviewStatus}
+            />
+          </div>
+        ) : null}
+      </div>
+
+      <div className="hidden lg:block">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <p className="text-sm font-medium text-gray-700">核對狀態</p>
+          <button
+            type="button"
+            onClick={onClearReviewStatuses}
+            disabled={selectedReviewStatuses.length === 0}
+            className={filterClearButtonClass}
+          >
+            清除
+          </button>
+        </div>
+        <ReviewStatusChecklist
+          idPrefix="honor-review-status-desktop"
+          selectedReviewStatuses={selectedReviewStatuses}
+          onToggle={onToggleReviewStatus}
+        />
+      </div>
+
+      <div className="hidden lg:block">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <p className="text-sm font-medium text-gray-700">分類</p>
+          <button
+            type="button"
+            onClick={onClearCategories}
+            disabled={selectedCategories.length === 0}
+            className={filterClearButtonClass}
+          >
+            清除
+          </button>
+        </div>
+        <CategoryChecklist
+          idPrefix="honor-category-desktop"
+          selectedCategories={selectedCategories}
+          onToggle={onToggleCategory}
+        />
+      </div>
+    </div>
+  );
+}
+
 export function AdventurerHonorsClient({ honors }: { honors: AdventurerHonor[] }) {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<HonorCategoryFilter>("all");
+  const [selectedCategories, setSelectedCategories] = useState<HonorCategory[]>([]);
+  const [selectedReviewStatuses, setSelectedReviewStatuses] = useState<HonorStatus[]>([]);
+  const [sortField, setSortField] = useState<HonorSortField>("default");
+  const [categoryMenuOpen, setCategoryMenuOpen] = useState(false);
+  const [reviewMenuOpen, setReviewMenuOpen] = useState(false);
   const [selectedHonorId, setSelectedHonorId] = useState<string | null>(null);
 
-  const filteredHonors = useMemo(
-    () => filterHonors(honors, { category, query }),
-    [category, honors, query],
-  );
+  const filteredHonors = useMemo(() => {
+    const filtered = filterHonors(honors, {
+      categories: selectedCategories,
+      reviewStatuses: selectedReviewStatuses,
+      query,
+    });
+    return sortHonorsByField(filtered, sortField);
+  }, [honors, query, selectedCategories, selectedReviewStatuses, sortField]);
   const selectedHonor = useMemo(
     () => honors.find((honor) => honor.id === selectedHonorId) ?? null,
     [honors, selectedHonorId],
   );
-  const categoryOptions = [{ id: "all" as const, label: "全部" }, ...honorCategories];
   const visibleCategoryLinks = useMemo(
     () =>
-      category === "all"
+      selectedCategories.length === 0
         ? honorCategories
-        : honorCategories.filter((option) => option.id === category),
-    [category],
+        : honorCategories.filter((option) => selectedCategories.includes(option.id)),
+    [selectedCategories],
   );
+
+  const toggleCategory = (category: HonorCategory) => {
+    setSelectedCategories((current) =>
+      current.includes(category)
+        ? current.filter((item) => item !== category)
+        : [...current, category],
+    );
+  };
+
+  const toggleReviewStatus = (status: HonorStatus) => {
+    setSelectedReviewStatuses((current) =>
+      current.includes(status)
+        ? current.filter((item) => item !== status)
+        : [...current, status],
+    );
+  };
+
+  const clearFilters = () => {
+    setQuery("");
+    setSelectedCategories([]);
+    setSelectedReviewStatuses([]);
+    setSortField("default");
+    setCategoryMenuOpen(false);
+    setReviewMenuOpen(false);
+  };
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-zinc-100 to-zinc-50 px-4 pb-14 pt-[84px]">
@@ -258,89 +672,89 @@ export function AdventurerHonorsClient({ honors }: { honors: AdventurerHonor[] }
             <section>
               <h2 className="text-sm font-semibold text-gray-900">HKMC 榮譽證分類來源</h2>
               <ul className="mt-2 flex flex-wrap gap-2">
-                {visibleCategoryLinks.map((option) => (
-                  <li key={option.id}>
-                    <a
-                      href={option.sourceUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-sm font-medium text-gray-700 transition hover:bg-gray-200 hover:text-gray-900"
-                    >
-                      {option.label}
-                      <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
-                    </a>
-                  </li>
-                ))}
+                {visibleCategoryLinks.map((option) => {
+                  const colors = getHonorCategoryColors(option.id);
+
+                  return (
+                    <li key={option.id}>
+                      <a
+                        href={option.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-sm font-medium transition hover:brightness-95"
+                        style={{ backgroundColor: colors.pillBg, color: colors.pillText }}
+                      >
+                        {option.label}
+                        <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </section>
           </div>
         </div>
 
-        <div className="mb-6 rounded-2xl bg-white p-4 shadow-sm">
-          <label htmlFor="honor-search" className="block text-sm font-medium text-gray-700">
-            搜尋榮譽證
-          </label>
-          <input
-            id="honor-search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            className="mt-2 w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100"
-            placeholder="搜尋 code、中文名、英文名、要求或答案"
+        <div className="flex flex-col gap-6 lg:grid lg:grid-cols-[280px_minmax(0,1fr)] lg:items-start lg:gap-6">
+          <HonorFiltersPanel
+            query={query}
+            onQueryChange={setQuery}
+            selectedCategories={selectedCategories}
+            onToggleCategory={toggleCategory}
+            onClearCategories={() => setSelectedCategories([])}
+            categoryMenuOpen={categoryMenuOpen}
+            onCategoryMenuOpenChange={setCategoryMenuOpen}
+            selectedReviewStatuses={selectedReviewStatuses}
+            onToggleReviewStatus={toggleReviewStatus}
+            onClearReviewStatuses={() => setSelectedReviewStatuses([])}
+            reviewMenuOpen={reviewMenuOpen}
+            onReviewMenuOpenChange={setReviewMenuOpen}
           />
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {categoryOptions.map((option) => (
-              <button
-                key={option.id}
-                type="button"
-                onClick={() => setCategory(option.id)}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition ${
-                  category === option.id
-                    ? "bg-blue-700 text-white"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
-              >
-                {option.label}
-              </button>
-            ))}
+          <div>
+            <HonorSortSelect sortField={sortField} onChange={setSortField} />
+            {filteredHonors.length === 0 ? (
+              <div className="rounded-2xl bg-white p-8 text-center text-gray-600 shadow-sm">
+                <p className="mb-4">找不到相關榮譽證。</p>
+                <button
+                  type="button"
+                  onClick={clearFilters}
+                  className="rounded-full bg-gray-900 px-5 py-2 text-white"
+                >
+                  清除搜尋
+                </button>
+              </div>
+            ) : (
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4 xl:gap-4">
+                {filteredHonors.map((honor) => {
+                  const colors = getHonorCategoryColors(honor.category);
+
+                  return (
+                  <button
+                    key={honor.id}
+                    type="button"
+                    onClick={() => setSelectedHonorId(honor.id)}
+                    className="flex flex-col items-center rounded-2xl p-4 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-200"
+                    style={{ backgroundColor: colors.cardBg }}
+                  >
+                    <HonorBadge honor={honor} />
+                    <div className="mt-3 flex flex-wrap items-center justify-center gap-1">
+                      <p className="text-xs font-semibold text-blue-700">{honor.code}</p>
+                      <HonorReviewTag honor={honor} />
+                    </div>
+                    <p className="mt-1 line-clamp-2 text-sm font-semibold leading-snug text-gray-900">
+                      {honor.nameZh}
+                    </p>
+                    {honor.nameEn && (
+                      <p className="mt-1 line-clamp-2 text-xs text-gray-500">{honor.nameEn}</p>
+                    )}
+                  </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
-
-        {filteredHonors.length === 0 ? (
-          <div className="rounded-2xl bg-white p-8 text-center text-gray-600 shadow-sm">
-            <p className="mb-4">找不到相關榮譽證。</p>
-            <button
-              type="button"
-              onClick={() => {
-                setQuery("");
-                setCategory("all");
-              }}
-              className="rounded-full bg-gray-900 px-5 py-2 text-white"
-            >
-              清除搜尋
-            </button>
-          </div>
-        ) : (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 lg:gap-4">
-            {filteredHonors.map((honor) => (
-              <button
-                key={honor.id}
-                type="button"
-                onClick={() => setSelectedHonorId(honor.id)}
-                className="flex flex-col items-center rounded-2xl bg-white p-4 text-center shadow-sm transition hover:-translate-y-0.5 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-200"
-              >
-                <HonorBadge honor={honor} />
-                <p className="mt-3 text-xs font-semibold text-blue-700">{honor.code}</p>
-                <p className="mt-1 line-clamp-2 text-sm font-semibold leading-snug text-gray-900">
-                  {honor.nameZh}
-                </p>
-                {honor.nameEn && (
-                  <p className="mt-1 line-clamp-2 text-xs text-gray-500">{honor.nameEn}</p>
-                )}
-              </button>
-            ))}
-          </div>
-        )}
       </section>
 
       <AnimatePresence>

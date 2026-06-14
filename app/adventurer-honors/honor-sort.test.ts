@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { sortAdventurerHonors } from "@/app/adventurer-honors/honor-sort";
+import { sortAdventurerHonors, sortHonorsByField } from "@/app/adventurer-honors/honor-sort";
 import type { AdventurerHonor } from "@/app/adventurer-honors/types";
 
 function honor(
@@ -12,7 +12,7 @@ function honor(
     answers: [],
     sourceUrls: [],
     answerSource: "",
-    status: "complete",
+    status: "non-review",
     ...overrides,
   };
 }
@@ -120,5 +120,31 @@ describe("sortAdventurerHonors", () => {
     ]);
 
     expect(honors.map((item) => item.category)).toEqual(["household", "nature"]);
+  });
+});
+
+describe("sortHonorsByField", () => {
+  test("sorts by Chinese name, English name, and code", () => {
+    const sample = [
+      honor({
+        id: "you4920-swimmer-ii",
+        code: "YOU4920",
+        nameZh: "游泳 II",
+        nameEn: "Swimmer II",
+        category: "recreation",
+      }),
+      honor({
+        id: "hka4015-alphabet-i",
+        code: "HKA4015",
+        nameZh: "字母 I",
+        nameEn: "Alphabet I",
+        category: "household",
+      }),
+    ];
+
+    expect(sortHonorsByField(sample, "nameZh").map((item) => item.code)).toEqual(["HKA4015", "YOU4920"]);
+    expect(sortHonorsByField(sample, "nameEn").map((item) => item.code)).toEqual(["HKA4015", "YOU4920"]);
+    expect(sortHonorsByField(sample, "code").map((item) => item.code)).toEqual(["HKA4015", "YOU4920"]);
+    expect(sortHonorsByField(sample, "default").map((item) => item.code)).toEqual(["YOU4920", "HKA4015"]);
   });
 });

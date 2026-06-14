@@ -66,6 +66,33 @@ function sortCategoryHonors(honors: AdventurerHonor[]): AdventurerHonor[] {
   );
 }
 
+export type HonorSortField = "default" | "nameZh" | "nameEn" | "code";
+
+export function sortHonorsByField(honors: AdventurerHonor[], field: HonorSortField): AdventurerHonor[] {
+  if (field === "default") {
+    return honors;
+  }
+
+  const sorted = [...honors];
+
+  sorted.sort((left, right) => {
+    switch (field) {
+      case "nameZh":
+        return left.nameZh.localeCompare(right.nameZh, "zh-Hant");
+      case "nameEn":
+        return (left.nameEn ?? "").localeCompare(right.nameEn ?? "", "en");
+      case "code":
+        return left.code.localeCompare(right.code, "en", { numeric: true });
+      default: {
+        const unhandledField: never = field;
+        return unhandledField;
+      }
+    }
+  });
+
+  return sorted;
+}
+
 export function sortAdventurerHonors(honors: AdventurerHonor[]): AdventurerHonor[] {
   const honorsByCategory = new Map<HonorCategory, AdventurerHonor[]>();
 

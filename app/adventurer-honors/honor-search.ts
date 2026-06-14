@@ -1,15 +1,15 @@
-import type { AdventurerHonor, HonorCategoryFilter, HonorStatus } from "@/app/adventurer-honors/types";
+import type { AdventurerHonor, HonorCategory, HonorStatus } from "@/app/adventurer-honors/types";
 
 export interface HonorFilters {
-  category: HonorCategoryFilter;
+  categories: HonorCategory[];
+  reviewStatuses: HonorStatus[];
   query: string;
 }
 
 export interface HonorStats {
   total: number;
-  complete: number;
-  requirementsOnly: number;
-  needsReview: number;
+  nonReview: number;
+  reviewed: number;
 }
 
 export const ANSWER_SOURCE_TRANSLATED =
@@ -72,18 +72,20 @@ export function filterHonors(honors: AdventurerHonor[], filters: HonorFilters) {
   const query = normalize(filters.query);
 
   return honors.filter((honor) => {
-    const matchesCategory = filters.category === "all" || honor.category === filters.category;
+    const matchesCategory =
+      filters.categories.length === 0 || filters.categories.includes(honor.category);
+    const matchesReviewStatus =
+      filters.reviewStatuses.length === 0 || filters.reviewStatuses.includes(honor.status);
     const matchesQuery = query.length === 0 || normalize(getSearchText(honor)).includes(query);
 
-    return matchesCategory && matchesQuery;
+    return matchesCategory && matchesReviewStatus && matchesQuery;
   });
 }
 
 export function getHonorStats(honors: AdventurerHonor[]): HonorStats {
   const initialCounts: Record<HonorStatus, number> = {
-    complete: 0,
-    "requirements-only": 0,
-    "needs-review": 0,
+    "non-review": 0,
+    reviewed: 0,
   };
 
   const counts = honors.reduce((result, honor) => {
@@ -93,8 +95,7 @@ export function getHonorStats(honors: AdventurerHonor[]): HonorStats {
 
   return {
     total: honors.length,
-    complete: counts.complete,
-    requirementsOnly: counts["requirements-only"],
-    needsReview: counts["needs-review"],
+    nonReview: counts["non-review"],
+    reviewed: counts.reviewed,
   };
 }

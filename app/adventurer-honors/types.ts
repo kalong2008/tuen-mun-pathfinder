@@ -9,7 +9,12 @@ export const honorCategories = [
 
 export type HonorCategory = (typeof honorCategories)[number]["id"];
 export type HonorCategoryFilter = HonorCategory | "all";
-export type HonorStatus = "complete" | "requirements-only" | "needs-review";
+export type HonorStatus = "non-review" | "reviewed";
+
+export const honorReviewStatuses: { id: HonorStatus; label: string }[] = [
+  { id: "non-review", label: "待核對" },
+  { id: "reviewed", label: "已核對" },
+];
 
 export interface HonorAnswer {
   requirementIndex: number;
