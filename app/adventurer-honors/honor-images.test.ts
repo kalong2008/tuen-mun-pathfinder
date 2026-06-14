@@ -5,6 +5,7 @@ import { getHonorImageUrl } from "@/app/adventurer-honors/honor-images";
 describe("getHonorImageUrl", () => {
   test("returns image path for a known honor code", () => {
     expect(getHonorImageUrl("HKA4015")).toBe("/adventurer-honors/HKA4015.png");
+    expect(getHonorImageUrl("YOU4925")).toBe("/adventurer-honors/YOU4925.png");
   });
 
   test("resolves alternate site codes from aliases", () => {

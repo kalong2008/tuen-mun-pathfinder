@@ -13,6 +13,15 @@ describe("getHonorPdfLinks", () => {
     expect(links.zh?.sourceUrl).toMatch(/完整版\.pdf#page=\d+/);
   });
 
+  test("includes all English answer continuation pages for multi-page honors", () => {
+    expect(getHonorPdfLinks("HKA4020").en?.pages).toEqual([125, 126, 127, 128]);
+    expect(getHonorPdfLinks("HKA4024").en?.pages).toEqual([143, 144, 145, 146]);
+    expect(getHonorPdfLinks("HKA4058").en?.pages).toEqual([299, 300, 301, 302, 303]);
+    expect(getHonorPdfLinks("HKA4037").en?.pages).toEqual([191, 192, 193, 194, 195]);
+    expect(getHonorPdfLinks("HKA4065").en?.pages).toEqual([333, 334, 335]);
+    expect(getHonorPdfLinks("YOU4560").en?.pages).toEqual([47, 48, 49]);
+  });
+
   test("resolves left and right via Chinese code alias", () => {
     const links = getHonorPdfLinks("HKA4056");
 
