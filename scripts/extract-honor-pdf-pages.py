@@ -131,12 +131,34 @@ def find_eng_page(pages: list[str], honor_name: str) -> int | None:
     return None
 
 
-def extract_page(reader: PdfReader, page_index: int, output_path: Path) -> None:
+def find_eng_pages_to_extract(pages: list[str], honor_page: int) -> list[int]:
+    page_indices = [honor_page]
+    next_index = honor_page + 1
+
+    if next_index >= len(pages):
+        return page_indices
+
+    next_page_text = pages[next_index]
+    if re.search(r"^(?:Page \d+\s*)+Requirements\s*\n\s*\d+\.", next_page_text, re.M):
+        return page_indices
+
+    if "Supporting Answers" in next_page_text:
+        page_indices.append(next_index)
+
+    return page_indices
+
+
+def extract_pages(reader: PdfReader, page_indices: list[int], output_path: Path) -> None:
     writer = PdfWriter()
-    writer.add_page(reader.pages[page_index])
+    for page_index in page_indices:
+        writer.add_page(reader.pages[page_index])
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("wb") as handle:
         writer.write(handle)
+
+
+def extract_page(reader: PdfReader, page_index: int, output_path: Path) -> None:
+    extract_pages(reader, [page_index], output_path)
 
 
 def main() -> None:
@@ -178,13 +200,17 @@ def main() -> None:
         if eng_page is None:
             missing_eng.append(honor.code)
         else:
+            eng_page_indices = find_eng_pages_to_extract(eng_pages, eng_page)
             eng_output = OUTPUT_DIR / f"{honor.code}-en.pdf"
-            extract_page(eng_reader, eng_page, eng_output)
-            page_number = eng_page + 1
-            entry["en"] = {
-                "page": page_number,
+            extract_pages(eng_reader, eng_page_indices, eng_output)
+            eng_entry: dict[str, int | str | list[int]] = {
+                "page": eng_page + 1,
                 "path": f"/adventurer-honors/pdf-pages/{honor.code}-en.pdf",
+                "pages": [page_index + 1 for page_index in eng_page_indices],
             }
+            if len(eng_page_indices) > 1:
+                eng_entry["answerPage"] = eng_page_indices[1] + 1
+            entry["en"] = eng_entry
 
         if entry:
             mapping[honor.code] = entry

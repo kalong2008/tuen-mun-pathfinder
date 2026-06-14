@@ -4,6 +4,8 @@ export type HonorPdfPageLink = {
   page: number;
   path: string;
   sourceUrl?: string;
+  pages?: number[];
+  answerPage?: number;
 };
 
 export type HonorPdfLinks = {

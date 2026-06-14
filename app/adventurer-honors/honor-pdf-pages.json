@@ -7,7 +7,12 @@
     },
     "en": {
       "page": 107,
-      "path": "/adventurer-honors/pdf-pages/HKA4015-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4015-en.pdf",
+      "pages": [
+        107,
+        108
+      ],
+      "answerPage": 108
     }
   },
   "HKA4016": {
@@ -18,7 +23,12 @@
     },
     "en": {
       "page": 109,
-      "path": "/adventurer-honors/pdf-pages/HKA4016-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4016-en.pdf",
+      "pages": [
+        109,
+        110
+      ],
+      "answerPage": 110
     }
   },
   "HKA4019": {
@@ -29,7 +39,12 @@
     },
     "en": {
       "page": 123,
-      "path": "/adventurer-honors/pdf-pages/HKA4019-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4019-en.pdf",
+      "pages": [
+        123,
+        124
+      ],
+      "answerPage": 124
     }
   },
   "HKA4020": {
@@ -40,7 +55,12 @@
     },
     "en": {
       "page": 125,
-      "path": "/adventurer-honors/pdf-pages/HKA4020-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4020-en.pdf",
+      "pages": [
+        125,
+        126
+      ],
+      "answerPage": 126
     }
   },
   "HKA4021": {
@@ -51,7 +71,12 @@
     },
     "en": {
       "page": 129,
-      "path": "/adventurer-honors/pdf-pages/HKA4021-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4021-en.pdf",
+      "pages": [
+        129,
+        130
+      ],
+      "answerPage": 130
     }
   },
   "HKA4022": {
@@ -62,7 +87,12 @@
     },
     "en": {
       "page": 135,
-      "path": "/adventurer-honors/pdf-pages/HKA4022-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4022-en.pdf",
+      "pages": [
+        135,
+        136
+      ],
+      "answerPage": 136
     }
   },
   "HKA4023": {
@@ -73,7 +103,12 @@
     },
     "en": {
       "page": 141,
-      "path": "/adventurer-honors/pdf-pages/HKA4023-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4023-en.pdf",
+      "pages": [
+        141,
+        142
+      ],
+      "answerPage": 142
     }
   },
   "HKA4024": {
@@ -84,7 +119,12 @@
     },
     "en": {
       "page": 143,
-      "path": "/adventurer-honors/pdf-pages/HKA4024-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4024-en.pdf",
+      "pages": [
+        143,
+        144
+      ],
+      "answerPage": 144
     }
   },
   "HKA4025": {
@@ -95,7 +135,12 @@
     },
     "en": {
       "page": 147,
-      "path": "/adventurer-honors/pdf-pages/HKA4025-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4025-en.pdf",
+      "pages": [
+        147,
+        148
+      ],
+      "answerPage": 148
     }
   },
   "HKA4026": {
@@ -106,7 +151,12 @@
     },
     "en": {
       "page": 151,
-      "path": "/adventurer-honors/pdf-pages/HKA4026-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4026-en.pdf",
+      "pages": [
+        151,
+        152
+      ],
+      "answerPage": 152
     }
   },
   "HKA4027": {
@@ -117,7 +167,12 @@
     },
     "en": {
       "page": 153,
-      "path": "/adventurer-honors/pdf-pages/HKA4027-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4027-en.pdf",
+      "pages": [
+        153,
+        154
+      ],
+      "answerPage": 154
     }
   },
   "HKA4028": {
@@ -128,7 +183,12 @@
     },
     "en": {
       "page": 155,
-      "path": "/adventurer-honors/pdf-pages/HKA4028-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4028-en.pdf",
+      "pages": [
+        155,
+        156
+      ],
+      "answerPage": 156
     }
   },
   "HKA4029": {
@@ -139,7 +199,12 @@
     },
     "en": {
       "page": 157,
-      "path": "/adventurer-honors/pdf-pages/HKA4029-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4029-en.pdf",
+      "pages": [
+        157,
+        158
+      ],
+      "answerPage": 158
     }
   },
   "HKA4030": {
@@ -150,7 +215,12 @@
     },
     "en": {
       "page": 159,
-      "path": "/adventurer-honors/pdf-pages/HKA4030-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4030-en.pdf",
+      "pages": [
+        159,
+        160
+      ],
+      "answerPage": 160
     }
   },
   "HKA4064": {
@@ -161,7 +231,12 @@
     },
     "en": {
       "page": 329,
-      "path": "/adventurer-honors/pdf-pages/HKA4064-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4064-en.pdf",
+      "pages": [
+        329,
+        330
+      ],
+      "answerPage": 330
     }
   },
   "HKA4033": {
@@ -172,7 +247,12 @@
     },
     "en": {
       "page": 173,
-      "path": "/adventurer-honors/pdf-pages/HKA4033-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4033-en.pdf",
+      "pages": [
+        173,
+        174
+      ],
+      "answerPage": 174
     }
   },
   "HKA4034": {
@@ -183,7 +263,12 @@
     },
     "en": {
       "page": 175,
-      "path": "/adventurer-honors/pdf-pages/HKA4034-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4034-en.pdf",
+      "pages": [
+        175,
+        176
+      ],
+      "answerPage": 176
     }
   },
   "YOU4620": {
@@ -194,7 +279,12 @@
     },
     "en": {
       "page": 117,
-      "path": "/adventurer-honors/pdf-pages/YOU4620-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4620-en.pdf",
+      "pages": [
+        117,
+        118
+      ],
+      "answerPage": 118
     }
   },
   "YOU4740": {
@@ -205,7 +295,12 @@
     },
     "en": {
       "page": 137,
-      "path": "/adventurer-honors/pdf-pages/YOU4740-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4740-en.pdf",
+      "pages": [
+        137,
+        138
+      ],
+      "answerPage": 138
     }
   },
   "YOU4760": {
@@ -216,7 +311,12 @@
     },
     "en": {
       "page": 139,
-      "path": "/adventurer-honors/pdf-pages/YOU4760-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4760-en.pdf",
+      "pages": [
+        139,
+        140
+      ],
+      "answerPage": 140
     }
   },
   "YOU4865": {
@@ -227,7 +327,12 @@
     },
     "en": {
       "page": 161,
-      "path": "/adventurer-honors/pdf-pages/YOU4865-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4865-en.pdf",
+      "pages": [
+        161,
+        162
+      ],
+      "answerPage": 162
     }
   },
   "YOU4585": {
@@ -238,7 +343,12 @@
     },
     "en": {
       "page": 277,
-      "path": "/adventurer-honors/pdf-pages/YOU4585-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4585-en.pdf",
+      "pages": [
+        277,
+        278
+      ],
+      "answerPage": 278
     }
   },
   "YOU4920": {
@@ -249,7 +359,12 @@
     },
     "en": {
       "page": 315,
-      "path": "/adventurer-honors/pdf-pages/YOU4920-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4920-en.pdf",
+      "pages": [
+        315,
+        316
+      ],
+      "answerPage": 316
     }
   },
   "YOU4905": {
@@ -260,7 +375,12 @@
     },
     "en": {
       "page": 311,
-      "path": "/adventurer-honors/pdf-pages/YOU4905-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4905-en.pdf",
+      "pages": [
+        311,
+        312
+      ],
+      "answerPage": 312
     }
   },
   "YOU4705": {
@@ -271,7 +391,12 @@
     },
     "en": {
       "page": 287,
-      "path": "/adventurer-honors/pdf-pages/YOU4705-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4705-en.pdf",
+      "pages": [
+        287,
+        288
+      ],
+      "answerPage": 288
     }
   },
   "YOU4660": {
@@ -282,7 +407,12 @@
     },
     "en": {
       "page": 285,
-      "path": "/adventurer-honors/pdf-pages/YOU4660-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4660-en.pdf",
+      "pages": [
+        285,
+        286
+      ],
+      "answerPage": 286
     }
   },
   "YOU4650": {
@@ -293,7 +423,12 @@
     },
     "en": {
       "page": 283,
-      "path": "/adventurer-honors/pdf-pages/YOU4650-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4650-en.pdf",
+      "pages": [
+        283,
+        284
+      ],
+      "answerPage": 284
     }
   },
   "HKA4058": {
@@ -304,7 +439,12 @@
     },
     "en": {
       "page": 299,
-      "path": "/adventurer-honors/pdf-pages/HKA4058-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4058-en.pdf",
+      "pages": [
+        299,
+        300
+      ],
+      "answerPage": 300
     }
   },
   "HKA4063": {
@@ -315,7 +455,12 @@
     },
     "en": {
       "page": 323,
-      "path": "/adventurer-honors/pdf-pages/HKA4063-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4063-en.pdf",
+      "pages": [
+        323,
+        324
+      ],
+      "answerPage": 324
     }
   },
   "HKA4062": {
@@ -326,7 +471,12 @@
     },
     "en": {
       "page": 321,
-      "path": "/adventurer-honors/pdf-pages/HKA4062-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4062-en.pdf",
+      "pages": [
+        321,
+        322
+      ],
+      "answerPage": 322
     }
   },
   "HKA4061": {
@@ -337,7 +487,12 @@
     },
     "en": {
       "page": 319,
-      "path": "/adventurer-honors/pdf-pages/HKA4061-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4061-en.pdf",
+      "pages": [
+        319,
+        320
+      ],
+      "answerPage": 320
     }
   },
   "HKA4060": {
@@ -348,7 +503,12 @@
     },
     "en": {
       "page": 313,
-      "path": "/adventurer-honors/pdf-pages/HKA4060-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4060-en.pdf",
+      "pages": [
+        313,
+        314
+      ],
+      "answerPage": 314
     }
   },
   "HKA4056": {
@@ -359,7 +519,12 @@
     },
     "en": {
       "page": 293,
-      "path": "/adventurer-honors/pdf-pages/HKA4056-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4056-en.pdf",
+      "pages": [
+        293,
+        294
+      ],
+      "answerPage": 294
     }
   },
   "HKA4055": {
@@ -370,7 +535,12 @@
     },
     "en": {
       "page": 279,
-      "path": "/adventurer-honors/pdf-pages/HKA4055-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4055-en.pdf",
+      "pages": [
+        279,
+        280
+      ],
+      "answerPage": 280
     }
   },
   "HKA4001": {
@@ -381,7 +551,12 @@
     },
     "en": {
       "page": 15,
-      "path": "/adventurer-honors/pdf-pages/HKA4001-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4001-en.pdf",
+      "pages": [
+        15,
+        16
+      ],
+      "answerPage": 16
     }
   },
   "HKA4002": {
@@ -392,7 +567,12 @@
     },
     "en": {
       "page": 17,
-      "path": "/adventurer-honors/pdf-pages/HKA4002-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4002-en.pdf",
+      "pages": [
+        17,
+        18
+      ],
+      "answerPage": 18
     }
   },
   "HKA4003": {
@@ -403,7 +583,12 @@
     },
     "en": {
       "page": 25,
-      "path": "/adventurer-honors/pdf-pages/HKA4003-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4003-en.pdf",
+      "pages": [
+        25,
+        26
+      ],
+      "answerPage": 26
     }
   },
   "HKA4004": {
@@ -414,7 +599,12 @@
     },
     "en": {
       "page": 27,
-      "path": "/adventurer-honors/pdf-pages/HKA4004-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4004-en.pdf",
+      "pages": [
+        27,
+        28
+      ],
+      "answerPage": 28
     }
   },
   "HKA4005": {
@@ -425,7 +615,12 @@
     },
     "en": {
       "page": 29,
-      "path": "/adventurer-honors/pdf-pages/HKA4005-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4005-en.pdf",
+      "pages": [
+        29,
+        30
+      ],
+      "answerPage": 30
     }
   },
   "YOU4615": {
@@ -436,7 +631,12 @@
     },
     "en": {
       "page": 21,
-      "path": "/adventurer-honors/pdf-pages/YOU4615-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4615-en.pdf",
+      "pages": [
+        21,
+        22
+      ],
+      "answerPage": 22
     }
   },
   "YOU4860": {
@@ -447,7 +647,12 @@
     },
     "en": {
       "page": 33,
-      "path": "/adventurer-honors/pdf-pages/YOU4860-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4860-en.pdf",
+      "pages": [
+        33,
+        34
+      ],
+      "answerPage": 34
     }
   },
   "HKA4065": {
@@ -458,7 +663,12 @@
     },
     "en": {
       "page": 333,
-      "path": "/adventurer-honors/pdf-pages/HKA4065-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4065-en.pdf",
+      "pages": [
+        333,
+        334
+      ],
+      "answerPage": 334
     }
   },
   "HKA4066": {
@@ -469,7 +679,12 @@
     },
     "en": {
       "page": 337,
-      "path": "/adventurer-honors/pdf-pages/HKA4066-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4066-en.pdf",
+      "pages": [
+        337,
+        338
+      ],
+      "answerPage": 338
     }
   },
   "HKA4067": {
@@ -480,7 +695,12 @@
     },
     "en": {
       "page": 343,
-      "path": "/adventurer-honors/pdf-pages/HKA4067-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4067-en.pdf",
+      "pages": [
+        343,
+        344
+      ],
+      "answerPage": 344
     }
   },
   "HKA4068": {
@@ -491,7 +711,12 @@
     },
     "en": {
       "page": 345,
-      "path": "/adventurer-honors/pdf-pages/HKA4068-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4068-en.pdf",
+      "pages": [
+        345,
+        346
+      ],
+      "answerPage": 346
     }
   },
   "HKA4071": {
@@ -502,7 +727,12 @@
     },
     "en": {
       "page": 353,
-      "path": "/adventurer-honors/pdf-pages/HKA4071-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4071-en.pdf",
+      "pages": [
+        353,
+        354
+      ],
+      "answerPage": 354
     }
   },
   "HKA4072": {
@@ -513,7 +743,12 @@
     },
     "en": {
       "page": 357,
-      "path": "/adventurer-honors/pdf-pages/HKA4072-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4072-en.pdf",
+      "pages": [
+        357,
+        358
+      ],
+      "answerPage": 358
     }
   },
   "HKA4073": {
@@ -524,7 +759,12 @@
     },
     "en": {
       "page": 367,
-      "path": "/adventurer-honors/pdf-pages/HKA4073-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4073-en.pdf",
+      "pages": [
+        367,
+        368
+      ],
+      "answerPage": 368
     }
   },
   "HKA4076": {
@@ -535,7 +775,12 @@
     },
     "en": {
       "page": 375,
-      "path": "/adventurer-honors/pdf-pages/HKA4076-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4076-en.pdf",
+      "pages": [
+        375,
+        376
+      ],
+      "answerPage": 376
     }
   },
   "HKA4077": {
@@ -546,7 +791,12 @@
     },
     "en": {
       "page": 375,
-      "path": "/adventurer-honors/pdf-pages/HKA4077-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4077-en.pdf",
+      "pages": [
+        375,
+        376
+      ],
+      "answerPage": 376
     }
   },
   "HKA4078": {
@@ -557,7 +807,12 @@
     },
     "en": {
       "page": 379,
-      "path": "/adventurer-honors/pdf-pages/HKA4078-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4078-en.pdf",
+      "pages": [
+        379,
+        380
+      ],
+      "answerPage": 380
     }
   },
   "HKA4079": {
@@ -568,7 +823,12 @@
     },
     "en": {
       "page": 385,
-      "path": "/adventurer-honors/pdf-pages/HKA4079-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4079-en.pdf",
+      "pages": [
+        385,
+        386
+      ],
+      "answerPage": 386
     }
   },
   "HKA4080": {
@@ -579,7 +839,12 @@
     },
     "en": {
       "page": 389,
-      "path": "/adventurer-honors/pdf-pages/HKA4080-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4080-en.pdf",
+      "pages": [
+        389,
+        390
+      ],
+      "answerPage": 390
     }
   },
   "YOU4535": {
@@ -590,7 +855,12 @@
     },
     "en": {
       "page": 339,
-      "path": "/adventurer-honors/pdf-pages/YOU4535-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4535-en.pdf",
+      "pages": [
+        339,
+        340
+      ],
+      "answerPage": 340
     }
   },
   "YOU4540": {
@@ -601,7 +871,12 @@
     },
     "en": {
       "page": 341,
-      "path": "/adventurer-honors/pdf-pages/YOU4540-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4540-en.pdf",
+      "pages": [
+        341,
+        342
+      ],
+      "answerPage": 342
     }
   },
   "YOU4635": {
@@ -612,7 +887,12 @@
     },
     "en": {
       "page": 361,
-      "path": "/adventurer-honors/pdf-pages/YOU4635-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4635-en.pdf",
+      "pages": [
+        361,
+        362
+      ],
+      "answerPage": 362
     }
   },
   "YOU4935": {
@@ -623,7 +903,12 @@
     },
     "en": {
       "page": 405,
-      "path": "/adventurer-honors/pdf-pages/YOU4935-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4935-en.pdf",
+      "pages": [
+        405,
+        406
+      ],
+      "answerPage": 406
     }
   },
   "YOU4985": {
@@ -634,7 +919,12 @@
     },
     "en": {
       "page": 407,
-      "path": "/adventurer-honors/pdf-pages/YOU4985-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4985-en.pdf",
+      "pages": [
+        407,
+        408
+      ],
+      "answerPage": 408
     }
   },
   "HKA4035": {
@@ -645,7 +935,10 @@
     },
     "en": {
       "page": 185,
-      "path": "/adventurer-honors/pdf-pages/HKA4035-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4035-en.pdf",
+      "pages": [
+        185
+      ]
     }
   },
   "HKA4036": {
@@ -656,7 +949,12 @@
     },
     "en": {
       "page": 187,
-      "path": "/adventurer-honors/pdf-pages/HKA4036-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4036-en.pdf",
+      "pages": [
+        187,
+        188
+      ],
+      "answerPage": 188
     }
   },
   "HKA4037": {
@@ -667,7 +965,12 @@
     },
     "en": {
       "page": 191,
-      "path": "/adventurer-honors/pdf-pages/HKA4037-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4037-en.pdf",
+      "pages": [
+        191,
+        192
+      ],
+      "answerPage": 192
     }
   },
   "HKA4038": {
@@ -678,7 +981,12 @@
     },
     "en": {
       "page": 197,
-      "path": "/adventurer-honors/pdf-pages/HKA4038-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4038-en.pdf",
+      "pages": [
+        197,
+        198
+      ],
+      "answerPage": 198
     }
   },
   "HKA4040": {
@@ -689,7 +997,12 @@
     },
     "en": {
       "page": 223,
-      "path": "/adventurer-honors/pdf-pages/HKA4040-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4040-en.pdf",
+      "pages": [
+        223,
+        224
+      ],
+      "answerPage": 224
     }
   },
   "HKA4041": {
@@ -700,7 +1013,12 @@
     },
     "en": {
       "page": 231,
-      "path": "/adventurer-honors/pdf-pages/HKA4041-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4041-en.pdf",
+      "pages": [
+        231,
+        232
+      ],
+      "answerPage": 232
     }
   },
   "HKA4042": {
@@ -711,7 +1029,12 @@
     },
     "en": {
       "page": 233,
-      "path": "/adventurer-honors/pdf-pages/HKA4042-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4042-en.pdf",
+      "pages": [
+        233,
+        234
+      ],
+      "answerPage": 234
     }
   },
   "HKA4044": {
@@ -722,7 +1045,12 @@
     },
     "en": {
       "page": 237,
-      "path": "/adventurer-honors/pdf-pages/HKA4044-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4044-en.pdf",
+      "pages": [
+        237,
+        238
+      ],
+      "answerPage": 238
     }
   },
   "HKA4046": {
@@ -733,7 +1061,12 @@
     },
     "en": {
       "page": 241,
-      "path": "/adventurer-honors/pdf-pages/HKA4046-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4046-en.pdf",
+      "pages": [
+        241,
+        242
+      ],
+      "answerPage": 242
     }
   },
   "HKA4047": {
@@ -744,7 +1077,12 @@
     },
     "en": {
       "page": 243,
-      "path": "/adventurer-honors/pdf-pages/HKA4047-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4047-en.pdf",
+      "pages": [
+        243,
+        244
+      ],
+      "answerPage": 244
     }
   },
   "HKA4049": {
@@ -755,7 +1093,12 @@
     },
     "en": {
       "page": 247,
-      "path": "/adventurer-honors/pdf-pages/HKA4049-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4049-en.pdf",
+      "pages": [
+        247,
+        248
+      ],
+      "answerPage": 248
     }
   },
   "HKA4051": {
@@ -766,7 +1109,12 @@
     },
     "en": {
       "page": 253,
-      "path": "/adventurer-honors/pdf-pages/HKA4051-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4051-en.pdf",
+      "pages": [
+        253,
+        254
+      ],
+      "answerPage": 254
     }
   },
   "HKA4053": {
@@ -777,7 +1125,12 @@
     },
     "en": {
       "page": 259,
-      "path": "/adventurer-honors/pdf-pages/HKA4053-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4053-en.pdf",
+      "pages": [
+        259,
+        260
+      ],
+      "answerPage": 260
     }
   },
   "HKA4054": {
@@ -788,7 +1141,12 @@
     },
     "en": {
       "page": 263,
-      "path": "/adventurer-honors/pdf-pages/HKA4054-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4054-en.pdf",
+      "pages": [
+        263,
+        264
+      ],
+      "answerPage": 264
     }
   },
   "YOU4565": {
@@ -799,7 +1157,12 @@
     },
     "en": {
       "page": 199,
-      "path": "/adventurer-honors/pdf-pages/YOU4565-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4565-en.pdf",
+      "pages": [
+        199,
+        200
+      ],
+      "answerPage": 200
     }
   },
   "YOU4655": {
@@ -810,7 +1173,12 @@
     },
     "en": {
       "page": 207,
-      "path": "/adventurer-honors/pdf-pages/YOU4655-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4655-en.pdf",
+      "pages": [
+        207,
+        208
+      ],
+      "answerPage": 208
     }
   },
   "YOU4665": {
@@ -821,7 +1189,12 @@
     },
     "en": {
       "page": 209,
-      "path": "/adventurer-honors/pdf-pages/YOU4665-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4665-en.pdf",
+      "pages": [
+        209,
+        210
+      ],
+      "answerPage": 210
     }
   },
   "YOU4670": {
@@ -832,7 +1205,12 @@
     },
     "en": {
       "page": 211,
-      "path": "/adventurer-honors/pdf-pages/YOU4670-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4670-en.pdf",
+      "pages": [
+        211,
+        212
+      ],
+      "answerPage": 212
     }
   },
   "YOU4680": {
@@ -843,7 +1221,12 @@
     },
     "en": {
       "page": 213,
-      "path": "/adventurer-honors/pdf-pages/YOU4680-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4680-en.pdf",
+      "pages": [
+        213,
+        214
+      ],
+      "answerPage": 214
     }
   },
   "HKA4006": {
@@ -854,7 +1237,12 @@
     },
     "en": {
       "page": 55,
-      "path": "/adventurer-honors/pdf-pages/HKA4006-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4006-en.pdf",
+      "pages": [
+        55,
+        56
+      ],
+      "answerPage": 56
     }
   },
   "HKA4007": {
@@ -865,7 +1253,12 @@
     },
     "en": {
       "page": 57,
-      "path": "/adventurer-honors/pdf-pages/HKA4007-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4007-en.pdf",
+      "pages": [
+        57,
+        58
+      ],
+      "answerPage": 58
     }
   },
   "HKA4008": {
@@ -876,7 +1269,12 @@
     },
     "en": {
       "page": 59,
-      "path": "/adventurer-honors/pdf-pages/HKA4008-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4008-en.pdf",
+      "pages": [
+        59,
+        60
+      ],
+      "answerPage": 60
     }
   },
   "HKA4010": {
@@ -887,7 +1285,12 @@
     },
     "en": {
       "page": 71,
-      "path": "/adventurer-honors/pdf-pages/HKA4010-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4010-en.pdf",
+      "pages": [
+        71,
+        72
+      ],
+      "answerPage": 72
     }
   },
   "HKA4011": {
@@ -898,7 +1301,12 @@
     },
     "en": {
       "page": 79,
-      "path": "/adventurer-honors/pdf-pages/HKA4011-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4011-en.pdf",
+      "pages": [
+        79,
+        80
+      ],
+      "answerPage": 80
     }
   },
   "HKA4012": {
@@ -909,7 +1317,12 @@
     },
     "en": {
       "page": 89,
-      "path": "/adventurer-honors/pdf-pages/HKA4012-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4012-en.pdf",
+      "pages": [
+        89,
+        90
+      ],
+      "answerPage": 90
     }
   },
   "HKA4013": {
@@ -920,7 +1333,12 @@
     },
     "en": {
       "page": 93,
-      "path": "/adventurer-honors/pdf-pages/HKA4013-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4013-en.pdf",
+      "pages": [
+        93,
+        94
+      ],
+      "answerPage": 94
     }
   },
   "HKA4014": {
@@ -931,7 +1349,12 @@
     },
     "en": {
       "page": 95,
-      "path": "/adventurer-honors/pdf-pages/HKA4014-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4014-en.pdf",
+      "pages": [
+        95,
+        96
+      ],
+      "answerPage": 96
     }
   },
   "YOU4510": {
@@ -942,7 +1365,12 @@
     },
     "en": {
       "page": 39,
-      "path": "/adventurer-honors/pdf-pages/YOU4510-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4510-en.pdf",
+      "pages": [
+        39,
+        40
+      ],
+      "answerPage": 40
     }
   },
   "YOU4560": {
@@ -953,7 +1381,12 @@
     },
     "en": {
       "page": 47,
-      "path": "/adventurer-honors/pdf-pages/YOU4560-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4560-en.pdf",
+      "pages": [
+        47,
+        48
+      ],
+      "answerPage": 48
     }
   },
   "YOU4570": {
@@ -964,7 +1397,12 @@
     },
     "en": {
       "page": 51,
-      "path": "/adventurer-honors/pdf-pages/YOU4570-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4570-en.pdf",
+      "pages": [
+        51,
+        52
+      ],
+      "answerPage": 52
     }
   },
   "HKA4009": {
@@ -975,7 +1413,12 @@
     },
     "en": {
       "page": 63,
-      "path": "/adventurer-honors/pdf-pages/HKA4009-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/HKA4009-en.pdf",
+      "pages": [
+        63,
+        64
+      ],
+      "answerPage": 64
     }
   },
   "YOU4795": {
@@ -986,7 +1429,12 @@
     },
     "en": {
       "page": 77,
-      "path": "/adventurer-honors/pdf-pages/YOU4795-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4795-en.pdf",
+      "pages": [
+        77,
+        78
+      ],
+      "answerPage": 78
     }
   },
   "YOU4800": {
@@ -997,7 +1445,12 @@
     },
     "en": {
       "page": 81,
-      "path": "/adventurer-honors/pdf-pages/YOU4800-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4800-en.pdf",
+      "pages": [
+        81,
+        82
+      ],
+      "answerPage": 82
     }
   },
   "YOU4810": {
@@ -1008,7 +1461,12 @@
     },
     "en": {
       "page": 83,
-      "path": "/adventurer-honors/pdf-pages/YOU4810-en.pdf"
+      "path": "/adventurer-honors/pdf-pages/YOU4810-en.pdf",
+      "pages": [
+        83,
+        84
+      ],
+      "answerPage": 84
     }
   }
 }
