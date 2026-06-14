@@ -42,6 +42,26 @@ describe("splitTextWithLinks", () => {
       { type: "text", value: " 取得資源。" },
     ]);
   });
+
+  test("links Chinese bible references to YouVersion RCUV", () => {
+    const segments = splitTextWithLinks("閱讀羅馬書 12:10 和箴言 12:25。");
+
+    expect(segments).toEqual([
+      { type: "text", value: "閱讀" },
+      {
+        type: "link",
+        value: "羅馬書 12:10",
+        href: "https://www.bible.com/zh-TW/bible/139/ROM.12.10.RCUV",
+      },
+      { type: "text", value: " 和" },
+      {
+        type: "link",
+        value: "箴言 12:25",
+        href: "https://www.bible.com/zh-TW/bible/139/PRO.12.25.RCUV",
+      },
+      { type: "text", value: "。" },
+    ]);
+  });
 });
 
 describe("parseHonorAnswer", () => {

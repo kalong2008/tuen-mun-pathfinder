@@ -1,3 +1,4 @@
+import { FormattedHonorText } from "@/app/adventurer-honors/FormattedHonorText";
 import { normalizeChineseQuotes } from "@/app/adventurer-honors/honor-answer-format";
 import {
   buildRequirementTree,
@@ -21,7 +22,7 @@ function RequirementList({
     <ListTag className={getRequirementListClassName(style, nested)}>
       {nodes.map((node, index) => (
         <li key={index} className="pl-1 leading-relaxed">
-          {normalizeChineseQuotes(node.text)}
+          <FormattedHonorText text={normalizeChineseQuotes(node.text)} />
           {node.children.length > 0 && node.childListStyle ? (
             <RequirementList nodes={node.children} style={node.childListStyle} nested />
           ) : null}

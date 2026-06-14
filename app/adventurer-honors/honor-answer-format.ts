@@ -1,3 +1,5 @@
+import { findBibleReferenceLinks } from "@/app/adventurer-honors/bible-reference";
+
 export type AnswerBlock =
   | { type: "paragraph"; content: string }
   | { type: "heading"; content: string }
@@ -47,25 +49,59 @@ function normalizeLinkHref(value: string): string {
   return `https://${value.replace(/^\/\//, "")}`;
 }
 
-export function splitTextWithLinks(text: string): TextSegment[] {
-  const segments: TextSegment[] = [];
-  let lastIndex = 0;
+type InlineLinkMatch = { start: number; end: number; value: string; href: string };
+
+function collectInlineLinkMatches(text: string): InlineLinkMatch[] {
+  const matches: InlineLinkMatch[] = [];
 
   for (const match of text.matchAll(URL_PATTERN)) {
     const value = match[0];
-    const index = match.index ?? 0;
+    const start = match.index ?? 0;
+    matches.push({
+      start,
+      end: start + value.length,
+      value,
+      href: normalizeLinkHref(value),
+    });
+  }
 
-    if (index > lastIndex) {
-      segments.push({ type: "text", value: text.slice(lastIndex, index) });
+  for (const link of findBibleReferenceLinks(text)) {
+    matches.push({
+      start: link.start,
+      end: link.end,
+      value: text.slice(link.start, link.end),
+      href: link.href,
+    });
+  }
+
+  return matches.sort((a, b) => a.start - b.start || b.end - a.end);
+}
+
+export function splitTextWithLinks(text: string): TextSegment[] {
+  const matches = collectInlineLinkMatches(text);
+  if (matches.length === 0) {
+    return [{ type: "text", value: text }];
+  }
+
+  const segments: TextSegment[] = [];
+  let lastIndex = 0;
+
+  for (const match of matches) {
+    if (match.start < lastIndex) {
+      continue;
+    }
+
+    if (match.start > lastIndex) {
+      segments.push({ type: "text", value: text.slice(lastIndex, match.start) });
     }
 
     segments.push({
       type: "link",
-      value,
-      href: normalizeLinkHref(value),
+      value: match.value,
+      href: match.href,
     });
 
-    lastIndex = index + value.length;
+    lastIndex = match.end;
   }
 
   if (lastIndex < text.length) {
