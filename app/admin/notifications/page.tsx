@@ -121,10 +121,10 @@ export default function AdminNotifications() {
             className="w-full p-2 border rounded shadow-sm focus:ring-blue-500 focus:border-blue-500"
             value={screenPath}
             onChange={(e) => setScreenPath(e.target.value)}
-            placeholder="e.g., notice or contact"
+            placeholder="e.g., /(tabs)/notice or /(tabs)/calendar"
             disabled={isLoading}
           />
-          <p className="mt-1 text-xs text-gray-500">Enter the app path to navigate to when the notification is tapped.</p>
+          <p className="mt-1 text-xs text-gray-500">Optional Expo Router path when the notification is tapped, e.g. <code>/(tabs)/notice</code>.</p>
         </div>
 
         <button
