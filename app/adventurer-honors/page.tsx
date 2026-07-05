@@ -2,9 +2,9 @@ import { auth, currentUser } from "@clerk/nextjs/server";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { AdventurerHonorsClient } from "@/app/adventurer-honors/AdventurerHonorsClient";
-import { adventurerHonors } from "@/app/adventurer-honors/honors-data";
-import { sortAdventurerHonors } from "@/app/adventurer-honors/honor-sort";
+import { AdventurerHonorsClient } from "@/app/adventurer-honors/components/AdventurerHonorsClient";
+import { loadAdventurerHonors } from "@/app/adventurer-honors/lib/data/loader";
+import { sortAdventurerHonors } from "@/app/adventurer-honors/lib/display/sort";
 import { isAdminUser } from "@/app/lib/user-role";
 
 export const metadata: Metadata = {
@@ -39,5 +39,5 @@ export default async function AdventurerHonorsPage() {
     return <AdventurerHonorsAccessDenied message="僅限管理員存取。" />;
   }
 
-  return <AdventurerHonorsClient honors={sortAdventurerHonors(adventurerHonors)} />;
+  return <AdventurerHonorsClient honors={sortAdventurerHonors(loadAdventurerHonors())} />;
 }

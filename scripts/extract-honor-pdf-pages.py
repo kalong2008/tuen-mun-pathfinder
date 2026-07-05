@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import json
 import os
 import re
 from dataclasses import dataclass
@@ -12,14 +11,11 @@ from pathlib import Path
 from pypdf import PdfReader, PdfWriter
 
 ROOT = Path(__file__).resolve().parents[1]
-HONORS_DATA = ROOT / "app" / "adventurer-honors" / "honors-data.ts"
-OUTPUT_JSON = ROOT / "app" / "adventurer-honors" / "honor-pdf-pages.json"
+HONORS_CONTENT_DIR = ROOT / "app" / "adventurer-honors" / "content"
 OUTPUT_DIR = ROOT / "public" / "adventurer-honors" / "pdf-pages"
 
 DEFAULT_CHI_PDF = ROOT / "public" / "adventurer-honors" / "handbooks" / "hkmc-2023-zh.pdf"
 DEFAULT_ENG_PDF = ROOT / "public" / "adventurer-honors" / "handbooks" / "award-book-2020-en.pdf"
-
-CHI_HANDBOOK_URL = "/adventurer-honors/handbooks/hkmc-2023-zh.pdf"
 
 CODE_RE = re.compile(r"(HKA\d{4}|YOU\d{4})", re.I)
 
@@ -58,22 +54,36 @@ class HonorRecord:
 
 
 def parse_honors() -> list[HonorRecord]:
-    text = HONORS_DATA.read_text(encoding="utf-8")
-    blocks = re.findall(
-        r'code: "(HKA\d+|YOU\d+)"[\s\S]*?nameZh: "([^"]+)"[\s\S]*?nameEn: "([^"]+)"[\s\S]*?aliases: (\[[^\]]*\])',
-        text,
-    )
     honors: list[HonorRecord] = []
-    for code, name_zh, name_en, aliases_raw in blocks:
-        aliases = re.findall(r'"([^"]+)"', aliases_raw)
+    for path in sorted(HONORS_CONTENT_DIR.rglob("*.md")):
+        text = path.read_text(encoding="utf-8")
+        frontmatter_match = re.match(r"^---\n(.*?)\n---", text, re.S)
+        if not frontmatter_match:
+            continue
+
+        frontmatter = frontmatter_match.group(1)
+        code_match = re.search(r"^code: (HKA\d+|YOU\d+)", frontmatter, re.M)
+        name_zh_match = re.search(r'^nameZh: (?:"([^"]*)"|([^\n]+))', frontmatter, re.M)
+        name_en_match = re.search(r'^nameEn: (?:"([^"]*)"|([^\n]+))', frontmatter, re.M)
+        aliases_match = re.search(r"^aliases:\n((?:  - .+\n)*)", frontmatter, re.M)
+
+        if not code_match or not name_zh_match:
+            continue
+
+        name_zh = (name_zh_match.group(1) or name_zh_match.group(2) or "").strip()
+        name_en = (name_en_match.group(1) or name_en_match.group(2) or "").strip() if name_en_match else ""
+        aliases_block = aliases_match.group(1) if aliases_match else ""
+        aliases = re.findall(r'"([^"]+)"', aliases_block)
+
         honors.append(
             HonorRecord(
-                code=code.upper(),
+                code=code_match.group(1).upper(),
                 name_zh=name_zh,
                 name_en=name_en,
                 aliases=aliases,
             )
         )
+
     return honors
 
 
@@ -256,25 +266,16 @@ def main() -> None:
     chi_pages = [(page.extract_text() or "") for page in chi_reader.pages]
     eng_pages = [(page.extract_text() or "") for page in eng_reader.pages]
 
-    mapping: dict[str, dict[str, dict[str, int | str]]] = {}
     missing_chi: list[str] = []
     missing_eng: list[str] = []
 
     for honor in honors:
-        entry: dict[str, dict[str, int | str]] = {}
-
         chi_page = find_chi_page(chi_pages, honor)
         if chi_page is None:
             missing_chi.append(honor.code)
         else:
             chi_output = OUTPUT_DIR / f"{honor.code}-zh.pdf"
             extract_page(chi_reader, chi_page, chi_output)
-            page_number = chi_page + 1
-            entry["zh"] = {
-                "page": page_number,
-                "path": f"/adventurer-honors/pdf-pages/{honor.code}-zh.pdf",
-                "sourceUrl": f"{CHI_HANDBOOK_URL}#page={page_number}",
-            }
 
         eng_page = find_eng_page(eng_pages, honor.name_en)
         if eng_page is None:
@@ -283,24 +284,8 @@ def main() -> None:
             eng_page_indices = find_eng_pages_to_extract(eng_pages, eng_page)
             eng_output = OUTPUT_DIR / f"{honor.code}-en.pdf"
             extract_pages(eng_reader, eng_page_indices, eng_output)
-            eng_entry: dict[str, int | str | list[int]] = {
-                "page": eng_page + 1,
-                "path": f"/adventurer-honors/pdf-pages/{honor.code}-en.pdf",
-                "pages": [page_index + 1 for page_index in eng_page_indices],
-            }
-            if len(eng_page_indices) > 1:
-                eng_entry["answerPage"] = eng_page_indices[1] + 1
-            entry["en"] = eng_entry
 
-        if entry:
-            mapping[honor.code] = entry
-
-    OUTPUT_JSON.write_text(
-        json.dumps(mapping, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    print(f"Saved {len(mapping)} honor PDF mappings.")
+    print(f"Processed {len(honors)} honors.")
     print(f"Chinese pages extracted: {len(honors) - len(missing_chi)} / {len(honors)}")
     print(f"English pages extracted: {len(honors) - len(missing_eng)} / {len(honors)}")
     if missing_chi:

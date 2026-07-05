@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import json
 import re
 import urllib.parse
 import urllib.request
@@ -12,7 +11,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOC_OUTPUT_DIR = ROOT / "public" / "adventurer-honors" / "documents"
 HANDBOOK_OUTPUT_DIR = ROOT / "public" / "adventurer-honors" / "handbooks"
-MAPPING_FILE = ROOT / "app" / "adventurer-honors" / "honor-downloads.json"
 
 PAGES = [
     "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/",
@@ -109,13 +107,14 @@ def scrape_document_urls() -> dict[str, str]:
 def main() -> None:
     scraped = scrape_document_urls()
 
-    data_path = ROOT / "app" / "adventurer-honors" / "honors-data.ts"
+    content_dir = ROOT / "app" / "adventurer-honors" / "content"
     honor_codes = [
         match.upper()
-        for match in re.findall(r'code: "(HKA\d+|YOU\d+)"', data_path.read_text(encoding="utf-8"))
+        for path in content_dir.rglob("*.md")
+        for match in re.findall(r"^code: (HKA\d+|YOU\d+)", path.read_text(encoding="utf-8"), re.M)
     ]
 
-    mapping: dict[str, str] = {}
+    downloaded = 0
     missing: list[str] = []
 
     for code in honor_codes:
@@ -128,14 +127,9 @@ def main() -> None:
         dest = DOC_OUTPUT_DIR / filename
         print(f"Downloading {code} …")
         download(source_url, dest)
-        mapping[code] = f"/adventurer-honors/documents/{filename}"
+        downloaded += 1
 
-    MAPPING_FILE.write_text(
-        json.dumps(mapping, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    print(f"\nDownloaded {len(mapping)} / {len(honor_codes)} Word documents.")
+    print(f"\nDownloaded {downloaded} / {len(honor_codes)} Word documents.")
     if missing:
         print("Missing:", ", ".join(missing))
 

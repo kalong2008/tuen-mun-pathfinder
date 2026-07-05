@@ -3,13 +3,11 @@
 
 from __future__ import annotations
 
-import json
 import re
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MAPPING_FILE = ROOT / "app" / "adventurer-honors" / "honor-downloads.json"
 
 PAGES = [
     "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/",
@@ -76,30 +74,25 @@ def main() -> None:
 
     scraped.update(MANUAL_URLS)
 
-    data_path = ROOT / "app" / "adventurer-honors" / "honors-data.ts"
+    content_dir = ROOT / "app" / "adventurer-honors" / "content"
     honor_codes = sorted(
         {
             match.upper()
-            for match in re.findall(r'code: "(HKA\d+|YOU\d+)"', data_path.read_text(encoding="utf-8"))
+            for path in content_dir.rglob("*.md")
+            for match in re.findall(r"^code: (HKA\d+|YOU\d+)", path.read_text(encoding="utf-8"), re.M)
         }
     )
 
-    mapping: dict[str, str] = {}
+    found = 0
     missing: list[str] = []
 
     for code in honor_codes:
-        download_url = scraped.get(code)
-        if download_url:
-            mapping[code] = download_url
+        if scraped.get(code):
+            found += 1
         else:
             missing.append(code)
 
-    MAPPING_FILE.write_text(
-        json.dumps(mapping, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    print(f"Saved {len(mapping)} / {len(honor_codes)} Word download links.")
+    print(f"Found {found} / {len(honor_codes)} Word download links on HKMC.")
     if missing:
         print("Missing:", ", ".join(missing))
 

@@ -27,7 +27,7 @@ vi.mock("next/link", () => ({
   ),
 }));
 
-vi.mock("@/app/adventurer-honors/AdventurerHonorsClient", () => ({
+vi.mock("@/app/adventurer-honors/components/AdventurerHonorsClient", () => ({
   AdventurerHonorsClient: () => <div>Mock adventurer honors client</div>,
 }));
 

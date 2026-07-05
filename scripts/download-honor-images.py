@@ -3,7 +3,6 @@
 
 from __future__ import annotations
 
-import json
 import re
 import urllib.parse
 import urllib.request
@@ -11,7 +10,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "public" / "adventurer-honors"
-MAPPING_FILE = ROOT / "app" / "adventurer-honors" / "honor-images.json"
 
 PAGES = [
     "https://youth.hkmcadventist.org/web/clubs/adventurer-2/honor/spiritual/",
@@ -32,7 +30,7 @@ H4_CODE_RE = re.compile(
     re.I | re.S,
 )
 
-# Site typos / alternate codes mapped to the honor code used in honors-data.ts
+# Site typos / alternate codes mapped to the honor code used in honor markdown frontmatter
 MANUAL_ALIASES: dict[str, str] = {
     "HKA5058": "HKA4058",
 }
@@ -48,12 +46,7 @@ MANUAL_URLS: dict[str, str] = {
 }
 
 # Honors with no HKMC badge image; keep the file already in public/adventurer-honors/
-LOCAL_ONLY: dict[str, str] = {
-    "YOU4925": "/adventurer-honors/YOU4925.png",
-    "HKA4052": "/adventurer-honors/HKA4052.png",
-    "YOU4625": "/adventurer-honors/YOU4625.png",
-    "YOU4910": "/adventurer-honors/YOU4910.png",
-}
+LOCAL_ONLY = frozenset({"YOU4925", "HKA4052", "YOU4625", "YOU4910"})
 
 
 def pick_srcset_url(srcset: str) -> str:
@@ -119,21 +112,21 @@ def main() -> None:
 
     scraped.update(MANUAL_URLS)
 
-    data_path = ROOT / "app" / "adventurer-honors" / "honors-data.ts"
+    content_dir = ROOT / "app" / "adventurer-honors" / "content"
     honor_codes = [
         match.upper()
-        for match in re.findall(r'code: "(HKA\d+|YOU\d+)"', data_path.read_text(encoding="utf-8"))
+        for path in content_dir.rglob("*.md")
+        for match in re.findall(r"^code: (HKA\d+|YOU\d+)", path.read_text(encoding="utf-8"), re.M)
     ]
 
-    mapping: dict[str, str] = {}
+    downloaded = 0
     missing: list[str] = []
 
     for code in honor_codes:
         source_url = scraped.get(code)
         if not source_url:
-            local_path = LOCAL_ONLY.get(code)
-            if local_path and (OUTPUT_DIR / f"{code}.png").exists():
-                mapping[code] = local_path
+            if code in LOCAL_ONLY and (OUTPUT_DIR / f"{code}.png").exists():
+                downloaded += 1
                 continue
             missing.append(code)
             continue
@@ -142,14 +135,9 @@ def main() -> None:
         dest = OUTPUT_DIR / filename
         print(f"Downloading {code} …")
         download(source_url, dest)
-        mapping[code] = f"/adventurer-honors/{filename}"
+        downloaded += 1
 
-    MAPPING_FILE.write_text(
-        json.dumps(mapping, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    print(f"\nDownloaded {len(mapping)} / {len(honor_codes)} honor images.")
+    print(f"\nDownloaded {downloaded} / {len(honor_codes)} honor images.")
     if missing:
         print("Missing:", ", ".join(missing))
 
