@@ -141,7 +141,6 @@ function HonorModal({
     const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
 
     document.body.style.overflow = "hidden";
-    dialog?.querySelector<HTMLElement>("#honor-modal-title")?.focus();
 
     const getFocusableElements = () => {
       if (!dialog) {
@@ -229,11 +228,7 @@ function HonorModal({
               <HonorReviewTag honor={honor} />
               <HonorCategoryTag category={honor.category} />
             </div>
-            <h2
-              id="honor-modal-title"
-              tabIndex={-1}
-              className="text-xl font-semibold text-gray-900 outline-none focus:ring-2 focus:ring-blue-200"
-            >
+            <h2 id="honor-modal-title" className="text-xl font-semibold text-gray-900">
               {honor.nameZh}
             </h2>
             {honor.nameEn && <p className="text-sm text-gray-500">{honor.nameEn}</p>}
