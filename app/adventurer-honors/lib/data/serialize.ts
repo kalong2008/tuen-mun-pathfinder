@@ -122,7 +122,9 @@ export function buildHonorMarkdownBody(requirementsMarkdown: string, answers: Ho
   return sections.join("\n").trimEnd();
 }
 
-export function formatHonorMarkdownFile(honor: AdventurerHonor, body?: string): string {
+export type HonorMarkdownFileInput = Omit<AdventurerHonor, "hasDocxDownload">;
+
+export function formatHonorMarkdownFile(honor: HonorMarkdownFileInput, body?: string): string {
   const frontmatter = buildHonorFrontmatter(honor);
   const markdownBody = body ?? buildHonorMarkdownBody(honor.requirementsMarkdown, honor.answers);
   return `${frontmatter}\n\n${markdownBody}\n`;

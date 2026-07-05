@@ -3,7 +3,8 @@ import path from "node:path";
 
 import matter from "gray-matter";
 
-import { getAvailableDocxCodes, honorHasDocxDownload } from "@/app/adventurer-honors/lib/assets/downloads";
+import { getAvailableDocxCodes } from "@/app/adventurer-honors/lib/assets/docx-inventory";
+import { honorHasDocxDownload } from "@/app/adventurer-honors/lib/assets/downloads";
 import {
   parseHonorFrontmatter,
   parseHonorMarkdownBody,

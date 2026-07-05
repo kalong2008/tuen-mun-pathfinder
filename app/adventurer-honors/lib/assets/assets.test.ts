@@ -4,7 +4,8 @@ import path from "node:path";
 import { describe, expect, test } from "vitest";
 
 import { resolveHonorCode } from "@/app/adventurer-honors/lib/assets/code";
-import { getAvailableDocxCodes, honorHasDocxDownload } from "@/app/adventurer-honors/lib/assets/downloads";
+import { getAvailableDocxCodes } from "@/app/adventurer-honors/lib/assets/docx-inventory";
+import { honorHasDocxDownload } from "@/app/adventurer-honors/lib/assets/downloads";
 import { loadAdventurerHonors } from "@/app/adventurer-honors/lib/data/loader";
 
 const PUBLIC_HONORS_DIR = path.join(process.cwd(), "public/adventurer-honors");

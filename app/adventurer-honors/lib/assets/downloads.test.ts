@@ -1,7 +1,7 @@
 import { describe, expect, test } from "vitest";
 
+import { getAvailableDocxCodes } from "@/app/adventurer-honors/lib/assets/docx-inventory";
 import {
-  getAvailableDocxCodes,
   getHonorDownloadUrl,
   honorHasDocxDownload,
 } from "@/app/adventurer-honors/lib/assets/downloads";
