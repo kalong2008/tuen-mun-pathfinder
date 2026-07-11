@@ -1,0 +1,1150 @@
+[
+  {
+    "code": "HKA4006",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4006-colors.md",
+    "rel": "arts-crafts/hka4006-colors.md",
+    "nameEn": "Colors",
+    "nameZh": "顏色"
+  },
+  {
+    "code": "HKA4007",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4007-crayons-and-markers.md",
+    "rel": "arts-crafts/hka4007-crayons-and-markers.md",
+    "nameEn": "Crayons and Markers",
+    "nameZh": "蠟筆和箱頭筆"
+  },
+  {
+    "code": "HKA4008",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4008-finger-play.md",
+    "rel": "arts-crafts/hka4008-finger-play.md",
+    "nameEn": "Finger Play",
+    "nameZh": "手指遊戲"
+  },
+  {
+    "code": "HKA4009",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4009-gadgets-and-sand.md",
+    "rel": "arts-crafts/hka4009-gadgets-and-sand.md",
+    "nameEn": "Gadgets and Sand",
+    "nameZh": "小工具和沙子"
+  },
+  {
+    "code": "HKA4010",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4010-jigsaw-puzzles.md",
+    "rel": "arts-crafts/hka4010-jigsaw-puzzles.md",
+    "nameEn": "Jigsaw Puzzles",
+    "nameZh": "拼圖"
+  },
+  {
+    "code": "HKA4011",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4011-music-i.md",
+    "rel": "arts-crafts/hka4011-music-i.md",
+    "nameEn": "Music I",
+    "nameZh": "音樂 I"
+  },
+  {
+    "code": "HKA4012",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4012-shapes-and-sizes.md",
+    "rel": "arts-crafts/hka4012-shapes-and-sizes.md",
+    "nameEn": "Shapes and Sizes",
+    "nameZh": "形狀和尺寸"
+  },
+  {
+    "code": "HKA4013",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4013-sponge-art.md",
+    "rel": "arts-crafts/hka4013-sponge-art.md",
+    "nameEn": "Sponge Art",
+    "nameZh": "海綿藝術"
+  },
+  {
+    "code": "HKA4014",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4014-stamping-fun-i.md",
+    "rel": "arts-crafts/hka4014-stamping-fun-i.md",
+    "nameEn": "Stamping Fun I",
+    "nameZh": "圖章樂 I"
+  },
+  {
+    "code": "YOU4510",
+    "path": "app/adventurer-honors/content/arts-crafts/you4510-artist.md",
+    "rel": "arts-crafts/you4510-artist.md",
+    "nameEn": "Artist",
+    "nameZh": "藝術家"
+  },
+  {
+    "code": "YOU4525",
+    "path": "app/adventurer-honors/content/arts-crafts/you4525-basket-maker.md",
+    "rel": "arts-crafts/you4525-basket-maker.md",
+    "nameEn": "Basket Maker",
+    "nameZh": "織籃"
+  },
+  {
+    "code": "YOU4530",
+    "path": "app/adventurer-honors/content/arts-crafts/you4530-bead-craft.md",
+    "rel": "arts-crafts/you4530-bead-craft.md",
+    "nameEn": "Bead Craft",
+    "nameZh": "珠飾工藝"
+  },
+  {
+    "code": "YOU4555",
+    "path": "app/adventurer-honors/content/arts-crafts/you4555-build-and-fly.md",
+    "rel": "arts-crafts/you4555-build-and-fly.md",
+    "nameEn": "Build and Fly",
+    "nameZh": "風箏"
+  },
+  {
+    "code": "YOU4560",
+    "path": "app/adventurer-honors/content/arts-crafts/you4560-building-blocks.md",
+    "rel": "arts-crafts/you4560-building-blocks.md",
+    "nameEn": "Building Blocks",
+    "nameZh": "建築"
+  },
+  {
+    "code": "YOU4570",
+    "path": "app/adventurer-honors/content/arts-crafts/you4570-buttons.md",
+    "rel": "arts-crafts/you4570-buttons.md",
+    "nameEn": "Buttons",
+    "nameZh": "鈕扣"
+  },
+  {
+    "code": "YOU4590",
+    "path": "app/adventurer-honors/content/arts-crafts/you4590-carpenter.md",
+    "rel": "arts-crafts/you4590-carpenter.md",
+    "nameEn": "Carpenter",
+    "nameZh": "木工"
+  },
+  {
+    "code": "YOU4700",
+    "path": "app/adventurer-honors/content/arts-crafts/you4700-glue-right.md",
+    "rel": "arts-crafts/you4700-glue-right.md",
+    "nameEn": "Glue Right",
+    "nameZh": "漿糊黏貼"
+  },
+  {
+    "code": "YOU4720",
+    "path": "app/adventurer-honors/content/arts-crafts/you4720-hand-shadows.md",
+    "rel": "arts-crafts/you4720-hand-shadows.md",
+    "nameEn": "Hand Shadows",
+    "nameZh": "手影"
+  },
+  {
+    "code": "YOU4730",
+    "path": "app/adventurer-honors/content/arts-crafts/you4730-handicraft.md",
+    "rel": "arts-crafts/you4730-handicraft.md",
+    "nameEn": "Handicraft",
+    "nameZh": "手工藝"
+  },
+  {
+    "code": "YOU4755",
+    "path": "app/adventurer-honors/content/arts-crafts/you4755-magnet-fun-i.md",
+    "rel": "arts-crafts/you4755-magnet-fun-i.md",
+    "nameEn": "Magnet Fun I",
+    "nameZh": "磁鐵樂 Ⅰ"
+  },
+  {
+    "code": "YOU4790",
+    "path": "app/adventurer-honors/content/arts-crafts/you4790-magnet-fun-ii.md",
+    "rel": "arts-crafts/you4790-magnet-fun-ii.md",
+    "nameEn": "Magnet Fun II",
+    "nameZh": "磁鐵樂 II"
+  },
+  {
+    "code": "YOU4795",
+    "path": "app/adventurer-honors/content/arts-crafts/you4795-media-critic.md",
+    "rel": "arts-crafts/you4795-media-critic.md",
+    "nameEn": "Media Critic",
+    "nameZh": "媒體"
+  },
+  {
+    "code": "YOU4800",
+    "path": "app/adventurer-honors/content/arts-crafts/you4800-music-ii.md",
+    "rel": "arts-crafts/you4800-music-ii.md",
+    "nameEn": "Music II",
+    "nameZh": "音樂 II"
+  },
+  {
+    "code": "YOU4810",
+    "path": "app/adventurer-honors/content/arts-crafts/you4810-my-picture-book.md",
+    "rel": "arts-crafts/you4810-my-picture-book.md",
+    "nameEn": "My Picture Book",
+    "nameZh": "相冊"
+  },
+  {
+    "code": "YOU4830",
+    "path": "app/adventurer-honors/content/arts-crafts/you4830-postcards.md",
+    "rel": "arts-crafts/you4830-postcards.md",
+    "nameEn": "Postcards",
+    "nameZh": "明信片"
+  },
+  {
+    "code": "YOU4855",
+    "path": "app/adventurer-honors/content/arts-crafts/you4855-reporter.md",
+    "rel": "arts-crafts/you4855-reporter.md",
+    "nameEn": "Reporter",
+    "nameZh": "記者"
+  },
+  {
+    "code": "YOU4890",
+    "path": "app/adventurer-honors/content/arts-crafts/you4890-sign-language.md",
+    "rel": "arts-crafts/you4890-sign-language.md",
+    "nameEn": "Sign Language",
+    "nameZh": "手語"
+  },
+  {
+    "code": "YOU4910",
+    "path": "app/adventurer-honors/content/arts-crafts/you4910-stamping-fun-ii.md",
+    "rel": "arts-crafts/you4910-stamping-fun-ii.md",
+    "nameEn": "Stamping Fun II",
+    "nameZh": "圖章樂 II"
+  },
+  {
+    "code": "YOU4940",
+    "path": "app/adventurer-honors/content/arts-crafts/you4940-tin-can-fun.md",
+    "rel": "arts-crafts/you4940-tin-can-fun.md",
+    "nameEn": "Tin Can Fun",
+    "nameZh": "錫罐樂"
+  },
+  {
+    "code": "HKA4001",
+    "path": "app/adventurer-honors/content/community/hka4001-community-helpers.md",
+    "rel": "community/hka4001-community-helpers.md",
+    "nameEn": "Community Helpers",
+    "nameZh": "公務員"
+  },
+  {
+    "code": "HKA4002",
+    "path": "app/adventurer-honors/content/community/hka4002-cooperation.md",
+    "rel": "community/hka4002-cooperation.md",
+    "nameEn": "Cooperation",
+    "nameZh": "合作"
+  },
+  {
+    "code": "HKA4003",
+    "path": "app/adventurer-honors/content/community/hka4003-fire-safety.md",
+    "rel": "community/hka4003-fire-safety.md",
+    "nameEn": "Fire Safety",
+    "nameZh": "防火安全"
+  },
+  {
+    "code": "HKA4004",
+    "path": "app/adventurer-honors/content/community/hka4004-hands-of-service.md",
+    "rel": "community/hka4004-hands-of-service.md",
+    "nameEn": "Hands of Service",
+    "nameZh": "服務之手"
+  },
+  {
+    "code": "HKA4005",
+    "path": "app/adventurer-honors/content/community/hka4005-my-community.md",
+    "rel": "community/hka4005-my-community.md",
+    "nameEn": "My Community Friends",
+    "nameZh": "社區朋友"
+  },
+  {
+    "code": "YOU4615",
+    "path": "app/adventurer-honors/content/community/you4615-country-fun.md",
+    "rel": "community/you4615-country-fun.md",
+    "nameEn": "Country Fun",
+    "nameZh": "認識國家"
+  },
+  {
+    "code": "YOU4860",
+    "path": "app/adventurer-honors/content/community/you4860-road-safety.md",
+    "rel": "community/you4860-road-safety.md",
+    "nameEn": "Road Safety",
+    "nameZh": "道路安全"
+  },
+  {
+    "code": "HKA4015",
+    "path": "app/adventurer-honors/content/household/hka4015-alphabet-i.md",
+    "rel": "household/hka4015-alphabet-i.md",
+    "nameEn": "Alphabet I",
+    "nameZh": "字母 I"
+  },
+  {
+    "code": "HKA4016",
+    "path": "app/adventurer-honors/content/household/hka4016-alphabet-ii.md",
+    "rel": "household/hka4016-alphabet-ii.md",
+    "nameEn": "Alphabet II",
+    "nameZh": "字母 II"
+  },
+  {
+    "code": "HKA4017",
+    "path": "app/adventurer-honors/content/household/hka4017-baking.md",
+    "rel": "household/hka4017-baking.md",
+    "nameEn": "Baking",
+    "nameZh": "烘焙"
+  },
+  {
+    "code": "HKA4018",
+    "path": "app/adventurer-honors/content/household/hka4018-family-helper.md",
+    "rel": "household/hka4018-family-helper.md",
+    "nameEn": "Family Helper",
+    "nameZh": "家庭幫手"
+  },
+  {
+    "code": "HKA4019",
+    "path": "app/adventurer-honors/content/household/hka4019-health-specialist.md",
+    "rel": "household/hka4019-health-specialist.md",
+    "nameEn": "Health Specialist",
+    "nameZh": "健康專家"
+  },
+  {
+    "code": "HKA4020",
+    "path": "app/adventurer-honors/content/household/hka4020-healthy-foods.md",
+    "rel": "household/hka4020-healthy-foods.md",
+    "nameEn": "Healthy Foods",
+    "nameZh": "健康食物"
+  },
+  {
+    "code": "HKA4021",
+    "path": "app/adventurer-honors/content/household/hka4021-healthy-me.md",
+    "rel": "household/hka4021-healthy-me.md",
+    "nameEn": "Healthy Me",
+    "nameZh": "健康的我"
+  },
+  {
+    "code": "HKA4022",
+    "path": "app/adventurer-honors/content/household/hka4022-home-helper-i.md",
+    "rel": "household/hka4022-home-helper-i.md",
+    "nameEn": "Home Helper I",
+    "nameZh": "家庭幫手 I"
+  },
+  {
+    "code": "HKA4023",
+    "path": "app/adventurer-honors/content/household/hka4023-know-your-body.md",
+    "rel": "household/hka4023-know-your-body.md",
+    "nameEn": "Know Your Body",
+    "nameZh": "認識身體"
+  },
+  {
+    "code": "HKA4024",
+    "path": "app/adventurer-honors/content/household/hka4024-manners-fun.md",
+    "rel": "household/hka4024-manners-fun.md",
+    "nameEn": "Manners Fun",
+    "nameZh": "禮儀"
+  },
+  {
+    "code": "HKA4025",
+    "path": "app/adventurer-honors/content/household/hka4025-my-family.md",
+    "rel": "household/hka4025-my-family.md",
+    "nameEn": "My Family",
+    "nameZh": "我的家庭"
+  },
+  {
+    "code": "HKA4026",
+    "path": "app/adventurer-honors/content/household/hka4026-numbers.md",
+    "rel": "household/hka4026-numbers.md",
+    "nameEn": "Numbers",
+    "nameZh": "數字"
+  },
+  {
+    "code": "HKA4027",
+    "path": "app/adventurer-honors/content/household/hka4027-reading-i.md",
+    "rel": "household/hka4027-reading-i.md",
+    "nameEn": "Reading I",
+    "nameZh": "閱讀 I"
+  },
+  {
+    "code": "HKA4028",
+    "path": "app/adventurer-honors/content/household/hka4028-reading-ii.md",
+    "rel": "household/hka4028-reading-ii.md",
+    "nameEn": "Reading II",
+    "nameZh": "閱讀 II"
+  },
+  {
+    "code": "HKA4029",
+    "path": "app/adventurer-honors/content/household/hka4029-reading-iii.md",
+    "rel": "household/hka4029-reading-iii.md",
+    "nameEn": "Reading III",
+    "nameZh": "閱讀 III"
+  },
+  {
+    "code": "HKA4030",
+    "path": "app/adventurer-honors/content/household/hka4030-reading-iv.md",
+    "rel": "household/hka4030-reading-iv.md",
+    "nameEn": "Reading IV",
+    "nameZh": "閱讀 IV"
+  },
+  {
+    "code": "HKA4031",
+    "path": "app/adventurer-honors/content/household/hka4031-sharing.md",
+    "rel": "household/hka4031-sharing.md",
+    "nameEn": "Sharing",
+    "nameZh": "分享"
+  },
+  {
+    "code": "HKA4032",
+    "path": "app/adventurer-honors/content/household/hka4032-special-helper.md",
+    "rel": "household/hka4032-special-helper.md",
+    "nameEn": "Special Helper",
+    "nameZh": "樂於助人"
+  },
+  {
+    "code": "HKA4033",
+    "path": "app/adventurer-honors/content/household/hka4033-story-listening-i.md",
+    "rel": "household/hka4033-story-listening-i.md",
+    "nameEn": "Story Listening I",
+    "nameZh": "故事聆聽 I"
+  },
+  {
+    "code": "HKA4034",
+    "path": "app/adventurer-honors/content/household/hka4034-story-listening-ii.md",
+    "rel": "household/hka4034-story-listening-ii.md",
+    "nameEn": "Story Listening II",
+    "nameZh": "故事聆聽 II"
+  },
+  {
+    "code": "HKA4064",
+    "path": "app/adventurer-honors/content/household/hka4064-acts-of-kindness.md",
+    "rel": "household/hka4064-acts-of-kindness.md",
+    "nameEn": "Acts of Kindness",
+    "nameZh": "良善"
+  },
+  {
+    "code": "YOU4595",
+    "path": "app/adventurer-honors/content/household/you4595-collector.md",
+    "rel": "household/you4595-collector.md",
+    "nameEn": "Collector",
+    "nameZh": "蒐集"
+  },
+  {
+    "code": "YOU4600",
+    "path": "app/adventurer-honors/content/household/you4600-technology.md",
+    "rel": "household/you4600-technology.md",
+    "nameEn": "Technology",
+    "nameZh": "科技"
+  },
+  {
+    "code": "YOU4605",
+    "path": "app/adventurer-honors/content/household/you4605-cooking-fun.md",
+    "rel": "household/you4605-cooking-fun.md",
+    "nameEn": "Cooking Fun",
+    "nameZh": "煮食"
+  },
+  {
+    "code": "YOU4620",
+    "path": "app/adventurer-honors/content/household/you4620-courtesy.md",
+    "rel": "household/you4620-courtesy.md",
+    "nameEn": "Courtesy",
+    "nameZh": "禮貌"
+  },
+  {
+    "code": "YOU4690",
+    "path": "app/adventurer-honors/content/household/you4690-gardener.md",
+    "rel": "household/you4690-gardener.md",
+    "nameEn": "Gardener",
+    "nameZh": "園藝"
+  },
+  {
+    "code": "YOU4735",
+    "path": "app/adventurer-honors/content/household/you4735-home-craft.md",
+    "rel": "household/you4735-home-craft.md",
+    "nameEn": "Home Craft",
+    "nameZh": "家政"
+  },
+  {
+    "code": "YOU4740",
+    "path": "app/adventurer-honors/content/household/you4740-home-helper-ii.md",
+    "rel": "household/you4740-home-helper-ii.md",
+    "nameEn": "Home Helper II",
+    "nameZh": "家務小幫手 II"
+  },
+  {
+    "code": "YOU4760",
+    "path": "app/adventurer-honors/content/household/you4760-hygiene.md",
+    "rel": "household/you4760-hygiene.md",
+    "nameEn": "Hygiene",
+    "nameZh": "衛生"
+  },
+  {
+    "code": "YOU4865",
+    "path": "app/adventurer-honors/content/household/you4865-safety-specialist.md",
+    "rel": "household/you4865-safety-specialist.md",
+    "nameEn": "Safety Specialist",
+    "nameZh": "安全專家"
+  },
+  {
+    "code": "YOU4885",
+    "path": "app/adventurer-honors/content/household/you4885-sewing-fun.md",
+    "rel": "household/you4885-sewing-fun.md",
+    "nameEn": "Sewing Fun",
+    "nameZh": "縫紉"
+  },
+  {
+    "code": "YOU4950",
+    "path": "app/adventurer-honors/content/household/you4950-troubadour.md",
+    "rel": "household/you4950-troubadour.md",
+    "nameEn": "Troubadour",
+    "nameZh": "遊唱牧民"
+  },
+  {
+    "code": "HKA4035",
+    "path": "app/adventurer-honors/content/nature/hka4035-animals.md",
+    "rel": "nature/hka4035-animals.md",
+    "nameEn": "Animals",
+    "nameZh": "動物"
+  },
+  {
+    "code": "HKA4036",
+    "path": "app/adventurer-honors/content/nature/hka4036-animal-homes.md",
+    "rel": "nature/hka4036-animal-homes.md",
+    "nameEn": "Animal Homes",
+    "nameZh": "動物之家"
+  },
+  {
+    "code": "HKA4037",
+    "path": "app/adventurer-honors/content/nature/hka4037-birds.md",
+    "rel": "nature/hka4037-birds.md",
+    "nameEn": "Birds",
+    "nameZh": "鳥類"
+  },
+  {
+    "code": "HKA4038",
+    "path": "app/adventurer-honors/content/nature/hka4038-bodies-of-water.md",
+    "rel": "nature/hka4038-bodies-of-water.md",
+    "nameEn": "Bodies of Water",
+    "nameZh": "水"
+  },
+  {
+    "code": "HKA4039",
+    "path": "app/adventurer-honors/content/nature/hka4039-dogs.md",
+    "rel": "nature/hka4039-dogs.md",
+    "nameEn": "Dogs",
+    "nameZh": "狗類"
+  },
+  {
+    "code": "HKA4040",
+    "path": "app/adventurer-honors/content/nature/hka4040-insects.md",
+    "rel": "nature/hka4040-insects.md",
+    "nameEn": "Insects",
+    "nameZh": "昆蟲"
+  },
+  {
+    "code": "HKA4041",
+    "path": "app/adventurer-honors/content/nature/hka4041-pets.md",
+    "rel": "nature/hka4041-pets.md",
+    "nameEn": "Pets",
+    "nameZh": "寵物"
+  },
+  {
+    "code": "HKA4042",
+    "path": "app/adventurer-honors/content/nature/hka4042-potatoes.md",
+    "rel": "nature/hka4042-potatoes.md",
+    "nameEn": "Potatoes",
+    "nameZh": "馬鈴薯"
+  },
+  {
+    "code": "HKA4043",
+    "path": "app/adventurer-honors/content/nature/hka4043-safe-water.md",
+    "rel": "nature/hka4043-safe-water.md",
+    "nameEn": "Safe Water",
+    "nameZh": "食水安全"
+  },
+  {
+    "code": "HKA4044",
+    "path": "app/adventurer-honors/content/nature/hka4044-sand-art.md",
+    "rel": "nature/hka4044-sand-art.md",
+    "nameEn": "Sand Art",
+    "nameZh": "沙土藝術"
+  },
+  {
+    "code": "HKA4045",
+    "path": "app/adventurer-honors/content/nature/hka4045-saving-animals.md",
+    "rel": "nature/hka4045-saving-animals.md",
+    "nameEn": "Saving Animals",
+    "nameZh": "拯救動物"
+  },
+  {
+    "code": "HKA4046",
+    "path": "app/adventurer-honors/content/nature/hka4046-scavenger-hunt.md",
+    "rel": "nature/hka4046-scavenger-hunt.md",
+    "nameEn": "Scavenger Hunt",
+    "nameZh": "尋寶遊戲"
+  },
+  {
+    "code": "HKA4047",
+    "path": "app/adventurer-honors/content/nature/hka4047-seasons.md",
+    "rel": "nature/hka4047-seasons.md",
+    "nameEn": "Seasons",
+    "nameZh": "季節"
+  },
+  {
+    "code": "HKA4048",
+    "path": "app/adventurer-honors/content/nature/hka4048-seeds.md",
+    "rel": "nature/hka4048-seeds.md",
+    "nameEn": "Seeds",
+    "nameZh": "種子"
+  },
+  {
+    "code": "HKA4049",
+    "path": "app/adventurer-honors/content/nature/hka4049-stars.md",
+    "rel": "nature/hka4049-stars.md",
+    "nameEn": "Stars",
+    "nameZh": "星星"
+  },
+  {
+    "code": "HKA4050",
+    "path": "app/adventurer-honors/content/nature/hka4050-universe.md",
+    "rel": "nature/hka4050-universe.md",
+    "nameEn": "Universe",
+    "nameZh": "宇宙"
+  },
+  {
+    "code": "HKA4051",
+    "path": "app/adventurer-honors/content/nature/hka4051-weather-i.md",
+    "rel": "nature/hka4051-weather-i.md",
+    "nameEn": "Weather I",
+    "nameZh": "天氣 I"
+  },
+  {
+    "code": "HKA4052",
+    "path": "app/adventurer-honors/content/nature/hka4052-weather-ii.md",
+    "rel": "nature/hka4052-weather-ii.md",
+    "nameEn": "Weather II",
+    "nameZh": "天氣 II"
+  },
+  {
+    "code": "HKA4053",
+    "path": "app/adventurer-honors/content/nature/hka4053-wooly-lamb.md",
+    "rel": "nature/hka4053-wooly-lamb.md",
+    "nameEn": "Wooly Lamb",
+    "nameZh": "綿羊"
+  },
+  {
+    "code": "HKA4054",
+    "path": "app/adventurer-honors/content/nature/hka4054-zoo-animals.md",
+    "rel": "nature/hka4054-zoo-animals.md",
+    "nameEn": "Zoo Animals",
+    "nameZh": "動物園動物"
+  },
+  {
+    "code": "YOU4515",
+    "path": "app/adventurer-honors/content/nature/you4515-astronomer.md",
+    "rel": "nature/you4515-astronomer.md",
+    "nameEn": "Astronomer",
+    "nameZh": "天文學家"
+  },
+  {
+    "code": "YOU4565",
+    "path": "app/adventurer-honors/content/nature/you4565-butterflies.md",
+    "rel": "nature/you4565-butterflies.md",
+    "nameEn": "Butterflies",
+    "nameZh": "蝴蝶"
+  },
+  {
+    "code": "YOU4640",
+    "path": "app/adventurer-honors/content/nature/you4640-environmentalist.md",
+    "rel": "nature/you4640-environmentalist.md",
+    "nameEn": "Environmentalist",
+    "nameZh": "環保大使"
+  },
+  {
+    "code": "YOU4645",
+    "path": "app/adventurer-honors/content/nature/you4645-feathered-friends.md",
+    "rel": "nature/you4645-feathered-friends.md",
+    "nameEn": "Feathered Friends",
+    "nameZh": "養鳥"
+  },
+  {
+    "code": "YOU4655",
+    "path": "app/adventurer-honors/content/nature/you4655-fish.md",
+    "rel": "nature/you4655-fish.md",
+    "nameEn": "Fish",
+    "nameZh": "魚類"
+  },
+  {
+    "code": "YOU4665",
+    "path": "app/adventurer-honors/content/nature/you4665-flowers.md",
+    "rel": "nature/you4665-flowers.md",
+    "nameEn": "Flowers",
+    "nameZh": "花卉"
+  },
+  {
+    "code": "YOU4670",
+    "path": "app/adventurer-honors/content/nature/you4670-friend-of-animals.md",
+    "rel": "nature/you4670-friend-of-animals.md",
+    "nameEn": "Friend of Animals",
+    "nameZh": "動物之友"
+  },
+  {
+    "code": "YOU4680",
+    "path": "app/adventurer-honors/content/nature/you4680-friend-of-nature.md",
+    "rel": "nature/you4680-friend-of-nature.md",
+    "nameEn": "Friend of Nature",
+    "nameZh": "自然之友"
+  },
+  {
+    "code": "YOU4695",
+    "path": "app/adventurer-honors/content/nature/you4695-geologist.md",
+    "rel": "nature/you4695-geologist.md",
+    "nameEn": "Geologist",
+    "nameZh": "地質學"
+  },
+  {
+    "code": "YOU4715",
+    "path": "app/adventurer-honors/content/nature/you4715-habitat.md",
+    "rel": "nature/you4715-habitat.md",
+    "nameEn": "Habitats",
+    "nameZh": "棲息地"
+  },
+  {
+    "code": "YOU4745",
+    "path": "app/adventurer-honors/content/nature/you4745-honeybees.md",
+    "rel": "nature/you4745-honeybees.md",
+    "nameEn": "Honeybees",
+    "nameZh": "蜜蜂"
+  },
+  {
+    "code": "YOU4750",
+    "path": "app/adventurer-honors/content/nature/you4750-honey.md",
+    "rel": "nature/you4750-honey.md",
+    "nameEn": "Honey",
+    "nameZh": "蜂蜜"
+  },
+  {
+    "code": "YOU4770",
+    "path": "app/adventurer-honors/content/nature/you4770-ladybugs.md",
+    "rel": "nature/you4770-ladybugs.md",
+    "nameEn": "Ladybugs",
+    "nameZh": "瓢蟲"
+  },
+  {
+    "code": "YOU4780",
+    "path": "app/adventurer-honors/content/nature/you4780-lizards.md",
+    "rel": "nature/you4780-lizards.md",
+    "nameEn": "Lizards",
+    "nameZh": "蜥蜴"
+  },
+  {
+    "code": "YOU4820",
+    "path": "app/adventurer-honors/content/nature/you4820-outdoor-explorer.md",
+    "rel": "nature/you4820-outdoor-explorer.md",
+    "nameEn": "Outdoor Explorer",
+    "nameZh": "外展"
+  },
+  {
+    "code": "YOU4945",
+    "path": "app/adventurer-honors/content/nature/you4945-trees.md",
+    "rel": "nature/you4945-trees.md",
+    "nameEn": "Trees",
+    "nameZh": "樹木"
+  },
+  {
+    "code": "YOU4980",
+    "path": "app/adventurer-honors/content/nature/you4980-whales.md",
+    "rel": "nature/you4980-whales.md",
+    "nameEn": "Whales",
+    "nameZh": "鯨魚"
+  },
+  {
+    "code": "HKA4055",
+    "path": "app/adventurer-honors/content/recreation/hka4055-cyclist-i.md",
+    "rel": "recreation/hka4055-cyclist-i.md",
+    "nameEn": "Cyclist I",
+    "nameZh": "單車 I"
+  },
+  {
+    "code": "HKA4056",
+    "path": "app/adventurer-honors/content/recreation/hka4056-left-and-right.md",
+    "rel": "recreation/hka4056-left-and-right.md",
+    "nameEn": "Left and Right",
+    "nameZh": "左和右"
+  },
+  {
+    "code": "HKA4057",
+    "path": "app/adventurer-honors/content/recreation/hka4057-photo-fun.md",
+    "rel": "recreation/hka4057-photo-fun.md",
+    "nameEn": "Photo Fun",
+    "nameZh": "攝影樂"
+  },
+  {
+    "code": "HKA4058",
+    "path": "app/adventurer-honors/content/recreation/hka4058-playing-with-friends.md",
+    "rel": "recreation/hka4058-playing-with-friends.md",
+    "nameEn": "Playing with Friends",
+    "nameZh": "與朋友玩耍"
+  },
+  {
+    "code": "HKA4059",
+    "path": "app/adventurer-honors/content/recreation/hka4059-snowshoeing.md",
+    "rel": "recreation/hka4059-snowshoeing.md",
+    "nameEn": "Snowshoeing",
+    "nameZh": "雪鞋"
+  },
+  {
+    "code": "HKA4060",
+    "path": "app/adventurer-honors/content/recreation/hka4060-swimmer-i.md",
+    "rel": "recreation/hka4060-swimmer-i.md",
+    "nameEn": "Swimmer I",
+    "nameZh": "游泳 I"
+  },
+  {
+    "code": "HKA4061",
+    "path": "app/adventurer-honors/content/recreation/hka4061-toys.md",
+    "rel": "recreation/hka4061-toys.md",
+    "nameEn": "Toys",
+    "nameZh": "玩具"
+  },
+  {
+    "code": "HKA4062",
+    "path": "app/adventurer-honors/content/recreation/hka4062-trains-and-trucks.md",
+    "rel": "recreation/hka4062-trains-and-trucks.md",
+    "nameEn": "Trains and Trucks",
+    "nameZh": "火車和卡車"
+  },
+  {
+    "code": "HKA4063",
+    "path": "app/adventurer-honors/content/recreation/hka4063-trikes-and-bikes.md",
+    "rel": "recreation/hka4063-trikes-and-bikes.md",
+    "nameEn": "Trikes and Bikes",
+    "nameZh": "三輪車和單車"
+  },
+  {
+    "code": "HKA4895",
+    "path": "app/adventurer-honors/content/recreation/hka4895-skater.md",
+    "rel": "recreation/hka4895-skater.md",
+    "nameEn": "Skater",
+    "nameZh": "溜冰"
+  },
+  {
+    "code": "YOU4505",
+    "path": "app/adventurer-honors/content/recreation/you4505-archer.md",
+    "rel": "recreation/you4505-archer.md",
+    "nameEn": "Archer",
+    "nameZh": "射箭"
+  },
+  {
+    "code": "YOU4575",
+    "path": "app/adventurer-honors/content/recreation/you4575-camper.md",
+    "rel": "recreation/you4575-camper.md",
+    "nameEn": "Camper",
+    "nameZh": "露營"
+  },
+  {
+    "code": "YOU4580",
+    "path": "app/adventurer-honors/content/recreation/you4580-canoer.md",
+    "rel": "recreation/you4580-canoer.md",
+    "nameEn": "Canoer",
+    "nameZh": "獨木舟"
+  },
+  {
+    "code": "YOU4585",
+    "path": "app/adventurer-honors/content/recreation/you4585-caring-friend.md",
+    "rel": "recreation/you4585-caring-friend.md",
+    "nameEn": "Caring Friend",
+    "nameZh": "關懷"
+  },
+  {
+    "code": "YOU4625",
+    "path": "app/adventurer-honors/content/recreation/you4625-cyclist-ii.md",
+    "rel": "recreation/you4625-cyclist-ii.md",
+    "nameEn": "Cyclist II",
+    "nameZh": "單車 II"
+  },
+  {
+    "code": "YOU4650",
+    "path": "app/adventurer-honors/content/recreation/you4650-first-aid-helper.md",
+    "rel": "recreation/you4650-first-aid-helper.md",
+    "nameEn": "First Aid Helper",
+    "nameZh": "急救"
+  },
+  {
+    "code": "YOU4660",
+    "path": "app/adventurer-honors/content/recreation/you4660-fitness-fun.md",
+    "rel": "recreation/you4660-fitness-fun.md",
+    "nameEn": "Fitness Fun",
+    "nameZh": "健體樂"
+  },
+  {
+    "code": "YOU4705",
+    "path": "app/adventurer-honors/content/recreation/you4705-guide.md",
+    "rel": "recreation/you4705-guide.md",
+    "nameEn": "Guide",
+    "nameZh": "領袖"
+  },
+  {
+    "code": "YOU4710",
+    "path": "app/adventurer-honors/content/recreation/you4710-gymnast.md",
+    "rel": "recreation/you4710-gymnast.md",
+    "nameEn": "Gymnast",
+    "nameZh": "體育"
+  },
+  {
+    "code": "YOU4765",
+    "path": "app/adventurer-honors/content/recreation/you4765-basic-knots.md",
+    "rel": "recreation/you4765-basic-knots.md",
+    "nameEn": "Basic Knots",
+    "nameZh": "繩結"
+  },
+  {
+    "code": "YOU4815",
+    "path": "app/adventurer-honors/content/recreation/you4815-olympics.md",
+    "rel": "recreation/you4815-olympics.md",
+    "nameEn": "Olympics",
+    "nameZh": "奧運"
+  },
+  {
+    "code": "YOU4900",
+    "path": "app/adventurer-honors/content/recreation/you4900-skier.md",
+    "rel": "recreation/you4900-skier.md",
+    "nameEn": "Skier",
+    "nameZh": "滑雪"
+  },
+  {
+    "code": "YOU4905",
+    "path": "app/adventurer-honors/content/recreation/you4905-spotter.md",
+    "rel": "recreation/you4905-spotter.md",
+    "nameEn": "Spotter",
+    "nameZh": "觀察"
+  },
+  {
+    "code": "YOU4920",
+    "path": "app/adventurer-honors/content/recreation/you4920-swimmer-ii.md",
+    "rel": "recreation/you4920-swimmer-ii.md",
+    "nameEn": "Swimmer II",
+    "nameZh": "游泳 II"
+  },
+  {
+    "code": "YOU4925",
+    "path": "app/adventurer-honors/content/recreation/you4925-swimmer-iii.md",
+    "rel": "recreation/you4925-swimmer-iii.md",
+    "nameEn": "Swimmer III",
+    "nameZh": "游泳 III"
+  },
+  {
+    "code": "YOU4995",
+    "path": "app/adventurer-honors/content/recreation/you4995-horsemanship.md",
+    "rel": "recreation/you4995-horsemanship.md",
+    "nameEn": "Horsemanship",
+    "nameZh": "馬術"
+  },
+  {
+    "code": "HKA4065",
+    "path": "app/adventurer-honors/content/spiritual/hka4065-bible-friends-i.md",
+    "rel": "spiritual/hka4065-bible-friends-i.md",
+    "nameEn": "Bible Friends I",
+    "nameZh": "聖經人物 I"
+  },
+  {
+    "code": "HKA4066",
+    "path": "app/adventurer-honors/content/spiritual/hka4066-bible-friends-ii.md",
+    "rel": "spiritual/hka4066-bible-friends-ii.md",
+    "nameEn": "Bible Friends II",
+    "nameZh": "聖經人物 II"
+  },
+  {
+    "code": "HKA4067",
+    "path": "app/adventurer-honors/content/spiritual/hka4067-bible-iii.md",
+    "rel": "spiritual/hka4067-bible-iii.md",
+    "nameEn": "Bible III",
+    "nameZh": "聖經 III"
+  },
+  {
+    "code": "HKA4068",
+    "path": "app/adventurer-honors/content/spiritual/hka4068-bible-iv.md",
+    "rel": "spiritual/hka4068-bible-iv.md",
+    "nameEn": "Bible IV",
+    "nameZh": "聖經 IV"
+  },
+  {
+    "code": "HKA4069",
+    "path": "app/adventurer-honors/content/spiritual/hka4069-bible-storytelling.md",
+    "rel": "spiritual/hka4069-bible-storytelling.md",
+    "nameEn": "Bible Storytelling",
+    "nameZh": "聖經故事講述"
+  },
+  {
+    "code": "HKA4070",
+    "path": "app/adventurer-honors/content/spiritual/hka4070-bread-of-life.md",
+    "rel": "spiritual/hka4070-bread-of-life.md",
+    "nameEn": "Bread of Life",
+    "nameZh": "生命之糧"
+  },
+  {
+    "code": "HKA4071",
+    "path": "app/adventurer-honors/content/spiritual/hka4071-creation.md",
+    "rel": "spiritual/hka4071-creation.md",
+    "nameEn": "Creation",
+    "nameZh": "創造"
+  },
+  {
+    "code": "HKA4072",
+    "path": "app/adventurer-honors/content/spiritual/hka4072-delightful-sabbath.md",
+    "rel": "spiritual/hka4072-delightful-sabbath.md",
+    "nameEn": "Delightful Sabbath",
+    "nameZh": "愉快安息日"
+  },
+  {
+    "code": "HKA4073",
+    "path": "app/adventurer-honors/content/spiritual/hka4073-gods-world.md",
+    "rel": "spiritual/hka4073-gods-world.md",
+    "nameEn": "God's World",
+    "nameZh": "上帝的世界"
+  },
+  {
+    "code": "HKA4074",
+    "path": "app/adventurer-honors/content/spiritual/hka4074-good-samaritan.md",
+    "rel": "spiritual/hka4074-good-samaritan.md",
+    "nameEn": "Good Samaritan",
+    "nameZh": "好撒馬利亞人"
+  },
+  {
+    "code": "HKA4075",
+    "path": "app/adventurer-honors/content/spiritual/hka4075-jesus-special-supper.md",
+    "rel": "spiritual/hka4075-jesus-special-supper.md",
+    "nameEn": "Jesus' Special Supper",
+    "nameZh": "耶穌的特別晚餐"
+  },
+  {
+    "code": "HKA4076",
+    "path": "app/adventurer-honors/content/spiritual/hka4076-jesus-star.md",
+    "rel": "spiritual/hka4076-jesus-star.md",
+    "nameEn": "Jesus' Star",
+    "nameZh": "耶穌之星"
+  },
+  {
+    "code": "HKA4077",
+    "path": "app/adventurer-honors/content/spiritual/hka4077-listening.md",
+    "rel": "spiritual/hka4077-listening.md",
+    "nameEn": "Listening",
+    "nameZh": "聆聽"
+  },
+  {
+    "code": "HKA4078",
+    "path": "app/adventurer-honors/content/spiritual/hka4078-little-boy-jesus.md",
+    "rel": "spiritual/hka4078-little-boy-jesus.md",
+    "nameEn": "Little Boy Jesus",
+    "nameZh": "小孩耶穌"
+  },
+  {
+    "code": "HKA4079",
+    "path": "app/adventurer-honors/content/spiritual/hka4079-my-friend-jesus.md",
+    "rel": "spiritual/hka4079-my-friend-jesus.md",
+    "nameEn": "My Friend Jesus",
+    "nameZh": "我的朋友耶穌"
+  },
+  {
+    "code": "HKA4080",
+    "path": "app/adventurer-honors/content/spiritual/hka4080-parables-of-jesus.md",
+    "rel": "spiritual/hka4080-parables-of-jesus.md",
+    "nameEn": "Parables of Jesus",
+    "nameZh": "耶穌的比喻"
+  },
+  {
+    "code": "HKA4081",
+    "path": "app/adventurer-honors/content/spiritual/hka4081-purity.md",
+    "rel": "spiritual/hka4081-purity.md",
+    "nameEn": "Purity",
+    "nameZh": "純潔"
+  },
+  {
+    "code": "HKA4082",
+    "path": "app/adventurer-honors/content/spiritual/hka4082-tabernacle.md",
+    "rel": "spiritual/hka4082-tabernacle.md",
+    "nameEn": "Tabernacle",
+    "nameZh": "會幕"
+  },
+  {
+    "code": "YOU4535",
+    "path": "app/adventurer-honors/content/spiritual/you4535-bible-i.md",
+    "rel": "spiritual/you4535-bible-i.md",
+    "nameEn": "Bible I",
+    "nameZh": "聖經 I"
+  },
+  {
+    "code": "YOU4540",
+    "path": "app/adventurer-honors/content/spiritual/you4540-bible-ii.md",
+    "rel": "spiritual/you4540-bible-ii.md",
+    "nameEn": "Bible II",
+    "nameZh": "聖經 II"
+  },
+  {
+    "code": "YOU4545",
+    "path": "app/adventurer-honors/content/spiritual/you4545-bible-royalty.md",
+    "rel": "spiritual/you4545-bible-royalty.md",
+    "nameEn": "Bible Royalty",
+    "nameZh": "聖經皇族"
+  },
+  {
+    "code": "YOU4630",
+    "path": "app/adventurer-honors/content/spiritual/you4630-disciples.md",
+    "rel": "spiritual/you4630-disciples.md",
+    "nameEn": "Disciples",
+    "nameZh": "門徒"
+  },
+  {
+    "code": "YOU4635",
+    "path": "app/adventurer-honors/content/spiritual/you4635-early-adventist.md",
+    "rel": "spiritual/you4635-early-adventist.md",
+    "nameEn": "Early Adventist",
+    "nameZh": "早期復臨先鋒"
+  },
+  {
+    "code": "YOU4675",
+    "path": "app/adventurer-honors/content/spiritual/you4675-friend-of-jesus.md",
+    "rel": "spiritual/you4675-friend-of-jesus.md",
+    "nameEn": "Friend of Jesus",
+    "nameZh": "耶穌之友"
+  },
+  {
+    "code": "YOU4685",
+    "path": "app/adventurer-honors/content/spiritual/you4685-fruits-of-the-spirit.md",
+    "rel": "spiritual/you4685-fruits-of-the-spirit.md",
+    "nameEn": "Fruits of the Spirit",
+    "nameZh": "聖靈的果子"
+  },
+  {
+    "code": "YOU4805",
+    "path": "app/adventurer-honors/content/spiritual/you4805-my-church.md",
+    "rel": "spiritual/you4805-my-church.md",
+    "nameEn": "My Church",
+    "nameZh": "我的教會"
+  },
+  {
+    "code": "YOU4825",
+    "path": "app/adventurer-honors/content/spiritual/you4825-pearly-gates.md",
+    "rel": "spiritual/you4825-pearly-gates.md",
+    "nameEn": "Pearly Gates",
+    "nameZh": "珍珠門"
+  },
+  {
+    "code": "YOU4835",
+    "path": "app/adventurer-honors/content/spiritual/you4835-prayer.md",
+    "rel": "spiritual/you4835-prayer.md",
+    "nameEn": "Prayer",
+    "nameZh": "祈禱"
+  },
+  {
+    "code": "YOU4840",
+    "path": "app/adventurer-honors/content/spiritual/you4840-prayer-warrior.md",
+    "rel": "spiritual/you4840-prayer-warrior.md",
+    "nameEn": "Prayer Warrior",
+    "nameZh": "禱告戰士"
+  },
+  {
+    "code": "YOU4850",
+    "path": "app/adventurer-honors/content/spiritual/you4850-rainbow-promise.md",
+    "rel": "spiritual/you4850-rainbow-promise.md",
+    "nameEn": "Rainbow Promise",
+    "nameZh": "彩虹應許"
+  },
+  {
+    "code": "YOU4915",
+    "path": "app/adventurer-honors/content/spiritual/you4915-steps-to-jesus.md",
+    "rel": "spiritual/you4915-steps-to-jesus.md",
+    "nameEn": "Steps to Jesus",
+    "nameZh": "跟隨耶穌"
+  },
+  {
+    "code": "YOU4935",
+    "path": "app/adventurer-honors/content/spiritual/you4935-temperance.md",
+    "rel": "spiritual/you4935-temperance.md",
+    "nameEn": "Temperance",
+    "nameZh": "節制"
+  },
+  {
+    "code": "YOU4985",
+    "path": "app/adventurer-honors/content/spiritual/you4985-wise-steward.md",
+    "rel": "spiritual/you4985-wise-steward.md",
+    "nameEn": "Wise Steward",
+    "nameZh": "管家"
+  }
+]

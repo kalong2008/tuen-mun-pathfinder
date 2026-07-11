@@ -7,6 +7,7 @@ aliases: []
 category: arts-crafts
 answerSource: translated
 status: non-review
+answerSourceNote: "內容參考 Wikibooks Jigsaw Puzzle 並整理為職員帶領指引"
 ---
 
 ## 要求
@@ -18,18 +19,30 @@ status: non-review
 
 ## 答案
 
+榮譽證目的：透過自製與成品拼圖，培養觀察、耐心與完成任務的堅持。
+
+帶領建議：切割一律由成人做；塊數少、塊大較適合幼兒。參考：[Wikibooks Jigsaw Puzzle](https://en.wikibooks.org/wiki/Adventist_Adventurer_Awards_and_Answers/Jigsaw_Puzzle)。
+
 ### 要求 1
 
-從雜誌剪下大圖，貼於厚卡紙後剪成不同形狀的三片拼圖。
+從雜誌選大圖 → 貼厚卡紙 → 成人剪成約三塊不同形狀。
+
+材料：雜誌、厚卡紙、膠水、剪刀（成人）
+
+帶領提示：讓幼鋒選圖與塗膠；切割時請他們看安全示範。
 
 ### 要求 2
 
-與同伴或家人一起完成拼圖遊戲，練習耐心與合作。
+用自製三塊拼圖玩：打散再拼回；可計時或和家長比賽「誰先拼好」（友善為主）。
 
 ### 要求 3
 
-購買或借用較大的拼圖，與成人一起完成。
+購買／借用大塊幼兒拼圖，一起在桌上拼完。
+
+帶領提示：先找四角與邊緣；鼓勵輪流放一塊。
 
 ### 要求 4
 
-畫一幅圖填色，裱褙後剪成較大塊的拼圖。
+幼鋒畫畫填色 → 貼厚卡紙 → 成人切成大塊 → 再拼一次帶回家。
+
+注意：剪刀與界刀僅成人使用。

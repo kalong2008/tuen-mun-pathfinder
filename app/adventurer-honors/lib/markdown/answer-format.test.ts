@@ -92,6 +92,19 @@ describe("parseHonorAnswer", () => {
     ]);
   });
 
+  test("formats purpose and leading tips headings", () => {
+    expect(
+      parseHonorAnswer("榮譽證目的：學習分享。帶領提示：先說故事再唱歌。注意：避免比較輸贏。"),
+    ).toEqual([
+      { type: "heading", content: "榮譽證目的：" },
+      { type: "paragraph", content: "學習分享。" },
+      { type: "heading", content: "帶領提示：" },
+      { type: "paragraph", content: "先說故事再唱歌。" },
+      { type: "heading", content: "注意：" },
+      { type: "paragraph", content: "避免比較輸贏。" },
+    ]);
+  });
+
   test("formats inline letter lists as bullets", () => {
     expect(parseHonorAnswer("單車安全守則：a. 駛出馬路前必須查看；b. 不可載人；c. 雙手緊握車把。")).toEqual([
       { type: "paragraph", content: "單車安全守則：" },

@@ -6,7 +6,7 @@ export type AnswerBlock =
   | { type: "list"; items: string[] };
 
 const SECTION_HEADER_PATTERN =
-  /(教學概念|教學理念|教導概念|材料|程序|步驟|時間|注意|連結|書籍選項|取得書籍的地點|想法|資源)([：:])/g;
+  /(榮譽證目的|教學目的|目的|教學概念|教學理念|教導概念|帶領提示|帶領建議|安全注意|準備|材料|程序|步驟|時間|注意|連結|書籍選項|取得書籍的地點|想法|資源|建議)([：:])/g;
 
 const INLINE_LETTER_ITEM_PATTERN =
   /(?:^|[\s；]|(?<=：))([a-z])\.\s([\s\S]*?)(?=(?:[\s；][a-z]\.\s)|$)/gi;

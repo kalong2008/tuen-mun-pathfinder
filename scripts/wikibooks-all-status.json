@@ -1,0 +1,132 @@
+[
+  {
+    "code": "HKA4006",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4006-colors.md",
+    "rel": "arts-crafts/hka4006-colors.md",
+    "nameEn": "Colors",
+    "nameZh": "顏色",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Colors",
+    "chars": 4030,
+    "tried": [
+      "Colors"
+    ],
+    "error": null
+  },
+  {
+    "code": "HKA4007",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4007-crayons-and-markers.md",
+    "rel": "arts-crafts/hka4007-crayons-and-markers.md",
+    "nameEn": "Crayons and Markers",
+    "nameZh": "蠟筆和箱頭筆",
+    "wikibooksTitle": null,
+    "chars": 0,
+    "tried": [
+      "Crayons and Markers"
+    ],
+    "error": "missingtitle"
+  },
+  {
+    "code": "HKA4008",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4008-finger-play.md",
+    "rel": "arts-crafts/hka4008-finger-play.md",
+    "nameEn": "Finger Play",
+    "nameZh": "手指遊戲",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Finger Play",
+    "chars": 9593,
+    "tried": [
+      "Finger Play"
+    ],
+    "error": null
+  },
+  {
+    "code": "HKA4009",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4009-gadgets-and-sand.md",
+    "rel": "arts-crafts/hka4009-gadgets-and-sand.md",
+    "nameEn": "Gadgets and Sand",
+    "nameZh": "小工具和沙子",
+    "wikibooksTitle": null,
+    "chars": 0,
+    "tried": [
+      "Gadgets and Sand"
+    ],
+    "error": "missingtitle"
+  },
+  {
+    "code": "HKA4010",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4010-jigsaw-puzzles.md",
+    "rel": "arts-crafts/hka4010-jigsaw-puzzles.md",
+    "nameEn": "Jigsaw Puzzles",
+    "nameZh": "拼圖",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Jigsaw Puzzle",
+    "chars": 610,
+    "tried": [
+      "Jigsaw Puzzle"
+    ],
+    "error": null
+  },
+  {
+    "code": "HKA4011",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4011-music-i.md",
+    "rel": "arts-crafts/hka4011-music-i.md",
+    "nameEn": "Music I",
+    "nameZh": "音樂 I",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Music",
+    "chars": 1587,
+    "tried": [
+      "Music"
+    ],
+    "error": null
+  },
+  {
+    "code": "HKA4012",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4012-shapes-and-sizes.md",
+    "rel": "arts-crafts/hka4012-shapes-and-sizes.md",
+    "nameEn": "Shapes and Sizes",
+    "nameZh": "形狀和尺寸",
+    "wikibooksTitle": null,
+    "chars": 0,
+    "tried": [
+      "Shapes and Sizes"
+    ],
+    "error": "missingtitle"
+  },
+  {
+    "code": "HKA4013",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4013-sponge-art.md",
+    "rel": "arts-crafts/hka4013-sponge-art.md",
+    "nameEn": "Sponge Art",
+    "nameZh": "海綿藝術",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Sponge Art",
+    "chars": 907,
+    "tried": [
+      "Sponge Art"
+    ],
+    "error": null
+  },
+  {
+    "code": "HKA4014",
+    "path": "app/adventurer-honors/content/arts-crafts/hka4014-stamping-fun-i.md",
+    "rel": "arts-crafts/hka4014-stamping-fun-i.md",
+    "nameEn": "Stamping Fun I",
+    "nameZh": "圖章樂 I",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Stamping Fun",
+    "chars": 307,
+    "tried": [
+      "Stamping Fun"
+    ],
+    "error": null
+  },
+  {
+    "code": "YOU4510",
+    "path": "app/adventurer-honors/content/arts-crafts/you4510-artist.md",
+    "rel": "arts-crafts/you4510-artist.md",
+    "nameEn": "Artist",
+    "nameZh": "藝術家",
+    "wikibooksTitle": "Adventist Adventurer Awards and Answers/Artist",
+    "chars": 5165,
+    "tried": [
+      "Artist"
+    ],
+    "error": null
+  }
+]

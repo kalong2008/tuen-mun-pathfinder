@@ -1,0 +1,407 @@
+[
+  {
+    "code": "YOU4525",
+    "path": "app/adventurer-honors/content/arts-crafts/you4525-basket-maker.md",
+    "nameZh": "織籃",
+    "nameEn": "Basket Maker",
+    "frontmatter": "id: you4525-basket-maker\ncode: YOU4525\nnameZh: \"織籃\"\nnameEn: \"Basket Maker\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 解釋什麼是籃子。\n2. 請敘述你可以在家裡找到哪些籃子，它們有什麼用途。\n3. 請說出製籃工具的名稱並加以描述。\n4. 請說明編織籃子要準備什麼材料。\n5. 用天然的草，蘆葦，或其他當地的材料來製作一個簡單的籃子。或者也可以裝飾一具家用的籃子，例如置放縫紉用品的籃子、垃圾筒、或置放草莓的籃子、或是花瓶。\n6. 裝飾一個籃子做為禮物。\n7. 製作一個有把手的籃子。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A basket is a receptacle (container) made from interwoven material."
+      },
+      {
+        "n": 2,
+        "en": "Baskets may be used for laundry, shopping, fruit, berries, sewing, collecting wastepaper, etc."
+      },
+      {
+        "n": 3,
+        "en": "Some essential tools are: sharp pair of scissors, sharp knife, round and flat nose pliers to bend spokes, an awl or knitting needle to make spaces in the weaving, water pail and waterproof cover for area where you are working. You may wish to invite an experienced basket maker to come and demonstrate."
+      },
+      {
+        "n": 4,
+        "en": "The natural materials are soaked in water until they are flexible."
+      },
+      {
+        "n": 5,
+        "en": "Instructors are encouraged to choose a simple design so that the Adventurer(s) will not become discouraged. Work with each child as necessary so all may complete this project. Use local materials such as grapevine, reeds, grasses, etc."
+      },
+      {
+        "n": 6,
+        "en": "Decorate a basket such as a sewing basket, fruit basket, flower basket, or shopping basket to be given as a gift. If you have already decorated a basket to fulfill requirement five, keep in mind that this is to be an additional basket."
+      }
+    ]
+  },
+  {
+    "code": "YOU4530",
+    "path": "app/adventurer-honors/content/arts-crafts/you4530-bead-craft.md",
+    "nameZh": "珠飾工藝",
+    "nameEn": "Bead Craft",
+    "frontmatter": "id: you4530-bead-craft\ncode: YOU4530\nnameZh: \"珠飾工藝\"\nnameEn: \"Bead Craft\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 什麼是珠子？\n2. 〝珠子〞這個字的來源是什麼？\n3. 請說出製作珠子的原料有哪些？\n4. 請講述至少二個有關串珠的有趣歷史。\n5. 請述說你會利用珠子去做哪些事。請提出至少三件。\n6. 請用珠子製作至少四件作品。\n7. 將你完成的其中一件作品贈送別人，例如長軰，告訴他們你所學到的知識，並說明你製作這禮物對他們有什麼特別的意義。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A bead is a small object with a hole in it so that it can be fastened with thread or string. (Most beads are round.)"
+      },
+      {
+        "n": 2,
+        "en": "The word “bead” comes from an Old English word—”gebed” or “bede”—which means “prayer.”"
+      },
+      {
+        "n": 3,
+        "en": "Beads can be made out of things like seeds, wood, stone, plastic, glass, metal, ceramic, pearls, shells, berries, beans, ivory, coral, amber, or precious stones."
+      },
+      {
+        "n": 4,
+        "en": "Historical facts about beads include: a. People made things out of beads in Egypt in Bible times. b. The world’s first calculator was an abacus, which is made out of beads. It is still used in many countries. Page 42 c. Beads were used as money by American Indians and other native peoples. “Wampum,” or Indian money beads, were often made out of shells. Indians used beads to trade with the Pilgrims. d. Some Indians used porcupine quills or pieces of bone for needles to string beads on thread made out of horsehair or cotton. e. People who are Catholic or Buddhist often use beads to help them remember and count their prayers. f. Beads have been used to decorate clothes for more than 400 years."
+      },
+      {
+        "n": 5,
+        "en": "Some things that you can do with beads are: a. Glue them onto something for decoration b. Perl (melt beads) c. String them together d. Use them to trade, or for play money e. Decorate clothes f. Make pot holders or other things to decorate your home g. Count things"
+      },
+      {
+        "n": 6,
+        "en": "Suggested bead projects: a. String beads onto a pipe cleaner and shape it into a heart, cross, or shepherd’s rod. b. Sew beads onto a piece of cloth in the shape of your name (or initials). c. Trace a picture or design onto heavy paper or cloth. Glue or sew beads onto it. d. Make a refrigerator magnet using beads. (Glue them onto a clothespin or piece of felt, or string them on thread or wire.) e. Decorate a bean bag with beads. f. Sew beads on shoes or moccasins. g. String beads onto thread or ribbon and wrap them around the outside of a picture frame. h. Make a sculpture by stringing beads onto copper wire."
+      }
+    ]
+  },
+  {
+    "code": "YOU4555",
+    "path": "app/adventurer-honors/content/arts-crafts/you4555-build-and-fly.md",
+    "nameZh": "風箏",
+    "nameEn": "Build and Fly",
+    "frontmatter": "id: you4555-build-and-fly\ncode: YOU4555\nnameZh: \"風箏\"\nnameEn: \"Build and Fly\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 製作一架紙飛機，並能讓紙飛機飛起來。\n2. 製作一個小型的簡易滑翔機，並能讓它飛起來。\n3. 製作一個簡易的風箏，讓它飛起來，並且能說明放風箏的安全規則。\n4. 觀察四種會飛的動物並說明牠們是怎麼飛的。\n5. 畫一個你最喜歡的飛行動物。\n6. 能知道聖經當中提到有關天使飛翔的章節是在哪一處。\n7. 能知道誰是第一個成功駕駛飛機的飛行員。\n8. 玩一個有關飛機類型的填字遊戲。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Teach the children to make their own paper airplanes. Color or decorate them and have fun flying them. Have contests where you see which one flies the farthest, longest, etc."
+      },
+      {
+        "n": 2,
+        "en": "You may wish to use a simple balsa wood kit or make your own from scratch. Have each child put his/her name or initials on his/her glider. Fly the gliders and record the longest flight."
+      },
+      {
+        "n": 3,
+        "en": "Make a simple, standard kite. Include family help when making and flying the kites. Never fly kites near electric power lines, buildings, trees, or around a crowd of people. Use strong string and read the instructions on a purchased kite."
+      },
+      {
+        "n": 4,
+        "en": "Visit the zoo or see a video about birds, insects, bats, squirrels, fish, etc."
+      },
+      {
+        "n": 5,
+        "en": "Discuss each picture and let the child tell why he/she likes the particular creature he/she drew."
+      },
+      {
+        "n": 6,
+        "en": "Revelation 14:6. We do not know exactly how the angels fly, but we are told that the children will fly from place to place with the angels. What a wonderful promise!"
+      },
+      {
+        "n": 7,
+        "en": "Tell or read an age appropriate story of the Wright brothers. Explain how they didn’t give up but kept trying until they could actually fly a plane. Persistence paid off!"
+      },
+      {
+        "n": 8,
+        "en": "Give the children a crossword puzzle or similar game illustrating types of flight."
+      }
+    ]
+  },
+  {
+    "code": "YOU4590",
+    "path": "app/adventurer-honors/content/arts-crafts/you4590-carpenter.md",
+    "nameZh": "木工",
+    "nameEn": "Carpenter",
+    "frontmatter": "id: you4590-carpenter\ncode: YOU4590\nnameZh: \"木工\"\nnameEn: \"Carpenter\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 解釋木匠的工作。\n2. 說出三種由木匠所建造的東西。\n3. 閱讀以下經文，並說出每個木匠建造了什麼︰\n   a. 創 6︰14–16\n   b. 出 30︰1-3\n   c. 撒下 5︰11\n4. 辨識木工基本所用的工具，並且能說明怎麼維護。\n5. 參觀下列其中一個地方︰\n   a. 伐木園\n   b. 五金行\n   c. 木工商店\n   d. 鋸木廠\n6. 用木匠的工具來製作下列其中一項︰\n   a. 鳥舍\n   b. 鎖匙圈\n   c. 餐巾盒\n   d. 其他木製日常用品\n7. 討論這位身為木匠的耶穌，以及他當時可能會製作的東西。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A carpenter is a person who builds or repairs wooden structures and makes other articles of wood."
+      },
+      {
+        "n": 2,
+        "en": "Some things that carpenters make are buildings, furniture, toys, etc."
+      },
+      {
+        "n": 3,
+        "en": "Genesis 6:14-16, the Ark; Exodus 30:1-3, an Altar; 2 Samuel 5:11, the Temple."
+      },
+      {
+        "n": 4,
+        "en": "Basic tools include a hammer, hand saw, measuring tape, screwdriver, chisel, boring tools, and planes. Clean and put away after each use. You may wish to have a carpenter come to demonstrate the use and care of these tools."
+      },
+      {
+        "n": 5,
+        "en": "This may be done as a group, with parents, or you may have a carpenter visit your group and show types of wood, etc."
+      },
+      {
+        "n": 6,
+        "en": "Use simple designs for the project you choose. For safety use, use only hand tools. This project must be closely supervised by an adult who can demonstrate how to use the tools properly."
+      },
+      {
+        "n": 7,
+        "en": "Matthew 13:55 speaks of Christ as a carpenter. Discuss how He may have helped His earthly father make such things as tables, benches, cabinets, stairs, doors, window frames, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4700",
+    "path": "app/adventurer-honors/content/arts-crafts/you4700-glue-right.md",
+    "nameZh": "漿糊黏貼",
+    "nameEn": "Glue Right",
+    "frontmatter": "id: you4700-glue-right\ncode: YOU4700\nnameZh: \"漿糊黏貼\"\nnameEn: \"Glue Right\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 在廢紙上練習怎麼控制漿糊的粘貼。\n2. 藉由練習各種塗漿糊方法來學習如何控制漿糊的使用。\n3. 讓孩子在一條線上，以他自認塗漿糊最好的控制方式來黏貼星星、金屬片或其他的東西，並且讓他們說明原因。\n4. 閱讀並討論箴 18︰24\n5. 正確地使用漿糊來製作圖畫或手工。\n6. 在手背上平均地塗上一個小圓圈。等一段時間讓它乾燥。你是否可以將它從你手上撥下完整的一塊呢？\n7. 在每次使用完漿糊之後，都要將瓶身的出孔處清理乾淨，並且把蓋子蓋好。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Providing glue containers with undamaged tips is important for the success of this award. Instruct children to practice squeezing the glue bottle lightly to make a thin line and then squeeze a little more to make a thick line. When they feel they have control of the glue, they are ready to practice on the form."
+      },
+      {
+        "n": 2,
+        "en": "Create a glue right form or find a sample form on the NAD Adventurer website under “awards.” a. Lines 1 & 2: Make the glue flow in a thick line to fill the space without going past the end of the lines. b. Lines 3 & 4: Squeeze the glue very lightly and hold the tip of the container above the paper. Make the glue flow only on top of the thin lines without going past the end of the lines. c. Lines 5 & 6: Cover each dash without going past the end of the dash by squeezing and raising the container up when the first dash ends and putting it down, squeezing again to make the next dash. d. Circles: Put the glue in the middle of the circle and squeeze the container lightly and let the glue spread out to the edges. Fill in each circle without going past the lines. e. Magazine pictures: Thin paper takes very little glue. Put just a small touch of glue on your finger and lightly touch the corners of the picture so the glue will not show through to the front side. f. Design: Use any type of sequins, gems, or small trinkets. Squeeze a small amount of glue on scratch paper. Use a toothpick to put glue on the items like sequins. Larger, heavier items will take more glue. g. Outline the star in glue and cover with glitter. For best results, do one angle at a time or use a toothpick. Recommend staff set up one location where glitter is applied."
+      },
+      {
+        "n": 3,
+        "en": "Never judge the success of this award by how neatly they completed the Glue Right form. The award is a success if they understand the techniques and know it is their job to learn ways to control glue."
+      },
+      {
+        "n": 4,
+        "en": "The friend who stays faithful, even when all others turn away, reflects Jesus. He is the true and faithful Friend, the One who never fails."
+      },
+      {
+        "n": 5,
+        "en": "Any craft that requires glue is appropriate."
+      },
+      {
+        "n": 6,
+        "en": "No purpose—just fun."
+      }
+    ]
+  },
+  {
+    "code": "YOU4720",
+    "path": "app/adventurer-honors/content/arts-crafts/you4720-hand-shadows.md",
+    "nameZh": "手影",
+    "nameEn": "Hand Shadows",
+    "frontmatter": "id: you4720-hand-shadows\ncode: YOU4720\nnameZh: \"手影\"\nnameEn: \"Hand Shadows\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 教導如何製作手影。\n2. 當學員學會了製作手影，便可提出以下問題：\n   a. 你最喜歡哪個手影？\n   b. 哪個手影最難學？\n   c. 為什麼它這樣難學？\n   d. 有沒有一些陰影你無法製作的？\n3. 讓學員討論如何將這項技能教導其他人。\n4. 在領袖的幫助下，練習教導別人製作手影。\n5. 教導別人如何製作兩個或以上的手影。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Create light and shadow indoors with a flashlight attached to the back of a high-back chair, overhead projector, or lamp. Shine a light on the wall, screen, or bed sheet that is stretched tight. Hand shadows can be done outside with natural sunlight and a backdrop of your choice."
+      },
+      {
+        "n": 2,
+        "en": "Discuss the questions. Help them to understand how they learned best and that all people learn at different paces and in different ways."
+      },
+      {
+        "n": 3,
+        "en": "Work with the children to develop rules for teaching others how to make hand shadows. Rules should include: a. Asking the student how they learn best, such as listening to instruction, watching a leader, or doing it themselves. b. Be patient. c. Be kind and encouraging. d. Congratulate them when completed."
+      },
+      {
+        "n": 4,
+        "en": "Parent assistance would allow one-on-one attention for each child as they practice teaching."
+      },
+      {
+        "n": 5,
+        "en": "Teach hand shadows to another child or an adult."
+      }
+    ]
+  },
+  {
+    "code": "YOU4730",
+    "path": "app/adventurer-honors/content/arts-crafts/you4730-handicraft.md",
+    "nameZh": "手工藝",
+    "nameEn": "Handicraft",
+    "frontmatter": "id: you4730-handicraft\ncode: YOU4730\nnameZh: \"手工藝\"\nnameEn: \"Handicraft\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "6. 完成下列六項的內容：\n   a. 製作一張慰問卡\n   b. 用乾燥花或用絲綢做的假花來插一盆花\n   c. 用麵團或黏土捏一個作品\n   d. 貝殼畫\n   e. 用繩子制作一個雕塑品\n   f. 一個活動雕像\n   g. 用紙漿製作一個作品\n   h. 用蛋殼、種子、貝類製作一幅圖畫\n   i. 製作一個紀念冊或相簿的封面\n   j. 使用六種材料來拼貼製作一幅拼圖畫\n   k. 製作一張邀請別人來參加某一項活動的海報\n   l. 自己選擇一個製作的方式來完成一樣完整、美麗的作品\n7. 將以上作品送出至少二樣給下列的人：\n   a. 送給一位家人或朋友\n   b. 送給教會內或社區內的一位長者",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Make six of the following: a. Use paper, lace, etc. to decorate a card. Include a get-well message and give the card to someone who is ill. b. Collect silk or dried natural flowers for arrangements. c. Encourage each child to be creative as they bake and paint. d. Design a picture using shells and glue. Display at a club or school meeting. e. Use a simple pattern to make a string art project. f. Design and make a mobile. Use at least three patterns. g. Use paper-mache to make a model of an animal or car. h. Glue objects to cardboard to make a design. Paint it if desired. i. Cover an autograph or photo album neatly with material. j. Make a collage using a variety of materials such as felt, wool, cotton, straw, bark, dried flowers, etc. k. The poster should be colorful and easy to read. l. You may choose to have the Adventurers make the same craft item or give them several choices."
+      },
+      {
+        "n": 2,
+        "en": "You may need to arrange transportation so the Adventurers can present gifts personally."
+      }
+    ]
+  },
+  {
+    "code": "YOU4755",
+    "path": "app/adventurer-honors/content/arts-crafts/you4755-magnet-fun-i.md",
+    "nameZh": "磁鐵樂 Ⅰ",
+    "nameEn": "Magnet Fun I",
+    "frontmatter": "id: you4755-magnet-fun-i\ncode: YOU4755\nnameZh: \"磁鐵樂 Ⅰ\"\nnameEn: \"Magnet Fun I\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 磁鐵是什麼做成的？\n2. 閱讀希臘故事／傳說，講到怎麼發現第一個磁鐵和磁鐵名字的由來。\n3. 描述三個主要的磁鐵類型：\n   a. 永久磁鐵 b. 暫時磁鐵\n   c. 電磁鐵\n4. 磁鐵有哪些用途？\n5. 完成三個磁鐵的實驗，例如下列的要求：\n   a. 磁鐵尋寶：在房間內放置一些能被磁鐵吸引、和不被吸引的物品。看看有幾樣東西能被磁鐵吸起來。建議物品：堅果、螺絲釘、錫鉑紙、安全別針等。\n   b. 鐵礦石：在桌上放置各種礦物石，看看孩子們是否可以找出含鐵的礦石，然後用他們的磁鐵試試能否將石頭吸上來。\n   c. 用磁鐵的引力來移動物品：請你的朋友把一張紙夾到他的兩手之間，然後將迴紋針放在紙張的上方，磁鐵放在下方。將迴紋針從紙張的一端移到另一端，然後又回到原來的一端。讓你的朋友繼而拿著不同的東西，像是塑膠尺、鏡子、硬紙板等，重複這個實驗。引力還是一樣的嗎？\n   d. 做出一個磁鐵：將鋼釘碰撞磁鐵 2_5_至 3_0_次。只能以同一方向撞擊磁鐵。\n   i. 有多少迴紋針能一次被吸上來？\n      ii. 鋼釘也可以像磁鐵的吸力一樣強嗎？\n6. 閱讀並且背誦希伯來書 7：19，雅各書 4：8。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A magnet is made of magnetite, a natural magnetic material that will create a magnetic field. A magnetic field is the force surrounding a magnet that draws objects to the magnet. You can feel this force when using a magnet."
+      },
+      {
+        "n": 2,
+        "en": "Many years ago, there was a shepherd named Magnes. Each day he kept watch over his flocks. One cold, blustery day, one of Magnes’ lambs was missing from its mothers’ side. Neither Magnes nor the mother could locate the little lamb. He looked behind rocks, in the thicket, near the stream, behind the bushes, and soon he realized it was really lost. He didn’t believe a wild animal had stolen it or eaten it. He was sure he could find it, if only he looked in all the right places. He stood on a large rock so he could look upon the landscape of the pasture in hopes of finding “whitey”, the lost little lamb. As Magnes stood on a rock, his sandals stuck to the rock where the nails in his sandals were located. He had never noticed that strange power before. Over a period of days and weeks, he brought other metal objects to the “magic rock” and found that iron, regardless of the size, would stick to the “magic rock.” He took some of the stone to his village and many people played with it. It became known as “Magnes’ stone.” Today it bears part of his name in honor of his discovery: “Magnet.” We call his “magic” stone a lodestone, which is made of magnetite, a natural magnetic material."
+      },
+      {
+        "n": 3,
+        "en": "(A) Permanent: when it is magnetized, it retains a level of magnetism. (B) Temporary: acts like a permanent magnet when it is within a strong magnetic field, but loses its magnetism when the magnetic field disappears. (C) Electromagnet: a special wire that acts like a permanent magnet when electrical current is flowing in the wire. For more detail, see resource #1."
+      },
+      {
+        "n": 4,
+        "en": "Refer to resource #1."
+      }
+    ]
+  },
+  {
+    "code": "YOU4790",
+    "path": "app/adventurer-honors/content/arts-crafts/you4790-magnet-fun-ii.md",
+    "nameZh": "磁鐵樂 II",
+    "nameEn": "Magnet Fun II",
+    "frontmatter": "id: you4790-magnet-fun-ii\ncode: YOU4790\nnameZh: \"磁鐵樂 II\"\nnameEn: \"Magnet Fun II\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 已得到磁鐵樂Ⅰ的榮譽證。\n2. 拿兩個磁鐵來玩看看相吸與相斥的實驗。所有的磁鐵都有____極，和____極。反極會相吸，同極則會相斥。\n3. 做一個電磁鐵。\n4. 用指南針找尋八個方向，並把它畫在羅盤儀刻度盤上。\n5. 用磁鐵、以水盤、長的绣針、軟木片（或蠟紙） ，蠟燭、和羅盤來做一個指南針。\n6. 如果磁鐵掉在地上時，會發生什麼事？\n7. 學習聖經箴言 18：24。",
+    "answersEn": []
+  },
+  {
+    "code": "YOU4830",
+    "path": "app/adventurer-honors/content/arts-crafts/you4830-postcards.md",
+    "nameZh": "明信片",
+    "nameEn": "Postcards",
+    "frontmatter": "id: you4830-postcards\ncode: YOU4830\nnameZh: \"明信片\"\nnameEn: \"Postcards\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 什麼是明信片？明信片和書信有什麼不同？請講述“快馬郵遞”的事。背誦聖經“以斯帖記 3：12-13”。\n2. 學習並陳述與明信片有關的三、四件事。\n3. 寄出首張發行的明信片要多少錢？現在一張明信片是多少錢？\n4. 寫幾張明信片給你認識的人，並且寄給他們。\n5. 製作一張明信片並加以裝飾，然後寄給一所佈道士學校或教堂。在教堂的佈告欄上張貼你將明信片寄去哪個國家、花費了多少錢寄送。\n6. 請完成下列其中二項：\n   a. 參觀郵局\n   b. 邀請一名郵差來說明他們的工作\n   c. 利用鞋盒、或其他用來分裝的盒子，來做一個屬於你自己的郵局\n   d. 討論郵局裡的人會有什麼事要做\n   e. 收集三張舊式的明信片\n   f. 你自己想做的事\n7. 知道有關約瑟貝茲和懷約翰拜訪郵局的故事。請閱讀提摩太前書 1：2、腓利門書 1：1、以及腓利比書 1:2，並討論怎麼在信上開頭問候。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A postcard is a single piece of cardstock mailed without an envelope. The Pony Express was the first cross country letter carrier. Look up more information on the internet. “And the letters were sent post…” Esther 3:13 KJV."
+      },
+      {
+        "n": 2,
+        "en": "http://en.wikipedia.org/wiki/Postcard."
+      },
+      {
+        "n": 3,
+        "en": "John P . Charlton of Philadelphia patented the postcard in 1861, selling the rights to H. L. Lipman, whose postcards, complete with a decorated border, were labeled “Lipman’s postal card.” Nine years later, European countries were also producing postcards."
+      },
+      {
+        "n": 4,
+        "en": "May send postcards to other Adventurers in your club, family, friends, or a missionary of your director’s choosing in another country. You may make your own cards out of old greeting cards by cutting off the cover and using the back of the cover to write the message and address. Make sure each postcard meets the post office standards for size and weight"
+      },
+      {
+        "n": 5,
+        "en": "Chart information such as: when it was sent; how much it cost; the date the card arrived; who all might have read the card."
+      },
+      {
+        "n": 6,
+        "en": "Be creative and have fun."
+      },
+      {
+        "n": 7,
+        "en": "Tell how God provided funds for mailing documents when there was a need for money."
+      },
+      {
+        "n": 8,
+        "en": "Other Bible texts: 2 Peter 3:1 and 2 Corinthians 13:10."
+      }
+    ]
+  },
+  {
+    "code": "YOU4855",
+    "path": "app/adventurer-honors/content/arts-crafts/you4855-reporter.md",
+    "nameZh": "記者",
+    "nameEn": "Reporter",
+    "frontmatter": "id: you4855-reporter\ncode: YOU4855\nnameZh: \"記者\"\nnameEn: \"Reporter\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 向家人陳述一件幼年前鋒會的活動報告。\n2. 製作一本記者手冊，內容至少要寫下三項幼年前鋒會戶外活動的記錄。\n3. 在一周內收看或收聽新聞報告，並且準備一份簡短的新聞要事報告。\n4. 仔細聽教會裡的報告，並查看教堂的佈告欄。\n   a. 將教會佈告欄的報告寫在你的手冊上。\n   b. 將你最感興趣的報告圈起來。\n5. 訪談你會堂的牧師或安息日學老師。並在你的手冊上記錄下列要求：\n   a. 繪畫出你所訪談的對象–包括記下他的姓名和工作的地點。\n   b. 描寫他最熱愛他工作上的哪一方面。\n6. 保存記者手冊至少兩個月。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Have a sharing time in your Adventurer meeting so each child will have practice in sharing a “report” with others. Help them learn to put events in order and encourage them to tell their parents about an Adventurer function. Start a simple “Reporter” scrapbook. Let each child design a cover with his or her name on it. Typing paper or unlined notebook paper would be appropriate. To get started, give the children a copy of an Adventurer announcement to place in their scrapbooks."
+      },
+      {
+        "n": 2,
+        "en": "Make a scrapbook story using magazine pictures or pictures the Adventurer has drawn and colored. A sibling, parent, or friend may need to help. Have the children print captions below the pictures to describe the items. Have the children share what they learned."
+      },
+      {
+        "n": 3,
+        "en": "Encourage the Adventurers to listen to news on radio or television to know what is going on in the community and the world."
+      },
+      {
+        "n": 4,
+        "en": "Have the Adventurers tell you about the announcements and the church bulletin. Ask which were most interesting to the children."
+      },
+      {
+        "n": 5,
+        "en": "Help each Adventurer set up an appointment for an interview with a pastor, Sabbath schoolteacher, or schoolteacher. Prepare those adults for participation in this activity."
+      },
+      {
+        "n": 6,
+        "en": "Work on the “Reporter” scrapbook for at least two months. Add clippings of interesting school, church, and community activities. This may be a group activity, but each child should make his or her own scrapbook."
+      }
+    ]
+  },
+  {
+    "code": "YOU4890",
+    "path": "app/adventurer-honors/content/arts-crafts/you4890-sign-language.md",
+    "nameZh": "手語",
+    "nameEn": "Sign Language",
+    "frontmatter": "id: you4890-sign-language\ncode: YOU4890\nnameZh: \"手語\"\nnameEn: \"Sign Language\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 學習聾啞人士所用的字母和相關的規程。\n2. 學習用字母傳達單字。\n3. 至少能學會五十個單字。\n4. 至少學會一首簡單的詩歌並且表演出來。\n5. 如果可以的話，安排幼年團團員與一名聾啞人士見面，並用手語跟孩子們溝通。\n6. 用手語呈現一段簡單的聖經章節。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "As available (from your local Association of the Deaf), use the two-sided manual alphabet cards. That way the children can see what the signs look like from both the sender’s and receiver’s angle."
+      },
+      {
+        "n": 2,
+        "en": "First, they can have fun learning to spell their names. Print words on a sheet of paper, and then have the children take turns spelling and receiving the words. Have children get in groups of two and send and receive words of their choice."
+      },
+      {
+        "n": 3,
+        "en": "Words young people really like to learn are the animals and foods. Joy of Signing is a good book to learn these signs, as well as the other signs. It gives both a word and a picture description of each sign. It also tells the sign’s origin (example: Jesus—origin: indicating the nail prints)."
+      },
+      {
+        "n": 4,
+        "en": "“Jesus Loves Me” and “Into My Heart” are two examples. Remember to explain the origins when needed."
+      },
+      {
+        "n": 5,
+        "en": "Have someone from your deaf community come in and share a bit of their life with the children and teach them a few words. This will really bring this award to life."
+      }
+    ]
+  },
+  {
+    "code": "YOU4940",
+    "path": "app/adventurer-honors/content/arts-crafts/you4940-tin-can-fun.md",
+    "nameZh": "錫罐樂",
+    "nameEn": "Tin Can Fun",
+    "frontmatter": "id: you4940-tin-can-fun\ncode: YOU4940\nnameZh: \"錫罐樂\"\nnameEn: \"Tin Can Fun\"\naliases: []\ncategory: arts-crafts\nanswerSource: translated\nstatus: non-review",
+    "requirementsZh": "1. 最早的時候，人們怎麼使用錫？而今日的人們又如何使用錫？\n2. 玩「神秘錫罐」的遊戲。\n3. 記錄你家裡在一周當中使用了多少的鋁罐。\n4. 在耶穌時代，食物是如何保存的？\n5. 在聖經時代，錫的用途是甚麼？\n6. 利用錫罐製作電話或高蹺。\n7. 請帶三種罐裝食品與大家分享。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "The earliest known use of tin was around 3500 B.C. when the people of Ur (now Iraq) made bronze articles. Bronze is an alloy of tin and copper. Today, tin is used mainly in the production of “tin plate,” which is steel coated on both sides with an extremely thin film of tin. Tin cans are made of “tin plate.”"
+      },
+      {
+        "n": 2,
+        "en": "Remove labels from a few cans and guess their contents."
+      },
+      {
+        "n": 3,
+        "en": "Share results with the club."
+      },
+      {
+        "n": 4,
+        "en": "Things were preserved by drying them out with salt. Dried fish, figs, and other fruits were common. Today most of the “tin plate” is used to coat the steel cans to give them an attractive appearance and protect the cans from rust. These cans are for packing food and other items that would quickly spoil."
+      },
+      {
+        "n": 5,
+        "en": "Bronze is an alloy of tin. Offerings were brought of bronze (Exodus 25:3). Fifty bronze clasps for the tabernacle were made (Exodus 26:11). Moses made a bronze serpent and put it on a pole (Numbers 21:9)."
+      },
+      {
+        "n": 6,
+        "en": "To make a telephone: Poke a small hole in the bottom of two empty (and clean) cans. Put one end of a long string into each can end and tie a knot. Stretch the string tight and talk. One person will talk while the other person listens to create a “telephone.” God communicates with us like the telephone. We cannot see Him, but He is always ready to listen and help us. To make stilts: Poke a small hole on the two sides at the top of two cans. Tie a string to each can to create “stilts.” For stilt safety, use cans no smaller than 20 oz. and always wear shoes. “And walk in love...” (Ephesians 5:2)."
+      }
+    ]
+  }
+]

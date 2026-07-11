@@ -5,8 +5,9 @@ nameZh: "星星"
 nameEn: "Stars"
 aliases: []
 category: nature
-answerSource: draft
+answerSource: translated
 status: non-review
+answerSourceNote: "內容參考 Wikibooks Stars 並整理為職員帶領指引"
 ---
 
 ## 要求
@@ -19,22 +20,40 @@ status: non-review
 
 ## 答案
 
+榮譽證目的：認識星星與夜空，讚嘆上帝創造，用遊戲與手工加深印象。
+
+帶領建議：事實用適合幼兒的語言；強調「太陽也是一顆星」。參考：[Wikibooks Stars](https://en.wikibooks.org/wiki/Adventist_Adventurer_Awards_and_Answers/Stars)。
+
 ### 要求 1
 
-選一本星星主題繪本，由家長或導師朗讀。
+聆聽星星主題繪本或適合年齡的短故事（如「想摸星星的小女孩」）。
+
+帶領提示：讀完問：你看過夜空嗎？星星看起來像什麼？
 
 ### 要求 2
 
-讀後說出三項所學，例如：星星在夜間發光、太陽也是星、北極星幫助辨方向。
+說出至少三項（選適合年齡者）：星星極多；太陽是離我們最近的星；看起來眨眼是因為大氣擾動；星星有不同顏色；光要很久才到地球等。
+
+帶領提示：職員先選三點寫大字卡，一起讀兩遍。
 
 ### 要求 3
 
-可玩「找星星」配對或星座模仿遊戲。
+教學理念：星星跳
+
+材料：大星星卡紙（可膠膜）鋪在地上
+
+程序：從一顆星跳到另一顆；亦可當座位標記。
+
+帶領提示：可配合手指謠：一顆星、兩顆星……最後張開十指「成千上萬的星」。
 
 ### 要求 4
 
-用色紙、閃粉或夜光貼紙製作星星手工。
+用星星印章蓋印（深藍／黑紙＋銀／白色較好看）；或在紙上畫星形塗膠，灑亮粉／色米。
+
+注意：亮粉勿入眼；膠水由成人協助。
 
 ### 要求 5
 
-可唱《Twinkle, Twinkle, Little Star》或《Star Light, Star Bright》。
+唱《小星星》（Twinkle Twinkle Little Star）或類似詩歌。
+
+帶領提示：邊唱邊做手指「閃爍」動作。

@@ -1,0 +1,2160 @@
+[
+  {
+    "code": "YOU4525",
+    "path": "app/adventurer-honors/content/arts-crafts/you4525-basket-maker.md",
+    "nameZh": "織籃",
+    "nameEn": "Basket Maker",
+    "frontmatter": "id: you4525-basket-maker\ncode: YOU4525\nnameZh: \"織籃\"\nnameEn: \"Basket Maker\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 解釋什麼是籃子。\n2. 請敘述你可以在家裡找到哪些籃子，它們有什麼用途。\n3. 請說出製籃工具的名稱並加以描述。\n4. 請說明編織籃子要準備什麼材料。\n5. 用天然的草，蘆葦，或其他當地的材料來製作一個簡單的籃子。或者也可以裝飾一具家用的籃子，例如置放縫紉用品的籃子、垃圾筒、或置放草莓的籃子、或是花瓶。\n6. 裝飾一個籃子做為禮物。\n7. 製作一個有把手的籃子。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A basket is a receptacle (container) made from interwoven material."
+      },
+      {
+        "n": 2,
+        "en": "Baskets may be used for laundry, shopping, fruit, berries, sewing, collecting wastepaper, etc."
+      },
+      {
+        "n": 3,
+        "en": "Some essential tools are: sharp pair of scissors, sharp knife, round and flat nose pliers to bend spokes, an awl or knitting needle to make spaces in the weaving, water pail and waterproof cover for area where you are working. You may wish to invite an experienced basket maker to come and demonstrate."
+      },
+      {
+        "n": 4,
+        "en": "The natural materials are soaked in water until they are flexible."
+      },
+      {
+        "n": 5,
+        "en": "Instructors are encouraged to choose a simple design so that the Adventurer(s) will not become discouraged. Work with each child as necessary so all may complete this project. Use local materials such as grapevine, reeds, grasses, etc."
+      },
+      {
+        "n": 6,
+        "en": "Decorate a basket such as a sewing basket, fruit basket, flower basket, or shopping basket to be given as a gift. If you have already decorated a basket to fulfill requirement five, keep in mind that this is to be an additional basket."
+      }
+    ]
+  },
+  {
+    "code": "YOU4530",
+    "path": "app/adventurer-honors/content/arts-crafts/you4530-bead-craft.md",
+    "nameZh": "珠飾工藝",
+    "nameEn": "Bead Craft",
+    "frontmatter": "id: you4530-bead-craft\ncode: YOU4530\nnameZh: \"珠飾工藝\"\nnameEn: \"Bead Craft\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 什麼是珠子？\n2. 〝珠子〞這個字的來源是什麼？\n3. 請說出製作珠子的原料有哪些？\n4. 請講述至少二個有關串珠的有趣歷史。\n5. 請述說你會利用珠子去做哪些事。請提出至少三件。\n6. 請用珠子製作至少四件作品。\n7. 將你完成的其中一件作品贈送別人，例如長軰，告訴他們你所學到的知識，並說明你製作這禮物對他們有什麼特別的意義。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A bead is a small object with a hole in it so that it can be fastened with thread or string. (Most beads are round.)"
+      },
+      {
+        "n": 2,
+        "en": "The word “bead” comes from an Old English word—”gebed” or “bede”—which means “prayer.”"
+      },
+      {
+        "n": 3,
+        "en": "Beads can be made out of things like seeds, wood, stone, plastic, glass, metal, ceramic, pearls, shells, berries, beans, ivory, coral, amber, or precious stones."
+      },
+      {
+        "n": 4,
+        "en": "Historical facts about beads include: a. People made things out of beads in Egypt in Bible times. b. The world’s first calculator was an abacus, which is made out of beads. It is still used in many countries. Page 42 c. Beads were used as money by American Indians and other native peoples. “Wampum,” or Indian money beads, were often made out of shells. Indians used beads to trade with the Pilgrims. d. Some Indians used porcupine quills or pieces of bone for needles to string beads on thread made out of horsehair or cotton. e. People who are Catholic or Buddhist often use beads to help them remember and count their prayers. f. Beads have been used to decorate clothes for more than 400 years."
+      },
+      {
+        "n": 5,
+        "en": "Some things that you can do with beads are: a. Glue them onto something for decoration b. Perl (melt beads) c. String them together d. Use them to trade, or for play money e. Decorate clothes f. Make pot holders or other things to decorate your home g. Count things"
+      },
+      {
+        "n": 6,
+        "en": "Suggested bead projects: a. String beads onto a pipe cleaner and shape it into a heart, cross, or shepherd’s rod. b. Sew beads onto a piece of cloth in the shape of your name (or initials). c. Trace a picture or design onto heavy paper or cloth. Glue or sew beads onto it. d. Make a refrigerator magnet using beads. (Glue them onto a clothespin or piece of felt, or string them on thread or wire.) e. Decorate a bean bag with beads. f. Sew beads on shoes or moccasins. g. String beads onto thread or ribbon and wrap them around the outside of a picture frame. h. Make a sculpture by stringing beads onto copper wire."
+      }
+    ]
+  },
+  {
+    "code": "YOU4555",
+    "path": "app/adventurer-honors/content/arts-crafts/you4555-build-and-fly.md",
+    "nameZh": "風箏",
+    "nameEn": "Build and Fly",
+    "frontmatter": "id: you4555-build-and-fly\ncode: YOU4555\nnameZh: \"風箏\"\nnameEn: \"Build and Fly\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 製作一架紙飛機，並能讓紙飛機飛起來。\n2. 製作一個小型的簡易滑翔機，並能讓它飛起來。\n3. 製作一個簡易的風箏，讓它飛起來，並且能說明放風箏的安全規則。\n4. 觀察四種會飛的動物並說明牠們是怎麼飛的。\n5. 畫一個你最喜歡的飛行動物。\n6. 能知道聖經當中提到有關天使飛翔的章節是在哪一處。\n7. 能知道誰是第一個成功駕駛飛機的飛行員。\n8. 玩一個有關飛機類型的填字遊戲。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Teach the children to make their own paper airplanes. Color or decorate them and have fun flying them. Have contests where you see which one flies the farthest, longest, etc."
+      },
+      {
+        "n": 2,
+        "en": "You may wish to use a simple balsa wood kit or make your own from scratch. Have each child put his/her name or initials on his/her glider. Fly the gliders and record the longest flight."
+      },
+      {
+        "n": 3,
+        "en": "Make a simple, standard kite. Include family help when making and flying the kites. Never fly kites near electric power lines, buildings, trees, or around a crowd of people. Use strong string and read the instructions on a purchased kite."
+      },
+      {
+        "n": 4,
+        "en": "Visit the zoo or see a video about birds, insects, bats, squirrels, fish, etc."
+      },
+      {
+        "n": 5,
+        "en": "Discuss each picture and let the child tell why he/she likes the particular creature he/she drew."
+      },
+      {
+        "n": 6,
+        "en": "Revelation 14:6. We do not know exactly how the angels fly, but we are told that the children will fly from place to place with the angels. What a wonderful promise!"
+      },
+      {
+        "n": 7,
+        "en": "Tell or read an age appropriate story of the Wright brothers. Explain how they didn’t give up but kept trying until they could actually fly a plane. Persistence paid off!"
+      },
+      {
+        "n": 8,
+        "en": "Give the children a crossword puzzle or similar game illustrating types of flight."
+      }
+    ]
+  },
+  {
+    "code": "YOU4590",
+    "path": "app/adventurer-honors/content/arts-crafts/you4590-carpenter.md",
+    "nameZh": "木工",
+    "nameEn": "Carpenter",
+    "frontmatter": "id: you4590-carpenter\ncode: YOU4590\nnameZh: \"木工\"\nnameEn: \"Carpenter\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 解釋木匠的工作。\n2. 說出三種由木匠所建造的東西。\n3. 閱讀以下經文，並說出每個木匠建造了什麼︰\n   a. 創 6︰14–16\n   b. 出 30︰1-3\n   c. 撒下 5︰11\n4. 辨識木工基本所用的工具，並且能說明怎麼維護。\n5. 參觀下列其中一個地方︰\n   a. 伐木園\n   b. 五金行\n   c. 木工商店\n   d. 鋸木廠\n6. 用木匠的工具來製作下列其中一項︰\n   a. 鳥舍\n   b. 鎖匙圈\n   c. 餐巾盒\n   d. 其他木製日常用品\n7. 討論這位身為木匠的耶穌，以及他當時可能會製作的東西。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A carpenter is a person who builds or repairs wooden structures and makes other articles of wood."
+      },
+      {
+        "n": 2,
+        "en": "Some things that carpenters make are buildings, furniture, toys, etc."
+      },
+      {
+        "n": 3,
+        "en": "Genesis 6:14-16, the Ark; Exodus 30:1-3, an Altar; 2 Samuel 5:11, the Temple."
+      },
+      {
+        "n": 4,
+        "en": "Basic tools include a hammer, hand saw, measuring tape, screwdriver, chisel, boring tools, and planes. Clean and put away after each use. You may wish to have a carpenter come to demonstrate the use and care of these tools."
+      },
+      {
+        "n": 5,
+        "en": "This may be done as a group, with parents, or you may have a carpenter visit your group and show types of wood, etc."
+      },
+      {
+        "n": 6,
+        "en": "Use simple designs for the project you choose. For safety use, use only hand tools. This project must be closely supervised by an adult who can demonstrate how to use the tools properly."
+      },
+      {
+        "n": 7,
+        "en": "Matthew 13:55 speaks of Christ as a carpenter. Discuss how He may have helped His earthly father make such things as tables, benches, cabinets, stairs, doors, window frames, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4700",
+    "path": "app/adventurer-honors/content/arts-crafts/you4700-glue-right.md",
+    "nameZh": "漿糊黏貼",
+    "nameEn": "Glue Right",
+    "frontmatter": "id: you4700-glue-right\ncode: YOU4700\nnameZh: \"漿糊黏貼\"\nnameEn: \"Glue Right\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 在廢紙上練習怎麼控制漿糊的粘貼。\n2. 藉由練習各種塗漿糊方法來學習如何控制漿糊的使用。\n3. 讓孩子在一條線上，以他自認塗漿糊最好的控制方式來黏貼星星、金屬片或其他的東西，並且讓他們說明原因。\n4. 閱讀並討論箴 18︰24\n5. 正確地使用漿糊來製作圖畫或手工。\n6. 在手背上平均地塗上一個小圓圈。等一段時間讓它乾燥。你是否可以將它從你手上撥下完整的一塊呢？\n7. 在每次使用完漿糊之後，都要將瓶身的出孔處清理乾淨，並且把蓋子蓋好。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Providing glue containers with undamaged tips is important for the success of this award. Instruct children to practice squeezing the glue bottle lightly to make a thin line and then squeeze a little more to make a thick line. When they feel they have control of the glue, they are ready to practice on the form."
+      },
+      {
+        "n": 2,
+        "en": "Create a glue right form or find a sample form on the NAD Adventurer website under “awards.” a. Lines 1 & 2: Make the glue flow in a thick line to fill the space without going past the end of the lines. b. Lines 3 & 4: Squeeze the glue very lightly and hold the tip of the container above the paper. Make the glue flow only on top of the thin lines without going past the end of the lines. c. Lines 5 & 6: Cover each dash without going past the end of the dash by squeezing and raising the container up when the first dash ends and putting it down, squeezing again to make the next dash. d. Circles: Put the glue in the middle of the circle and squeeze the container lightly and let the glue spread out to the edges. Fill in each circle without going past the lines. e. Magazine pictures: Thin paper takes very little glue. Put just a small touch of glue on your finger and lightly touch the corners of the picture so the glue will not show through to the front side. f. Design: Use any type of sequins, gems, or small trinkets. Squeeze a small amount of glue on scratch paper. Use a toothpick to put glue on the items like sequins. Larger, heavier items will take more glue. g. Outline the star in glue and cover with glitter. For best results, do one angle at a time or use a toothpick. Recommend staff set up one location where glitter is applied."
+      },
+      {
+        "n": 3,
+        "en": "Never judge the success of this award by how neatly they completed the Glue Right form. The award is a success if they understand the techniques and know it is their job to learn ways to control glue."
+      },
+      {
+        "n": 4,
+        "en": "The friend who stays faithful, even when all others turn away, reflects Jesus. He is the true and faithful Friend, the One who never fails."
+      },
+      {
+        "n": 5,
+        "en": "Any craft that requires glue is appropriate."
+      },
+      {
+        "n": 6,
+        "en": "No purpose—just fun."
+      }
+    ]
+  },
+  {
+    "code": "YOU4720",
+    "path": "app/adventurer-honors/content/arts-crafts/you4720-hand-shadows.md",
+    "nameZh": "手影",
+    "nameEn": "Hand Shadows",
+    "frontmatter": "id: you4720-hand-shadows\ncode: YOU4720\nnameZh: \"手影\"\nnameEn: \"Hand Shadows\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 教導如何製作手影。\n2. 當學員學會了製作手影，便可提出以下問題：\n   a. 你最喜歡哪個手影？\n   b. 哪個手影最難學？\n   c. 為什麼它這樣難學？\n   d. 有沒有一些陰影你無法製作的？\n3. 讓學員討論如何將這項技能教導其他人。\n4. 在領袖的幫助下，練習教導別人製作手影。\n5. 教導別人如何製作兩個或以上的手影。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Create light and shadow indoors with a flashlight attached to the back of a high-back chair, overhead projector, or lamp. Shine a light on the wall, screen, or bed sheet that is stretched tight. Hand shadows can be done outside with natural sunlight and a backdrop of your choice."
+      },
+      {
+        "n": 2,
+        "en": "Discuss the questions. Help them to understand how they learned best and that all people learn at different paces and in different ways."
+      },
+      {
+        "n": 3,
+        "en": "Work with the children to develop rules for teaching others how to make hand shadows. Rules should include: a. Asking the student how they learn best, such as listening to instruction, watching a leader, or doing it themselves. b. Be patient. c. Be kind and encouraging. d. Congratulate them when completed."
+      },
+      {
+        "n": 4,
+        "en": "Parent assistance would allow one-on-one attention for each child as they practice teaching."
+      },
+      {
+        "n": 5,
+        "en": "Teach hand shadows to another child or an adult."
+      }
+    ]
+  },
+  {
+    "code": "YOU4730",
+    "path": "app/adventurer-honors/content/arts-crafts/you4730-handicraft.md",
+    "nameZh": "手工藝",
+    "nameEn": "Handicraft",
+    "frontmatter": "id: you4730-handicraft\ncode: YOU4730\nnameZh: \"手工藝\"\nnameEn: \"Handicraft\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "6. 完成下列六項的內容：\n   a. 製作一張慰問卡\n   b. 用乾燥花或用絲綢做的假花來插一盆花\n   c. 用麵團或黏土捏一個作品\n   d. 貝殼畫\n   e. 用繩子制作一個雕塑品\n   f. 一個活動雕像\n   g. 用紙漿製作一個作品\n   h. 用蛋殼、種子、貝類製作一幅圖畫\n   i. 製作一個紀念冊或相簿的封面\n   j. 使用六種材料來拼貼製作一幅拼圖畫\n   k. 製作一張邀請別人來參加某一項活動的海報\n   l. 自己選擇一個製作的方式來完成一樣完整、美麗的作品\n7. 將以上作品送出至少二樣給下列的人：\n   a. 送給一位家人或朋友\n   b. 送給教會內或社區內的一位長者",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Make six of the following: a. Use paper, lace, etc. to decorate a card. Include a get-well message and give the card to someone who is ill. b. Collect silk or dried natural flowers for arrangements. c. Encourage each child to be creative as they bake and paint. d. Design a picture using shells and glue. Display at a club or school meeting. e. Use a simple pattern to make a string art project. f. Design and make a mobile. Use at least three patterns. g. Use paper-mache to make a model of an animal or car. h. Glue objects to cardboard to make a design. Paint it if desired. i. Cover an autograph or photo album neatly with material. j. Make a collage using a variety of materials such as felt, wool, cotton, straw, bark, dried flowers, etc. k. The poster should be colorful and easy to read. l. You may choose to have the Adventurers make the same craft item or give them several choices."
+      },
+      {
+        "n": 2,
+        "en": "You may need to arrange transportation so the Adventurers can present gifts personally."
+      }
+    ]
+  },
+  {
+    "code": "YOU4755",
+    "path": "app/adventurer-honors/content/arts-crafts/you4755-magnet-fun-i.md",
+    "nameZh": "磁鐵樂 Ⅰ",
+    "nameEn": "Magnet Fun I",
+    "frontmatter": "id: you4755-magnet-fun-i\ncode: YOU4755\nnameZh: \"磁鐵樂 Ⅰ\"\nnameEn: \"Magnet Fun I\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 磁鐵是什麼做成的？\n2. 閱讀希臘故事／傳說，講到怎麼發現第一個磁鐵和磁鐵名字的由來。\n3. 描述三個主要的磁鐵類型：\n   a. 永久磁鐵 b. 暫時磁鐵\n   c. 電磁鐵\n4. 磁鐵有哪些用途？\n5. 完成三個磁鐵的實驗，例如下列的要求：\n   a. 磁鐵尋寶：在房間內放置一些能被磁鐵吸引、和不被吸引的物品。看看有幾樣東西能被磁鐵吸起來。建議物品：堅果、螺絲釘、錫鉑紙、安全別針等。\n   b. 鐵礦石：在桌上放置各種礦物石，看看孩子們是否可以找出含鐵的礦石，然後用他們的磁鐵試試能否將石頭吸上來。\n   c. 用磁鐵的引力來移動物品：請你的朋友把一張紙夾到他的兩手之間，然後將迴紋針放在紙張的上方，磁鐵放在下方。將迴紋針從紙張的一端移到另一端，然後又回到原來的一端。讓你的朋友繼而拿著不同的東西，像是塑膠尺、鏡子、硬紙板等，重複這個實驗。引力還是一樣的嗎？\n   d. 做出一個磁鐵：將鋼釘碰撞磁鐵 2_5_至 3_0_次。只能以同一方向撞擊磁鐵。\n   i. 有多少迴紋針能一次被吸上來？\n      ii. 鋼釘也可以像磁鐵的吸力一樣強嗎？\n6. 閱讀並且背誦希伯來書 7：19，雅各書 4：8。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A magnet is made of magnetite, a natural magnetic material that will create a magnetic field. A magnetic field is the force surrounding a magnet that draws objects to the magnet. You can feel this force when using a magnet."
+      },
+      {
+        "n": 2,
+        "en": "Many years ago, there was a shepherd named Magnes. Each day he kept watch over his flocks. One cold, blustery day, one of Magnes’ lambs was missing from its mothers’ side. Neither Magnes nor the mother could locate the little lamb. He looked behind rocks, in the thicket, near the stream, behind the bushes, and soon he realized it was really lost. He didn’t believe a wild animal had stolen it or eaten it. He was sure he could find it, if only he looked in all the right places. He stood on a large rock so he could look upon the landscape of the pasture in hopes of finding “whitey”, the lost little lamb. As Magnes stood on a rock, his sandals stuck to the rock where the nails in his sandals were located. He had never noticed that strange power before. Over a period of days and weeks, he brought other metal objects to the “magic rock” and found that iron, regardless of the size, would stick to the “magic rock.” He took some of the stone to his village and many people played with it. It became known as “Magnes’ stone.” Today it bears part of his name in honor of his discovery: “Magnet.” We call his “magic” stone a lodestone, which is made of magnetite, a natural magnetic material."
+      },
+      {
+        "n": 3,
+        "en": "(A) Permanent: when it is magnetized, it retains a level of magnetism. (B) Temporary: acts like a permanent magnet when it is within a strong magnetic field, but loses its magnetism when the magnetic field disappears. (C) Electromagnet: a special wire that acts like a permanent magnet when electrical current is flowing in the wire. For more detail, see resource #1."
+      },
+      {
+        "n": 4,
+        "en": "Refer to resource #1."
+      }
+    ]
+  },
+  {
+    "code": "YOU4790",
+    "path": "app/adventurer-honors/content/arts-crafts/you4790-magnet-fun-ii.md",
+    "nameZh": "磁鐵樂 II",
+    "nameEn": "Magnet Fun II",
+    "frontmatter": "id: you4790-magnet-fun-ii\ncode: YOU4790\nnameZh: \"磁鐵樂 II\"\nnameEn: \"Magnet Fun II\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 已得到磁鐵樂Ⅰ的榮譽證。\n2. 拿兩個磁鐵來玩看看相吸與相斥的實驗。所有的磁鐵都有____極，和____極。反極會相吸，同極則會相斥。\n3. 做一個電磁鐵。\n4. 用指南針找尋八個方向，並把它畫在羅盤儀刻度盤上。\n5. 用磁鐵、以水盤、長的绣針、軟木片（或蠟紙） ，蠟燭、和羅盤來做一個指南針。\n6. 如果磁鐵掉在地上時，會發生什麼事？\n7. 學習聖經箴言 18：24。",
+    "answersEn": []
+  },
+  {
+    "code": "YOU4830",
+    "path": "app/adventurer-honors/content/arts-crafts/you4830-postcards.md",
+    "nameZh": "明信片",
+    "nameEn": "Postcards",
+    "frontmatter": "id: you4830-postcards\ncode: YOU4830\nnameZh: \"明信片\"\nnameEn: \"Postcards\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 什麼是明信片？明信片和書信有什麼不同？請講述“快馬郵遞”的事。背誦聖經“以斯帖記 3：12-13”。\n2. 學習並陳述與明信片有關的三、四件事。\n3. 寄出首張發行的明信片要多少錢？現在一張明信片是多少錢？\n4. 寫幾張明信片給你認識的人，並且寄給他們。\n5. 製作一張明信片並加以裝飾，然後寄給一所佈道士學校或教堂。在教堂的佈告欄上張貼你將明信片寄去哪個國家、花費了多少錢寄送。\n6. 請完成下列其中二項：\n   a. 參觀郵局\n   b. 邀請一名郵差來說明他們的工作\n   c. 利用鞋盒、或其他用來分裝的盒子，來做一個屬於你自己的郵局\n   d. 討論郵局裡的人會有什麼事要做\n   e. 收集三張舊式的明信片\n   f. 你自己想做的事\n7. 知道有關約瑟貝茲和懷約翰拜訪郵局的故事。請閱讀提摩太前書 1：2、腓利門書 1：1、以及腓利比書 1:2，並討論怎麼在信上開頭問候。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A postcard is a single piece of cardstock mailed without an envelope. The Pony Express was the first cross country letter carrier. Look up more information on the internet. “And the letters were sent post…” Esther 3:13 KJV."
+      },
+      {
+        "n": 2,
+        "en": "http://en.wikipedia.org/wiki/Postcard."
+      },
+      {
+        "n": 3,
+        "en": "John P . Charlton of Philadelphia patented the postcard in 1861, selling the rights to H. L. Lipman, whose postcards, complete with a decorated border, were labeled “Lipman’s postal card.” Nine years later, European countries were also producing postcards."
+      },
+      {
+        "n": 4,
+        "en": "May send postcards to other Adventurers in your club, family, friends, or a missionary of your director’s choosing in another country. You may make your own cards out of old greeting cards by cutting off the cover and using the back of the cover to write the message and address. Make sure each postcard meets the post office standards for size and weight"
+      },
+      {
+        "n": 5,
+        "en": "Chart information such as: when it was sent; how much it cost; the date the card arrived; who all might have read the card."
+      },
+      {
+        "n": 6,
+        "en": "Be creative and have fun."
+      },
+      {
+        "n": 7,
+        "en": "Tell how God provided funds for mailing documents when there was a need for money."
+      },
+      {
+        "n": 8,
+        "en": "Other Bible texts: 2 Peter 3:1 and 2 Corinthians 13:10."
+      }
+    ]
+  },
+  {
+    "code": "YOU4855",
+    "path": "app/adventurer-honors/content/arts-crafts/you4855-reporter.md",
+    "nameZh": "記者",
+    "nameEn": "Reporter",
+    "frontmatter": "id: you4855-reporter\ncode: YOU4855\nnameZh: \"記者\"\nnameEn: \"Reporter\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 向家人陳述一件幼年前鋒會的活動報告。\n2. 製作一本記者手冊，內容至少要寫下三項幼年前鋒會戶外活動的記錄。\n3. 在一周內收看或收聽新聞報告，並且準備一份簡短的新聞要事報告。\n4. 仔細聽教會裡的報告，並查看教堂的佈告欄。\n   a. 將教會佈告欄的報告寫在你的手冊上。\n   b. 將你最感興趣的報告圈起來。\n5. 訪談你會堂的牧師或安息日學老師。並在你的手冊上記錄下列要求：\n   a. 繪畫出你所訪談的對象–包括記下他的姓名和工作的地點。\n   b. 描寫他最熱愛他工作上的哪一方面。\n6. 保存記者手冊至少兩個月。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Have a sharing time in your Adventurer meeting so each child will have practice in sharing a “report” with others. Help them learn to put events in order and encourage them to tell their parents about an Adventurer function. Start a simple “Reporter” scrapbook. Let each child design a cover with his or her name on it. Typing paper or unlined notebook paper would be appropriate. To get started, give the children a copy of an Adventurer announcement to place in their scrapbooks."
+      },
+      {
+        "n": 2,
+        "en": "Make a scrapbook story using magazine pictures or pictures the Adventurer has drawn and colored. A sibling, parent, or friend may need to help. Have the children print captions below the pictures to describe the items. Have the children share what they learned."
+      },
+      {
+        "n": 3,
+        "en": "Encourage the Adventurers to listen to news on radio or television to know what is going on in the community and the world."
+      },
+      {
+        "n": 4,
+        "en": "Have the Adventurers tell you about the announcements and the church bulletin. Ask which were most interesting to the children."
+      },
+      {
+        "n": 5,
+        "en": "Help each Adventurer set up an appointment for an interview with a pastor, Sabbath schoolteacher, or schoolteacher. Prepare those adults for participation in this activity."
+      },
+      {
+        "n": 6,
+        "en": "Work on the “Reporter” scrapbook for at least two months. Add clippings of interesting school, church, and community activities. This may be a group activity, but each child should make his or her own scrapbook."
+      }
+    ]
+  },
+  {
+    "code": "YOU4890",
+    "path": "app/adventurer-honors/content/arts-crafts/you4890-sign-language.md",
+    "nameZh": "手語",
+    "nameEn": "Sign Language",
+    "frontmatter": "id: you4890-sign-language\ncode: YOU4890\nnameZh: \"手語\"\nnameEn: \"Sign Language\"\naliases: []\ncategory: arts-crafts\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 學習聾啞人士所用的字母和相關的規程。\n2. 學習用字母傳達單字。\n3. 至少能學會五十個單字。\n4. 至少學會一首簡單的詩歌並且表演出來。\n5. 如果可以的話，安排幼年團團員與一名聾啞人士見面，並用手語跟孩子們溝通。\n6. 用手語呈現一段簡單的聖經章節。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "As available (from your local Association of the Deaf), use the two-sided manual alphabet cards. That way the children can see what the signs look like from both the sender’s and receiver’s angle."
+      },
+      {
+        "n": 2,
+        "en": "First, they can have fun learning to spell their names. Print words on a sheet of paper, and then have the children take turns spelling and receiving the words. Have children get in groups of two and send and receive words of their choice."
+      },
+      {
+        "n": 3,
+        "en": "Words young people really like to learn are the animals and foods. Joy of Signing is a good book to learn these signs, as well as the other signs. It gives both a word and a picture description of each sign. It also tells the sign’s origin (example: Jesus—origin: indicating the nail prints)."
+      },
+      {
+        "n": 4,
+        "en": "“Jesus Loves Me” and “Into My Heart” are two examples. Remember to explain the origins when needed."
+      },
+      {
+        "n": 5,
+        "en": "Have someone from your deaf community come in and share a bit of their life with the children and teach them a few words. This will really bring this award to life."
+      }
+    ]
+  },
+  {
+    "code": "YOU4940",
+    "path": "app/adventurer-honors/content/arts-crafts/you4940-tin-can-fun.md",
+    "nameZh": "錫罐樂",
+    "nameEn": "Tin Can Fun",
+    "frontmatter": "id: you4940-tin-can-fun\ncode: YOU4940\nnameZh: \"錫罐樂\"\nnameEn: \"Tin Can Fun\"\naliases: []\ncategory: arts-crafts\nanswerSource: translated\nstatus: non-review",
+    "requirementsZh": "1. 最早的時候，人們怎麼使用錫？而今日的人們又如何使用錫？\n2. 玩「神秘錫罐」的遊戲。\n3. 記錄你家裡在一周當中使用了多少的鋁罐。\n4. 在耶穌時代，食物是如何保存的？\n5. 在聖經時代，錫的用途是甚麼？\n6. 利用錫罐製作電話或高蹺。\n7. 請帶三種罐裝食品與大家分享。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "The earliest known use of tin was around 3500 B.C. when the people of Ur (now Iraq) made bronze articles. Bronze is an alloy of tin and copper. Today, tin is used mainly in the production of “tin plate,” which is steel coated on both sides with an extremely thin film of tin. Tin cans are made of “tin plate.”"
+      },
+      {
+        "n": 2,
+        "en": "Remove labels from a few cans and guess their contents."
+      },
+      {
+        "n": 3,
+        "en": "Share results with the club."
+      },
+      {
+        "n": 4,
+        "en": "Things were preserved by drying them out with salt. Dried fish, figs, and other fruits were common. Today most of the “tin plate” is used to coat the steel cans to give them an attractive appearance and protect the cans from rust. These cans are for packing food and other items that would quickly spoil."
+      },
+      {
+        "n": 5,
+        "en": "Bronze is an alloy of tin. Offerings were brought of bronze (Exodus 25:3). Fifty bronze clasps for the tabernacle were made (Exodus 26:11). Moses made a bronze serpent and put it on a pole (Numbers 21:9)."
+      },
+      {
+        "n": 6,
+        "en": "To make a telephone: Poke a small hole in the bottom of two empty (and clean) cans. Put one end of a long string into each can end and tie a knot. Stretch the string tight and talk. One person will talk while the other person listens to create a “telephone.” God communicates with us like the telephone. We cannot see Him, but He is always ready to listen and help us. To make stilts: Poke a small hole on the two sides at the top of two cans. Tie a string to each can to create “stilts.” For stilt safety, use cans no smaller than 20 oz. and always wear shoes. “And walk in love...” (Ephesians 5:2)."
+      }
+    ]
+  },
+  {
+    "code": "HKA4017",
+    "path": "app/adventurer-honors/content/household/hka4017-baking.md",
+    "nameZh": "烘焙",
+    "nameEn": "Baking",
+    "frontmatter": "id: hka4017-baking\ncode: HKA4017\nnameZh: \"烘焙\"\nnameEn: \"Baking\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 烘焙的定義是什麼？\n2. 描述在廚房裡烘烤時的安全守則。\n3. 解釋以下名稱：麵糊、打漿、塗鍋、奶油、麵團、折疊、預熱和攪拌。\n4. 說出在烘焙時，常見的 8 種器具。\n5. 閱讀四個聖經中提及烘焙的故事。\n6. 在約翰福音 6:35，耶穌說祂是誰，並討論其重要性。\n7. 烘烤你選擇的兩個項目。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Baking is preparing an item by heating it in an oven at the proper temperature. (In baking food, there is a change of liquids into solids through a chemical reaction. In order for this chemical reaction to occur the proper combination of ingredients, in the right proportions must be used for the desired outcome.)"
+      },
+      {
+        "n": 2,
+        "en": "Always start by washing your hands with soap and water. Begin with a clean counter and utensils. Have an adult in the kitchen at all times. Demonstrate how to be safe in the kitchen by adding other suggestions."
+      },
+      {
+        "n": 3,
+        "en": "Search the internet or look in a cookbook for additional terms."
+      },
+      {
+        "n": 4,
+        "en": "Mixing bowls, measuring spoons, measuring cups, mixing spoons, rubber spatula, whisk, baking pan/sheet, pie pan, cake pan, rolling pin, parchment paper, cooling rack, mixer, sifter, etc."
+      },
+      {
+        "n": 5,
+        "en": "Genesis 12:20, 18:6, 19:3 NIV; Leviticus 9:31 NIV; 2 Samuel 13:8 NIV; 1Chronicles 9:31 NIV; other stories."
+      }
+    ]
+  },
+  {
+    "code": "HKA4018",
+    "path": "app/adventurer-honors/content/household/hka4018-family-helper.md",
+    "nameZh": "家庭幫手",
+    "nameEn": "Family Helper",
+    "frontmatter": "id: hka4018-family-helper\ncode: HKA4018\nnameZh: \"家庭幫手\"\nnameEn: \"Family Helper\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 閱讀並討論以下聖經經文：\n   a. 腓立比書 2:14\n   b. 約翰福音 15:12\n   c. 詩篇 118:7\n   d. 加拉太書 6:9\n2. 誰是家庭幫手？\n3. 討論我可以做些什麼來成為一個小幫手。\n4. 保留三星期的日誌，列出你是如何成為幫助者的。\n   a. 每星期與你的導師討論你在該星期取得的進展。\n   b. 討論你提供幫助的方式以及你最喜歡的方式。\n   c. 討論您可以通過哪些方式提供不同的幫助。\n5. 為您的父母/_監護人製作一張感謝卡/_便條，感謝他們為你所做的一切。",
+    "answersEn": [
+      {
+        "n": 2,
+        "en": "A family helper is ANYONE, regardless of age or gender, who helps the “operation” of the home and family work. For example, when a child takes out the trash, helps a sibling do homework, take out the pet, does their laundry, or ANYTHING else, they are being a family helper! CELEBRATE our role in helping our families so often!"
+      },
+      {
+        "n": 3,
+        "en": "This is a discussion -- there are VERY FEW things in a home/family life that wouldn’t belong here. Appreciation for how often parents help in the family is a good thing to include in this discussion."
+      },
+      {
+        "n": 4,
+        "en": "The teacher can have basic card making supplies such as construction paper, scissors, crayons/markers, stamps or stickers, and other card making items. Success happens when we help the children say “Thank You” immediately. Teaching Idea: Prepare the Classroom Materials: The materials used to prepare the Builder learning space for each meeting. Procedure: Assign different helpers for each of several upcoming meetings. These helpers and their parents come early, and the children help set up and put away the classroom for the day. The more involved they are the better! Make it fun by even having them help make the “demonstration crafts” for the days’ work. Teaching Idea: Put Away Tag Materials: Items to hide that MATCH family helper tasks. Example broom and scoop, bucket & sponge, toy box and toys; Lots of toys, a toy box. BE SURE you have enough items for each child to find several. Procedure: Hide half of each matching set around the room or area. Display the “matches” in the front of the room. On a signal, Builders rush around the room to connect the parts up front. Discuss how the game of life is a game too but with a better and happier goal -- a happy mommy and daddy when things are neat and clean."
+      }
+    ]
+  },
+  {
+    "code": "HKA4031",
+    "path": "app/adventurer-honors/content/household/hka4031-sharing.md",
+    "nameZh": "分享",
+    "nameEn": "Sharing",
+    "frontmatter": "id: hka4031-sharing\ncode: HKA4031\nnameZh: \"分享\"\nnameEn: \"Sharing\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 聆聽一本有關分享的書籍。\n2. 唱一首有關分享的歌。\n3. 參與一個有關分享的遊戲。\n4. 完成一項手工並與他人分享",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Create a family picture book or choose any subject, object, or theme as the basis for your book. Include photos, magazine pictures, and/or drawings."
+      },
+      {
+        "n": 2,
+        "en": "Use a variety of materials to decorate the book such as: colored or printed paper, stickers, punch-outs, decorative scissors, buttons, foam cut-outs, embellishments, beads, etc."
+      },
+      {
+        "n": 3,
+        "en": "Provide a short description of the picture."
+      },
+      {
+        "n": 4,
+        "en": "May choose different Bible versions such as, KJV, NKJV, Clear Word, etc."
+      },
+      {
+        "n": 5,
+        "en": "Share your book with family, club, school, or with friends."
+      }
+    ]
+  },
+  {
+    "code": "HKA4032",
+    "path": "app/adventurer-honors/content/household/hka4032-special-helper.md",
+    "nameZh": "樂於助人",
+    "nameEn": "Special Helper",
+    "frontmatter": "id: hka4032-special-helper\ncode: HKA4032\nnameZh: \"樂於助人\"\nnameEn: \"Special Helper\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 聆聽一本有關樂於助人的書籍。\n2. 唱一首有關樂於助人的歌。\n3. 參與一個有關樂於助人的遊戲。\n4. 完成一項與幫助人有關的手工。\n5. 用一星期的時間，幫助一位家庭成員完成一項特殊家務，如餵飼寵物。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Online search engines often lead to online videos that “read” or “tell” helping other stories. One video is found from “Holy Tales” on Youtube. It shows the story of The Good Samaritan as told by a grandmother centipede to her grandchildren. Storyjumper.com is a per-sharing book service, and they have a story about how people can help sea turtles survive by helping to protect the new turtle hatchlings. Other videos or books can be found using the words “online free books video helping others preschool” in your favorite search engine."
+      },
+      {
+        "n": 2,
+        "en": "Youtube or Christian songs available on itunes or other media have songs that your children may enjoy learning. Memorization is not the ideal, but rather exposure to another kid’s song about a character trait we hope they will learn. Teaching Idea: This Is the Way We Help at Home Song Materials: A box of props for each child (suggested props: brooms, toys, dust rags, sponges— the children can also make the motions of the cleaning activity rather than using props) Procedure: Ahead of time: Place one prop for each verse of the song in a box. You’ll need a box of props for each child. Begin by modeling (singing a verse and doing the actions) the song “This Is the Way We Help at Home.” You may be more familiar with this song’s original title, “Here We Go Round the Mulberry Bush.” But if not, go to kididdles.com/lyrics/m014.html. For each verse, you’ll use a motion that represents the activity for that verse. You can also create your own verses to match the story you read or activities that are relevant to your kids and community. Sing each verse more than once. Suggested Verses This is the way we sweep the floor, Sweep the floor, sweep the floor. This is the way we sweep the floor So early in the morning. This is the way we pick up toys, Pick up toys, pick up toys. This is the way we pick up toys So early in the morning. This is the way we dust the house, Dust the house, dust the house. This is the way we dust the house So early in the morning. This is the way we wash the car, Wash the car, wash the car. This is the way we wash the car, So early in the morning Page 169 Teaching Idea: Helping Hands Song Procedure: Have different family groups listen the song, then figure out ways to “act out” the actions in one of the verses. “HELPING HANDS” Music: Chris G. Lyrics: Chris G., Cathy Gehr When I see someone fall down I will lift them up. If they’re lying on the ground I’ll use my helping hands. Chorus: Helping hands helping one another. I’ll do all I can with my helping hands. If my Mommy is the cook And the baby’s crying, I will read to him a book And use my helping hands. Chorus: Helping hands helping one another. I’ll do all I can with my helping hands. If my Daddy is alone Working in the garden I will help him weed and hoe With my helping hands. [Repeat second chorus] Hands should never hurt or fight Or make someone unhappy. Do some good and make things right With your helping hands. Chorus: Helping hands helping one another. Let’s do all we can with our helping hands. [Repeat] Oh, let’s do all we can with our helping hands. Oh, let’s do all we can with our helping hands!"
+      },
+      {
+        "n": 3,
+        "en": "Cleaning the house is a great way to model being helpful at home! Teaching Idea: Clean up Relay Ahead of time: Adults can bring different toys and objects from home. There should be at least 8-10 objects for each family. Procedure: Place the objects in the game center area. Each group or family’s job is to “on go” race out and in a relay fashion bring back one item at a time from “the messy floor” and place it in the family’s “basket.” The team to collect the most items by the time the center of the floor is CLEAN is the winning family. CAUTION to parents -- this game’s goal is NOT for parents to be competitive but rather to have parents and children learning to “clean together.” Conversation to follow game should include questions such as “what was the best part of the game? Why did parents help in the game? What are things you like to clean at home? How can mommies and daddies help clean? How can you help them clean? How can you celebrate when you win the clean up game at home? Page 170"
+      },
+      {
+        "n": 4,
+        "en": "Any craft where the child is helping or working on a project that reminds them to help would work for this activity. Teaching Idea: Sewing Fun Materials: • Poster board • Hole punch • Yarn • Scissors Procedure: Ahead of time: Cut several shapes out of poster board. Then use a hole punch to evenly space holes along the outside of the shape. Cut out pieces of yarn long enough to weave in and out of the holes for each shape. In order to hold the children’s interest, you’ll need to have a variety of shapes and colors of yarn for the children to use. Begin by showing the children how to sew a button onto a piece of fabric. Then show them how they are going to sew by weaving yarn through the holes on the cut-outs provided. You may want to let the children take home one of the cut-outs and some yarn."
+      },
+      {
+        "n": 5,
+        "en": "There are many chores that 4-year olds can do (with help). Feeding a pet, putting their clothes in the hamper, making their bed, or help fix a simple meal. As the adult leader, be sure that parents and children have a chance to plan what they will do to be helpful each day for the next week. Sometimes Adventurers only meets 1 or 2 times in a month. If so, have them help with chores “most days” until the next meeting."
+      }
+    ]
+  },
+  {
+    "code": "YOU4595",
+    "path": "app/adventurer-honors/content/household/you4595-collector.md",
+    "nameZh": "蒐集",
+    "nameEn": "Collector",
+    "frontmatter": "id: you4595-collector\ncode: YOU4595\nnameZh: \"蒐集\"\nnameEn: \"Collector\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 描述收藏家的工作。\n2. 說出人們一般收藏的五種物品。\n3. 收藏兩種不同的東西，每種至少蒐集 20 件︰\n   a. 例如郵票、明信片、硬幣等物品。\n   b. 來自大自然的東西，如樹葉、岩石、羽毛、貝殼等。或\n   c. 製作一個個人收藏品； 及\n   d. 以一組或班為單位，蒐集大自然的東西\n4. 舉辦一次收藏品展覽，將你的收藏品排列整齊、加以識別並展示出來，\n5. 展示其中一件收藏品並說明從中所學習到的道理。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A collector is a person who gathers and learns about things in which he or she is interested."
+      },
+      {
+        "n": 2,
+        "en": "Some examples are stamps, stickers, buttons, coins, dolls, model cars, baseball cards, rocks, shells, feathers, etc."
+      },
+      {
+        "n": 3,
+        "en": "Make sure that it is permissible to collect in the area you go to. Plan what you want to collect. You may wish to collect items such as rocks, leaves, or seeds. Collect one item for each letter of the alphabet, as in A is for apple, B is for bug, C is for crabgrass, etc. (You may need to include non-nature items.) Or you may prefer to have a preplanned treasure hunt with written clues for the children to follow with a “treasure” at the end of the hunt (could be a toy, a game, food, etc.)."
+      },
+      {
+        "n": 4,
+        "en": "This may be a club, school, or Sabbath school activity."
+      },
+      {
+        "n": 5,
+        "en": "Let the children choose items that they may have started collecting already or something available in your area, such as a collection of buttons, stickers, cat pictures, miniature figures, nature items, etc."
+      },
+      {
+        "n": 6,
+        "en": "Encourage the children to talk about their collections after they have been neatly displayed, telling their reason for making this particular collection and discussing new things they have learned about items in their collection."
+      }
+    ]
+  },
+  {
+    "code": "YOU4600",
+    "path": "app/adventurer-honors/content/household/you4600-technology.md",
+    "nameZh": "科技",
+    "nameEn": "Technology",
+    "frontmatter": "id: you4600-technology\ncode: YOU4600\nnameZh: \"科技\"\nnameEn: \"Technology\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 解釋下列各項的功能︰\n   a. 電腦系統\n   b. 螢幕\n   c. 滑鼠\n   d. 鍵盤\n   e. 中央處理器\n   f. 硬碟\n   g. 掃描器\n   h. 光碟機\n   i. 數據機\n   j. 印表機\n   k. 網絡\n   l. 磁碟機\n2. 電腦對什麼有好處？\n   a. 文書處理\n   b. 資料庫\n   c. 計算機\n   d. 溝通\n   e. 研究\n   f. 娛樂\n3. 完成下列其中一項︰\n   a. 輸入並印出一張感謝人便條\n   b. 玩一個富有教育意義的遊戲\n4. 完成下列其中一項︰\n   a. 參觀一間辦公室，並了解電腦怎樣幫助人完成他們的工作\n   b. 訪問一個電腦銷售員，並請他們示範最新的技術\n5. 了解鍵盤的標準字母排列︰\n   a. 示範手部正確的打字姿勢\n   b. 解釋為什麼手部正確的姿勢很重要的\n   c. 試打一些初階的打字軟件",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Find a current computer book or dictionary with the definitions. Use correct terminology but find illustrations to help children understand the concepts. a. Documents and books— Word processors are primarily designed to create letters, reports, and documents. Desktop publishing programs help combine graphics with text. b. Databases—Programs that allow you to manipulate, store, record, and retrieve information from a collection of related files: like addresses, memberships, or store inventories. c. Calculations—Spreadsheets are made for math calculations for accounting or record- keeping purposes. d. Communications—Cover the Internet, E-mail, and the world wide web. Talk about the need to use discipline to bypass the bad information and how to use the good information. e. Research—Current resource materials for research are available in minutes through the Internet services. You can also use material from CD-ROMs or other resource software. Computerized searches are fast, and sometimes give you more ideas. One such CD is the E. G. White Library or an encyclopedia CD. f. Games—There will always be games. Computer games can be good if they challenge your mind and mental skills as well as your dexterity. Put it to the test of Philippians 4:8. All of our computer work should meet that standard."
+      }
+    ]
+  },
+  {
+    "code": "YOU4605",
+    "path": "app/adventurer-honors/content/household/you4605-cooking-fun.md",
+    "nameZh": "煮食",
+    "nameEn": "Cooking Fun",
+    "frontmatter": "id: you4605-cooking-fun\ncode: YOU4605\nnameZh: \"煮食\"\nnameEn: \"Cooking Fun\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 列出四大類食物，然後：\n   a. 蒐集每一類食物的圖片\n   b. 利用這些圖片做出一本小冊子或海報貼在你的教室、學校或是教堂公佈欄\n2. 寫一份晚餐的菜單。\n3. 幫忙預備晚餐和飯後清理。\n4. 製做並烘焙一些你喜歡的餅干。\n5. 示範野外生火，並且能煮一鍋熱飲。或者，做出兩種不同類型的三明治或者，預備 2 種不同類型的沙拉\n6. 幫忙準備野餐用的午餐，並且小心裝起來。跟朋友或家人一起分享這頓野餐。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Different groups: a. Vegetable-fruit group: Citrus fruits, tomatoes, peppers, melons, cabbage, berries, dark-green or deep-yellow vegetables, potatoes, etc. b. Bread-cereal group: Breads, cereals and other grain products made from whole, enriched or restored grains such as rice, wheat, oats, barley, corn, etc. c. Protein group: Dried beans, dried peas, lentils, garbanzos, nuts, peanuts, peanut butter, eggs, soy cheese, and vegetable proteins. d. Milk group: Whole, evaporated, or skim milk, reconstituted dry milk, buttermilk, soybean milk, cottage cheese, yogurt, ice cream. e. Resources: Magazines and seed catalogs"
+      },
+      {
+        "n": 2,
+        "en": "A complete dinner menu will include soup, salad, entree, vegetables and desert as well as beverage and bread."
+      },
+      {
+        "n": 3,
+        "en": "This dinner can be the result of requirement two."
+      },
+      {
+        "n": 4,
+        "en": "Help the child make a simple batch of cookies. You may follow a recipe or use a prepared mix."
+      },
+      {
+        "n": 5,
+        "en": "Clear around the campfire and use safety rules when building the fire; OR make two sandwich fillings or use prepared items such as jam, peanut butter, etc.; OR make a simple relish dish and/or a tossed or jelled salad."
+      },
+      {
+        "n": 6,
+        "en": "Prepare a picnic lunch and eat it with your group, even if it is just under a nearby tree."
+      }
+    ]
+  },
+  {
+    "code": "YOU4690",
+    "path": "app/adventurer-honors/content/household/you4690-gardener.md",
+    "nameZh": "園藝",
+    "nameEn": "Gardener",
+    "frontmatter": "id: you4690-gardener\ncode: YOU4690\nnameZh: \"園藝\"\nnameEn: \"Gardener\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 描述園丁的工作。\n2. 請說出三種不同類型的農園、和各別種植的植物。\n3. 找出至少二個聖經章節提到有關農園的事。\n4. 列出至少三個園藝所需要用到的工具。\n5. 示範如何正確使用園藝的工具、如何在使用後保存收好。\n6. 完成下列其中一項︰\n   a. 利用一塊農地來種植花卉或蔬菜，要整地、播種、移植、種植並好好照料這塊農地。\n   b. 利用窗用花盆、一般花盆、牛奶盒、或罐頭來種植三種不同的植物。\n   c. 製作一個溫室玻璃植物園，並小心照料。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A gardener cultivates the soil, plants seeds and sets plants, and feeds, waters, weeds, transplants, and cares for the garden."
+      },
+      {
+        "n": 2,
+        "en": "Vegetable garden: foods such as peas, carrots, beans, etc. a. Flower Garden: bulb and seed flowers, such as tulips or pansies. b. Herb Garden: plants for cooking such as parsley, thyme, or mint."
+      },
+      {
+        "n": 3,
+        "en": "Genesis 2:8, Eden; John 18:1 and Matthew 26:36, Gethsemane."
+      },
+      {
+        "n": 4,
+        "en": "Some garden tools often needed are a shovel, rake, hoe, trowel, hose, and wheelbarrow."
+      },
+      {
+        "n": 5,
+        "en": "Discuss safety. For example, to prevent injury, never leave tools where a person may step on or fall over them. Wipe tools clean and store them in a dry place."
+      },
+      {
+        "n": 6,
+        "en": "Teach the Adventurers to enjoy the feel of soil, the excitement of watching things grow, and the responsibility to care for a garden by weeding and watering. The third option may be a group project. If it is selected, help the children choose an attractive variety of plants for the terrarium."
+      }
+    ]
+  },
+  {
+    "code": "YOU4735",
+    "path": "app/adventurer-honors/content/household/you4735-home-craft.md",
+    "nameZh": "家政",
+    "nameEn": "Home Craft",
+    "frontmatter": "id: you4735-home-craft\ncode: YOU4735\nnameZh: \"家政\"\nnameEn: \"Home Craft\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 利用家中可用的材料來做下列任何一項：\n   a. 設計並製造一個雕像\n   b. 利用家裡一些東西或食物來製作一幅畫\n2. 完成下列其中三項︰\n   a. 一件編織作品\n   b. 一件鉤織作品（抺布、小踏墊等）\n   c. 一件網織作品(繩袋、球袋等)\n   d. 一件草織、禾織或尼龍織作品（杯墊、餐巾環等）\n   e. 一件縫紉作品（娃娃的衣服、圍裙等）\n   f. 穿針線並縫上鈕釦\n3. 將一個瓶子包裝成花瓶，或者，製作一個冰箱的磁鐵。\n4. 利用家裡的廢棄物製做二件作品。\n5. 收集家居廢物來，做為將來製作工藝品的材料。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Do the following: a. Using cardboard as a base, take glue and toothpicks and build a tower, animal, or other design of the Adventurer’s choice. Size will depend on the child’s patience. b. Be creative. Use seeds, buttons, etc., to make a picture."
+      },
+      {
+        "n": 2,
+        "en": "This is a great opportunity for the family or club to work together on a project of their choice."
+      },
+      {
+        "n": 3,
+        "en": "Cut small pieces of construction paper or pictures from a magazine. Cover bottle or jar with glue and place paper or pictures on it, pressing smooth. Cover lightly with glue and let dry before using. Makes an attractive gift for Mother’s Day or add flowers and give to a shut-in. OR Let the children design and make with felts or other scrap material, buttons, etc., a magnet for the refrigerator, stove, or other surface to which a magnet will adhere."
+      },
+      {
+        "n": 4,
+        "en": "Be creative. Encourage the Adventurers to make something unusual from items such as egg cartons, shoe boxes, cereal cartons, scrap paper or cloth, bottle can, etc."
+      },
+      {
+        "n": 5,
+        "en": "Collect bottle caps, milk or egg cartons, popsicle sticks, cardboard, nut shells, lint, bottles, cans, material scraps, etc. (Vacation Bible School teachers’ guides contain good craft ideas.) Teach the children to save and store items they could use again for inexpensive craft projects. Be prepared to give examples of types of items to save. Encourage use of these items so they will not be thrown away. Be creative!"
+      }
+    ]
+  },
+  {
+    "code": "YOU4885",
+    "path": "app/adventurer-honors/content/household/you4885-sewing-fun.md",
+    "nameZh": "縫紉",
+    "nameEn": "Sewing Fun",
+    "frontmatter": "id: you4885-sewing-fun\ncode: YOU4885\nnameZh: \"縫紉\"\nnameEn: \"Sewing Fun\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 說出最早以前的針大概是什麼材料做的。\n2. 描述最初的縫紉線大概是什麼材料做的。\n3. 說出縫紉機是什麼時候發明的。\n4. 示範穿針線，並在尾端打結。\n5. 會在一塊布上縫紐扣\n6. 縫一對扣子或暗扣，並且可以整齊的扣在一起。\n7. 縫上一對「鉤勾」和「鉤眼」並能合在一起。\n8. 學會至少三種縫紉法。\n   a. 連接針法\n   b. 縫邊針法\n   c. 倒針縫法\n9. 用兩種針法完成一個實用的作品。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "The first sewing needles were probably made of bone."
+      },
+      {
+        "n": 2,
+        "en": "Horse-tail or other animal hairs were probably the first thread."
+      },
+      {
+        "n": 3,
+        "en": "Sewing machines were first used in the 1850s."
+      },
+      {
+        "n": 4,
+        "en": "Demonstrate how to be safe when threading a needle. Have the Adventurers practice tying a knot at the end of the thread."
+      },
+      {
+        "n": 5,
+        "en": "Sew a button on a piece of material or clothing. Teach the Adventurer to make small, even stitches."
+      },
+      {
+        "n": 6,
+        "en": "Demonstrate how to sew snaps on two pieces of material or clothing and connect them properly. Make small stitches without puckering the material."
+      },
+      {
+        "n": 7,
+        "en": "Demonstrate how to sew a hook-and-eye on material evenly."
+      },
+      {
+        "n": 8,
+        "en": "Demonstrate how to make three kinds of stitches. Have the Adventurers try to make the stitches neat and even."
+      },
+      {
+        "n": 9,
+        "en": "Some examples are: a. Scissor holder: Cut the pattern, place material together, and stitch by hand, making even, neat stitches. Include loop at top of scissor container for hanging. b. Pin cushion: Fill pin cushion with sand or small seeds."
+      }
+    ]
+  },
+  {
+    "code": "YOU4950",
+    "path": "app/adventurer-honors/content/household/you4950-troubadour.md",
+    "nameZh": "遊唱牧民",
+    "nameEn": "Troubadour",
+    "frontmatter": "id: you4950-troubadour\ncode: YOU4950\nnameZh: \"遊唱牧民\"\nnameEn: \"Troubadour\"\naliases: []\ncategory: household\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 使用一個簡單的樂器來演奏一首詩歌，或是使用小鼓、三角鈴等樂器敲打歌曲的節奏。\n2. 運用服飾或道具來扮演一位聖經人物或動物，並讓會員猜想。\n3. 與會員一起表演一個故事。\n4. 說出聖經中的三位音樂家 。\n5. 寫一首關於大自然的詩。\n6. 唱出兩首你們國家的傳統歌曲。\n7. 與幾個會員共同計劃一個十五分鐘的娛興節目，或說個故事給其他團員們觀賞。\n8. 翻開並閱讀詩篇 66︰1-2。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Use a reed pipe, flute, harmonica, recorder, piano, etc."
+      },
+      {
+        "n": 2,
+        "en": "Encourage children to use their imaginations creatively."
+      },
+      {
+        "n": 3,
+        "en": "Help the children to share and take turns."
+      },
+      {
+        "n": 4,
+        "en": "Miriam, David, Lucifer, Jubal, etc."
+      },
+      {
+        "n": 5,
+        "en": "The poem should have four to eight lines."
+      },
+      {
+        "n": 6,
+        "en": "Teach the children some traditional songs. If your class includes children from many nationalities, learn songs of different countries and sing them as a group."
+      },
+      {
+        "n": 7,
+        "en": "Teach children to work together and organize a program."
+      },
+      {
+        "n": 8,
+        "en": "Discuss together and share how to make a joyful “noise.”"
+      }
+    ]
+  },
+  {
+    "code": "HKA4039",
+    "path": "app/adventurer-honors/content/nature/hka4039-dogs.md",
+    "nameZh": "狗類",
+    "nameEn": "Dogs",
+    "frontmatter": "id: hka4039-dogs\ncode: HKA4039\nnameZh: \"狗類\"\nnameEn: \"Dogs\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 閱讀並討論馬太福音 15:26 和路加福音 16:21 。\n2. “狗是人類最好的朋友”是什麼意思？\n3. 聆聽一個有關狗隻如何幫助人的故事。\n4. 討論如何照顧狗隻？\n5. 狗隻如何幫助人？\n6. 狗隻交流時，會發出什麼樣的聲音，每種聲音代表什麼？ 輪流模仿這些狗叫聲。\n7. 製作以狗隻為主題的工藝品。\n8. 參與一次以狗隻為主題的遊戲。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Discuss the meanings of the verses in simple terms."
+      },
+      {
+        "n": 2,
+        "en": "Guide the discussion and listen to the kids’ ideas."
+      },
+      {
+        "n": 3,
+        "en": "Choose an age-appropriate story to tell or read. Your Story Hour has some great dog stories!"
+      },
+      {
+        "n": 4,
+        "en": "Discuss the need for shelter, food, water, exercise, bathing and good health, etc."
+      },
+      {
+        "n": 5,
+        "en": "They can be helpful for use as guard dogs, companions, medical alerting and seeing eye dogs."
+      },
+      {
+        "n": 6,
+        "en": "Discuss sounds such as barking, whining and growling."
+      },
+      {
+        "n": 7,
+        "en": "Google on the internet dog themed craft projects."
+      },
+      {
+        "n": 8,
+        "en": "Google kids’ games on the internet"
+      }
+    ]
+  },
+  {
+    "code": "HKA4043",
+    "path": "app/adventurer-honors/content/nature/hka4043-safe-water.md",
+    "nameZh": "食水安全",
+    "nameEn": "Safe Water",
+    "frontmatter": "id: hka4043-safe-water\ncode: HKA4043\nnameZh: \"食水安全\"\nnameEn: \"Safe Water\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 指出聖經中有關喝水的故事。\n2. 我們可以從哪些獲得安全的飲用水？\n3. 列出將水淨化的方法，並示範其中一種。\n   a. 過濾並煮沸\n   b. 淨水劑\n   c. 淨水泵（如紫外線泵或機械泵）\n   d. 其他\n4. 為什麼水如此重要？\n5. 討論地區缺水的情況。 實踐以下各項：\n   a. 觀看一段影片，有關其他國家/地區對水的需求。\n   b. 參與一項活動來幫助孩子了解水的重要性。\n   c. 創作一個關於水的小劇場，來說明世上有多少人必須每天去取水。\n   d. 示範如何用少於 1 公升的水洗手。\n6. 參與一次外展活動來幫助人獲得安全的飲用水。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Waters of Marah: Exodus 15:23, woman at the well: John 4:1-26 (Discuss how Jesus is the water of Life, our spiritual water), striking the rock, Numbers 20:1-29"
+      },
+      {
+        "n": 2,
+        "en": "Purified sources: well, river, city water towers, lakes, underground aquafers"
+      },
+      {
+        "n": 3,
+        "en": "You can search online for other ways and even show your children some of the ways."
+      },
+      {
+        "n": 4,
+        "en": "Health, life, cleanliness, plant growth, etc."
+      },
+      {
+        "n": 5,
+        "en": "Example: a. Search online for a video b. Feed child something salty, discuss how thirsty that makes us, but then let children have water and explain how many boys and girls don’t have water to drink. c. Search the internet to see how people carry water."
+      },
+      {
+        "n": 6,
+        "en": "Research area projects or organization such as ADRA."
+      }
+    ]
+  },
+  {
+    "code": "HKA4045",
+    "path": "app/adventurer-honors/content/nature/hka4045-saving-animals.md",
+    "nameZh": "拯救動物",
+    "nameEn": "Saving Animals",
+    "frontmatter": "id: hka4045-saving-animals\ncode: HKA4045\nnameZh: \"拯救動物\"\nnameEn: \"Saving Animals\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 動物為什麼會瀕臨絕種？\n2. 絕種的動物會怎麼？為什麼？\n3. 識別並命名至少 5 種已絕種的動物。\n4. 了解 5 種瀕危動物。\n5. 目前有多少種動物在瀕危物種名單上？收集並指出至少 5 種瀕危動物的照片和名稱。\n6. 製作一張海報或一本小冊子來鼓勵人們拯救瀕危動物。\n7. 背誦箴言 12:10。",
+    "answersEn": []
+  },
+  {
+    "code": "HKA4048",
+    "path": "app/adventurer-honors/content/nature/hka4048-seeds.md",
+    "nameZh": "種子",
+    "nameEn": "Seeds",
+    "frontmatter": "id: hka4048-seeds\ncode: HKA4048\nnameZh: \"種子\"\nnameEn: \"Seeds\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 聆聽馬太福音 13:3-9 中的比喻。閱讀另外兩節關於種子的經文：\n   a. 創世記 1:11\n   b. 馬可福音 4:31\n   c. 馬太福音 17:20\n2. 種子生長時需要什麼？\n3. 觀察並討論種子發芽時的情況。\n4. 試舉出種子自然傳播的方式。\n5. 說出你見過的最大和最小的種子。\n6. 品嚐各種可食用的種子。享受探索新事物的樂趣！\n7. 收集並識別每個類別至少 2 種不同的種子：\n   a. 樹種\n   b. 水果種子\n   c. 蔬菜種子\n   d. 穀物/草籽\n   e. 堅果種子\n8. 製作種子拼貼畫或其他種子工藝品。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Make six of the following: a. Use paper, lace, etc. to decorate a card. Include a get-well message and give the card to someone who is ill. b. Collect silk or dried natural flowers for arrangements. c. Encourage each child to be creative as they bake and paint. d. Design a picture using shells and glue. Display at a club or school meeting. e. Use a simple pattern to make a string art project. f. Design and make a mobile. Use at least three patterns. g. Use paper-mache to make a model of an animal or car. h. Glue objects to cardboard to make a design. Paint it if desired. i. Cover an autograph or photo album neatly with material. j. Make a collage using a variety of materials such as felt, wool, cotton, straw, bark, dried flowers, etc. k. The poster should be colorful and easy to read. l. You may choose to have the Adventurers make the same craft item or give them several choices."
+      },
+      {
+        "n": 2,
+        "en": "You may need to arrange transportation so the Adventurers can present gifts personally."
+      }
+    ]
+  },
+  {
+    "code": "HKA4050",
+    "path": "app/adventurer-honors/content/nature/hka4050-universe.md",
+    "nameZh": "宇宙",
+    "nameEn": "Universe",
+    "frontmatter": "id: hka4050-universe\ncode: HKA4050\nnameZh: \"宇宙\"\nnameEn: \"Universe\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 閱讀關於上帝創造宇宙和天國的聖經經文。\n2. 討論天國是怎麼樣的，畫一幅畫來描繪你對天國的看法。\n3. 找出有關宇宙、恆星、月亮、行星和/或太陽的聖經經文。\n4. 製作一個有關太陽系的工藝品，並指出 8 顆行星的名稱。\n5. 宇宙是什麼？\n6. 銀河系是什麼？\n7. 參與一個有關太空的遊戲。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Read Genesis 1 and Revelations 21-22."
+      },
+      {
+        "n": 2,
+        "en": "Encourage creativity."
+      },
+      {
+        "n": 3,
+        "en": "Search the Bible index."
+      },
+      {
+        "n": 4,
+        "en": "Using an online search engine search for “group games space and planets for children.” Some games include: a “meteor” water balloon fight, a hike/ crawl/walk while dressed in “space gear” in “space,” or making rockets with paper lunch bags with a balloon inside that you “let go” and watch the bag (rocket) “launch” into space."
+      }
+    ]
+  },
+  {
+    "code": "YOU4515",
+    "path": "app/adventurer-honors/content/nature/you4515-astronomer.md",
+    "nameZh": "天文學家",
+    "nameEn": "Astronomer",
+    "frontmatter": "id: you4515-astronomer\ncode: YOU4515\nnameZh: \"天文學家\"\nnameEn: \"Astronomer\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 說出聖經中的幾位觀星者。\n2. 辨認夜空中的一顆行星，兩顆恆星及三個星座，並指出它們的正確名稱。\n3. 製作一個觀星盒。\n4. 能描述行星及恆星的分別。\n5. 觀察夜空中的行星和恆星。\n6. 觀察下列其中兩項並且能用顏色筆繪製出來︰\n   a. 月出\n   b. 日出\n   c. 日落\n7. 從聖經中找出三個有關天國的經文。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Adam and Eve (Education, page 21); Abraham (Genesis 15:5); Joseph (Education, page 52); Jesus (SDA Commentary, Volume 5, page 1117); Moses (Patriarchs & Prophets, page 475); Wise Men (Matthew 2:2)."
+      },
+      {
+        "n": 2,
+        "en": "Go out at night to observe the sky and draw a picture of the planet, stars, and the constellations you saw. When possible, visit a planetarium."
+      },
+      {
+        "n": 3,
+        "en": "Take a small shoe box, oatmeal box, etc. Have the children choose which constellation they wish to make. Draw the constellation on the outside end of the container. Poke a small hole where each star is located. Turn to other end and cut two medium eye- Astronomer Page 186 size holes to peek into. Hold peep box to light and view the constellations. Encourage variety in the constellations so when finished each child may guess which one he/she is viewing."
+      },
+      {
+        "n": 4,
+        "en": "Observe and recognize some prominent stars and constellations. A star is a single body, such as the North Star. A constellation is a group of stars, such as the Big Dipper. Some of the brightest stars are Polaris, Castor, Regulus, Deneb, Altair, Rigel, Capella, and Vega; Orion, Leo, Libra, Lyra, Virgo, Taurus, Ursa Major, Ursa Minor, and Canis Major and Minor are a few of the constellations. Choose several of each, locating ones that are easiest to find and identify in your area during the time of year you are taking the class."
+      },
+      {
+        "n": 5,
+        "en": "Go away from city lights to view the night sky, Or watch a program, video, etc. on the sky. Spend the night. Enjoy!"
+      },
+      {
+        "n": 6,
+        "en": "Observe the sky at sunrise, sunset, and/or moon rise. Make it a fun time together to watch the wonder of God’s large lights."
+      },
+      {
+        "n": 7,
+        "en": "A Bible concordance lists many texts. Choose, read, and explain. e.g., Genesis 1:16, Deuteronomy 10:22, Isaiah 13:10, Matthew 2:10."
+      }
+    ]
+  },
+  {
+    "code": "YOU4640",
+    "path": "app/adventurer-honors/content/nature/you4640-environmentalist.md",
+    "nameZh": "環保大使",
+    "nameEn": "Environmentalist",
+    "frontmatter": "id: you4640-environmentalist\ncode: YOU4640\nnameZh: \"環保大使\"\nnameEn: \"Environmentalist\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 背誦及明白創世記 1：26。請列出環境保護的守則。\n2. 列出三種瀕臨絕種危機的動物，並說明原因。\n3. 找出三種瀕臨絕種的鳥類，並敘述你能怎麼保護鳥類。\n4. 研究當地一些瀕臨絕種的樹木。種植一棵樹、或負責照顧一棵樹。\n5. 在你所居住的地方：\n   a. 污染是什麼造成的？請列出能防止污染的方法。\n   b. 調查污染是如何產生、為什麼會產生？\n   c. 說明我們要怎麼防止水污染。\n   d. 有哪些危害空氣的品質？\n6. 參與下列任何一項社區服務來協助清潔環境：\n   a. 參與「世界日」的活動\n   b. 跟團員們一起協助清理馬路走道、或是河邊的垃圾\n   c. 協助做紙類、瓶罐、或其他回收物品的分類工作\n7. 繪製一幅地球更新的壁畫。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Discover your responsibility to help care for God’s world."
+      },
+      {
+        "n": 2,
+        "en": "Draw pictures of and list endangered animals in your area. Check the library for current listings."
+      },
+      {
+        "n": 3,
+        "en": "Ways to protect birds: Do not harm with sticks, rocks, or guns; never bother or destroy their nests or eggs."
+      },
+      {
+        "n": 4,
+        "en": "Learn about endangered trees and what causes them to die. Plant or adopt a tree. (Call City Hall if you need help in learning where your community needs a tree.) Or find a green plant and care for it."
+      },
+      {
+        "n": 5,
+        "en": "Help prevent pollution by: turning off lights, recycling paper, plastics, glass, aluminum cans, using white paper goods, not wasting water, not polluting our water with trash, human, or chemical waste. Have children make a poster depicting what they have learned."
+      },
+      {
+        "n": 6,
+        "en": "Read together some verses from Rev. 21, 22, and Isa. 11:6."
+      }
+    ]
+  },
+  {
+    "code": "YOU4645",
+    "path": "app/adventurer-honors/content/nature/you4645-feathered-friends.md",
+    "nameZh": "養鳥",
+    "nameEn": "Feathered Friends",
+    "frontmatter": "id: you4645-feathered-friends\ncode: YOU4645\nnameZh: \"養鳥\"\nnameEn: \"Feathered Friends\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 述說上帝如何照顧小鳥。\n2. 製作一個簡易的鳥類餵食站。\n3. 能夠辨識十種不同的鳥類。\n4. 玩一個鳥的遊戲。\n5. 繪畫以下的鳥類：\n   a. 二隻水上的鳥類\n   b. 二隻吃種子或穀物的鳥類\n   c. 一隻肉食性鳥類\n6. 能模仿五種鳥叫聲。\n7. 為鳥類製作一個聖誕樹、或復活節的籃子。\n8. 觀察鳥類的動態，效仿他們的活動，盡可能收集你所觀察的鳥類羽毛。要注意的是，在有些國家中（如美國） ，持有遷徙鳥類的羽毛是非法的。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Discuss God’s care, citing Matthew 10:28, 31, and Luke 12:24. God created birds to care for themselves (feathers, beak, migration, etc.)."
+      },
+      {
+        "n": 2,
+        "en": "Make a simple milk-carton bird feeder by cutting the milk carton so seeds may be placed inside or make a pinecone feeder by rolling a pinecone in peanut butter and bird seed. Hang your feeder so the birds may enjoy their treat."
+      },
+      {
+        "n": 3,
+        "en": "Whenever possible, include birds from your locality. Play recognition games using pictures or flashcards. Invite a local museum or Audubon Society representative to make a presentation."
+      },
+      {
+        "n": 4,
+        "en": "Possible games include: Bird lotto, dominoes, or a bird card game available from your Adventist Book Center."
+      },
+      {
+        "n": 5,
+        "en": "Resources: a teacher supply store, coloring books, magazines, books or videos."
+      },
+      {
+        "n": 6,
+        "en": "Check your public library or Audubon Society for tapes. Select birds that have distinct habits and sounds such as owls, doves, crows, chickadees, killdeer, whippoorwills, etc."
+      },
+      {
+        "n": 7,
+        "en": "Tie bird seeds and fruits to a tree as a special treat for the birds. Decorate an Easter basket (berry basket) with materials that the birds could use for building their nests such as hair, yarn, string, etc. Hang basket where the birds can borrow materials for nesting."
+      },
+      {
+        "n": 8,
+        "en": "Go to the zoo, aviary, park, or neighborhood birding area to observe and collect feathers (see note above). In class, act out bird movements."
+      }
+    ]
+  },
+  {
+    "code": "YOU4695",
+    "path": "app/adventurer-honors/content/nature/you4695-geologist.md",
+    "nameZh": "地質學",
+    "nameEn": "Geologist",
+    "frontmatter": "id: you4695-geologist\ncode: YOU4695\nnameZh: \"地質學\"\nnameEn: \"Geologist\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 解釋地質學家的工作。\n2. 背誦聖經中有關石礫或礦石的經文，並說明聖經在哪一段記載了石頭的故事。\n3. 利用泥土、沙子、碎石、石頭和水進行相關的實驗，或製做一個水晶花園。\n4. 與大人一起到野外搜集不同種類的石頭或礦石。看你能找到多少類型、形狀、顏色和紋路的石頭。搜集出五種不同種類的石頭之後，請標記其名稱和找到的地點。\n5. 與團員一起閱讀啟示錄二十一章：\n   a. 使用百科全書或其他的參考資料書，列出所有寶石的資料。\n   b. 請畫出天國聖城的彩圖畫。\n6. 利用石頭做出一件工藝品或做石頭彩繪。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "A geologist is a person who studies the formation and origin of the earth’s layers."
+      },
+      {
+        "n": 2,
+        "en": "Help the Adventurers use a concordance to look up the words stones and rocks. Encourage the use of different Bible texts."
+      },
+      {
+        "n": 3,
+        "en": "Place sand, soil, gravel, rocks, and water in a quart jar and gently shake the jar. Let it stand for one hour, then observe it. The layers that develop are the beginning of what is called sedimentary rock."
+      },
+      {
+        "n": 4,
+        "en": "OR"
+      },
+      {
+        "n": 5,
+        "en": "Grow a crystal garden: Wet several large chunks of rock thoroughly. Add four tablespoons (1/4 cup) liquid laundry bluing. Hold your nose and add four tablespoons ammonia. Sprinkle four tablespoons of salt evenly all over the rocks. Put a few drops of food coloring and a few drops of bluing on one or two rocks. In about three days, add a mixture of two tablespoons water and two tablespoons ammonia and very carefully pour it into a puddle in the bowl. (If you pour it directly on the crystals you will melt them). Keep adding this water and ammonia mixture every few days."
+      },
+      {
+        "n": 6,
+        "en": "Bring a collection of rocks and minerals to share with your group. Show children how to neatly label and display the ones they find and ways to store them. If you do not know the names of the rocks, use a reference book such as a field guide or encyclopedia as you try to label the rocks."
+      },
+      {
+        "n": 7,
+        "en": "Write the names of the stones so the Adventurers may copy them. Learn a bit about each precious stone. Show a real stone whenever possible or show pictures and use a book about rocks and minerals to help identify them."
+      },
+      {
+        "n": 8,
+        "en": "Paint a face or animal on a rock. Glue rocks on a piece of cardboard to make a simple picture or a design. Glue rocks on a jar or can to make a vase or pencil holder, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4715",
+    "path": "app/adventurer-honors/content/nature/you4715-habitat.md",
+    "nameZh": "棲息地",
+    "nameEn": "Habitats",
+    "frontmatter": "id: you4715-habitat\ncode: YOU4715\nnameZh: \"棲息地\"\nnameEn: \"Habitats\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請說明棲息地是什麼，並選擇一個來研究。\n2. 仔細觀察你的居住地，把你觀察的日期和時段、和你所看的一切記錄下來。\n3. 把你所看到的動物及昆蟲命名、拍攝或畫圖。\n4. 把你所看到的植物命名、拍攝或畫圖。\n5. 描述你的居住地，並與大家分享你所學到的趣事。\n6. 從聖經當中找出描述我們居住地的經文。\n7. 上帝在哪一日創造了我們的居住地？\n8. 請描述你所想像的天國居所是什麼樣子的。\n9. 自創一個棲息地。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Habitat: Distinctive and characteristic surroundings such as a pond or deciduous woodland. A habitat is determined chiefly by the vegetation. It can be a woodland area, a back yard, fruit orchard, or vacant lot. It can be as small as a tree or a rose bush and even be inside your home."
+      },
+      {
+        "n": 2,
+        "en": "This can be done in one outing, but more interesting if the habitat is visited more than once and at different times of day or night."
+      },
+      {
+        "n": 3,
+        "en": "Genesis 1:9-13."
+      },
+      {
+        "n": 4,
+        "en": "Isaiah 65:17-25; Revelation 22:1-5."
+      },
+      {
+        "n": 5,
+        "en": "Suggestions for creating a habitat: a. Plant flowers that will attract butterflies. b. Use real or artificial items to create a show box scene of the habitat you studied. c. Have the class create a mural that combines all the habitats studied."
+      }
+    ]
+  },
+  {
+    "code": "YOU4745",
+    "path": "app/adventurer-honors/content/nature/you4745-honeybees.md",
+    "nameZh": "蜜蜂",
+    "nameEn": "Honeybees",
+    "frontmatter": "id: you4745-honeybees\ncode: YOU4745\nnameZh: \"蜜蜂\"\nnameEn: \"Honeybees\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 從聖經當中找出許多有關蜜蜂的經文。\n2. 請畫出蜜蜂的圖樣，然後塗上顏色，並請說明牠跟其他的蜂和昆蟲有什麼不同。\n3. 請說明同一個蜜蜂群體共分為那三種類型，以及牠們本身的任務。\n4. 請說明蜜蜂的生命周期，並且畫出來。\n5. 偵察蜂的舞蹈有什麼意義和目的？\n6. 請做出二種蜜蜂的工藝品。\n7. 如果可能的話，請觀察蜜蜂。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Explain where nectar is in flowers."
+      },
+      {
+        "n": 2,
+        "en": "Explain the honey making process. The bees put the flower nectar in a sack in their throat. The bee transfers the nectar to a hive cell, fans the honey with its wings to remove moisture, which makes the honey thicker."
+      },
+      {
+        "n": 3,
+        "en": "The beekeeper tends to the bees. The keeper removes the honey filled frames from the super, and then whirls them in an extractor to get the honey out. The honey is then strained and bottled or canned to be sold. Have someone come wearing a bee suit to explain this process, if possible."
+      },
+      {
+        "n": 4,
+        "en": "Craft should be fun and educational."
+      },
+      {
+        "n": 5,
+        "en": "Check your local area market. Additional enrichment ideas (not required)"
+      },
+      {
+        "n": 1,
+        "en": "Have a beekeeper give the presentation."
+      },
+      {
+        "n": 2,
+        "en": "Go visit a place that has an indoor viewable hive with protective plastic sides."
+      },
+      {
+        "n": 3,
+        "en": "Visit a bee store and discover the products available. The storekeeper may have free honey samples."
+      }
+    ]
+  },
+  {
+    "code": "YOU4750",
+    "path": "app/adventurer-honors/content/nature/you4750-honey.md",
+    "nameZh": "蜂蜜",
+    "nameEn": "Honey",
+    "frontmatter": "id: you4750-honey\ncode: YOU4750\nnameZh: \"蜂蜜\"\nnameEn: \"Honey\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 蜂蜜是怎麼來的？\n2. 蜜蜂如何製造蜂蜜？\n3. 了解這些名詞：頂極的、抽取者、花蜜、花粉\n4. 養蜂人的法則是什麼？\n5. 從下列主題選擇二種項目來做成工藝品：\n   a. 蜂房\n   b. 蜂巢\n   c. 蜜蜂\n   d. 花\n   e. 自選\n6. 嚐試三種不同口味(種類)的蜂蜜。選出你最喜歡的味道，並說出原因。\n7. 請背誦下列二個聖經章節：\n   a. 出埃及記 3：8\n   b. 詩篇 19：7-10\n   c. 詩篇 34：8\n   d. 箴言 24：13\n   e. 箴言 25：16,27\n   f. 馬太福音 3：4\n   g. 自選",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Explain where nectar is in flowers."
+      },
+      {
+        "n": 2,
+        "en": "Explain the honey making process. The bees put the flower nectar in a sack in their throat. The bee transfers the nectar to a hive cell, fans the honey with its wings to remove moisture, which makes the honey thicker."
+      },
+      {
+        "n": 3,
+        "en": "The beekeeper tends to the bees. The keeper removes the honey filled frames from the super, and then whirls them in an extractor to get the honey out. The honey is then strained and bottled or canned to be sold. Have someone come wearing a bee suit to explain this process, if possible."
+      },
+      {
+        "n": 4,
+        "en": "Craft should be fun and educational."
+      },
+      {
+        "n": 5,
+        "en": "Check your local area market. Additional enrichment ideas (not required)"
+      },
+      {
+        "n": 1,
+        "en": "Have a beekeeper give the presentation."
+      },
+      {
+        "n": 2,
+        "en": "Go visit a place that has an indoor viewable hive with protective plastic sides."
+      },
+      {
+        "n": 3,
+        "en": "Visit a bee store and discover the products available. The storekeeper may have free honey samples."
+      }
+    ]
+  },
+  {
+    "code": "YOU4770",
+    "path": "app/adventurer-honors/content/nature/you4770-ladybugs.md",
+    "nameZh": "瓢蟲",
+    "nameEn": "Ladybugs",
+    "frontmatter": "id: you4770-ladybugs\ncode: YOU4770\nnameZh: \"瓢蟲\"\nnameEn: \"Ladybugs\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 研究瓢蟲。瓢蟲具有哪些特性呢？\n2. 請描述瓢蟲的生命周期，並且製成海報。\n3. 所有的瓢蟲都是紅色的嗎？請解釋。\n4. 請製作兩個瓢蟲寵物石，然後把一個送給別人。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Ladybugs are a type of beetle. They have six short legs, two antennae, their top flying speed is about 15 miles per hour, they hibernate in winter, they let out a yellowish, bad smelling liquid when they are mad. (See websites for more info)."
+      },
+      {
+        "n": 2,
+        "en": "The female will lay 3-20 football shaped orange eggs in a circular cluster on the underside of leaves. Eggs are not visible to the naked eye. In 2-5 days, the eggs turn into larva and consume up to 400 aphids in 21 days. They next turn into a pupa. After 2-5 days the adults come out and continue to eat. Adult ladybugs eat during the day and will consume over 5000 aphids each."
+      },
+      {
+        "n": 3,
+        "en": "There are more than 450 species in North America. Some are black or vary from reddish orange to pale yellow. The most common in the U.S. is the Convergent Lady Beetle, which is orange with black spots and the number of spots vary per species. There are five states in the U.S. that have the Ladybug as the state insect."
+      },
+      {
+        "n": 4,
+        "en": "God shared the ladybug with us, and now we can share the ladybug with someone else."
+      },
+      {
+        "n": 5,
+        "en": "The ladybug was created on the 6th day. Additional Activities: Release real ladybugs. Color pictures of the ladybug and/or lifecycle. Use pom-poms to make ladybugs."
+      }
+    ]
+  },
+  {
+    "code": "YOU4780",
+    "path": "app/adventurer-honors/content/nature/you4780-lizards.md",
+    "nameZh": "蜥蜴",
+    "nameEn": "Lizards",
+    "frontmatter": "id: you4780-lizards\ncode: YOU4780\nnameZh: \"蜥蜴\"\nnameEn: \"Lizards\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 什麼是爬蟲學家？要如何成為爬蟲學家？\n2. 請研究你居住區域內的蜥蜴。\n3. 學習如何照顧蜥蜴。\n4. 捕捉一隻蜥蜴，或者去寵物店、或觀看影片、或去大自然中心、動物園、或書籍來觀察蜥蜴。邀請一位爬蟲學家，或具有此專業領域的人來為團員們解說有關蜥蜴的知識。\n5. 在石頭上畫一隻蜥蜴。\n6. 閱讀利未記 11：29-30",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Reptiles (lizards, snakes, and turtles) and Amphibians (salamanders, toads, and frogs) are called herps, which means “crawling things.” If you really like herps and like to watch and learn about them, you are a herper. If you go to college and study herps, you can become a herpetologist and teach, or work in a museum or a zoo."
+      },
+      {
+        "n": 2,
+        "en": "If you do not have lizards in your area, you may study salamanders. If neither is available, go to pet stores, museums, use books, videos, etc."
+      },
+      {
+        "n": 3,
+        "en": "Before you catch a lizard, you must prepare for this special guest. a. If keeping the lizard for a short time, use a plastic see-through jar with air holes. b. If you keep the lizard for more than a few hours you must (1) Know what type of lizard it is and how to care for it. (2) Provide a larger container, water, and food. (3) Place newspaper or sand in the bottom of the container to keep it dry."
+      },
+      {
+        "n": 4,
+        "en": "Observe the lizard in its habitat or other locations as mentioned in Helps #2. Try catching a lizard by hand or by using a noose (as described in Peterson Field Guide)."
+      },
+      {
+        "n": 5,
+        "en": "Paint a lizard on a rock. See resources: Painting on Rocks for Kids Draw, stencil, or stamp the outline of a lizard on the rock, using pencils or acrylic paint. For details, use paint brush, Q- tips, or toothpicks. If you want to put the rock lizard in your yard, apply clear spray for acrylic paint to preserve the artwork."
+      }
+    ]
+  },
+  {
+    "code": "YOU4820",
+    "path": "app/adventurer-honors/content/nature/you4820-outdoor-explorer.md",
+    "nameZh": "外展",
+    "nameEn": "Outdoor Explorer",
+    "frontmatter": "id: you4820-outdoor-explorer\ncode: YOU4820\nnameZh: \"外展\"\nnameEn: \"Outdoor Explorer\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 到大自然中走一走，然後收集以下要求：\n   a. 請收集一片葉子，並說明它是什麼樹或什麼植物的葉子\n   b. 請收集一根羽毛，並查尋它是什麼鳥的羽毛\n   c. 請收集一粒石頭，並研究它是哪一類的岩。\n   d. 請收集一粒種子，並確認它是什麼植物\n2. 學習和背誦以下的「遠足法則」 ：\n   a. 不要亂砍樹木\n   b. 不要亂拔植物\n   c. 不可移動或刪除任何標記\n   d. 不可擅闖私人土地，或標記“勿進入＂的警告地區\n   e. 在進入私人土地之前，要得到主人的許可才能進入\n   f. 不可亂丟垃圾\n3. 行走路肩時，要靠哪一邊行走？為什麼？\n4. 請攜帶自己的午餐，行走 1 公里的路程到達戶外的野餐區，然後在那裡享受午餐。\n5. 計畫二次 2 公里的行程，一次是跟幼年團團員，一次是跟你的家人，並且在行走時，完成下列要求：\n   a. 利用 ABC 的字首來尋找大自然東西：例如：A = acorn 橡果；B =butterfly 蝴蝶；C = 毛毛蟲。\n   b. 談論你所看到的一切事物，並說明牠們是在哪一天被創造的。\n6. 學習和背誦以下行走的五個安全規則：\n   a. 每次行走時，至少要有一人陪同",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Aim: To develop observation skills; to explore and share."
+      },
+      {
+        "n": 2,
+        "en": "Discuss each rule and be sure the Adventurers understand reasons for it."
+      },
+      {
+        "n": 3,
+        "en": "Contact your area motor vehicle department to determine local laws. Always walk to the side of the road."
+      },
+      {
+        "n": 4,
+        "en": "Enjoy the walk and picnic together. Be sure the children carry their own food, jackets, etc."
+      },
+      {
+        "n": 5,
+        "en": "As you walk together, discuss what you see and help the Adventurers determine when each was created; for example, trees, birds, fish, butterflies, horse, etc. One walk should be with the club or class and one walk with the child’s family. Have one of the parents write a note to confirm their walk."
+      },
+      {
+        "n": 6,
+        "en": "Children are never too young to learn the safety rules of walking with a partner, carrying water, wearing comfortable shoes and clothing, and watching so as not to become lost."
+      }
+    ]
+  },
+  {
+    "code": "YOU4945",
+    "path": "app/adventurer-honors/content/nature/you4945-trees.md",
+    "nameZh": "樹木",
+    "nameEn": "Trees",
+    "frontmatter": "id: you4945-trees\ncode: YOU4945\nnameZh: \"樹木\"\nnameEn: \"Trees\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 讀幾個有關樹葉的聖經章節。\n2. 收集十個不同樹木的葉子並且能夠：\n   a. 將每個葉子都壓平，變成乾燥葉\n   b. 能識別每一片葉子\n3. 能述說樹木如何散播它們的種子。請收集或描繪至少五種不同的種子。\n4. 製作兩種不同葉子的拓印，或者以葉子的設計來製作二件文具用品。\n5. 仔細觀察在你居住的地區內樹木和葉子。從每棵樹當中瞭解它的特質。能夠認出也能辨別其中五種樹。\n6. 把你做好的乾燥葉貼在一本剪貼簿上。\n7. 用寫的來敘述，或者用口述的方式來說明樹木在今日對我們有什麼益處。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Discover your responsibility to help care for God’s world."
+      },
+      {
+        "n": 2,
+        "en": "Draw pictures of and list endangered animals in your area. Check the library for current listings."
+      },
+      {
+        "n": 3,
+        "en": "Ways to protect birds: Do not harm with sticks, rocks, or guns; never bother or destroy their nests or eggs."
+      },
+      {
+        "n": 4,
+        "en": "Learn about endangered trees and what causes them to die. Plant or adopt a tree. (Call City Hall if you need help in learning where your community needs a tree.) Or find a green plant and care for it."
+      },
+      {
+        "n": 5,
+        "en": "Help prevent pollution by: turning off lights, recycling paper, plastics, glass, aluminum cans, using white paper goods, not wasting water, not polluting our water with trash, human, or chemical waste. Have children make a poster depicting what they have learned."
+      },
+      {
+        "n": 6,
+        "en": "Read together some verses from Rev. 21, 22, and Isa. 11:6."
+      }
+    ]
+  },
+  {
+    "code": "YOU4980",
+    "path": "app/adventurer-honors/content/nature/you4980-whales.md",
+    "nameZh": "鯨魚",
+    "nameEn": "Whales",
+    "frontmatter": "id: you4980-whales\ncode: YOU4980\nnameZh: \"鯨魚\"\nnameEn: \"Whales\"\naliases: []\ncategory: nature\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請選擇一種鯨魚來研究。\n2. 鯨魚是屬於哺乳類還是魚類？\n3. 成年的鯨魚可以長多大呢？\n4. 在停車場用粉筆畫一隻完整的鯨魚圖案。\n5. 從你所選擇研究的鯨魚學習下列至少五項︰\n   a. 牠吃的食物是什麼\n   b. 牠在哪裡生活居住\n   c. 牠如何與其他同類溝通\n   d. 牠的壽命多長\n   e. 牠可以生多少孩子，怎麼生孩子\n   f. 聆聽鯨魚的聲音\n6. 用沙或泥堆砌出一隻鯨魚。\n7. 閱讀或聆聽約拿的故事，然後演一次話劇。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Search the library or websites for information on the whales."
+      },
+      {
+        "n": 2,
+        "en": "Whales, porpoises, and dolphins are the only mammals that live entirely independent of land. Like land mammals, they are warm-blooded vertebrate animals that have hair and breathe air. The baby whale develops in the mother and after birth the mother cares for it and feeds it milk."
+      },
+      {
+        "n": 3,
+        "en": "When a blue whale is born, its coat of blubber is 1 inch (2 1/2 cm.) thick. It gains seven pounds (3 1/4 Kg.) a day and the blubber is one foot (30 1/2 cm.) thick and the whale weighs 30 tons (27,279 Kg.) when full grown. It is the largest living animal and may be as much as 90 feet (27 meters) long and weighing 110 tons (100,000 Kg.) or more. Its flippers can be 10 feet (3 meters) long and its flukes 15 feet (4 1/2 meters) from tip to tip. The heart is the size of a Volkswagen and a human could crawl through the aorta. The tongue is as heavy as an elephant."
+      },
+      {
+        "n": 4,
+        "en": "Place a few marks (dot-to-dot concept) as guides for drawing the actual outline of a whale or draw just a straight line to show the length of the whale."
+      },
+      {
+        "n": 5,
+        "en": "The blue whale is called the moustache whale because it uses the baleen inside its mouth to strain the water out its mouth and to keep plankton and small fish inside. The blue whale swims at 15 miles per hour (30 Kph) and migrates throughout the year to find food. It eats up to two tons (1800 Kg.) of food a day and may live to be 60 years old. Blue whales give birth once every two years. All whales are very social. They travel in schools and love to play with each other."
+      }
+    ]
+  },
+  {
+    "code": "HKA4057",
+    "path": "app/adventurer-honors/content/recreation/hka4057-photo-fun.md",
+    "nameZh": "攝影樂",
+    "nameEn": "Photo Fun",
+    "frontmatter": "id: hka4057-photo-fun\ncode: HKA4057\nnameZh: \"攝影樂\"\nnameEn: \"Photo Fun\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 認識相機基本的結構。\n   a. 鏡片\n   b. 快門\n   c. 變焦\n   d. 屏幕/取景器\n   e. 電池\n   f. 電源按鈕\n2. 討論或展示人們用來拍照的不同設備。 你想和哪些人合影？\n3. 你喜歡拍照嗎？\n4. 如何小心處理和保養設備？\n5. 拍攝一些照片並與朋友和家人分享。\n   a. 家人的照片\n   b. 朋友的照片\n   c. 風景照片（如花、樹、河流）\n   d. 動物照片\n   e. 您最喜歡的地方（遊樂場、博物館、家）的照片\n   f. 您經常去的地方（公園、學校、博物館或教堂）的照片\n   g. 你不常去的地方的照片\n6. 參與一個趣味的照片遊戲，學習更多關於照片的知識。\n7. “照著上帝的形象造”是什麼意思？ 閱讀並討論創世記 1：26-27。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Even camera phones, tablets, laptops, etc. have these parts. Research and describe where they are."
+      },
+      {
+        "n": 2,
+        "en": "Encourage discussion."
+      },
+      {
+        "n": 3,
+        "en": "Do not touch the lenses, use a neck/wrist strap, keep dry and clean, do not drop, ask for permission before each use, turn the camera off."
+      },
+      {
+        "n": 4,
+        "en": "Have fun. Hold camera steady. Stand still, Zoom in and out. The goal is to experience a VARIETY of photo situations. Most phone cameras have good zoom and the ability to take action, macro (zoom in), and even evening/ nighttime shots. Show the child how to use the features offered on the devices your family uses."
+      },
+      {
+        "n": 5,
+        "en": "Photo game might be one of the following: Photo Scavenger Hunt; What is it? – take close up picture, then have others identify it; Where is it? – take close up pictures, then have others identify where it was taken; Pose in a Bible character position, take a picture, then have others identify what character."
+      },
+      {
+        "n": 6,
+        "en": "Being made in God’s image means we are made after his likeness. Discuss further."
+      }
+    ]
+  },
+  {
+    "code": "HKA4059",
+    "path": "app/adventurer-honors/content/recreation/hka4059-snowshoeing.md",
+    "nameZh": "雪鞋",
+    "nameEn": "Snowshoeing",
+    "frontmatter": "id: hka4059-snowshoeing\ncode: HKA4059\nnameZh: \"雪鞋\"\nnameEn: \"Snowshoeing\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 聆聽穿著雪鞋的簡史。\n   a. 雪鞋在哪裡使用？\n   b. 為什麼需要穿雪鞋？\n   c. 是什麼動物啟發了雪鞋的設計？\n   d. 您所在地區使用的是什麼類型的雪鞋？\n2. 第一雙雪鞋是用什麼材料製成的？它們是如何製成的？\n3. 描述穿著雪鞋行走的安全地點。\n4. 描述穿著雪鞋行走的危險地點。\n5. 描述您穿著雪鞋遠足時應該注意什麼。\n6. 示範如何各項：\n   a. 安全地攜帶您的雪鞋。\n   b. 穿上你的雪鞋。\n   c. 綁好你的雪鞋\n7. 討論林前 6:19-20 和以賽亞書 40:29-31 ，與健康有什麼相關。\n8. 參與雪鞋遊戲。\n9. 與您的家人或幼鋒會一起進行至少 1 英里的雪鞋遠足旅程。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Research for your local history."
+      },
+      {
+        "n": 2,
+        "en": "First snowshoes were carved from birch or hard ash that was soaked or steamed to become pliable and then constructed using stretched animal skin and rawhide. The shape, size and materials varied with the trees, animals, snow conditions, and terrain within a particular region."
+      },
+      {
+        "n": 3,
+        "en": "Hiking trails, areas known to the adult who is leading the hike, designated areas, or ski resorts."
+      },
+      {
+        "n": 4,
+        "en": "Unknown trails, steep hillsides with loose snow, areas with lots of freezing and thawing, snow covered lake or streams, or off trail."
+      },
+      {
+        "n": 5,
+        "en": "BASE LAYER: Wool or synthetic socks, synthetic undergarments, mid-weight long underwear top & bottom; INSULATION LAYER: Fleece jacket or wool sweater, fleece pants; OUTER AYER: Waterproof/breathable shell jacket and pants, insulated waterproof boots; ALSO: Hat, gloves, scarf, headband, sunscreen, whistle, First Aid Kit, Water. a. Carry them together with the crampons (metal teeth) facing together. b. Put the toe of your boot in first, wiggle it all the way to the front of the boot tray. c. Fit the rear binding around the back heal of your boot, buckle the binding tightly."
+      },
+      {
+        "n": 7,
+        "en": "Your body needs exercise, need to be physically fit."
+      },
+      {
+        "n": 8,
+        "en": "Additional games are available online."
+      },
+      {
+        "n": 9,
+        "en": "Notice nature as you hike."
+      }
+    ]
+  },
+  {
+    "code": "HKA4895",
+    "path": "app/adventurer-honors/content/recreation/hka4895-skater.md",
+    "nameZh": "溜冰",
+    "nameEn": "Skater",
+    "frontmatter": "id: hka4895-skater\ncode: HKA4895\nnameZh: \"溜冰\"\nnameEn: \"Skater\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請描述要在哪裡、什麼時間溜冰比較安全。\n2. 請示範如何保養溜冰鞋。\n3. 請示範如何溜向前、後、左、右及變換方向等。\n4. 能一氣呵成做完轉彎、上坡、然後停止。\n5. 能做到六個障礙物的障礙溜冰。\n6. 描述或參與一次溜冰的遊戲或運動。\n7. 請說明溜冰時要穿上哪些安全服裝。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "If ice skating, be certain an adult has told you the ice is safe. Never skate alone. Roller skating can be done at a gym, a rink, or on a sidewalk, depending on the type of skates you have."
+      },
+      {
+        "n": 2,
+        "en": "Dry and clean ice skates after each use. Wipe roller skates clean and check for loose wheels. Replace skate laces whenever needed. Depending on type of roller skates, wheel bearings may need to be oiled."
+      },
+      {
+        "n": 3,
+        "en": "Practice skating so that the young people get a good feel for skating. Stress safety and caution to prevent injuries."
+      },
+      {
+        "n": 4,
+        "en": "Encourage the Adventurers to skate carefully and watch for other skaters at all times."
+      },
+      {
+        "n": 5,
+        "en": "Use soft obstacles for your slalom course so if a child falls he or she will not be injured."
+      },
+      {
+        "n": 6,
+        "en": "Select a game that is suitable for the Adventurer age group."
+      },
+      {
+        "n": 7,
+        "en": "Knee pads, elbow pads, and protective helmets are examples of protective gear. When ice skating outdoors, warm clothing is also protective gear."
+      }
+    ]
+  },
+  {
+    "code": "YOU4505",
+    "path": "app/adventurer-honors/content/recreation/you4505-archer.md",
+    "nameZh": "射箭",
+    "nameEn": "Archer",
+    "frontmatter": "id: you4505-archer\ncode: YOU4505\nnameZh: \"射箭\"\nnameEn: \"Archer\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "這榮譽證需要一位導師。\n1. 了解有關射箭的安全守則。\n2. 為箭的不同部分編上號碼。\n3. 說出弓的不同部分。\n4. 學習如何使用弓、弦和箭。\n5. 在距離以下箭靶 120 厘米處，示範準確射箭。\n   a. 直徑 5 米的箭靶（20 支箭）\n   b. 直徑 10 米的箭靶（30 支箭）\n   c. 直徑 20 米的箭靶（30 支箭）",
+    "answersEn": []
+  },
+  {
+    "code": "YOU4575",
+    "path": "app/adventurer-honors/content/recreation/you4575-camper.md",
+    "nameZh": "露營",
+    "nameEn": "Camper",
+    "frontmatter": "id: you4575-camper\ncode: YOU4575\nnameZh: \"露營\"\nnameEn: \"Camper\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 知道露營的安全守則並能詳加解釋。\n2. 與幼鋒會或家人一起在戶外露營至少一個晚上。\n3. 能協助搭立營帳。或是能用天然的材料搭立一個簡易的天幕。\n4. 能協助做一個生火台，或是能協助生起烹飪用的營火。\n5. 能協助準備至少一餐飯。\n6. 在回程之前，能協助收拾露營的用品。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Use common sense in all Adventurer activities. Some rules are included here. Others will be determined by your local situation. Check with the local Forestry or Park Service for specific guidelines for your area."
+      },
+      {
+        "n": 2,
+        "en": "Do not camp too close to streams and bodies of water. Do not harm the environment. Do not cut or destroy trees, bushes, or plants. Never leave a campfire unattended. When you are ready to go home or will be gone from the campsite for a long time, put the campfire out. Never camp or hike alone. Do not run while carrying a sharp object."
+      },
+      {
+        "n": 3,
+        "en": "Camp out at least one night, making this a special time to enjoy nature (trees, flowers, stars, birds, etc.)."
+      },
+      {
+        "n": 4,
+        "en": "Help the Adventurers clear ground, layout ground cloth, set up the tent properly, and learn proper care of all camping items, including tent zippers, tabs, and stakes."
+      },
+      {
+        "n": 5,
+        "en": "Teach safety when handling stoves, fuel, matches, and fire. Teach how to clear the area around a campfire and when and where it is safe to build a campfire."
+      },
+      {
+        "n": 6,
+        "en": "Teach the Adventurers to heat water, boil, fry, or bake food safely. Demonstrate how to clean up after a meal and how to dispose of food and paper waste."
+      },
+      {
+        "n": 7,
+        "en": "When you arrive home, have the Adventurers help clean and store camping supplies. Have the parents teach the Adventurers to put dirty clothes where they belong."
+      }
+    ]
+  },
+  {
+    "code": "YOU4580",
+    "path": "app/adventurer-honors/content/recreation/you4580-canoer.md",
+    "nameZh": "獨木舟",
+    "nameEn": "Canoer",
+    "frontmatter": "id: you4580-canoer\ncode: YOU4580\nnameZh: \"獨木舟\"\nnameEn: \"Canoer\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 獲取游泳Ⅰ榮譽證。\n2. 請划 50 公尺遠的距離；知道怎麼划左右轉，並且要一直保持只在船的同一側划行。\n3. 請從船上跳入水中，並保持船內乾燥；從水裡回到船上時，也要確保船不會進水。\n4. 知道什麼是船首和船尾，並且學會如何在搖晃的水中保持船的平衡。\n5. 知道要做哪些泛舟的事前準備：\n   a. 知道要穿什麼適當的服裝\n   b. 知道要如何為不同的氣候做預防措施",
+    "answersEn": []
+  },
+  {
+    "code": "YOU4710",
+    "path": "app/adventurer-honors/content/recreation/you4710-gymnast.md",
+    "nameZh": "體育",
+    "nameEn": "Gymnast",
+    "frontmatter": "id: you4710-gymnast\ncode: YOU4710\nnameZh: \"體育\"\nnameEn: \"Gymnast\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 獲取健體樂榮譽證。\n2. 示範五種熱身動作，並帶領組員於課前完成充足熱身及伸展運動。\n3. 練習四次跳高，並記錄最佳的成績。\n4. 練習四次跳遠，並記錄最佳的成績。\n5. 十秒內跑完 50 米。\n6. 完成下列動作︰\n   a. 後滾翻\n   b. 側手翻\n   c. 拱橋\n   d. 後滾開腳翻\n   e. 跳起的前滾翻\n   f. 頭頂倒立\n   g. 前滾開腳翻\n   h. 行獨木橋\n   i. 倒立",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Adventurers must have completed the requirements for the Fitness Fun Award before they begin this award. All gymnastic activities must be closely supervised by an adult."
+      },
+      {
+        "n": 2,
+        "en": "Ideal warm-ups for children include skipping, hopping, jumping jacks, animal walks (elephant, crab, kangaroo, frog, bunny), jogging in place, jumping rope, etc. Have each child lead a warm-up session. Stretch legs, back, wrists, hands, ankles (rotate in circles), head (lean from side to side and hold)."
+      },
+      {
+        "n": 3,
+        "en": "Record the best of four."
+      },
+      {
+        "n": 4,
+        "en": "Record the best of four."
+      },
+      {
+        "n": 5,
+        "en": "Use a stopwatch or a watch with a second hand to measure the time."
+      },
+      {
+        "n": 6,
+        "en": "Positions: stretch/layout, pike, tuck. Regarding the movements: a. For safety, make sure your hands are placed on the floor by your shoulders when you perform a backward roll. b. Keep arms and legs straight, fingers toward each other. c. Stand and slowly lean backward, lowering hands to the floor. Back bridge: Push up from the floor. Backbend: From a standing position, slowly arch back until hands touch the floor. d. From a standing straddle position, lean back placing hands between legs, as you roll hands go to shoulders, as in a back roll, and end in straddle stretch. e. Practice dive rolls, staying tightly tucked for safety. f. From a three-point frog stand, slowly raise legs to a straight position. g. From a standing straddle, position place hands between legs with fingers facing forward, tuck head and roll. Hands push off the floor and end with a standing stretch. h. Walk on a balance beam, touching foot to knee each time you step. i. Execute a handstand, kicking up and down by yourself. Practice with a spotter until you can do handstands alone. Keep in mind that some youngsters will find gymnastics easier than others. Make it fun and praise their efforts. Have an adult “spotter” nearby to avoid injuries."
+      }
+    ]
+  },
+  {
+    "code": "YOU4765",
+    "path": "app/adventurer-honors/content/recreation/you4765-basic-knots.md",
+    "nameZh": "繩結",
+    "nameEn": "Basic Knots",
+    "frontmatter": "id: you4765-basic-knots\ncode: YOU4765\nnameZh: \"繩結\"\nnameEn: \"Basic Knots\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 知道並能解釋不同型式的繩結。\n2. 學習打下列的繩結，能解釋他們的用處：\n   a. 雙套結\n   b. 滑結\n   c. 漁夫結\n   d. 繩環\n   e. 雙套結\n   f. 平結\n   g. 繫帆結\n   h. 稱人結\n   i. 珍珠結\n   j. 醫生結\n   k. 瓶口結\n   l. 八字結\n3. 把你所學到的 12 種繩結的打法，做成一個模型貼在木板或紙版上。",
+    "answersEn": []
+  },
+  {
+    "code": "YOU4815",
+    "path": "app/adventurer-honors/content/recreation/you4815-olympics.md",
+    "nameZh": "奧運",
+    "nameEn": "Olympics",
+    "frontmatter": "id: you4815-olympics\ncode: YOU4815\nnameZh: \"奧運\"\nnameEn: \"Olympics\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 學習一些有關奧運的事︰\n   a. 第一次舉辦的地方在哪裡？\n   b. 第一次舉辦的時間是什麼時候？\n   c. 下次舉辦奧運的地點在哪裡？\n2. 製作一張奧運旗幟。\n3. 製作一個奧運火炬。\n4. 舉辦一次「奧運會」來玩。\n5. 製作奧運五環。\n6. 背誦提後 4︰7\n7. 在新約聖經裡誰曾提及有關賽跑的事？\n8. 與父母或師長討論林前 9︰24-26 的意思。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Use an encyclopedia to answer (a) and (b)."
+      },
+      {
+        "n": 2,
+        "en": "This banner can be an 8.5” x 11” or everyone can work on one together as a club."
+      },
+      {
+        "n": 3,
+        "en": "Each person makes a torch. It can be made out of a Styrofoam cone, paper mâché, etc."
+      },
+      {
+        "n": 4,
+        "en": "Games like a baton race, javelin throw (Nerf javelin), sock throw, standing broad jump, etc."
+      },
+      {
+        "n": 5,
+        "en": "The chain can be made out of chenille. Use the Olympic colors (black, yellow, green, and blue). Twist each chenille strip in a circle, attach the circle to another strip of chenille, twist and continue until all colors are used. Can be worn on the Adventurer’s head."
+      },
+      {
+        "n": 6,
+        "en": "Paul."
+      }
+    ]
+  },
+  {
+    "code": "YOU4900",
+    "path": "app/adventurer-honors/content/recreation/you4900-skier.md",
+    "nameZh": "滑雪",
+    "nameEn": "Skier",
+    "frontmatter": "id: you4900-skier\ncode: YOU4900\nnameZh: \"滑雪\"\nnameEn: \"Skier\"\naliases: []\ncategory: recreation\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請描述如何保養雪橇和雪靴。\n2. 示範以下動作︰\n   a. 如何背負雪橇\n   b. 如何穿上雪橇\n   c. 如何扣緊雪橇\n3. 示範橫登法和八字登法的登坡上行、還有踢腿轉彎。\n4. 示範如何滑行和防止跌倒。\n5. 示範左轉、右轉及煞停。\n6. 請描述不同種類的雪。\n7. 能示範下列的項目：\n   a. 如何滑越有六個障礙欄的短途滑雪。或\n   b. 能安全地坐上初學者的升降座、並且能夠用最好的方式在初學滑雪丘山上滑雪。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Skis and boots should be wiped clean and be dry before storing them. 2-7. If you do not ski, invite someone who does to teach these basic skills to your Adventurers."
+      }
+    ]
+  },
+  {
+    "code": "YOU4995",
+    "path": "app/adventurer-honors/content/recreation/you4995-horsemanship.md",
+    "nameZh": "馬術",
+    "nameEn": "Horsemanship",
+    "frontmatter": "id: you4995-horsemanship\ncode: YOU4995\nnameZh: \"馬術\"\nnameEn: \"Horsemanship\"\naliases:\n  - \"YOU4755\"\ncategory: recreation\nanswerSource: draft\nanswerSourceNote: \"HKMC 手冊將此榮譽證編號印為 YOU4755（與磁鐵樂 I 重複）；本站改用 YOU4995\"\nstatus: non-review",
+    "requirementsZh": "1. 從你的繪製圖中列出馬五個部份的名稱。\n2. 請列出並描述馬五種不同的品種，每一種馬有什麼用處。\n3. 請說明騎馬正確的方式，並示範。\n4. 請說明讓馬正確小跑步的方式，並示範。\n5. 請說明讓馬快速跑的正確方式。\n6. 遇到下列情況時，要如何處理馬的情況，請說明：\n   a. 假如馬受到驚嚇\n   b. 假如馬拒絕指令\n   c. 假如馬跑掉\n7. 請仔細說明如何以韁繩控制馬的行為。這是馬術最重要的一環。\n8. 請說明必須遵守的四個預防措施來實行，以避免馬在經過很長的運動之後造成過熱的情形發生。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Even camera phones, tablets, laptops, etc. have these parts. Research and describe where they are."
+      },
+      {
+        "n": 2,
+        "en": "Encourage discussion."
+      },
+      {
+        "n": 3,
+        "en": "Do not touch the lenses, use a neck/wrist strap, keep dry and clean, do not drop, ask for permission before each use, turn the camera off."
+      },
+      {
+        "n": 4,
+        "en": "Have fun. Hold camera steady. Stand still, Zoom in and out. The goal is to experience a VARIETY of photo situations. Most phone cameras have good zoom and the ability to take action, macro (zoom in), and even evening/ nighttime shots. Show the child how to use the features offered on the devices your family uses."
+      },
+      {
+        "n": 5,
+        "en": "Photo game might be one of the following: Photo Scavenger Hunt; What is it? – take close up picture, then have others identify it; Where is it? – take close up pictures, then have others identify where it was taken; Pose in a Bible character position, take a picture, then have others identify what character."
+      },
+      {
+        "n": 6,
+        "en": "Being made in God’s image means we are made after his likeness. Discuss further."
+      }
+    ]
+  },
+  {
+    "code": "HKA4069",
+    "path": "app/adventurer-honors/content/spiritual/hka4069-bible-storytelling.md",
+    "nameZh": "聖經故事講述",
+    "nameEn": "Bible Storytelling",
+    "frontmatter": "id: hka4069-bible-storytelling\ncode: HKA4069\nnameZh: \"聖經故事講述\"\nnameEn: \"Bible Storytelling\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 選出五個聖經故事，說出它們在聖經中的位置。\n2. 你選出的故事人物是如何表明他們愛或不愛耶穌？\n3. 講故事時，要記得的三件重要事情。\n4. 向小組講述你以上選出的兩個故事。\n5. 用兩種不同的方法，講述你選擇的兩個聖經故事。",
+    "answersEn": []
+  },
+  {
+    "code": "HKA4070",
+    "path": "app/adventurer-honors/content/spiritual/hka4070-bread-of-life.md",
+    "nameZh": "生命之糧",
+    "nameEn": "Bread of Life",
+    "frontmatter": "id: hka4070-bread-of-life\ncode: HKA4070\nnameZh: \"生命之糧\"\nnameEn: \"Bread of Life\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 翻開、閱讀並寫出馬太福音 4:4。 與成人討論它的重要性，並寫下你所學到的。\n2. 與成人討論每天閱讀上帝的話的重要性，並寫下你的結論。\n3. 翻開並閱讀提摩太後書 2:15、詩篇 119:11 和詩篇 119:105。我們為什麼要研讀聖經？\n4. 討論如何準備自己閱讀上帝的話語。 寫下四個有關學習聖經的習慣。\n5. 閱讀以下其中一個聖經故事。\n   a. 哈拿祈求兒子 - 撒母耳記上 1:1-28\n   b. 挪亞方舟 - 創世記 6:5-創世記 8\n   c. 嬰孩摩西 - 出埃及記 1-2:10\n   d. 長大麻瘋的乃縵 – 列王記下 5:1-16\n6. 製作一張書籤，並在研讀聖經時使用。\n7. 定期花時間閱讀聖經。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Read the text slow enough for the children to write it down. Ask them questions to promote discussion. a. Who do you think said it? Answer: Jesus said it. He was speaking to Satan. b. What do you think it means? Answer: Satan was tempting Jesus, trying to get Him to eat. Jesus replied by letting him know that prayer and meditating on God’s Word is just as essential to living as is food for our physical needs. Note: Read Matthew 4:1-4 to show the full meaning of the text."
+      },
+      {
+        "n": 2,
+        "en": "It is important for us to read our Bibles every day in order to ensure our relationship with our Heavenly Father stays strong. Reading His Word and praying helps strengthen our bond and increases our chances to share Him with others."
+      },
+      {
+        "n": 3,
+        "en": "Find additional verses."
+      },
+      {
+        "n": 4,
+        "en": "Four Bible study habits. a. To set aside time every morning or every evening. b. Start with a prayer before you begin your study. Ask the Holy Spirit to be with you as you read and help you understand. “Scripture can only be understood thro’ the same Spirit whereby it was given.” ~John Wesley. c. Be sure to pause during your reading. Think about what you have read and how you can apply it to your life and your journey with Christ. d. Your reading should be closed with prayer asking God to help you remember the message and hold it in your heart."
+      },
+      {
+        "n": 5,
+        "en": "Or read other Bible verses."
+      },
+      {
+        "n": 6,
+        "en": "Use cardstock."
+      },
+      {
+        "n": 7,
+        "en": "Encourage adults to model regular Bible study as a lifelong habit. The skills learned for this award could be taught every year."
+      }
+    ]
+  },
+  {
+    "code": "HKA4074",
+    "path": "app/adventurer-honors/content/spiritual/hka4074-good-samaritan.md",
+    "nameZh": "好撒馬利亞人",
+    "nameEn": "Good Samaritan",
+    "frontmatter": "id: hka4074-good-samaritan\ncode: HKA4074\nnameZh: \"好撒馬利亞人\"\nnameEn: \"Good Samaritan\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 有需要是什麼意思？\n2. 聖經對那些幫助有需要的人有什麼應許？\n3. 閱讀並討論馬太福音 25：35-40。\n4. 有哪些機構可以幫助有需要的人？\n5. 你所屬的教會如何幫助有需要的人？\n6. 討論可以幫助有需要的人的方法。\n7. 參加兩項活動並幫助有需要的人，例如：◼ 幫助社區中有需要的家庭◼ 為無家者提供食物◼ 為食品捐贈或食物銀行的無家者收容所收集罐頭食品◼ 在無家者收容所或城市食品儲藏室做義工◼ 參加衣物募捐活動，分發毯子和/或襪子等。◼ 其他。\n8. 討論活動中得到的經驗。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Age appropriate discussion that might include food, shelter, clothing, water, transportation, blankets, etc."
+      },
+      {
+        "n": 2,
+        "en": "For example: Prov 28:27, 1 John 3:17, Prov 19:17, 1 Samuel 2:8, Prov. 21:13, or Matthew 5:3."
+      },
+      {
+        "n": 3,
+        "en": "Encourage discussion."
+      },
+      {
+        "n": 4,
+        "en": "Adventist Community Service, Dorcus, ADRA, Red Cross, Salvation Army, Samaritan Purse, Local food banks."
+      },
+      {
+        "n": 5,
+        "en": "Invite several church members to share with the club how and who they help."
+      },
+      {
+        "n": 6,
+        "en": "Such as, collect cloths, food, help with finding shelter; participate in a fundraiser for a family or an agency."
+      },
+      {
+        "n": 7,
+        "en": "Obtain proper authorization, permission, applicable permits and insurance to do the chosen activity."
+      },
+      {
+        "n": 8,
+        "en": "Follow event with a lively discussion."
+      }
+    ]
+  },
+  {
+    "code": "HKA4075",
+    "path": "app/adventurer-honors/content/spiritual/hka4075-jesus-special-supper.md",
+    "nameZh": "耶穌的特別晚餐",
+    "nameEn": "Jesus' Special Supper",
+    "frontmatter": "id: hka4075-jesus-special-supper\ncode: HKA4075\nnameZh: \"耶穌的特別晚餐\"\nnameEn: \"Jesus' Special Supper\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 講述最後晚餐的故事。\n2. 解釋為什麼耶穌成為僕人為門徒洗腳。\n3. 解釋無酵餅和葡萄汁代表什麼。\n4. 特別晚餐結束時發生了什麼？（約翰福音 14－17 章）\n5. 禱告感謝耶穌的愛。\n6. 製作一件有關最後晚餐的勞作。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Mark Chapter 14 and Luke 22:17-20 - Try to impress on the children that Jesus knew this was the last time they would be together before He died so He wanted to make a Special Supper for them. Bring in some sandals or flip flops and discuss why feet need to be washed. You may want to let the children walk in some dirt or mud and share with them that most of the roads in Jesus’s day were not paved and would be dirt or mud."
+      },
+      {
+        "n": 2,
+        "en": "John 13:12-14 - Explain that we are to wash each other’s feet to show we are humble and no better than anyone else. Try to impress on the children that we should be a servant like Jesus was."
+      },
+      {
+        "n": 3,
+        "en": "Bread represents Jesus’s body and the grape juice represents His blood."
+      },
+      {
+        "n": 4,
+        "en": "They sang a hymn and went out. John 14-17 is Jesus’ last words, potentially in the upper room, or on the trip to the Mount of Olives."
+      },
+      {
+        "n": 5,
+        "en": "Read Matthew 26:30 and sing a hymn."
+      },
+      {
+        "n": 6,
+        "en": "Use Google or Pinterest “Last supper craft” for ideas."
+      }
+    ]
+  },
+  {
+    "code": "HKA4081",
+    "path": "app/adventurer-honors/content/spiritual/hka4081-purity.md",
+    "nameZh": "純潔",
+    "nameEn": "Purity",
+    "frontmatter": "id: hka4081-purity\ncode: HKA4081\nnameZh: \"純潔\"\nnameEn: \"Purity\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 純潔（或敬虔）是什麼？\n2. 閱讀腓立比書 4:8-9 並用泥膠或黏土製作以下內容，同時舉例說明。\n   a. 眼睛\n   b. 耳朵\n   c. 嘴\n   d. 衣服\n3. 說出聖經中一位無論發生什麼事都選擇跟隨上帝的女人。\n4. 說出聖經中一個無論發生什麼事都選擇跟隨上帝的男人。\n5. 寫出三節聖經經文，說明上帝如何幫助你變得純潔（或敬虔）。\n6. 參與一個與敬虔思想有關的遊戲。當你播下思想的種子時，你就會收穫一種感覺。當你種下一種感覺，你就會收穫一種行動。 當你播下一種行動的種子時，你就會收穫一種習慣。當你播下一種習慣，你就會收穫一種性格。 當你播下一種性格，你就會收穫一種命運。\n7. 閱讀歌羅西書 3:12-14。 解釋穿上愛心是什麼意思。（見加拉太書 5：22-23）。\n8. 閱讀提摩太前書 4:12、約伯記 17:9 和但以理書 1-3 章。 製作一張海報來說明：當你要做出重大改變，永遠不會太遲；當你選擇純潔（或敬虔）時，你會變得越來越強大。\n9. 閱讀馬可福音 2:1-12。 製作一張海報，說明四位朋友如何把他們生病的朋友放在床上，然後用繩子從屋頂把他放下來，以便耶穌醫治他。 朋友可以幫助我們保持純潔（或敬虔）。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Have the children write the following sentences: Purity is avoiding things that take you away from God. Purity is spiritual and grows from inside out. It is not a costume but a way of living. The music you listen to, the books you read, the videos you watch, and the clothes you wear should be pure/ modest. When you live a life of purity, the rewards last forever."
+      },
+      {
+        "n": 2,
+        "en": "Try edible play dough, if available. Search the Internet for a recipe."
+      },
+      {
+        "n": 3,
+        "en": "Jesus’ mother Mary remained pure, despite the ridicule she received from those around her. She trusted the words of God."
+      },
+      {
+        "n": 4,
+        "en": "Daniel helped give an entire kingdom the opportunity to pray to the living God. He was smart and that helped him successfully work for the king, but it was his character and loyalty to God that saved his life."
+      },
+      {
+        "n": 5,
+        "en": "Explain to the children that because the Bible and its promises are so powerful, it can be used to keep you pure. A nice way to explain it simply to the Adventurers is that when you carry the Bible Satan gets nervous; when you open the Bible, Satan gets a headache; when he sees you reading the Bible, he faints; and when he sees you are living what you read, he flees. God’s word is armor for daily living."
+      },
+      {
+        "n": 6,
+        "en": "Encourage the children to grow godly thoughts. Have the children stack crackers in the shape of a pyramid. Each cracker is a word. Use the words in the poem. The bottom of the pyramid would have the words/crackers: thought, feeling, action. The second level would have the words/crackers: habit, character. The top/third level would have the word/cracker: destiny."
+      },
+      {
+        "n": 7,
+        "en": "Write out with big, open letters the word LOVE. Put the following words inside the word love: mercy, kindness, humility, gentleness, and patience. Add any other virtuous words the children come up with. Decorate with vivid colors. Turn into a poster or t-shirt. If doing a t-shirt, then draw on a t-shirt transfer form or cut out a body from paper. Write the word mercy on one arm. Write the word kindness on the other arm. Write the word humility on the chest. Write the word gentleness on one leg. Write the word patience on the other leg. Make a sleeveless vest out of paper and write the word love on it and then place it on the cut-out body."
+      },
+      {
+        "n": 8,
+        "en": "Make a fiery furnace poster. Write Job 17:9 at the bottom of the poster. Use cotton balls for framing the oven. Use strips of red tissue paper for fire. Put three smiling faces of Shadrach, Meshach, and Abednego in the fire."
+      },
+      {
+        "n": 9,
+        "en": "Make a friend poster with the names of the people you will pray for to stay pure. Place a heart on the poster and put all the names of the people you care for inside the heart. Put rope/yarn around the heart. Encourage and pray for everyone in the heart."
+      }
+    ]
+  },
+  {
+    "code": "HKA4082",
+    "path": "app/adventurer-honors/content/spiritual/hka4082-tabernacle.md",
+    "nameZh": "會幕",
+    "nameEn": "Tabernacle",
+    "frontmatter": "id: hka4082-tabernacle\ncode: HKA4082\nnameZh: \"會幕\"\nnameEn: \"Tabernacle\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 閱讀並討論哥林多前書 6:19，閱讀並討論出埃及記 25:8 和 29:44-46。\n2. 會幕是什麼？\n3. 列出會幕的三個主要區域。\n4. 翻開並閱讀約翰福音 14:6、約翰福音 10:9 和馬太福音 7:13-14。 使用這些經文，討論門象徵什麼？ （大門代表基督）\n5. 討論並分辨會幕及其他部分。\n   a. 銅祭壇\n   b. 會幕獻祭\n   c. 洗濯盆\n   d. 七燈臺\n   e. 放陳設餅的桌子\n   f. 香壇\n   g. 至聖所與幔子\n   h. 約櫃\n6. 製作一個會幕模型。\n7. 唱一首有關聖所的詩歌。\n8. 參與以下其中一個遊戲：\n   a. 會幕記憶。\n   b. 混亂會幕的設施和名稱。\n   c. 製作設施卡片； 將卡片混合起來，當他們抽出一張卡片時，將其放在會幕圖上的正確位置。\n   d. 每個幼鋒會會員輪流抽出一張卡片，上面寫著會幕的一部分，然後站在房間裡的正確位置。\n   e. 其他遊戲",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "As you review the stories, emphasize the items built and encourage the children to discuss the choices the Bible characters made. a. God asked Noah to build an ark. It took Noah 120 years to build the ark and he lived on it for more than one year. Extra: How big was the ark? Use a long measuring tape to find out. b. Babel—God knew the best thing for the people at that time was to live in tents so they could spread across the earth—not to build the tower of Babel. c. Abram’s home was a tent. Extra: Make Abram’s tent out of sheets and chairs. d. God asked Moses to build a portable tabernacle. e. God asked Solomon to build a tabernacle in Jerusalem. f. God sent Joseph and Mary to a stable. g. At the end of the Sermon on the Mount, Jesus refers to a man who built a house by first laying a strong foundation on a rock. h. God wants you to live in the house He is building for you in heaven."
+      },
+      {
+        "n": 2,
+        "en": "Questions you might ask: What materials do you build with? How do you know where to build? What is this tool used for? What do you need to learn to be a good builder? Alternatives: take a trip to a construction site, interview a workman and ask questions about the building."
+      },
+      {
+        "n": 3,
+        "en": "Ways to share choices (you may work in teams): a. Draw a brick wall on a poster and write one choice or characteristic on each brick. b. Mime or act out a choice. c. Illustrate a choice in a painting, drawing, sculpture, or on a computer, video or camera. d. Sing a song describing good character-building choices. e. Privately, write a poem or journal, reflecting on your choice."
+      },
+      {
+        "n": 4,
+        "en": "Bring gemstones to touch and see or show pictures of the New Jerusalem. Page 47"
+      },
+      {
+        "n": 5,
+        "en": "Any type of building materials may be used, such as toys like Lego, Lincoln Logs, or Tinker Toys, or craft sticks, play dough, foam board, or construction paper. Real building materials such as sticks, straw, mud, or bricks may also be used. Suggestions for types of buildings: Bible buildings, your home, school, favorite shop, church, imagined heavenly home."
+      }
+    ]
+  },
+  {
+    "code": "YOU4545",
+    "path": "app/adventurer-honors/content/spiritual/you4545-bible-royalty.md",
+    "nameZh": "聖經皇族",
+    "nameEn": "Bible Royalty",
+    "frontmatter": "id: you4545-bible-royalty\ncode: YOU4545\nnameZh: \"聖經皇族\"\nnameEn: \"Bible Royalty\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 背誦詩篇 100：4。\n2. 說出聖經中五個國王的名字。哪些國王是最好的統治者？為什麼？\n3. 請講述兩個國王的故事，讓孩子們演出這兩個故事。\n4. 能列出至少四個聖經故事裡皇后的名字。為什麼這些皇后那麼重要？\n5. 寫一篇關於皇后的故事，並且在課堂中閱讀出來。\n6. 做到下列兩項要求：\n   a. 用一個鞋盒做一個皇宮\n   b. 做一個王冠，並解釋王冠上的裝飾對國王有什麼含意\n   c. 裝飾一把國王的椅子\n   d. 做一幅王宮的壁畫\n   e. 其他",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "“Enter his gates with thanksgiving and his courts with praise; give thanks to him and praise his name. For the LORD is good and his love endures forever; his faithfulness continues through all generations.”"
+      },
+      {
+        "n": 2,
+        "en": "First king – Saul; second king – David; third king – Solomon. Joash was seven years old when he started his reign; Josiah was eight when he became king, King Jesus, etc. These are just a few examples, list more if possible."
+      },
+      {
+        "n": 3,
+        "en": "Use costumes, crowns, throne chair, etc. if possible."
+      },
+      {
+        "n": 4,
+        "en": "Vashti, Esther, Bathsheba, Queen of Sheba, Jezebel, etc."
+      },
+      {
+        "n": 5,
+        "en": "May work in small groups to write the story, then share the story with the class."
+      },
+      {
+        "n": 6,
+        "en": "Use Bible story books for picture ideas. Possibilities include throne, carpet, pictures, vases, jewels, velvet, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4630",
+    "path": "app/adventurer-honors/content/spiritual/you4630-disciples.md",
+    "nameZh": "門徒",
+    "nameEn": "Disciples",
+    "frontmatter": "id: you4630-disciples\ncode: YOU4630\nnameZh: \"門徒\"\nnameEn: \"Disciples\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 什麼是門徒？\n2. 用聖經找出門徒的名字和職業，然後將名字和職業分別寫在一張紙卡上（太10：2-4，可 3：14-19，路 6:13-16，約 1：41-48） 。把這些紙卡混在一起，看看你能否把名字和職業正確地配對起來。\n3. 說出門徒中的二對兄弟（參考太 10：2）。\n4. 請說出第一個被耶穌呼召成為門徒的人。能夠從聖經章節中知道，在他發現耶穌就是彌賽亞時，他做了什麼事（約 1：35-42）。\n5. 門徒求耶穌教導他們什麼？（路 11：1）\n6. 一起誦讀主禱文。\n7. 選出三位門徒，並說出你從他們身上學到了什麼。\n8. 唱一首有關門徒的詩歌，或演出一個相關的短劇。\n9. 成為耶穌的門徒。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "One who is a student or follower of a teacher’s doctrines or school of thought."
+      },
+      {
+        "n": 2,
+        "en": "Andrew, Simon (Peter), James, John, Philip, Nathaniel (Bartholomew), Matthew (Levi), Thomas, James, Simon, Judas, and Judas Iscariot. We do not know the occupations of all the disciples. What do you think they did?"
+      },
+      {
+        "n": 3,
+        "en": "Peter and Andrew; James and John, the sons of Zebedee or the “Sons of Thunder.”"
+      },
+      {
+        "n": 4,
+        "en": "Andrew was called first to follow Jesus. He ran to get his brother so he could become a disciple of Jesus also."
+      },
+      {
+        "n": 5,
+        "en": "The disciples asked Jesus to teach them to pray."
+      },
+      {
+        "n": 6,
+        "en": "Luke 11:2-4."
+      },
+      {
+        "n": 7,
+        "en": "See resources."
+      },
+      {
+        "n": 8,
+        "en": "“There Were 12 Disciples” song in “Sing for Joy” page 53. “Peter James and John in a Sailboat”, CD by Cedarmont Kids. Track eight on “Little David Presents Bible Songs” CD by Christian Songs for Kids."
+      },
+      {
+        "n": 9,
+        "en": "Perform an act of kindness, such as preparing packages for the homeless."
+      }
+    ]
+  },
+  {
+    "code": "YOU4675",
+    "path": "app/adventurer-honors/content/spiritual/you4675-friend-of-jesus.md",
+    "nameZh": "耶穌之友",
+    "nameEn": "Friend of Jesus",
+    "frontmatter": "id: you4675-friend-of-jesus\ncode: YOU4675\nnameZh: \"耶穌之友\"\nnameEn: \"Friend of Jesus\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 對一位好朋友傳講耶穌，並且述說衪對你的慈愛。\n2. 邀請一個朋友參加一次教會的聚會。\n3. 請一位大人來協助你預備可在安息日學、或是幼年團聚會、或是學校分享的一個見證或一個禱告。\n4. 參加一次佈道活動（信徒佈道或見證）\n5. 參觀一次浸禮並討論受洗的意義。\n6. 請解釋成為耶穌的好朋友是什麼意思，並且能說出聖經中五位耶穌的朋友。\n7. 與家人談話時保持仁慈有禮。討論變得仁慈有禮就等於是與耶穌成為好友。\n8. 實行飯前及睡前祈禱。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Help the Adventurers learn to verbalize their love for Jesus and to share that love with others. Encourage them to pray simple prayers to express their love for Jesus (also for point number 8)."
+      },
+      {
+        "n": 2,
+        "en": "Encourage the Adventurers to invite a non-SDA friend. Discuss how they can be a good example by sitting quietly in church, walking softly, whispering only, singing, kneeling for prayer, being kind, etc."
+      },
+      {
+        "n": 3,
+        "en": "Help the Adventurers prepare a simple talk appropriate for their age group; encourage their own ideas."
+      },
+      {
+        "n": 4,
+        "en": "Talk with your pastor and get involved in outreach programs of your church."
+      },
+      {
+        "n": 5,
+        "en": "Explain the reasons for baptism and tell the Adventurers that it was Jesus’ example for us. See that each child has the opportunity to attend a baptismal service."
+      },
+      {
+        "n": 6,
+        "en": "Children may list Jesus’ disciples or other friends such as Mary, Martha, Lazarus, etc. To be a friend of Jesus means to accept His friendship and love and to share both with others."
+      },
+      {
+        "n": 7,
+        "en": "Jesus knows our thoughts and actions. Because He loves us, we love Him and everything He has made, including our families and friends. Expressing kindness to others is showing our love for Jesus."
+      },
+      {
+        "n": 8,
+        "en": "Teach the Adventurers the basic elements of prayer, including praise, thanksgiving, cleansing from sin, commitment, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4685",
+    "path": "app/adventurer-honors/content/spiritual/you4685-fruits-of-the-spirit.md",
+    "nameZh": "聖靈的果子",
+    "nameEn": "Fruits of the Spirit",
+    "frontmatter": "id: you4685-fruits-of-the-spirit\ncode: YOU4685\nnameZh: \"聖靈的果子\"\nnameEn: \"Fruits of the Spirit\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請背誦加拉太書 5：22-23，並且從當中選擇一個聖靈的果子。\n2. 承上題，依照你選擇的聖靈果子，從聖經當中找出一個闡明其中意義的章節。\n3. 依照你選擇的聖靈果子，從聖經當中找出一個描述其意義的故事，並且演出。\n4. 依照你選擇的聖靈果子，畫出一幅描述其意義的圖畫。\n5. 依照你選擇的聖靈果子，學一首、或創作一首描述其意義的歌曲。\n6. 請選擇一個聖靈的果子來述說你以前相關的經歷，而當時你尚不知道這樣的行為就是表現聖靈果子的精神。\n7. 依照你選擇的聖靈果子，製作一個能代表其意義、或能幫助你更了解其中意義的手工品。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "The fruits are: love, joy, peace, patience, kindness, faithfulness, gentleness and self-control."
+      },
+      {
+        "n": 2,
+        "en": "Check in your Bible concordance."
+      },
+      {
+        "n": 3,
+        "en": "Steve Green has a tape entitled “Hide ‘em in Your Heart.”"
+      }
+    ]
+  },
+  {
+    "code": "YOU4805",
+    "path": "app/adventurer-honors/content/spiritual/you4805-my-church.md",
+    "nameZh": "我的教會",
+    "nameEn": "My Church",
+    "frontmatter": "id: you4805-my-church\ncode: YOU4805\nnameZh: \"我的教會\"\nnameEn: \"My Church\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 理解並背誦哥林多前書 3:16，並學習詩歌 “Lord, Prepare Me to Be aSanctuary”。\n2. 知道你教會的名稱，並寫下教會的地址。 身為一名會員，請在牆上畫出與教會為中心的圖畫，把每個與教會有關的復臨信徒家庭畫上去，標示出道路和街道的名稱，就像是在畫一張教會地圖一樣。\n3. 誰是你的教會傳道人？他/她的職責是什麼？請詢問他/她以下的問題。\n   a. 你為什麼決定成為一名傳道人？\n   b. 你是在幾歲的時候決定成為傳道人的？\n   c. 在你的生命中發生了什麼事情使你想成為一名傳道人呢？\n   d. 如果上帝呼召我，我可以成為傳道人嗎？\n   e. 我怎樣才能為侍奉上帝的生活做好準備？\n   f. 我現在要怎麼成為佈道士？\n4. 畫出你教會的平面圖。如果你的教會有以下項目，請在地圖上標示出來。\n   a. 聖所\n   b. 教會辦公室\n   c. 你的安息日學課室\n   d. 多用途活動室\n   e. 洗手間\n   f. 幼鋒會房間\n   g. 社區服務的房間",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Exodus 25:8"
+      },
+      {
+        "n": 2,
+        "en": "Parents should help their children."
+      },
+      {
+        "n": 3,
+        "en": "Make a list of questions for your pastor prior to arrival. Examples are listed."
+      },
+      {
+        "n": 4,
+        "en": "Leader, give the Adventurers a tour of the church. Then have the Adventurers act as tour guides to the different rooms or areas of the church. Next, ask the Adventurers to label a pre-drawn map of the church inserting the different rooms into the correct localities."
+      },
+      {
+        "n": 5,
+        "en": "Invite the pastor and board members to model a board meeting during an Adventurer club meeting. Optional – role-play a board meeting using a child- friendly agenda. Ask the Adventurers to pretend to be adults sitting as active members on a board. Optional – have a staff meeting so the Adventurers may see all that goes into getting a meeting ready for them. (Suggestion: On the Adventurer Sabbath, say “Thank you for guiding our church.”)"
+      },
+      {
+        "n": 6,
+        "en": "Discuss work done, type of personality and experience needed for each position. Help the Adventurers choose different people for interviewing. Create a list of questions together and use them while interviewing. Think about the following: a. Talk about each position and explain each role and the service given to God. (Most church positions are volunteer.) b. What position would each child prefer most? Why? c. Discuss with the children how to prepare for a life of service dedicated to God. Discuss what kind of education would help each child prepare for their favorite job."
+      },
+      {
+        "n": 7,
+        "en": "a. Children should help the teacher by leaving each room neat and orderly after Sabbath school. b. Never leave stray items, paper, bulletins, hymnals, Bibles, or other items out of place in the Sanctuary as you leave the church service. c. Be helpful and cheerful to everyone you meet at church."
+      }
+    ]
+  },
+  {
+    "code": "YOU4825",
+    "path": "app/adventurer-honors/content/spiritual/you4825-pearly-gates.md",
+    "nameZh": "珍珠門",
+    "nameEn": "Pearly Gates",
+    "frontmatter": "id: you4825-pearly-gates\ncode: YOU4825\nnameZh: \"珍珠門\"\nnameEn: \"Pearly Gates\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "此榮譽證旨在讓團員關注並期待基督的復臨\n1. 尋找並閱讀聖經裡有關耶穌再來的應許。\n2. 用話劇演出聖經裡一則有關基督復臨的比喻。\n3. 請說出聖經在哪裡記載了末日預兆的經文。\n4. 從太 24︰3-14 中列出一個清單，寫下基督復臨的預兆。\n5. 形容耶穌升天的景像，並且說出耶穌復臨之時，衪會以什麼方式、或不會用什麼方式降臨。\n6. 從聖經中找出描述有關聖城及新天新地的章節，並且誦讀。\n7. 以約翰福音 14：2-3 來完成下列的任何一項要求，並且背起來。\n   a. 填充題：\"在我父的_______ 有許多_______ ；若是沒有，我就早已____________。我去原是為你們________________。我若去_____________________，就必再來接你們到_______________ ；________在哪裡，_______也在哪裡。\n   b. 在每張紙卡上寫一個字(一個字一張紙卡)，並讓孩子們把紙卡上的字排列成正確的章節。\n   c. 協助製作一個背誦聖經章節的拼圖。\n   d. 把幾張拼圖藏起來，然後跟孩子玩“失錢比喻”的遊戲。\n8. 閉上眼睛，想像一下你在天國的珍珠之門遇見耶穌的景像，也可以把天國珍珠之門的景像用想像的或是以創意的方式畫出來。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "John 14:1-3; Acts 1:11."
+      },
+      {
+        "n": 2,
+        "en": "The Ten Virgins, Matt, 25:1-13; The Net, Matt. 13:47,48; The Wicked Tenants, Matt. 21:33; Mark 12:1-10; Luke 20:9-16; The Great Banquet, Luke 14:16-24; Matt. 22:1-14; The Lost Coin, Luke 15:8-10; The Narrow Door, Matt. 7:13,14; Luke 13:22-30; The Weeds, Matt. 24-30; The Lost Sheep, Luke 15:3-7; The Sower, Matt. 13:3-23; Others."
+      },
+      {
+        "n": 3,
+        "en": "Matt. 24."
+      },
+      {
+        "n": 4,
+        "en": "False Christ (v.5), wars and fall of kingdoms (v.6-7), famine and earthquakes (v.7), persecution (9), turning away (v.10), false prophets (v.11), increased wickedness and love growing cold (v.12), gospel to all the world (v.14)."
+      },
+      {
+        "n": 5,
+        "en": "1 Thessalonians 4:15-18, Acts 1:1-8. 6. Isaiah 65:17-25; Rev. 21, 22."
+      },
+      {
+        "n": 7,
+        "en": "Provide heavy paper, markers, scissors."
+      },
+      {
+        "n": 8,
+        "en": "Have available paper, markers/crayons, popsicle sticks, glitter, construction paper, pearls, foil, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4835",
+    "path": "app/adventurer-honors/content/spiritual/you4835-prayer.md",
+    "nameZh": "祈禱",
+    "nameEn": "Prayer",
+    "frontmatter": "id: you4835-prayer\ncode: YOU4835\nnameZh: \"祈禱\"\nnameEn: \"Prayer\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請解釋我們為什麼要禱告，我們為何事而禱告，我們如何禱告。請閱讀以賽亞 40：31。\n2. 請閱讀馬太福音 6:5-15 主禱文。\n3. 在一週內每天向神、向耶穌禱告三次。請閱讀哥林多前書 5：17。\n4. 教你認識的某個人禱告，並且與他一起禱告。\n5. 完成下列其中三項或多項要求：\n   a. 製作一張祈禱的圖表，向別人詢問他們是否有代禱事項，並且為他們禱告。\n   b. 帶領幼年團活動的開會禱告或散會禱告。\n   c. 製作一張內有禱告的卡片，並且分贈給別人。\n   d. 向牧師詢問禱告的事\n   e. 為孩童和大人做早餐的禱告。\n   f. 製作一張禱告日誌，看看上帝如何應許這些禱告",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Help the Adventurers learn to verbalize their love for Jesus and to share that love with others. Encourage them to pray simple prayers to express their love for Jesus (also for point number 8)."
+      },
+      {
+        "n": 2,
+        "en": "Encourage the Adventurers to invite a non-SDA friend. Discuss how they can be a good example by sitting quietly in church, walking softly, whispering only, singing, kneeling for prayer, being kind, etc."
+      },
+      {
+        "n": 3,
+        "en": "Help the Adventurers prepare a simple talk appropriate for their age group; encourage their own ideas."
+      },
+      {
+        "n": 4,
+        "en": "Talk with your pastor and get involved in outreach programs of your church."
+      },
+      {
+        "n": 5,
+        "en": "Explain the reasons for baptism and tell the Adventurers that it was Jesus’ example for us. See that each child has the opportunity to attend a baptismal service."
+      },
+      {
+        "n": 6,
+        "en": "Children may list Jesus’ disciples or other friends such as Mary, Martha, Lazarus, etc. To be a friend of Jesus means to accept His friendship and love and to share both with others."
+      },
+      {
+        "n": 7,
+        "en": "Jesus knows our thoughts and actions. Because He loves us, we love Him and everything He has made, including our families and friends. Expressing kindness to others is showing our love for Jesus."
+      },
+      {
+        "n": 8,
+        "en": "Teach the Adventurers the basic elements of prayer, including praise, thanksgiving, cleansing from sin, commitment, etc."
+      }
+    ]
+  },
+  {
+    "code": "YOU4840",
+    "path": "app/adventurer-honors/content/spiritual/you4840-prayer-warrior.md",
+    "nameZh": "禱告戰士",
+    "nameEn": "Prayer Warrior",
+    "frontmatter": "id: you4840-prayer-warrior\ncode: YOU4840\nnameZh: \"禱告戰士\"\nnameEn: \"Prayer Warrior\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 請閱讀保羅所說的「上帝軍裝」 （以弗所書6：11-18） ，並且製作一張海報或手工品來展示上帝的軍裝。\n2. 請列出五位舊約的禱告戰士，並且從聖經當中閱讀一位戰士的故事。說明他們的生命是如何藉著與神說話而得到改變。\n3. 討論如何、在何地禱告。\n4. 學習我們應該為什麼人禱告，並寫下你自己的禱告詞。在幼年團的課堂上或是教堂的聚會裡，唸給大家聽。\n5. 討論你為什麼禱告。\n6. 與幼年團的團員們、或是你的家人一起做步行中的禱告。與大家分享這樣的方法使你們有什麼樣的感覺。",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "We pray to stay close to Jesus because He is our very best friend and we want to be like Him. Read Mark 1:35. We pray to thank Him for His love and care, to ask for forgiveness, and to help others and ourselves. Read James 5:16. We should have a quiet time each day with Jesus, but we can pray anytime, anywhere."
+      },
+      {
+        "n": 2,
+        "en": "Discuss the Lord’s Prayer with children."
+      },
+      {
+        "n": 3,
+        "en": "Ask parents to encourage children to pray and to make it a daily habit. Provide resources for parents on how to teach children about quiet time with Jesus."
+      },
+      {
+        "n": 4,
+        "en": "Discuss how to teach someone to pray."
+      },
+      {
+        "n": 5,
+        "en": "All activities included in worksheet. Discuss with children how each of these activities can be done. For the prayer breakfast, invite kids of all ages to attend and have a child give the message."
+      }
+    ]
+  },
+  {
+    "code": "YOU4850",
+    "path": "app/adventurer-honors/content/spiritual/you4850-rainbow-promise.md",
+    "nameZh": "彩虹應許",
+    "nameEn": "Rainbow Promise",
+    "frontmatter": "id: you4850-rainbow-promise\ncode: YOU4850\nnameZh: \"彩虹應許\"\nnameEn: \"Rainbow Promise\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "1. 展示構成彩虹的兩種元素。\n2. 在創世記 9:8-17 中找出誰看到了第一道彩虹。\n3. 什麼是應許？\n4. 彩虹的應許提醒了我們什麼？\n5. 彩虹是由什麼顏色組成的？用它正確的顏色順序創造你自己的彩虹。\n6. 在天國裡，我們可以在哪裡找到彩虹？",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Create a rainbow with water and light or demonstrate with a prism."
+      },
+      {
+        "n": 2,
+        "en": "Put each event of the story of Noah on index cards. Have children draw a card from a box or container and put in correct sequence."
+      },
+      {
+        "n": 3,
+        "en": "Find covenant in an elementary dictionary. Discuss the meaning with children until they understand that it means “promise.” Have the children print the word “PROMISE” on a card."
+      },
+      {
+        "n": 4,
+        "en": "Read Gen. 9:11 and/or Gen. 8:21."
+      },
+      {
+        "n": 5,
+        "en": "Red, orange, yellow, green, blue, indigo, and violet. An easy way to remember the order is to think of the order as a man’s name—Roy G. Biv. a. The following are the colors and examples of God’s awesome character: Red—Redeemer—Ephesians 1:7. Orange—Offering—John 1:29. The Lamb was a sacrifice offering for sin. Yellow—YEAH! —God is always cheering for us. He is always there cheering for us. (Example: The Lost Coin, Luke 15:8-10) Green—Giving—John 3:16. Blue—BIG—Our God is awesome (Example: Moses and the Red Sea) Indigo—Immanuel—Matt. 1:23. Violet—Victorious—Psalm 60:12. b. Rainbow craft: Using the felt strips, glue, dowel, glitter and printed words for God’s character, make a beautiful rainbow. c. We are like little drops of “rain” that God uses to refresh the earth (our family, our home, our friends, our neighbors). When we let the light of Jesus shine through us, others will see the “rainbow” of His love. Invite children to let Jesus make their life like a rainbow."
+      },
+      {
+        "n": 6,
+        "en": "Revelation 4:3."
+      }
+    ]
+  },
+  {
+    "code": "YOU4915",
+    "path": "app/adventurer-honors/content/spiritual/you4915-steps-to-jesus.md",
+    "nameZh": "跟隨耶穌",
+    "nameEn": "Steps to Jesus",
+    "frontmatter": "id: you4915-steps-to-jesus\ncode: YOU4915\nnameZh: \"跟隨耶穌\"\nnameEn: \"Steps to Jesus\"\naliases: []\ncategory: spiritual\nanswerSource: draft\nstatus: non-review",
+    "requirementsZh": "7. 瞭解救恩的步驟：\n   a. 神就是愛（約翰一書 4：8） 。上帝非常愛我（耶31:3） 。上帝愛每一個人（約翰 3:16）。\n   b. 我是個罪人。每個人都會犯錯，且都是罪人，所以每一個人都需要救恩，因為罪人會帶來永遠的死亡(羅馬書 3:23)。\n   c. 因為上帝差遣耶穌死在十架上，所以我就不用面對永遠的死亡(約3:16） 。然後，祂又從死裡復活成為我的救主(林前 5：3--4） 。當我接受耶穌時，我所有的罪將得到赦免（羅 3:23）\n   d. 救恩是上帝給我的禮物。我必須邀請耶穌成為我個人的救主。\n   e. (約 1:12) 當我祈禱時，上帝會垂聽我的祈禱。\n   f. 如果我接受了耶穌，就會成為一個新造的人，成為一個不會想要再犯錯的人，因為我愛耶穌，耶穌也愛我(約翰福音 3：3-7；林後 5:17）。\n   g. 我可以確定，只要求耶穌成為我的救主，就可以得救（約翰 3:26；來13：5） 。因為我是個罪人，我仍舊還會再犯錯，但是如果我向耶穌認罪，祂必會饒恕我，並且完全消除我的罪惡(耶利米書 31:34)。當我的行為傷害了別人時，上帝要我跟他認錯（約翰一書 1：9） ，並且賠償他們（路加福音 19：8） ，這樣就能完全脫離罪惡了(約翰福音 8:11)。\n8. 閱讀下列四個聖經故事並且與大人討論他們所說談論的內容／救恩：\n   a. 衣索匹亞人(埃提阿伯)的改變(使徒行傳 8:26-40）\n   b. 乃縵得以潔淨（列王紀下 5 章）\n   c. 耶穌愛孩童(馬太福音 19:13-15)\n   d. 失落的錢幣、迷失的羊和浪子回頭(路加福音 15）",
+    "answersEn": [
+      {
+        "n": 1,
+        "en": "Make these concepts as simple as needed for the child to grasp. The most important concept is that she/he recognize the nature of sin (wrongdoing) and its consequences (eternal death), and that they ask Jesus to forgive and be his/her Savior."
+      },
+      {
+        "n": 2,
+        "en": "These stories would make great children’s church sermons, club devotionals, or family worship. Create wonder-inspiring momentsfor the child to understand God’s great interest in his/her salvation."
+      },
+      {
+        "n": 3,
+        "en": "Suggestion: illustrate the texts on a bookmark for their personal Bible or give to someone who wants to know more about Jesus."
+      },
+      {
+        "n": 4,
+        "en": "Encourage a planned, regular time with God—can be with parent, family worship, club, or alone. Commitment is key."
+      },
+      {
+        "n": 5,
+        "en": "Personal commitment in young children is often spontaneous and publicly shown. But this award encourages a personal decision made contemplatively at home with parents. However, when a home-inspired decision is not possible, a teacher or other caring individual may be the best one to nurture this first step as privately as possible. Warmly welcome the child as the newest member of the family of God, assuring them of God’s unfailing love, acceptance, forgiveness, and great care. An extra project is recommended. Encourage the child to further respond in their own way—create a song, poem, painting, drawing, sculpture, or express themselves with video, camera, or computer (but never force)."
+      }
+    ]
+  }
+]

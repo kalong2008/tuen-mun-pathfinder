@@ -5,8 +5,9 @@ nameZh: "動物"
 nameEn: "Animals"
 aliases: []
 category: nature
-answerSource: draft
+answerSource: translated
 status: non-review
+answerSourceNote: "內容參考 Wikibooks Animals 並整理為職員帶領指引"
 ---
 
 ## 要求
@@ -19,22 +20,36 @@ status: non-review
 
 ## 答案
 
+榮譽證目的：認識動物園常見動物，用繪畫與手工加深印象，並連繫聖經中的動物故事。
+
+帶領建議：可先看圖卡再討論。參考：[Wikibooks Animals](https://en.wikibooks.org/wiki/Adventist_Adventurer_Awards_and_Answers/Animals)。
+
 ### 要求 1
 
-參觀動物園或看影片後，說出五種動物，例如獅子、大象、長頸鹿、企鵝、猴子。
+說出五種動物園動物（如獅子、大象、長頸鹿、企鵝、猴子等）。
+
+帶領提示：用圖卡翻牌，每人說一種，湊滿五種。
 
 ### 要求 2
 
-選兩種動物畫圖並填色。
+選兩種畫畫並填色。
+
+材料：畫紙、蠟筆
 
 ### 要求 3
 
-從雜誌剪下三隻動物圖片，製成立體拼貼。
+從雜誌剪三隻動物，貼厚卡紙並可做成立牌。
+
+注意：剪刀由成人操作。
 
 ### 要求 4
 
-用黏土或彩泥製作最喜歡的動物園動物。
+用泥膠／黏土捏最愛的動物園動物。
+
+帶領提示：示範簡單形體（圓球＝頭、長條＝身體）；不求像真。
 
 ### 要求 5
 
-例如：挪亞方舟的動物、鯨魚、鴿子、驢子、獅子等。
+說出聖經中三種動物。示例：獅子（但以理）、驢駒（耶穌騎入城）、羊、魚、鳥、熊等。
+
+帶領提示：各講一個極短故事重點即可。
