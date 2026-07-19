@@ -213,7 +213,7 @@ export default function Page() {
                 scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
               }}
             >
-              <div className={`${headerStyle} p-4 flex items-center gap-3 border-b border-gray-200`}>
+              <div className={`${headerStyle} p-4 flex items-center justify-center gap-3 border-b border-gray-200`}>
                 <div className={`p-2 bg-white rounded-md ${iconColor} shadow-sm`}>
                   {getActivityIcon(activityType)}
                 </div>
