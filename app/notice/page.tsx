@@ -191,7 +191,7 @@ export default function Page() {
         }}
       >
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#29323c] to-[#485563]">
-          2025年活動通告
+          活動通告
         </span>
       </motion.h1>
       
