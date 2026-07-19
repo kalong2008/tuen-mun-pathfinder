@@ -77,7 +77,7 @@ export default function SideNav({
       >
         <nav
           aria-label="Global"
-          className="mx-auto lg:w-4/5 flex items-center lg:justify-start justify-between p-4 lg:px-0"
+          className="mx-auto lg:w-4/5 flex items-center lg:justify-center justify-between p-4 lg:px-0"
         >
           <div className="flex lg:flex-none">
             <Link href="/" className="-m-1.5 p-1.5">
