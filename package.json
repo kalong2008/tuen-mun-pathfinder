@@ -14,6 +14,7 @@
     "scan-photos": "node scripts/scan-and-generate-json.js",
     "migrate-notice-calendar": "node --env-file=.env.local scripts/migrate-notice-calendar.mjs",
     "migrate-hyperlinks": "node --env-file=.env.local scripts/migrate-hyperlinks.mjs",
+    "migrate-site-settings": "node --env-file=.env.local scripts/migrate-site-settings.mjs",
     "migrate-honors-to-markdown": "tsx scripts/migrate-honors-to-markdown.ts",
     "rewrite-honor-markdown-files": "tsx scripts/rewrite-honor-markdown-files.ts"
   },

@@ -1,6 +1,5 @@
 "use client";
 
-import { Fragment } from "react";
 import {
   Disclosure,
   DisclosureButton,
@@ -8,7 +7,6 @@ import {
   Popover,
   PopoverButton,
   PopoverPanel,
-  Transition,
   useClose,
 } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
@@ -21,26 +19,24 @@ export function getYearsWithLinks(
   hyperlinks: HyperlinksByYear,
   years: readonly number[]
 ): YearWithLinks[] {
-  return years.map((y) => ({
-    yearLabel: `${y}年`,
-    links: hyperlinks[`hyperLink${y}` as keyof HyperlinksByYear] ?? [],
-  }));
+  return years
+    .map((y) => ({
+      yearLabel: `${y}年`,
+      links: hyperlinks[`hyperLink${y}` as keyof HyperlinksByYear] ?? [],
+    }))
+    .filter((year) => year.links.length > 0);
 }
 
 function PopMenu({ linkItem }: { linkItem: HyperlinkItem }) {
   const close = useClose();
   return (
-    <div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
-      <div className="flex-auto">
-        <Link
-          href={linkItem.href}
-          className="block text-gray-900"
-          onClick={() => close()}
-        >
-          {linkItem.name}
-        </Link>
-      </div>
-    </div>
+    <Link
+      href={linkItem.href}
+      className="block rounded-md px-2.5 py-2 text-sm leading-6 text-gray-900 hover:bg-gray-50"
+      onClick={() => close()}
+    >
+      {linkItem.name}
+    </Link>
   );
 }
 
@@ -58,6 +54,8 @@ export function YearRangePopover({
   onEnter: (isOpen: boolean) => void;
   onLeave: (isOpen: boolean) => void;
 }) {
+  const isMultiColumn = yearsWithLinks.length > 1;
+
   return (
     <Popover className="relative">
       {({ open }) => (
@@ -69,35 +67,28 @@ export function YearRangePopover({
             {label}
             <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-gray-400" />
           </PopoverButton>
-          <Transition
-            as={Fragment}
-            enter="transition ease-out duration-200"
-            enterFrom="opacity-0 translate-y-1"
-            enterTo="opacity-100 translate-y-0"
-            leave="transition ease-in duration-150"
-            leaveFrom="opacity-100 translate-y-0"
-            leaveTo="opacity-0 translate-y-1"
+          <PopoverPanel
+            anchor={{ to: "bottom start", gap: 12, padding: 16 }}
+            data-testid="year-range-popover-panel"
+            onMouseEnter={() => onEnter(open)}
+            onMouseLeave={() => onLeave(open)}
+            className="z-[60] w-max max-w-[calc(100vw-2rem)] !h-auto !max-h-[70vh] overflow-y-auto rounded-2xl bg-white p-2 shadow-lg ring-1 ring-gray-900/5"
           >
-            <PopoverPanel
-              transition
-              className="absolute top-full z-10 mt-3 w-screen max-w-max max-h-[80vh] overflow-y-auto rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-            >
-              <div className={yearsWithLinks.length > 1 ? "flex" : "p-1"}>
-                {yearsWithLinks.map(({ yearLabel, links }) => (
-                  <div key={yearLabel} className="p-1">
-                    {yearsWithLinks.length > 1 && (
-                      <p className="font-bold text-gray-900 relative flex items-center gap-x-6 rounded-lg p-4 text-md leading-6 hover:bg-gray-50">
-                        {yearLabel}
-                      </p>
-                    )}
-                    {links.map((item) => (
-                      <PopMenu linkItem={item} key={item.name} />
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </PopoverPanel>
-          </Transition>
+            <div className={isMultiColumn ? "flex items-start gap-2" : ""}>
+              {yearsWithLinks.map(({ yearLabel, links }) => (
+                <div key={yearLabel} className="min-w-0 px-1">
+                  {isMultiColumn && (
+                    <p className="px-2.5 py-2 text-sm font-semibold text-gray-900">
+                      {yearLabel}
+                    </p>
+                  )}
+                  {links.map((item) => (
+                    <PopMenu linkItem={item} key={item.name} />
+                  ))}
+                </div>
+              ))}
+            </div>
+          </PopoverPanel>
         </div>
       )}
     </Popover>
