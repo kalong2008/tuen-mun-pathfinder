@@ -71,11 +71,6 @@
       margin-bottom: 0.4rem;
     }
 
-    .row {
-      display: flex;
-      gap: 0.5rem;
-    }
-
     input[type="text"] {
       width: 100%;
       padding: 0.65rem 0.75rem;
@@ -99,7 +94,6 @@
       background: transparent;
       border: 1px solid var(--line);
       color: inherit;
-      white-space: nowrap;
     }
 
     button.primary {
@@ -130,9 +124,7 @@
     .status.ok { color: var(--ok); }
     .status.err { color: var(--danger); }
 
-    .result {
-      margin-top: 1rem;
-    }
+    .result { margin-top: 1rem; }
 
     .result h2 {
       margin: 0 0 0.6rem;
@@ -148,21 +140,23 @@
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       font-size: 0.88rem;
     }
+
+    input[type="file"] { display: none; }
   </style>
 </head>
 <body>
   <main>
     <h1>Photo JSON Generator</h1>
-    <p class="lede">Pick any photo folder. Writes <code>{folder}.json</code> next to the images with URLs like <code>/photo/2026/2026-08-promotion/...</code>.</p>
+    <p class="lede" id="lede">
+      Generates <code>{folder}.json</code> with URLs like <code>/photo/2026/2026-08-promotion/...</code>.
+    </p>
 
     <form id="form">
       <div class="field">
-        <label for="path">Folder path</label>
-        <div class="row">
-          <input id="path" type="text" name="path" placeholder="/Users/you/Pictures/2026-08-promotion" autocomplete="off">
-          <button type="button" class="secondary" id="choose">Choose folder</button>
-        </div>
-        <p class="meta" id="meta">Choose a folder or paste a path.</p>
+        <label>Photo folder</label>
+        <button type="button" class="secondary" id="choose">Choose folder</button>
+        <input id="folder-input" type="file" webkitdirectory multiple>
+        <p class="meta" id="meta">Choose a folder of images.</p>
       </div>
 
       <div class="field">
@@ -181,14 +175,23 @@
   </main>
 
   <script>
-    const pathInput = document.getElementById('path');
+    const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp', '.gif'];
     const yearInput = document.getElementById('year');
     const meta = document.getElementById('meta');
     const status = document.getElementById('status');
     const choose = document.getElementById('choose');
+    const folderInput = document.getElementById('folder-input');
     const generate = document.getElementById('generate');
     const preview = document.getElementById('preview');
     const urls = document.getElementById('urls');
+
+    const usesLocalServer = location.protocol === 'http:' &&
+      (location.hostname === '127.0.0.1' || location.hostname === 'localhost');
+    let selected = { folderName: '', files: [], dirHandle: null, path: '' };
+
+    document.getElementById('lede').innerHTML = usesLocalServer
+      ? 'Choose a folder. JSON is written next to the images, including in Safari.'
+      : 'Safari cannot write into a folder from a double-clicked file. This download must be moved into the photo folder, or run <code>npm run generate-photo-json-gui</code> instead.';
 
     function setStatus(message, kind) {
       status.hidden = !message;
@@ -196,13 +199,56 @@
       status.className = 'status' + (kind ? ' ' + kind : '');
     }
 
-    function applyInspect(data) {
-      pathInput.value = data.path || '';
-      if (data.year) yearInput.value = data.year;
-      const count = typeof data.imageCount === 'number' ? data.imageCount : 0;
-      const folder = data.folderName || 'folder';
-      const yearText = data.year ? 'Year ' + data.year : 'Year not inferred — enter it below';
-      meta.textContent = folder + ' · ' + count + ' image(s) · ' + yearText;
+    function isImageName(name) {
+      const ext = name.slice(name.lastIndexOf('.')).toLowerCase();
+      return IMAGE_EXTENSIONS.includes(ext) && !name.toLowerCase().endsWith('.json');
+    }
+
+    function inferYear(folderName, explicitYear) {
+      if (explicitYear) {
+        if (!/^\d{4}$/.test(explicitYear)) {
+          throw new Error('Year must be 4 digits, got: ' + explicitYear);
+        }
+        return explicitYear;
+      }
+      const match = folderName.match(/^(\d{4})/);
+      if (match) return match[1];
+      throw new Error(
+        'Could not infer year from folder "' + folderName + '". ' +
+        'Name the folder like 2026-08-promotion or enter the year.'
+      );
+    }
+
+    function buildPhotoUrl(year, folderName, fileName) {
+      return '/photo/' + year + '/' + folderName + '/' + fileName;
+    }
+
+    function sortByName(items) {
+      return items.slice().sort((a, b) =>
+        a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: 'base' })
+      );
+    }
+
+    async function imageSize(file) {
+      if (typeof createImageBitmap === 'function') {
+        const bitmap = await createImageBitmap(file);
+        const size = { width: bitmap.width || 0, height: bitmap.height || 0 };
+        bitmap.close();
+        return size;
+      }
+      return new Promise((resolve, reject) => {
+        const objectUrl = URL.createObjectURL(file);
+        const img = new Image();
+        img.onload = () => {
+          resolve({ width: img.naturalWidth || 0, height: img.naturalHeight || 0 });
+          URL.revokeObjectURL(objectUrl);
+        };
+        img.onerror = () => {
+          URL.revokeObjectURL(objectUrl);
+          reject(new Error('Could not read ' + file.name));
+        };
+        img.src = objectUrl;
+      });
     }
 
     async function postJson(url, body) {
@@ -216,37 +262,133 @@
       return data;
     }
 
-    async function inspectPath() {
-      const folderPath = pathInput.value.trim();
-      if (!folderPath) {
-        meta.textContent = 'Choose a folder or paste a path.';
-        return;
-      }
+    function applyServerInspect(data) {
+      selected = { folderName: data.folderName || '', files: [], dirHandle: null, path: data.path || '' };
+      if (data.year) yearInput.value = data.year;
+      const count = typeof data.imageCount === 'number' ? data.imageCount : 0;
+      const yearText = data.year ? 'Year ' + data.year : 'Year not inferred — enter it below';
+      meta.textContent = (data.folderName || 'folder') + ' · ' + count + ' image(s) · ' + yearText;
+    }
+
+    function applySelection(folderName, files, dirHandle) {
+      selected = { folderName, files, dirHandle, path: '' };
       try {
-        applyInspect(await postJson('/inspect', { path: folderPath }));
-      } catch (error) {
-        meta.textContent = error.message;
+        const year = inferYear(folderName);
+        yearInput.value = year;
+        meta.textContent = folderName + ' · ' + files.length + ' image(s) · Year ' + year;
+      } catch {
+        yearInput.value = '';
+        meta.textContent = folderName + ' · ' + files.length + ' image(s) · Year not inferred — enter it below';
       }
+    }
+
+    function filesFromInput(fileList) {
+      const all = Array.from(fileList || []);
+      if (all.length === 0) return { folderName: '', files: [] };
+
+      const folderName = (all[0].webkitRelativePath || all[0].name).split('/')[0];
+      const files = all.filter((file) => {
+        const rel = file.webkitRelativePath || file.name;
+        const parts = rel.split('/');
+        return parts.length === 2 && parts[0] === folderName && isImageName(parts[1]);
+      }).map((file) => ({ name: file.name, file }));
+
+      return { folderName, files: sortByName(files) };
+    }
+
+    async function filesFromDirectoryHandle(dirHandle) {
+      const files = [];
+      for await (const [name, handle] of dirHandle.entries()) {
+        if (handle.kind === 'file' && isImageName(name)) {
+          files.push({ name, file: await handle.getFile() });
+        }
+      }
+      return { folderName: dirHandle.name, files: sortByName(files) };
+    }
+
+    async function buildPhotos(folderName, files, year) {
+      if (!folderName || files.length === 0) {
+        throw new Error('Choose a folder that contains images first.');
+      }
+      const resolvedYear = inferYear(folderName, year);
+      const photos = [];
+      for (const item of files) {
+        try {
+          const size = await imageSize(item.file);
+          photos.push({
+            url: buildPhotoUrl(resolvedYear, folderName, item.name),
+            width: size.width,
+            height: size.height,
+          });
+        } catch {
+          photos.push({
+            url: buildPhotoUrl(resolvedYear, folderName, item.name),
+            width: 0,
+            height: 0,
+          });
+        }
+      }
+      return photos;
+    }
+
+    function downloadJson(folderName, photos) {
+      const blob = new Blob([JSON.stringify(photos, null, 2)], { type: 'application/json' });
+      const objectUrl = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = objectUrl;
+      link.download = folderName + '.json';
+      link.click();
+      URL.revokeObjectURL(objectUrl);
+    }
+
+    async function writeJsonToDirectory(dirHandle, folderName, photos) {
+      const fileHandle = await dirHandle.getFileHandle(folderName + '.json', { create: true });
+      const writable = await fileHandle.createWritable();
+      await writable.write(JSON.stringify(photos, null, 2));
+      await writable.close();
+    }
+
+    function showPreview(photos) {
+      urls.replaceChildren();
+      for (const photo of photos.slice(0, 5)) {
+        const item = document.createElement('li');
+        const code = document.createElement('code');
+        code.textContent = photo.url;
+        item.appendChild(code);
+        urls.appendChild(item);
+      }
+      preview.hidden = photos.length === 0;
     }
 
     choose.addEventListener('click', async () => {
       choose.disabled = true;
       setStatus('');
       try {
-        applyInspect(await postJson('/pick-folder'));
+        if (usesLocalServer) {
+          applyServerInspect(await postJson('/pick-folder'));
+        } else if (typeof window.showDirectoryPicker === 'function') {
+          const dirHandle = await window.showDirectoryPicker();
+          const { folderName, files } = await filesFromDirectoryHandle(dirHandle);
+          if (files.length === 0) throw new Error('No image files found in folder: ' + folderName);
+          applySelection(folderName, files, dirHandle);
+        } else {
+          folderInput.click();
+        }
       } catch (error) {
-        if (!/cancelled/i.test(error.message)) setStatus(error.message, 'err');
+        if (error && (error.name === 'AbortError' || /cancelled/i.test(error.message || ''))) return;
+        setStatus(error.message || String(error), 'err');
       } finally {
         choose.disabled = false;
       }
     });
 
-    let inspectTimer = null;
-    pathInput.addEventListener('blur', inspectPath);
-    pathInput.addEventListener('change', inspectPath);
-    pathInput.addEventListener('input', () => {
-      clearTimeout(inspectTimer);
-      inspectTimer = setTimeout(inspectPath, 300);
+    folderInput.addEventListener('change', () => {
+      const { folderName, files } = filesFromInput(folderInput.files);
+      if (files.length === 0) {
+        setStatus('No image files found in that folder.', 'err');
+        return;
+      }
+      applySelection(folderName, files, null);
     });
 
     document.getElementById('form').addEventListener('submit', async (event) => {
@@ -256,21 +398,34 @@
       urls.replaceChildren();
       setStatus('Generating…');
       try {
-        const result = await postJson('/generate', {
-          path: pathInput.value.trim(),
-          year: yearInput.value.trim(),
-        });
-        setStatus('Wrote ' + result.count + ' photos to ' + result.jsonPath, 'ok');
-        for (const url of result.sampleUrls || []) {
-          const item = document.createElement('li');
-          const code = document.createElement('code');
-          code.textContent = url;
-          item.appendChild(code);
-          urls.appendChild(item);
+        if (usesLocalServer && selected.path) {
+          const result = await postJson('/generate', {
+            path: selected.path,
+            year: yearInput.value.trim(),
+          });
+          setStatus('Wrote ' + result.count + ' photos to ' + result.jsonPath, 'ok');
+          showPreview((result.sampleUrls || []).map((url) => ({ url })));
+        } else {
+          const photos = await buildPhotos(
+            selected.folderName,
+            selected.files,
+            yearInput.value.trim()
+          );
+          if (selected.dirHandle) {
+            await writeJsonToDirectory(selected.dirHandle, selected.folderName, photos);
+            setStatus('Wrote ' + photos.length + ' photos to ' + selected.folderName + '.json in the selected folder', 'ok');
+          } else {
+            downloadJson(selected.folderName, photos);
+            setStatus(
+              'Downloaded ' + selected.folderName + '.json (' + photos.length +
+              ' photos). Safari cannot save into the folder from a double-clicked file — move it there, or use npm run generate-photo-json-gui.',
+              'ok'
+            );
+          }
+          showPreview(photos);
         }
-        preview.hidden = (result.sampleUrls || []).length === 0;
       } catch (error) {
-        setStatus(error.message, 'err');
+        setStatus(error.message || String(error), 'err');
       } finally {
         generate.disabled = false;
       }

@@ -18,7 +18,7 @@ These scripts help maintain JSON metadata files for photo galleries by:
 npm run generate-photo-json-gui
 ```
 
-Opens a local page at http://127.0.0.1:3456. Pick any photo folder, click Generate. See [photo-json-gui/README.md](photo-json-gui/README.md).
+Or double-click [photo-json-gui/index.html](photo-json-gui/index.html) in Chrome or Safari (not Cursor preview). See [photo-json-gui/README.md](photo-json-gui/README.md).
 
 ### Generate JSON for a Single Folder (CLI)
 
@@ -36,7 +36,7 @@ npm run scan-photos public/photo/2025
 
 ### `photo-json-gui` — Local webpage
 
-Same generator as the CLI, with a folder picker. Details: [photo-json-gui/README.md](photo-json-gui/README.md).
+Standalone HTML (or `npm run generate-photo-json-gui`). Details: [photo-json-gui/README.md](photo-json-gui/README.md).
 
 ```bash
 npm run generate-photo-json-gui

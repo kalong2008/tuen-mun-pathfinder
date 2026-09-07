@@ -1,47 +1,42 @@
 # Photo JSON GUI
 
-Local webpage for generating photo gallery JSON without using the command line. It reuses `scripts/generate-photo-json.js`, so the output matches the CLI.
+One HTML file. No server required.
 
-URLs look like `/photo/2026/2026-08-promotion/2026-08-promotion-1.jpg`. The folder can be anywhere on disk — it does not have to live in this repo.
+It generates `{folder}.json` with URLs like `/photo/2026/2026-08-promotion/2026-08-promotion-1.jpg`.
 
-## Usage
+## Open the file
 
-From the project root:
+Double-click [`index.html`](index.html) and open it in **Chrome or Safari**.
+
+Do not open it in Cursor’s preview / Simple Browser. Those load `file://` pages inside a frame, which browsers block:
+
+`Unsafe attempt to load URL file://... 'file:' URLs are treated as unique security origins.`
+
+## Use it
+
+1. Click **Choose folder** and pick the photo folder (for example `2026-08-promotion`).
+2. Confirm the year, or type a 4-digit year if the folder name does not start with one.
+3. Click **Generate JSON**.
+
+### Save into the photo folder
+
+Safari (and a double-clicked `file://` page) cannot write into an arbitrary folder. That is a browser security rule, not something this page can override.
+
+To write `{folder}.json` next to the images, including in Safari:
 
 ```bash
 npm run generate-photo-json-gui
 ```
 
-A browser tab opens at [http://127.0.0.1:3456](http://127.0.0.1:3456). Stop the server with Ctrl+C.
+That opens [http://127.0.0.1:3456](http://127.0.0.1:3456). The Finder folder picker runs on your Mac, and the JSON is saved in the folder you chose. Stop with Ctrl+C.
 
-1. Click **Choose folder** (macOS Finder) or paste a folder path.
-2. Confirm the year if it was inferred, or type a 4-digit year.
-3. Click **Generate JSON**.
+If you double-click `index.html` in Safari, the browser can only download the JSON. Move that file into the photo folder.
 
-The file `{folder-name}.json` is written next to the images.
-
-## What it writes
-
-```json
-[
-  {
-    "url": "/photo/2026/2026-08-promotion/2026-08-promotion-1.jpg",
-    "width": 4000,
-    "height": 3000
-  }
-]
-```
-
-Year is taken from, in order:
+## Year
 
 1. The Year field, if you fill it
 2. A leading year in the folder name (`2026-08-promotion` → `2026`)
-3. A parent folder that is a 4-digit year (`~/Pictures/2026/camp` → `2026`)
 
 Supported images: jpg, jpeg, png, webp, gif.
 
-## Notes
-
-- The server binds to localhost only (`127.0.0.1:3456`).
-- **Choose folder** uses the macOS Finder dialog. On other machines, paste the path instead.
-- For many folders at once, use `npm run scan-photos <parent-folder>` instead.
+For many folders at once, use `npm run scan-photos <parent-folder>` instead.
