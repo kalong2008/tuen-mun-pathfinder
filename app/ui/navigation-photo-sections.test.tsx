@@ -55,9 +55,6 @@ describe("YearRangePopover", () => {
       <YearRangePopover
         label="2021-2025相片"
         yearsWithLinks={yearsWithLinks}
-        triggerRef={null}
-        onEnter={() => {}}
-        onLeave={() => {}}
       />
     );
 
@@ -69,5 +66,49 @@ describe("YearRangePopover", () => {
     expect(panel.firstElementChild).toHaveClass("items-start");
     expect(screen.getByRole("link", { name: "2021 露營" })).toHaveClass("py-2", "leading-6");
     expect(screen.getByRole("link", { name: "2024 旅行" })).toHaveClass("py-2", "leading-6");
+  });
+
+  test("closes the panel after the pointer leaves it even if the trigger is not focused", async () => {
+    vi.useFakeTimers();
+
+    render(
+      <YearRangePopover
+        label="2021-2025相片"
+        yearsWithLinks={yearsWithLinks}
+      />
+    );
+
+    const trigger = screen.getByRole("button", { name: "2021-2025相片" });
+    fireEvent.click(trigger);
+    trigger.blur();
+
+    const panel = screen.getByTestId("year-range-popover-panel");
+    fireEvent.mouseLeave(panel);
+    await vi.advanceTimersByTimeAsync(200);
+
+    expect(screen.queryByTestId("year-range-popover-panel")).not.toBeInTheDocument();
+    vi.useRealTimers();
+  });
+
+  test("stays open when the pointer moves from the trigger onto the panel", async () => {
+    vi.useFakeTimers();
+
+    render(
+      <YearRangePopover
+        label="2021-2025相片"
+        yearsWithLinks={yearsWithLinks}
+      />
+    );
+
+    const trigger = screen.getByRole("button", { name: "2021-2025相片" });
+    fireEvent.mouseEnter(trigger.parentElement as HTMLElement);
+    const panel = screen.getByTestId("year-range-popover-panel");
+
+    fireEvent.mouseLeave(trigger.parentElement as HTMLElement);
+    fireEvent.mouseEnter(panel);
+    await vi.advanceTimersByTimeAsync(200);
+
+    expect(screen.getByTestId("year-range-popover-panel")).toBeInTheDocument();
+    vi.useRealTimers();
   });
 });

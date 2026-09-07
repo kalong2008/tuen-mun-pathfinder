@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Dialog, DialogPanel, PopoverGroup, useClose } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -19,8 +19,6 @@ import {
   YearRangePopover,
   YearRangeDisclosure,
 } from "./navigation-photo-sections";
-
-const timeoutDuration = 120;
 
 export default function SideNav({
   hyperlinks,
@@ -43,23 +41,6 @@ export default function SideNav({
         setIsVisible(true);
       }
     }
-  });
-
-  const triggerRefs = useRef<(HTMLButtonElement | null)[]>([]);
-  const timeOutRef = useRef<NodeJS.Timeout | null>(null);
-
-  const createPopoverHandlers = (index: number) => ({
-    onEnter: (isOpen: boolean) => {
-      if (timeOutRef.current) clearTimeout(timeOutRef.current);
-      if (!isOpen) triggerRefs.current[index]?.click();
-    },
-    onLeave: (isOpen: boolean) => {
-      timeOutRef.current = setTimeout(() => {
-        if (isOpen && document.activeElement === triggerRefs.current[index]) {
-          triggerRefs.current[index]?.click();
-        }
-      }, timeoutDuration);
-    },
   });
 
   const photoSectionsData = photoSections.map((section) => ({
@@ -116,16 +97,11 @@ export default function SideNav({
             </button>
           </div>
           <PopoverGroup className="hidden lg:flex lg:gap-x-6 lg:pl-6 items-center">
-            {photoSectionsData.map((section, index) => (
+            {photoSectionsData.map((section) => (
               <YearRangePopover
                 key={section.id}
                 label={section.label}
                 yearsWithLinks={section.yearsWithLinks}
-                triggerRef={(el) => {
-                  triggerRefs.current[index] = el;
-                }}
-                onEnter={createPopoverHandlers(index).onEnter}
-                onLeave={createPopoverHandlers(index).onLeave}
               />
             ))}
             {/* other links */}
