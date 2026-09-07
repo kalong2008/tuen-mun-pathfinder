@@ -12,10 +12,18 @@ These scripts help maintain JSON metadata files for photo galleries by:
 
 ## Quick Start
 
-### Generate JSON for a Single Folder
+### Generate JSON from the GUI (easiest)
 
 ```bash
-npm run generate-photo-json public/photo/2025/2025-09-tpark
+npm run generate-photo-json-gui
+```
+
+Opens a local page at http://127.0.0.1:3456. Pick any photo folder, click Generate. See [photo-json-gui/README.md](photo-json-gui/README.md).
+
+### Generate JSON for a Single Folder (CLI)
+
+```bash
+npm run generate-photo-json ~/Pictures/2026-08-promotion
 ```
 
 ### Scan and Auto-Generate for All Subfolders
@@ -25,6 +33,14 @@ npm run scan-photos public/photo/2025
 ```
 
 ## Available Scripts
+
+### `photo-json-gui` — Local webpage
+
+Same generator as the CLI, with a folder picker. Details: [photo-json-gui/README.md](photo-json-gui/README.md).
+
+```bash
+npm run generate-photo-json-gui
+```
 
 ### 1. `generate-photo-json.js` - Single Folder Generator
 
@@ -357,6 +373,10 @@ node --env-file=.env.local scripts/migrate-photo-sections.mjs
 ```
 scripts/
 ├── generate-photo-json.js          # Core function for generating JSON
+├── photo-json-gui/                 # Local webpage GUI
+│   ├── server.js
+│   ├── index.html
+│   └── README.md
 ├── scan-and-generate-json.js       # Batch scanner (recommended)
 ├── schema-notice-calendar.sql      # Neon schema for calendar_events & notices
 ├── schema-hyperlinks.sql           # Neon schema for hyperlinks
@@ -376,7 +396,7 @@ scripts/
 1. **After adding new photos**: Run `scan-photos` on the parent folder
 2. **After reorganizing**: Run `scan-photos` on affected folders
 3. **Regular maintenance**: Periodically scan the entire `public/photo` directory
-4. **Single folder updates**: Use `generate-photo-json` for quick updates
+4. **Single folder updates**: Use the GUI (`npm run generate-photo-json-gui`) or `generate-photo-json`
 
 ## Related Files
 

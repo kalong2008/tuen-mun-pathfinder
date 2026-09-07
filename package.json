@@ -11,6 +11,7 @@
     "test:coverage": "vitest run --coverage",
     "lint": "next lint",
     "generate-photo-json": "node scripts/generate-photo-json.js",
+    "generate-photo-json-gui": "node scripts/photo-json-gui/server.js",
     "scan-photos": "node scripts/scan-and-generate-json.js",
     "migrate-notice-calendar": "node --env-file=.env.local scripts/migrate-notice-calendar.mjs",
     "migrate-hyperlinks": "node --env-file=.env.local scripts/migrate-hyperlinks.mjs",

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo JSON Generator</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f1ea;
+      --card: #fffdf8;
+      --ink: #1f1a14;
+      --muted: #6b6258;
+      --line: #d9d0c3;
+      --accent: #2f5d3a;
+      --accent-ink: #f7fff8;
+      --danger: #8a2b2b;
+      --ok: #1f5d32;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161410;
+        --card: #221e18;
+        --ink: #f4efe6;
+        --muted: #b4aa9c;
+        --line: #3a342c;
+        --accent: #6fbf84;
+        --accent-ink: #122016;
+        --danger: #f0a0a0;
+        --ok: #8fd9a4;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.6rem;
+    }
+
+    .lede {
+      margin: 0 0 1.5rem;
+      color: var(--muted);
+    }
+
+    form, .result {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .row {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.65rem 0.75rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: transparent;
+      border: 1px solid var(--line);
+      color: inherit;
+      white-space: nowrap;
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: var(--accent-ink);
+      margin-top: 1.1rem;
+      width: 100%;
+    }
+
+    button:disabled {
+      opacity: 0.55;
+      cursor: wait;
+    }
+
+    .field { margin-bottom: 1rem; }
+
+    .meta {
+      margin: 0.75rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .status {
+      margin: 1rem 0 0;
+      font-weight: 600;
+    }
+
+    .status.ok { color: var(--ok); }
+    .status.err { color: var(--danger); }
+
+    .result {
+      margin-top: 1rem;
+    }
+
+    .result h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1rem;
+    }
+
+    .result ol {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Photo JSON Generator</h1>
+    <p class="lede">Pick any photo folder. Writes <code>{folder}.json</code> next to the images with URLs like <code>/photo/2026/2026-08-promotion/...</code>.</p>
+
+    <form id="form">
+      <div class="field">
+        <label for="path">Folder path</label>
+        <div class="row">
+          <input id="path" type="text" name="path" placeholder="/Users/you/Pictures/2026-08-promotion" autocomplete="off">
+          <button type="button" class="secondary" id="choose">Choose folder</button>
+        </div>
+        <p class="meta" id="meta">Choose a folder or paste a path.</p>
+      </div>
+
+      <div class="field">
+        <label for="year">Year</label>
+        <input id="year" type="text" name="year" inputmode="numeric" maxlength="4" placeholder="2026">
+      </div>
+
+      <button type="submit" class="primary" id="generate">Generate JSON</button>
+      <p class="status" id="status" hidden></p>
+    </form>
+
+    <section class="result" id="preview" hidden>
+      <h2>URL preview</h2>
+      <ol id="urls"></ol>
+    </section>
+  </main>
+
+  <script>
+    const pathInput = document.getElementById('path');
+    const yearInput = document.getElementById('year');
+    const meta = document.getElementById('meta');
+    const status = document.getElementById('status');
+    const choose = document.getElementById('choose');
+    const generate = document.getElementById('generate');
+    const preview = document.getElementById('preview');
+    const urls = document.getElementById('urls');
+
+    function setStatus(message, kind) {
+      status.hidden = !message;
+      status.textContent = message;
+      status.className = 'status' + (kind ? ' ' + kind : '');
+    }
+
+    function applyInspect(data) {
+      pathInput.value = data.path || '';
+      if (data.year) yearInput.value = data.year;
+      const count = typeof data.imageCount === 'number' ? data.imageCount : 0;
+      const folder = data.folderName || 'folder';
+      const yearText = data.year ? 'Year ' + data.year : 'Year not inferred — enter it below';
+      meta.textContent = folder + ' · ' + count + ' image(s) · ' + yearText;
+    }
+
+    async function postJson(url, body) {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body || {}),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Request failed');
+      return data;
+    }
+
+    async function inspectPath() {
+      const folderPath = pathInput.value.trim();
+      if (!folderPath) {
+        meta.textContent = 'Choose a folder or paste a path.';
+        return;
+      }
+      try {
+        applyInspect(await postJson('/inspect', { path: folderPath }));
+      } catch (error) {
+        meta.textContent = error.message;
+      }
+    }
+
+    choose.addEventListener('click', async () => {
+      choose.disabled = true;
+      setStatus('');
+      try {
+        applyInspect(await postJson('/pick-folder'));
+      } catch (error) {
+        if (!/cancelled/i.test(error.message)) setStatus(error.message, 'err');
+      } finally {
+        choose.disabled = false;
+      }
+    });
+
+    let inspectTimer = null;
+    pathInput.addEventListener('blur', inspectPath);
+    pathInput.addEventListener('change', inspectPath);
+    pathInput.addEventListener('input', () => {
+      clearTimeout(inspectTimer);
+      inspectTimer = setTimeout(inspectPath, 300);
+    });
+
+    document.getElementById('form').addEventListener('submit', async (event) => {
+      event.preventDefault();
+      generate.disabled = true;
+      preview.hidden = true;
+      urls.replaceChildren();
+      setStatus('Generating…');
+      try {
+        const result = await postJson('/generate', {
+          path: pathInput.value.trim(),
+          year: yearInput.value.trim(),
+        });
+        setStatus('Wrote ' + result.count + ' photos to ' + result.jsonPath, 'ok');
+        for (const url of result.sampleUrls || []) {
+          const item = document.createElement('li');
+          const code = document.createElement('code');
+          code.textContent = url;
+          item.appendChild(code);
+          urls.appendChild(item);
+        }
+        preview.hidden = (result.sampleUrls || []).length === 0;
+      } catch (error) {
+        setStatus(error.message, 'err');
+      } finally {
+        generate.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
