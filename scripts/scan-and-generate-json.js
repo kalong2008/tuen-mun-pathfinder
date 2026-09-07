@@ -5,7 +5,7 @@
  * that either don't have JSON files or have mismatched photo counts.
  * 
  * Usage: node scripts/scan-and-generate-json.js <parent-folder-path>
- * Example: node scripts/scan-and-generate-json.js public/photo/2025
+ * Example: node scripts/scan-and-generate-json.js ~/Pictures/2026
  */
 
 const fs = require('fs');
@@ -125,7 +125,7 @@ async function scanAndGenerate(parentFolderPath) {
 
     // Generate JSON (quiet mode to reduce duplicate output)
     try {
-      await generatePhotoJson(subfolderPath, undefined, true);
+      await generatePhotoJson(subfolderPath, { quiet: true });
       console.log(`   ✓ Successfully generated JSON\n`);
       processed++;
     } catch (error) {
@@ -151,7 +151,7 @@ if (require.main === module) {
   
   if (args.length === 0) {
     console.error('Usage: node scripts/scan-and-generate-json.js <parent-folder-path>');
-    console.error('Example: node scripts/scan-and-generate-json.js public/photo/2025');
+    console.error('Example: node scripts/scan-and-generate-json.js ~/Pictures/2026');
     console.error('\nThis script will:');
     console.error('  1. Scan all subfolders in the specified folder');
     console.error('  2. Check if JSON files exist for each subfolder');
