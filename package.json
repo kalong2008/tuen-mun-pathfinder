@@ -47,6 +47,7 @@
     "react-icons": "^5.5.0",
     "react-markdown": "^10.1.0",
     "react-photo-album": "^2.4.1",
+    "react-player": "^3.4.0",
     "rehype-highlight": "^7.0.2",
     "rehype-katex": "^7.0.1",
     "rehype-raw": "^7.0.0",

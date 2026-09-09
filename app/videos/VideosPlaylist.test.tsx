@@ -23,13 +23,22 @@ vi.mock("next/image", () => ({
   }) => <img alt={alt} src={src} />,
 }));
 
-vi.mock("next-video/player", () => ({
+vi.mock("@/app/videos/ClubVideoPlayer", () => ({
   default: ({ playbackId }: { playbackId: string }) => (
-    <div data-testid="next-video-player">{playbackId}</div>
+    <div data-testid="club-video-player">{playbackId}</div>
   ),
 }));
 
 const videos: ClubVideo[] = [
+  {
+    id: "v-long",
+    title: "2026年幼鋒會升級營完整活動回顧影片",
+    year: 2026,
+    playbackId: "playbackLongTitle",
+    thumbnailTime: null,
+    sortOrder: 1,
+    createdAt: "2026-05-01T00:00:00.000Z",
+  },
   {
     id: "v-2026",
     title: "2026 露營",
@@ -59,15 +68,18 @@ describe("VideosPlaylist", () => {
     render(<VideosPlaylist videos={[]} />);
 
     expect(screen.getByText("暫時未有影片。管理員可在後台貼上 Mux Playback ID。")).toBeInTheDocument();
-    expect(screen.queryByTestId("next-video-player")).not.toBeInTheDocument();
+    expect(screen.queryByTestId("club-video-player")).not.toBeInTheDocument();
   });
 
   test("plays the requested video and switches on playlist click", () => {
     render(<VideosPlaylist videos={videos} initialVideoId="v-2024" />);
 
-    expect(screen.getByTestId("next-video-player")).toHaveTextContent("playbackOlder");
+    expect(screen.getByTestId("club-video-player")).toHaveTextContent("playbackOlder");
     expect(screen.getByRole("heading", { name: "2024 露營" })).toBeInTheDocument();
-    expect(screen.getByText("2 部影片")).toBeInTheDocument();
+    expect(screen.getByText("3 部影片")).toBeInTheDocument();
+    expect(
+      screen.getByRole("button", { name: /2026年幼鋒會升級營完整活動回顧影片/ }),
+    ).toBeInTheDocument();
 
     fireEvent.click(screen.getByRole("button", { name: /2026 露營/ }));
 

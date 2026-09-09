@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import Player from "next-video/player";
 import { useRouter } from "next/navigation";
+import ClubVideoPlayer from "@/app/videos/ClubVideoPlayer";
 import {
   getMuxThumbnailUrl,
   groupVideosByYear,
@@ -38,13 +38,10 @@ export default function VideosPlaylist({
     <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(18rem,1fr)]">
       <div className="lg:sticky lg:top-24 lg:self-start">
         <div className="overflow-hidden rounded-2xl bg-black shadow-lg">
-          <Player
-            key={selected.playbackId}
+          <ClubVideoPlayer
             playbackId={selected.playbackId}
             poster={getMuxThumbnailUrl(selected.playbackId, 1280, selected.thumbnailTime)}
             thumbnailTime={selected.thumbnailTime ?? undefined}
-            controls
-            style={{ width: "100%", height: "auto", aspectRatio: "16 / 9" }}
           />
         </div>
         <div className="mt-4">
@@ -73,13 +70,13 @@ export default function VideosPlaylist({
                       <button
                         type="button"
                         onClick={() => selectById(video.id)}
-                        className={`flex w-full items-center gap-3 px-4 py-3 text-left transition-colors ${
+                        className={`flex w-full items-start gap-3 px-4 py-3 text-left transition-colors ${
                           isCurrent
                             ? "bg-[#123458]/10"
                             : "hover:bg-zinc-50"
                         }`}
                       >
-                        <span className="w-6 shrink-0 text-sm font-medium text-gray-500">
+                        <span className="w-6 shrink-0 pt-1 text-sm font-medium text-gray-500">
                           {index}
                         </span>
                         <Image
@@ -89,8 +86,8 @@ export default function VideosPlaylist({
                           height={72}
                           className="h-[72px] w-32 shrink-0 rounded-md object-cover bg-gray-200"
                         />
-                        <span className="min-w-0">
-                          <span className="block truncate font-medium text-gray-900">
+                        <span className="min-w-0 flex-1">
+                          <span className="block whitespace-normal break-words font-medium leading-snug text-gray-900">
                             {video.title}
                           </span>
                           <span className="block text-sm text-gray-500">
