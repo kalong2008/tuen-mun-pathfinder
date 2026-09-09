@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo } from "react";
 import { createPlayer } from "@videojs/react";
 import { textTrackFeature, videoFeatures } from "@videojs/core/dom";
 import { MuxVideo } from "@videojs/react/media/mux-video/hls-js";
@@ -22,12 +23,14 @@ export default function ClubVideoPlayer({
   poster: string;
   thumbnailTime?: number;
 }) {
+  const muxSource = useMemo(() => ({ playbackId }), [playbackId]);
+
   return (
-    <div className="aspect-video w-full">
-      <Player key={playbackId} poster={poster}>
+    <div className="club-video-player aspect-video w-full">
+      <Player poster={poster}>
         <MinimalVideoSkin className="h-full w-full">
           <MuxVideo
-            source={{ playbackId }}
+            source={muxSource}
             playsInline
             className="h-full w-full object-contain"
           />

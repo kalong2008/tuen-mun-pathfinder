@@ -76,4 +76,32 @@ describe("ClubVideoPlayer", () => {
       "abc123XYZ456",
     );
   });
+
+  test("updates Mux source when switching videos without remounting the player", () => {
+    const { rerender } = render(
+      <ClubVideoPlayer
+        playbackId="abc123XYZ456"
+        poster="https://image.mux.com/abc123XYZ456/thumbnail.webp?width=1280"
+      />,
+    );
+
+    expect(mockCreatePlayer).toHaveBeenCalledTimes(1);
+
+    rerender(
+      <ClubVideoPlayer
+        playbackId="newPlaybackId123"
+        poster="https://image.mux.com/newPlaybackId123/thumbnail.webp?width=1280"
+      />,
+    );
+
+    expect(mockCreatePlayer).toHaveBeenCalledTimes(1);
+    expect(screen.getByTestId("mux-video")).toHaveAttribute(
+      "data-playback-id",
+      "newPlaybackId123",
+    );
+    expect(screen.getByTestId("club-video-player")).toHaveAttribute(
+      "data-poster",
+      "https://image.mux.com/newPlaybackId123/thumbnail.webp?width=1280",
+    );
+  });
 });
