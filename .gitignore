@@ -50,3 +50,6 @@ certificates
 legacy
 /legacy/*
 .env*.local
+
+# next-video creates this symlink locally; committing it breaks Vercel
+/public/_next-video
