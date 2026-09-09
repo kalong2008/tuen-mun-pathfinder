@@ -58,10 +58,18 @@ describe("getMuxAssetTitle", () => {
   });
 
   test("throws when the playback id is missing", async () => {
-    fetchMock.mockResolvedValueOnce({ ok: false } as Response);
+    fetchMock.mockResolvedValueOnce({ ok: false, status: 404 } as Response);
 
     await expect(getMuxAssetTitle("missing-id")).rejects.toThrow(
       "Mux playback ID was not found",
+    );
+  });
+
+  test("throws when Mux credentials are invalid", async () => {
+    fetchMock.mockResolvedValueOnce({ ok: false, status: 401 } as Response);
+
+    await expect(getMuxAssetTitle("abc123XYZ456")).rejects.toThrow(
+      "Mux API credentials are invalid",
     );
   });
 });

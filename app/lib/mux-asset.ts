@@ -45,6 +45,9 @@ export async function getMuxAssetTitle(playbackId: string): Promise<string> {
     { headers: { Authorization: authorization } },
   );
   if (!playbackResponse.ok) {
+    if (playbackResponse.status === 401 || playbackResponse.status === 403) {
+      throw new MuxAssetError("Mux API credentials are invalid", 502);
+    }
     throw new MuxAssetError("Mux playback ID was not found");
   }
 

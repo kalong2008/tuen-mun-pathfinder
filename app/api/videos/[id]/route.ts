@@ -74,7 +74,11 @@ export async function PATCH(
       );
     }
 
-    const title = await getMuxAssetTitle(playbackIdRaw);
+    const currentPlaybackId = String(current.playback_id).trim();
+    const title =
+      playbackIdRaw === currentPlaybackId
+        ? String(current.title)
+        : await getMuxAssetTitle(playbackIdRaw);
 
     await sql`
       UPDATE videos
