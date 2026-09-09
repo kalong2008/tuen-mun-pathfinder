@@ -1,10 +1,18 @@
 "use client";
 
-import ReactPlayer from "react-player";
+import { createPlayer } from "@videojs/react";
+import { textTrackFeature, videoFeatures } from "@videojs/core/dom";
+import { MuxVideo } from "@videojs/react/media/mux-video/hls-js";
+import { MinimalVideoSkin } from "@videojs/react/video";
 
-function muxStreamUrl(playbackId: string): string {
-  return `https://stream.mux.com/${encodeURIComponent(playbackId)}.m3u8`;
-}
+import "@videojs/react/video/minimal-skin.css";
+
+const clubVideoFeatures = videoFeatures.filter((feature) => feature !== textTrackFeature);
+
+const { Player } = createPlayer({
+  features: clubVideoFeatures,
+  displayName: "ClubVideoPlayerProvider",
+});
 
 export default function ClubVideoPlayer({
   playbackId,
@@ -15,15 +23,16 @@ export default function ClubVideoPlayer({
   thumbnailTime?: number;
 }) {
   return (
-    <ReactPlayer
-      key={playbackId}
-      src={muxStreamUrl(playbackId)}
-      poster={poster}
-      width="100%"
-      height="100%"
-      controls
-      playsInline
-      style={{ aspectRatio: "16 / 9" }}
-    />
+    <div className="aspect-video w-full">
+      <Player key={playbackId} poster={poster}>
+        <MinimalVideoSkin className="h-full w-full">
+          <MuxVideo
+            source={{ playbackId }}
+            playsInline
+            className="h-full w-full object-contain"
+          />
+        </MinimalVideoSkin>
+      </Player>
+    </div>
   );
 }
