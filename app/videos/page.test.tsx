@@ -44,6 +44,7 @@ describe("VideosPage", () => {
         title: "Camp",
         year: 2026,
         playbackId: "abc123XYZ456",
+        thumbnailTime: null,
         sortOrder: 0,
         createdAt: "2026-01-01T00:00:00.000Z",
       },

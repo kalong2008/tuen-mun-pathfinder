@@ -4,27 +4,27 @@ import { FormEvent, useEffect, useState } from "react";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import { Pencil, Plus, Trash2, X } from "lucide-react";
-import type { ClubVideo } from "@/app/lib/videos";
+import { getMuxThumbnailUrl, isMuxPlaybackId, type ClubVideo } from "@/app/lib/videos";
 
 type VideoFormState = {
-  title: string;
   year: string;
   playbackId: string;
+  thumbnailTime: string;
   sortOrder: string;
 };
 
 const emptyForm: VideoFormState = {
-  title: "",
   year: String(new Date().getFullYear()),
   playbackId: "",
+  thumbnailTime: "",
   sortOrder: "0",
 };
 
 function formFromVideo(video: ClubVideo): VideoFormState {
   return {
-    title: video.title,
     year: String(video.year),
     playbackId: video.playbackId,
+    thumbnailTime: video.thumbnailTime === null ? "" : String(video.thumbnailTime),
     sortOrder: String(video.sortOrder),
   };
 }
@@ -112,9 +112,9 @@ export default function AdminVideosPage() {
     setSaving(true);
     try {
       const payload = {
-        title: form.title.trim(),
         year: Number.parseInt(form.year, 10),
         playbackId: form.playbackId.trim(),
+        thumbnailTime: form.thumbnailTime.trim() === "" ? null : Number(form.thumbnailTime),
         sortOrder: Number.parseInt(form.sortOrder, 10) || 0,
       };
       const res = await fetch(editing ? `/api/videos/${editing.id}` : "/api/videos", {
@@ -154,6 +154,13 @@ export default function AdminVideosPage() {
     }
   };
 
+  const previewPlaybackId = form.playbackId.trim();
+  const previewTime =
+    form.thumbnailTime.trim() === "" ? null : Number.parseFloat(form.thumbnailTime);
+  const showThumbnailPreview =
+    isMuxPlaybackId(previewPlaybackId) &&
+    (previewTime === null || Number.isFinite(previewTime));
+
   return (
     <div className="mx-auto max-w-4xl px-4 pb-14 pt-24">
       <div className="mb-6 flex flex-wrap items-center gap-4">
@@ -185,16 +192,15 @@ export default function AdminVideosPage() {
               <X className="h-5 w-5" />
             </button>
           </div>
+          {editing ? (
+            <p className="mb-4 rounded-md bg-zinc-50 px-3 py-2 text-sm text-gray-700">
+              Mux 標題：<span className="font-medium text-gray-900">{editing.title}</span>
+              <span className="mt-1 block text-gray-500">儲存時會再次從 Mux 更新標題。</span>
+            </p>
+          ) : (
+            <p className="mb-4 text-sm text-gray-500">標題會從 Mux 資產自動帶入，無需在此輸入。</p>
+          )}
           <div className="grid gap-4 sm:grid-cols-2">
-            <label className="block text-sm">
-              標題
-              <input
-                required
-                value={form.title}
-                onChange={(event) => setForm((current) => ({ ...current, title: event.target.value }))}
-                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2"
-              />
-            </label>
             <label className="block text-sm">
               年份
               <input
@@ -204,6 +210,17 @@ export default function AdminVideosPage() {
                 max={2100}
                 value={form.year}
                 onChange={(event) => setForm((current) => ({ ...current, year: event.target.value }))}
+                className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2"
+              />
+            </label>
+            <label className="block text-sm">
+              排序
+              <input
+                type="number"
+                value={form.sortOrder}
+                onChange={(event) =>
+                  setForm((current) => ({ ...current, sortOrder: event.target.value }))
+                }
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2"
               />
             </label>
@@ -219,17 +236,38 @@ export default function AdminVideosPage() {
                 placeholder="從 Mux dashboard 複製"
               />
             </label>
-            <label className="block text-sm">
-              排序
+            <div className="block text-sm">
+              <label htmlFor="video-thumbnail-time">縮圖時間（秒）</label>
               <input
+                id="video-thumbnail-time"
                 type="number"
-                value={form.sortOrder}
+                min={0}
+                step={0.1}
+                value={form.thumbnailTime}
                 onChange={(event) =>
-                  setForm((current) => ({ ...current, sortOrder: event.target.value }))
+                  setForm((current) => ({ ...current, thumbnailTime: event.target.value }))
                 }
                 className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2"
+                placeholder="例如 8.5"
               />
-            </label>
+              <p className="mt-1 text-xs text-gray-500">
+                對應影片時間軸的秒數。留空則使用 Mux 預設畫面。
+              </p>
+            </div>
+            {showThumbnailPreview ? (
+              <div className="text-sm">
+                縮圖預覽
+                <img
+                  src={getMuxThumbnailUrl(
+                    previewPlaybackId,
+                    480,
+                    previewTime !== null && Number.isFinite(previewTime) ? previewTime : null,
+                  )}
+                  alt="Mux thumbnail preview"
+                  className="mt-1 aspect-video w-full rounded-md bg-gray-200 object-cover"
+                />
+              </div>
+            ) : null}
           </div>
           <div className="mt-4 flex gap-2">
             <button
@@ -249,6 +287,11 @@ export default function AdminVideosPage() {
       <ul className="divide-y divide-gray-200 rounded-xl border border-gray-200 bg-white">
         {videos.map((video) => (
           <li key={video.id} className="flex items-center gap-3 px-4 py-3">
+            <img
+              src={getMuxThumbnailUrl(video.playbackId, 160, video.thumbnailTime)}
+              alt=""
+              className="h-12 w-20 shrink-0 rounded object-cover bg-gray-200"
+            />
             <div className="min-w-0 flex-1">
               <p className="font-medium text-gray-900">{video.title}</p>
               <p className="truncate text-sm text-gray-500">

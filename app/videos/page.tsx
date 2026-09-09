@@ -17,13 +17,12 @@ export default async function VideosPage({
   const [{ v }, videos] = await Promise.all([searchParams, getVideosFromDb()]);
 
   return (
-    <div className="mx-auto w-full max-w-6xl px-4 pb-14 pt-[84px]">
-      <header className="mb-8 border-b border-gray-200 pb-6">
-        <h1 className="bg-gradient-to-r from-[#29323c] to-[#485563] bg-clip-text text-3xl font-bold text-transparent">
+    <div className="mx-auto max-w-5xl px-4 pb-14 pt-[84px]">
+      <h1 className="mb-8 border-b border-gray-200 py-8 text-center text-3xl font-bold text-gray-900">
+        <span className="bg-gradient-to-r from-[#29323c] to-[#485563] bg-clip-text text-transparent">
           歷屆影片
-        </h1>
-        <p className="mt-2 text-gray-600">觀看屯門前鋒會及幼鋒會的活動紀錄。</p>
-      </header>
+        </span>
+      </h1>
       <VideosPlaylist videos={videos} initialVideoId={v} />
     </div>
   );

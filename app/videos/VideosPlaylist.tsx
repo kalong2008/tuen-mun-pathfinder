@@ -41,7 +41,8 @@ export default function VideosPlaylist({
           <Player
             key={selected.playbackId}
             playbackId={selected.playbackId}
-            poster={getMuxThumbnailUrl(selected.playbackId, 1280)}
+            poster={getMuxThumbnailUrl(selected.playbackId, 1280, selected.thumbnailTime)}
+            thumbnailTime={selected.thumbnailTime ?? undefined}
             controls
             style={{ width: "100%", height: "auto", aspectRatio: "16 / 9" }}
           />
@@ -82,7 +83,7 @@ export default function VideosPlaylist({
                           {index}
                         </span>
                         <Image
-                          src={getMuxThumbnailUrl(video.playbackId)}
+                          src={getMuxThumbnailUrl(video.playbackId, 320, video.thumbnailTime)}
                           alt=""
                           width={128}
                           height={72}

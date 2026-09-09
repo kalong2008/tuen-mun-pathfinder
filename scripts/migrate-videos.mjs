@@ -22,10 +22,12 @@ async function run() {
       title TEXT NOT NULL,
       year INT NOT NULL,
       playback_id TEXT NOT NULL,
+      thumbnail_time DOUBLE PRECISION,
       sort_order INT NOT NULL DEFAULT 0,
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
     )
   `;
+  await sql`ALTER TABLE videos ADD COLUMN IF NOT EXISTS thumbnail_time DOUBLE PRECISION`;
   await sql`CREATE INDEX IF NOT EXISTS idx_videos_year ON videos (year DESC)`;
   await sql`CREATE INDEX IF NOT EXISTS idx_videos_sort ON videos (year DESC, sort_order ASC, created_at DESC)`;
   console.log("Table videos created or already exists.");

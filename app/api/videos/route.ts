@@ -1,11 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import { neon } from "@neondatabase/serverless";
 import { randomUUID } from "node:crypto";
+import { MuxAssetError, getMuxAssetTitle } from "@/app/lib/mux-asset";
 import { requireAdmin } from "@/app/lib/require-admin";
 import {
   getVideosFromDb,
   isMuxPlaybackId,
+  parseThumbnailTime,
   parseVideoYear,
+  resolveThumbnailTime,
   rowToClubVideo,
 } from "@/app/lib/videos";
 
@@ -39,7 +42,6 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json();
-    const title = typeof body.title === "string" ? body.title.trim() : "";
     const playbackId =
       typeof body.playbackId === "string"
         ? body.playbackId.trim()
@@ -50,28 +52,36 @@ export async function POST(request: NextRequest) {
     const sortOrder = Number.isInteger(body.sortOrder)
       ? body.sortOrder
       : Number.parseInt(String(body.sort_order ?? "0"), 10) || 0;
+    const thumbnailTime = resolveThumbnailTime(
+      parseThumbnailTime(body.thumbnailTime ?? body.thumbnail_time),
+      null,
+    );
 
-    if (!title || year === null || !isMuxPlaybackId(playbackId)) {
+    if (year === null || !isMuxPlaybackId(playbackId) || thumbnailTime === "invalid") {
       return NextResponse.json(
-        { error: "title, year, and a valid Mux playbackId are required" },
+        { error: "year, a valid Mux playbackId, and an optional thumbnail time are required" },
         { status: 400 },
       );
     }
 
+    const title = await getMuxAssetTitle(playbackId);
     const id = typeof body.id === "string" && body.id.trim() ? body.id.trim() : randomUUID();
     const sql = getSql();
     await sql`
-      INSERT INTO videos (id, title, year, playback_id, sort_order)
-      VALUES (${id}, ${title}, ${year}, ${playbackId}, ${sortOrder})
+      INSERT INTO videos (id, title, year, playback_id, thumbnail_time, sort_order)
+      VALUES (${id}, ${title}, ${year}, ${playbackId}, ${thumbnailTime}, ${sortOrder})
     `;
     const [row] = await sql`
-      SELECT id, title, year, playback_id, sort_order, created_at
+      SELECT id, title, year, playback_id, thumbnail_time, sort_order, created_at
       FROM videos
       WHERE id = ${id}
     `;
     return NextResponse.json(rowToClubVideo(row as Record<string, unknown>));
   } catch (error) {
     console.error("Videos POST error:", error);
+    if (error instanceof MuxAssetError) {
+      return NextResponse.json({ error: error.message }, { status: error.status });
+    }
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "Failed to create video" },
       { status: 500 },

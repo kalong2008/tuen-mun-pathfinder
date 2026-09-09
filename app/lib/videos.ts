@@ -5,6 +5,7 @@ export interface ClubVideo {
   title: string;
   year: number;
   playbackId: string;
+  thumbnailTime: number | null;
   sortOrder: number;
   createdAt: string;
 }
@@ -14,12 +15,57 @@ export interface VideoYearGroup {
   videos: ClubVideo[];
 }
 
-export function getMuxThumbnailUrl(playbackId: string, width = 320): string {
-  return `https://image.mux.com/${encodeURIComponent(playbackId)}/thumbnail.webp?width=${width}`;
+export function getMuxThumbnailUrl(
+  playbackId: string,
+  width = 320,
+  thumbnailTime: number | null = null,
+): string {
+  const params = new URLSearchParams({ width: String(width) });
+  if (thumbnailTime !== null) {
+    params.set("time", String(thumbnailTime));
+  }
+  return `https://image.mux.com/${encodeURIComponent(playbackId)}/thumbnail.webp?${params.toString()}`;
 }
 
 export function isMuxPlaybackId(value: string): boolean {
   return /^[A-Za-z0-9_-]{8,}$/.test(value.trim());
+}
+
+export type ParsedThumbnailTime =
+  | { status: "omitted" }
+  | { status: "invalid" }
+  | { status: "value"; time: number | null };
+
+export function parseThumbnailTime(value: unknown): ParsedThumbnailTime {
+  if (value === undefined) {
+    return { status: "omitted" };
+  }
+  if (value === null || value === "") {
+    return { status: "value", time: null };
+  }
+  const time = typeof value === "number" ? value : Number.parseFloat(String(value));
+  if (!Number.isFinite(time) || time < 0) {
+    return { status: "invalid" };
+  }
+  return { status: "value", time };
+}
+
+export function resolveThumbnailTime(
+  parsed: ParsedThumbnailTime,
+  fallback: number | null,
+): number | null | "invalid" {
+  switch (parsed.status) {
+    case "omitted":
+      return fallback;
+    case "invalid":
+      return "invalid";
+    case "value":
+      return parsed.time;
+    default: {
+      const _exhaustive: never = parsed;
+      return _exhaustive;
+    }
+  }
 }
 
 export function parseVideoYear(value: unknown): number | null {
@@ -78,6 +124,10 @@ export function rowToClubVideo(row: Record<string, unknown>): ClubVideo {
     title: String(row.title),
     year: Number(row.year),
     playbackId: String(row.playback_id),
+    thumbnailTime:
+      row.thumbnail_time === null || row.thumbnail_time === undefined
+        ? null
+        : Number(row.thumbnail_time),
     sortOrder: Number(row.sort_order ?? 0),
     createdAt,
   };
@@ -99,7 +149,7 @@ export async function getVideosFromDb(): Promise<ClubVideo[]> {
   try {
     const sql = getSql();
     const rows = await sql`
-      SELECT id, title, year, playback_id, sort_order, created_at
+      SELECT id, title, year, playback_id, thumbnail_time, sort_order, created_at
       FROM videos
       ORDER BY year DESC, sort_order ASC, created_at DESC
     `;

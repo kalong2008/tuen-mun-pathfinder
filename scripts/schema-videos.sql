@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS videos (
   title TEXT NOT NULL,
   year INT NOT NULL,
   playback_id TEXT NOT NULL,
+  thumbnail_time DOUBLE PRECISION,
   sort_order INT NOT NULL DEFAULT 0,
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );

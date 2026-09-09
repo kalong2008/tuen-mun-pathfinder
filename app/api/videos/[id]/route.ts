@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { neon } from "@neondatabase/serverless";
+import { MuxAssetError, getMuxAssetTitle } from "@/app/lib/mux-asset";
 import { requireAdmin } from "@/app/lib/require-admin";
 import {
   isMuxPlaybackId,
+  parseThumbnailTime,
   parseVideoYear,
+  resolveThumbnailTime,
   rowToClubVideo,
 } from "@/app/lib/videos";
 
@@ -29,7 +32,7 @@ export async function PATCH(
     const { id } = await params;
     const sql = getSql();
     const existing = await sql`
-      SELECT id, title, year, playback_id, sort_order, created_at
+      SELECT id, title, year, playback_id, thumbnail_time, sort_order, created_at
       FROM videos
       WHERE id = ${id}
     `;
@@ -39,8 +42,6 @@ export async function PATCH(
 
     const body = await request.json();
     const current = existing[0] as Record<string, unknown>;
-    const title =
-      typeof body.title === "string" ? body.title.trim() : String(current.title);
     const year =
       body.year !== undefined ? parseVideoYear(body.year) : Number(current.year);
     const playbackIdRaw =
@@ -55,30 +56,46 @@ export async function PATCH(
         : body.sort_order !== undefined
           ? Number.parseInt(String(body.sort_order), 10)
           : Number(current.sort_order ?? 0);
+    const currentThumbnailTime =
+      current.thumbnail_time === null || current.thumbnail_time === undefined
+        ? null
+        : Number(current.thumbnail_time);
+    const thumbnailTime = resolveThumbnailTime(
+      parseThumbnailTime(
+        body.thumbnailTime !== undefined ? body.thumbnailTime : body.thumbnail_time,
+      ),
+      Number.isFinite(currentThumbnailTime) ? currentThumbnailTime : null,
+    );
 
-    if (!title || year === null || !isMuxPlaybackId(playbackIdRaw) || Number.isNaN(sortOrder)) {
+    if (year === null || !isMuxPlaybackId(playbackIdRaw) || Number.isNaN(sortOrder) || thumbnailTime === "invalid") {
       return NextResponse.json(
-        { error: "title, year, and a valid Mux playbackId are required" },
+        { error: "year, a valid Mux playbackId, and an optional thumbnail time are required" },
         { status: 400 },
       );
     }
+
+    const title = await getMuxAssetTitle(playbackIdRaw);
 
     await sql`
       UPDATE videos
       SET title = ${title},
           year = ${year},
           playback_id = ${playbackIdRaw},
+          thumbnail_time = ${thumbnailTime},
           sort_order = ${sortOrder}
       WHERE id = ${id}
     `;
     const [row] = await sql`
-      SELECT id, title, year, playback_id, sort_order, created_at
+      SELECT id, title, year, playback_id, thumbnail_time, sort_order, created_at
       FROM videos
       WHERE id = ${id}
     `;
     return NextResponse.json(rowToClubVideo(row as Record<string, unknown>));
   } catch (error) {
     console.error("Videos PATCH error:", error);
+    if (error instanceof MuxAssetError) {
+      return NextResponse.json({ error: error.message }, { status: error.status });
+    }
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "Failed to update video" },
       { status: 500 },
