@@ -380,6 +380,7 @@ scripts/
 ├── scan-and-generate-json.js       # Batch scanner (recommended)
 ├── schema-notice-calendar.sql      # Neon schema for calendar_events & notices
 ├── schema-hyperlinks.sql           # Neon schema for hyperlinks
+├── schema-videos.sql               # Neon schema for 歷屆影片
 ├── schema-photo-sections.sql      # Neon schema for photo_sections
 ├── hyperlink-seed.json             # Seed data for hyperlinks migration
 ├── migrate-notice-calendar.mjs     # Migrate notice/calendar to Neon + Blob

@@ -1,0 +1,92 @@
+import { describe, expect, test } from "vitest";
+import {
+  getMuxThumbnailUrl,
+  groupVideosByYear,
+  isMuxPlaybackId,
+  parseVideoYear,
+  rowToClubVideo,
+  selectVideo,
+  type ClubVideo,
+} from "@/app/lib/videos";
+
+const sampleVideos: ClubVideo[] = [
+  {
+    id: "newer",
+    title: "2026 camp",
+    year: 2026,
+    playbackId: "abc123XYZ456",
+    sortOrder: 0,
+    createdAt: "2026-04-01T00:00:00.000Z",
+  },
+  {
+    id: "older",
+    title: "2024 camp",
+    year: 2024,
+    playbackId: "def789UVW012",
+    sortOrder: 0,
+    createdAt: "2024-04-01T00:00:00.000Z",
+  },
+];
+
+describe("getMuxThumbnailUrl", () => {
+  test("builds a Mux thumbnail URL", () => {
+    expect(getMuxThumbnailUrl("abc123XYZ456")).toBe(
+      "https://image.mux.com/abc123XYZ456/thumbnail.webp?width=320",
+    );
+  });
+});
+
+describe("isMuxPlaybackId", () => {
+  test("accepts Mux-style ids and rejects short values", () => {
+    expect(isMuxPlaybackId("abc123XYZ456")).toBe(true);
+    expect(isMuxPlaybackId("short")).toBe(false);
+    expect(isMuxPlaybackId("")).toBe(false);
+  });
+});
+
+describe("parseVideoYear", () => {
+  test("accepts years in range and rejects invalid values", () => {
+    expect(parseVideoYear(2026)).toBe(2026);
+    expect(parseVideoYear("2011")).toBe(2011);
+    expect(parseVideoYear("not-a-year")).toBeNull();
+    expect(parseVideoYear(1800)).toBeNull();
+  });
+});
+
+describe("groupVideosByYear", () => {
+  test("groups newest years first", () => {
+    expect(groupVideosByYear(sampleVideos).map((group) => group.year)).toEqual([
+      2026, 2024,
+    ]);
+  });
+});
+
+describe("selectVideo", () => {
+  test("returns the requested video or the first item", () => {
+    expect(selectVideo(sampleVideos, "older")?.id).toBe("older");
+    expect(selectVideo(sampleVideos, "missing")?.id).toBe("newer");
+    expect(selectVideo([], "older")).toBeNull();
+  });
+});
+
+describe("rowToClubVideo", () => {
+  test("maps a database row to ClubVideo", () => {
+    expect(
+      rowToClubVideo({
+        id: "row-1",
+        title: "Camp",
+        year: 2025,
+        playback_id: "abc123XYZ456",
+        sort_order: 2,
+        created_at: "2025-01-01T00:00:00.000Z",
+      }),
+    ).toEqual({
+      id: "row-1",
+      title: "Camp",
+      year: 2025,
+      playbackId: "abc123XYZ456",
+      sortOrder: 2,
+      createdAt: "2025-01-01T00:00:00.000Z",
+    });
+  });
+});

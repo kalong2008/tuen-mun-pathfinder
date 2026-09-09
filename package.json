@@ -16,6 +16,7 @@
     "migrate-notice-calendar": "node --env-file=.env.local scripts/migrate-notice-calendar.mjs",
     "migrate-hyperlinks": "node --env-file=.env.local scripts/migrate-hyperlinks.mjs",
     "migrate-site-settings": "node --env-file=.env.local scripts/migrate-site-settings.mjs",
+    "migrate-videos": "node --env-file=.env.local scripts/migrate-videos.mjs",
     "migrate-honors-to-markdown": "tsx scripts/migrate-honors-to-markdown.ts",
     "rewrite-honor-markdown-files": "tsx scripts/rewrite-honor-markdown-files.ts"
   },
@@ -39,6 +40,7 @@
     "lucide-react": "^0.503.0",
     "motion": "^12.7.4",
     "next": "^15.5.9",
+    "next-video": "^2.8.1",
     "react": "^19.2.3",
     "react-calendar": "^5.1.0",
     "react-dom": "^19.2.3",

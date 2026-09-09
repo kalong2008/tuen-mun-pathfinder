@@ -167,6 +167,7 @@
   "other": [
     {"name": "幼鋒會榮譽證", "href": "/adventurer-honors"},
     {"name": "通告", "href": "/notice"},
+    {"name": "歷屆影片", "href": "/videos"},
     {"name": "聯絡我們", "href": "/contact"}
   ]
 }

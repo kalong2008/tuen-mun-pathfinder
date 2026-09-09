@@ -636,6 +636,12 @@ export function AttendanceDashboard() {
           >
             Back to notice calendar
           </Link>
+          <Link
+            href="/admin/videos"
+            className="text-sm font-medium text-blue-600 hover:underline"
+          >
+            歷屆影片
+          </Link>
         </div>
       </header>
 

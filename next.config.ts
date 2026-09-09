@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { withNextVideo } from "next-video/process";
 
 // Remove the bundle analyzer import
 // const withBundleAnalyzer = require('@next/bundle-analyzer')({
@@ -34,9 +35,15 @@ const nextConfig: NextConfig = {
         hostname: 'storage.googleapis.com',
         pathname: '/tuenmunpathfinder-storage/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'image.mux.com',
+        pathname: '/**',
+      },
     ],
   },
 };
 
-// Remove the wrapper
-export default nextConfig;
+export default withNextVideo(nextConfig, {
+  provider: "mux",
+});

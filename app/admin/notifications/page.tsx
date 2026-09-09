@@ -79,6 +79,7 @@ export default function AdminNotifications() {
         <h1 className="text-2xl font-bold">Send Expo Push Notification</h1>
         <Link href="/admin/notice-calendar" className="text-blue-600 hover:underline text-sm">通告與日曆 CRUD</Link>
         <Link href="/admin/attendance" className="text-blue-600 hover:underline text-sm">Attendance Dashboard</Link>
+        <Link href="/admin/videos" className="text-blue-600 hover:underline text-sm">歷屆影片</Link>
       </div>
       <div className="max-w-xl space-y-4">
         <div>

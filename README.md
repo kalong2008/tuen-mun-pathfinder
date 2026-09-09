@@ -35,6 +35,7 @@ This project requires the following environment variables:
 
 - `DATABASE_URL` - Your Neon database connection string
 - `BLOB_READ_WRITE_TOKEN` - (Optional) Vercel Blob token for notice PDFs. Add this if you run the notice/calendar migration to store PDFs in Vercel Blob.
+- `MUX_TOKEN_ID` / `MUX_TOKEN_SECRET` - (Optional for playback) Mux API tokens used by `next-video` if you later upload files through its `/videos` pipeline. 歷屆影片 playback only needs public Mux Playback IDs stored in Neon.
 
 ### Getting Environment Variables from Vercel
 
@@ -80,6 +81,16 @@ Navigation hyperlinks are stored in Neon DB.
    npm run migrate-hyperlinks
    ```
    When adding new links, update `scripts/hyperlink-seed.json` and re-run the migration.
+
+### 歷屆影片 (Mux + next-video)
+
+1. **Create the table**: Run `scripts/schema-videos.sql` in the Neon SQL Editor, or:
+   ```bash
+   npm run migrate-videos
+   ```
+   The migrate script also adds the 歷屆影片 nav link if it is missing.
+2. Upload clips in the Mux dashboard and copy each Playback ID.
+3. Add title / year / Playback ID at `/admin/videos`.
 
 ## Deploy on Vercel
 
