@@ -35,7 +35,7 @@ export default function VideosPlaylist({
   }
 
   return (
-    <div className="flex h-[calc(100dvh-5.25rem)] flex-col gap-4 lg:h-auto lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(18rem,1fr)] lg:gap-6">
+    <div className="flex h-[calc(100dvh-6.25rem)] flex-col gap-4 lg:h-auto lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(18rem,1fr)] lg:gap-6">
       <div className="shrink-0 lg:sticky lg:top-24 lg:self-start">
         <div className="overflow-hidden rounded-2xl bg-black shadow-lg">
           <ClubVideoPlayer
