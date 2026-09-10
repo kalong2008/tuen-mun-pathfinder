@@ -1,3 +1,8 @@
+/* Timeline thumbnails use textTrackFeature; keep captions UI hidden. */
+.club-video-player .media-captions-button {
+  display: none;
+}
+
 /* Keep trailing controls width stable while Safari detects AirPlay on a new source. */
 @supports (-webkit-hyphens: none) {
   .club-video-player .video-controls-trailing {

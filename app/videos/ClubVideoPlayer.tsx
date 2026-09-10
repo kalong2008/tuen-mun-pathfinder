@@ -2,17 +2,14 @@
 
 import { useMemo } from "react";
 import { createPlayer } from "@videojs/react";
-import { textTrackFeature, videoFeatures } from "@videojs/core/dom";
 import { MuxVideo } from "@videojs/react/media/mux-video/hls-js";
-import { MinimalVideoSkin } from "@videojs/react/video";
+import { MinimalVideoSkin, videoFeatures } from "@videojs/react/video";
 
 import "@videojs/react/video/minimal-skin.css";
 import "@/app/videos/club-video-player.css";
 
-const clubVideoFeatures = videoFeatures.filter((feature) => feature !== textTrackFeature);
-
 const { Player } = createPlayer({
-  features: clubVideoFeatures,
+  features: videoFeatures,
   displayName: "ClubVideoPlayerProvider",
 });
 
@@ -33,7 +30,10 @@ export default function ClubVideoPlayer({
           <MuxVideo
             key={playbackId}
             source={muxSource}
+            poster={poster}
+            crossOrigin="anonymous"
             playsInline
+            preload="metadata"
             className="h-full w-full object-contain"
           />
         </MinimalVideoSkin>

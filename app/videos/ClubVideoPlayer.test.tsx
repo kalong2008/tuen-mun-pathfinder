@@ -27,17 +27,26 @@ vi.mock("@videojs/react/video", () => ({
   MinimalVideoSkin: ({ children }: { children?: React.ReactNode }) => (
     <div data-testid="video-skin">{children}</div>
   ),
+  videoFeatures: [{ name: "playback" }, { name: "textTrack" }, { name: "volume" }],
 }));
 
 vi.mock("@videojs/react/media/mux-video/hls-js", () => ({
-  MuxVideo: ({ source }: { source?: { playbackId?: string } }) => (
-    <video data-testid="mux-video" data-playback-id={source?.playbackId} />
+  MuxVideo: ({
+    source,
+    poster,
+    crossOrigin,
+  }: {
+    source?: { playbackId?: string };
+    poster?: string;
+    crossOrigin?: string;
+  }) => (
+    <video
+      data-testid="mux-video"
+      data-playback-id={source?.playbackId}
+      poster={poster}
+      crossOrigin={crossOrigin}
+    />
   ),
-}));
-
-vi.mock("@videojs/core/dom", () => ({
-  textTrackFeature: mockTextTrackFeature,
-  videoFeatures: [{ name: "playback" }, mockTextTrackFeature, { name: "volume" }],
 }));
 
 vi.mock("@videojs/react/video/minimal-skin.css", () => ({}));
@@ -46,7 +55,7 @@ vi.mock("@/app/videos/club-video-player.css", () => ({}));
 import ClubVideoPlayer from "@/app/videos/ClubVideoPlayer";
 
 describe("ClubVideoPlayer", () => {
-  test("creates a player without captions support", () => {
+  test("creates a player with text tracks for timeline thumbnail previews", () => {
     render(
       <ClubVideoPlayer
         playbackId="abc123XYZ456"
@@ -56,11 +65,11 @@ describe("ClubVideoPlayer", () => {
 
     expect(mockCreatePlayer).toHaveBeenCalledWith({
       displayName: "ClubVideoPlayerProvider",
-      features: [{ name: "playback" }, { name: "volume" }],
+      features: [{ name: "playback" }, { name: "textTrack" }, { name: "volume" }],
     });
   });
 
-  test("renders Mux playback with poster", () => {
+  test("renders Mux playback with poster and CORS for storyboard previews", () => {
     render(
       <ClubVideoPlayer
         playbackId="abc123XYZ456"
@@ -76,6 +85,11 @@ describe("ClubVideoPlayer", () => {
       "data-playback-id",
       "abc123XYZ456",
     );
+    expect(screen.getByTestId("mux-video")).toHaveAttribute(
+      "poster",
+      "https://image.mux.com/abc123XYZ456/thumbnail.webp?width=1280",
+    );
+    expect(screen.getByTestId("mux-video")).toHaveAttribute("crossOrigin", "anonymous");
   });
 
   test("keeps the player mounted while switching Mux sources", () => {
