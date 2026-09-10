@@ -82,15 +82,35 @@ Navigation hyperlinks are stored in Neon DB.
    ```
    When adding new links, update `scripts/hyperlink-seed.json` and re-run the migration.
 
-### 歷屆影片 (Mux + next-video)
+### 歷屆影片 (Mux + Video.js v10)
+
+Club archive videos are hosted on Mux, catalogued in Neon, and played on `/videos` with a YouTube-style layout (player + scrollable playlist). The player uses [`@videojs/react`](https://videojs.org/docs/framework/react/) v10 with `MuxVideo`, timeline thumbnail previews (Mux storyboard), and captions UI hidden.
+
+**Public page:** `/videos` — select a video with `?v=<id>`; playlist groups items by year.
+
+**Admin:** `/admin/videos` — paste Mux Playback IDs after dashboard upload; set year, sort order, and optional thumbnail time (seconds). Title is fetched from Mux on save (requires API tokens).
 
 1. **Create the table**: Run `scripts/schema-videos.sql` in the Neon SQL Editor, or:
    ```bash
    npm run migrate-videos
    ```
    The migrate script also adds the 歷屆影片 nav link if it is missing.
-2. Upload clips in the Mux dashboard and copy each Playback ID.
-3. Add year / Playback ID / optional thumbnail timestamp (seconds) at `/admin/videos`. The title comes from Mux.
+2. Upload clips in the [Mux dashboard](https://dashboard.mux.com/) and copy each **Playback ID**.
+3. In admin, add year, Playback ID, and optional **縮圖時間** (seconds) for the poster/thumbnail. Leave blank for Mux default.
+4. Open `/videos` to watch. Scrub the timeline to see storyboard preview frames (requires Mux storyboard on the asset).
+
+**Player implementation** (for maintainers):
+
+| File | Role |
+|------|------|
+| `app/videos/ClubVideoPlayer.tsx` | Video.js v10 player + `MuxVideo` |
+| `app/videos/VideosPlaylist.tsx` | Watch page layout and playlist |
+| `app/videos/club-video-player.css` | Captions hidden; Safari control-bar tweaks |
+| `postcss/videojs-layer-fix.js` | Renames Video.js `@layer` names so Tailwind build succeeds |
+
+`next-video` remains in `next.config.ts` for Mux provider wiring; the watch page player is custom Video.js, not the next-video React component.
+
+**Do not commit** `public/_next-video` (local next-video symlink); it is gitignored and breaks Vercel if committed.
 
 ## Deploy on Vercel
 
