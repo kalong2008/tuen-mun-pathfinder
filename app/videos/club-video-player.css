@@ -1,0 +1,6 @@
+/* Keep trailing controls width stable while Safari detects AirPlay on a new source. */
+@supports (-webkit-hyphens: none) {
+  .club-video-player .video-controls-trailing {
+    min-width: 7.5rem;
+  }
+}

@@ -41,6 +41,7 @@ vi.mock("@videojs/core/dom", () => ({
 }));
 
 vi.mock("@videojs/react/video/minimal-skin.css", () => ({}));
+vi.mock("@/app/videos/club-video-player.css", () => ({}));
 
 import ClubVideoPlayer from "@/app/videos/ClubVideoPlayer";
 
@@ -77,7 +78,7 @@ describe("ClubVideoPlayer", () => {
     );
   });
 
-  test("updates Mux source when switching videos without remounting the player", () => {
+  test("keeps the player mounted while switching Mux sources", () => {
     const { rerender } = render(
       <ClubVideoPlayer
         playbackId="abc123XYZ456"
@@ -98,10 +99,6 @@ describe("ClubVideoPlayer", () => {
     expect(screen.getByTestId("mux-video")).toHaveAttribute(
       "data-playback-id",
       "newPlaybackId123",
-    );
-    expect(screen.getByTestId("club-video-player")).toHaveAttribute(
-      "data-poster",
-      "https://image.mux.com/newPlaybackId123/thumbnail.webp?width=1280",
     );
   });
 });

@@ -35,8 +35,8 @@ export default function VideosPlaylist({
   }
 
   return (
-    <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(18rem,1fr)]">
-      <div className="lg:sticky lg:top-24 lg:self-start">
+    <div className="flex h-[calc(100dvh-5.25rem)] flex-col gap-4 lg:h-auto lg:grid lg:grid-cols-[minmax(0,2fr)_minmax(18rem,1fr)] lg:gap-6">
+      <div className="shrink-0 lg:sticky lg:top-24 lg:self-start">
         <div className="overflow-hidden rounded-2xl bg-black shadow-lg">
           <ClubVideoPlayer
             playbackId={selected.playbackId}
@@ -44,18 +44,17 @@ export default function VideosPlaylist({
             thumbnailTime={selected.thumbnailTime ?? undefined}
           />
         </div>
-        <div className="mt-4">
-          <p className="text-sm font-medium text-[#123458]">{selected.year}</p>
-          <h2 className="text-2xl font-bold text-gray-900">{selected.title}</h2>
+        <div className="mt-3">
+          <h2 className="text-xl font-bold text-gray-900 lg:text-2xl">{selected.title}</h2>
         </div>
       </div>
 
-      <aside className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
-        <div className="border-b border-gray-200 px-4 py-3">
+      <aside className="flex min-h-0 flex-1 flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm lg:max-h-[70vh]">
+        <div className="flex shrink-0 items-baseline justify-between gap-3 border-b border-gray-200 px-4 py-3">
           <h2 className="text-lg font-bold text-gray-900">歷屆影片</h2>
-          <p className="text-sm text-gray-500">{videos.length} 部影片</p>
+          <p className="shrink-0 text-sm text-gray-500">{videos.length} 部影片</p>
         </div>
-        <div className="max-h-[70vh] overflow-y-auto">
+        <div className="min-h-0 flex-1 overflow-y-auto">
           {yearGroups.map((group) => (
             <section key={group.year}>
               <h3 className="sticky top-0 bg-zinc-50 px-4 py-2 text-sm font-semibold text-gray-600">
@@ -71,9 +70,7 @@ export default function VideosPlaylist({
                         type="button"
                         onClick={() => selectById(video.id)}
                         className={`flex w-full items-start gap-3 px-4 py-3 text-left transition-colors ${
-                          isCurrent
-                            ? "bg-[#123458]/10"
-                            : "hover:bg-zinc-50"
+                          isCurrent ? "bg-[#123458]/10" : "hover:bg-zinc-50"
                         }`}
                       >
                         <span className="w-6 shrink-0 pt-1 text-sm font-medium text-gray-500">
@@ -84,15 +81,10 @@ export default function VideosPlaylist({
                           alt=""
                           width={128}
                           height={72}
-                          className="h-[72px] w-32 shrink-0 rounded-md object-cover bg-gray-200"
+                          className="h-[72px] w-32 shrink-0 rounded-md bg-gray-200 object-cover"
                         />
-                        <span className="min-w-0 flex-1">
-                          <span className="block whitespace-normal break-words font-medium leading-snug text-gray-900">
-                            {video.title}
-                          </span>
-                          <span className="block text-sm text-gray-500">
-                            {video.year}
-                          </span>
+                        <span className="min-w-0 flex-1 whitespace-normal break-words font-medium leading-snug text-gray-900">
+                          {video.title}
                         </span>
                       </button>
                     </li>

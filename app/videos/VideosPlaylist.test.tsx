@@ -77,6 +77,7 @@ describe("VideosPlaylist", () => {
     expect(screen.getByTestId("club-video-player")).toHaveTextContent("playbackOlder");
     expect(screen.getByRole("heading", { name: "2024 露營" })).toBeInTheDocument();
     expect(screen.getByText("3 部影片")).toBeInTheDocument();
+    expect(screen.getByText("2026年")).toBeInTheDocument();
     expect(
       screen.getByRole("button", { name: /2026年幼鋒會升級營完整活動回顧影片/ }),
     ).toBeInTheDocument();

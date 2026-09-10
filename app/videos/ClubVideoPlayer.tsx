@@ -7,6 +7,7 @@ import { MuxVideo } from "@videojs/react/media/mux-video/hls-js";
 import { MinimalVideoSkin } from "@videojs/react/video";
 
 import "@videojs/react/video/minimal-skin.css";
+import "@/app/videos/club-video-player.css";
 
 const clubVideoFeatures = videoFeatures.filter((feature) => feature !== textTrackFeature);
 
@@ -30,6 +31,7 @@ export default function ClubVideoPlayer({
       <Player poster={poster}>
         <MinimalVideoSkin className="h-full w-full">
           <MuxVideo
+            key={playbackId}
             source={muxSource}
             playsInline
             className="h-full w-full object-contain"

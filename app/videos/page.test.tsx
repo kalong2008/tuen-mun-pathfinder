@@ -37,7 +37,7 @@ describe("VideosPage", () => {
     mockGetVideosFromDb.mockReset();
   });
 
-  test("renders the 歷屆影片 heading and selected query", async () => {
+  test("renders the playlist with the selected query", async () => {
     mockGetVideosFromDb.mockResolvedValue([
       {
         id: "v-1",
@@ -52,8 +52,8 @@ describe("VideosPage", () => {
 
     render(await VideosPage({ searchParams: Promise.resolve({ v: "v-1" }) }));
 
-    expect(screen.getByRole("heading", { name: "歷屆影片" })).toBeInTheDocument();
     expect(screen.getByText("playlist-count:1")).toBeInTheDocument();
     expect(screen.getByText("selected:v-1")).toBeInTheDocument();
+    expect(screen.queryByRole("heading", { name: "歷屆影片" })).not.toBeInTheDocument();
   });
 });
