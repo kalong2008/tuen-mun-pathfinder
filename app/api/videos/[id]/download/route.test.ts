@@ -4,6 +4,7 @@ import { GET } from "@/app/api/videos/[id]/download/route";
 
 const mockGetVideoById = vi.fn();
 const mockGetVideoDownloadState = vi.fn();
+const mockEnsure720pQueuedForDownload = vi.fn();
 
 vi.mock("@/app/lib/videos", () => ({
   getVideoById: (...args: unknown[]) => mockGetVideoById(...args),
@@ -11,12 +12,16 @@ vi.mock("@/app/lib/videos", () => ({
 
 vi.mock("@/app/lib/mux-download", () => ({
   getVideoDownloadState: (...args: unknown[]) => mockGetVideoDownloadState(...args),
+  ensure720pQueuedForDownload: (...args: unknown[]) =>
+    mockEnsure720pQueuedForDownload(...args),
 }));
 
 describe("GET /api/videos/[id]/download", () => {
   beforeEach(() => {
     mockGetVideoById.mockReset();
     mockGetVideoDownloadState.mockReset();
+    mockEnsure720pQueuedForDownload.mockReset();
+    mockEnsure720pQueuedForDownload.mockResolvedValue({ outcome: "already_pending" });
   });
 
   test("returns 404 when video is not in catalog", async () => {
@@ -76,6 +81,38 @@ describe("GET /api/videos/[id]/download", () => {
     );
 
     expect(response.status).toBe(202);
-    await expect(response.json()).resolves.toEqual({ status: "preparing" });
+    await expect(response.json()).resolves.toEqual({
+      status: "preparing",
+      queued: false,
+    });
+    expect(mockEnsure720pQueuedForDownload).toHaveBeenCalledWith("pb1");
+  });
+
+  test("returns 503 when 720p cannot be queued", async () => {
+    mockGetVideoById.mockResolvedValue({
+      id: "v-1",
+      title: "露營",
+      year: 2026,
+      playbackId: "pb1",
+      thumbnailTime: null,
+      sortOrder: 0,
+      createdAt: "",
+    });
+    mockGetVideoDownloadState.mockResolvedValue({ status: "preparing" });
+    mockEnsure720pQueuedForDownload.mockResolvedValue({
+      outcome: "failed",
+      message: "下載檔尚未建立。",
+    });
+
+    const response = await GET(
+      new NextRequest("http://localhost/api/videos/v-1/download"),
+      { params: Promise.resolve({ id: "v-1" }) },
+    );
+
+    expect(response.status).toBe(503);
+    await expect(response.json()).resolves.toEqual({
+      status: "unavailable",
+      error: "下載檔尚未建立。",
+    });
   });
 });

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { MuxAssetError } from "@/app/lib/mux-asset";
-import { getVideoDownloadState } from "@/app/lib/mux-download";
+import { ensure720pQueuedForDownload, getVideoDownloadState } from "@/app/lib/mux-download";
 import { getVideoById } from "@/app/lib/videos";
 
 export const dynamic = "force-dynamic";
@@ -32,7 +32,20 @@ export async function GET(
     }
 
     if (state.status === "preparing") {
-      return NextResponse.json({ status: "preparing" }, { status: 202 });
+      const queue = await ensure720pQueuedForDownload(video.playbackId);
+      if (queue.outcome === "failed") {
+        return NextResponse.json(
+          { status: "unavailable", error: queue.message },
+          { status: 503 },
+        );
+      }
+      return NextResponse.json(
+        {
+          status: "preparing",
+          queued: queue.outcome === "queued",
+        },
+        { status: 202 },
+      );
     }
 
     return NextResponse.json(

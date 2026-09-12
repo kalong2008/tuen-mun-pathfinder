@@ -58,10 +58,30 @@ describe("getMuxAssetTitle", () => {
   });
 
   test("throws when the playback id is missing", async () => {
-    fetchMock.mockResolvedValueOnce({ ok: false, status: 404 } as Response);
+    fetchMock.mockResolvedValueOnce({
+      ok: false,
+      status: 404,
+      json: async () => ({ error: { messages: ["Not found"] } }),
+    } as Response);
 
     await expect(getMuxAssetTitle("missing-id")).rejects.toThrow(
       "Mux playback ID was not found",
+    );
+  });
+
+  test("throws when Mux API token environment mismatches the playback ID", async () => {
+    fetchMock.mockResolvedValueOnce({
+      ok: false,
+      status: 400,
+      json: async () => ({
+        error: {
+          messages: ["Invalid playback ID, mismatching environment"],
+        },
+      }),
+    } as Response);
+
+    await expect(getMuxAssetTitle("abc123XYZ456")).rejects.toThrow(
+      "Mux API token environment does not match",
     );
   });
 

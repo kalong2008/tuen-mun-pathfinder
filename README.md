@@ -35,7 +35,7 @@ This project requires the following environment variables:
 
 - `DATABASE_URL` - Your Neon database connection string
 - `BLOB_READ_WRITE_TOKEN` - (Optional) Vercel Blob token for notice PDFs. Add this if you run the notice/calendar migration to store PDFs in Vercel Blob.
-- `MUX_TOKEN_ID` / `MUX_TOKEN_SECRET` - Required to save 歷屆影片 (the admin form loads the title from Mux). Public playback only needs Playback IDs stored in Neon.
+- `MUX_TOKEN_ID` / `MUX_TOKEN_SECRET` - Required for admin 歷屆影片 saves (title + auto-queue 720p). Create tokens in the **same Mux environment as your uploads** (usually **Production** in the Mux dashboard) and set them on **Vercel Production**. Development tokens against Production playback IDs cause “mismatching environment” API errors. Public `/videos` playback and 720p download checks use Playback IDs + `stream.mux.com` and do not need the API for the download button itself.
 
 ### Getting Environment Variables from Vercel
 
@@ -98,7 +98,7 @@ Club archive videos are hosted on Mux, catalogued in Neon, and played on `/video
 2. Upload clips in the [Mux dashboard](https://dashboard.mux.com/) and copy each **Playback ID**.
 3. In admin, add year, Playback ID, and optional **縮圖時間** (seconds) for the poster/thumbnail. Leave blank for Mux default.
 4. Open `/videos` to watch. Scrub the timeline to see storyboard preview frames (requires Mux storyboard on the asset).
-5. **720p download:** Saving a video in admin queues a Mux **720p static MP4** (compressed vs full mezzanine). Viewers use **下載影片（720p）** on `/videos`; the button only works once Mux reports the rendition as `ready`. The dashboard can **download** existing static MP4s but cannot create 720p — use admin re-save, or `POST /video/v1/assets/{ASSET_ID}/static-renditions` with `{"resolution":"720p"}`. Mux bills for advanced static rendition encoding, storage, and delivery.
+5. **720p download:** Saving a video in admin (or clicking download on `/videos`) queues a Mux **720p static MP4** when API tokens match the upload environment. Encoding often takes several minutes; the site polls up to ~10 minutes. One-time backfill for all catalog videos: `npm run queue-mux-720p` (use **Production** `MUX_*` in `.env.local`). Mux bills for advanced static rendition encoding, storage, and delivery.
 
 **Player implementation** (for maintainers):
 

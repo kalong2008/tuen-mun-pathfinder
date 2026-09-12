@@ -37,6 +37,34 @@ type MuxAssetResponse = {
   data?: MuxAssetData;
 };
 
+type MuxApiErrorBody = {
+  error?: {
+    type?: string;
+    messages?: string[];
+  };
+};
+
+async function throwMuxPlaybackLookupError(response: Response): Promise<never> {
+  let body: MuxApiErrorBody | null = null;
+  try {
+    body = (await response.json()) as MuxApiErrorBody;
+  } catch {
+    body = null;
+  }
+  const messages = body?.error?.messages ?? [];
+  const combined = messages.join(" ").toLowerCase();
+  if (combined.includes("mismatching environment")) {
+    throw new MuxAssetError(
+      "Mux API token environment does not match this playback ID. Use access tokens from the same Mux environment (usually Production) as your uploads, and set MUX_TOKEN_ID / MUX_TOKEN_SECRET on Vercel Production.",
+      502,
+    );
+  }
+  if (response.status === 404) {
+    throw new MuxAssetError("Mux playback ID was not found");
+  }
+  throw new MuxAssetError("Failed to look up the Mux playback ID", 502);
+}
+
 export function getMuxAuthHeader(): string {
   const tokenId = process.env.MUX_TOKEN_ID;
   const tokenSecret = process.env.MUX_TOKEN_SECRET;
@@ -59,7 +87,7 @@ export async function getMuxAssetIdForPlaybackId(playbackId: string): Promise<st
     if (playbackResponse.status === 401 || playbackResponse.status === 403) {
       throw new MuxAssetError("Mux API credentials are invalid", 502);
     }
-    throw new MuxAssetError("Mux playback ID was not found");
+    await throwMuxPlaybackLookupError(playbackResponse);
   }
 
   const playbackJson = (await playbackResponse.json()) as MuxPlaybackLookup;

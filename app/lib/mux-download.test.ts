@@ -50,43 +50,21 @@ describe("mux-download API helpers", () => {
     fetchMock.mockReset();
   });
 
-  test("getVideoDownloadState returns ready url when 720p is ready", async () => {
-    fetchMock
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({
-          data: { object: { type: "asset", id: "asset-1" } },
-        }),
-      } as Response)
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({
-          data: {
-            static_renditions: {
-              files: [{ resolution: "720p", status: "ready", name: "720p.mp4" }],
-            },
-          },
-        }),
-      } as Response);
+  test("getVideoDownloadState returns ready url when stream 720p is available", async () => {
+    fetchMock.mockResolvedValueOnce({ ok: true } as Response);
 
     await expect(getVideoDownloadState("pb1", "2026 露營")).resolves.toEqual({
       status: "ready",
       url: expect.stringContaining("stream.mux.com/pb1/720p.mp4"),
     });
+    expect(fetchMock).toHaveBeenCalledWith(
+      "https://stream.mux.com/pb1/720p.mp4",
+      expect.objectContaining({ method: "HEAD" }),
+    );
   });
 
-  test("getVideoDownloadState returns preparing when rendition is missing", async () => {
-    fetchMock
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({
-          data: { object: { type: "asset", id: "asset-1" } },
-        }),
-      } as Response)
-      .mockResolvedValueOnce({
-        ok: true,
-        json: async () => ({ data: {} }),
-      } as Response);
+  test("getVideoDownloadState returns preparing when stream 720p is not ready", async () => {
+    fetchMock.mockResolvedValueOnce({ ok: false, status: 404 } as Response);
 
     await expect(getVideoDownloadState("pb1", "2026 露營")).resolves.toEqual({
       status: "preparing",
@@ -105,6 +83,7 @@ describe("mux-download API helpers", () => {
 
   test("queue720pForPlaybackId requests rendition when missing", async () => {
     fetchMock
+      .mockResolvedValueOnce({ ok: false, status: 404 } as Response)
       .mockResolvedValueOnce({
         ok: true,
         json: async () => ({
@@ -118,6 +97,6 @@ describe("mux-download API helpers", () => {
       .mockResolvedValueOnce({ ok: true, status: 201 } as Response);
 
     await expect(queue720pForPlaybackId("pb1")).resolves.toBeUndefined();
-    expect(fetchMock).toHaveBeenCalledTimes(3);
+    expect(fetchMock).toHaveBeenCalledTimes(4);
   });
 });

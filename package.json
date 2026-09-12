@@ -17,6 +17,7 @@
     "migrate-hyperlinks": "node --env-file=.env.local scripts/migrate-hyperlinks.mjs",
     "migrate-site-settings": "node --env-file=.env.local scripts/migrate-site-settings.mjs",
     "migrate-videos": "node --env-file=.env.local scripts/migrate-videos.mjs",
+    "queue-mux-720p": "node --env-file=.env.local scripts/queue-mux-720p-renditions.mjs",
     "migrate-honors-to-markdown": "tsx scripts/migrate-honors-to-markdown.ts",
     "rewrite-honor-markdown-files": "tsx scripts/rewrite-honor-markdown-files.ts"
   },

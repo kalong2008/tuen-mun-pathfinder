@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const POLL_INTERVAL_MS = 15_000;
-const MAX_POLL_ATTEMPTS = 8;
+const MAX_POLL_ATTEMPTS = 40;
 
 type DownloadResponse =
   | { status: "ready"; url: string }
@@ -36,6 +36,9 @@ export default function VideoDownloadButton({ videoId }: { videoId: string }) {
   const fetchDownload = async (): Promise<DownloadResponse> => {
     const response = await fetch(`/api/videos/${encodeURIComponent(videoId)}/download`);
     const body = (await response.json()) as DownloadResponse;
+    if ("status" in body && body.status === "unavailable") {
+      return body;
+    }
     if (!response.ok && "error" in body && !("status" in body)) {
       return { error: body.error };
     }
@@ -73,11 +76,13 @@ export default function VideoDownloadButton({ videoId }: { videoId: string }) {
       }
 
       if (pollAttempt === 0) {
-        setMessage("正在準備壓縮影片，請稍候…");
+        setMessage("正在向 Mux 準備 720p 壓縮檔，通常需數分鐘，請稍候…");
+      } else if (pollAttempt % 4 === 0) {
+        setMessage(`仍在準備壓縮影片…（約 ${Math.round((pollAttempt * POLL_INTERVAL_MS) / 60_000)} 分鐘）`);
       }
 
       if (pollAttempt >= MAX_POLL_ATTEMPTS) {
-        setMessage("壓縮影片仍在準備中，請稍後再試");
+        setMessage("壓縮需時較長，請稍後再按「下載影片」，或改日再試。");
         setBusy(false);
         return;
       }
