@@ -161,3 +161,23 @@ export async function getVideosFromDb(): Promise<ClubVideo[]> {
     throw error;
   }
 }
+
+export async function getVideoById(id: string): Promise<ClubVideo | null> {
+  try {
+    const sql = getSql();
+    const rows = await sql`
+      SELECT id, title, year, playback_id, thumbnail_time, sort_order, created_at
+      FROM videos
+      WHERE id = ${id}
+    `;
+    if (rows.length === 0) {
+      return null;
+    }
+    return rowToClubVideo(rows[0] as Record<string, unknown>);
+  } catch (error) {
+    if (isMissingVideosTable(error)) {
+      return null;
+    }
+    throw error;
+  }
+}

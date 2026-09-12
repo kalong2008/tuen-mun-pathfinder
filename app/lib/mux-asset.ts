@@ -17,16 +17,27 @@ type MuxPlaybackLookup = {
   };
 };
 
-type MuxAssetResponse = {
-  data?: {
-    passthrough?: string | null;
-    meta?: {
-      title?: string | null;
-    };
+export type MuxStaticRenditionFile = {
+  resolution?: string;
+  name?: string;
+  status?: string;
+};
+
+export type MuxAssetData = {
+  passthrough?: string | null;
+  meta?: {
+    title?: string | null;
+  };
+  static_renditions?: {
+    files?: MuxStaticRenditionFile[];
   };
 };
 
-function getMuxAuthHeader(): string {
+type MuxAssetResponse = {
+  data?: MuxAssetData;
+};
+
+export function getMuxAuthHeader(): string {
   const tokenId = process.env.MUX_TOKEN_ID;
   const tokenSecret = process.env.MUX_TOKEN_SECRET;
   if (!tokenId || !tokenSecret) {
@@ -38,7 +49,7 @@ function getMuxAuthHeader(): string {
   return `Basic ${Buffer.from(`${tokenId}:${tokenSecret}`).toString("base64")}`;
 }
 
-export async function getMuxAssetTitle(playbackId: string): Promise<string> {
+export async function getMuxAssetIdForPlaybackId(playbackId: string): Promise<string> {
   const authorization = getMuxAuthHeader();
   const playbackResponse = await fetch(
     `https://api.mux.com/video/v1/playback-ids/${encodeURIComponent(playbackId)}`,
@@ -58,18 +69,27 @@ export async function getMuxAssetTitle(playbackId: string): Promise<string> {
     throw new MuxAssetError("Mux playback ID is not an on-demand video");
   }
 
+  return assetId;
+}
+
+export async function fetchMuxAsset(assetId: string): Promise<MuxAssetData> {
+  const authorization = getMuxAuthHeader();
   const assetResponse = await fetch(
     `https://api.mux.com/video/v1/assets/${encodeURIComponent(assetId)}`,
     { headers: { Authorization: authorization } },
   );
   if (!assetResponse.ok) {
-    throw new MuxAssetError("Failed to load the Mux asset title", 502);
+    throw new MuxAssetError("Failed to load the Mux asset", 502);
   }
 
   const assetJson = (await assetResponse.json()) as MuxAssetResponse;
+  return assetJson.data ?? {};
+}
+
+export async function getMuxAssetTitle(playbackId: string): Promise<string> {
+  const assetId = await getMuxAssetIdForPlaybackId(playbackId);
+  const asset = await fetchMuxAsset(assetId);
   const title =
-    assetJson.data?.meta?.title?.trim() ||
-    assetJson.data?.passthrough?.trim() ||
-    "";
+    asset.meta?.title?.trim() || asset.passthrough?.trim() || "";
   return title || "未命名影片";
 }

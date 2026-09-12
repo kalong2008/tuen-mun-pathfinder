@@ -98,6 +98,7 @@ Club archive videos are hosted on Mux, catalogued in Neon, and played on `/video
 2. Upload clips in the [Mux dashboard](https://dashboard.mux.com/) and copy each **Playback ID**.
 3. In admin, add year, Playback ID, and optional **縮圖時間** (seconds) for the poster/thumbnail. Leave blank for Mux default.
 4. Open `/videos` to watch. Scrub the timeline to see storyboard preview frames (requires Mux storyboard on the asset).
+5. **720p download:** Saving a video in admin queues a Mux **720p static MP4** (compressed vs full mezzanine). Viewers use **下載影片（720p）** on `/videos`; the button only works once Mux reports the rendition as `ready`. The dashboard can **download** existing static MP4s but cannot create 720p — use admin re-save, or `POST /video/v1/assets/{ASSET_ID}/static-renditions` with `{"resolution":"720p"}`. Mux bills for advanced static rendition encoding, storage, and delivery.
 
 **Player implementation** (for maintainers):
 
@@ -105,6 +106,9 @@ Club archive videos are hosted on Mux, catalogued in Neon, and played on `/video
 |------|------|
 | `app/videos/ClubVideoPlayer.tsx` | Video.js v10 player + `MuxVideo` |
 | `app/videos/VideosPlaylist.tsx` | Watch page layout and playlist |
+| `app/videos/VideoDownloadButton.tsx` | Public 720p download control |
+| `app/api/videos/[id]/download/route.ts` | Catalog-validated download URL (read-only; no viewer-triggered encode) |
+| `app/lib/mux-download.ts` | Mux 720p static rendition helpers |
 | `app/videos/club-video-player.css` | Captions hidden; Safari control-bar tweaks |
 | `postcss/videojs-layer-fix.js` | Renames Video.js `@layer` names so Tailwind build succeeds |
 

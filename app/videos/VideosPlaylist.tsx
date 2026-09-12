@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import ClubVideoPlayer from "@/app/videos/ClubVideoPlayer";
+import VideoDownloadButton from "@/app/videos/VideoDownloadButton";
 import {
   getMuxThumbnailUrl,
   groupVideosByYear,
@@ -46,6 +47,7 @@ export default function VideosPlaylist({
         </div>
         <div className="mt-3">
           <h2 className="text-xl font-bold text-gray-900 lg:text-2xl">{selected.title}</h2>
+          <VideoDownloadButton videoId={selected.id} />
         </div>
       </div>
 

@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { neon } from "@neondatabase/serverless";
 import { randomUUID } from "node:crypto";
 import { MuxAssetError, getMuxAssetTitle } from "@/app/lib/mux-asset";
+import { queue720pForPlaybackId } from "@/app/lib/mux-download";
 import { requireAdmin } from "@/app/lib/require-admin";
 import {
   getVideosFromDb,
@@ -76,6 +77,9 @@ export async function POST(request: NextRequest) {
       FROM videos
       WHERE id = ${id}
     `;
+    void queue720pForPlaybackId(playbackId).catch((queueError) => {
+      console.error("Mux 720p queue error:", queueError);
+    });
     return NextResponse.json(rowToClubVideo(row as Record<string, unknown>));
   } catch (error) {
     console.error("Videos POST error:", error);

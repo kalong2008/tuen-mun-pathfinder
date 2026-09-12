@@ -29,6 +29,12 @@ vi.mock("@/app/videos/ClubVideoPlayer", () => ({
   ),
 }));
 
+vi.mock("@/app/videos/VideoDownloadButton", () => ({
+  default: ({ videoId }: { videoId: string }) => (
+    <button type="button">下載影片（720p） {videoId}</button>
+  ),
+}));
+
 const videos: ClubVideo[] = [
   {
     id: "v-long",
@@ -76,6 +82,7 @@ describe("VideosPlaylist", () => {
 
     expect(screen.getByTestId("club-video-player")).toHaveTextContent("playbackOlder");
     expect(screen.getByRole("heading", { name: "2024 露營" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "下載影片（720p） v-2024" })).toBeInTheDocument();
     expect(screen.getByText("3 部影片")).toBeInTheDocument();
     expect(screen.getByText("2026年")).toBeInTheDocument();
     expect(
