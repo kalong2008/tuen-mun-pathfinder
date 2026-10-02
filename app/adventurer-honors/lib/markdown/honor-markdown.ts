@@ -2,6 +2,51 @@ import { normalizeChineseQuotes, splitTextWithLinks } from "@/app/adventurer-hon
 
 const FENCED_CODE = /(```[\s\S]*?```)/g;
 const MARKDOWN_TOKEN = /(\[[^\]]*\]\([^)]*\)|!\[[^\]]*\]\([^)]*\))/g;
+const INDENTED_LETTER_ITEM = /^(\s+)([a-z])\.\s+(.*)$/i;
+
+/** CommonMark only treats `1.` as an ordered list, so indented `a.` lines collapse into the parent paragraph. */
+function promoteIndentedLetterLists(markdown: string): string {
+  let expectedLetter = "a";
+  let activeIndent: string | null = null;
+  let nextNumber = 1;
+
+  return markdown
+    .split("\n")
+    .map((line) => {
+      const match = INDENTED_LETTER_ITEM.exec(line);
+      if (!match) {
+        if (line.trim() !== "") {
+          expectedLetter = "a";
+          activeIndent = null;
+          nextNumber = 1;
+        }
+        return line;
+      }
+
+      const [, indent, letter, rest] = match;
+      const normalized = letter.toLowerCase();
+      const continues = activeIndent === indent && normalized === expectedLetter;
+      const starts = normalized === "a";
+
+      if (!continues && !starts) {
+        expectedLetter = "a";
+        activeIndent = null;
+        nextNumber = 1;
+        return line;
+      }
+
+      if (!continues) {
+        nextNumber = 1;
+      }
+
+      const number = nextNumber;
+      nextNumber += 1;
+      expectedLetter = String.fromCharCode(normalized.charCodeAt(0) + 1);
+      activeIndent = indent;
+      return `${indent}${number}. ${rest}`;
+    })
+    .join("\n");
+}
 
 function linkifyPlainText(text: string): string {
   const segments = splitTextWithLinks(text);
@@ -27,7 +72,7 @@ export function linkifyHonorMarkdown(markdown: string): string {
         return part;
       }
 
-      return part
+      return promoteIndentedLetterLists(part)
         .split(MARKDOWN_TOKEN)
         .map((segment) =>
           /^\[[^\]]*\]\([^)]*\)$/.test(segment) || /^!\[[^\]]*\]\([^)]*\)$/.test(segment)

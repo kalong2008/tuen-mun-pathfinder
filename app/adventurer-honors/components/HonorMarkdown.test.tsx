@@ -36,6 +36,29 @@ describe("HonorMarkdown bible verses", () => {
   });
 });
 
+describe("HonorMarkdown lettered sub-items", () => {
+  test("renders indented a b c items on their own lines", () => {
+    const { container } = render(
+      <HonorMarkdown
+        markdown={[
+          "1. 聆聽馬太福音 13:3-9 中的比喻。閱讀另外兩節關於種子的經文：",
+          "   a. 創世記 1:11",
+          "   b. 馬可福音 4:31",
+          "   c. 馬太福音 17:20",
+          "2. 種子生長時需要什麼？",
+        ].join("\n")}
+      />,
+    );
+
+    const nestedItems = [...container.querySelectorAll("ol ol > li")].map((item) => item.textContent);
+    expect(nestedItems).toEqual(["創世記 1:11", "馬可福音 4:31", "馬太福音 17:20"]);
+    expect(screen.getByRole("link", { name: "創世記 1:11" })).toHaveAttribute(
+      "href",
+      "https://www.bible.com/bible/139/GEN.1.11.RCUV",
+    );
+  });
+});
+
 describe("HonorMarkdown style rendering", () => {
   test("renders all markdown elements from the shared style sample", () => {
     render(<HonorMarkdown markdown={loadMarkdownStyleSample()} />);
