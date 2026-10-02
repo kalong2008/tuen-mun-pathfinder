@@ -51,13 +51,13 @@ describe("splitTextWithLinks", () => {
       {
         type: "link",
         value: "羅馬書 12:10",
-        href: "https://www.bible.com/zh-TW/bible/139/ROM.12.10.RCUV",
+        href: "https://www.bible.com/bible/139/ROM.12.10.RCUV",
       },
       { type: "text", value: " 和" },
       {
         type: "link",
         value: "箴言 12:25",
-        href: "https://www.bible.com/zh-TW/bible/139/PRO.12.25.RCUV",
+        href: "https://www.bible.com/bible/139/PRO.12.25.RCUV",
       },
       { type: "text", value: "。" },
     ]);

@@ -7,6 +7,35 @@ import { HonorMarkdown } from "@/app/adventurer-honors/components/HonorMarkdown"
 import { loadHonorMarkdownById } from "@/app/adventurer-honors/lib/data/loader";
 import { loadMarkdownStyleSample } from "@/app/adventurer-honors/lib/markdown/samples/placeholders";
 
+describe("HonorMarkdown bible verses", () => {
+  test("keeps chapter and verse numbers on the same line", () => {
+    const { container } = render(
+      <HonorMarkdown
+        markdown={[
+          "聆聽馬太福音 13:3-9 撒種的比喻。另讀至少兩節：創 1:11、可 4:31、太 17:20。",
+          "閱讀創世記 1:1-2:3 和彼得前書 4:10, 11。",
+        ].join("\n\n")}
+      />,
+    );
+
+    const paragraphs = [...container.querySelectorAll("p")].map((paragraph) => paragraph.textContent);
+
+    expect(paragraphs[0]).toBe(
+      "聆聽馬太福音 13:3-9 撒種的比喻。另讀至少兩節：創 1:11、可 4:31、太 17:20。",
+    );
+    expect(paragraphs[1]).toBe("閱讀創世記 1:1-2:3 和彼得前書 4:10, 11。");
+    expect(container.querySelectorAll("p div")).toHaveLength(0);
+    expect(screen.getByRole("link", { name: "馬太福音 13:3-9" })).toHaveAttribute(
+      "href",
+      "https://www.bible.com/bible/139/MAT.13.3-9.RCUV",
+    );
+    expect(screen.getByRole("link", { name: "創世記 1:1-2:3" })).toHaveAttribute(
+      "href",
+      "https://www.bible.com/bible/139/GEN.1.1-2.3.RCUV",
+    );
+  });
+});
+
 describe("HonorMarkdown style rendering", () => {
   test("renders all markdown elements from the shared style sample", () => {
     render(<HonorMarkdown markdown={loadMarkdownStyleSample()} />);

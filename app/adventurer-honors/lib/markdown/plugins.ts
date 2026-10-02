@@ -16,6 +16,24 @@ const ALERT_CLASS_BY_NAME: Record<string, string> = {
   tip: "honor-alert honor-alert-tip",
 };
 
+/** `:12` and `:3-9` are bible verses, but remark-directive parses them as text directives. */
+const BIBLE_VERSE_DIRECTIVE_NAME = /^\d+(?:-\d+)?$/;
+
+function remarkRestoreBibleVerseColons() {
+  return (tree: Root) => {
+    visit(tree, "textDirective", (node, index, parent) => {
+      if (!parent || index === undefined || !BIBLE_VERSE_DIRECTIVE_NAME.test(node.name)) {
+        return;
+      }
+
+      parent.children[index] = {
+        type: "text",
+        value: `:${node.name}`,
+      };
+    });
+  };
+}
+
 function remarkDirectiveAlerts() {
   return (tree: Root) => {
     visit(tree, (node) => {
@@ -62,6 +80,7 @@ export const honorRemarkPlugins = [
   remarkDefinitionList,
   remarkAbbr,
   remarkDirective,
+  remarkRestoreBibleVerseColons,
   remarkDirectiveAlerts,
   remarkYoutubeEmbeds,
 ];

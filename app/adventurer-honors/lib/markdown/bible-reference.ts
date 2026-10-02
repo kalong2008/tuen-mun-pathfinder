@@ -2,7 +2,6 @@
 export const YOUVERSION_RCUV = {
   versionId: 139,
   abbreviation: "RCUV",
-  locale: "zh-TW",
 } as const;
 
 const BIBLE_BOOKS: { name: string; usfm: string }[] = [
@@ -228,8 +227,8 @@ function buildUsfmReference(bookUsfm: string, groups: RegExpMatchArray["groups"]
 }
 
 export function buildYouVersionBibleUrl(usfm: string): string {
-  const { locale, versionId, abbreviation } = YOUVERSION_RCUV;
-  return `https://www.bible.com/${locale}/bible/${versionId}/${usfm}.${abbreviation}`;
+  const { versionId, abbreviation } = YOUVERSION_RCUV;
+  return `https://www.bible.com/bible/${versionId}/${usfm}.${abbreviation}`;
 }
 
 export function findBibleReferenceLinks(text: string): Array<{ start: number; end: number; href: string }> {
