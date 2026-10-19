@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import * as motion from "motion/react-client";
 import { CalendarDays, FileText } from "lucide-react";
 
@@ -9,6 +8,7 @@ interface Notice {
   id: string;
   title: string;
   date: string;
+  endDate?: string;
   activityType: string;
   pdfUrl: string[];
   target: string[];
@@ -24,10 +24,11 @@ const groupByActivityType = (noticeData: Notice[]) => {
   );
   
   sortedNotices.forEach((notice: Notice) => {
-    if (!grouped[notice.activityType]) {
-      grouped[notice.activityType] = [];
+    const activityType = notice.activityType || "其他";
+    if (!grouped[activityType]) {
+      grouped[activityType] = [];
     }
-    grouped[notice.activityType].push(notice);
+    grouped[activityType].push(notice);
   });
   
   return grouped;
@@ -51,14 +52,22 @@ const getActivityIcon = (type: string) => {
   }
 };
 
-// Format date from YYYY-MM-DD to readable format
-const formatDate = (dateString: string) => {
-  const date = new Date(dateString);
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  return `${year}年${month}月${day}日`;
-};
+function dateParts(dateString: string) {
+  const [year, month, day] = dateString.slice(0, 10).split("-").map(Number);
+  return { year, month, day };
+}
+
+function formatNoticeRange(start: string, end: string) {
+  const from = dateParts(start);
+  const to = dateParts(end);
+  if (from.year === to.year && from.month === to.month) {
+    return `${from.year}年${from.month}月${from.day}日至${to.day}日`;
+  }
+  if (from.year === to.year) {
+    return `${from.year}年${from.month}月${from.day}日至${to.month}月${to.day}日`;
+  }
+  return `${from.year}年${from.month}月${from.day}日至${to.year}年${to.month}月${to.day}日`;
+}
 
 // Check if an activity is in the past
 const isPastActivity = (dateString: string) => {
@@ -161,7 +170,9 @@ export default function Page() {
       .finally(() => setLoading(false));
   }, []);
 
-  const groupedNotices = groupByActivityType(noticeData);
+  const groupedNotices = groupByActivityType(
+    noticeData.filter((notice) => notice.pdfUrl.length > 0),
+  );
 
   if (loading) {
     return (
@@ -239,16 +250,17 @@ export default function Page() {
                       <div className="flex flex-col space-y-2 pl-6">
                         {notice.pdfUrl.map((url: string, index: number) => (
                           <div key={index} className="flex items-center gap-3">
-                            <Link 
-                              href={url} 
+                            <a
+                              href={url}
                               className={`flex items-center gap-2 ${isPast ? 'text-gray-500' : 'text-blue-600 hover:text-blue-800'} transition-colors group`}
                               target="_blank"
+                              rel="noopener noreferrer"
                             >
                               <FileText className="h-4 w-4" />
                               <span className="underline underline-offset-4 group-hover:underline-offset-2 transition-all">
                                 通告下載
                               </span>
-                            </Link>
+                            </a>
                             
                             {notice.target[index] && (
                               <span className={`text-xs px-2 py-1 rounded-full ${isPast ? 'bg-gray-100 text-gray-400' : getTargetBadgeStyle(notice.target[index])}`}>
@@ -258,9 +270,11 @@ export default function Page() {
                           </div>
                         ))}
                         
-                        {/*<div className="text-sm text-gray-500 pl-0.5">
-                          {formatDate(notice.date)}
-                        </div>*/}
+                        {notice.endDate && notice.endDate !== notice.date && (
+                          <div className={`text-sm pl-0.5 ${isPast ? "text-gray-400" : "text-gray-500"}`}>
+                            {formatNoticeRange(notice.date, notice.endDate)}
+                          </div>
+                        )}
                       </div>
                     </div>
                   );

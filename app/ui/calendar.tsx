@@ -167,7 +167,13 @@ export default function MyCalendar() {
         </h3>
         {uniqueActivitiesForMonth.length > 0 ? (
           <ul className="space-y-3 pr-2 -mr-2 custom-scrollbar">
-            {uniqueActivitiesForMonth.map((activity) => (
+            {uniqueActivitiesForMonth.map((activity) => {
+              const place = activity.location && activity.location !== "待定"
+                ? activity.location
+                : activity.gatherLocation && activity.gatherLocation !== "待定"
+                  ? activity.gatherLocation
+                  : "";
+              return (
               <li 
                 key={activity.id} 
                 className="bg-white p-3 rounded-md shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
@@ -180,20 +186,21 @@ export default function MyCalendar() {
                   <span className="flex items-center text-gray-600">
                      <Clock className="w-3.5 h-3.5 mr-1.5 text-gray-400 flex-shrink-0" />
                      {activity.title}
+                     {activity.participants && activity.participants.length > 0 ? `（${activity.participants.join("、")}）` : ""}
                   </span>
-                  {activity.location && activity.location !== '待定' && (
+                  {place && (
                     <span className="flex items-center text-gray-600">
                       <MapPin className="w-3.5 h-3.5 mr-1.5 text-gray-400 flex-shrink-0" />
-                      {activity.location}
+                      {place}
                     </span>
                   )}
-                  {/* Link to notice */}
-                  {(activity.title.includes("參觀") || activity.title.includes("步操訓練") || activity.title.includes("日營") || activity.title.includes("行山") || activity.title.includes("露營") || activity.title.includes("遠足") || activity.title.includes("宿營")  || activity.title.includes("暑期") || activity.title.includes("升級禮") || activity.title.includes("美食節義賣") || activity.title.includes("聖誕報佳音")) && (
+                  {activity.noticeId && (
                      <Link href="/notice" className="text-xs text-blue-600 hover:underline mt-1 inline-block">查看通告詳情</Link>
                   )}
                 </div>
               </li>
-            ))}
+              );
+            })}
           </ul>
         ) : (
           <p className="text-gray-500 text-center mt-4">本月暫無已安排的活動。</p>

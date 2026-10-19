@@ -34,7 +34,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 This project requires the following environment variables:
 
 - `DATABASE_URL` - Your Neon database connection string
-- `BLOB_READ_WRITE_TOKEN` - (Optional) Vercel Blob token for notice PDFs. Add this if you run the notice/calendar migration to store PDFs in Vercel Blob.
+- `NOCOLY_APP_KEY` / `NOCOLY_SIGN` - Nocoly app credentials. Calendar meetings and notices, including notice PDFs, are read from Nocoly.
 - `MUX_TOKEN_ID` / `MUX_TOKEN_SECRET` - Required for admin 歷屆影片 saves (title + auto-queue 720p). Create tokens in the **same Mux environment as your uploads** (usually **Production** in the Mux dashboard) and set them on **Vercel Production**. Development tokens against Production playback IDs cause “mismatching environment” API errors. Public `/videos` playback and 720p download checks use Playback IDs + `stream.mux.com` and do not need the API for the download button itself.
 
 ### Getting Environment Variables from Vercel
@@ -60,16 +60,9 @@ vercel env pull .env.local
 
 **Note:** The `.env.local` file is gitignored and should not be committed to version control.
 
-### Notice & calendar data (Neon + Vercel Blob)
+### Notice and calendar data (Nocoly)
 
-Calendar and notice data are served from Neon DB; notice PDFs can be stored in Vercel Blob.
-
-1. **Create tables in Neon**: Run the SQL in `scripts/schema-notice-calendar.sql` in the [Neon SQL Editor](https://neon.tech/docs/connect/query-with-neon-sql-editor).
-2. **Run the migration** (seeds calendar + notices into Neon, uploads PDFs to Blob if `BLOB_READ_WRITE_TOKEN` is set):
-   ```bash
-   npm run migrate-notice-calendar
-   ```
-   Requires Node 20.6+ for `--env-file`. Otherwise set `DATABASE_URL` and optionally `BLOB_READ_WRITE_TOKEN` in the environment before running.
+Meetings come from the Nocoly worksheet 集會資料 (`69ca06e5f037f1c2dd57ddfe`). Notices come from 通告資料 (`69ca017def0b95ca9b93c7a1`). Notice PDFs stay in the Nocoly attachment fields. The site opens them through `/api/notices/{rowId}/file/pathfinder` or `/api/notices/{rowId}/file/adventurer`, which streams the file inline in the browser.
 
 ### Hyperlink data (Neon)
 

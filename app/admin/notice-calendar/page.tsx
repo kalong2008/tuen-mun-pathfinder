@@ -4,74 +4,84 @@ import { useState, useEffect } from "react";
 import { useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import { CalendarDays, FileText, Pencil, Trash2, Plus, X, Upload } from "lucide-react";
+import {
+  ACTIVITY_TYPE_OPTIONS,
+  PARTICIPANT_OPTIONS,
+} from "@/app/lib/notice-calendar";
 
-type CalendarEvent = {
-  id: number;
+type Meeting = {
+  id: string;
   date: string;
+  held: boolean;
+  participants: string[];
   title: string;
-  time: string;
-  location: string;
-  isCamp?: boolean;
-  campKey?: string;
-  marking?: { startingDay?: boolean; endingDay?: boolean };
 };
 
 type Notice = {
   id: string;
   title: string;
   date: string;
+  startTime: string;
+  endDate: string;
+  endTime: string;
+  gatherLocation: string;
+  dismissLocation: string;
+  location: string;
+  charged: boolean;
+  fee: string;
   activityType: string;
+  participants: string[];
   pdfUrl: string[];
   target: string[];
 };
 
+type NoticeDraft = Omit<Notice, "id" | "pdfUrl" | "target">;
+
+async function readError(response: Response, fallback: string) {
+  const data = await response.json().catch(() => null);
+  if (data && typeof data.error === "string") {
+    return data.error;
+  }
+  return fallback;
+}
+
 export default function AdminNoticeCalendarPage() {
   const { isLoaded, isSignedIn, user } = useUser();
   const [tab, setTab] = useState<"calendar" | "notices">("calendar");
-  const [calendarEvents, setCalendarEvents] = useState<CalendarEvent[]>([]);
+  const [meetings, setMeetings] = useState<Meeting[]>([]);
   const [notices, setNotices] = useState<Notice[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [editingEvent, setEditingEvent] = useState<CalendarEvent | null>(null);
+  const [editingMeeting, setEditingMeeting] = useState<Meeting | null>(null);
   const [editingNotice, setEditingNotice] = useState<Notice | null>(null);
-  const [creatingEvent, setCreatingEvent] = useState(false);
+  const [creatingMeeting, setCreatingMeeting] = useState(false);
   const [creatingNotice, setCreatingNotice] = useState(false);
   const [saving, setSaving] = useState(false);
 
   const isAdmin = user?.publicMetadata?.role === "admin";
 
-  const loadCalendar = async () => {
-    const res = await fetch("/api/calendar");
-    if (!res.ok) throw new Error("Failed to load calendar");
-    const byDate = await res.json();
-    const flat: CalendarEvent[] = [];
-    for (const [date, items] of Object.entries(byDate as Record<string, CalendarEvent[]>)) {
-      for (const item of items) {
-        flat.push({ ...item, date });
-      }
-    }
-    flat.sort((a, b) => a.date.localeCompare(b.date) || a.id - b.id);
-    setCalendarEvents(flat);
+  const loadMeetings = async () => {
+    const res = await fetch("/api/meetings");
+    if (!res.ok) throw new Error(await readError(res, "Failed to load meetings"));
+    setMeetings(await res.json());
   };
 
   const loadNotices = async () => {
     const res = await fetch("/api/notices");
-    if (!res.ok) throw new Error("Failed to load notices");
-    const data = await res.json();
-    setNotices(data);
+    if (!res.ok) throw new Error(await readError(res, "Failed to load notices"));
+    setNotices(await res.json());
   };
 
   useEffect(() => {
-    if (!isLoaded || !isSignedIn) return;
-    if (!isAdmin) return;
+    if (!isLoaded || !isSignedIn || !isAdmin) return;
     let cancelled = false;
     (async () => {
       setLoading(true);
       setError(null);
       try {
-        await Promise.all([loadCalendar(), loadNotices()]);
-      } catch (e) {
-        if (!cancelled) setError(e instanceof Error ? e.message : "Load failed");
+        await Promise.all([loadMeetings(), loadNotices()]);
+      } catch (loadError) {
+        if (!cancelled) setError(loadError instanceof Error ? loadError.message : "Load failed");
       } finally {
         if (!cancelled) setLoading(false);
       }
@@ -81,16 +91,16 @@ export default function AdminNoticeCalendarPage() {
     };
   }, [isLoaded, isSignedIn, isAdmin]);
 
-  const handleDeleteEvent = async (id: number) => {
-    if (!confirm("刪除此活動？")) return;
+  const handleDeleteMeeting = async (id: string) => {
+    if (!confirm("刪除此集會？")) return;
     setSaving(true);
     try {
-      const res = await fetch(`/api/calendar/${id}`, { method: "DELETE" });
-      if (!res.ok) throw new Error("Delete failed");
-      await loadCalendar();
-      setEditingEvent(null);
-    } catch (e) {
-      alert(e instanceof Error ? e.message : "Delete failed");
+      const res = await fetch(`/api/meetings/${id}`, { method: "DELETE" });
+      if (!res.ok) throw new Error(await readError(res, "Delete failed"));
+      await loadMeetings();
+      setEditingMeeting(null);
+    } catch (deleteError) {
+      alert(deleteError instanceof Error ? deleteError.message : "Delete failed");
     } finally {
       setSaving(false);
     }
@@ -101,91 +111,68 @@ export default function AdminNoticeCalendarPage() {
     setSaving(true);
     try {
       const res = await fetch(`/api/notices/${id}`, { method: "DELETE" });
-      if (!res.ok) throw new Error("Delete failed");
+      if (!res.ok) throw new Error(await readError(res, "Delete failed"));
       await loadNotices();
       setEditingNotice(null);
-    } catch (e) {
-      alert(e instanceof Error ? e.message : "Delete failed");
+    } catch (deleteError) {
+      alert(deleteError instanceof Error ? deleteError.message : "Delete failed");
     } finally {
       setSaving(false);
     }
   };
 
-  const handleSaveEvent = async (payload: Partial<CalendarEvent>) => {
+  const handleSaveMeeting = async (payload: Omit<Meeting, "id" | "title">) => {
     setSaving(true);
     try {
-      if (editingEvent) {
-        const res = await fetch(`/api/calendar/${editingEvent.id}`, {
-          method: "PATCH",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            date: payload.date,
-            title: payload.title,
-            time: payload.time,
-            location: payload.location,
-            is_camp: payload.isCamp,
-            camp_key: payload.campKey || null,
-            marking: payload.marking ?? {},
-          }),
-        });
-        if (!res.ok) throw new Error("Update failed");
-      } else {
-        const res = await fetch("/api/calendar", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            date: payload.date,
-            title: payload.title,
-            time: payload.time ?? "",
-            location: payload.location ?? "",
-            is_camp: payload.isCamp ?? false,
-            camp_key: payload.campKey || null,
-            marking: payload.marking ?? {},
-          }),
-        });
-        if (!res.ok) throw new Error("Create failed");
-      }
-      await loadCalendar();
-      setEditingEvent(null);
-      setCreatingEvent(false);
-    } catch (e) {
-      alert(e instanceof Error ? e.message : "Save failed");
+      const res = await fetch(editingMeeting ? `/api/meetings/${editingMeeting.id}` : "/api/meetings", {
+        method: editingMeeting ? "PATCH" : "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(await readError(res, "Save failed"));
+      await loadMeetings();
+      setEditingMeeting(null);
+      setCreatingMeeting(false);
+    } catch (saveError) {
+      alert(saveError instanceof Error ? saveError.message : "Save failed");
     } finally {
       setSaving(false);
     }
   };
 
-  const handleSaveNotice = async (payload: Partial<Notice> & { activityType?: string }) => {
+  const handleSaveNotice = async (
+    payload: NoticeDraft,
+    files: { pathfinder: File | null; adventurer: File | null },
+    clear: { pathfinder: boolean; adventurer: boolean },
+  ) => {
     setSaving(true);
     try {
-      const body = {
-        id: payload.id,
-        title: payload.title,
-        date: payload.date,
-        activityType: payload.activityType ?? payload.activityType,
-        pdfUrl: payload.pdfUrl ?? [],
-        target: payload.target ?? [],
-      };
-      if (editingNotice) {
-        const res = await fetch(`/api/notices/${editingNotice.id}`, {
-          method: "PATCH",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
-        });
-        if (!res.ok) throw new Error("Update failed");
-      } else {
-        const res = await fetch("/api/notices", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(body),
-        });
-        if (!res.ok) throw new Error("Create failed");
+      const res = await fetch(editingNotice ? `/api/notices/${editingNotice.id}` : "/api/notices", {
+        method: editingNotice ? "PATCH" : "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error(await readError(res, "Save failed"));
+      const saved = await res.json();
+      const id = typeof saved.id === "string" ? saved.id : editingNotice?.id;
+      if (!id) throw new Error("Saved notice has no id");
+      for (const slot of ["pathfinder", "adventurer"] as const) {
+        if (clear[slot]) {
+          const cleared = await fetch(`/api/notices/${id}/file/${slot}`, { method: "DELETE" });
+          if (!cleared.ok) throw new Error(await readError(cleared, "Failed to remove PDF"));
+        }
+        const file = files[slot];
+        if (!file) continue;
+        const body = new FormData();
+        body.set("file", file);
+        const uploaded = await fetch(`/api/notices/${id}/file/${slot}`, { method: "POST", body });
+        if (!uploaded.ok) throw new Error(await readError(uploaded, "Failed to upload PDF"));
       }
       await loadNotices();
       setEditingNotice(null);
       setCreatingNotice(false);
-    } catch (e) {
-      alert(e instanceof Error ? e.message : "Save failed");
+    } catch (saveError) {
+      alert(saveError instanceof Error ? saveError.message : "Save failed");
     } finally {
       setSaving(false);
     }
@@ -240,7 +227,7 @@ export default function AdminNoticeCalendarPage() {
           className={`px-4 py-2 font-medium ${tab === "calendar" ? "border-b-2 border-blue-600 text-blue-600" : "text-gray-600"}`}
         >
           <CalendarDays className="inline w-4 h-4 mr-2" />
-          日曆活動
+          集會
         </button>
         <button
           type="button"
@@ -255,13 +242,13 @@ export default function AdminNoticeCalendarPage() {
       {tab === "calendar" && (
         <section>
           <div className="flex justify-between items-center mb-4">
-            <p className="text-gray-600">共 {calendarEvents.length} 筆活動</p>
+            <p className="text-gray-600">共 {meetings.length} 筆集會</p>
             <button
               type="button"
-              onClick={() => { setCreatingEvent(true); setEditingEvent(null); }}
+              onClick={() => { setCreatingMeeting(true); setEditingMeeting(null); }}
               className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-600 text-white rounded hover:bg-blue-700"
             >
-              <Plus className="w-4 h-4" /> 新增活動
+              <Plus className="w-4 h-4" /> 新增集會
             </button>
           </div>
           <div className="overflow-x-auto border border-gray-200 rounded-lg">
@@ -269,38 +256,33 @@ export default function AdminNoticeCalendarPage() {
               <thead className="bg-gray-50">
                 <tr>
                   <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">日期</th>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">標題</th>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">時間</th>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">地點</th>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">露營</th>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">camp_key</th>
+                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">日曆顯示</th>
+                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">建立資料</th>
+                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">參加者</th>
                   <th className="px-3 py-2 text-right text-xs font-medium text-gray-500">操作</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {calendarEvents.map((ev) => (
-                  <tr key={ev.id}>
-                    <td className="px-3 py-2 text-sm text-gray-900">{ev.date}</td>
-                    <td className="px-3 py-2 text-sm text-gray-900">{ev.title}</td>
-                    <td className="px-3 py-2 text-sm text-gray-500">{ev.time}</td>
-                    <td className="px-3 py-2 text-sm text-gray-500">{ev.location}</td>
-                    <td className="px-3 py-2 text-sm">{ev.isCamp ? "是" : ""}</td>
-                    <td className="px-3 py-2 text-xs text-gray-400 max-w-[120px] truncate">{ev.campKey ?? ""}</td>
+                {meetings.map((meeting) => (
+                  <tr key={meeting.id}>
+                    <td className="px-3 py-2 text-sm text-gray-900">{meeting.date}</td>
+                    <td className="px-3 py-2 text-sm text-gray-900">{meeting.held ? meeting.title : "不顯示"}</td>
+                    <td className="px-3 py-2 text-sm text-gray-500">{meeting.held ? "是" : "不是"}</td>
+                    <td className="px-3 py-2 text-sm text-gray-500">{meeting.participants.join("、")}</td>
                     <td className="px-3 py-2 text-right">
-                      <button type="button" onClick={() => { setEditingEvent(ev); setCreatingEvent(false); }} className="text-blue-600 hover:underline mr-2"><Pencil className="w-4 h-4 inline" /></button>
-                      <button type="button" onClick={() => handleDeleteEvent(ev.id)} className="text-red-600 hover:underline" disabled={saving}><Trash2 className="w-4 h-4 inline" /></button>
+                      <button type="button" onClick={() => { setEditingMeeting(meeting); setCreatingMeeting(false); }} className="text-blue-600 hover:underline mr-2"><Pencil className="w-4 h-4 inline" /></button>
+                      <button type="button" onClick={() => handleDeleteMeeting(meeting.id)} className="text-red-600 hover:underline" disabled={saving}><Trash2 className="w-4 h-4 inline" /></button>
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-
-          {(editingEvent || creatingEvent) && (
-            <CalendarEventForm
-              event={editingEvent ?? undefined}
-              onSave={handleSaveEvent}
-              onCancel={() => { setEditingEvent(null); setCreatingEvent(false); }}
+          {(editingMeeting || creatingMeeting) && (
+            <MeetingForm
+              meeting={editingMeeting ?? undefined}
+              onSave={handleSaveMeeting}
+              onCancel={() => { setEditingMeeting(null); setCreatingMeeting(false); }}
               saving={saving}
             />
           )}
@@ -323,30 +305,29 @@ export default function AdminNoticeCalendarPage() {
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">ID</th>
                   <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">標題</th>
-                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">日期</th>
+                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">集合日期</th>
                   <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">類型</th>
+                  <th className="px-3 py-2 text-left text-xs font-medium text-gray-500">通告</th>
                   <th className="px-3 py-2 text-right text-xs font-medium text-gray-500">操作</th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {notices.map((n) => (
-                  <tr key={n.id}>
-                    <td className="px-3 py-2 text-sm text-gray-500">{n.id}</td>
-                    <td className="px-3 py-2 text-sm text-gray-900">{n.title}</td>
-                    <td className="px-3 py-2 text-sm text-gray-500">{n.date}</td>
-                    <td className="px-3 py-2 text-sm text-gray-500">{n.activityType}</td>
+                {notices.map((notice) => (
+                  <tr key={notice.id}>
+                    <td className="px-3 py-2 text-sm text-gray-900">{notice.title}</td>
+                    <td className="px-3 py-2 text-sm text-gray-500">{notice.date}</td>
+                    <td className="px-3 py-2 text-sm text-gray-500">{notice.activityType || "其他"}</td>
+                    <td className="px-3 py-2 text-sm text-gray-500">{notice.target.join("、")}</td>
                     <td className="px-3 py-2 text-right">
-                      <button type="button" onClick={() => { setEditingNotice(n); setCreatingNotice(false); }} className="text-blue-600 hover:underline mr-2"><Pencil className="w-4 h-4 inline" /></button>
-                      <button type="button" onClick={() => handleDeleteNotice(n.id)} className="text-red-600 hover:underline" disabled={saving}><Trash2 className="w-4 h-4 inline" /></button>
+                      <button type="button" onClick={() => { setEditingNotice(notice); setCreatingNotice(false); }} className="text-blue-600 hover:underline mr-2"><Pencil className="w-4 h-4 inline" /></button>
+                      <button type="button" onClick={() => handleDeleteNotice(notice.id)} className="text-red-600 hover:underline" disabled={saving}><Trash2 className="w-4 h-4 inline" /></button>
                     </td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-
           {(editingNotice || creatingNotice) && (
             <NoticeForm
               notice={editingNotice ?? undefined}
@@ -361,62 +342,48 @@ export default function AdminNoticeCalendarPage() {
   );
 }
 
-function CalendarEventForm({
-  event,
+function MeetingForm({
+  meeting,
   onSave,
   onCancel,
   saving,
 }: {
-  event?: CalendarEvent;
-  onSave: (p: Partial<CalendarEvent>) => void;
+  meeting?: Meeting;
+  onSave: (payload: Omit<Meeting, "id" | "title">) => void;
   onCancel: () => void;
   saving: boolean;
 }) {
-  const [date, setDate] = useState(event?.date ?? "");
-  const [title, setTitle] = useState(event?.title ?? "");
-  const [time, setTime] = useState(event?.time ?? "");
-  const [location, setLocation] = useState(event?.location ?? "");
-  const [isCamp, setIsCamp] = useState(event?.isCamp ?? false);
-  const [campKey, setCampKey] = useState(event?.campKey ?? "");
+  const [date, setDate] = useState(meeting?.date ?? "");
+  const [held, setHeld] = useState(meeting?.held ?? true);
+  const [participants, setParticipants] = useState<string[]>(meeting?.participants ?? []);
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg shadow-xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-semibold">{event ? "編輯活動" : "新增活動"}</h2>
+          <h2 className="text-lg font-semibold">{meeting ? "編輯集會" : "新增集會"}</h2>
           <button type="button" onClick={onCancel}><X className="w-5 h-5" /></button>
         </div>
         <form
           className="space-y-3"
-          onSubmit={(e) => {
-            e.preventDefault();
-            onSave({ date, title, time, location, isCamp, campKey: campKey || undefined, marking: event?.marking ?? {} });
+          onSubmit={(event) => {
+            event.preventDefault();
+            onSave({ date, held, participants });
           }}
         >
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">日期 *</label>
-            <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
+            <label className="block text-sm font-medium text-gray-700 mb-1">集會日期 *</label>
+            <input type="date" value={date} onChange={(event) => setDate(event.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">標題 *</label>
-            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
+            <label className="block text-sm font-medium text-gray-700 mb-1">建立資料</label>
+            <select value={held ? "是" : "不是"} onChange={(event) => setHeld(event.target.value === "是")} className="w-full border border-gray-300 rounded px-3 py-2 bg-white">
+              <option value="是">是</option>
+              <option value="不是">不是</option>
+            </select>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">時間</label>
-            <input type="text" value={time} onChange={(e) => setTime(e.target.value)} placeholder="09:00 - 16:00" className="w-full border border-gray-300 rounded px-3 py-2" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">地點</label>
-            <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
-          </div>
-          <div className="flex items-center gap-2">
-            <input type="checkbox" id="isCamp" checked={isCamp} onChange={(e) => setIsCamp(e.target.checked)} />
-            <label htmlFor="isCamp">露營活動</label>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">camp_key（多日同一活動用）</label>
-            <input type="text" value={campKey} onChange={(e) => setCampKey(e.target.value)} placeholder="2025-04-03_露營（前鋒會＋幼鋒會）" className="w-full border border-gray-300 rounded px-3 py-2" />
-          </div>
+          <ParticipantFields participants={participants} onChange={setParticipants} />
+          <p className="text-sm text-gray-500">日曆名稱是「集會」，參加者會另外標示。建立資料選「不是」的日期不會出現在日曆。</p>
           <div className="flex gap-2 pt-2">
             <button type="submit" disabled={saving} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50">儲存</button>
             <button type="button" onClick={onCancel} className="px-4 py-2 border border-gray-300 rounded">取消</button>
@@ -427,21 +394,35 @@ function CalendarEventForm({
   );
 }
 
-const ACTIVITY_TYPE_OPTIONS = [
-  "露營",
-  "宿營",
-  "遠足",
-  "日營",
-  "訓練",
-  "參觀",
-  "烹飪",
-  "升級禮",
-  "美食節義賣",
-  "聖誕報佳音",
-  "其他",
-] as const;
-
-const TARGET_OPTIONS = ["前鋒會", "幼鋒會", "所有成員"] as const;
+function ParticipantFields({
+  participants,
+  onChange,
+}: {
+  participants: string[];
+  onChange: (participants: string[]) => void;
+}) {
+  return (
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">參加者</label>
+      <div className="flex flex-wrap gap-4 border border-gray-300 rounded px-3 py-2 bg-gray-50">
+        {PARTICIPANT_OPTIONS.map((option) => (
+          <label key={option} className="inline-flex items-center gap-2 cursor-pointer">
+            <input
+              type="checkbox"
+              checked={participants.includes(option)}
+              onChange={(event) => {
+                if (event.target.checked) onChange([...participants, option]);
+                else onChange(participants.filter((item) => item !== option));
+              }}
+              className="rounded border-gray-300"
+            />
+            <span>{option}</span>
+          </label>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 function NoticeForm({
   notice,
@@ -450,53 +431,30 @@ function NoticeForm({
   saving,
 }: {
   notice?: Notice;
-  onSave: (p: Partial<Notice> & { activityType?: string }) => void;
+  onSave: (
+    payload: NoticeDraft,
+    files: { pathfinder: File | null; adventurer: File | null },
+    clear: { pathfinder: boolean; adventurer: boolean },
+  ) => void;
   onCancel: () => void;
   saving: boolean;
 }) {
-  const [id, setId] = useState(notice?.id ?? "");
   const [title, setTitle] = useState(notice?.title ?? "");
   const [date, setDate] = useState(notice?.date ?? "");
+  const [startTime, setStartTime] = useState(notice?.startTime ?? "");
+  const [endDate, setEndDate] = useState(notice?.endDate ?? "");
+  const [endTime, setEndTime] = useState(notice?.endTime ?? "");
+  const [gatherLocation, setGatherLocation] = useState(notice?.gatherLocation ?? "");
+  const [dismissLocation, setDismissLocation] = useState(notice?.dismissLocation ?? "");
+  const [location, setLocation] = useState(notice?.location ?? "");
+  const [charged, setCharged] = useState(notice?.charged ?? false);
+  const [fee, setFee] = useState(notice?.fee ?? "");
   const [activityType, setActivityType] = useState(notice?.activityType ?? "");
-  const [pdfUrlText, setPdfUrlText] = useState((notice?.pdfUrl ?? []).join("\n"));
-  const [target, setTarget] = useState<string[]>(notice?.target ?? []);
-  const [uploading, setUploading] = useState(false);
-  const [uploadError, setUploadError] = useState<string | null>(null);
-
-  const handleUploadPdf = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = e.target.files;
-    if (!files?.length) return;
-    setUploadError(null);
-    setUploading(true);
-    try {
-      const urls: string[] = [];
-      for (let i = 0; i < files.length; i++) {
-        const file = files[i];
-        if (file.type !== "application/pdf") {
-          setUploadError(`「${file.name}」不是 PDF，已略過。`);
-          continue;
-        }
-        const formData = new FormData();
-        formData.set("file", file);
-        const res = await fetch("/api/notice-upload", {
-          method: "POST",
-          body: formData,
-        });
-        const data = await res.json();
-        if (!res.ok) throw new Error(data.error || "Upload failed");
-        urls.push(data.url);
-      }
-      if (urls.length > 0) {
-        const existing = pdfUrlText.trim() ? pdfUrlText.trim().split(/\n/).filter(Boolean) : [];
-        setPdfUrlText([...existing, ...urls].join("\n"));
-      }
-    } catch (err) {
-      setUploadError(err instanceof Error ? err.message : "上傳失敗");
-    } finally {
-      setUploading(false);
-      e.target.value = "";
-    }
-  };
+  const [participants, setParticipants] = useState<string[]>(notice?.participants ?? []);
+  const [pathfinderFile, setPathfinderFile] = useState<File | null>(null);
+  const [adventurerFile, setAdventurerFile] = useState<File | null>(null);
+  const [clearPathfinder, setClearPathfinder] = useState(false);
+  const [clearAdventurer, setClearAdventurer] = useState(false);
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
@@ -507,93 +465,150 @@ function NoticeForm({
         </div>
         <form
           className="space-y-3"
-          onSubmit={(e) => {
-            e.preventDefault();
-            onSave({
-              id: id || undefined,
-              title,
-              date,
-              activityType,
-              pdfUrl: pdfUrlText.trim() ? pdfUrlText.trim().split(/\n/).map((s) => s.trim()).filter(Boolean) : [],
-              target,
-            });
+          onSubmit={(event) => {
+            event.preventDefault();
+            onSave(
+              {
+                title,
+                date,
+                startTime,
+                endDate,
+                endTime,
+                gatherLocation,
+                dismissLocation,
+                location,
+                charged,
+                fee,
+                activityType,
+                participants,
+              },
+              { pathfinder: pathfinderFile, adventurer: adventurerFile },
+              { pathfinder: clearPathfinder, adventurer: clearAdventurer },
+            );
           }}
         >
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">ID（新增時可留空自動產生）</label>
-            <input type="text" value={id} onChange={(e) => setId(e.target.value)} placeholder="自動" className="w-full border border-gray-300 rounded px-3 py-2" disabled={!!notice} />
+            <label className="block text-sm font-medium text-gray-700 mb-1">活動名稱 *</label>
+            <input type="text" value={title} onChange={(event) => setTitle(event.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">集合日期 *</label>
+              <input type="date" value={date} onChange={(event) => setDate(event.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">集合時間</label>
+              <input type="time" value={startTime} onChange={(event) => setStartTime(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">解散日期</label>
+              <input type="date" value={endDate} onChange={(event) => setEndDate(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">解散時間</label>
+              <input type="time" value={endTime} onChange={(event) => setEndTime(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
+            </div>
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">標題 *</label>
-            <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
+            <label className="block text-sm font-medium text-gray-700 mb-1">集合地點</label>
+            <input type="text" value={gatherLocation} onChange={(event) => setGatherLocation(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">日期 *</label>
-            <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required className="w-full border border-gray-300 rounded px-3 py-2" />
+            <label className="block text-sm font-medium text-gray-700 mb-1">解散地點</label>
+            <input type="text" value={dismissLocation} onChange={(event) => setDismissLocation(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">活動類型 *</label>
-            <select
-              value={activityType}
-              onChange={(e) => setActivityType(e.target.value)}
-              required
-              className="w-full border border-gray-300 rounded px-3 py-2 bg-white"
-            >
-              <option value="">請選擇</option>
-              {!ACTIVITY_TYPE_OPTIONS.includes(activityType as (typeof ACTIVITY_TYPE_OPTIONS)[number]) && activityType && (
-                <option value={activityType}>{activityType}</option>
-              )}
-              {ACTIVITY_TYPE_OPTIONS.map((opt) => (
-                <option key={opt} value={opt}>
-                  {opt}
-                </option>
+            <label className="block text-sm font-medium text-gray-700 mb-1">活動地點</label>
+            <input type="text" value={location} onChange={(event) => setLocation(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
+          </div>
+          <div className="grid grid-cols-2 gap-3">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">收費</label>
+              <select value={charged ? "是" : "不是"} onChange={(event) => setCharged(event.target.value === "是")} className="w-full border border-gray-300 rounded px-3 py-2 bg-white">
+                <option value="不是">不是</option>
+                <option value="是">是</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">費用</label>
+              <input type="number" min="0" step="0.01" value={fee} onChange={(event) => setFee(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2" />
+            </div>
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">活動類型</label>
+            <select value={activityType} onChange={(event) => setActivityType(event.target.value)} className="w-full border border-gray-300 rounded px-3 py-2 bg-white">
+              <option value="">未選擇</option>
+              {ACTIVITY_TYPE_OPTIONS.map((option) => (
+                <option key={option} value={option}>{option}</option>
               ))}
             </select>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">PDF 網址（每行一個）</label>
-            <div className="flex gap-2 items-center mb-1">
-              <label className="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-100 border border-gray-300 rounded cursor-pointer hover:bg-gray-200 text-sm">
-                <Upload className="w-4 h-4" />
-                {uploading ? "上傳中…" : "上傳 PDF 至 Vercel Blob"}
-                <input
-                  type="file"
-                  accept=".pdf,application/pdf"
-                  multiple
-                  className="hidden"
-                  disabled={uploading}
-                  onChange={handleUploadPdf}
-                />
-              </label>
-            </div>
-            {uploadError && <p className="text-sm text-red-600 mb-1">{uploadError}</p>}
-            <textarea value={pdfUrlText} onChange={(e) => setPdfUrlText(e.target.value)} rows={3} placeholder="可貼上網址或使用上方按鈕上傳 PDF" className="w-full border border-gray-300 rounded px-3 py-2" />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">對象（可多選）</label>
-            <div className="flex flex-wrap gap-4 border border-gray-300 rounded px-3 py-2 bg-gray-50">
-              {TARGET_OPTIONS.map((opt) => (
-                <label key={opt} className="inline-flex items-center gap-2 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={target.includes(opt)}
-                    onChange={(e) => {
-                      if (e.target.checked) setTarget((prev) => [...prev, opt]);
-                      else setTarget((prev) => prev.filter((t) => t !== opt));
-                    }}
-                    className="rounded border-gray-300"
-                  />
-                  <span>{opt}</span>
-                </label>
-              ))}
-            </div>
-          </div>
+          <ParticipantFields participants={participants} onChange={setParticipants} />
+          <PdfField
+            label="前鋒會通告"
+            existing={notice?.target.includes("前鋒會") ? notice.pdfUrl[notice.target.indexOf("前鋒會")] : undefined}
+            onFile={setPathfinderFile}
+            clear={clearPathfinder}
+            onClear={setClearPathfinder}
+          />
+          <PdfField
+            label="幼鋒會通告"
+            existing={notice?.target.includes("幼鋒會") ? notice.pdfUrl[notice.target.indexOf("幼鋒會")] : undefined}
+            onFile={setAdventurerFile}
+            clear={clearAdventurer}
+            onClear={setClearAdventurer}
+          />
           <div className="flex gap-2 pt-2">
             <button type="submit" disabled={saving} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 disabled:opacity-50">儲存</button>
             <button type="button" onClick={onCancel} className="px-4 py-2 border border-gray-300 rounded">取消</button>
           </div>
         </form>
       </div>
+    </div>
+  );
+}
+
+function PdfField({
+  label,
+  existing,
+  onFile,
+  clear,
+  onClear,
+}: {
+  label: string;
+  existing?: string;
+  onFile: (file: File | null) => void;
+  clear: boolean;
+  onClear: (clear: boolean) => void;
+}) {
+  return (
+    <div>
+      <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
+      {existing && (
+        <a href={existing} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline">
+          預覽現有 PDF
+        </a>
+      )}
+      <label className="mt-1 inline-flex items-center gap-1 px-3 py-1.5 bg-gray-100 border border-gray-300 rounded cursor-pointer hover:bg-gray-200 text-sm">
+        <Upload className="w-4 h-4" />
+        上傳 PDF
+        <input
+          type="file"
+          accept=".pdf,application/pdf"
+          className="hidden"
+          onChange={(event) => {
+            const file = event.target.files?.[0] ?? null;
+            onFile(file);
+            if (file) onClear(false);
+          }}
+        />
+      </label>
+      {existing && (
+        <label className="ml-3 inline-flex items-center gap-2 text-sm text-gray-600">
+          <input type="checkbox" checked={clear} onChange={(event) => onClear(event.target.checked)} />
+          移除現有 PDF
+        </label>
+      )}
     </div>
   );
 }
