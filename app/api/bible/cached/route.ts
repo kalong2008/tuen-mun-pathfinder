@@ -11,8 +11,21 @@ export async function GET(request: NextRequest) {
   }
 
   const sql = neon(process.env.DATABASE_URL);
+  const rawLimit = Number(request.nextUrl.searchParams.get("limit"));
+  const limit = Number.isFinite(rawLimit) ? Math.trunc(rawLimit) : 0;
 
   try {
+    if (limit > 1) {
+      const capped = Math.min(limit, 14);
+      const recent = await sql`
+        SELECT citation, passage, image, version, width, height
+        FROM verseOfDay
+        ORDER BY id DESC
+        LIMIT 14
+      `;
+      return NextResponse.json(recent.slice(0, capped));
+    }
+
     // Fetch the verse with the highest ID (latest inserted)
     const result = await sql`
       SELECT citation, passage, image, version, width, height 
