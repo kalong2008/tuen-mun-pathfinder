@@ -1,0 +1,41 @@
+---
+description: Adventurer honors — edit prose in Markdown; keep structure in TypeScript
+globs: app/adventurer-honors/**/*
+alwaysApply: false
+---
+
+# Adventurer honors content split
+
+## Edit here
+
+- Honor requirements and answers: `app/adventurer-honors/content/{category}/*.md`
+- Authoring conventions: `app/adventurer-honors/AUTHORING.md`
+- Frontmatter + body shape: `lib/markdown/samples/authoring-sample.md`
+
+## Do not put honor prose in TypeScript
+
+- Never add/update `requirements`, answer paragraphs, or teaching tips in `.ts` / `.tsx`
+- `.ts` is for types, loaders, serializers, search/sort, and markdown rendering only
+
+## Body conventions (required)
+
+```markdown
+## 要求
+1. …
+
+## 答案
+榮譽證目的：…
+
+### 要求 1
+…
+```
+
+## Frontmatter (structured, keep small)
+
+Required: `id`, `code`, `nameZh`, `category`, `answerSource`, `status`  
+Optional: `nameEn`, `aliases`, `answerSourceNote`  
+Enums: `answerSource` = `translated` | `draft`; `status` = `non-review` | `reviewed`
+
+## Bulk edits
+
+Use scripts that read/write markdown via `lib/data/serialize.ts` — do not revive `honors-data.ts`.

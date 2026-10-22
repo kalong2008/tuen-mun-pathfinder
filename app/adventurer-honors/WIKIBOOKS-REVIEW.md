@@ -120,11 +120,25 @@
 - EAD 來源項目（射箭、獨木舟、繩結）：英 PDF 有要求但 Supporting Answers 空白，以手冊＋安全帶領為主。
 - 要求／答案編號錯位與截斷項目已修復；剩餘類別通用句已改為分類別提示。
 
+## 覆核紀錄（2026-10-20）
+
+對照來源：HKMC 幼鋒會榮譽證網頁六分類、本站 `content/**/*.md`、Wikibooks Adventurer Awards 目錄、SPD 英文字母序清單。
+
+| 檢查 | 結果 |
+| --- | --- |
+| 結構（`## 要求`／`## 答案`／目的／帶領建議／`### 要求 N` 對齊） | 164/164 通過 |
+| HKMC 網站有、本站無 | 僅 `HKA5058`（已作 `HKA4058` 別名，網站筆誤） |
+| SPD／HKMC 範圍內缺漏新證 | 無 |
+| Wikibooks 另有、但不在 HKMC 2023／SPD 清單 | Cupcakes and More、Dinosaurs、Germs、Missionaries、Stay Safe、Talent、Thankful Heart、Beaver、特殊 Patch 等（暫不納入本站，除非區會採用） |
+
+本輪已加厚偏薄答案段落：HKA4007、HKA4010、YOU4590、HKA4035、HKA4054、HKA4061、HKA4062、YOU4625、HKA4068、HKA4073。
+
 ## 仍建議人工覆核的方向
 
 1. **標題大小寫**：Wikibooks 多用 `And`／`&`，抓取時需注意。
 2. **人工覆核**：`status: non-review` 項目仍待職員審閱後改為已審。
 3. **抽查**：少數舊檔知識內容仍偏翻譯腔，可按使用頻率再精修。
+4. **區會新證**：若 HKMC／SPD 日後加入 Wikibooks 多層級新證，再按 [AUTHORING.md](./AUTHORING.md) 新增 `.md`。
 
 ## 建議職員使用方式
 

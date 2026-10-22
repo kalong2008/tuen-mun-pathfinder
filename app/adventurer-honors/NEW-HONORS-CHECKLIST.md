@@ -1,5 +1,7 @@
 # 新増幼鋒會榮譽證追蹤清單
 
+編輯方式見 [AUTHORING.md](./AUTHORING.md)（正文改 `content/**/*.md`，唔改 TypeScript）。
+
 從 [SPD Adventurer Awards](https://adventurers.adventistchurch.com/adventurer-awards/) / GC Award Book 2020 與 HKMC 2023 手冊補入的榮譽證。
 
 **狀態說明**
